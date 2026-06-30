@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="1000C_S000M" variety="S000M">
+<name>2GR-FE COOLING</name>
+<ttl id="1000C_S000M_72Z7K_T00B8" variety="T00B8">
+<name>COOLING FAN ECU</name>
+<para id="RM000000YFK00DX" category="G" type-id="8000T" name-id="CO0JB-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000000YFK00DX_01" type-id="01" category="01">
+<s-1 id="RM000000YFK00DX_01_0001" proc-id="RM0250U___000064B00000">
+<ptxt>INSPECT COOLING FAN ECU</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the input voltage.</ptxt>
+<figure>
+<graphic graphicname="A125060E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Disconnect the cooling fan ECU connector.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch on (IG). Check the voltage of the +B terminal of the disconnected wire harness side connector.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>9 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If the result is not as specified, inspect the power source system (fusible link, fuse, wire harness and relay).</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect the cooling fan motor (see page <xref label="Seep01" href="RM000000YFJ00QX"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the resistance between terminals RFC (ECM) and SI (cooling fan ECU) of the wire harness side connectors.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the fan does not operate, there may be a short circuit.</ptxt>
+</item>
+<item>
+<ptxt>If the fan remains operating, there may be an open circuit.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+<s2>
+<ptxt>Inspect the ECM power source circuit and ground circuit.</ptxt>
+</s2>
+<s2>
+<ptxt>Inspect the input signal and output current.</ptxt>
+<figure>
+<graphic graphicname="A126255E01" width="2.775699831in" height="6.791605969in"/>
+</figure>
+<atten3>
+<ptxt>Be sure to perform the inspection with the radiator coolant temperature less than 95°C (203 °F).</ptxt>
+</atten3>
+<s3>
+<ptxt>Connect the 400 A probe of the ammeter to terminal M+ of the cooling fan motor.</ptxt>
+</s3>
+<s3>
+<ptxt>Set the intelligent tester to the oscilloscope function.</ptxt>
+</s3>
+<s3>
+<ptxt>Using the intelligent tester, check the waveform between terminals RFC and E1 of the ECM.</ptxt>
+<spec>
+<title>Standard waveform</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Input Signal</ptxt>
+</entry>
+<entry>
+<ptxt>Output Current</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Engine stopped</ptxt>
+<ptxt>(Ignition switch on (IG))</ptxt>
+</entry>
+<entry>
+<ptxt>Waveform 1</ptxt>
+<ptxt>(Duty ratio 0 %)</ptxt>
+</entry>
+<entry>
+<ptxt>(Fan stops)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine idling</ptxt>
+<ptxt>(A/C OFF)</ptxt>
+</entry>
+<entry>
+<ptxt>Waveform 1</ptxt>
+<ptxt>(0 %)</ptxt>
+</entry>
+<entry>
+<ptxt>(Fan stops)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine idling</ptxt>
+<ptxt>(A/C ON)</ptxt>
+</entry>
+<entry>
+<ptxt>Waveform 2</ptxt>
+<ptxt>(30 to 70 %)</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 11 A</ptxt>
+<ptxt>(Fan operates)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine idling</ptxt>
+<ptxt>(Coolant temperature sensor connector disconnected)</ptxt>
+</entry>
+<entry>
+<ptxt>Waveform 3</ptxt>
+<ptxt>(30 to 70 %)</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 11 A</ptxt>
+<ptxt>(Fan operates)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the input signal is abnormal, there is a malfunction in the ECM or cooling fan ECU.</ptxt>
+</item>
+<item>
+<ptxt>If the output current is abnormal even when the input signal is normal, there is a malfunction in the cooling fan ECU (RFC) or motor.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

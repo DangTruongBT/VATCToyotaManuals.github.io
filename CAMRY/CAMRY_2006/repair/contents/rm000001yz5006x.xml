@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000001YZ5006X" category="D" type-id="801OT" name-id="NS0LO-06" from="200601">
+<name>BLUETOOTH TEL CHECK MODE</name>
+<subpara id="RM000001YZ5006X_z0" proc-id="RM0250U___000053I00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Illustrations may differ from the actual vehicle depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle.</ptxt>
+</atten4>
+<step1>
+<ptxt>ENTER DIAGNOSTIC MODE (See page <xref label="Seep01" href="RM0000011BU00FX"/>)</ptxt>
+</step1>
+<step1>
+<ptxt>"BLUETOOTH" TEL CHECK</ptxt>
+<step2>
+<ptxt>Select "'Bluetooth' TEL Check" from the "Diagnosis MENU" screen.</ptxt>
+<figure>
+<graphic graphicname="E120062E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>"BLUETOOTH" CHECK</ptxt>
+<step2>
+<ptxt>Select "'Bluetooth' Check" from the "'Bluetooth' Handsfree Check Menu" screen.</ptxt>
+<figure>
+<graphic graphicname="E120063" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Select "Serial Communication Log" from the "'Bluetooth' Check Menu" screen.</ptxt>
+<figure>
+<graphic graphicname="E120064" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>The communication log data in the display ECU are displayed on this screen.</ptxt>
+<figure>
+<graphic graphicname="E120065" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>The displayed data can be used as a reference.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Select "Software Version" from the "'Bluetooth' Check Menu" screen.</ptxt>
+<figure>
+<graphic graphicname="E120066" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Check the software version of the "Bluetooth" module.</ptxt>
+<figure>
+<graphic graphicname="E120067E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Screen Description:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>General Version/*1</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>General software version of "Bluetooth" module</ptxt>
+</item>
+<item>
+<ptxt>If any of the API version, upper stack version, and low stack version is updated, the general version is upgraded.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>API Version/*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>API software version is displayed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Upper Stack Version/*3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Upper Stack version is displayed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Lower Stack Version/*4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lower Stack version is displayed.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>This function is controlled by the built-in display ECU.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>HANDSFREE VOICE QUALITY SET</ptxt>
+<step2>
+<ptxt>Select "Handsfree Voice Quality Set" from the "'Bluetooth' Handsfree Check Menu" screen.</ptxt>
+<figure>
+<graphic graphicname="E120068" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check the handsfree voice level.</ptxt>
+<figure>
+<graphic graphicname="E120069E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<title>Screen Description:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Received voice level adjustment/*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting possible for the voice level received from "Bluetooth" compatible phones.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sent voice level adjustment/*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Setting possible for the voice level sent to "Bluetooth" compatible phones.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>This function is controlled by the built-in display ECU.</ptxt>
+</atten4>
+<atten3>
+<ptxt>"Voice Quality Type" should not be changed.</ptxt>
+</atten3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

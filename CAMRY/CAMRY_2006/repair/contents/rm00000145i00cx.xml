@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72WDJ_T0060" variety="T0060">
+<name>POWER WINDOW REGULATOR MOTOR</name>
+<para id="RM00000145I00CX" category="G" type-id="3001K" name-id="WS0S6-01" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM00000145I00CX_01" type-id="01" category="01">
+<s-1 id="RM00000145I00CX_01_0001" proc-id="RM0250U___000059600000">
+<ptxt>INSPECT POWER WINDOW REGULATOR MOTOR (FRONT RH)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Apply battery voltage to the motor connector according to the table below.</ptxt>
+<figure>
+<graphic graphicname="B127536E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not apply battery voltage to any terminals except terminals 1 and 2.</ptxt>
+</atten3>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates clockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates counterclockwise</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000145I00CX_01_0002" proc-id="RM0250U___000059700000">
+<ptxt>INSPECT POWER WINDOW REGULATOR MOTOR (FRONT LH)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>without Jam protection:</ptxt>
+<ptxt>Apply battery voltage to the motor connector according to the table below.</ptxt>
+<figure>
+<graphic graphicname="B127535E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not apply battery voltage to any terminals except terminals 1 and 2.</ptxt>
+</atten3>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates clockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates counterclockwise</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+<s2>
+<ptxt>with Jam protection:</ptxt>
+<ptxt>Apply battery voltage to the motor connector according to the table below.</ptxt>
+<figure>
+<graphic graphicname="B145500E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not apply battery voltage to any terminals except terminals 1, 2, 4, 7 and 10.</ptxt>
+</atten3>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Manual Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2 (B)</ptxt>
+<ptxt>Battery negative (-) → Terminal 1 (E), 7 (DWN1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates counterclockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2 (B)</ptxt>
+<ptxt>Battery negative (-) → Terminal 1 (E), 10 (UP1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates clockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Auto Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2 (B)</ptxt>
+<ptxt>Battery negative (-) → Terminal 1 (E), 4 (AUTO), 7 (DWN1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates counterclockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2 (B)</ptxt>
+<ptxt>Battery negative (-) → Terminal 1 (E), 4 (AUTO) 10 (UP1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates clockwise</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000145I00CX_01_0003" proc-id="RM0250U___000059800000">
+<ptxt>INSPECT POWER WINDOW REGULATOR MOTOR (REAR RH)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Apply battery voltage to the motor connector according to the table below.</ptxt>
+<figure>
+<graphic graphicname="B127535E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not apply battery voltage to any terminals except terminals 1 and 2.</ptxt>
+</atten3>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates clockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates counterclockwise</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000145I00CX_01_0004" proc-id="RM0250U___000059900000">
+<ptxt>INSPECT POWER WINDOW REGULATOR MOTOR (REAR LH)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Apply battery voltage to the motor connector according to the table below.</ptxt>
+<figure>
+<graphic graphicname="B127536E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not apply battery voltage to any terminals except terminals 1 and 2.</ptxt>
+</atten3>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates clockwise</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 2</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor gear rotates counterclockwise</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000WIM00GX" category="J" type-id="303AK" name-id="CA0J2-01" from="200601">
+<dtccode/>
+<dtcname>Open in CAN Main Bus Line</dtcname>
+<subpara id="RM000000WIM00GX_01" type-id="60" category="03" proc-id="RM0250U___0000BV100000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>There may be an open circuit in the CAN main bus wire and/or the DLC3 branch wire when the resistance between terminals 6 (CANH) and 14 (CANL) of the DLC3 is 69 Ω or more.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Resistance between terminals 6 (CANH) and 14 (CANL) of the DLC3 is 69 Ω or more.</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>CAN main bus wire or connector</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>No. 1 CAN J/C</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>No. 2 CAN J/C</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>DLC3 branch wire or connector</ptxt>
+</item>
+<item>
+<ptxt>Combination meter</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WIM00GX_02" type-id="32" category="03" proc-id="RM0250U___0000BV200000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C123381E05" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WIM00GX_03" type-id="51" category="05" proc-id="RM0250U___0000CLF00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn the ignition switch off before measuring the resistance of the CAN main wire and CAN branch wires.</ptxt>
+</item>
+<item>
+<ptxt>After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating.</ptxt>
+</item>
+<item>
+<ptxt>Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If doors need to be opened in order to check connectors, open the doors and leave them open.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Operating the ignition switch, any other switches or any triggers related ECU and sensor communication on the CAN, which would cause resistance reading variations.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000WIM00GX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WIM00GX_05_0001" proc-id="RM0250U___0000BV300000">
+<testtitle>CHECK DLC3</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C126231E11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<colspec colname="COL4" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>E10-6 (CANH) -E101-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>E10-6 (CANH) - E10-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>132 Ω or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>When the measured value is 132 Ω or more and a CAN communication system diagnostic trouble code is output, there may be a fault besides disconnection of the DLC3 branch wire. For that reason, troubleshooting should be performed again from "HOW TO PROCEED WITH TROUBLESHOOTING" (See page <xref label="Seep01" href="RM000000WI600QX"/> ) after repairing the trouble area.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0026" fin="false">A</down>
+<right ref="RM000000WIM00GX_05_0020" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0026" proc-id="RM0250U___0000C9A00000">
+<testtitle>CHECK FOR OPEN IN CAN BUS MAIN WIRE (COMBINATION METER MAIN BUS WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the CAN main bus wire white connector (E43) from the No. 1 CAN J/C "B" side (without earth terminal).</ptxt>
+<figure>
+<graphic graphicname="C133231E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before disconnecting the connector, make a note of where it is connected.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect the connector to its original position.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="1.33in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E43-1 (CANH) - E43-2 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0027" fin="false">OK</down>
+<right ref="RM000000WIM00GX_05_0009" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0027" proc-id="RM0250U___0000C9B00000">
+<testtitle>CHECK FOR OPEN IN CAN BUS MAIN WIRE (NO. 1 CAN J/C)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the CAN main bus wire connector (E43) to the No. 1 CAN J/C "B" side (without earth terminal).</ptxt>
+<figure>
+<graphic graphicname="C133228E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the CAN main bus wire white connector (E42) from the No. 1 CAN J/C "A" side (with earth terminal).</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before disconnecting the connector, make a note of where it is connected.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect the connector to its original position.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="1.33in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E41-1 (CANH) - E41-2 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0028" fin="false">NG</down>
+<right ref="RM000000WIM00GX_05_0021" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0028" proc-id="RM0250U___0000C9C00000">
+<testtitle>CHECK FOR OPEN IN CAN BUS MAIN WIRE (NO. 1 CAN J/C - NO. 2 CAN J/C)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the CAN main bus wire connector (E42) to the No. 1 CAN J/C "A" side (with earth terminal).</ptxt>
+<figure>
+<graphic graphicname="C133246E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the CAN main bus wire connector (E41) from the No. 2 CAN J/C (rear of the vehicle).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="1.33in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E42-4 (CANH) - E42-10 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0029" fin="false">OK</down>
+<right ref="RM000000WIM00GX_05_0031" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0029" proc-id="RM0250U___0000C9D00000">
+<testtitle>CHECK FOR OPEN IN CAN BUS MAIN WIRE (NO. 2 CAN J/C)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the  CAN main bus wire connector (E41) to the No. 2 CAN J/C (rear of the vehicle).</ptxt>
+<figure>
+<graphic graphicname="C133245E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the CAN main bus wire connector (A40) from the No. 2 CAN J/C (front of the vehicle).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="1.33in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A40-1 (CANH) - A40-7 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0010" fin="false">NG</down>
+<right ref="RM000000WIM00GX_05_0024" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0010" proc-id="RM0250U___0000BV600000">
+<testtitle>CHECK FOR OPEN IN CAN BUS MAIN WIRE (ECM CAN MAIN BUS WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the  CAN main bus wire connector (A40) to the No. 2 CAN J/C (front of the vehicle).</ptxt>
+<figure>
+<graphic graphicname="G100098E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>2AZ-FE</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A24-38 (CANH) - A24-46 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>2GR-FE</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A55-38 (CANH) - A55-46 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0023" fin="true">NG</down>
+<right ref="RM000000WIM00GX_05_0022" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0009" proc-id="RM0250U___0000BV500000">
+<testtitle>CHECK FOR OPEN IN CAN BUS MAIN WIRE (COMBINATION METER - NO. 1 CAN J/C)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the CAN main bus wire connector (E43) to the No. 1 CAN J/C "B" side (without earth terminal).</ptxt>
+<figure>
+<graphic graphicname="C133243E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the combination meter connector (F1).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.68in"/>
+<colspec colname="COL2" colwidth="1.21in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>F1-17 (CANH) - F1-18 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIM00GX_05_0030" fin="true">NG</down>
+<right ref="RM000000WIM00GX_05_0025" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0030">
+<testtitle>REPAIR OR REPLACE CAN BUS MAIN WIRE OR CONNECTOR (NO. 1 CAN J/C - COMBINATION METER)</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0020">
+<testtitle>REPAIR OR REPLACE DLC3 BRANCH WIRE OR CONNECTOR (CANH, CANL)</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0021">
+<testtitle>REPLACE NO. 1 CAN J/C</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0031">
+<testtitle>REPAIR OR REPLACE CAN BUS MAIN WIRE OR CONNECTOR (NO. 1 CAN J/C - NO. 2 CAN J/C)</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0024">
+<testtitle>REPLACE NO. 2 CAN J/C</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0022">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0023">
+<testtitle>REPAIR OR REPLACE CAN BUS MAIN WIRE OR CONNECTOR (NO. 2 CAN J/C - ECM)</testtitle>
+</testgrp>
+<testgrp id="RM000000WIM00GX_05_0025">
+<testtitle>REPLACE COMBINATION METER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

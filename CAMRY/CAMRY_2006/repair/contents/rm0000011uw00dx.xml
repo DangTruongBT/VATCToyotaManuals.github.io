@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM0000011UW00DX" category="D" type-id="3001B" name-id="WS03K-14" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM0000011UW00DX_z0" proc-id="RM0250U___000057600000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Use the following procedure to troubleshoot the power window control system.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester should be used in steps 3 and 5.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS CHECK AND SYMPTOM CHECK</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK COMMUNICATION FUNCTION OF LIN COMMUNICATION SYSTEM</testtitle>
+<test1>
+<ptxt>Use the intelligent tester, inspect the LIN communication function to ensure there are no malfunctions in the communication system.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No DTCs output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO DIAGNOSIS TROUBLE CODE CHART</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<atten4>
+<ptxt>See page <xref label="Seep02" href="RM0000011UY00AX"/>.</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>OVERALL ANALYSIS AND TROUBLESHOOTING</testtitle>
+<test1>
+<ptxt>Data list/Active test</ptxt>
+<atten4>
+<ptxt>See page <xref label="Seep03" href="RM0000011V100CX"/>.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Circuit inspection</ptxt>
+</test1>
+<test1>
+<ptxt>Terminal of ECU</ptxt>
+<atten4>
+<ptxt>See page <xref label="Seep04" href="RM00000133900BX"/>.</ptxt>
+</atten4>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>ADJUST, REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>RESET POWER WINDOW MOTOR</testtitle>
+<atten4>
+<ptxt>See page <xref label="Seep05" href="RM0000011V200FX"/>.</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

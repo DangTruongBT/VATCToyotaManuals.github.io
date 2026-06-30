@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000ST100OX" category="U" type-id="303FP" name-id="CC00E-28" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000000ST100OX_z0" proc-id="RM0250U___00007ZU00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>If the following conditions are detected while the cruise control is in operation, the system clears the stored vehicle speed in the ECM and cancels the cruise control operation.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Auto Cancel Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Re-operation Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CRUISE main indicator light blinks</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>There is open or short in stop light switch circuit</ptxt>
+</item>
+<item>
+<ptxt>There is problem with vehicle speed signal</ptxt>
+</item>
+<item>
+<ptxt>There is problem with throttle position sensor and motor</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Turn cruise control main switch on again</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CRUISE main indicator light blinks</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>There is problem with input circuit of stop light switch circuit</ptxt>
+</item>
+<item>
+<ptxt>There is problem with cancel circuit</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Turn cruise control main switch on again</ptxt>
+</item>
+<item>
+<ptxt>Turn ignition switch off then on again</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>CRUISE main indicator light remains on (Cruise control is canceled)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed is lower than low speed limit (approx. 40 km/h (25 mph)) while running with cruise control on</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Push cruise control main switch to + (ACCEL)/RES (RESUME)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed is lower than stored speed by approx. 16 km/h (10 mph) or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Push cruise control main switch to - (COAST)/SET </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

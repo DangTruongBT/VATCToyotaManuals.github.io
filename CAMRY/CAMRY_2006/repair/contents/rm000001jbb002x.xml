@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JBB002X" category="U" type-id="303FP" name-id="BC0S6-02" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000001JBB002X_z0" proc-id="RM0250U___00000ZE00000">
+<content5 releasenbr="3">
+<step1>
+<ptxt>FAIL SAFE OPERATION</ptxt>
+<ptxt>If there is a problem with sensor signals or brake actuator systems, the skid control ECU will prohibit power supply to the brake actuator and terminate ABS control.</ptxt>
+<ptxt>ABS control will be prohibited, but EBD control continues as much as possible. If EBD control is impossible, the brake warning light will come on to warn the driver (See page <xref label="Seep01" href="RM000001JB7002X"/>).</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Malfunction Area</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Control Method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the ABS control</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>EBD system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the ABS and EBD control</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If the ABS system has a malfunction, the brake system will operate normally without ABS control.</ptxt>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,27 @@
+<!-- $Id: status.html,v 1.4 2005/06/03 02:48:08 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Index Status Navi</title>
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	paraId = parent.findParameterValue("parag", location.search, parent.location.search);
+	if (paraId==null) return;
+	sctName = parent.getGroupName(paraId, parent.g_tocXml);
+	disp.innerHTML=sctName
+	disp.className="group-name";
+}
+</script>
+</head>
+<body onLoad="init();">
+<div id="disp"></div>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000000XIV00AX" category="J" type-id="3037F" name-id="BC1H8-01" from="200601">
+<dtccode/>
+<dtcname>TS and CG Terminal Circuit</dtcname>
+<subpara id="RM000000XIV00AX_01" type-id="60" category="03" proc-id="RM0250U___00001RK00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>In the Test Mode (signal check), a malfunction of the speed sensor that cannot be detected when the vehicle is stopped can be detected while driving.</ptxt>
+<ptxt>Transition to the sensor check mode can be performed by connecting terminals TS and CG of the DLC3 and turning the ignition switch from off to on (IG).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XIV00AX_02" type-id="32" category="03" proc-id="RM0250U___00001RL00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C109400E11" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIV00AX_03" type-id="51" category="05" proc-id="RM0250U___00001RM00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten4>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep01" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XIV00AX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIV00AX_04_0001" proc-id="RM0250U___00001RN00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU TO DLC3)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C133301E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-25 (TS) - E10-12 (TS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIV00AX_04_0002" fin="false">OK</down>
+<right ref="RM000000XIV00AX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIV00AX_04_0002" proc-id="RM0250U___00001RO00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (DLC3 TO BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="G022987E23" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-4 (CG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIV00AX_04_0003" fin="false">OK</down>
+<right ref="RM000000XIV00AX_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIV00AX_04_0003" proc-id="RM0250U___00001RP00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (DLC3 TO  BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="G022987E24" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC2" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-12 (TS) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIV00AX_04_0004" fin="true">OK</down>
+<right ref="RM000000XIV00AX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIV00AX_04_0004">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000XIV00AX_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (SKID CONTROL ECU TO DLC3)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIV00AX_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (DLC3 TO BODY GROUND)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIV00AX_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (DLC3 TO BODY GROUND)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000001LUV001X" category="C" type-id="304MU" name-id="ST0PE-04" from="200601">
+<dtccode>B2271</dtccode>
+<dtcname>Ignition Hold Monitor Malfunction</dtcname>
+<subpara id="RM000001LUV001X_01" type-id="60" category="03" proc-id="RM0250U___0000B0G00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when a problem such as an open in the AM2 fuse, an open or short in the wire harness between the fuse and main body ECU, a short in the IG output circuit inside the main body ECU, a short between the main body ECU and relay, and a short in the relay is detected.</ptxt>
+<atten4>
+<ptxt>When the main body ECU is replaced with a new one and the negative (-) battery terminal is connected, the power source mode becomes the IG-ON mode. When the battery is removed and reinstalled, the power source mode that was selected when the battery was removed is restored.</ptxt>
+<ptxt>After the main body ECU is replaced, perform the registration procedures for the engine immobiliser system (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2271</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hold circuit, IG1 relay actuation circuit or IG2 relay actuation circuit inside main body ECU is open or shorted</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>AM2 fuse</ptxt>
+</item>
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001LUV001X_02" type-id="32" category="03" proc-id="RM0250U___0000B0H00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137971E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001LUV001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001LUV001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001LUV001X_04_0001" proc-id="RM0250U___0000B0I00000">
+<testtitle>CHECK DTC OUTPUT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000000YEH00LX"/>).</ptxt>
+<atten4>
+<ptxt>After all DTCs are cleared, check if the trouble occurs again 6 seconds after the engine switch is turned on (IG).</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check for DTCs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC is output.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUV001X_04_0005" fin="true">OK</down>
+<right ref="RM000001LUV001X_04_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUV001X_04_0002" proc-id="RM0250U___0000B0J00000">
+<testtitle>INSPECT FUSE (AM2)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the AM2 fuse from the engine room J/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUV001X_04_0003" fin="false">OK</down>
+<right ref="RM000001LUV001X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUV001X_04_0003" proc-id="RM0250U___0000B0K00000">
+<testtitle>CHECK WIRE HARNESS (MAIN BODY ECU - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E6 and E7 ECU connectors.</ptxt>
+<figure>
+<graphic graphicname="B138000E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E7-6 (AM1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E6-1 (AM2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUV001X_04_0004" fin="true">OK</down>
+<right ref="RM000001LUV001X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUV001X_04_0004">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000001LUV001X_04_0005">
+<testtitle>CHECK INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000001LUV001X_04_0006">
+<testtitle>REPLACE FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000001LUV001X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

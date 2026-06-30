@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM000001LZZ005X" category="C" type-id="800LG" name-id="WS0GT-05" from="200601">
+<dtccode>B2313</dtccode>
+<dtcname>Glass Position Initialization Incomplete</dtcname>
+<subpara id="RM000001LZZ005X_01" type-id="60" category="03" proc-id="RM0250U___0000BYR00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The portion of the power window control system that is located in the driver door consists of a power window master switch, regulator, and a motor with an integrated ECU. The driver door power window regulator motor is controlled by the ECU when the power window master switch is operated (models with jam protection).</ptxt>
+<ptxt>When the ECU determines that the driver's door power window regulator motor assembly has not been initialized, DTC B2313 is set.</ptxt>
+<atten3>
+<ptxt>The power window control system uses a serial communication protocol (LIN) to communicate with the main body ECU. Inspect the communication function by following HOW TO PROCEED WITH TROUBLESHOOTING. Troubleshoot the power window control system after confirming that the communication system is functioning properly.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Replacing the door glass or door glass run may cause a difference to exist between the current door glass position and the position memorized in the ECU. In this case, the jam protection function may work improperly. Return the system to the pre-initialized condition and reinitialize the system.</ptxt>
+</item>
+<item>
+<ptxt>To return the system to the pre-initialized condition:</ptxt>
+<ptxt>Disconnect the power window regulator motor connector during power window operation. This will return the motor to the pre-initialized condition.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2313</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The power window regulator motor (on driver side) is not initialized</ptxt>
+</item>
+<item>
+<ptxt>The power window regulator motor (on driver side) malfunctions</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Power window regulator motor (on driver side)</ptxt>
+</item>
+<item>
+<ptxt>Power window regulator motor (on driver side) not initialized</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001LZZ005X_02" type-id="51" category="05" proc-id="RM0250U___0000BYS00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When using the intelligent tester to troubleshoot the LIN communication line: Connect the intelligent tester to the vehicle, and turn the courtesy light switch on and off at 1.5 second intervals until communication between the tester and vehicle begins.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001LZZ005X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001LZZ005X_03_0001" proc-id="RM0250U___0000BYT00000">
+<testtitle>CHECK DTC OUTPUT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Wait for at least 10 seconds, and then turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check whether the DTC output recurs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2313</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LZZ005X_03_0004" fin="false">A</down>
+<right ref="RM000001LZZ005X_03_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LZZ005X_03_0004" proc-id="RM0250U___0000BYU00000">
+<testtitle>SYSTEM INITIALIZE (POWER WINDOW CONTROL SYSTEM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG) and initialize the power window regulator motor (on the driver side) (see page <xref label="Seep01" href="RM0000011V200FX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Wait for at least 10 seconds, and then turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check whether the DTC output recurs.</ptxt>
+<spec>
+<title/>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B2313</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LZZ005X_03_0003" fin="true">A</down>
+<right ref="RM000001LZZ005X_03_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LZZ005X_03_0002">
+<testtitle>REPLACE POWER WINDOW REGULATOR MOTOR ASSEMBLY FRONT LH</testtitle>
+</testgrp>
+<testgrp id="RM000001LZZ005X_03_0003">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

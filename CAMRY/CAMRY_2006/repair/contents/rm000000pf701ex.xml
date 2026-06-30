@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PF701EX" category="C" type-id="300XX" name-id="ES0DN-15" from="200601">
+<dtccode>P0121</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "A" Circuit Range / Performance Problem</dtcname>
+<subpara id="RM000000PF701EX_01" type-id="60" category="03" proc-id="RM0250U___0000COO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>This ETC (Electrical Throttle Control System) does not use a throttle cable.</ptxt>
+<ptxt>The Throttle Position (TP) sensor is mounted on the throttle body, and detects the opening angle of the throttle valve. This sensor is a non-contact type, and uses Hall-effect elements, in order to yield accurate signals, even in extreme driving conditions, such as at high speeds as well as very low speeds.</ptxt>
+<ptxt>The TP sensor has two sensor circuits which each transmits a signal, VTA1 and VTA2. VTA1 is used to detect the throttle valve angle and VTA2 is used to detect malfunctions in VTA1. The sensor signal voltages vary between 0 V and 5 V in proportion to the throttle valve opening angle, and are transmitted to the VTA terminals of the ECM.</ptxt>
+<ptxt>As the valve closes, the sensor output voltage decreases and as the valve opens, the sensor output voltage increases. The ECM calculates the throttle valve opening angle according to these signals and controls the throttle actuator in response to driver inputs. These signals are also used in calculations such as air-fuel ratio correction, power increase correction and fuel-cut control.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A019802E31" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<atten4>
+<ptxt>This DTC relates to the Throttle Position (TP) sensor.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0121</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Difference between VTA1 and VTA2 voltages less than 0.8 V, or more than 1.6 V for 2 seconds (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_02" type-id="64" category="03" proc-id="RM0250U___0000COP00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM uses the TP sensor to monitor the throttle valve opening angle.</ptxt>
+<ptxt>This sensor transmits two signals: VTA1 and VTA2. VTA1 is used to detect the throttle opening angle and VTA2 is used to detect malfunctions in VTA1. The ECM performs several checks to confirm the proper operation of the TP sensor and VTA1.</ptxt>
+<ptxt>For each throttle opening angle, a specific voltage difference is expected between the outputs of VTA1 and VTA2. If the output voltage difference between the two signals deviates from the normal operating range, the ECM interprets this as a malfunction of the TP sensor. The ECM illuminates the MIL and sets the DTC.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, the DTC is set 2 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_03" type-id="65" category="03" proc-id="RM0250U___0000COQ00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.79in"/>
+<colspec colname="COL2" colwidth="3.29in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0121: TP sensor rationality</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TP sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 2 seconds </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_04" type-id="66" category="03" proc-id="RM0250U___0000COR00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.81in"/>
+<colspec colname="COL2" colwidth="3.27in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0120, P0122, P0123, P0220, P0222, P0223, P2135 (TP sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of following conditions A or B is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A.  Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B.  Electric throttle motor power</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TP sensor malfunction (P0120, P0122, P0123, P0220, P0222, P0223, P2135)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not detected</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_05" type-id="67" category="03" proc-id="RM0250U___0000COS00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.82in"/>
+<colspec colname="COL2" colwidth="3.26in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Difference in voltage between VAT1 and VTA2 </ptxt>
+<ptxt>TP sensor 1 - [TP sensor 2 x 0.8 (corrected by learning value)] </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.8 V or more than 1.6 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_06" type-id="62" category="03" proc-id="RM0250U___0000COT00000">
+<name>FAIL-SAFE</name>
+<content5 releasenbr="1">
+<ptxt>When this DTC, as well as other DTCs relating to ETCS (Electronic Throttle Control System) malfunctions, is set, the ECM enters fail-safe mode. During fail-safe mode, the ECM cuts the current to the throttle actuator off, and the throttle valve is returned to a 6° throttle angle by the return spring. The ECM then adjusts the engine output by controlling the fuel injection (intermittent fuel-cut) and ignition timing, in accordance with the accelerator pedal opening angle, to allow the vehicle to continue at a minimal speed. If the accelerator pedal is depressed firmly and gently, the vehicle can be driven slowly.</ptxt>
+<ptxt>Fail-safe mode continues until a pass condition is detected, and the engine switch is then turned off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_07" type-id="51" category="05" proc-id="RM0250U___0000COU00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air/fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF701EX_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PF701EX_08_0001" proc-id="RM0250U___0000COV00000">
+<testtitle>CHECK OTHER DTC OUTPUT (IN ADDITION TO DTC P0121)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTC.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0121</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0121 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF701EX_08_0003" fin="true">A</down>
+<right ref="RM000000PF701EX_08_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF701EX_08_0002">
+<testtitle>GO TO DTC CHART<xref label="Seep01" href="RM000002203002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PF701EX_08_0003">
+<testtitle>REPLACE THROTTLE BODY<xref label="Seep01" href="RM0000022NL001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

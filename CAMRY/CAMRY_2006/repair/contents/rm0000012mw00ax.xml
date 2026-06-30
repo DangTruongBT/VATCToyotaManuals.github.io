@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM0000012MW00AX" category="J" type-id="305B7" name-id="WS0R3-01" from="200601">
+<dtccode/>
+<dtcname>Rear Power Window Switch LH Circuit</dtcname>
+<subpara id="RM0000012MW00AX_01" type-id="60" category="03" proc-id="RM0250U___000057Y00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit supplies power to operate the power window regulator switch assembly (Rear LH).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000012MW00AX_02" type-id="32" category="03" proc-id="RM0250U___000057Z00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137059E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000012MW00AX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000012MW00AX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000012MW00AX_04_0001" proc-id="RM0250U___000058000000">
+<testtitle>CHECK WIRE HARNESS (POWER WINDOW REGULATOR SWITCH - BATTERY AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the K1 connector.</ptxt>
+<figure>
+<graphic graphicname="B137048E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012MW00AX_04_0005" fin="true">OK</down>
+<right ref="RM0000012MW00AX_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012MW00AX_04_0003">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000012MW00AX_04_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

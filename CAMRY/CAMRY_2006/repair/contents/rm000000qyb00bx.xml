@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QYB00BX" category="D" type-id="303F3" name-id="EI00R-10" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000QYB00BX_z0" proc-id="RM0250U___00008DC00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK DLC3</ptxt>
+<step2>
+<ptxt>The vehicle's ECU uses ISO 15765-4 for communication protocol. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<figure>
+<graphic graphicname="H100769E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL (14) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the engine switch, any other switches or the doors.</ptxt>
+</atten3>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the cable of the intelligent tester (with CAN VIM) to the DLC3, turn the engine switch on (IG) and attempt to use the intelligent tester. If the screen displays a communication error message, a problem exists in the vehicle side or tester side.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tool is connected to another vehicle, inspect the DLC3 on the original vehicle.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is still impossible when the tool is connected to another vehicle, the problem is probably in the tool itself. Consult the Service Department listed in the tool's instruction manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000000PN600JX" category="J" type-id="300DE" name-id="NS1F9-01" from="200601">
+<dtccode/>
+<dtcname>GPS Mark is not Displayed</dtcname>
+<subpara id="RM000000PN600JX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PN600JX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PN600JX_02_0001" proc-id="RM0250U___00004VN00000">
+<testtitle>CHECK CABIN</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the cabin for any object that might interrupt radio reception on the instrument panel. If such an object exists, remove it and check if the GPS mark reappears.</ptxt>
+<atten4>
+<ptxt>The GPS uses extremely faint radio waves originating from satellites. If the signal is interrupted by obstructions or other radio waves, the GPS may not be able to properly receive the signal.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Mark appears.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PN600JX_02_0002" fin="true">OK</down>
+<right ref="RM000000PN600JX_02_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PN600JX_02_0002">
+<testtitle>NORMAL OPERATION</testtitle>
+</testgrp>
+<testgrp id="RM000000PN600JX_02_0003" proc-id="RM0250U___00004VO00000">
+<testtitle>CHECK SURROUNDINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the vehicle is in a location where GPS signal reception is poor. If the vehicle is in such a place, relocate the vehicle and check if the GPS mark reappears.</ptxt>
+<atten4>
+<ptxt>The GPS uses 24 satellites in 6 orbits. At any point in time, 4 satellites should be able to pinpoint your vehicle. However, GPS signals may not reach the vehicle due to influence from the surroundings, vehicle direction, and time. For illustrated examples, see below.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="I100196E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>GPS mark is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PN600JX_02_0004" fin="true">OK</down>
+<right ref="RM000000PN600JX_02_0005" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PN600JX_02_0004">
+<testtitle>SYSTEM RETURNS TO NORMAL</testtitle>
+</testgrp>
+<testgrp id="RM000000PN600JX_02_0005" proc-id="RM0250U___00004VP00000">
+<testtitle>CHECK GPS INFORMATION (NAVIGATION CHECK MODE)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="E136148E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Enter the "Navigation Check" mode (GPS Information) (See page <xref label="Seep01" href="RM0000011BW00EX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check how many of the following codes appear in the "STS" column.</ptxt>
+<spec>
+<title>For DENSO Made</title>
+<specitem>
+<ptxt>T, P</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>For AISIN AW Made</title>
+<specitem>
+<ptxt>08H, 04H</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>At least 3 codes appear.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PN600JX_02_0007" fin="true">OK</down>
+<right ref="RM000000PN600JX_02_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PN600JX_02_0006">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PN600JX_02_0007">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

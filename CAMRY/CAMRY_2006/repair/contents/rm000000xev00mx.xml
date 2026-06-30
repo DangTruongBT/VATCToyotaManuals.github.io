@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XEV00MX" category="C" type-id="304N2" name-id="ST0VT-03" from="200601">
+<dtccode>B2282</dtccode>
+<dtcname>Vehicle Speed Signal Malfunction</dtcname>
+<subpara id="RM000000XEV00MX_01" type-id="60" category="03" proc-id="RM0250U___00009JA00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU and the combination meter are connected by a cable and the CAN. DTC B2282 is output when: 1) the cable information and CAN information are inconsistent; and 2) a malfunction is detected between the vehicle speed sensor and combination meter.</ptxt>
+<atten4>
+<ptxt>When the main body ECU is replaced with a new one and the negative (-) battery terminal is connected, the power source mode becomes the IG-ON mode. When the battery is removed and reinstalled, the power source mode that was selected when the battery was removed is restored.</ptxt>
+<ptxt>After the main body ECU is replaced, perform the registration procedures for the engine immobiliser system (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2282</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>When both conditions below are met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Cable information and CAN information between the main body ECU and the combination meter are inconsistent</ptxt>
+</item>
+<item>
+<ptxt>Malfunction is detected between the vehicle speed sensor and the combination meter</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>CAN communication system</ptxt>
+</item>
+<item>
+<ptxt>Combination meter system</ptxt>
+</item>
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="B138069E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XEV00MX_02" type-id="32" category="03" proc-id="RM0250U___00009JB00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B150236E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A voltage of 12 V or 5 V is output from each ECU and then input to the combination meter. The signal is changed to a pulse signal at the transistor in the combination meter. Each ECU controls the respective system based on the pulse signal.</ptxt>
+</item>
+<item>
+<ptxt>If a short occurs in an ECU, all systems in the diagram above will not operate normally.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XEV00MX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000XEV00MX_06" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XEV00MX_06_0008" proc-id="RM0250U___00009JE00000">
+<testtitle>CHECK OPERATION OF SPEEDOMETER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Drive the vehicle and check if the function of the speedometer in the combination meter is normal.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Actual vehicle speed and the speed indicated on the speedometer are the same.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle speed sensor is functioning normally when the indication on the speedometer is normal.</ptxt>
+</item>
+<item>
+<ptxt>The meter CPU receives vehicle speed signals from the skid control ECU via the CAN communication lines. The vehicle speed sensor detects the voltage that varies according to the vehicle speed. The skid control ECU supplies power to the vehicle speed sensor. The skid control ECU detects vehicle speed signals based on the pulses of the voltage.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XEV00MX_06_0014" fin="false">NG</down>
+<right ref="RM000000XEV00MX_06_0017" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0014" proc-id="RM0250U___00009JF00000">
+<testtitle>CHECK DTC OUTPUT (CAN COMMUNICATION SYSTEM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000000YEH00LX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check for CAN communication system DTCs.</ptxt>
+<atten4>
+<ptxt>If the DTCs for the CAN communication system malfunction are output, inspect those DTCs first (See page <xref label="Seep02" href="RM000002B6V000X"/>).</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC is output.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XEV00MX_06_0009" fin="true">OK</down>
+<right ref="RM000000XEV00MX_06_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0017" proc-id="RM0250U___00009JH00000">
+<testtitle>CHECK WIRE HARNESS (MAIN BODY ECU - COMBINATION METER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E8 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B137982E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the F2 meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E8-9 (SPD) - F2-12 (+S) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XEV00MX_06_0003" fin="false">OK</down>
+<right ref="RM000000XEV00MX_06_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0003" proc-id="RM0250U___00009JD00000">
+<testtitle>CHECK WIRE HARNESS (MAIN BODY ECU - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt> Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B137983E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E8-9 (SPD) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result of the inspection for a short circuit is not as specified, there may be a short in the ECU.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XEV00MX_06_0018" fin="false">OK</down>
+<right ref="RM000000XEV00MX_06_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0018" proc-id="RM0250U___00009JI00000">
+<testtitle>INSPECT MAIN BODY ECU (SPEED SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the input signal waveform.</ptxt>
+<figure>
+<graphic graphicname="B137984E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Reconnect the connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Remove the combination meter assembly with the connector(s) still connected.</ptxt>
+</test2>
+<test2>
+<ptxt>Connect an oscilloscope to terminal E8-9 (SPD) and body ground.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the wheel slowly.</ptxt>
+</test2>
+<test2>
+<ptxt>Check the signal waveform according to the condition(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="I042329E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5 V/DIV., 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driving at approx. 20 km/h (12 mph)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The waveform is displayed as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>As the vehicle speed increases, the cycle of the signal waveform narrows.</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XEV00MX_06_0002" fin="true">OK</down>
+<right ref="RM000000XEV00MX_06_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0002">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0009">
+<testtitle>GO TO COMBINATION METER SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0015">
+<testtitle>GO TO CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0020">
+<testtitle>REPAIR OR REPLACE HARNESS, CONNECTOR OR EACH ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000XEV00MX_06_0022">
+<testtitle>REPLACE COMBINATION METER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

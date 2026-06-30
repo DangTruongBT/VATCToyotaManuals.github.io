@@ -1,0 +1,40 @@
+<!-- $Id: title_contents.html,v 1.5 2004/04/26 05:09:33 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">  
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Installation and Removal Title Selection Contents</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javaScript">
+function init(){
+	var g_args = window.dialogArguments;
+	if(g_args==null || g_args.length<4) return;
+	var partsName = g_args[0];	//パーツ名称
+	var partsId   = g_args[1];	//パーツID
+	var tocXml    = g_args[2];	//文書構成XMLインスタンス
+	var procXml   = g_args[3];	//手順XMLインスタンス
+	var ttlCttXsl = parent.initXsl("../../xsl/rmv/title_contents.xsl");
+	if (ttlCttXsl==null) return;
+	parts.innerHTML = partsName;
+	var objTemp = new ActiveXObject("Msxml2.XSLTemplate");
+	objTemp.stylesheet=ttlCttXsl;
+	var objProc = objTemp.createProcessor();
+	objProc.addParameter("partsId", partsId);
+	objProc.addParameter("tocXml", tocXml);
+	objProc.input = procXml;
+	objProc.transform();
+	disp.innerHTML = objProc.output;
+}
+</script>
+</head>
+<body onLoad="init();">
+<p id="parts" class="subname"></p>
+<div id="disp"></div>
+</body>
+</html>

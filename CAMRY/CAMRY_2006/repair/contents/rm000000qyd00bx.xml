@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QYD00BX" category="U" type-id="303FI" name-id="EI00L-10" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM000000QYD00BX_z0" proc-id="RM0250U___00008D800000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128344E02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<table pgwide="1">
+<title>Communication table:</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" align="center" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Transmitting ECU (Transmitter)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receiving ECU (Receiver)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Communication method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key code recognition signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID code box</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC (B2791) signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID code box</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering lock release signal</ptxt>
+</item>
+<item>
+<ptxt>Matching request random number signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID code box</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Matching request random number signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

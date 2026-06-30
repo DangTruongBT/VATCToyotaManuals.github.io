@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GV2002X" category="C" type-id="3018V" name-id="EI07C-03" from="200601">
+<dtccode>B2794</dtccode>
+<dtcname>Unmatched Encryption Code</dtcname>
+<subpara id="RM000001GV2002X_01" type-id="60" category="03" proc-id="RM0250U___00008FI00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when a key with an incomplete key code is inserted into the ignition key cylinder.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2794</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key with incomplete key code is inserted</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001GV2002X_02" type-id="51" category="05" proc-id="RM0250U___00008KA00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<ptxt>If the key is replaced, register the key (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GV2002X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GV2002X_03_0001">
+<testtitle>REPLACE KEY</testtitle>
+<res>
+<down ref="RM000001GV2002X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001GV2002X_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

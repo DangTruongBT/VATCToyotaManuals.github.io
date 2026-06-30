@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JBC002X" category="D" type-id="304JI" name-id="BC0S5-03" from="200601">
+<name>FREEZE FRAME DATA</name>
+<subpara id="RM000001JBC002X_z0" proc-id="RM0250U___00000ZD00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FREEZE FRAME DATA</ptxt>
+<step2>
+<ptxt>Whenever a DTC is detected or the ABS operates, the skid control ECU stores the current vehicle (sensor) status as Freeze Frame Data.</ptxt>
+</step2>
+<step2>
+<ptxt>The skid control ECU stores the number of times (maximum: 31) the ignition switch has been turned from off to on (IG) since the last time the ABS was activated.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Freeze frame data at the time the ABS operates:</ptxt>
+<ptxt>The skid control ECU stores and updates data whenever the ABS system operates.</ptxt>
+<ptxt>When the skid control ECU stores data at the time a DTC is detected, the data stored during ABS operation is erased.</ptxt>
+</item>
+<item>
+<ptxt>Freeze frame data at the time a DTC is detected:</ptxt>
+<ptxt>When the skid control ECU stores data at the time a DTC is detected, no updates will be performed until the data is cleared.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Select "DTC INFO" on the tester display.</ptxt>
+</step2>
+<step2>
+<ptxt>On the DTC data display screen, select the DTC data display with "*".</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Intelligent Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TROUBLE CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Freeze DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>min.: 0, max.: 65535</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of trouble codes</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>min.: 0, max.: 255</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FREEZE TIME</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Elapsed time after freeze trigger</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 ms, Max.: 500 ms</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of operations of ignition switch on (IG) after storing freeze frame data</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 31</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STOP LAMP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch ON: ON, OFF: OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARKING BRAKE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking brake condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Parking brake on</ptxt>
+<ptxt>OFF: Parking brake off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPERATED SYSTEM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operated system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS operated: ABS</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front right wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 MPH (0 km/h), Max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front left wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 MPH (0 km/h), Max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 MPH (0 km/h), Max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 MPH (0 km/h), Max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed reading</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed indication on the meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD GRADE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed grade</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -1.869 G, Max.: 1.869 G</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

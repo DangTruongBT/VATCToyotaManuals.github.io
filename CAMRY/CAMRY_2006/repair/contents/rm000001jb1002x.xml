@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JB1002X" category="D" type-id="3001B" name-id="BC0RZ-02" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000001JB1002X_z0" proc-id="RM0250U___00000Z700000">
+<content5 releasenbr="3">
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS</testtitle>
+<test1>
+<ptxt>Interview the customer to confirm the trouble.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<test1>
+<ptxt>Check for DTCs (See page <xref label="Seep01" href="RM000001JB8002X"/>).</ptxt>
+<atten4>
+<ptxt>The skid control ECU is connected to the CAN communication system.</ptxt>
+<ptxt>Therefore, before starting troubleshooting, make sure to check that there is no trouble in the CAN communication system.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>CHECK CAN COMMUNICATION CIRCUIT</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK DTC AND FREEZE FRAME DATA</testtitle>
+<test1>
+<ptxt>Check for DTCs and Freeze Frame Data (See page <xref label="Seep02" href="RM000001JB8002X"/> for DTC Check / Clear, <xref label="Seep03" href="RM000001JBC002X"/> for Freeze Frame Data).</ptxt>
+<test2>
+<ptxt>Record the DTCs and Freeze Frame Data.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Clear the DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck for DTCs.</ptxt>
+<test2>
+<ptxt>Reproduce the malfunction and check if the DTCs are output again.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output (Problem symptom does not occur)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output (Problem symptom occurs)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO STEP 9</action-ci-right>
+<result>C</result>
+<action-ci-right>GO TO STEP 10</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DIAGNOSTIC TROUBLE CODE CHART</testtitle>
+<test1>
+<ptxt>Go to "DIAGNOSTIC TROUBLE CODE CHART" (See page <xref label="Seep04" href="RM000001JB2002X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM SIMULATION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<test1>
+<ptxt>Go to "PROBLEM SYMPTOMS TABLE" (See page <xref label="Seep05" href="RM000001JB5002X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

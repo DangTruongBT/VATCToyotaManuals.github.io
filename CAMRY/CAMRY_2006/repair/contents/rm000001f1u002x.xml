@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000001F1U002X" category="J" type-id="800OU" name-id="CA0IV-01" from="200601">
+<dtccode/>
+<dtcname>Air Conditioning Amplifier Communication Stop Mode</dtcname>
+<subpara id="RM000001F1U002X_01" type-id="60" category="03" proc-id="RM0250U___0000BTR00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioning Amplifier Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>"Air Conditioner" not displayed on "Communication Bus Check" screen of intelligent tester</ptxt>
+</item>
+<item>
+<ptxt>Applies to "Air Conditioning Amplifier Communication Stop Mode" in "DTC combination table"</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Power source circuit of the air conditioning amplifier </ptxt>
+</item>
+<item>
+<ptxt>Air conditioning amplifier branch wire or connector</ptxt>
+</item>
+<item>
+<ptxt>Air conditioning amplifier</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001F1U002X_02" type-id="32" category="03" proc-id="RM0250U___0000BTS00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133239E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001F1U002X_03" type-id="51" category="05" proc-id="RM0250U___0000BTT00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn the ignition switch off before measuring the resistance of the CAN main wire and CAN branch wires.</ptxt>
+</item>
+<item>
+<ptxt>After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating.</ptxt>
+</item>
+<item>
+<ptxt>Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If doors need to be opened in order to check connectors, open the doors and leave them open.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Operating the ignition switch, any other switches or any triggers related ECU and sensor communication on the CAN, which would cause resistance reading variations.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001F1U002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001F1U002X_04_0001" proc-id="RM0250U___0000BTU00000">
+<testtitle>CHECK OPEN IN CAN BUS WIRE (AIR CONDITIONING AMPLIFIER BRANCH WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="E124470E21" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the air conditioning amplifier connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-11 (CANH) - E38-12 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001F1U002X_04_0002" fin="false">OK</down>
+<right ref="RM000001F1U002X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001F1U002X_04_0002" proc-id="RM0250U___0000BTV00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (IG+, B, GND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the air conditioning amplifier connector.</ptxt>
+<figure>
+<graphic graphicname="E124470E22" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-14 (GND) - Body Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-1 (IG+) - Body Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-21 (B)- Body Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001F1U002X_04_0005" fin="true">OK</down>
+<right ref="RM000001F1U002X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001F1U002X_04_0003">
+<testtitle>REPAIR OR REPLACE CAN BRANCH WIRE CONNECTED TO AIR CONDITIONING AMPLIFIER</testtitle>
+</testgrp>
+<testgrp id="RM000001F1U002X_04_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001F1U002X_04_0005">
+<testtitle>REPLACE AIR CONDITIONING AMPLIFIER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

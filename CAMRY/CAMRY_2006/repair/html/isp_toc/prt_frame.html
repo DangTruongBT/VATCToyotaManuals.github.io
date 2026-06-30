@@ -1,0 +1,36 @@
+<!-- $Id: prt_frame.html,v 1.2 2004/04/26 05:02:35 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection -Print Preview-</title>
+<script src="../../js/util.js"></script>
+<script language="javascript">
+var args        = window.dialogArguments;
+var illustId    = null;
+var dialogTitle = "";
+function init() {
+	if (args==null || args.length!=2) return;
+	var illustId = args[0];
+	var dialogTitle = args[1];
+	if (illustId==null) return;
+	contents.png.innerHTML="<img src='../../png/"+illustId.toLowerCase()+".png' width='100%' alt='"+illustId+"'></img>";
+	contents.svgTitle.innerHTML = illustId;
+	contents.ttl.innerHTML = dialogTitle;
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="prt_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="prt_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

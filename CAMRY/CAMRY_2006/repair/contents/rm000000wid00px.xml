@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000WID00PX" category="U" type-id="303FP" name-id="CA009-30" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000000WID00PX_z0" proc-id="RM0250U___00009BW00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FAIL-SAFE FUNCTION </ptxt>
+<step2>
+<ptxt>When communication fails in any of the CAN bus wire (communication lines) due to a short circuit or other causes, a fail-safe functions, will operate. The fail-safe function that is specified for each system operates to prevent those systems from malfunctioning.</ptxt>
+</step2>
+<step2>
+<ptxt>The following chart shows the relationships between components and system functions and effects of communication failure on these functions. (For further details, see the pages for each system.) </ptxt>
+<table pgwide="1">
+<tgroup cols="8">
+<colspec colname="COL1" colwidth="0.88in"/>
+<colspec colname="COL2" colwidth="0.88in"/>
+<colspec colname="COL3" colwidth="0.88in"/>
+<colspec colname="COL4" colwidth="0.90in"/>
+<colspec colname="COL5" colwidth="0.85in"/>
+<colspec colname="COL6" colwidth="0.88in"/>
+<colspec colname="COL8" colwidth="0.96in"/>
+<colspec colname="COL9" colwidth="0.850000000000001in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU</ptxt>
+<ptxt>(Without VSC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU</ptxt>
+<ptxt>(With VSC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering Sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition when communication impossible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC detection (Driver detectable)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC control (Controls driving force while VSC in operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control inoperative (gradually stops controlling during VSC control) </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Light comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRC control (Controls driving force and engine power when wheel slip detected during acceleration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control inoperative (gradually stops controlling during TRC control)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Light comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS control (Controls driving force while ABS in operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○ <sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control is inoperative (gradually stops controlling during ABS control)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Light comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Security function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Theft deterrent system cannot be set</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Indicator light does not comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air conditioning control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air conditioning function stops</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None (Air conditioning inoperative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Meter Display (Displays operation condition and DTCs)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○ <sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light does not come on, illuminates abnormally, or blinks abnormally</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Abnormal display)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Buzzer control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○ <sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Buzzer function stops</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Buzzer does not sound)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Illumination control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light illumination rheostat inoperative</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None (Rheostat inoperative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Smart entry / Power door lock control<sup>*3</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock permitted</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None (Wireless door lock operation)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>●: Control master</ptxt>
+</item>
+<item>
+<ptxt>○: System related</ptxt>
+</item>
+<item>
+<ptxt>*1: TMC made</ptxt>
+</item>
+<item>
+<ptxt>*2: TMMK made</ptxt>
+</item>
+<item>
+<ptxt>*3: with smart key system</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="8">
+<colspec colname="COLSPEC0" colwidth="0.78in"/>
+<colspec colname="COL2" colwidth="0.92in"/>
+<colspec colname="COL3" colwidth="0.92in"/>
+<colspec colname="COL4" colwidth="0.92in"/>
+<colspec colname="COL5" colwidth="0.71in"/>
+<colspec colname="COL6" colwidth="0.92in"/>
+<colspec colname="COL8" colwidth="0.99in"/>
+<colspec colname="COL9" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioning Amplifier</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Combination Meter ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Certification ECU*3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition when communication on impossible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC detection (Driver detectable)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC control (Controls driving force while VSC in operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control inoperative (gradually stops controlling during VSC control) </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Light comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRC control (Controls driving force and engine power when wheel slip detected during acceleration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control inoperative (gradually stops controlling during TRC control)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Light comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS control (Controls driving force while ABS in operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control is inoperative (gradually stops controlling during ABS control)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Light comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Security function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Theft deterrent system cannot beset</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Indicator light does not comes on)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air conditioning control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air conditioning function stops</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None (Air conditioning inoperative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Meter Display (Displays operation condition and DTCs)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light does not come on, illuminates abnormally, or blinks abnormally</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Abnormal display)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Buzzer control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Buzzer function stops</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detectable (Buzzer does not sound)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Illumination control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light illumination rheostat inoperative</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None (Rheostat inoperative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Smart entry / Power door lock control<sup>*3</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>●</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock permitted</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None (Wireless door lock operation)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>●: Control master</ptxt>
+</item>
+<item>
+<ptxt>○: System related</ptxt>
+</item>
+<item>
+<ptxt>*3: with smart key system</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

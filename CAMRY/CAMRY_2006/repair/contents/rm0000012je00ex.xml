@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM0000012JE00EX" category="C" type-id="302B6" name-id="ES3XM-01" from="200601">
+<dtccode>P0340</dtccode>
+<dtcname>Camshaft Position Sensor "A" Circuit (Bank 1 or Single Sensor)</dtcname>
+<subpara id="RM0000012JE00EX_01" type-id="60" category="03" proc-id="RM0250U___00007GP00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The Camshaft Position (CMP) sensor consists of a magnet and an iron core which is wrapped with copper wire, and is installed onto the cylinder head. When the camshaft rotates, each of 3 teeth on the camshaft passes through the CMP sensor. This activates the internal magnet in the sensor, generating a voltage in the copper wire. The camshaft rotation is synchronized with the crankshaft rotation. When the crankshaft turns twice, the voltage is generated 3 times in the CMP sensor. The generated voltage in the sensor acts as a signal, allowing the ECM to locate the camshaft position. This signal is then used to control ignition timing, fuel injection timing, and the VVT system.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0340</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Case 1</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>No Camshaft Position (CMP) sensor signal to ECM while cranking (2 trip detection logic)</ptxt>
+</item>
+</list1>
+<ptxt>Case 2</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Camshaft/Crankshaft misalignment detected at engine speed of 600 rpm or more (1 trip detection logic)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in CMP sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>CMP sensor</ptxt>
+</item>
+<item>
+<ptxt>Camshaft</ptxt>
+</item>
+<item>
+<ptxt>Jumped tooth of timing chain</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>DTC P0340 indicates a malfunction relating to the CMP sensor (+) circuit (the wire harness between the ECM and CMP sensor, and the CMP sensor itself).</ptxt>
+</atten4>
+<ptxt>Reference: Inspection using an oscilloscope</ptxt>
+<figure>
+<graphic graphicname="A063955E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The correct waveform is as shown in the illustration.</ptxt>
+</item>
+<item>
+<ptxt>G2+ stands for the CMP sensor signal, and NE+ stands for the Crankshaft Position (CKP) sensor signal.</ptxt>
+</item>
+<item>
+<ptxt>Grounding failure of the shielded wire may cause noise in waveforms.</ptxt>
+</item>
+</list1>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Items</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CH1: G2+ - G2-</ptxt>
+<ptxt>CH2: NE+ - NE-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Equipment Settings</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/Division, 20 ms./Division</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cranking or idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_02" type-id="64" category="03" proc-id="RM0250U___00007GQ00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If no signal is transmitted by the CMP sensor despite the engine revolving, or the rotation of the camshaft and the crankshaft is not synchronized, the ECM interprets this as a malfunction of the sensor.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 10 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_03" type-id="65" category="03" proc-id="RM0250U___00007GR00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0340: Camshaft position sensor range check</ptxt>
+<ptxt>P0340: Camshaft position/crankshaft position misalignment</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft Position (CMP) sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft Position (CKP) sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 seconds: CMP sensor range check</ptxt>
+<ptxt>5 seconds: Camshaft position/crankshaft position misalignment</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles: CMP sensor range check</ptxt>
+<ptxt>Immediate: Camshaft position/crankshaft position misalignment</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_04" type-id="66" category="03" proc-id="RM0250U___00007GS00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Camshaft Position Sensor Range Check:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Minimal battery voltage while starter ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 11 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Camshaft Position/Crankshaft Position Misalignment:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>600 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_05" type-id="67" category="03" proc-id="RM0250U___00007GT00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Camshaft Position Sensor Range Check:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CMP sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Camshaft Position/Crankshaft Position Misalignment:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Camshaft position and crankshaft position phase</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Misaligned</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_06" type-id="70" category="03" proc-id="RM0250U___00007GU00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CMP sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>CMP sensor output voltage fluctuates while camshaft revolving</ptxt>
+</item>
+<item>
+<ptxt>3 CMP sensor signals per 2 crankshaft revolutions</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_07" type-id="32" category="03" proc-id="RM0250U___00007GV00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0335 (See page <xref label="Seep01" href="RM000000TCW01VX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_08" type-id="51" category="05" proc-id="RM0250U___00007GW00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012JE00EX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000012JE00EX_09_0001" proc-id="RM0250U___00007GX00000">
+<testtitle>INSPECT CAMSHAFT POSITION SENSOR (RESISTANCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C31 Camshaft Position (CMP) sensor connector.</ptxt>
+<figure>
+<graphic graphicname="G037727E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between terminals 1 and 2.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL3" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>950 to 1,250 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the CMP sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012JE00EX_09_0003" fin="false">OK</down>
+<right ref="RM0000012JE00EX_09_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0003" proc-id="RM0250U___00007GY00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CAMSHAFT POSITION SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C31 CMP sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A106885E06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C31-1 (G2+) - C24-99 (G2+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C31-2 (G2-) - C24-98 (G2-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C31-1 (G2+) or C24-99 (G2+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="bottom" align="center">
+<ptxt>C31-2 (G2-) or C24-98 (G2-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the CMP sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012JE00EX_09_0004" fin="false">OK</down>
+<right ref="RM0000012JE00EX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0004" proc-id="RM0250U___00007GZ00000">
+<testtitle>CHECK SENSOR INSTALLATION (CAMSHAFT POSITION SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the CMP sensor installation condition.</ptxt>
+<figure>
+<graphic graphicname="BR03795E39" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sensor is installed correctly.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012JE00EX_09_0014" fin="false">OK</down>
+<right ref="RM0000012JE00EX_09_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0014" proc-id="RM0250U___000079V00000">
+<testtitle>CHECK VALVE TIMING
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the cylinder head cover.</ptxt>
+<figure>
+<graphic graphicname="A098172E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the crankshaft pulley, and align its groove with the timing mark "0" on the timing chain cover.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the timing marks on the camshaft timing sprocket and camshaft timing gear are facing upward as shown in the illustration.</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>If not, turn the crankshaft 1 revolution (360°), then align the marks as above.</ptxt>
+</item>
+</list1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Timing marks on camshaft timing gears are aligned as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the cylinder head cover.</ptxt>
+</test1>
+</content6><res>
+<down ref="RM0000012JE00EX_09_0005" fin="false">OK</down>
+<right ref="RM0000012JE00EX_09_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0005" proc-id="RM0250U___00007H000000">
+<testtitle>CHECK CAMSHAFT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the teeth of the camshaft.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Camshaft teeth do not have any cracks or deformation.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012JE00EX_09_0006" fin="false">OK</down>
+<right ref="RM0000012JE00EX_09_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0006">
+<testtitle>REPLACE CAMSHAFT POSITION SENSOR</testtitle>
+<res>
+<down ref="RM0000012JE00EX_09_0012" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0012" proc-id="RM0250U___00007H100000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0340</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<atten4>
+<ptxt>If the engine does not start, replace the ECM.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000012JE00EX_09_0011" fin="true">A</down>
+<right ref="RM0000012JE00EX_09_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0013">
+<testtitle>REPLACE CAMSHAFT POSITION SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0009">
+<testtitle>SECURELY REINSTALL SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0015">
+<testtitle>ADJUST VALVE TIMING</testtitle>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0010">
+<testtitle>REPLACE CAMSHAFT</testtitle>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0008">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM0000012JE00EX_09_0011">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

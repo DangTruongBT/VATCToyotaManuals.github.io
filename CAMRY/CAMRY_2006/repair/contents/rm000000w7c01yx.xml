@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7C01YX" category="D" type-id="303FD" name-id="AT031-67" from="200601">
+<name>MANUAL SHIFTING TEST</name>
+<subpara id="RM000000W7C01YX_z0" proc-id="RM0250U___00003A200000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PERFORM MANUAL SHIFTING TEST</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>With this test, it can be determined whether trouble occurs in the electrical circuit. Also, trouble can be a mechanical problem in the transaxle.</ptxt>
+</item>
+<item>
+<ptxt>If any abnormalities are found in the following test, the problem is in the transaxle itself.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Disconnect the TCM connector.</ptxt>
+<figure>
+<graphic graphicname="C122817" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Drive the vehicle with the TCM disconnected.</ptxt>
+<ptxt>Shifting the shift lever to the D position to check whether the shifting condition changes as shown in the table below.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shifting Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No Shift (No Change)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When driving the vehicle with the TCM disconnected, the gear position will be as follows:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>When the shift lever is in the D position, the transmission will stay in 3rd gear.</ptxt>
+</item>
+<item>
+<ptxt>When the shift lever is in the R or the P position, the transmission will also be in the R or P position respectively.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Connect the connector of the TCM.</ptxt>
+</step2>
+<step2>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000W7701XX"/>).</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

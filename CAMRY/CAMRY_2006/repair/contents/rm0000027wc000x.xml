@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM0000027WC000X" category="J" type-id="304ZR" name-id="DL190-01" from="200601">
+<dtccode/>
+<dtcname>Luggage Compartment Door Key Cylinder Switch Circuit</dtcname>
+<subpara id="RM0000027WC000X_01" type-id="60" category="03" proc-id="RM0250U___0000A5M00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the luggage compartment door lock cylinder is turned to unlock the door by key, there is continuity between terminal TSW of the main body ECU and body ground.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000027WC000X_02" type-id="32" category="03" proc-id="RM0250U___0000A5N00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B109777E25" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000027WC000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000027WC000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000027WC000X_04_0001" proc-id="RM0250U___0000A5W00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the "DATA LIST" and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRUNK KEY UNLK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door key cylinder switch/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition key inserted and turned to lock position</ptxt>
+<ptxt>OFF: Ignition key inserted and turned to unlock position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>When the ignition switch is operated, the display changes as shown above.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027WC000X_04_0002" fin="true">OK</down>
+<right ref="RM0000027WC000X_04_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027WC000X_04_0002">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000027WC000X_04_0003" proc-id="RM0250U___0000A5X00000">
+<testtitle>INSPECT MAIN BODY ECU (TSW TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="B137943E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E6-2 (TSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E6-2 (TSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder OPEN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E6-2 (TSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder UNLOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027WC000X_04_0002" fin="true">OK</down>
+<right ref="RM0000027WC000X_04_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027WC000X_04_0004" proc-id="RM0250U___0000A5Y00000">
+<testtitle>INSPECT LUGGAGE COMPARTMENT DOOR LOCK CYLINDER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the luggage compartment door lock cylinder connector.</ptxt>
+<figure>
+<graphic graphicname="B137942E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1 S8-1 - S8-3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1 S8-1 - S8-3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder OPEN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*1 S8-1 - S8-3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder UNLOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2 S6-2 - S6-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2 S6-2 - S6-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder OPEN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>*2 S6-2 - S6-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door lock cylinder UNLOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*1: w/ SMART KEY SYSTEM</ptxt>
+<ptxt>*2: w/o SMART KEY SYSTEM</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027WC000X_04_0005" fin="true">OK</down>
+<right ref="RM0000027WC000X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027WC000X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (MAIN BODY ECU, BODY GROUND - DOOR LOCK CYLINDER)</testtitle>
+</testgrp>
+<testgrp id="RM0000027WC000X_04_0006">
+<testtitle>REPLACE LUGGAGE COMPARTMENT DOOR LOCK CYLINDER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

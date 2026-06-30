@@ -1,0 +1,48 @@
+<!-- $Id: notes_frame.html,v 1.6 2004/04/26 05:01:22 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--  000 Diagnostics                                                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics</title>
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var g_objXml = null;
+var g_objXsl = null;
+var g_paraId   = null; // paragraph ID
+var g_sub    = null; // subpara ID
+var g_title  = null;
+var g_sectionName   = "";
+var g_titleName     = "";
+var g_paragraphName = "";
+function init() {
+	var args = window.dialogArguments[0];
+	g_objXml = args.get("xml");
+	g_objXsl = args.get("xsl");
+	g_sub = args.get("subparaId");
+	g_title = args.get("title");
+	g_paraId = g_objXml.selectSingleNode("//para").getAttribute("id");
+	setSeePageMargin(args.get("margin")+30);
+	document.title = "Diagnostics " + g_title; // 000
+}
+init();
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="notes_global.html" scrolling="no" noresize frameborder="no">
+		<frame name="contents" src="notes_contents.html" frameborder="no">
+	</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

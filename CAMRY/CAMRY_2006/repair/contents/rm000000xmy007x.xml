@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XMY007X" category="U" type-id="303FJ" name-id="TW0J7-01" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000XMY007X_z0" proc-id="RM0250U___00005GU00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Following the display on the intelligent tester, read "DATA LIST".</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.03in"/>
+<colspec colname="COL4" align="center" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MODE STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning system</ptxt>
+<ptxt>mode/NORMAL or REG 2nd or</ptxt>
+<ptxt>REG M or TEST</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NORMAL: Normal mode</ptxt>
+<ptxt>TEST: Test mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MAIN TIRE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of main tire ID to be registered/</ptxt>
+<ptxt>0 or 1 or 2 or 3 or 4 or 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 5 should be displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed reading/</ptxt>
+<ptxt>min.: 0 km/h (0 mph),</ptxt>
+<ptxt>max.: 255 km/h (158 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed indicated on the combination meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REGIT ID1 CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered ID1 code/min.: 0,</ptxt>
+<ptxt>max.: FFFFFFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The ID No. registered in the transmitter</ptxt>
+<ptxt>ID1 is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REGIT ID2 CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered ID2 code/min.: 0,</ptxt>
+<ptxt>max.: FFFFFFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The ID No. registered in the transmitter</ptxt>
+<ptxt>ID2 is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REGIT ID3 CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered ID3 code/min.: 0,</ptxt>
+<ptxt>max.: FFFFFFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The ID No. registered in the transmitter</ptxt>
+<ptxt>ID3 is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REGIT ID4 CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered ID4 code/min.: 0,</ptxt>
+<ptxt>max.: FFFFFFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The ID No. registered in the transmitter</ptxt>
+<ptxt>ID4 is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REGIT ID5 CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Registered ID5 code/min.: 0,</ptxt>
+<ptxt>max.: FFFFFFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The ID No. registered in the transmitter</ptxt>
+<ptxt>ID5 is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRANS STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID code transmission status/</ptxt>
+<ptxt>FINISH or NOW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FINISH or NOW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INITIAL SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning reset switch/ON, OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Switch on</ptxt>
+<ptxt>OFF: Switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 tire inflation pressure/</ptxt>
+<ptxt>min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 tire inflation pressure/</ptxt>
+<ptxt>min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 tire inflation pressure/</ptxt>
+<ptxt>min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 tire inflation pressure/</ptxt>
+<ptxt>min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 tire inflation pressure/</ptxt>
+<ptxt>min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIRE TEMP1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 temperature in tire/</ptxt>
+<ptxt>min.: -40°C (-40°F),</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIRE TEMP2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 temperature in tire/</ptxt>
+<ptxt>min.: -40°C (-40°F),</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIRE TEMP3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 temperature in tire/</ptxt>
+<ptxt>min.: -40°C (-40°F),</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIRE TEMP4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 temperature in tire/</ptxt>
+<ptxt>min.: -40°C (-40°F),</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIRE TEMP5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 temperature in tire/</ptxt>
+<ptxt>min.: -40°C (-40°F),</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATT VOLT1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 battery voltage/</ptxt>
+<ptxt>OVER or LESS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OVER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATT VOLT2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 battery voltage/</ptxt>
+<ptxt>OVER or LESS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OVER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATT VOLT3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 battery voltage/</ptxt>
+<ptxt>OVER or LESS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OVER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATT VOLT4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 battery voltage/</ptxt>
+<ptxt>OVER or LESS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OVER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATT VOLT5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 battery voltage/</ptxt>
+<ptxt>OVER or LESS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OVER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INITIAL SW INFO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning reset switch setting information/</ptxt>
+<ptxt>WITH or WITHOUT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WITH or WITHOUT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INIT THRESHOLD1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 initial threshold of low-pressure/</ptxt>
+<ptxt>min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kpa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure after initialization</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INIT THRESHOLD2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 initial threshold of low-pressure/</ptxt>
+<ptxt>min.: 0 kpa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kpa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure after initialization</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INIT THRESHOLD3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 initial threshold of low-pressure/</ptxt>
+<ptxt>min.: 0 kpa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kpa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure after initialization</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INIT THRESHOLD4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 initial threshold of low-pressure/</ptxt>
+<ptxt>min.: 0 kpa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kpa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure after initialization</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INIT THRESHOLD5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 initial threshold of low-pressure/</ptxt>
+<ptxt>min.: 0 kpa (0 kgf/cm<sup>2</sup>, 0 psi),</ptxt>
+<ptxt>max.: 637.5 kpa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure after initialization</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt># CODES</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of DTC recorded/</ptxt>
+<ptxt>min.: 0, max.: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0, Max.: -</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SPEED METER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed/Min.: 0 km/h (0 mph), Max.: 255 km/h (158 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost same as actual vehicle speed (When driving)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows the meters, indicators and so on to operate without parts removal. Performing the ACTIVE TEST as the first step of troubleshooting is one way to save diagnostic time. It is possible to display the DATA LIST on the intelligent tester during the ACTIVE TEST.</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD /MOBD / METER / ACTIVE TEST.</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TIRE PRESS WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire Pressure Warning Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire Pressure Warning Light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Confirm that the vehicle is stopped with the engine idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

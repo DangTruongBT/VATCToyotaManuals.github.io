@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000T6X00WX" category="C" type-id="3041M" name-id="ES05X-21" from="200601">
+<dtccode>P2610</dtccode>
+<dtcname>ECM / PCM Internal Engine Off Timer Performance</dtcname>
+<subpara id="RM000000T6X00WX_01" type-id="76" category="03" proc-id="RM0250U___00002U200000">
+<name>DTC SUMMARY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="6" align="center">
+<colspec colname="COL1" colwidth="0.71in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<colspec colname="COL5" colwidth="1.06in"/>
+<colspec colname="COL6" colwidth="0.71in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Monitoring Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detection Timing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detection Logic</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2610</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Soak timer (built into ECM)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ECM internal malfunction</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine running</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 trip</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_02" type-id="60" category="03" proc-id="RM0250U___00002U300000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>To ensure the accuracy of the EVAP (Evaporative Emission) monitor values, the soak timer, which is built into the ECM, measures 5 hours (+/- 15 minutes) from when the ignition switch is turned off, before the monitor is run. This allows the fuel to cool down, which stabilizes the Fuel Tank Pressure (FTP). When 5 hours have elapsed, the ECM turns on.</ptxt>
+<figure>
+<graphic graphicname="A136968E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_03" type-id="64" category="03" proc-id="RM0250U___00002U400000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>5 hours after the ignition switch is turned off, the soak timer activates the ECM to begin the EVAP system monitor. While the engine is running, the ECM monitors the synchronization of the soak timer and the CPU clock. If these two are not synchronized, the ECM interprets this as a malfunction, illuminates the MIL and sets the DTC (2 trip detection logic).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_07" type-id="65" category="03" proc-id="RM0250U___00002U800000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 minutes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_04" type-id="66" category="03" proc-id="RM0250U___00002U500000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Case 1:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 2:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Internal engine OFF timer (elapsed time from engine stop)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 300 minutes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 3:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Internal engine OFF timer (elapsed time from engine stop)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>310 minutes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_08" type-id="67" category="03" proc-id="RM0250U___00002U900000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<title>Case 1:</title>
+<tgroup cols="2">
+<colspec colname="col1" align="left" colwidth="3.54in"/>
+<colspec colname="col2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Soak timer measurement when ECM CPU clock counts 10 minutes</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 7 minutes or more than 13 minutes</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 2:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>ECM had the started record by internal engine</ptxt>
+</entry>
+<entry>
+<ptxt>Yes</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 3:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>ECM had the started record by internal engine</ptxt>
+</entry>
+<entry>
+<ptxt>No</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_05" type-id="51" category="05" proc-id="RM0250U___00002U600000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC P2610 is set if an internal ECM problem is detected. In this case, diagnostic procedures are not required. ECM replacement is required.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000T6X00WX_06" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000T6X00WX_06_0005" proc-id="RM0250U___0000CJV00000">
+<testtitle>REPLACE ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the ECM (See page <xref label="Seep01" href="RM0000022NT001X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T6X00WX_06_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000T6X00WX_06_0002" proc-id="RM0250U___00002U700000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01HX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and wait for 10 minutes or more.</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, enter the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC / INFO / PENDING CODEs.</ptxt>
+</test1>
+<test1>
+<ptxt>If no pending DTC is displayed, the repair has been successfully completed.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T6X00WX_06_0003" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000T6X00WX_06_0003">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

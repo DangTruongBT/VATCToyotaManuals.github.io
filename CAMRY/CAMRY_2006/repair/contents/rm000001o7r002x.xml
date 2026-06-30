@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001O7R002X" category="J" type-id="801IJ" name-id="AC1WN-01" from="200601">
+<dtccode/>
+<dtcname>LIN Communication Circuit</dtcname>
+<subpara id="RM000001O7R002X_01" type-id="60" category="03" proc-id="RM0250U___00004HS00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The operation signal of a switch etc. is exchanged between terminal TX+ of the A/C control assembly and terminal LIN1 of the A/C amplifier.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001O7R002X_02" type-id="32" category="03" proc-id="RM0250U___00004HT00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E116883E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001O7R002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001O7R002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001O7R002X_04_0001" proc-id="RM0250U___00004HU00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/C CONTROL ASSEMBLY - AIR CONDITIONING AMPLIFIER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the A/C control assembly.</ptxt>
+<figure>
+<graphic graphicname="E124480E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E124470E17" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-37 (LIN1) - F16-4 (TX+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-37 (LIN1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O7R002X_04_0003" fin="true">OK</down>
+<right ref="RM000001O7R002X_04_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001O7R002X_04_0002">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001O7R002X_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

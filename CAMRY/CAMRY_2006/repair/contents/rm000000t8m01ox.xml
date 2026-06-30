@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000T8M01OX" category="C" type-id="300YC" name-id="ES05P-28" from="200601">
+<dtccode>P0505</dtccode>
+<dtcname>Idle Control System Malfunction</dtcname>
+<subpara id="RM000000T8M01OX_01" type-id="60" category="03" proc-id="RM0250U___00002PT00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The idle speed is controlled by the Electronic Throttle Control System (ETCS). The ETCS is comprised of: 1) one valve type throttle body; 2) the throttle actuator, which operates the throttle valve; 3) the throttle position sensor, which detects the opening angle of the throttle valve; 4) the accelerator pedal position sensor, which detects the accelerator pedal position; 5) the ECM, which controls the ETCS. Based on the target idle speed, the ECM controls the throttle actuator to provide the proper throttle valve opening angle.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0505</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idle speed continues to vary greatly from target speed (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ETCS</ptxt>
+</item>
+<item>
+<ptxt>Air induction system</ptxt>
+</item>
+<item>
+<ptxt>PCV hose connection</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8M01OX_02" type-id="64" category="03" proc-id="RM0250U___00002PU00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM monitors the idling speed and idling air flow volume to conduct Idle Speed Control (ISC). The ECM determines that the ISC system is malfunctioning if the following conditions are met: </ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The learned idling air flow volume remains at the maximum or minimum 5 times or more during a driving cycle</ptxt>
+</item>
+<item>
+<ptxt>While driving at 6 mph (10 km/h) or more, the actual engine idling speed varies from the target idling speed by between 100 rpm and 200 rpm, 5 times or more during a driving cycle.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>Example:</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>If the actual idling speed varies from the target idling speed by more than 200 rpm* 5 times during a driving cycle, the ECM illuminates the MIL and sets the DTC.</ptxt>
+</item>
+</list2>
+</list1>
+<atten4>
+<ptxt>*: Threshold idling speed varies with engine load.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A082389E26" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000T8M01OX_03" type-id="65" category="03" proc-id="RM0250U___00002PV00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0505: ISC function</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ETCS</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor, Engine coolant temperature sensor, and Vehicle speed sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 minutes</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8M01OX_04" type-id="66" category="03" proc-id="RM0250U___00002PW00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<title>Functional check:</title>
+<tgroup cols="2" align="left">
+<colspec colname="col1" colwidth="3.54in"/>
+<colspec colname="col2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor will run whenever these DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8M01OX_05" type-id="67" category="03" proc-id="RM0250U___00002PX00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Functional check:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Frequency that following conditions (a) and (b) are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 time or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Engine RPM - target engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below -100 rpm, or 200 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop after vehicle was driven by 6.25 mph (10 km/h) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Frequency that following conditions (a) and (b) are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Engine RPM - target engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below -100 rpm, or 200 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) ISC flow rate learning value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.3 L/sec. or less. or 8.5 L/sec. or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8M01OX_06" type-id="51" category="05" proc-id="RM0250U___00002PY00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The following conditions may also cause DTC P0505 to be set:</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>The floor carpet overlapping onto the accelerator pedal, causing the accelerator pedal to be slightly depressed and therefore the throttle valve position to be slightly open.</ptxt>
+</item>
+<item>
+<ptxt>The accelerator pedal being not fully released.</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000T8M01OX_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000T8M01OX_07_0001" proc-id="RM0250U___00002PZ00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0505)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following the menus: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0505</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0505 and other DTCs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0505 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T8M01OX_07_0002" fin="false">A</down>
+<right ref="RM000000T8M01OX_07_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0002" proc-id="RM0250U___00002Q000000">
+<testtitle>CHECK PCV HOSE (HOSE CONNECTIONS)</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>PCV hose is connected correctly and is not damaged.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000T8M01OX_07_0003" fin="false">OK</down>
+<right ref="RM000000T8M01OX_07_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0003" proc-id="RM0250U___00002Q100000">
+<testtitle>CHECK AIR INDUCTION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the air induction system for vacuum leakage.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No leakage from air induction system.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T8M01OX_07_0004" fin="false">OK</down>
+<right ref="RM000000T8M01OX_07_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0004" proc-id="RM0250U___00002Q200000">
+<testtitle>CHECK THROTTLE BODY (VISUALLY CHECK THROTTLE VALVE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for contamination between the throttle valve and the housing. If necessary, clean the throttle body. And check that the throttle valve moves smoothly.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Throttle valve is not contamainated with foreign objects and moves smoothly.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T8M01OX_07_0009" fin="true">OK</down>
+<right ref="RM000000T8M01OX_07_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0005">
+<testtitle>GO TO DTC CHART<xref label="Seep01" href="RM000002203002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0006">
+<testtitle>REPAIR OR REPLACE PCV HOSE</testtitle>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0007">
+<testtitle>REPAIR OR REPLACE AIR INDUCTION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0008">
+<testtitle>REPLACE THROTTLE BODY<xref label="Seep01" href="RM0000022NL001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000T8M01OX_07_0009">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

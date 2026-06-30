@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000000PO700HX" category="J" type-id="304TN" name-id="NS1F7-01" from="200601">
+<dtccode/>
+<dtcname>Voice is not Recognized</dtcname>
+<subpara id="RM000000PO700HX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PO700HX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PO700HX_02_0008" proc-id="RM0250U___00004YC00000">
+<testtitle>CHECK NAVIGATION SETTING</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the "Menu" screen by pressing the "MENU" switch.</ptxt>
+<figure>
+<graphic graphicname="E120104E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Select "Setup".</ptxt>
+</test1>
+<test1>
+<ptxt>Check that "Voice Recognition Guidance" is not OFF.</ptxt>
+<figure>
+<graphic graphicname="E120105E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Voice Recognition Guidance is not OFF.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PO700HX_02_0001" fin="false">OK</down>
+<right ref="RM000000PO700HX_02_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0001" proc-id="RM0250U___00004Y900000">
+<testtitle>CHECK MAP DISC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the map disc is not deformed or cracked.</ptxt>
+<figure>
+<graphic graphicname="I100152E12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No deformations or cracks on map disc.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PO700HX_02_0003" fin="false">OK</down>
+<right ref="RM000000PO700HX_02_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0003" proc-id="RM0250U___00004YA00000">
+<testtitle>CHECK MAP DISC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for dirt on the map disc surface.</ptxt>
+<figure>
+<graphic graphicname="I100201E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No dirt is on the map disc surface.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Do not use a conventional record cleaner or anti-static preservative.</ptxt>
+</atten3>
+<atten4>
+<ptxt>If the disc is dirty, clean the disc by wiping the disc's surface radially with a soft cloth.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PO700HX_02_0005" fin="false">OK</down>
+<right ref="RM000000PO700HX_02_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0005" proc-id="RM0250U___00004YB00000">
+<testtitle>CHECK MICROPHONE (NAVIGATION CHECK MODE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the "MICROPHONE &amp; VOICE RECOGNITION CHECK" mode (See page <xref label="Seep01" href="RM0000011BW00EX"/>).</ptxt>
+<figure>
+<graphic graphicname="E120056E10" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>When voice is input into the microphone, check that the microphone input level meter changes according to the input voice.</ptxt>
+</test1>
+<test1>
+<ptxt>Push the recording switch and perform voice recording.</ptxt>
+<atten4>
+<ptxt>Voice can be recorded up to 5 seconds.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check that the recorded voice is played normally without noise or distortion.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>All check results are normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PO700HX_02_0013" fin="true">OK</down>
+<right ref="RM000000PO700HX_02_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0010">
+<testtitle>TURN VOICE RECOGNITION GUIDANCE "ON"</testtitle>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0002">
+<testtitle>REPLACE MAP DISC</testtitle>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0004">
+<testtitle>CLEAN MAP DISC</testtitle>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0012">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PO700HX_02_0013">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM000000POK00HX" category="J" type-id="80090" name-id="NS05V-11" from="200601">
+<dtccode/>
+<dtcname>Cellular Phone cannot Send / Receive</dtcname>
+<subpara id="RM000000POK00HX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000POK00HX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000POK00HX_02_0001" proc-id="RM0250U___0000AND00000">
+<testtitle>CHECK "BLUETOOTH" SETTINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the "Bluetooth" settings are correct.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"Bluetooth" settings are correct.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000POK00HX_02_0003" fin="false">OK</down>
+<right ref="RM000000POK00HX_02_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0002">
+<testtitle>SET SETTINGS CORRECTLY</testtitle>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0003" proc-id="RM0250U___0000ANE00000">
+<testtitle>CHECK CELLULAR PHONE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the cellular phone is "Bluetooth" compatible.</ptxt>
+<atten4>
+<ptxt>Some versions of "Bluetooth" compatible cellular phones may not function.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Phone is "Bluetooth" compatible.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000POK00HX_02_0005" fin="false">OK</down>
+<right ref="RM000000POK00HX_02_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0004">
+<testtitle>END (ONLY A "BLUETOOTH" COMPATIBLE CELLULAR PHONE CAN BE USED)</testtitle>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0005" proc-id="RM0250U___0000ANF00000">
+<testtitle>CHECK SETTINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the cellular phone functions.</ptxt>
+<atten4>
+<ptxt>The cellular phone is unable to call under any of the following conditions.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The cellular phone is locked.</ptxt>
+</item>
+<item>
+<ptxt>The directory is being transferred.</ptxt>
+</item>
+<item>
+<ptxt>The line is crossed.</ptxt>
+</item>
+<item>
+<ptxt>Transmission is regulated.</ptxt>
+</item>
+<item>
+<ptxt>The power is off.</ptxt>
+</item>
+<item>
+<ptxt>The cellular phone is not connected to "Bluetooth" ("BT" is displayed while connected).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>None of the above conditions exist.</ptxt>
+</specitem>
+</spec>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000POK00HX_02_0007" fin="false">OK</down>
+<right ref="RM000000POK00HX_02_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0006">
+<testtitle>SET CORRECTLY</testtitle>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0007" proc-id="RM0250U___0000ANG00000">
+<testtitle>CHECK CELLULAR PHONE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the cellular phone can make a call.</ptxt>
+<atten4>
+<ptxt>When the battery is low, calls cannot be made or received.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Cellular phone can make a call.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000POK00HX_02_0009" fin="false">OK</down>
+<right ref="RM000000POK00HX_02_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0008">
+<testtitle>REPAIR OR REPLACE CELLULAR PHONE</testtitle>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0009" proc-id="RM0250U___0000ANH00000">
+<testtitle>CHECK RECEPTION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Set the cellular phone so that it can receive calls.</ptxt>
+</test1>
+<test1>
+<ptxt>Place the cellular phone close to the radio receiver.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the cellular phone has reception according to the radio receiver.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Cellular phone has reception.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000POK00HX_02_0011" fin="true">OK</down>
+<right ref="RM000000POK00HX_02_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0010">
+<testtitle>REPLACE RADIO RECEIVER</testtitle>
+</testgrp>
+<testgrp id="RM000000POK00HX_02_0011">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

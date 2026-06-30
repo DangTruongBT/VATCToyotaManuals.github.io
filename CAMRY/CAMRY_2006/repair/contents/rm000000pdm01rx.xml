@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDM01RX" category="D" type-id="303F6" name-id="ES069-54" from="200601">
+<name>BASIC INSPECTION</name>
+<subpara id="RM000000PDM01RX_z0" proc-id="RM0250U___000078T00000">
+<content5 releasenbr="1">
+<ptxt>When a malfunction is not confirmed by the DTC check, troubleshooting should be carried out in all circuits considered to be possible causes of the problem. In many cases, by carrying out the basic engine check shown in the following flowchart, the location of the problem can be found quickly and efficiently. Therefore, using this check is essential when engine troubleshooting.</ptxt>
+<descript-diag>
+<descript-testgroup>
+<testtitle>CHECK BATTERY VOLTAGE</testtitle>
+<atten3>
+<ptxt>Conduct this check with the engine stopped and ignition switch off.</ptxt>
+</atten3>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>11 V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 11 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>NG</result>
+<action-ci-right>CHARGE OR REPLACE BATTERY</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK WHETHER ENGINE WILL CRANK</testtitle>
+<results>
+<result>NG</result>
+<action-ci-right>PROCEED TO PROBLEM SYMPTOMS TABLE </action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK WHETHER ENGINE STARTS</testtitle>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO STEP 6</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK AIR FILTER</testtitle>
+<test1>
+<ptxt>Visually check that the air filter is not excessively contaminated with dirt or oil. </ptxt>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>REPLACE AIR FILTER</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK IDLING SPEED</testtitle>
+<results>
+<result>NG</result>
+<action-ci-right>TROUBLESHOOT IDLING SPEED AND PROCEED TO NEXT STEP</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK FUEL PRESSURE</testtitle>
+<results>
+<result>NG</result>
+<action-ci-right>TROUBLESHOOT FUEL PRESSURE AND PROCEED TO NEXT STEP</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK FOR SPARKS</testtitle>
+<results>
+<result>NG</result>
+<action-ci-right>TROUBLESHOOT SPARK AND PROCEED TO NEXT STEP</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+<action-ci-fin>PROCEED TO PROBLEM SYMPTOMS TABLE</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIQ00AX" category="J" type-id="300NF" name-id="BC1MY-01" from="200601">
+<dtccode/>
+<dtcname>ABS Warning Light does not Come ON</dtcname>
+<subpara id="RM000000XIQ00AX_04" type-id="60" category="03" proc-id="RM0250U___00005PA00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU is connected to the combination meter via CAN communication.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XIQ00AX_01" type-id="32" category="03" proc-id="RM0250U___00005P400000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C109474E03" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIQ00AX_02" type-id="51" category="05" proc-id="RM0250U___00005P500000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XIQ00AX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIQ00AX_03_0001" proc-id="RM0250U___00005P600000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the CAN communication system DTC is output (See page <xref label="Seep01" href="RM000000WIB00RX"/>). </ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIQ00AX_03_0003" fin="false">A</down>
+<right ref="RM000000XIQ00AX_03_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIQ00AX_03_0003" proc-id="RM0250U___00005P800000">
+<testtitle>CHECK ABS WARNING LIGHT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the ABS warning light comes on.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The ABS warning light comes on.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step before replacing the part (See page <xref label="Seep01" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIQ00AX_03_0004" fin="false">NG</down>
+<right ref="RM000000XIQ00AX_03_0008" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIQ00AX_03_0004" proc-id="RM0250U___00005P900000">
+<testtitle>INSPECT COMBINATION METER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform Active Test of the combination meter (meter CPU) using the intelligent tester (See page <xref label="Seep01" href="RM0000012G700DX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The ABS warning light turns on or off in accordance with the intelligent tester.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep02" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIQ00AX_03_0008" fin="true">OK</down>
+<right ref="RM000000XIQ00AX_03_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIQ00AX_03_0006">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XIQ00AX_03_0008">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIQ00AX_03_0009">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

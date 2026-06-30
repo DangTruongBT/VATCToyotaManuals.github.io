@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000TCW01VX" category="C" type-id="302B5" name-id="ES3XL-01" from="200601">
+<dtccode>P0335</dtccode>
+<dtcname>Crankshaft Position Sensor "A" Circuit</dtcname>
+<dtccode>P0339</dtccode>
+<dtcname>Crankshaft Position Sensor "A" Circuit Intermittent</dtcname>
+<subpara id="RM000000TCW01VX_01" type-id="60" category="03" proc-id="RM0250U___00007GB00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The Crankshaft Position (CKP) sensor system consists of a CKP sensor plate and a pickup coil.</ptxt>
+<ptxt>The sensor plate has 34 teeth and is installed on the crankshaft. The pickup coil is made of wound copper wire, an iron core and magnet. The sensor plate rotates and, as each tooth passes through the pickup coil, a pulse signal is created. The pickup coil generates 34 signals per engine revolution. Based on these signals, the ECM calculates the crankshaft position and engine RPM. Using these calculations, the fuel injection time and ignition timing are controlled.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0335</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either condition below is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>No CKP sensor signal to ECM while cranking (1 trip detection logic)</ptxt>
+</item>
+<item>
+<ptxt>No CKP sensor signal to ECM at engine speed of 600 rpm or more (1 trip detection logic)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in CKP sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>CKP sensor</ptxt>
+</item>
+<item>
+<ptxt>CKP sensor plate</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0339</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Under conditions (a), (b) and (c), no CKP sensor signal to ECM for 0.05 seconds or more</ptxt>
+<ptxt>(1 trip detection logic):</ptxt>
+<ptxt>(a) Engine speed 1,000 rpm or more</ptxt>
+<ptxt>(b) Starter signal OFF</ptxt>
+<ptxt>(c) 3 seconds or more have elapsed since starter signal switched from ON to OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in CKP sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>CKP sensor</ptxt>
+</item>
+<item>
+<ptxt>CKP sensor plate</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>Reference: Inspection using an oscilloscope.</ptxt>
+<figure>
+<graphic graphicname="A063955E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The correct waveform is as shown.</ptxt>
+</item>
+<item>
+<ptxt>G2+ stands for the Camshaft Position (CMP) sensor signal, and NE+ stands for the CKP sensor signal.</ptxt>
+</item>
+<item>
+<ptxt>Grounding failure of the shielded wire may cause noise in waveforms.</ptxt>
+</item>
+</list1>
+</atten4>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Items</ptxt>
+</entry>
+<entry>
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry align="left">
+<ptxt>CH1: G2+ - G2-</ptxt>
+<ptxt>CH2: NE+ - NE-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Equipment Settings</ptxt>
+</entry>
+<entry align="left">
+<ptxt>5 V/Division,</ptxt>
+<ptxt>20 ms./Division</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry align="left">
+<ptxt>Cranking or idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_02" type-id="64" category="03" proc-id="RM0250U___00007GC00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If there is no signal from the CKP sensor despite the engine revolving, the ECM interprets this as a malfunction of the sensor.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 10 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_03" type-id="65" category="03" proc-id="RM0250U___00007GD00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P0335: CKP sensor range check or rationality</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>CKP sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>CMP sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>3 times</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_04" type-id="66" category="03" proc-id="RM0250U___00007GE00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 1:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Time after starter OFF to ON</ptxt>
+</entry>
+<entry>
+<ptxt>0.3 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Number of CMP sensor signal pulse</ptxt>
+</entry>
+<entry>
+<ptxt>6 times</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry>
+<ptxt>7 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>CMP sensor circuit</ptxt>
+</entry>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 2:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Starter</ptxt>
+</entry>
+<entry>
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry>
+<ptxt>600 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Time after starter from ON to OFF</ptxt>
+</entry>
+<entry>
+<ptxt>3 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_05" type-id="67" category="03" proc-id="RM0250U___00007GF00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Case 1:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Number of CKP sensor signal pulse</ptxt>
+</entry>
+<entry>
+<ptxt>132 or less, and 174 or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Case 2:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Engine speed signal</ptxt>
+</entry>
+<entry>
+<ptxt>No signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_06" type-id="70" category="03" proc-id="RM0250U___00007GG00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CKP sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>CKP sensor output voltage fluctuates while crankshaft revolving </ptxt>
+</item>
+<item>
+<ptxt>34 CKP sensor signals per crankshaft revolution </ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_07" type-id="32" category="03" proc-id="RM0250U___00007GH00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A134999E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_08" type-id="51" category="05" proc-id="RM0250U___00007GI00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If no problem is found through this diagnostic troubleshoot procedure, troubleshoot the engine mechanical systems.</ptxt>
+</item>
+<item>
+<ptxt>Check the engine speed. The engine speed can be checked by using the intelligent tester. Follow the procedure below:</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Start the engine.</ptxt>
+</item>
+<item>
+<ptxt>Turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / ENGINE SPD.</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>The engine speed may be indicated as zero despite the engine revolving normally. This is caused by a lack of NE signals from the Crankshaft Position (CKP) sensor. Alternatively, the engine speed may be indicated as lower than the actual engine speed if the CKP sensor output voltage is insufficient.</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TCW01VX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000TCW01VX_09_0001" proc-id="RM0250U___00007GJ00000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (ENGINE SPD)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / ENGINE SPD.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the values displayed on the tester while the engine is running.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Correct values are displayed.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>To check the engine speed change, display the graph on the tester.</ptxt>
+</item>
+<item>
+<ptxt>If the engine does not start, check the engine speed while cranking.</ptxt>
+</item>
+<item>
+<ptxt>If the engine speed indicated on the tester remains zero (0), there may be an open or short in the Crankshaft Position (CKP) sensor circuit.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TCW01VX_09_0007" fin="true">OK</down>
+<right ref="RM000000TCW01VX_09_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0002" proc-id="RM0250U___00007GK00000">
+<testtitle>INSPECT CRANKSHAFT POSITION SENSOR (RESISTANCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C20 CKP sensor connector.</ptxt>
+<figure>
+<graphic graphicname="G037727E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between terminals 1 and 2.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL3" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1,150 to 1,450 Ω at 20°C (68°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the CKP sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TCW01VX_09_0004" fin="false">OK</down>
+<right ref="RM000000TCW01VX_09_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0004" proc-id="RM0250U___00007GL00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CRANKSHAFT POSITION SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C20 CKP sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A127716E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C20-1 (NE+) - C24-122 (NE+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C20-2 (NE-) - C24-121 (NE-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C20-1 (NE+) or C24-122 (NE+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C20-2 (NE-) or C24-121 (NE-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the CKP sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TCW01VX_09_0005" fin="false">OK</down>
+<right ref="RM000000TCW01VX_09_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0005" proc-id="RM0250U___00007GM00000">
+<testtitle>CHECK SENSOR INSTALLATION (CRANKSHAFT POSITION SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the CKP sensor installation condition.</ptxt>
+<figure>
+<graphic graphicname="BR03795E25" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sensor is installed correctly.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TCW01VX_09_0006" fin="false">OK</down>
+<right ref="RM000000TCW01VX_09_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0006" proc-id="RM0250U___00007GN00000">
+<testtitle>CHECK CRANKSHAFT POSITION SENSOR PLATE (TEETH OF SENSOR PLATE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the teeth of the sensor plate.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sensor plate does not have any cracks or deformation.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TCW01VX_09_0008" fin="false">OK</down>
+<right ref="RM000000TCW01VX_09_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0008">
+<testtitle>REPLACE CRANKSHAFT POSITION SENSOR</testtitle>
+<res>
+<down ref="RM000000TCW01VX_09_0013" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0013" proc-id="RM0250U___00007GO00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0335 or P0339</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<atten4>
+<ptxt>If the engine does not start, replace the ECM.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000TCW01VX_09_0015" fin="true">A</down>
+<right ref="RM000000TCW01VX_09_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0007">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0014">
+<testtitle>REPLACE CRANKSHAFT POSITION SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0010">
+<testtitle>SECURELY REINSTALL SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0011">
+<testtitle>REPLACE CRANKSHAFT POSITION SENSOR PLATE</testtitle>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0012">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000TCW01VX_09_0015">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

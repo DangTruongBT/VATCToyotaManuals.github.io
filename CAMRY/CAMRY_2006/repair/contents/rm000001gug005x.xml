@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001GUG005X" category="D" type-id="303FE" name-id="AC0RY-06" from="200601">
+<name>ACTUATOR CHECK</name>
+<subpara id="RM000001GUG005X_z0" proc-id="RM0250U___00004FN00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>*: For AUTO A/C</ptxt>
+</atten4>
+<step1>
+<ptxt>ACTUATOR CHECK*</ptxt>
+<step2>
+<ptxt>Start the engine and warm it up.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the indicator check (See page <xref label="Seep01" href="RM000000T8Q007X"/>).</ptxt>
+</step2>
+<step2>
+<ptxt>Push the "R/F" switch to perform the actuator check.</ptxt>
+<figure>
+<graphic graphicname="E124466E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Be sure to perform the actuator check after starting the engine.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>As the actuator check is repeated from steps 1 to 10 at 1 second intervals, check the temperature and air flow visually and by hand.</ptxt>
+<figure>
+<graphic graphicname="E124466E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The display blinks at 1 second intervals in the step operation.</ptxt>
+</item>
+<item>
+<ptxt>Push the "OFF" switch to finish panel diagnosis.</ptxt>
+</item>
+<item>
+<ptxt>Push the "AUTO" switch to enter the sensor check mode.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="7" align="center">
+<colspec colname="COL1" colwidth="0.76in"/>
+<colspec colname="COL2" colwidth="0.87in"/>
+<colspec colname="COL3" colwidth="1.14in"/>
+<colspec colname="COL4" colwidth="1.07in"/>
+<colspec colname="COL5" colwidth="1.04in"/>
+<colspec colname="COL6" colwidth="1.32in"/>
+<colspec colname="COL8" colwidth="0.88in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Step No.</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Display Code</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL8" valign="middle">
+<ptxt>Conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Blower Level</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air Mix Damper</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Airflow Vent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air Inlet Damper</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Compressor</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RECIRCULATION / FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RECIRCULATION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B/L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RECIRCULATION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B/L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RECIRCULATION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FOOT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FOOT-0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>17</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>F/D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>31</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100% open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DEF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>If the steps are difficult to read because they change automatically, push the "MODE" switch to display the steps one at a time so that they can be read easily. The items are displayed step by step each time the "MODE" switch is pushed.</ptxt>
+<figure>
+<graphic graphicname="E124466E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Push the "OFF" switch to finish panel diagnosis.</ptxt>
+</item>
+<item>
+<ptxt>Push the "R/F" switch to enter the sensor check mode.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

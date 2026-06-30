@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XN2007X" category="J" type-id="3009M" name-id="TW0JE-01" from="200601">
+<dtccode/>
+<dtcname>ECU Power Source Circuit</dtcname>
+<subpara id="RM000000XN2007X_02" type-id="60" category="03" proc-id="RM0250U___00005J400001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This is the power source for the tire pressure warning ECU.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XN2007X_03" type-id="32" category="03" proc-id="RM0250U___00005J500001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E130363E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XN2007X_04" type-id="51" category="05" proc-id="RM0250U___00005X600001">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>It is necessary to register an ID code after replacing the tire pressure warning valve and transmitter and/or the tire pressure warning ECU (See page <xref label="Seep01" href="RM000000XN1008X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XN2007X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XN2007X_05_0011" proc-id="RM0250U___00005X700001">
+<testtitle>INSPECT FUSE (ECU-IG NO. 1)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ECU-IG NO. 1 fuse from the instrument panel junction block.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XN2007X_05_0012" fin="false">OK</down>
+<right ref="RM000000XN2007X_05_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XN2007X_05_0012" proc-id="RM0250U___00005X800001">
+<testtitle>INSPECT IG1 RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IG1 relay from the instrument panel junction block.</ptxt>
+<figure>
+<graphic graphicname="A092673E31" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(When battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XN2007X_05_0013" fin="false">OK</down>
+<right ref="RM000000XN2007X_05_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XN2007X_05_0013" proc-id="RM0250U___00005X900001">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECU - BATTERY AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E60 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="E129464E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>E60-7 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E60-9 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XN2007X_05_0017" fin="true">OK</down>
+<right ref="RM000000XN2007X_05_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XN2007X_05_0014">
+<testtitle>REPLACE FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000XN2007X_05_0015">
+<testtitle>REPLACE IG1 RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000XN2007X_05_0016">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XN2007X_05_0017">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

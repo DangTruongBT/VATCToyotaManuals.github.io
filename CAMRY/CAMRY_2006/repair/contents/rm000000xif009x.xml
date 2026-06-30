@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIF009X" category="C" type-id="300AB" name-id="BC1N1-01" from="200601">
+<dtccode>C1251/51</dtccode>
+<dtcname>Open in Pump Motor Circuit</dtcname>
+<subpara id="RM000000XIF009X_01" type-id="60" category="03" proc-id="RM0250U___00005NN00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry>
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry>
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1251/51</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Actuator pump motor does not operate properly.</ptxt>
+</item>
+<item>
+<ptxt>Open in actuator pump motor circuit continues for at least 2 seconds.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (GND circuit)</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (Motor circuit)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XIF009X_02" type-id="32" category="03" proc-id="RM0250U___00005NO00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136022E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIF009X_03" type-id="51" category="05" proc-id="RM0250U___00005NP00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>). </ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XIF009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIF009X_04_0002" proc-id="RM0250U___00005NR00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (ABS MOTOR RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the Active Test mode on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>ABS / VSC:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle Condition / Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MOTOR RELAY</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Turns ABS motor relay ON / OFF</ptxt>
+</entry>
+<entry align="left">
+<ptxt>Operating sound of relay (clicking sound) and motor can be heard</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the operating sound of the ABS motor relay and motor when operating it with the intelligent tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The operating sound of the ABS motor relay and motor can be heard.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIF009X_04_0001" fin="false">NG</down>
+<right ref="RM000000XIF009X_04_0003" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIF009X_04_0001" proc-id="RM0250U___00005NQ00000">
+<testtitle>INSPECT SKID CONTROL ECU (GND2 TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C141143E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COLSPEC0" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A26-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIF009X_04_0003" fin="false">OK</down>
+<right ref="RM000000XIF009X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIF009X_04_0003" proc-id="RM0250U___00005NS00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at the speed of 4.3 mph (7 km/h) or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1251/51) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1251/51) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a speed signal of 4 mph (6 km/h) or more is input to the skid control ECU, with the ignition switch on (IG) and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits.</ptxt>
+</item>
+<item>
+<ptxt>If a normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly. Make sure that no DTCs are output.</ptxt>
+</item>
+<item>
+<ptxt>If any DTCs are output while jiggling a connector or wire harness of the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIF009X_04_0004" fin="true">A</down>
+<right ref="RM000000XIF009X_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIF009X_04_0004">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM000000XIF009X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND2 CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIF009X_04_0006">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

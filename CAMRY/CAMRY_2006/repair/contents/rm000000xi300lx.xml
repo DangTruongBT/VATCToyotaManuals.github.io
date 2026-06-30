@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XI300LX" category="D" type-id="303F2" name-id="ST0VR-01" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000XI300LX_z0" proc-id="RM0250U___00009H000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PUSH-BUTTON START FUNCTION DESCRIPTION</ptxt>
+<step2>
+<ptxt>The push-button start function uses a push-type engine switch, which the driver can operate by merely carrying the electrical key. This system consists primarily of the main body ECU, engine switch, ID code box, steering lock ECU, electrical key, ACC relay, IG1 relay, IG2 relay and certification ECU. The main body ECU controls the function. This function operates in cooperation with the smart key system.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF COMPONENT</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine Switch</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Transponder Key Amplifier</ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Transmits engine switch signal to main body ECU.</ptxt>
+</item>
+<item>
+<ptxt>Informs driver of power source mode or system abnormality with illumination of indicator light.</ptxt>
+</item>
+<item>
+<ptxt>Receives ID code and transmits it to certification ECU when key battery is low.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electrical Key</ptxt>
+</entry>
+<entry>
+<ptxt>Receives signals from oscillators and returns ID code to door control receiver.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electrical Key Oscillator</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Console and Rear Seat</ptxt>
+</item>
+</list1>
+</entry>
+<entry>
+<ptxt>Receives request signals from certification ECU and forms detection area in vehicle interior.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry>
+<ptxt>Receives lock/unlock request signals from certification ECU and main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door Control Receiver</ptxt>
+</entry>
+<entry>
+<ptxt>Receives ID code from electrical key and transmits it to certification ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Changes power source mode in 4 stages (off, on (ACC), on (IG), start) in accordance with shift position and state of stop light switch.</ptxt>
+</item>
+<item>
+<ptxt>Controls push-button start function in accordance with signals received from switches and each ECU.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry>
+<ptxt>Certifies ID code received from door control receiver and transmits certification results to ID code box and steering lock ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stop Light Switch</ptxt>
+</entry>
+<entry>
+<ptxt>Outputs state of brake pedal to main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID Code Box</ptxt>
+</entry>
+<entry>
+<ptxt>Receives steering unlock or engine immobiliser unset signals from certification ECU, certifies them, and transmits each unset signal to steering lock ECU or ECM.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Receives engine start request signal from main body ECU, turns ON ST relay, and starts engine.</ptxt>
+</item>
+<item>
+<ptxt>Receives signal from ID code box and performs engine ignition and injection.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SYSTEM FUNCTION</ptxt>
+<ptxt>The electric controls of the push-button start function are described below:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Control</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Outline</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch control</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>When driver operates engine switch with electrical key in driver's possession, certification ECU starts indoor electrical key oscillator, which transmits request signal to electrical key. Upon receiving this signal, the electrical key transmits ID code signal to main body ECU.</ptxt>
+</item>
+<item>
+<ptxt>ID code box verifies check results received from certification ECU via LIN and sends them to main body ECU. Based on these results, main body ECU authorizes operation of engine switch.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry>
+<ptxt>When main body ECU detects malfunction, main body ECU diagnoses and memorizes failed section.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>CONSTRUCTION AND OPERATION</ptxt>
+<figure>
+<graphic graphicname="A109251E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Engine Switch</ptxt>
+<ptxt>The engine switch consists of a momentary type switch, 3 color (amber, green, greenish white) LEDs, and a transponder key amplifier.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The greenish white LED is for illumination.</ptxt>
+</item>
+<item>
+<ptxt>The amber and green LEDs are for the indicator lights. The driver can check the present power source mode and whether the engine can start in accordance with the illumination state of the indicator light.</ptxt>
+</item>
+<item>
+<ptxt>When the main body ECU detects an abnormality in the push-button start function, it makes the amber indicator light flash. If the engine stopped in this state, it may not be possible to restart it.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Indicator Light Condition</ptxt>
+<table pgwide="1">
+<title>Engine switch indicator light condition:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<colspec colname="COL3" colwidth="2.48in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Power Source Mode/Condition</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Indicator Light Condition</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Brake pedal depressed, shift lever in P or N</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Green) (When key and vehicle IDs match)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>on (ACC, IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Amber)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Green)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine running</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock not unlocked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Green) for 15 sec.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Green) for 15 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>System malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Amber) for 15 sec.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Amber) for 15 sec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Main body ECU</ptxt>
+<ptxt>The main body ECU consists of the IG1 and IG2 relay actuation circuits and CPU.</ptxt>
+<atten4>
+<ptxt>Before removing the battery, make sure to turn the engine switch off. The main body ECU constantly stores the present power source mode in its memory. Therefore, if the main body ECU is interrupted by disconnecting the battery, the main body ECU restores the power source mode after the battery is reconnected. For this reason, if the battery is disconnected when the engine switch is not off, the power will be restored to the vehicle at the same time the power is restored to the main body ECU (by reconnecting the battery). </ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>PUSH-BUTTON START FUNCTION OPERATION</ptxt>
+<step2>
+<ptxt>This system has different power source mode patterns depending on the brake pedal condition and shift lever position.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<colspec colname="COL3" colwidth="2.48in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Brake Pedal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Shift Lever</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Power Source Mode Pattern</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P or N position</ptxt>
+</entry>
+<entry>
+<ptxt>When the engine switch is pushed once.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>off → engine start</ptxt>
+</item>
+<item>
+<ptxt>on (ACC) → engine start</ptxt>
+</item>
+<item>
+<ptxt>on (IG) → engine start</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Not depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P position</ptxt>
+</entry>
+<entry>
+<ptxt>Each time the engine switch is pushed.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>off → on (ACC) → on (IG) → off</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except P position</ptxt>
+</entry>
+<entry>
+<ptxt>Each time the engine switch is pushed.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>off → on (ACC) → on (IG) → on (ACC)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P position</ptxt>
+</entry>
+<entry>
+<ptxt>When the engine switch is pushed with power source mode on (IG) (engine running).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>on (IG) → off</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Except P position</ptxt>
+</entry>
+<entry>
+<ptxt>When the engine switch is pushed with power source mode on (IG) (engine running).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>on (IG) → on (ACC)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>When the battery of the key is low, the push-button start function can be operated by holding the key against the engine switch.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>After approximately 1 hour has passed with the engine switch on (ACC) and the shift position in P, the main body ECU will automatically cut the power supply (the power source mode changes to off).</ptxt>
+</item>
+<item>
+<ptxt>The illustration below shows the transition of power source modes.</ptxt>
+<ptxt>Transition of power source mode:</ptxt>
+<figure>
+<graphic graphicname="B138065E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<atten4>
+<ptxt>While the vehicle is being driven normally, operation of the engine switch is disabled. However, if the engine must be stopped in an emergency while the vehicle is being driven, pressing the engine switch for 3 seconds or more stops the engine. Power source mode changes from start to on (ACC).</ptxt>
+</atten4>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>WHEN KEY BATTERY IS LOW</ptxt>
+<step2>
+<ptxt>To operate the push-button start function when the key battery is low, hold the key close to the engine switch with the brake pedal depressed.</ptxt>
+<figure>
+<graphic graphicname="B137947E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The main body ECU transmits a key verification request signal from the stop light switch to the certification ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>The certification ECU does not receive an ID code response from the entry door control receiver, so it actuates the transponder key amplifier built into the engine switch.</ptxt>
+</step2>
+<step2>
+<ptxt>The transponder key amplifier outputs an engine immobiliser radio wave to the key.</ptxt>
+</step2>
+<step2>
+<ptxt>The key receives the radio wave, and returns a radio wave response to the transponder key amplifier.</ptxt>
+</step2>
+<step2>
+<ptxt>The transponder key amplifier combines the key ID codes with the radio wave response, and transmits it to the certification ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>The certification ECU judges and verifies the ID code, and transmits a key verification OK signal to the main body ECU. The buzzer in the combination meter sounds at the same time.</ptxt>
+</step2>
+<step2>
+<ptxt>After the buzzer sounds, if the engine switch is pressed within 5 seconds with the brake pedal not depressed, the power source mode changes to on (ACC) or on (IG), the same as in the normal condition.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>DIAGNOSIS</ptxt>
+</step1>
+<ptxt>The main body ECU can detect malfunctions in the push-button start function when the power source mode is on (IG).</ptxt>
+<ptxt>When the ECU detects a malfunction, the amber indicator light of the engine switch flashes to warn the driver. At the same time, the ECU stores a 5-digit DTC (Diagnostic Trouble Code) in the memory.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The indicator light warning continues for 15 seconds even after the power source mode is changed to off.</ptxt>
+</item>
+<item>
+<ptxt>The DTC can be read by connecting the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>The push-button start function cannot be operated if a malfunction occurs.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

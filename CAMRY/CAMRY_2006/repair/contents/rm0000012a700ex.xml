@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM0000012A700EX" category="U" type-id="3001G" name-id="AV0AS-11" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000012A700EX_z0" proc-id="RM0250U___00004OP00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>RADIO RECEIVER (PREMIUM MODEL)</ptxt>
+<figure>
+<graphic graphicname="E129787E03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.06in"/>
+<colspec colname="COLSPEC1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" align="center" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt> Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specification</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (F26-1) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L-Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL+ (F26-2) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ATX+ (F26-5) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVC-LAN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MUTE (F26-7) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MUTE signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing → Changing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above 3.5 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R+ (F26-8) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L+ (F26-9) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLD (F26-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shielded - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shield ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (F26-11) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accessory (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL- (F26-12) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination (rheostat) signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ANT (F26-13) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of antenna</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radio switch ON and AM or FM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ATX- (F26-15) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVC-LAN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R- (F26-18) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L- (F26-19) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND (F26-20) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SWG (F8-6) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SW1 (F8-7) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch not operated</ptxt>
+<ptxt>→ SEEK+ switch pushed</ptxt>
+<ptxt>→ SEEK- switch pushed</ptxt>
+<ptxt>→ VOL+ switch pushed</ptxt>
+<ptxt>→ VOL- switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 V or more</ptxt>
+<ptxt>→ Approx. 0.5 V</ptxt>
+<ptxt>→ Approx. 0.9 V</ptxt>
+<ptxt>→ Approx. 2.0 V</ptxt>
+<ptxt>→ Approx. 3.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SW2 (F8-8) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch not operated</ptxt>
+<ptxt>→ MODE switch pushed</ptxt>
+<ptxt>→ ON HOOK switch pushed</ptxt>
+<ptxt>→ OFF HOOK switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 V or more</ptxt>
+<ptxt>→ Approx. 0.5 V</ptxt>
+<ptxt>→ Approx. 0.9 V</ptxt>
+<ptxt>→ Approx. 2.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IVO+ (F8-11) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"Bluetooth" handsfree voice signal is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IVO- (F8-12) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"Bluetooth" handsfree voice signal is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLD (F8-13) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shielded - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shield ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ARI (F8-15) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is playing (When stereo jack is used)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ASGN (F8-16) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shield ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ALI (F8-17) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is playing (When stereo jack is used)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUXI (F8-19) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device connection detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is connected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIC- (F11-1) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Microphone voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bluetooth handsfree function is ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIC+ (F11-2) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Microphone voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bluetooth handsfree function is ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (F11-5) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MCVD (F11-7) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Microphone AMP power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch off → on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND (F11-14) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (F11-16) - GND (F26-20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accessory (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch off → on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>RADIO RECEIVER (STANDARD MODEL)</ptxt>
+<figure>
+<graphic graphicname="E119761E04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table frame="all" pgwide="1">
+<tgroup cols="5">
+<colspec colname="col1" colwidth="1.77in"/>
+<colspec colname="col2" align="center" colwidth="1.06in"/>
+<colspec colname="col3" align="center" colwidth="1.42in"/>
+<colspec colname="col4" align="center" colwidth="1.42in"/>
+<colspec colname="col5" align="center" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt> Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specification</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>FR+ (F6-1) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL+ (F6-2) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (F6-3) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accessory (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch off→ on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B (F6-4) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L-Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR- (F6-5) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL- (F6-6) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND (F6-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ANT (F6-8) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of antenna</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radio switch ON and AM or FM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL+ (F6-10) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch OFF → TAIL or HEAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR+ (F7-1) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL+ (F7-2) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR- (F7-3) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL- (F7-5) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination (rheostat) signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch OFF → TAIL or HEAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL- (F7-6) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (F8-3) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed signal from combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (IG).</ptxt>
+<ptxt>Turn drive wheels slowly.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SWG (F8-6) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SW1 (F8-7) - GND (F6-7))</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch not operated</ptxt>
+<ptxt>→ SEEK+ switch pushed</ptxt>
+<ptxt>→ SEEK- switch pushed</ptxt>
+<ptxt>→ VOL+ switch pushed</ptxt>
+<ptxt>→ VOL- switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 V or more</ptxt>
+<ptxt>→ Approx. 0.5 V</ptxt>
+<ptxt>→ Approx. 0.9 V</ptxt>
+<ptxt>→ Approx. 2.0 V</ptxt>
+<ptxt>→ Approx. 3.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SW2 (F8-8) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch not operated → MODE switch pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 V or more → Below 2.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ARI (F8-15) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is playing (When stereo jack is used)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ASGN (F8-16) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shield ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ALI (F8-17) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is playing (When stereo jack is used)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUXI (F8-19) - GND (F6-7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device connection detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is connected</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>STEREO COMPONENT AMPLIFIER (PREMIUM MODEL)</ptxt>
+<figure>
+<graphic graphicname="E126133E02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.06in"/>
+<colspec colname="COLSPEC1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" align="center" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt> Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specification</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MUTE (F19-1) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mute signal from radio receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing → Changing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above 3.5 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L- (F19-2) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L+ (F19-3) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R- (F19-4) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R+ (F19-5) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLD (F19-6) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shielded - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shield ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blow 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TX- (F19-7) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVC-LAN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TX+ (F19-8) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVC-LAN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (F19-11) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed signal from combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (IG).</ptxt>
+<ptxt>Turn drive wheels slowly.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (F19-12) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accessory (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch off → on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INT- (F19-22) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation or "Bluetooth " handsfree voice signal is provided</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INT+ (F19-23) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Navigation or "Bluetooth " handsfree voice signal is provided</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (F18-1) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR+ (F18-2) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL+ (F18-3) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR- (F18-4) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B2 (F18-5) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR- (F18-6) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL- (F18-7) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL+ (F18-8) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL- (F18-9) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR+ (F18-10) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WFL- (F20-1) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WFL+ (F20-2) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WFR- (F20-3) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL+ (F20-4) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G-W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SR+ (F20-5) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND (F20-6) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E (F20-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WFR+ (F20-9) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Front Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL- (F20-10) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SR- (F20-12) - GND (F20-6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Rear Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

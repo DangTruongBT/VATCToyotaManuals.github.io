@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_73040_T00DI" variety="T00DI">
+<name>KEY REMINDER WARNING SYSTEM</name>
+<para id="RM000001PD9001X" category="J" type-id="3011B" name-id="DL128-01" from="200601">
+<dtccode/>
+<dtcname>Door Courtesy Switch Circuit</dtcname>
+<subpara id="RM000001PD9001X_01" type-id="60" category="03" proc-id="RM0250U___00008PL00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU detects the condition of the front door courtesy light switch assembly (driver's side).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001PD9001X_02" type-id="32" category="03" proc-id="RM0250U___00008PM00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128328E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001PD9001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001PD9001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001PD9001X_04_0001" proc-id="RM0250U___00008PN00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select D DOR CTY SW in the DATA LIST and read the value displayed on the tester.</ptxt>
+<table pgwide="1">
+<title>BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver's side door courtesy switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver's side door is open</ptxt>
+<ptxt>OFF: Driver's side door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>ON (Driver's door is open) appears on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PD9001X_04_0002" fin="false">NG</down>
+<right ref="RM000001PD9001X_04_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PD9001X_04_0002" proc-id="RM0250U___00008PO00000">
+<testtitle>INSPECT FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Remove the driver's side front door courtesy light switch (See page <xref label="Seep01" href="RM000001WIV003X"/>).</ptxt>
+<figure>
+<graphic graphicname="B111600E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - Switch body</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Courtesy switch pushed (Door closed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Courtesy switch free (Door open)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PD9001X_04_0003" fin="false">OK</down>
+<right ref="RM000001PD9001X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PD9001X_04_0003" proc-id="RM0250U___00008PP00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (FRONT DOOR COURTESY LIGHT SWITCH - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E7 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B139169E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>N6-1 - E7-24 (DCTY)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>N6-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PD9001X_04_0004" fin="true">OK</down>
+<right ref="RM000001PD9001X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PD9001X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001PD9001X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001PD9001X_04_0006">
+<testtitle>REPLACE FRONT DOOR COURTESY LIGHT SWITCH ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

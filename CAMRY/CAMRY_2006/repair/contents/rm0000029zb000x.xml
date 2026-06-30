@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000029ZB000X" category="C" type-id="801IB" name-id="ME0NM-02" from="200601">
+<dtccode>U0129</dtccode>
+<dtcname>Lost Communication with Skid Control ECU</dtcname>
+<subpara id="RM0000029ZB000X_01" type-id="60" category="03" proc-id="RM0250U___0000B2H00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The combination meter assembly communicates with the ABS and traction actuator (skid control ECU) via the CAN communication lines (CAN No. 1 Bus).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Conditions</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Areas</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of following conditions detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>15 seconds have elapsed since engine started and IG voltage 10.5 V or more</ptxt>
+</item>
+<item>
+<ptxt>No communication with ABS and traction actuator (skid control ECU) continues for 3 seconds or more (No communication with ECM or skid control ECU continues for 60 seconds or more)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS and traction actuator assembly (Skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>CAN communication system</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000029ZB000X_02" type-id="32" category="03" proc-id="RM0250U___0000B2I00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E124226E07" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000029ZB000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000029ZB000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000029ZB000X_04_0001" proc-id="RM0250U___0000B2J00000">
+<testtitle>CONFIRM DTC OUTPUT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the stored DTCs by selecting the following menu items on the tester: DIAGNOSIS / OBD / MOBD / METER / DTC INFO / CLEAR CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at more than 5 km/h (3.1 mph) for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Stop the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTCs (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A (See page <xref label="Seep02" href="RM000002B6V000X"/>)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000029ZB000X_04_0003" fin="true">A</down>
+<right ref="RM0000029ZB000X_04_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000029ZB000X_04_0002">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM0000029ZB000X_04_0003">
+<testtitle>GO TO CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

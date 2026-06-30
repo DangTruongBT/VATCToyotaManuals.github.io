@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W89010X" category="C" type-id="302GH" name-id="AX0YW-01" from="200601">
+<dtccode>P2759</dtccode>
+<dtcname>Torque Converter Clutch Pressure Control Solenoid Control Circuit Electrical (Shift Solenoid Valve SLU)</dtcname>
+<subpara id="RM000000W89010X_01" type-id="60" category="03" proc-id="RM0250U___000037000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The amount of current flow to the solenoid is controlled by the (*) duty ratio of the TCM output signal. The higher the duty ratio becomes, the higher the lock-up hydraulic pressure becomes during the lock-up operation.</ptxt>
+<figure>
+<graphic graphicname="C133227E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<ptxt>(*) Duty Ratio</ptxt>
+<ptxt>The duty ratio is the ratio of the period of continuity in one cycle. For example, if A is the period of continuity in one cycle, and B is the period of non-continuity, then Duty Ratio = A/(A+B) x 100 (%).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="center" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2759</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open or short is detected in shift solenoid valve SLU circuit for 1 second or more while driving (1-trip detection logic).</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in shift solenoid valve SLU circuit</ptxt>
+</item>
+<item>
+<ptxt>Shift solenoid valve SLU</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_02" type-id="64" category="03" proc-id="RM0250U___000037100000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When an open or short in a shift solenoid valve (SLU) circuit is detected, the TCM determines there is a malfunction. The TCM will turn on the MIL and store this DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_10" type-id="65" category="03" proc-id="RM0250U___000037600000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2759: Shift solenoid valve SLU/Range check</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_11" type-id="66" category="03" proc-id="RM0250U___000037700000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ALL:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (A):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>12 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (A):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V or more and less than 12 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CPU commanded duty</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 75%</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_12" type-id="67" category="03" proc-id="RM0250U___000037800000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100% or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_13" type-id="70" category="03" proc-id="RM0250U___000037900000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 100%</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_07" type-id="32" category="03" proc-id="RM0250U___000037200000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133261E06" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W89010X_08" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000W89010X_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W89010X_09_0001" proc-id="RM0250U___000037300000">
+<testtitle>INSPECT TRANSMISSION WIRE (SLU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM from the transaxle.</ptxt>
+<figure>
+<graphic graphicname="C133212E07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>11 (SLU+) - 5 (SLU-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>Check for short</subtitle>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>11 (SLU+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5 (SLU-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W89010X_09_0003" fin="false">NG</down>
+<right ref="RM000000W89010X_09_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W89010X_09_0003" proc-id="RM0250U___000037500000">
+<testtitle>INSPECT SHIFT SOLENOID VALVE SLU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the shift solenoid valve SLU.</ptxt>
+<figure>
+<graphic graphicname="G020767E09" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect a positive (+) lead through a 21 W bulb to terminal 2 and a negative (-) lead to terminal 1 of the solenoid valve connector, then check the movement of the valve.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The solenoid makes an operating sound.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W89010X_09_0004" fin="true">OK</down>
+<right ref="RM000000W89010X_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W89010X_09_0004">
+<testtitle>REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM000000W89010X_09_0005">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000W89010X_09_0007">
+<testtitle>REPLACE SHIFT SOLENOID VALVE SLU</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72V8M_T003J" variety="T003J">
+<name>BRAKE ACTUATOR (for ADVICS Made)</name>
+<para id="RM0000013P9004X" category="G" type-id="8000T" name-id="BC08V-05" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000013P9004X_01" type-id="01" category="01">
+<s-1 id="RM0000013P9004X_01_0001" proc-id="RM0250U___00000MA00000">
+<ptxt>CONNECT INTELLIGENT TESTER</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E08" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Start the engine and run it at idle .</ptxt>
+</s2>
+<s2>
+<ptxt>Select the Active Test mode on the intelligent tester.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000013P9004X_01_0002" proc-id="RM0250U___00000MB00000">
+<ptxt>INSPECT ACTUATOR MOTOR OPERATION</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<ptxt>Do not keep a motor relay on continuously for more than 5 seconds. When operating it continuously, set an interval of more than 20 seconds.</ptxt>
+</atten3>
+<s2>
+<ptxt>With the motor relay on, check the actuator motor operation sounds.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the motor relay off.</ptxt>
+</s2>
+<s2>
+<ptxt>Depress the brake pedal and hold it for approximately 15 seconds. Check that the brake pedal cannot be depressed farther.</ptxt>
+</s2>
+<s2>
+<ptxt>With the motor relay on, check that the pedal does not pulsate.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the motor relay off and release the brake pedal.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000013P9004X_01_0003" proc-id="RM0250U___00000MC00000">
+<ptxt>INSPECT RIGHT FRONT WHEEL OPERATION</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<ptxt>Do not turn on a solenoid in a manner different than described below.</ptxt>
+</atten3>
+<s2>
+<ptxt>Depress the brake pedal and hold it.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the SFRH and SFRR solenoids on simultaneously, and check that the pedal cannot be depressed.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the SFRH and SFRR solenoids off simultaneously, and check that the pedal can be depressed.</ptxt>
+<atten3>
+<ptxt>Do not keep the motor relay on continuously for more than 5 seconds. When operating them continuously, set an interval of more than 20 seconds.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Turn the motor relay on and check that the pedal returns.</ptxt>
+<atten3>
+<ptxt>Do not keep the motor relay on continuously for more than 5 seconds. When operating it continuously, set an interval of more than 20 seconds.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Turn the motor relay off and release the brake pedal.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000013P9004X_01_0004" proc-id="RM0250U___00000MD00000">
+<ptxt>INSPECT OTHER WHEEL OPERATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using the same procedure, check the solenoids of the other wheels.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Left front wheel: SFLH, SFLR </ptxt>
+</item>
+<item>
+<ptxt>Right rear wheel: SRRH, SRRR </ptxt>
+</item>
+<item>
+<ptxt>Left rear wheel: SRLH, SRLR </ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

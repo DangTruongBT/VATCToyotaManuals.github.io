@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000000XHY00AX" category="D" type-id="304JI" name-id="BC02O-10" from="200601">
+<name>FREEZE FRAME DATA</name>
+<subpara id="RM000000XHY00AX_z0" proc-id="RM0250U___00008CC00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FREEZE FRAME DATA</ptxt>
+<step2>
+<ptxt>Whenever an ABS DTC is detected, the skid control ECU stores the current vehicle (sensor) state as Freeze Frame Data.</ptxt>
+<ptxt>The skid control ECU stores the number of times (maximum: 31) the ignition switch has been turned from off to on (IG) since the last time the ABS was activated.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>However, if the vehicle is stopped or at a low speed (4.3 mph (7 km/h) or less), or if a DTC is detected, the skid control ECU will stop counting the number.</ptxt>
+</item>
+<item>
+<ptxt>Freeze Frame Data at the time the ABS operates:</ptxt>
+<ptxt>The skid control ECU stores and updates data whenever the ABS system operates.</ptxt>
+<ptxt>When the ECU stores data at the time a DTC is detected, the data stored during ABS operation is erased.</ptxt>
+</item>
+<item>
+<ptxt>Freeze Frame Data at the time a DTC is detected:</ptxt>
+<ptxt>When the skid control ECU stores data at the time a DTC is detected, no updates will be performed until the data is cleared.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Select the "DTC INFO" on the tester display.</ptxt>
+</step2>
+<step2>
+<ptxt>On the DTC data display screen, select the DTC data display with "*".</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<colspec colname="COL3" colwidth="2.48in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed reading</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 mph (0 km/h), Max.: 202 mph (326.4 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STOP LAMP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch ON: ON, OFF: OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#IG ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of operations of engine switch on (IG) after storing freeze frame data</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 to 31</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MAS CYL PRESS 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master cylinder pressure sensor reading</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal released: 0.3 to 0.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M/C PRESS GRADE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master cylinder pressure sensor change</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -30 MPa/s, Max.: 225 MPa/s</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>YAW RATE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate sensor reading</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -128 deg/s, Max.: 127 deg/s</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING SEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering angle sensor reading</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Left turn: Increase</ptxt>
+<ptxt>Right turn: Decrease</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD GRADE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed grade</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -25.11 m/s<sup>2</sup>, Max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BUZZER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control buzzer signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control buzzer ON: ON, OFF: OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARKING BRAKE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking brake switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking brake switch ON: ON, OFF: OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENGINE TORQUE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Real engine torque</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -1024 Nm, Max.: 1023 Nm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 mph (0 km/h), Max.: 202 mph (326.4 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 mph (0 km/h), Max.: 202 mph (326.4 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 mph (0 km/h), Max.: 202 mph (326.4 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL wheel speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 mph (0 km/h), Max.: 202 mph (326.4 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LATERAL G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lateral G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -25.11 m/s<sup>2</sup>, Max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GEAR POSITION *</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gear position information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FAIL</ptxt>
+<ptxt>1st</ptxt>
+<ptxt>2nd</ptxt>
+<ptxt>3rd</ptxt>
+<ptxt>4th</ptxt>
+<ptxt>5th</ptxt>
+<ptxt>6th</ptxt>
+<ptxt>P, N</ptxt>
+<ptxt>R</ptxt>
+<ptxt>NOT R</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LEVER POSITION *</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position information</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FAIL</ptxt>
+<ptxt>1st</ptxt>
+<ptxt>2nd</ptxt>
+<ptxt>3rd</ptxt>
+<ptxt>4th</ptxt>
+<ptxt>5th</ptxt>
+<ptxt>6th/B</ptxt>
+<ptxt>D/M</ptxt>
+<ptxt>P, N</ptxt>
+<ptxt>R</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPERATED SYSTEM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operated system status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS activated: ABS</ptxt>
+<ptxt>VSC activated: VSC</ptxt>
+<ptxt>TRAC activated: TRAC</ptxt>
+<ptxt>BA activated: BA</ptxt>
+<ptxt>PB activated: PB</ptxt>
+<ptxt>Fail safe mode activated: FAIL</ptxt>
+<ptxt>No system activated: NON</ptxt>
+<ptxt>System prohibited: SYS</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FREEZE TIME</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Elapsed time after freeze trigger</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: 0 ms, Max.: 500 ms</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TROUBLE CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Freeze frame DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Displays to output DTC</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INSPECTION MODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OTHER: Normal,</ptxt>
+<ptxt>INSPECT: Service</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: Automatic Transaxle</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

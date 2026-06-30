@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W83016X" category="C" type-id="302G2" name-id="AT12N-01" from="200601">
+<dtccode>P2714</dtccode>
+<dtcname>Pressure Control Solenoid "D" Performance (Shift Solenoid Valve SLT)</dtcname>
+<subpara id="RM000000W83016X_01" type-id="61" category="03" proc-id="RM0250U___000035300000">
+<name>SYSTEM DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The linear solenoid valve (SLT) controls the transmission line pressure for smooth transmission operation based on signals from the throttle position sensor and the vehicle speed sensor. The TCM adjusts the duty ratio (*) of the SLT solenoid valve to control hydraulic line pressure coming from the primary regulator valve. Appropriate line pressure assures smooth shifting with varying engine outputs.</ptxt>
+<ptxt>(*): Duty Ratio</ptxt>
+<ptxt>The duty ratio is the ratio of the period of continuity in one cycle. For example, if A is the period of continuity in one cycle, and B is the period of non-continuity, then</ptxt>
+<ptxt>Duty Ratio= A/(A+B) x 100 (%)</ptxt>
+<figure>
+<graphic graphicname="C133225E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="center" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2714</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The ECM detects a malfunction in the shift solenoid valve SLT (ON side) according to the difference in the speed between the turbine and the output shaft, and also by the transmission fluid pressure. (2-trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Shift solenoid valve SLT remains open</ptxt>
+</item>
+<item>
+<ptxt>Shift solenoid valve SL1, SL2, SL3 or SL4 remains open or closed</ptxt>
+</item>
+<item>
+<ptxt>Valve body is blocked</ptxt>
+</item>
+<item>
+<ptxt>Automatic transaxle (clutch, brake or gear, etc.)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W83016X_02" type-id="64" category="03" proc-id="RM0250U___000035400000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The TCM calculates the amount of heat absorbed by the friction material based on the difference in revolution (clutch slippage) between the turbine and output shaft. The TCM turns on the MIL and outputs this DTC when the amount of heat absorption exceeds the specified value.</ptxt>
+<ptxt>When the shift solenoid valve SLT remains on, oil pressure goes down and clutch engagement force decreases.</ptxt>
+<atten3>
+<ptxt>If driving continues under these conditions, the clutches will burn out and the vehicle will no longer be drivable.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000W83016X_08" type-id="65" category="03" proc-id="RM0250U___000035G00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2714: Shift solenoid valve SLT/ON malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLT</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W83016X_09" type-id="66" category="03" proc-id="RM0250U___000035H00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ON malfunction:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COLSPEC2" colwidth="3.04in"/>
+<colspec colname="COLSPEC3" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL1 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL2 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL3 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL4 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLT circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (Engine coolant temperature) sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Knock control sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETCS (Electric throttle control system)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>System is not down</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Transmission range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"D"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starting</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-10°C (5°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Input turbine torque</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100 N*m or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W83016X_10" type-id="67" category="03" proc-id="RM0250U___000035I00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ON malfunction:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Detection criteria</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Threshold</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed - Output speed x Gear ratio at output speed 1,000 rpm (Condition varies with output speed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>75 rpm or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W83016X_06" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000W83016X_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W83016X_07_0001" proc-id="RM0250U___000035500000">
+<testtitle>CHECK OTHER DTCS OUTPUT (IN ADDITION TO DTC P2714)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect  the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DTC INFO / CURRENT CODES".</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using  the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only "P2714" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"P2714" and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If a solenoid is stuck ON, DTCs for several solenoids including the malfunctioning solenoid will be detected.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W83016X_07_0002" fin="false">B</down>
+<right ref="RM000000W83016X_07_0020" fin="true">A</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0002" proc-id="RM0250U___000035600000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (SHIFT SOLENOID VALVE SLT)</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Perform the test at the normal operating ATF (Automatic Transmission Fluid) temperature: 50 to 80°C (122 to 176°F)</ptxt>
+</item>
+<item>
+<ptxt>Be sure to prevent SST hose from interfering with the exhaust pipe.</ptxt>
+</item>
+<item>
+<ptxt>This check must be conducted after checking and adjusting the engine.</ptxt>
+</item>
+<item>
+<ptxt>Perform the test with the A/C OFF.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows relays, VSVs, actuators and other items to operate without removing any parts. Performing the ACTIVE TEST as the first step in troubleshooting is one method to save labor time.</ptxt>
+<ptxt>It is possible to display the DATA LIST during the ACTIVE TEST.</ptxt>
+</atten4>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Lift the vehicle up.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the test plug on the transmission case center right side and connect SST.</ptxt>
+<figure>
+<graphic graphicname="C133223E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<sst>
+<sstitem>
+<s-number>09992-00095</s-number>
+<s-subnumber>09992-00231</s-subnumber>
+<s-subnumber>09992-00271</s-subnumber>
+</sstitem>
+</sst>
+<test1>
+<ptxt>Lower the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Fully apply the parking brake and chock the 4 wheels.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Warm up the ATF (Automatic Transmission Fluid).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the line pressure when the engine is idling.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn on the tester.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following items: DIAGNOSIS / OBD/MOBD / ECT / ACTIVE TEST / SOLENOID (SLT)".</ptxt>
+</test1>
+<test1>
+<ptxt>Follow the instructions on the tester and perform the ACTIVE TEST.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the line pressure with SST.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SOLENOID (SLT)*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid SLT and raise the line pressure.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>OFF: Line pressure up (When the active test of "SOLENOID (SLT)" is performed, the TCM commands the SLT solenoid to turn off).</ptxt>
+<ptxt>ON: No action (normal operation)</ptxt>
+</atten4>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: "SOLENOID (SLT)" in the ACTIVE TEST is performed to check that the line pressure changes by connecting the SST to the automatic transaxle. The same SST is used in the HYDRAULIC TEST (See page <xref label="Seep01" href="RM000000W7B025X"/>) as well.</ptxt>
+<atten4>
+<ptxt>The pressure values in ACTIVE TEST and HYDRAULIC TEST are different from each other.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The line pressure changes as specified when performing the ACTIVE TEST.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W83016X_07_0018" fin="false">OK</down>
+<right ref="RM000000W83016X_07_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0018" proc-id="RM0250U___000035D00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (SHIFTING TEST)</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<ptxt>This test should always be performed with at least 2 people.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows relays, VSVs, actuators and other items to be operated without removing any parts. Performing the ACTIVE TEST as the first step in troubleshooting is one method to save labor time.</ptxt>
+<ptxt>The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<test1>
+<ptxt>Warm up the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn on the tester.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / ACTIVE TEST".</ptxt>
+</test1>
+<test1>
+<ptxt>Follow the instructions on the tester and read the ACTIVE TEST.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SHIFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid valve and set the each shift position by yourself.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+</list1>
+<ptxt>[Others]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Press "→" button: Shift up</ptxt>
+</item>
+<item>
+<ptxt>Press "←" button: Shift down</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>It is possible to check the operation of the shift solenoid valves.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>This test can be conducted when the vehicle is stopped.</ptxt>
+</item>
+<item>
+<ptxt>When shifting gears using the Active Test function, do not operate the accelerator pedal for 2 seconds before and after shifting gears.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>The shift position commanded by the TCM is shown on the DATA LIST/SHIFT display on the intelligent tester.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the vehicle speed and the gear position when the engine speed is 1,000 rpm.</ptxt>
+<atten4>
+<ptxt>Because the torque converter clutch has not engaged, it may be difficult to obtain the speeds specified in 4th, 5th, and 6th gear, however a difference of speed should still be evident following each gear change.</ptxt>
+</atten4>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<tgroup cols="6" align="center">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL4" colwidth="1.18in"/>
+<colspec colname="COL5" colwidth="1.18in"/>
+<colspec colname="COL6" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6th</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>5 to 7.5 mph (8 to 12 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9.3 to 11.8 mph (15 to 19 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>13.0 to 15.5 mph (21 to 25 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>19.3 to 21.7 mph (31 to 35 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>27.3 to 29.8 mph (44 to 48 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>32.3 to 34.8 mph (52 to 56 km/h)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Compare the TCM gear shift command and the actual gear position.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="9">
+<colspec colname="COL2" colwidth="1.34in"/>
+<colspec colname="COL3" colwidth="0.68in"/>
+<colspec colname="COL4" colwidth="0.68in"/>
+<colspec colname="COL5" colwidth="0.68in"/>
+<colspec colname="COL6" colwidth="0.68in"/>
+<colspec colname="COL7" colwidth="0.68in"/>
+<colspec colname="COL8" colwidth="0.68in"/>
+<colspec colname="COLSPEC0" colwidth="0.68in"/>
+<colspec colname="COL9" colwidth="0.98in"/>
+<thead>
+<row>
+<entry namest="COL2" nameend="COL3" morerows="1" valign="middle" align="center">
+<ptxt>Actuator gear position under malfunction</ptxt>
+</entry>
+<entry namest="COL4" nameend="COLSPEC0" valign="middle" align="center">
+<ptxt>TCM gear shift command</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6th</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Shift solenoid SL1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stuck ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stuck OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Shift solenoid SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stuck ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6th</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stuck OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Shift solenoid SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stuck ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6th</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stuck OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Shift solenoid SL4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stuck ON<sup>*3</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stuck OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*1</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Shift solenoid SLT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stuck ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>N<sup>*2</sup>
+</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>E</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stuck OFF<sup>*3</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6th</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: Neutral</ptxt>
+</item>
+<item>
+<ptxt>*2: If the shift solenoid SLT is stuck on, the line pressure will be low. Therefore, the amount of torque that can be transmitted by each gear is lower than the normal limit. When the engine power exceeds this lowered limit, the engine speed will increase freely.</ptxt>
+</item>
+<item>
+<ptxt>*3: When shift solenoid SLT is stuck OFF, gear shifting is normal.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W83016X_07_0020" fin="false">E</down>
+<right ref="RM000000W83016X_07_0023" fin="true">A</right>
+<right ref="RM000000W83016X_07_0024" fin="true">B</right>
+<right ref="RM000000W83016X_07_0025" fin="true">C</right>
+<right ref="RM000000W83016X_07_0026" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0023">
+<testtitle>GO TO DTC CHART (RELATED SHIFT SOLENOID VALVE (SL1) PERFORMANCE DTC P0746)</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0024">
+<testtitle>GO TO DTC CHART (RELATED SHIFT SOLENOID VALVE (SL2) PERFORMANCE DTC P0776)</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0025">
+<testtitle>GO TO DTC CHART (RELATED SHIFT SOLENOID VALVE (SL3) PERFORMANCE DTC P0796)</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0026">
+<testtitle>GO TO DTC CHART (RELATED SHIFT SOLENOID VALVE (SL4) PERFORMANCE DTC P2808)</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0020" proc-id="RM0250U___000035F00000">
+<testtitle>INSPECT SHIFT SOLENOID VALVE SLT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the shift solenoid valve SLT.</ptxt>
+<figure>
+<graphic graphicname="G020767E08" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect a positive (+) lead through a 21 W bulb to terminal 2 and a negative (-) lead to terminal 1 of the solenoid valve connector, then check the movement of the valve.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The solenoid makes an operating sound.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W83016X_07_0003" fin="false">OK</down>
+<right ref="RM000000W83016X_07_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0003" proc-id="RM0250U___000035700000">
+<testtitle>INSPECT TRANSMISSION VALVE BODY ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>There are no foreign objects on each valve.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000W83016X_07_0004" fin="false">OK</down>
+<right ref="RM000000W83016X_07_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0004" proc-id="RM0250U___000035800000">
+<testtitle>INSPECT TORQUE CONVERTER CLUTCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the torque converter clutch assembly (See page <xref label="Seep01" href="RM000000YXK00FX"/>).</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The torque converter clutch operates normally.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000W83016X_07_0005" fin="true">OK</down>
+<right ref="RM000000W83016X_07_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0005">
+<testtitle>REPLACE AUTOMATIC TRANSMISSION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0007">
+<testtitle>REPLACE SHIFT SOLENOID VALVE SLT</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0008">
+<testtitle>REPLACE TRANSMISSION VALVE BODY ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000W83016X_07_0009">
+<testtitle>REPLACE TORQUE CONVERTER CLUTCH ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

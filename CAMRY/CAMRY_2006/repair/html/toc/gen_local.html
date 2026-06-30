@@ -1,0 +1,77 @@
+<!-- $Id: gen_local.html,v 1.6 2004/04/26 05:06:15 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>General Information Local Navi</title>
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (parent.g_paraId==null) return;
+	if (parent.g_objXml==null) return;
+
+	var paraName = parent.getParagraphNameList(parent.g_paraId, "name", parent.g_objXml)[0];
+	para.innerHTML = paraName;
+	if (parent.g_category=="M" || parent.g_category=="N") { 	// PARATYPE REPAIR
+		setParaProcedure(parent.g_objXml, this.document);
+	} else {                                                  // SUBPARA
+		setSubparaProcedure(parent.g_subparaId, parent.g_objXml, this.document);
+		setSiblings(parent.g_subparaId, parent.g_objXml);
+	}
+}
+
+function setParaProcedure(objPara, doc) {
+	parent.display(objPara, parent.g_lclXsl, disp, null);
+	var topProcId = objPara.selectSingleNode("//s-1/@id");
+	if (topProcId!=null) {
+		parent.selectId(topProcId.nodeTypedValue, doc);
+	}
+}
+
+function setSubparaProcedure(subparaId, objXml, doc) {
+	var args = new parent.Hashtable();
+	args.put("subparaId", subparaId);
+	parent.display(objXml, parent.g_lclXsl, disp, args);
+	var aTag = doc.getElementsByTagName("a");
+	if (aTag!=null && aTag.length > 0) {
+		parent.selectId(aTag[0].id, doc);
+	}
+}
+
+function setSiblings(extSubparaId, objXml) {
+	var subparaList = objXml.selectNodes("//subpara[@id!='"+extSubparaId+"']");
+	var tagBuf = "";
+	for (var i=0; i<subparaList.length; i++) {
+		var subpara = subparaList.item(i);
+		var subparaName = subpara.selectSingleNode("name");
+		if (subparaName==null) {
+			subparaName = subpara.selectSingleNode("content5/title");
+		}
+		var subparaId = subpara.getAttribute("id");
+		tagBuf=tagBuf+"<a href=\"#\" class=\"paras\" onClick=\"replaceSubParagraph('"+subparaId+"', this.document)\">"+subparaName.nodeTypedValue+"</a><br/>";
+	}
+	paras.innerHTML = tagBuf;
+}
+
+function replaceSubParagraph(subparaId, doc) {
+	parent.g_subparaId = subparaId;
+	setSubparaProcedure(subparaId, parent.g_objXml, this.document);
+	setSiblings(subparaId, parent.g_objXml);
+	parent.sts.setMemoLink(subparaId);
+	parent.contents.init();
+}
+parent.mainoffset=-20;		
+</script>
+</head>
+<body onLoad="init();parent.resize(document)" onResize="parent.resize(document)">
+	<p class="title-name" id="para"></p>
+	<div id="disp"></div>
+	<div id="paras" class="sub-items"></div>
+</body>
+</html>

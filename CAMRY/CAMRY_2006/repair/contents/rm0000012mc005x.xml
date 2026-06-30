@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM0000012MC005X" category="C" type-id="302HX" name-id="ES3XP-01" from="200601">
+<dtccode>P0450</dtccode>
+<dtcname>Evaporative Emission Control System Pressure Sensor / Switch</dtcname>
+<dtccode>P0451</dtccode>
+<dtcname>Evaporative Emission Control System Pressure Sensor Range / Performance</dtcname>
+<dtccode>P0452</dtccode>
+<dtcname>Evaporative Emission Control System Pressure Sensor / Switch Low Input</dtcname>
+<dtccode>P0453</dtccode>
+<dtcname>Evaporative Emission Control System Pressure Sensor / Switch High Input</dtcname>
+<subpara id="RM0000012MC005X_01" type-id="76" category="03" proc-id="RM0250U___00007I400000">
+<name>DTC SUMMARY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="0.50in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="2.12in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="0.99in"/>
+<colspec colname="COL6" colwidth="0.63in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Monitoring Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunction Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Ares</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Timing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Logic</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0450</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor voltage fluctuation abnormal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor output voltage rapidly fluctuates beyond upper and lower malfunction thresholds for 0.5 seconds.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Canister pump module</ptxt>
+</item>
+<item>
+<ptxt>EVAP system hose (pipe from air inlet port to canister pump module, canister filter, fuel tank vent hose)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>EVAP monitoring (ignition off)</ptxt>
+</item>
+<item>
+<ptxt>Ignition ON position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>1 trip detection logic</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>P0451</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor noise</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor output voltage fluctuates frequently within certain time period.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Canister pump module</ptxt>
+</item>
+<item>
+<ptxt>Connector/wire harness</ptxt>
+<ptxt>(Canister pump module - ECM)</ptxt>
+</item>
+<item>
+<ptxt>EVAP system hose (pipe from air inlet port to canister pump module, canister filter, fuel tank vent hose)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>EVAP monitoring (ignition off)</ptxt>
+</item>
+<item>
+<ptxt>Engine running</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>2 trip detection logic</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Canister pressure sensor signal becomes fixed/flat</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor output voltage does not vary within certain time period.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Canister pump module</ptxt>
+</item>
+<item>
+<ptxt>Connector/wire harness</ptxt>
+<ptxt>(Canister pump module - ECM)</ptxt>
+</item>
+<item>
+<ptxt>EVAP system hose (pipe from air inlet port to canister pump module, canister filter, fuel tank vent hose)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>EVAP monitoring (ignition off)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>2 trip detection logic</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0452</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor low input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure less than 42.1 kPa for 0.5 seconds.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Canister pump module</ptxt>
+</item>
+<item>
+<ptxt>Connector/wire harness</ptxt>
+<ptxt>(Canister pump module - ECM)</ptxt>
+</item>
+<item>
+<ptxt>EVAP system hose (pipe from air inlet port to canister pump module, canister filter, fuel tank vent hose)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Ignition ON position</ptxt>
+</item>
+<item>
+<ptxt>EVAP monitoring (ignition off)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>1 trip detection logic</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0453</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor high input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure more than 123.8 kPa for 0.5 seconds.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Canister pump module</ptxt>
+</item>
+<item>
+<ptxt>Connector/wire harness</ptxt>
+<ptxt>(Canister pump module - ECM)</ptxt>
+</item>
+<item>
+<ptxt>EVAP system hose (pipe from air inlet port to canister pump module, canister filter, fuel tank vent hose)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Ignition ON position</ptxt>
+</item>
+<item>
+<ptxt>EVAP monitoring (ignition off)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>1 trip detection logic</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The canister pressure sensor is built into the canister pump module.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_02" type-id="60" category="03" proc-id="RM0250U___00007I500000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The description can be found in the EVAP (Evaporative Emission) System (See page <xref label="Seep01" href="RM000000YEQ014X_02"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_03" type-id="64" category="03" proc-id="RM0250U___00007I600000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A115543E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<list1 type="ordered">
+<item>
+<ptxt>DTC P0450: Canister pressure sensor abnormal fluctuation</ptxt>
+<ptxt>If the canister pressure sensor output [pressure] rapidly fluctuates between less than 42.1 kPa-a (315.9 mmHg-a) and more than 123.8 kPa-a (928.4 mmHg-a), the ECM interprets this as an open or short circuit malfunction in the canister pressure sensor or its circuit, and stops the EVAP (Evaporative Emission) system monitor. The ECM then illuminates the MIL and sets the DTC (1 trip detection logic).</ptxt>
+</item>
+<item>
+<ptxt>DTC P0451: Canister pressure sensor noise or fixed/flat</ptxt>
+<ptxt>If the canister pressure sensor voltage output fluctuates rapidly for 10 seconds, the ECM stops the EVAP system monitor. The ECM interprets this as noise from the canister pressure sensor, and stops the EVAP system monitor. The ECM then illuminates the MIL and sets the DTC.</ptxt>
+<ptxt>Alternatively, if the sensor voltage output does not change for 10 seconds, the ECM interprets this as the sensor being fixed/flat, and stops the monitor. The ECM then illuminates the MIL and sets the DTC.</ptxt>
+<ptxt>(Both the malfunctions are detected by 2 trip detection logic).</ptxt>
+</item>
+<item>
+<ptxt>DTC P0452: Canister pressure sensor voltage low</ptxt>
+<ptxt>If the canister pressure sensor output [pressure] is below 42.1 kPa-a (315.9 mmHg-a), the ECM interprets this as an open or short circuit malfunction in the canister pressure sensor or its circuit, and stops the EVAP system monitor. The ECM then illuminates the MIL and sets the DTC (1 trip detection logic).</ptxt>
+</item>
+<item>
+<ptxt>DTC P0453: Canister pressure sensor voltage high</ptxt>
+<ptxt>If the canister pressure sensor output [pressure] is 123.8 kPa-a (928.4 mmHg-a) or more, the ECM interprets this as an open or short circuit malfunction in the canister pressure sensor or its circuit, and stops the EVAP system monitor. The ECM then illuminates the MIL and sets the DTC (1 trip detection logic).</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_08" type-id="65" category="03" proc-id="RM0250U___00007IH00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pump module</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle: P0451 sensor fixed/flat</ptxt>
+<ptxt>Continuous: P0451 sensor noise, P0450, P0452 and P0453</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5 seconds: P0450, P0452 and P0453</ptxt>
+<ptxt>2 minutes: P0451</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate: P0450, P0452 and P0453</ptxt>
+<ptxt>2 driving cycles: P0451</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_09" type-id="66" category="03" proc-id="RM0250U___00007II00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0451 (Noise monitor):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Atmospheric pressure (absolute pressure)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>70 to 110 kPa-a (525 to 825 mmHg-a)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intake air temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.4 to 35°C (40 to 95°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EVAP pressure sensor malfunction (P0450, P0452, 0453)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions A or B is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. Engine condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. Time after key off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5, 7 or 9.5 hours</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0451 (Fixed/flat monitor):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intake air temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.4 to 35°C (40 to 95°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EVAP pressure sensor malfunction (P0450, P0452, 0453)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Atmospheric pressure (absolute pressure)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>70 to 110 kPa-a (525 to 825 mmHg-a)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after key off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5, 7 or 9.5 hours</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0450, P0452 and P0453:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of following conditions is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(a) or (b)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Soak timer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_10" type-id="67" category="03" proc-id="RM0250U___00007IJ00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0450: Canister pressure sensor chattering</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>EVAP pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 42.1 kPa-a (315.9 mmHg-a), or more than 123.8 kPa-a (928.4 mmHg-a)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0451: Canister pressure sensor noise</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Frequency that EVAP pressure change 0.3 kPa-g (2.25 mmHg-g) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 times or more in 10 seconds</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0451: Canister pressure sensor fixed/flat</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>EVAP pressure change during reference pressure measurement</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.65 kPa-g (4.88 mmHg-g)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0452: Canister pressure sensor low voltage</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>EVAP pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 42.1 kPa-a (315.9 mmHg-a)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0453: Canister pressure sensor high voltage</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>EVAP pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 123.8 kPa-a (928.4 mmHg-a)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_05" type-id="32" category="03" proc-id="RM0250U___00007I700000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132282E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_06" type-id="51" category="05" proc-id="RM0250U___00007I800000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When a vehicle is brought into the workshop, leave it as it is. Do not change the vehicle condition. For example, do not tighten the fuel cap.</ptxt>
+</item>
+<item>
+<ptxt>Do not disassemble the canister pump module.</ptxt>
+</item>
+<item>
+<ptxt>An intelligent tester is required to conduct the following diagnostic troubleshooting procedure.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012MC005X_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000012MC005X_07_0005" proc-id="RM0250U___00007IC00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CANISTER PUMP MODULE - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+<figure>
+<graphic graphicname="A135029E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance of the canister connector.</ptxt>
+</test1>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>N17-4 (VCC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>N17-3 (VOUT) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N17-2 (SGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>100 Ω or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.11in"/>
+<colspec colname="COL3" colwidth="1.02in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Voltage and resistance within standard ranges</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Voltage and resistance outside standard ranges</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012MC005X_07_0006" fin="false">A</down>
+<right ref="RM0000012MC005X_07_0007" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012MC005X_07_0006" proc-id="RM0250U___00007ID00000">
+<testtitle>REPLACE CHARCOAL CANISTER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the canister assembly (See page <xref label="Seep01" href="RM000001OOG002X"/>).</ptxt>
+<atten3>
+<ptxt>When replacing the canister, check the canister pump module interior and related pipes for water, fuel and other liquids. If liquids are present, check for disconnections and/or cracks in the following: 1) the pipe from the air inlet port to the canister pump module; 2) the canister filter; and 3) the fuel tank vent hose.</ptxt>
+</atten3>
+<figure>
+<graphic graphicname="A132283E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="A132284E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</test1>
+</content6>
+<res>
+<right ref="RM0000012MC005X_07_0009" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012MC005X_07_0007" proc-id="RM0250U___00007IE00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CANISTER PUMP MODULE - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+<figure>
+<graphic graphicname="A140651E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>N17-4 (VCC) - C24-70 (VCPP)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N17-3 (VOUT) - C24-71 (PPMP)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N17-2 (SGND) - C24-94 (EPPM)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>N17-4 (VCC) or C24-70 (VCPP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N17-3 (VOUT) or C24-71 (PPMP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N17-2 (SGND) or C24-94 (EPPM) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012MC005X_07_0008" fin="false">OK</down>
+<right ref="RM0000012MC005X_07_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012MC005X_07_0008" proc-id="RM0250U___00007IF00000">
+<testtitle>REPLACE ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the ECM (See page <xref label="Seep01" href="RM0000017UO007X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM0000012MC005X_07_0009" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012MC005X_07_0009" proc-id="RM0250U___00007IG00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (AFTER REPAIR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES.</ptxt>
+<atten4>
+<ptxt>If no pending DTCs are displayed on the tester, the repair has been successfully completed.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012MC005X_07_0010" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000012MC005X_07_0010">
+<testtitle>COMPLETED</testtitle>
+</testgrp>
+<testgrp id="RM0000012MC005X_07_0011">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR AND GO TO STEP 5</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72Y6C_T008U" variety="T008U">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System)</name>
+<para id="RM000001NN4005X" category="J" type-id="301B6" name-id="DL11K-01" from="200601">
+<dtccode/>
+<dtcname>Wireless Door Lock Buzzer Circuit</dtcname>
+<subpara id="RM000001NN4005X_01" type-id="60" category="03" proc-id="RM0250U___00007W600000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The certification ECU activates the wireless door lock buzzer when detecting a lock/unlock signal from the door control transmitter.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001NN4005X_02" type-id="32" category="03" proc-id="RM0250U___00007W700000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B139432E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001NN4005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001NN4005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001NN4005X_04_0002" proc-id="RM0250U___00007W900000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU - WIRELESS DOOR LOCK BUZZER  - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 certification ECU connector and A48 wireless door lock buzzer connector.</ptxt>
+<figure>
+<graphic graphicname="B139431E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+<ptxt>(Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BZR (E58-21) - A48-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BZR (E58-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A48-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NN4005X_04_0001" fin="false">OK</down>
+<right ref="RM000001NN4005X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NN4005X_04_0001" proc-id="RM0250U___00007W800000">
+<testtitle>INSPECT WIRELESS DOOR LOCK BUZZER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B144393E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>The buzzer activation circuit is built into the ECU, not into the buzzer itself. When battery voltage is applied directly to the buzzer, the buzzer will not sound.</ptxt>
+</atten4>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A48-1 - A48-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 1 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NN4005X_04_0008" fin="true">OK</down>
+<right ref="RM000001NN4005X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NN4005X_04_0008">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001NN4005X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001NN4005X_04_0004">
+<testtitle>REPLACE WIRELESS DOOR LOCK BUZZER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

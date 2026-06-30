@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_7306C_T00E6" variety="T00E6">
+<name>MASS AIR FLOW METER</name>
+<para id="RM0000021ZY001X" category="G" type-id="8000T" name-id="ES3P9-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000021ZY001X_01" type-id="01" category="01">
+<s-1 id="RM0000021ZY001X_01_0001" proc-id="RM0250U___000091Z00000">
+<ptxt>CHECK MASS AIR FLOW METER</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Perform the MAF meter inspection by following the procedures below.</ptxt>
+</item>
+<item>
+<ptxt>Only replace the MAF meter when both the LONG FT#1 value and MAF value in the DATA LIST (with the engine stopped) are not within the normal operating range.</ptxt>
+</item>
+</list1>
+</atten3>
+<s2>
+<ptxt>Perform confirmation driving pattern.</ptxt>
+<s3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the tester on.</ptxt>
+</s3>
+<s3>
+<ptxt>Clear the DTCs (See page <xref label="Seep02" href="RM000000PDK01HX"/>).</ptxt>
+</s3>
+<s3>
+<ptxt>Start the engine and warm it up with all accessory switches off (until the engine coolant temperature is 75 °C(167°F) or more).</ptxt>
+</s3>
+<s3>
+<ptxt>Drive the vehicle at 31 mph (50 km/h) or more for 3 minutes or more (*1).</ptxt>
+</s3>
+<s3>
+<ptxt>Allow the engine to idle (accelerator pedal fulley released) for 2 minutes or more (*2).</ptxt>
+</s3>
+<s3>
+<ptxt>Perform steps (*1) and (*2) at least 3 times or more.</ptxt>
+<figure>
+<graphic graphicname="A116436E18" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</s3>
+</s2>
+<s2>
+<ptxt>Read values using the intelligent tester (LONG FT#1).</ptxt>
+<s3>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / LONG FT#1.</ptxt>
+</s3>
+<s3>
+<ptxt>Read the values displayed on the tester.</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>Within -15 to +15 %</ptxt>
+</specitem>
+</spec>
+<ptxt>If the result is not within the specified range, perform the inspection below.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Read values using the intelligent tester (MAF).</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn off the engine.</ptxt>
+</item>
+<item>
+<ptxt>Perform the inspection with the vehicle indoors and on a level surface.</ptxt>
+</item>
+<item>
+<ptxt>Perform the inspection of the MAF meter while it is installed to the air cleaner case (installed to the vehicle).</ptxt>
+</item>
+<item>
+<ptxt>During the test, do not use the exhaust air duct to perform suction on the exhaust pipe.</ptxt>
+</item>
+</list1>
+</atten3>
+<s3>
+<ptxt>Turn off the engine (do not run the engine).</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the tester on.</ptxt>
+</s3>
+<s3>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / PRIMARY / MAF.</ptxt>
+</s3>
+<s3>
+<ptxt>Wait 30 seconds, and read the values on the intelligent tester.</ptxt>
+<spec>
+<title>Standard condition</title>
+<specitem>
+<ptxt>Less than 0.56 g/sec</ptxt>
+</specitem>
+</spec>
+<list1 type="unordered">
+<item>
+<ptxt>If the result is not as specified, replace the MAF meter.</ptxt>
+</item>
+<item>
+<ptxt>If the result is within the specified range, inspect the cause of the extremely rich or lean air fuel ratio (See page <xref label="Seep01" href="RM000001OOL001X"/>).</ptxt>
+</item>
+</list1>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

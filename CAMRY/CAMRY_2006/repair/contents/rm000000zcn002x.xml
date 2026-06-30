@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001B_S001C" variety="S001C">
+<name>WIPER AND WASHER</name>
+<ttl id="1001B_S001C_72ZRS_T00CI" variety="T00CI">
+<name>WIPER AND WASHER SYSTEM</name>
+<para id="RM000000ZCN002X" category="D" type-id="303F2" name-id="WW034-05" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000ZCN002X_z0" proc-id="RM0250U___000071C00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>WASHER LINKED OPERATION</ptxt>
+<step2>
+<ptxt>This system operates the front wipers at a low speed immediately after a jet of washer fluid when the front washer switch is turned on for approximately 0.3 seconds or more. If the switch is turned off within approximately 1.5 seconds, the system stops the wipers when the switch is turned off. If the switch is turned on for approximately 1.5 seconds or more, the system stops the wipers approximately 2.2 seconds after the switch is turned off.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>INTERMITTENT OPERATION</ptxt>
+<step2>
+<ptxt>The system operates the front wipers once in approximately 1.6 to 10.7 seconds when the front wiper switch is turned to the INT position. The intermittent time can be adjusted between 1.6 and 10.7 seconds.</ptxt>
+</step2>
+<step2>
+<ptxt>If the wiper control switch is turned to the INT position, current flows from the already charged capacitor C1 to Tr1 (transistor) through terminals INT1 and INT2 of the wiper control switch. When Tr1 turns on, current flows from terminal +S of the wiper control switch to terminal +1 of the wiper control switch, to terminal +1 of the wiper motor, to the wiper motor and finally to the ground, causing the wiper motor to operate. At the same time, current flows from capacitor C1 to terminal INT1 of the wiper control switch and then INT2. When the current flow from capacitor C1 ends, Tr1 turns off to stop the relay contact point and halt the wiper motor.</ptxt>
+<ptxt>When the relay contact point turns off, capacitor C1 begins to charge again and Tr1 remains off until charging has been completed. This period corresponds to the intermittent time. When capacitor C1 is fully charged, Tr1 turns on and then the relay contact point activates, causing the motor to operate. This cycle is the intermittent operation.</ptxt>
+<ptxt>The intermittent time can be adjusted by using the intermittent time adjust dial (variable resistor) to change the charge time of capacitor C1.</ptxt>
+<figure>
+<graphic graphicname="B126226E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>WASHER FLUID LEVEL WARNING</ptxt>
+<step2>
+<ptxt>When the volume of washer fluid decreases to below a certain level (when the washer fluid level warning switch is turned ON), the combination meter assembly warns the driver through the master warning light illumination, the buzzer and the warning message on the multi-information display.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

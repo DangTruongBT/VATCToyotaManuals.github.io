@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020N8002X" category="J" type-id="80026" name-id="NS0NQ-03" from="200601">
+<dtccode/>
+<dtcname>No Sound can be Heard from Speakers</dtcname>
+<subpara id="RM0000020N8002X_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020N8002X_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020N8002X_02_0001" proc-id="RM0250U___00004Z100000">
+<testtitle>CHECK AUDIO SETTINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the sound adjustment screen by pressing the "SOUND" switch on the AUDIO display.</ptxt>
+<figure>
+<graphic graphicname="E120098" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Set volume, fader, and balance to the initial values and check that sound is normal.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Audio system returns to normal.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Sound quality adjustment items vary depending on the type of the amplifier.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020N8002X_02_0002" fin="true">NG</down>
+<right ref="RM0000020N8002X_02_0003" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020N8002X_02_0002">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020N8002X_02_0003">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

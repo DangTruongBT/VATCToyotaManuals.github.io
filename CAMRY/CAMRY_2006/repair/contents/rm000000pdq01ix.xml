@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDQ01IX" category="D" type-id="303I1" name-id="ES068-50" from="200601">
+<name>CHECK FOR INTERMITTENT PROBLEMS</name>
+<subpara id="RM000000PDQ01IX_z0" proc-id="RM0250U___00002ES00000">
+<content5 releasenbr="2">
+<atten4>
+<ptxt>Inspect the vehicle's ECM using check mode. Intermittent problems are easier to detect with an intelligent tester when the ECM is in check mode. In check mode, the ECM uses 1 trip detection logic, which is more sensitive to malfunctions than normal mode (default), which uses 2 trip detection logic.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>Switch the ECM from normal mode to check mode using an intelligent tester (See page <xref label="Seep01" href="RM000000PDL01LX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Perform a simulation test (See page <xref label="Seep02" href="RM000000UZ301TX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Check and wiggle the harness(es), connector(s) and terminal(s) (See page <xref label="Seep03" href="RM000000UZ100YX"/>).  </ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

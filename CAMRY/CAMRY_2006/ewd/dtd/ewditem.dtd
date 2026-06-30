@@ -1,0 +1,82 @@
+<!--
+	EWD Item List DTD
+	
+	Copyright (c) 2000-2004 SHINTEC HOZUMI Co.,LTD.
+	All Rights Reserved. 
+	
+	ver 1.00	2003/2/26
+	ver 1.01	2003/9/12
+	ver 1.02	2004/1/22
+		add attributes(xml:lang,pubno)
+	ver 1.10	2004/8/16
+		remove NamedItem element
+	ver 1.20	2004/10/08
+		add attribute subcode
+-->
+
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- XML DTD for TOYOTA EWD Item -->
+
+
+
+<!-- data entities -->
+<!ENTITY % CountryCode
+	"(en | fr | de | es | pt | it | sv | da | fi | no | nl | el | cs | hu | pl | ja)"
+>
+
+<!ENTITY % ItemType	"(conn | w2w | jb | jbc | rb  | relay | jc | gp | sp | fl)">
+	<!--
+		conn: connector
+		w2w: Wire and Wire
+		jb: Junction Block
+		jbc: Junction Block Connector
+		rb:	Relay Block
+		relay: Relay
+		jc: Junction Connector
+		gp: Ground Point
+		sp: Splice Point
+		fl: Fusible Link
+	-->
+
+<!ENTITY % Number	"CDATA">
+<!ENTITY % Spec		"CDATA">
+<!ENTITY % Code		"NMTOKENS">
+<!ENTITY % FigType	"CDATA">
+<!ENTITY % Sex		"(male | female)">
+
+<!ENTITY % ItemInfo	"(name,fig?,partNo?,color?,spec?)">
+
+
+
+<!-- Element group -->
+<!ELEMENT	EWDItemList	(CodedItem)+>
+<!ELEMENT	CodedItem	%ItemInfo;>
+<!ELEMENT	name		(#PCDATA)>
+<!ELEMENT	fig		(#PCDATA)>
+<!ELEMENT	partNo		(#PCDATA)>
+<!ELEMENT	color		(#PCDATA)>
+<!ELEMENT	spec		(#PCDATA)>
+
+
+
+<!ATTLIST EWDItemList
+	ver		CDATA		"1.0"
+	pubno		CDATA		#REQUIRED
+	xml:lang	%CountryCode;	#REQUIRED
+>
+
+<!ATTLIST CodedItem
+	code		%Code;		#REQUIRED
+	subcode		%Code;		#IMPLIED
+	type		%ItemType;	#REQUIRED
+>
+
+<!ATTLIST name
+	code		CDATA		#IMPLIED
+>
+
+<!ATTLIST fig
+	type		%FigType;	"svgz"
+>

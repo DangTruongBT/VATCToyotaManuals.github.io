@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7701XX" category="D" type-id="303F4" name-id="AT037-65" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM000000W7701XX_z0" proc-id="RM0250U___000039X00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK DTC</ptxt>
+<step2>
+<ptxt>DTCs which are stored in the TCM can be displayed with the intelligent tester.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<ptxt>These scan tools can display pending DTCs and current DTCs. Some DTCs are not stored if the TCM doesn't detect a malfunction during consecutive driving. However, the malfunction detected while a driving is stored as a pending DTC.</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the Controller Area Network Vehicle Interface Module (CAN VIM). Then connect the CAN VIM to the Data Link Connector 3 (DLC3).</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ECT / DTC INFO / CURRENT CODES (or PENDING CODE).</ptxt>
+</step3>
+<step3>
+<ptxt>Confirm the DTCs and freeze frame data and then write them down.</ptxt>
+</step3>
+<step3>
+<ptxt>Confirm the details of the DTCs (See page <xref label="Seep01" href="RM000000W7101XX"/>).</ptxt>
+<atten3>
+<ptxt>When a symptom has been duplicated using normal mode, use the intelligent tester to check for DTCs. For DTCs that are subject to "2-trip detection logic", perform the following steps:</ptxt>
+</atten3>
+<ptxt>Turn the ignition switch OFF after the symptom has occurred once. Repeat the process of attempting to duplicate the symptom. When the problem or symptom happens for the second time and a DTC has been recorded, the MIL will illuminate, and the code will be stored.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CLEAR DTC</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the CAN VIM. Then connect the CAN VIM to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ECT / DTC INFO / CLEAR CODES and press YES.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

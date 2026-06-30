@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_730O6_T00F9" variety="T00F9">
+<name>THEFT DETERRENT SYSTEM (w/ Smart Key System)</name>
+<para id="RM000001PQV002X" category="U" type-id="3001G" name-id="TD074-03" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000001PQV002X_z0" proc-id="RM0250U___00005ER00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK MAIN BODY ECU (INSTRUMENT PANEL J/B)</ptxt>
+<step2>
+<ptxt>Disconnect the main body ECU (instrument panel J/B) connectors.</ptxt>
+<figure>
+<graphic graphicname="B139428E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage between each terminal of the wire harness side connectors and body ground.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>RCTY (E6-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear courtesy light switch RH input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear door RH CLOSED (OFF) → OPEN (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher → Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PCTY (E6-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side courtesy light switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side door CLOSED (OFF) → OPEN (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher → Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LGCY (E6-25) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door courtesy light switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door CLOSED (OFF) → OPEN (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher → Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DCTY (E7-24) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door courtesy light switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door CLOSED (OFF) → OPEN (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher → Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (IA-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition power supply (ACC signal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (ACC) → off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (IA-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition power supply (IG signal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) → off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATB (IA-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B (power battery system) power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ALTB (ID-16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B (power system alternator system) power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (IF-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (IM-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LCTY (IO-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear courtesy light switch LH input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear door LH CLOSED (OFF) → OPEN (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher → Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the main body ECU (instrument panel J/B) connectors.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage between each terminal of the wire harness side connectors and body ground.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HAZ (E8-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn signal flasher relay signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>System is in alarm sounding state</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HORN (ID-11) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle horn drive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle horn is sounding</ptxt>
+<ptxt>(Theft deterrent system is in alarm sounding state)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(0 V ← → 12 V)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK CERTIFICATION ECU ASSEMBLY</ptxt>
+<step2>
+<ptxt>Disconnect the E58 and E59 ECU connectors.</ptxt>
+<figure>
+<graphic graphicname="E125964E02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Measure the voltage and resistance of the wire harness side connector.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.4in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry>
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry>
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>+B (E58-1) - E (E58-17)</ptxt>
+</entry>
+<entry>
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry>
+<ptxt>Battery power supply</ptxt>
+</entry>
+<entry>
+<ptxt>Always</ptxt>
+</entry>
+<entry>
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E (E58-17) - Body ground</ptxt>
+</entry>
+<entry>
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry>
+<ptxt>Ground</ptxt>
+</entry>
+<entry>
+<ptxt>Always</ptxt>
+</entry>
+<entry>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HSW (E59-24) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine hood courtesy switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine hood OPEN (OFF) → CLOSED (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher → Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Reconnect the E58 and E59 ECU connectors.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage of the connector.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.4in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry>
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry>
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IND (E58-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security indicator output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security indicator light up</ptxt>
+<ptxt>(It lights up only in arming preparation state or alarm sounding state. It flashes when immobiliser is operating.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 to 6 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SH (E59-20) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security horn drive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security horn is sounding</ptxt>
+<ptxt>(Theft deterrent system is in alarm sounding state)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(0 V ← → 12 V)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

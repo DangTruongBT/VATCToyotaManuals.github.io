@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000026VN000X" category="C" type-id="80207" name-id="AX0YR-01" from="200601">
+<dtccode>P0872</dtccode>
+<dtcname>Transmission Fluid Pressure Switch No.1 Circuit Low</dtcname>
+<dtccode>P0873</dtccode>
+<dtcname>Transmission Fluid Pressure Switch No.1 Circuit High</dtcname>
+<subpara id="RM0000026VN000X_01" type-id="60" category="03" proc-id="RM0250U___0000AP300000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>ATF pressure switch No. 1 is installed in the shift solenoid valve ATF output passage. This switch is used to identify the malfunctioning part when a fail-safe operation is performed. If the shift solenoid valve malfunctions when the ATF pressure switch has a malfunction, a fail-safe operation will be performed. This fail-safe operation is different from the fail-safe operation performed when the solenoid valve malfunctions and the ATF pressure switch is normal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0872</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF pressure switch No. 1 OFF is detected twice when any of the gears from 1st to 4th engages normally.</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ATF temperature sensor assembly (ATF pressure switch No. 1)</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0873</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF pressure switch No. 1 ON is detected twice when 5th or 6th gear engages normally.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026VN000X_02" type-id="32" category="03" proc-id="RM0250U___0000CAW00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133258E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026VN000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000026VN000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000026VN000X_04_0001" proc-id="RM0250U___0000AR400000">
+<testtitle>CHECK OTHER DTC OUTPUT (IN ADDITION TO DTC P0872 OR P0873)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DTC INFO / CURRENT CODES".</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.85in"/>
+<colspec colname="COL2" colwidth="3.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0873" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0872" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"P0872 or P0873" and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If a solenoid is stuck OFF, DTCs for several solenoids including the malfunctioning solenoid will be detected.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VN000X_04_0006" fin="false">A</down>
+<right ref="RM0000026VN000X_04_0004" fin="false">B</right>
+<right ref="RM0000026VN000X_04_0002" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0006" proc-id="RM0250U___0000CDO00000">
+<testtitle>CHECK TRANSMISSION WIRE (SHORT TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM.</ptxt>
+<figure>
+<graphic graphicname="C133212E10" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.53in"/>
+<colspec colname="COL2" colwidth="1.60in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 (TPS1) - Body ground (Valve body assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VN000X_04_0008" fin="false">NG</down>
+<right ref="RM0000026VN000X_04_0007" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0008" proc-id="RM0250U___0000CNP00000">
+<testtitle>CHECK ATF TEMPERATURE SENSOR ASSEMBLY (ATF PRESSURE SWITCH NO. 1)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the transmission wire connector from the ATF temperature sensor assembly.</ptxt>
+<figure>
+<graphic graphicname="C142707E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.42in"/>
+<colspec colname="COL2" colwidth="1.71in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 (TPS1) - Body ground (Valve body assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VN000X_04_0003" fin="true">OK</down>
+<right ref="RM0000026VN000X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0004" proc-id="RM0250U___0000CBE00000">
+<testtitle>CHECK TRANSMISSION WIRE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM.</ptxt>
+<figure>
+<graphic graphicname="C133269E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the ATF temperature sensor assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.42in"/>
+<colspec colname="COL2" colwidth="1.71in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 (TPS1) - 3 (TPS1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>10 (TPS1) or 3 (TPS1) - Body ground (Valve body assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VN000X_04_0005" fin="true">OK</down>
+<right ref="RM0000026VN000X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0002">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0003">
+<testtitle>REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0005">
+<testtitle>REPLACE ATF TEMPERATURE SENSOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000026VN000X_04_0007">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

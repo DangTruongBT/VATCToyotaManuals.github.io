@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002Z_S001S" variety="S001S">
+<name>SLIDING ROOF</name>
+<ttl id="1002Z_S001S_732XN_T00GB" variety="T00GB">
+<name>SLIDING ROOF SYSTEM</name>
+<para id="RM000000UZL00IX" category="U" type-id="3001G" name-id="RF07A-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000UZL00IX_z0" proc-id="RM0250U___0000BFN00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK SLIDING ROOF DRIVE GEAR SUB-ASSEMBLY (SLIDING ROOF CONTROL ECU) (TMC MADE)</ptxt>
+<figure>
+<graphic graphicname="B050671E36" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the Q13 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" align="center" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (Q13-1) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (Q13-5) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (Q13-5) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPN (Q13-7) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OPEN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPN (Q13-7) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OPEN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (Q13-9) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CLOSE switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (Q13-9) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CLOSE switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (Q13-10) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UP switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (Q13-10) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UP switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (Q13-8) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DOWN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (Q13-8) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DOWN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E (Q13-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the Q13 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" align="center" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OPN (Q13-7) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof closed, OPEN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPN (Q13-7) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof closed, OPEN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (Q13-9) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof open, CLOSE switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (Q13-9) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof open, CLOSE switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (Q13-10) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted downward, UP switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (Q13-10) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted downward, UP switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (Q13-8) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted upward, DOWN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (Q13-8) - E (Q13-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted upward, DOWN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK SLIDING ROOF DRIVE GEAR SUB-ASSEMBLY (SLIDING ROOF CONTROL ECU) (TMMK MADE)</ptxt>
+<figure>
+<graphic graphicname="B050671E35" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the R1 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" align="center" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (R1-1) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (R1-5) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (R1-5) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPN (R1-10) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OPEN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPN (R1-10) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OPEN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (R1-8) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CLOSE switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (R1-8) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CLOSE switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (R1-9) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UP switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (R1-9) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UP switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (R1-7) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DOWN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (R1-7) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DOWN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E (R1-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the R1 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" align="center" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OPN (R1-10) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof closed, OPEN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OPN (R1-10) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof closed, OPEN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (R1-8) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof open, CLOSE switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLS (R1-8) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof open, CLOSE switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (R1-9) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted downward, UP switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP (R1-9) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor up</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted downward, UP switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (R1-7) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted upward, DOWN switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DWN (R1-7) - E (R1-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof motor down</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), sliding roof tilted upward, DOWN switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

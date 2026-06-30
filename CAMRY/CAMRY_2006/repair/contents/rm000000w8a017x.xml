@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W8A017X" category="C" type-id="302GI" name-id="AX0YV-01" from="200601">
+<dtccode>P2716</dtccode>
+<dtcname>Pressure Control Solenoid "D" Electrical (Shift Solenoid Valve SLT)</dtcname>
+<subpara id="RM000000W8A017X_01" type-id="60" category="03" proc-id="RM0250U___000037A00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P2714 (See page <xref label="Seep01" href="RM000000W83016X_01"/>).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="center" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2716</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open or short is detected in shift solenoid valve SLT circuit for 1 second or more while driving (1-trip detection logic).</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in shift solenoid valve SLT circuit</ptxt>
+</item>
+<item>
+<ptxt>Shift solenoid valve SLT</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_02" type-id="64" category="03" proc-id="RM0250U___000037B00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When an open or short in the linear solenoid valve (SLT) circuit is detected, the TCM interprets this as a fault. The TCM will turn on the MIL and store the DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_10" type-id="65" category="03" proc-id="RM0250U___000037G00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2716: Shift solenoid valve SLT/Range check</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLT</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_11" type-id="66" category="03" proc-id="RM0250U___000037H00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ALL:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Solenoid current cut status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not cut</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (A):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V to 12 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (B):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V or more and less than 12 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Target current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.75 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (C):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Target current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (D):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Target current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 A or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (E):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Target current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.1 A or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Commanded voltage - Last commanded voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.02 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_12" type-id="67" category="03" proc-id="RM0250U___000037I00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Malfunction (A) and (B):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100% or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (C):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0% or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (D):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Output signal monitor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Malfunction (E):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Commanded voltage - Last commanded voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.02 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_13" type-id="70" category="03" proc-id="RM0250U___000037J00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 100%</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_07" type-id="32" category="03" proc-id="RM0250U___000037C00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133261E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W8A017X_08" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000W8A017X_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W8A017X_09_0001" proc-id="RM0250U___000037D00000">
+<testtitle>INSPECT TRANSMISSION WIRE (SLT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM from the transaxle.</ptxt>
+<figure>
+<graphic graphicname="C133212E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>12 (SLT+) - 7 (SLT-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>Check for short</subtitle>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>12 (SLT+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7 (SLT-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8A017X_09_0003" fin="false">NG</down>
+<right ref="RM000000W8A017X_09_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8A017X_09_0003" proc-id="RM0250U___000037F00000">
+<testtitle>INSPECT SHIFT SOLENOID VALVE SLT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the shift solenoid valve SLT.</ptxt>
+<figure>
+<graphic graphicname="G020767E08" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect a positive (+) lead through a 21 W bulb to terminal 2 and a negative (-) lead to terminal 1 of the solenoid valve connector, then check the movement of the valve.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The solenoid makes an operating sound.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8A017X_09_0004" fin="true">OK</down>
+<right ref="RM000000W8A017X_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8A017X_09_0004">
+<testtitle>REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM000000W8A017X_09_0005">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000W8A017X_09_0007">
+<testtitle>REPLACE SHIFT SOLENOID VALVE SLT</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

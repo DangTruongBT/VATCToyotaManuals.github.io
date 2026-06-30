@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001HMQ001X" category="J" type-id="303DM" name-id="AC20F-01" from="200601">
+<dtccode/>
+<dtcname>Steering Pad Switch Circuit</dtcname>
+<subpara id="RM000001HMQ001X_01" type-id="60" category="03" proc-id="RM0250U___00004HV00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>AUTO, OFF, TEMP UP (+), and TEMP DOWN (-) switches are located on the steering pad switch. The resistance of the steering pad switch changes in accordance with switch operation. The A/C control assembly outputs voltage to the steering pad switch and reads voltage changes due to the resistance changes that result from switch operation.</ptxt>
+<atten4>
+<ptxt>If there is an open in the circuit, the A/C system cannot be operated by the steering pad switch assembly.</ptxt>
+<ptxt>If there is a short in the circuit, the resulting condition is the same as if the switch were continuously depressed. Therefore, the A/C control assembly cannot be operated by the steering pad switch assembly, and the A/C control assembly will not be able to function correctly.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001HMQ001X_02" type-id="32" category="03" proc-id="RM0250U___00004HW00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E124492E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001HMQ001X_04" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001HMQ001X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001HMQ001X_03_0001" proc-id="RM0250U___00004HX00000">
+<testtitle>INSPECT A/C CONTROL ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the A/C control assembly with the connectors still connected.</ptxt>
+<figure>
+<graphic graphicname="E124479E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-9 (ADI1) - F16-8 (SG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>AUTO switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 2.5 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-9 (ADI1) - F16-8 (SG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 329 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-9 (ADI1) - F16-8 (SG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TEMP+ switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 1,000 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-9 (ADI1) - F16-8 (SG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TEMP- switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 3,110 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001HMQ001X_03_0005" fin="true">OK</down>
+<right ref="RM000001HMQ001X_03_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0002" proc-id="RM0250U___00004HY00000">
+<testtitle>INSPECT STEERING PAD SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the steering pad switch assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the steering pad switch assembly.</ptxt>
+<figure>
+<graphic graphicname="E124484E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>a1-3 (AC1) - a1-2 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>AUTO switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 2.5 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>a1-3 (AC1) - a1-2 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 329 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>a1-3 (AC1) - a1-2 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TEMP+ switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 1,000 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>a1-3 (AC1) - a1-2 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>TEMP- switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Approx. 3,110 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001HMQ001X_03_0003" fin="false">OK</down>
+<right ref="RM000001HMQ001X_03_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0003" proc-id="RM0250U___00004HZ00000">
+<testtitle>INSPECT SPIRAL CABLE SUB-ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the spiral cable sub-assembly.</ptxt>
+<figure>
+<graphic graphicname="I039337E26" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>E18-10 (AC1) - a1-3 (AC1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2.5 rotations to the left</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2.5 rotations to the right</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>E18-9 (EAC) - a1-2 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2.5 rotations to the left</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2.5 rotations to the right</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The spiral cable makes a maximum of approximately 5 rotations.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000001HMQ001X_03_0004" fin="false">OK</down>
+<right ref="RM000001HMQ001X_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0004" proc-id="RM0250U___00004I000000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/C CONTROL ASSEMBLY - SPIRAL CABLE  SUB-ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the A/C control assembly.</ptxt>
+<figure>
+<graphic graphicname="E124480E04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the spiral cable sub-assembly.</ptxt>
+<figure>
+<graphic graphicname="I046136E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-9 (ADI1) - E18-10 (AC1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-8 (SG) - E18-9 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-9 (ADI1) - E18-10 (AC1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F16-8 (SG) - E18-9 (EAC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001HMQ001X_03_0009" fin="true">OK</down>
+<right ref="RM000001HMQ001X_03_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0006">
+<testtitle>REPLACE STEERING PAD SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0007">
+<testtitle>REPLACE SPIRAL CABLE SUB-ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001HMQ001X_03_0009">
+<testtitle>REPLACE A/C CONTROL ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_72WHB_T0068" variety="T0068">
+<name>THEFT DETERRENT SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001PR3004X" category="J" type-id="3019A" name-id="TD08V-01" from="200601">
+<dtccode/>
+<dtcname>Security Horn Circuit</dtcname>
+<subpara id="RM000001PR3004X_01" type-id="60" category="03" proc-id="RM0250U___00005F200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the theft deterrent system is changed from the armed state to the alarm sounding state, the main body ECU can control the security horn.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001PR3004X_02" type-id="32" category="03" proc-id="RM0250U___00005F300000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B139446E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001PR3004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001PR3004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001PR3004X_04_0006" proc-id="RM0250U___0000A0K00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the ACTIVE TEST and then check that the horn sounds.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (Main Body ECU):</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SECURITY HORN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security horn ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The security horn sounds or stops correctly when operating it through the intelligent tester.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR3004X_04_0003" fin="true">OK</down>
+<right ref="RM000001PR3004X_04_0001" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0001" proc-id="RM0250U___00005F400000">
+<testtitle>INSPECT SECURITY HORN ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the security horn assembly.</ptxt>
+<figure>
+<graphic graphicname="B139440" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check operation of the horn.</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Horn sounds</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Battery negative (-) → Horn body</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR3004X_04_0002" fin="false">OK</down>
+<right ref="RM000001PR3004X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0002" proc-id="RM0250U___00005F500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE ROOM J/B - SECURITY HORN ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the 1A J/B connector and the A23 horn connector.</ptxt>
+<figure>
+<graphic graphicname="B139441E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>1A-5 - A23-1</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>1A-5 - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR3004X_04_0007" fin="false">OK</down>
+<right ref="RM000001PR3004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0007" proc-id="RM0250U___0000A0L00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - ENGINE ROOM J/B)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E9 ECU connector and 1D J/B connector connector.</ptxt>
+<figure>
+<graphic graphicname="B139442E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol (Terminal Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>SH (E9-6) - (1D-11)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>SH (E9-6) - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR3004X_04_0008" fin="false">OK</down>
+<right ref="RM000001PR3004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0008" proc-id="RM0250U___0000A0M00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE ROOM J/B - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the 1G J/B connector.</ptxt>
+<figure>
+<graphic graphicname="B074501E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>1G-1 - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR3004X_04_0009" fin="true">OK</down>
+<right ref="RM000001PR3004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0009">
+<testtitle>REPLACE ENGINE ROOM JUNCTION BLOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0004">
+<testtitle>REPAIR OR REPLACE SECURITY HORN ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001PR3004X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

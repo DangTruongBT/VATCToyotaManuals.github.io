@@ -1,0 +1,258 @@
+<!-- $Id: contents.html,v 1.8 2004/04/26 05:11:52 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Please wait...                                                    -->
+<!--  011 TAB_TXT_ALL                                                       -->
+<!--  012 TAB_TXT_DTC                                                       -->
+<!--  013 TAB_TXT_IST                                                       -->
+<!--  014 TAB_TXT_ISP                                                       -->
+<!--  015 TAB_TXT_OTH                                                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Index Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<link href="../../css/txtsearch.css" rel="stylesheet" type="text/css">
+<script src="../../js/util.js"></script>
+<script language="javascript">
+// 待機メッセージ消去までのポーリング時間
+var ONLOAD_POLLING_TIME = 500;
+
+function init() {
+	parent.search();
+	parent.resetDispCount();
+	changeTabColorAndText();
+	setTimeout("hideMessage()", ONLOAD_POLLING_TIME);
+	cdisp.innerHTML = parent.getResultHtml();
+}
+
+//  hideMessage  --  待機メッセージを消す
+function hideMessage() {
+	var retStr = document.all('cdisp').innerHTML;
+	if (retStr != null || retStr.length == 0) {
+		var msg = document.all('msg');
+		if (msg != null) {
+			msg.style.display = "none";
+		}
+		tabdisp.style.display = "inline";
+		cdisp.style.display   = "inline";
+	} else {
+		setTimeout("hideMessage()", ONLOAD_POLLING_TIME);
+	}
+}
+
+//  dispMessage  --  待機メッセージを表示する
+function dispMessage() {
+	var msg = document.all('msg');
+	if (msg != null) {
+		msg.style.display     = "inline";
+		cdisp.style.display   = "none";
+		tabdisp.style.display = "none";
+	}
+}
+
+function displayNext(){
+	parent.changeDispCount(true);
+	cdisp.innerHTML = parent.getResultHtml();
+}
+function displayPrev(){
+	parent.changeDispCount(false);
+	cdisp.innerHTML = parent.getResultHtml();
+}
+function changeTab( newcatcd ){
+	parent.setCatCode(newcatcd);
+	parent.resetDispCount();
+	changeTabColorAndText();
+	cdisp.innerHTML = parent.getResultHtml();
+}
+function selectRetItem( paraid, s1id, cat ){
+	if( s1id == "" ) s1id = null;
+	selectTypedLocation(paraid, "P" + cat, null, s1id);
+}
+
+var COL_TAB_BASE = "#c0ccee";
+var COL_TAB_SELC = "#ffffff";
+var COL_DARK_SPC = "#666666";
+var COL_PALE_SPC = "#999966";
+var TAB_TXT_ALL  = "All";                     // 011
+var TAB_TXT_DTC  = "Diagnostics";             // 012
+var TAB_TXT_IST  = "Installation / Removal";  // 013
+var TAB_TXT_ISP  = "Inspection";              // 014
+var TAB_TXT_OTH  = "Other";                   // 015
+
+function changeTabColorAndText(){
+	initTabColorAndText();
+	var _catcd = parent.g_catcd;
+	// selected [ All ]
+	if( _catcd == 0 ){
+		tabtop_all.bgColor = COL_DARK_SPC;
+		tabtop_aad.bgColor = COL_DARK_SPC;
+
+		tab_all1.bgColor = COL_DARK_SPC;
+		tab_all2.bgColor = COL_DARK_SPC
+		tab_all.bgColor  = COL_TAB_SELC;
+		tab_aad1.bgColor = COL_TAB_SELC;
+		tab_aad2.bgColor = COL_DARK_SPC;
+
+		tabbs_all.bgColor = COL_TAB_SELC;
+		tablk_all.innerText = TAB_TXT_ALL;
+	// selected [ Diagnostics ]
+	}else if( _catcd == 1 ){
+		tabtop_aad.bgColor = COL_DARK_SPC;
+		tabtop_dtc.bgColor = COL_DARK_SPC;
+		tabtop_dat.bgColor = COL_DARK_SPC;
+
+		tab_aad1.bgColor = COL_DARK_SPC;
+		tab_aad2.bgColor = COL_DARK_SPC;
+		tab_dtc.bgColor  = COL_TAB_SELC;
+		tab_dat1.bgColor = COL_TAB_SELC;
+		tab_dat2.bgColor = COL_DARK_SPC;
+
+		tabbs_dtc.bgColor = COL_TAB_SELC;
+		tablk_dtc.innerText = TAB_TXT_DTC;
+	// selected [ Installation / Removal ]
+	}else if( _catcd == 2 ){
+		tabtop_dat.bgColor = COL_DARK_SPC;
+		tabtop_ist.bgColor = COL_DARK_SPC;
+		tabtop_tap.bgColor = COL_DARK_SPC;
+
+		tab_dat1.bgColor = COL_DARK_SPC;
+		tab_dat2.bgColor = COL_DARK_SPC;
+		tab_ist.bgColor  = COL_TAB_SELC;
+		tab_tap1.bgColor = COL_TAB_SELC;
+		tab_tap2.bgColor = COL_DARK_SPC;
+
+		tabbs_ist.bgColor = COL_TAB_SELC;
+		tablk_ist.innerText = TAB_TXT_IST;
+	// selected [ Inspection ]
+	}else if( _catcd == 3 ){
+		tabtop_tap.bgColor = COL_DARK_SPC;
+		tabtop_isp.bgColor = COL_DARK_SPC;
+		tabtop_pao.bgColor = COL_DARK_SPC;
+
+		tab_tap1.bgColor = COL_DARK_SPC;
+		tab_tap2.bgColor = COL_DARK_SPC;
+		tab_isp.bgColor  = COL_TAB_SELC;
+		tab_pao1.bgColor = COL_TAB_SELC;
+		tab_pao2.bgColor = COL_DARK_SPC;
+
+		tabbs_isp.bgColor = COL_TAB_SELC;
+		tablk_isp.innerText = TAB_TXT_ISP;
+	// selected [ Other ]
+	}else if( _catcd == 4 ){
+		tabtop_pao.bgColor = COL_DARK_SPC;
+		tabtop_oth.bgColor = COL_DARK_SPC;
+
+		tab_pao1.bgColor = COL_DARK_SPC;
+		tab_pao2.bgColor = COL_DARK_SPC;
+		tab_oth.bgColor  = COL_TAB_SELC;
+		tab_oth1.bgColor = COL_TAB_SELC;
+		tab_oth2.bgColor = COL_DARK_SPC;
+
+		tabbs_oth.bgColor = COL_TAB_SELC;
+		tablk_oth.innerText = TAB_TXT_OTH;
+	}
+}
+
+function initTabColorAndText(){
+	tabtop_all.bgColor = COL_TAB_BASE;
+	tabtop_aad.bgColor = COL_TAB_BASE;
+	tabtop_dtc.bgColor = COL_TAB_BASE;
+	tabtop_dat.bgColor = COL_TAB_BASE;
+	tabtop_ist.bgColor = COL_TAB_BASE;
+	tabtop_tap.bgColor = COL_TAB_BASE;
+	tabtop_isp.bgColor = COL_TAB_BASE;
+	tabtop_pao.bgColor = COL_TAB_BASE;
+	tabtop_oth.bgColor = COL_TAB_BASE;
+
+	tab_all1.bgColor = COL_TAB_BASE;
+	tab_all2.bgColor = COL_PALE_SPC
+	tab_all.bgColor  = COL_TAB_BASE;
+	tablk_all.innerHTML = "<a href='#' onmousedown='changeTab(0)' class='tablink'>" + TAB_TXT_ALL + "</a>";
+	tab_aad1.bgColor = COL_TAB_BASE;
+	tab_aad2.bgColor = COL_PALE_SPC;
+	tab_dtc.bgColor  = COL_TAB_BASE;
+	tablk_dtc.innerHTML = "<a href='#' onmousedown='changeTab(1)' class='tablink'>" + TAB_TXT_DTC + "</a>";
+	tab_dat1.bgColor = COL_TAB_BASE;
+	tab_dat2.bgColor = COL_PALE_SPC;
+	tab_ist.bgColor  = COL_TAB_BASE;
+	tablk_ist.innerHTML = "<a href='#' onmousedown='changeTab(2)' class='tablink'>" + TAB_TXT_IST + "</a>";
+	tab_tap1.bgColor = COL_TAB_BASE;
+	tab_tap2.bgColor = COL_PALE_SPC;
+	tab_isp.bgColor  = COL_TAB_BASE;
+	tablk_isp.innerHTML = "<a href='#' onmousedown='changeTab(3)' class='tablink'>" + TAB_TXT_ISP + "</a>";
+	tab_pao1.bgColor = COL_TAB_BASE;
+	tab_pao2.bgColor = COL_PALE_SPC;
+	tab_oth.bgColor  = COL_TAB_BASE;
+	tablk_oth.innerHTML = "<a href='#' onmousedown='changeTab(4)' class='tablink'>" + TAB_TXT_OTH + "</a>";
+	tab_oth1.bgColor = COL_TAB_BASE;
+	tab_oth2.bgColor = COL_PALE_SPC;
+
+	tabbs_all.bgColor = COL_DARK_SPC;
+	tabbs_dtc.bgColor = COL_DARK_SPC;
+	tabbs_ist.bgColor = COL_DARK_SPC;
+	tabbs_isp.bgColor = COL_DARK_SPC;
+	tabbs_oth.bgColor = COL_DARK_SPC;
+}
+
+</script>
+</head>
+<body onLoad="init();">
+	<center>
+		<div id='msg' class='message'>
+			<br/><br/><br/>Please wait...<!-- 000 -->
+		</div>
+	</center>
+	<div id='tabdisp'>
+	<table class='tab' border='0' width='100%' cellSpacing='0' cellPadding='0'>
+		<tr class='tab'><td colspan='19' height='15'></td></tr>
+		<tr class='tab' height='3'><td class='tabbase' colspan='19' height='3'></td></tr>
+		<tr class='tab'>
+			<td height='2' class='tabbase' colspan='1'></td>
+			<td height='2' colspan='3' id='tabtop_all'></td> <td height='2' colspan='2' id='tabtop_aad'></td>
+			<td height='2' colspan='1' id='tabtop_dtc'></td> <td height='2' colspan='2' id='tabtop_dat'></td>
+			<td height='2' colspan='1' id='tabtop_ist'></td> <td height='2' colspan='2' id='tabtop_tap'></td>
+			<td height='2' colspan='1' id='tabtop_isp'></td> <td height='2' colspan='2' id='tabtop_pao'></td>
+			<td height='2' colspan='3' id='tabtop_oth'></td>
+			<td height='2' class='tabbase' colspan='1'></td>
+		</tr>
+		<tr class='tab'>
+			<td class='tabbase' width='5'></td>
+			<td width='1' id='tab_all1'></td>
+			<td width='1' id='tab_all2'></td>
+			<td class='tabtarget' width='120' id='tab_all'><div id='tablk_all'></div></td>
+			<td width='1' id='tab_aad1'></td>
+			<td width='1' id='tab_aad2'></td>
+			<td class='tabtarget' width='120' id='tab_dtc'><div id='tablk_dtc'></div></td>
+			<td width='1' id='tab_dat1'></td>
+			<td width='1' id='tab_dat2'></td>
+			<td class='tabtarget' width='180' id='tab_ist'><div id='tablk_ist'></div></td>
+			<td width='1' id='tab_tap1'></td>
+			<td width='1' id='tab_tap2'></td>
+			<td class='tabtarget' width='100' id='tab_isp'><div id='tablk_isp'></div></td>
+			<td width='1' id='tab_pao1'></td>
+			<td width='1' id='tab_pao2'></td>
+			<td class='tabtarget' width='60' id='tab_oth'><div id='tablk_oth'></div></td>
+			<td width='1' id='tab_oth1'></td>
+			<td width='1' id='tab_oth2'></td>
+			<td class='tabbase'></td>
+		</tr>
+		<tr class='tab'>
+			<td class='tab-dark-spacer' height='2' colspan='3'></td>
+			<td height='2' colspan='3' id='tabbs_all'></td>
+			<td height='2' colspan='3' id='tabbs_dtc'></td>
+			<td height='2' colspan='3' id='tabbs_ist'></td>
+			<td height='2' colspan='3' id='tabbs_isp'></td>
+			<td height='2' colspan='3' id='tabbs_oth'></td>
+			<td class='tab-dark-spacer' height='2' colspan='1'></td>
+		</tr>
+	</table>
+	</div>
+	<p><div id='cdisp'></div></p>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002Z_S001S" variety="S001S">
+<name>SLIDING ROOF</name>
+<ttl id="1002Z_S001S_732XN_T00GB" variety="T00GB">
+<name>SLIDING ROOF SYSTEM</name>
+<para id="RM000001VJR003X" category="D" type-id="303FL" name-id="RF044-05" from="200601">
+<name>INITIALIZATION</name>
+<subpara id="RM000001VJR003X_z0" proc-id="RM0250U___0000C4Q00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>INITIALIZE SLIDING ROOF DRIVE GEAR SUB-ASSEMBLY</ptxt>
+<atten3>
+<ptxt>When replacing the sliding roof drive gear, the sliding roof drive gear requires initialization. If a reset is not executed, the following functions do not operate: auto operation and key off operation.</ptxt>
+</atten3>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Make sure that the sliding roof is fully closed.</ptxt>
+</step2>
+<step2>
+<ptxt>Push and hold the CLOSE switch or the UP switch until the following movement finishes: Tilt up → approximately 1 second → tilt down → slide open → slide closed.</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the sliding roof stops at the fully closed position.</ptxt>
+</step2>
+<step2>
+<ptxt>Finish the initialization.</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the AUTO operation works normally.</ptxt>
+<atten3>
+<ptxt>If the following conditions occur during initialization procedure, initialization will fail.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Ignition switch is turned off.  </ptxt>
+</item>
+<item>
+<ptxt>Sliding roof control switch is released while sliding roof is operating.</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is 5 km/h (3 mph) or more.</ptxt>
+</item>
+<item>
+<ptxt>Communication is cut off.</ptxt>
+</item>
+<item>
+<ptxt>Another switch is turned on during initialization.</ptxt>
+</item>
+<item>
+<ptxt>The vehicle experiences a strong vibration during initialization, such as the slamming of a door.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the sliding roof cannot be fully closed or its position has become misaligned, perform initialization again.</ptxt>
+</item>
+<item>
+<ptxt>If the roof glass stops moving or starts moving in the opposite direction while the CLOSE or UP switch is held down, continue to hold the switch for another 10 seconds or more to return the sliding roof control ECU to an uninitialized condition. Then perform the initialization procedure again.</ptxt>
+</item>
+<item>
+<ptxt>If the AUTO operation function and jam protection function do not operate after the drive gear has been reset, replace the sliding roof drive gear (sliding roof ECU).</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

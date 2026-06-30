@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XW6009X" category="C" type-id="303F1" name-id="BC1N3-01" from="200601">
+<dtccode>C1241/41</dtccode>
+<dtcname>Low Battery Positive Voltage</dtcname>
+<subpara id="RM000000XW6009X_01" type-id="60" category="03" proc-id="RM0250U___00005R000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If a malfunction is detected in the power supply circuit, the skid control ECU (housed in the actuator assembly) stores this DTC and the fail safe function prohibits ABS operation.</ptxt>
+<ptxt>This DTC is stored when the IG1 terminal voltage deviates from the DTC detection condition due to a malfunction in the power supply or charging circuit such as the battery or alternator circuit, etc.</ptxt>
+<ptxt>The DTC is cancelled when the IG1 terminal voltage returns to normal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.92in"/>
+<colspec colname="COL2" colwidth="3.09in"/>
+<colspec colname="COL3" colwidth="3.07in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1241/41</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>At a vehicle speed of 2 mph (3 km/h) or more, the IG1 terminal voltage is 9.5 V or less for 10 seconds or more.</ptxt>
+</item>
+<item>
+<ptxt>When the solenoid relay remains ON and the IG1 terminal voltage is 9.5 V or less, the relay contact is open for 0.2 seconds or more.</ptxt>
+</item>
+<item>
+<ptxt>While the VSC NO. 1 (fail safe) relay is ON after VSC NO. 2 relay ON, the IG1 terminal voltage is 9.5 V or less and the actuator pump drive motor is OFF for 0.1 second or more.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECU-IG NO. 2 fuse</ptxt>
+</item>
+<item>
+<ptxt>Battery</ptxt>
+</item>
+<item>
+<ptxt>Charging system</ptxt>
+</item>
+<item>
+<ptxt>Power source circuit</ptxt>
+</item>
+<item>
+<ptxt>Internal power supply circuit of the skid control ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XW6009X_02" type-id="32" category="03" proc-id="RM0250U___00005R100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136029E03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XW6009X_03" type-id="51" category="05" proc-id="RM0250U___00005R200000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XW6009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XW6009X_04_0001" proc-id="RM0250U___00005R300000">
+<testtitle>INSPECT ECU-IG NO. 2 FUSE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ECU-IG NO. 2 fuse from the main body ECU.</ptxt>
+<figure>
+<graphic graphicname="C135806E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECU-IG NO. 2 (7.5 A) fuse</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XW6009X_04_0002" fin="false">OK</down>
+<right ref="RM000000XW6009X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0002" proc-id="RM0250U___00005R400000">
+<testtitle>CHECK BATTERY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Install the ECU-IG NO. 2 fuse.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the battery voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>10 to 14 V</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XW6009X_04_0003" fin="false">OK</down>
+<right ref="RM000000XW6009X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0003" proc-id="RM0250U___00005R500000">
+<testtitle>INSPECT SKID CONTROL ECU (IG1 TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="F049362E98" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-46 (IG1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XW6009X_04_0004" fin="false">OK</down>
+<right ref="RM000000XW6009X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0004" proc-id="RM0250U___00005R600000">
+<testtitle>INSPECT SKID CONTROL ECU (GND TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="F049362E97" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-32 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XW6009X_04_0005" fin="false">OK</down>
+<right ref="RM000000XW6009X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0005" proc-id="RM0250U___00005R700000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1241/41) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1241/41) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep03" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XW6009X_04_0006" fin="true">A</down>
+<right ref="RM000000XW6009X_04_0011" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0006">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0007">
+<testtitle>REPLACE ECU-IG NO. 2 FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0008">
+<testtitle>CHECK AND REPLACE CHARGING SYSTEM OR BATTERY</testtitle>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (IG1 CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XW6009X_04_0011">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

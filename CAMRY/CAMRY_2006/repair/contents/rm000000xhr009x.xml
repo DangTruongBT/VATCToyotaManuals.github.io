@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHR009X" category="D" type-id="303FK" name-id="BC02I-08" from="200601">
+<name>CALIBRATION</name>
+<subpara id="RM000000XHR009X_z0" proc-id="RM0250U___00005RD00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>After replacing the VSC relevant components or performing "Front wheel alignment adjustment", clear and read the sensor calibration data.</ptxt>
+</item>
+<item>
+<ptxt>Follow the chart to perform calibration.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Replacing Parts / Operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Necessary Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate and acceleration sensor zero point calibration.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Clearing zero point calibration data.</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor zero point calibration.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front wheel alignment adjustment</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Clearing zero point calibration data.</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor zero point calibration.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>OBTAIN ZERO POINT OF YAW RATE AND ACCELERATION SENSOR (INTELLIGENT TESTER)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>While obtaining the zero point, keep the vehicle stationary and do not vibrate, tilt, move, or shake it. (Do not start the engine.)</ptxt>
+</item>
+<item>
+<ptxt>Be sure to perform this procedure on a level surface (with an inclination of less than 1 degree).</ptxt>
+</item>
+</list1>
+</atten3>
+<step2>
+<ptxt>Clear the zero point calibration data.</ptxt>
+<figure>
+<graphic graphicname="C131977E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (A/T) or apply the parking brake (M/T).</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Operate the intelligent tester to erase the codes (select "RESET MEMORY").</ptxt>
+<figure>
+<graphic graphicname="C106531" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+<atten3>
+<ptxt>If the ignition switch is turned on (IG) for more than 15 seconds with the shift lever in the P position (A/T) or the parking brake applied (M/T) after zero point of the yaw rate and acceleration sensor has been cleared, only the zero point of the yaw rate sensor will be stored. If the vehicle is driven under these conditions, the skid control ECU will store the zero point calibration for the acceleration sensor as not being completed. The skid control ECU will then also indicate this as a malfunction of the VSC system using the indicator lights (models without multi information display) or multi information display (models with multi information display). </ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Perform zero point calibration of the yaw rate and acceleration sensor.</ptxt>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (A/T) or apply the parking brake (M/T).</ptxt>
+<atten3>
+<ptxt>DTCs C1210/36 and C1336/39 will be recorded if the shift lever is not in the P position (A/T) or the parking brake is not applied (M/T) (See page <xref label="Seep01" href="RM000000XIK009X"/>).</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Set the intelligent tester to Test Mode (select "TEST MODE").</ptxt>
+<figure>
+<graphic graphicname="C106532" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>After the Test Mode has been entered, keep the vehicle stationary on a level surface for 2 seconds or more.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the VSC warning light blinks (models without multi information display) or "CHECK VSC SYSTEM" is displayed on the multi information display (models with multi information display) (Test Mode).</ptxt>
+<figure>
+<graphic graphicname="C135802E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The SLIP indicator light remains on during Test Mode because TRAC is prohibited.</ptxt>
+</item>
+<item>
+<ptxt>If the VSC warning light does not blink (models without multi information display) or "CHECK VSC SYSTEM" is not displayed on the multi information display (models with multi information display), perform zero point calibration again.</ptxt>
+</item>
+<item>
+<ptxt>The zero point calibration is performed only once after the system enters the Test Mode.</ptxt>
+</item>
+<item>
+<ptxt>Calibration cannot be performed again until the stored data is cleared.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch off and disconnect the intelligent tester.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>OBTAIN ZERO POINT OF YAW RATE AND ACCELERATION SENSOR (SST CHECK WIRE)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>While obtaining the zero point, keep the vehicle stationary and do not vibrate, tilt, move, or shake it. (Do not start the engine.)</ptxt>
+</item>
+<item>
+<ptxt>Be sure to perform the procedure on a level surface (with an inclination of less than 1 degree).</ptxt>
+</item>
+</list1>
+</atten3>
+<step2>
+<ptxt>Clear the zero point calibration data.</ptxt>
+<figure>
+<graphic graphicname="G022987E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (A/T) or apply the parking brake (M/T).</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>The warning light and indicator light come on for 3 seconds to indicate that the initial check is completed.</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, connect and disconnect terminals TS and CG of the DLC3 4 times or more within 8 seconds.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>If the ignition switch is turned on (IG) for more than 15 seconds with the shift lever in the P position (A/T) or the parking brake applied (M/T) after zero point of the yaw rate and acceleration sensor has been cleared, only the zero point of the yaw rate sensor will be stored. If the vehicle is driven under these conditions, the skid control ECU will store the zero point calibration for the acceleration sensor as not being completed. The skid control ECU will then also indicate this as a malfunction of the VSC system using the indicator lights (models without multi information display) or multi information display (models with multi information display). </ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Perform zero point calibration of the yaw rate and acceleration sensor.</ptxt>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (A/T) or apply the parking brake (M/T).</ptxt>
+<atten3>
+<ptxt>DTCs C1210/36 and C1336/39 will be recorded if the shift lever is not in the P position (A/T) or the parking brake is not applied (M/T) (See page <xref label="Seep02" href="RM000000XIK009X"/>).</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Using SST, connect terminals TS and CG of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022987E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Keep the vehicle stationary on a level surface for 2 seconds or more.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the VSC warning light blinks (models without multi information display) or "CHECK VSC SYSTEM" is displayed on the multi information display (models with multi information display) (Test Mode).</ptxt>
+<figure>
+<graphic graphicname="C135802E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The SLIP indicator light remains on during Test Mode because TRAC is prohibited.</ptxt>
+</item>
+<item>
+<ptxt>If the VSC warning light does not blink (models without multi information display) or "CHECK VSC SYSTEM" is not displayed on the multi information display (models with multi information display), perform zero point calibration again.</ptxt>
+</item>
+<item>
+<ptxt>The zero point calibration is performed only once after the system enters the Test Mode.</ptxt>
+</item>
+<item>
+<ptxt>Calibration cannot be performed again until the stored data is cleared.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch off and disconnect the SST from the DLC3.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

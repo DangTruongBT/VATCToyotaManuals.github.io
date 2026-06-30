@@ -1,0 +1,92 @@
+<!-- $Id: frame.html,v 1.12 2004/04/26 05:07:52 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics - Troubleshooting -</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script src="../../js/dropdown.js"></script>
+<script language="javascript">
+var g_paraId   = findParameterValue("parag");
+var g_filter   = findParameterValue("filter");
+var g_term     = findParameterValue("term");
+var g_vin      = findParameterValue("vin");
+var g_bp       = findParameterValue("bp");
+var g_s1       = findParameterValue("s1");
+var g_tocXml   = initXml("toc_rpr.xml");
+var g_objXml   = null;
+var g_objXsl   = null;
+var g_lclXsl   = null;
+var g_fltXsl   = initXsl("../../xsl/utl/filter.xsl");
+var g_carType  = null;
+var g_paracat  = null;
+var g_procList = null;
+var g_defProc  = null;
+var g_ilustId  = null;
+
+function init() {
+	if (g_paraId==null) return;
+	g_objXml = initXml(g_paraId.toLowerCase()+".xml", false, true);
+	if (g_objXml==null) return;
+	g_objXml.setProperty("SelectionLanguage", "XPath");
+	var paracatNode = g_objXml.selectSingleNode("//para/@category");
+	g_paracat  = paracatNode.nodeTypedValue;
+
+	g_procList = g_objXml.selectNodes("//subpara[@category='05']");
+	g_objXsl   = initXsl("../../xsl/trb/contents.xsl");
+	g_lclXsl   = initXsl("../../xsl/trb/local.xsl");
+	g_carType  = getCarType(g_filter);
+	if (g_filter!=null) {
+		g_tocXml = setFilter(g_tocXml, g_fltXsl, "../../filter/"+g_filter.toLowerCase()+".xml");		
+	}
+	var illustNodeList = getSiblingList(g_paraId, g_tocXml, "R");
+	if (illustNodeList!=null && illustNodeList.length!=0) {
+		var illustNode = illustNodeList.item(0);
+		g_ilustId = illustNode.getAttribute("id");
+	}
+	if (g_procList.length==0) return;
+
+	var subparaNode = g_procList.item(0);
+	g_defProc = subparaNode.getAttribute("id");
+	if (g_s1!=null) {
+		var idArray = g_s1.split("_");
+		var subparaId = (idArray.length<3)
+		              ? g_s1
+		              : g_s1.substring(0, g_s1.lastIndexOf("_"));
+		var subparaNode = g_objXml.selectSingleNode("//subpara[@id='" + subparaId + "']");
+		var spttlNd = (subparaNode.getAttribute("category")=="01")
+		            ? subparaNode.previousSibling
+								: subparaNode;
+		g_defProc = spttlNd.getAttribute("id");
+	}
+}
+init();
+</script>
+</head>
+<frameset rows="85, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" scrolling="no">
+		<frameset rows="35, *" frameborder="no" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no" scrolling="auto">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

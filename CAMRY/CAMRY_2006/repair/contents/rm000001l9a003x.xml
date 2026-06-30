@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72XW2_T0083" variety="T0083">
+<name>DOOR CONTROL TRANSMITTER (w/ Smart Key System)</name>
+<para id="RM000001L9A003X" category="G" type-id="3001K" name-id="DL0LC-04" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001L9A003X_01" type-id="01" category="01">
+<s-1 id="RM000001L9A003X_01_0001" proc-id="RM0250U___00007WY00000">
+<ptxt>INSPECT DOOR CONTROL TRANSMITTER</ptxt>
+<content1 releasenbr="3">
+<s2>
+<ptxt>Inspect operation of the transmitter.</ptxt>
+<s3>
+<ptxt>Remove the battery (lithium battery) from the transmitter (See page <xref label="Seep01" href="RM000001P7R002X"/>).</ptxt>
+</s3>
+<s3>
+<ptxt>Install a new or normal battery (lithium battery).</ptxt>
+<figure>
+<graphic graphicname="B128411" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>If a new or normal battery is not available, first connect 2 new 1.5 V batteries in series. Then connect leads to the batteries and apply 3 V to the transmitter, as shown in the illustration.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>From outside the vehicle, approximately 1 m (3.28 ft.) away from the driver side outside door handle, test the transmitter by pointing its key plate at the vehicle and pressing a transmitter switch.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The door lock can be operated via the transmitter.</ptxt>
+</specitem>
+<specitem>
+<ptxt>The LED comes on more than once.</ptxt>
+</specitem>
+</spec>
+<list1 type="unordered">
+<item>
+<ptxt>The operational area differs depending on the user, the way the transmitter is held, and the location.</ptxt>
+</item>
+<item>
+<ptxt>The transmitter's faint electric waves may be affected if the area has strong electric waves or noise. The transmitter's operation area may be shortened or the transmitter may not function.</ptxt>
+</item>
+</list1>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect the battery capacity.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When checking the amount of energy left in the battery (lithium battery), the battery must be checked while it is installed in the transmitter (a resistance of 1.2 kΩ is applied to the battery). When the battery energy is checked by itself (removed from the vehicle), the voltage reading will be more than 2.5 V until the energy is depleted.</ptxt>
+</item>
+<item>
+<ptxt>If the transmitter is malfunctioning, the voltage reading of the energy left in the battery will be inaccurate.</ptxt>
+</item>
+</list1>
+</atten4>
+<s3>
+<ptxt>Remove the battery (lithium battery) from the transmitter (See page <xref label="Seep02" href="RM000001P7R002X"/>).</ptxt>
+</s3>
+<s3>
+<ptxt>Connect a wire to the negative (-) terminal of the transmitter and install the battery.</ptxt>
+<figure>
+<graphic graphicname="B139426" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Connect the tester positive (+) lead to the positive (+) battery (lithium battery), and the tester negative (-) lead to the wire connected in the previous step.</ptxt>
+<figure>
+<graphic graphicname="B139435" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>	Press one of the transmitter switches on the transmitter for approximately 1 second.</ptxt>
+</s3>
+<s3>
+<ptxt>Press the transmitter switch on the transmitter again to check the voltage.</ptxt>
+<spec>
+<title>Voltage</title>
+<specitem>
+<ptxt>2.2 V or higher</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the temperature of the battery is low, the inspection cannot be performed correctly. If the result of the test is less than 2.2 V, perform the test again after leaving the battery in a place at a temperature of 18°C (64°F) for 30 minutes or more.</ptxt>
+</item>
+<item>
+<ptxt>Read the voltage immediately after the switch is pressed. When 0.8 seconds have passed after the switch is pressed, the automatic power-off function starts and the resistance applied to the battery will cease. The voltage of the battery will be 2.5 V or more.</ptxt>
+</item>
+<item>
+<ptxt>Press the switch at least 3 times before reading the voltage. If the battery has just been returned to 18°C (64°F), the voltage may be unusually high for the first or second voltage reading.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

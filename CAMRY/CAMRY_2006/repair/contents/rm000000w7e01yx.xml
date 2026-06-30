@@ -1,0 +1,1688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7E01YX" category="U" type-id="303FJ" name-id="AT039-39" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000W7E01YX_z0" proc-id="RM0250U___00003A400000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the DATA LIST using the intelligent tester allows switch, sensor, actuator and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to save labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether a part is faulty.</ptxt>
+</atten3>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: "DIAGNOSIS / OBD/MOBD / ECT / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, read "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" align="center" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CALC LOAD</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Calculated load by ECM /</ptxt>
+<ptxt>Min.: 0%, Max.: 100%</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>15.0 to 35.0%: Idling</ptxt>
+</item>
+<item>
+<ptxt>10.0 to 30.0%: Running without load (2,000 rpm)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENGINE SPD</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine speed /</ptxt>
+<ptxt>Min.: 0 rpm, Max.: 16,383.75 rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>550 to 800 rpm: Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed /</ptxt>
+<ptxt>Min.: 0 km/h, Max.: 255 km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual vehicle load</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine coolant temperature /</ptxt>
+<ptxt>Min.: -40°C (419°F), Max.: 140°C (258°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>80 to 105°C (176 to 221°F): After warming up</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>If value -40°C (-40°F): sensor circuit open</ptxt>
+</item>
+<item>
+<ptxt>If value 140°C (284°F): sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THROTTLE POS</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Throttle position /</ptxt>
+<ptxt>Min.: 0%, Max.: 100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 22%: Idling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Calculated value based on VTA1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (NC)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Counter gear speed /</ptxt>
+<ptxt>Min.: 0 rpm, Max.: 12750 rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (NT)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Input turbine speed/</ptxt>
+<ptxt>display: 50 r/min</ptxt>
+</entry>
+<entry valign="middle">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Lock-up ON (After warming up the engine):</ptxt>
+<ptxt>Input turbine speed (NT) equal to the engine speed.</ptxt>
+</item>
+<item>
+<ptxt>Lock-up OFF (Idling at N position):</ptxt>
+<ptxt>Input turbine speed (NT) nearly equal to the engine speed.</ptxt>
+</item>
+</list1>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CTP SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Closed throttle position switch /</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ON: Throttle fully closed</ptxt>
+</item>
+<item>
+<ptxt>OFF: Throttle open</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PNP SW [NSW]</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P and N: ON</ptxt>
+<ptxt>Except P and N: OFF</ptxt>
+</entry>
+<entry>
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+<atten4>
+<ptxt>When the failure still occurs even after adjusting these parts, see page <xref label="Seep01" href="RM0000025JZ000X_04_0001"/>.</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STOP LIGHT SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Stop light switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake pedal is depressed: ON</ptxt>
+</item>
+<item>
+<ptxt>Brake pedal is released: OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATTERY VOLTAGE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Battery voltage /</ptxt>
+<ptxt>Min.: 0, Max.: 65.535 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V: Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TC/TE1</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>TC and TE1 terminals of DLC3 /</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Active Test support data</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FC IDL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Fuel cut idle /</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Fuel cut operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FC IDL= "ON" when throttle valve fully closed and engine speed over 2,800 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FC TAU</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Fuel cut TAU (Fuel cut during very light load) /</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Fuel cut operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel cut being performed under very light load to prevent engine combustion from becoming incomplete</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SHIFT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ECM gear shift command/</ptxt>
+<ptxt>1st, 2nd, 3rd, 4th, 5th or 6th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>D: 1st, 2nd, 3rd, 4th, 5th or 6th</ptxt>
+</item>
+<item>
+<ptxt>S: 1st, 2nd, 3rd, 4th, 5th or 6th</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REVERSE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>R: ON</ptxt>
+<ptxt>Except R: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+<atten4>
+<ptxt>When the failure still occurs even after adjusting these parts, see page <xref label="Seep03" href="RM0000025JZ000X"/>
+</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARKING</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P: ON</ptxt>
+<ptxt>Except P: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+<atten4>
+<ptxt>When the failure still occurs even after adjusting these parts, see page <xref label="Seep04" href="RM0000025JZ000X"/>
+</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NEUTRAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is; </ptxt>
+<ptxt>N: ON</ptxt>
+<ptxt>Except N: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+<atten4>
+<ptxt>When the failure still occurs even after adjusting these parts, see page <xref label="Seep05" href="RM0000025JZ000X"/>
+</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DRIVE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>D and S: ON</ptxt>
+<ptxt>Except D and S: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+<atten4>
+<ptxt>When the failure still occurs even after adjusting these parts, see page <xref label="Seep06" href="RM0000025JZ000X"/>
+</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPORTS UP SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Sport shift up switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Press continuously "+" (Up shift): ON</ptxt>
+</item>
+<item>
+<ptxt>Release "+" (Up shift): OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPORTS DOWN SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Sport shift down switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Press continuously "-" (Down shift): ON</ptxt>
+</item>
+<item>
+<ptxt>Release "-" (Down shift): OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MODE SELECT SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Sport mode select switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>S, "+" and "-": ON</ptxt>
+<ptxt>Except S, "+" and "-": OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TPS 1 SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ATF pressure switch No. 1 status/</ptxt>
+<ptxt>0: OFF / 1: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gear position 1st, 2nd, 3rd or 4th: ON</ptxt>
+<ptxt>Gear position 5th or 6th: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TPS 2 SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ATF pressure switch No. 2 status/</ptxt>
+<ptxt>0: OFF / 1: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gear position 4th, 5th or 6th: ON</ptxt>
+<ptxt>Gear position 1st, 2nd or 3rd: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TPS 3 SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ATF pressure switch No. 3 status/</ptxt>
+<ptxt>0: OFF / 1: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLU is ON: ON</ptxt>
+<ptxt>Shift solenoid valve SLU is OFF: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A/T OIL TEMP 1</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ATF temp. sensor value/</ptxt>
+<ptxt>min.: -40°C (-40°F)</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>After stall test;</ptxt>
+<ptxt>Approx. 80°C (176°F)</ptxt>
+</item>
+<item>
+<ptxt>Equal to ambient temperature when cold soak</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>If the value is "-40°C (-40°F)" or "215°C (419°F)", ATF temp. sensor circuit is open or shorted.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT SENS VOL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Input turbine speed sensor output voltage /</ptxt>
+<ptxt>Min.: 0 V, Max.: 5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.1 to 1.9 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC SENS VOL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Counter gear speed sensor output voltage /</ptxt>
+<ptxt>Min.: 0 V, Max.: 5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.1 to 1.9 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ATF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Flex lockup judder judgement flag /</ptxt>
+<ptxt>0: OFF / 1: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Lock up /</ptxt>
+<ptxt>0: OFF / 1: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock up: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP SOL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Lock up solenoid status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Lock up: ON</ptxt>
+</item>
+<item>
+<ptxt>Except lock up: OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SLU)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Shift Solenoid SLU Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Lock up: ON</ptxt>
+</item>
+<item>
+<ptxt>Except lock up: OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SLT)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Shift solenoid SLT status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator pedal is depressed: OFF</ptxt>
+</item>
+<item>
+<ptxt>Accelerator pedal is released: ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENGINE SPD</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine speed /</ptxt>
+<ptxt>Min.: 0 rpm, Max.: 16,383.75 rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>550 to 800 rpm: Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INTAKE AIR TEMP</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Intake air temperature /</ptxt>
+<ptxt>Min.: -40°C (-40°F), Max.: 140°C (258°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Equivalent to ambient air temperature</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>If value -40°C(-40°F): sensor circuit open</ptxt>
+</item>
+<item>
+<ptxt>If value 140°C(284°F): sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine coolant temperature /</ptxt>
+<ptxt>Min.: -40°C (-40°F), Max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>80 to 105°C (176 to 221°F): After warming up</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>If value -40°C (-40°F): sensor circuit open</ptxt>
+</item>
+<item>
+<ptxt>If value 140°C (284°F): sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THROTTLE POS</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Throttle sensor position /</ptxt>
+<ptxt>Min.: 0%, Max.: 100%</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator pedal released: 0% </ptxt>
+</item>
+<item>
+<ptxt>Accelerator pedal fully depressed: 64 to 96% </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Recognition value for throttle opening angle on ECM</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACCEL POS</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Absolute Accelerator Pedal Position /</ptxt>
+<ptxt>Min.: 0%, Max.: 100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 22%: Accelerator pedal released</ptxt>
+<ptxt>54 to 86%: Accelerator pedal fully depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#CODES</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt># of Codes /</ptxt>
+<ptxt>Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of detected DTCs</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CHECK MODE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Check mode /</ptxt>
+<ptxt>0: OFF, 1: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Check mode ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD TEST</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Check mode result for vehicle speed sensor /</ptxt>
+<ptxt>0: COMPL, 1: INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>MIL status /</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: MIL ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL ON RUN DIST</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>MIL ON run distance /</ptxt>
+<ptxt>Min.: 0 mile (65,535 km),</ptxt>
+<ptxt>Max.: 110,950 mile (65,535 km)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance after DTC detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL ON RUN TIME</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Running time from MIL ON /</ptxt>
+<ptxt>Min.: 0 minute,</ptxt>
+<ptxt>Max.:65,535 minutes</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Equivalent to running time after MIL ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENG RUN TIME</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine run time /</ptxt>
+<ptxt>Min.: 0 second,</ptxt>
+<ptxt>Max.: 65,535 seconds</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIME DTC CLEAR</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Time after DTC cleared /</ptxt>
+<ptxt>Min.: 0 minute,</ptxt>
+<ptxt>Max.: 65,535 minutes</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Equivalent to time after DTCs erased</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DIST DTC CLEAR</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Distance after DTC cleared /</ptxt>
+<ptxt>Min.: 0 km/h,</ptxt>
+<ptxt>Max.: 65,535 km/h</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Equivalent to time after DTCs erased</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WU CYC DTC CLEAR</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Warm-up cycle after DTC cleared /</ptxt>
+<ptxt>Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of warm-up cycles after DTC cleared</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OBD CERT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OBD requirement</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OBD2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>COMP MON</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Comprehensive component monitor /</ptxt>
+<ptxt>0: NOT AVL, 1: AVAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Comprehensive Component Monitor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CCM ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Comprehensive component monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CCM CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Comprehensive component monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FUEL ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Fuel system monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FUEL CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Fuel system monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MISFIRE ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Misfire monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MISFIRE CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Misfire monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EGR ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>EGR monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EGR CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>EGR monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HTR ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>O2S (A/FS) heater monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HTR CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>O2S (A/FS) heater monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O2S(A/FS) ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>O2S (A/FS) monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O2S(A/FS) CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>O2S (A/FS) monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACRF ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>A/C monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACRF CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>A/C monitor /</ptxt>
+<ptxt>CMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AIR ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2nd air monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AIR CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2nd air monitor /</ptxt>
+<ptxt>CMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EVAP ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>EVAP monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EVAP CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>EVAP monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HCAT ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Heated catalyst monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HCAT CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Heated catalyst monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAT ENA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Catalyst monitor /</ptxt>
+<ptxt>UNABLE or ENABLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAT CMPL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Catalyst monitor /</ptxt>
+<ptxt>COMPL or INCMPL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MODEL CODE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Model code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying model code: </ptxt>
+<ptxt>GSV40#</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENGINE TYPE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine type</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying engine type:</ptxt>
+<ptxt>#####</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CYLINDER NUMBER</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Cylinder number /</ptxt>
+<ptxt>Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying cylinder number:</ptxt>
+<ptxt>6</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRANSMISSION</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transmission type</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying transmission type:</ptxt>
+<ptxt>6AT</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DESTINATION</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Destination</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying destination:</ptxt>
+<ptxt>A (America)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MODEL YEAR</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Model year /</ptxt>
+<ptxt>Min.: 1900, Max.: 2155</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying model year:</ptxt>
+<ptxt>200#</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SYSTEM</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>System identification</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Identifying engine type:</ptxt>
+<ptxt>GASLINE (gasoline engine)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows relays, VSVs, actuators and other items to be operated without removing any parts. Performing the ACTIVE TEST as the first step in troubleshooting is one method to save labor time.</ptxt>
+<ptxt>It is possible to display the DATA LIST during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the intelligent tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / ACTIVE TEST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on tester, perform "ACTIVE TEST".</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.04in"/>
+<colspec colname="COL2" colwidth="1.82in"/>
+<colspec colname="COLSPEC0" colwidth="2.20in"/>
+<colspec colname="COL3" align="center" colwidth="2.02in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SHIFT</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid valve and set each shift position by yourself.</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Press "→" button: Shift up</ptxt>
+</item>
+<item>
+<ptxt>Press "←" button: Shift down</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Possible to check the operation of the shift solenoid valves. </ptxt>
+<ptxt>Upshifts and downshifts should be performed consecutively. A 10-second interval is required between gear changes. </ptxt>
+<ptxt>Do not downshift at high speeds. Doing so will damage the automatic transaxle.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP</ptxt>
+</entry>
+<entry>
+<ptxt>Control the shift solenoid SLU to set the automatic transaxle to the lock-up condition.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Possible to check the SLU solenoid operation.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Throttle valve opening angle: Less than 35%</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed: 37 mph (60 km/h) or more, and 6th gear</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL1)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid SL1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped</ptxt>
+</item>
+<item>
+<ptxt>Shift lever in P or N position</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL2)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid SL2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped</ptxt>
+</item>
+<item>
+<ptxt>Shift lever in P or N position</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL3)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid SLU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped</ptxt>
+</item>
+<item>
+<ptxt>Shift lever in P or N position</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL4)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid S1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped</ptxt>
+</item>
+<item>
+<ptxt>Shift lever in P or N position</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid S2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped</ptxt>
+</item>
+<item>
+<ptxt>Shift lever in P or N position</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SLT)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid SLT and raise the line pressure.</ptxt>
+</entry>
+<entry>
+<ptxt>ON/OFF</ptxt>
+<atten4>
+<ptxt>ON: No action (normal operation)</ptxt>
+<ptxt>OFF: Line pressure up (When the active test of "SOLENOID (SLT)" is performed, the ECM commands the SLT solenoid to turn off).</ptxt>
+</atten4>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped</ptxt>
+</item>
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SLU)</ptxt>
+</entry>
+<entry>
+<ptxt>Operate the shift solenoid SLU and raise the line pressure.</ptxt>
+</entry>
+<entry>
+<ptxt>ON/OFF</ptxt>
+<atten4>
+<ptxt>OFF: Line pressure up (When the active test of "SOLENOID (SLU)" is performed, the ECM commands the SLU solenoid to turn off).</ptxt>
+<ptxt>ON: No action (normal operation)</ptxt>
+</atten4>
+</entry>
+<entry valign="middle">
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: "SOLENOID (SLT)" in the ACTIVE TEST is performed to check the line pressure changes by connecting the SST to the automatic transaxle. The same SST is used for the HYDRAULIC TEST (See page <xref label="Seep02" href="RM000000W7B025X"/>) as well.</ptxt>
+<atten4>
+<ptxt>The pressure values in ACTIVE TEST and HYDRAULIC TEST will be different from each other.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

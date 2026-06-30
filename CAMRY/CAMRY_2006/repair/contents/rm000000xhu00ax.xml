@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHU00AX" category="S" type-id="3001E" name-id="BC02R-09" from="200601">
+<name>DIAGNOSTIC TROUBLE CODE CHART</name>
+<subpara id="RM000000XHU00AX_z0" proc-id="RM0250U___00005L600000">
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>If a trouble code is displayed during the DTC check, check the circuit indicated by the DTC. For details of each code, refer to the page for the respective "DTC No." in the DTC chart.</ptxt>
+</item>
+<item>
+<ptxt>Inspect the fuse and relay before investigating the trouble areas as shown in the table below.</ptxt>
+</item>
+</list1>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>DTC chart of ABS:</title>
+<tgroup cols="4" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0200/31 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Front Speed Sensor RH Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Speed sensor circuit</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0205/32 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Front Speed Sensor LH Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Speed sensor circuit</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0210/33 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Rear Speed Sensor RH Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Speed sensor circuit</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0215/34 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Rear Speed Sensor LH Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Speed sensor circuit</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0226/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>SFR Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly</ptxt>
+<ptxt>2. SFRH or SFRR circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI8009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0236/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>SFL Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly</ptxt>
+<ptxt>2. SFLH or SFLR circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI8009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0246/23</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>SRR Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly</ptxt>
+<ptxt>2. SRRH or SRRR circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI8009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0256/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>SRL Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly</ptxt>
+<ptxt>2. SRLH or SRLR circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI8009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0273/13 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Open in ABS Motor Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. ABS NO. 1 fuse</ptxt>
+<ptxt>2. VSC NO. 2 relay</ptxt>
+<ptxt>3. VSC NO. 2 relay circuit</ptxt>
+<ptxt>4. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIB009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0274/14</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Short to B+ in ABS Motor Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. ABS NO. 1 fuse</ptxt>
+<ptxt>2. VSC NO. 2 relay</ptxt>
+<ptxt>3. VSC NO. 2 relay circuit</ptxt>
+<ptxt>4. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIB009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0278/11</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Open in ABS Solenoid Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. ABS NO. 2 fuse</ptxt>
+<ptxt>2. ABS solenoid relay</ptxt>
+<ptxt>3. ABS solenoid relay circuit</ptxt>
+<ptxt>4. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI7009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0279/12</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Short to B+ in ABS Solenoid Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI7009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1225/25</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>SM Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly</ptxt>
+<ptxt>2. SM1 or SM2 circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI8009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1235/35</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Foreign Object is Attached on Tip of Front Speed Sensor RH</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Speed sensor rotor</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1236/36</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Foreign Object is Attached on Tip of Front Speed Sensor LH</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Speed sensor rotor</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1238/38</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Foreign Object is Attached on Tip of Rear Speed Sensor RH</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Speed sensor rotor</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1239/39</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Foreign Object is Attached on Tip of Rear Speed Sensor LH</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Speed sensor rotor</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1241/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Low Battery Positive Voltage</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. ECU-IG NO. 2 fuse</ptxt>
+<ptxt>2. Battery</ptxt>
+<ptxt>3. Charging system</ptxt>
+<ptxt>4. Power source circuit</ptxt>
+<ptxt>5. Internal power supply circuit of the skid control ECU</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XW6009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1243/43 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Acceleration Sensor Stuck Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1244/44</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Open or Short in Acceleration Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1245/45 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Acceleration Sensor Output Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1246/46 (*2)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Master Cylinder Pressure Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Master cylinder pressure sensor</ptxt>
+<ptxt>2. Master cylinder pressure sensor circuit</ptxt>
+<ptxt>3. Stop light switch circuit</ptxt>
+<ptxt>4. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIG00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1249/49</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Open in Stop Light Switch Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. STOP fuse</ptxt>
+<ptxt>2. Stop light switch</ptxt>
+<ptxt>3. Stop light switch circuit</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIE009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1251/51 (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Open in Pump Motor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly (GND circuit)</ptxt>
+<ptxt>2. Brake actuator assembly (Motor circuit)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIF009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1361/91</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Short Circuit in ABS Motor Fail Safe Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. ABS NO. 1 fuse</ptxt>
+<ptxt>2. VSC NO. 1 (fail safe) relay</ptxt>
+<ptxt>3. VSC NO. 1 (fail safe) relay circuit</ptxt>
+<ptxt>4. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIB009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1381/97</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Yaw Rate and / or Acceleration Sensor Power Supply Voltage Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor power source circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>U0073/94</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Control Module Communication Bus OFF</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>CAN communication system</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YUO00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>U0124/95</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Lost Communication with Lateral Acceleration Sensor Module</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>CAN communication system (Skid control ECU to yaw rate and acceleration sensor)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YUO00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>(*1, *2):</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>Even after the trouble areas are repaired, the ABS warning light will not go off unless the following operations are performed:</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>(*1):</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>Drive the vehicle at 12 mph (20 km/h) for 30 seconds or more and check that the ABS warning light goes off.</ptxt>
+</item>
+<item>
+<ptxt>Clear the DTC.</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>(*2):</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>Keep the vehicle stationary for 5 seconds or more and depress the brake pedal lightly 2 or 3 times.</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle at the vehicle speed of 31 mph (50 km/h) and keep depressing the brake pedal strongly for approximately 3 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Repeat the above operation 3 times or more and check that the ABS warning light goes off.</ptxt>
+</item>
+<item>
+<ptxt>Clear the DTC.</ptxt>
+</item>
+</list2>
+</list1>
+<atten4>
+<ptxt>In some cases, the intelligent tester cannot be used when the ABS warning light remains on.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>DTC chart of VSC:</title>
+<tgroup cols="4" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>43</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>ABS Control System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>ABS control system</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002CNM000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1201/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Engine Control System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Engine control system</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XII009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1203/53</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>ECM Communication Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIJ007X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1210/36</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Zero Point Calibration of Yaw Rate Sensor Undone</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly (Skid control ECU)</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor</ptxt>
+<ptxt>3. Zero point calibration undone</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIK009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1231/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Steering Angle Sensor Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Steering angle sensor</ptxt>
+<ptxt>2. Steering angle sensor circuit</ptxt>
+<ptxt>3. Steering angle sensor power supply</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIM00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1232/32</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Stuck in Acceleration Sensor</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1234/34</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Yaw Rate Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor circuit</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1290/66</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Steering Angle Sensor Zero Point Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor zero point calibration incomplete</ptxt>
+<ptxt>2. Poor adjustment of the centered position of the steering wheel</ptxt>
+<ptxt>3. Poor adjustment of front wheel alignment</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000ZRR00LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1336/39</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Zero Point Calibration of Acceleration Sensor Undone</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Brake actuator assembly (Skid control ECU)</ptxt>
+<ptxt>2. Yaw rate and acceleration sensor</ptxt>
+<ptxt>3. Zero point calibration undone</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIK009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>U0100/65</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Lost Communication with ECM / PCM</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>CAN communication system (Skid control ECU to ECM)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YUO00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>U0123/62</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Lost Communication with Yaw Rate Sensor Module</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>CAN communication system (Skid control ECU to yaw rate and acceleration sensor)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YUO00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>U0126/63</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Lost Communication with Steering Angle Sensor Module</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>CAN communication system (Skid control ECU to steering angle sensor)</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YUO00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>In some cases, the intelligent tester cannot be used when the VSC warning light (models without multi information display) or multi information display (models with multi information display) remains on.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>Test Mode DTC of ABS:</title>
+<tgroup cols="4" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1271/71</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Low Output Signal of Front Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1272/72</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Low Output Signal of Front Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1273/73</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Low Output Signal of Rear Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1274/74</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Low Output Signal of Rear Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1275/75</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Abnormal Change in Output Signal of Front Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1276/76</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Abnormal Change in Output Signal of Front Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1277/77</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Abnormal Change in Output Signal of Rear Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1278/78</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Abnormal Change in Output Signal of Rear Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIC009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1279/79</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Acceleration Sensor Output Voltage Malfunction (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Yaw rate and acceleration sensor</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C1281/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Master Cylinder Pressure Sensor Output Malfunction (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>1. Stop light switch</ptxt>
+<ptxt>2. Master cylinder pressure sensor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIG00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>Test Mode DTC of VSC:</title>
+<tgroup cols="4" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>C0371/71</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>Yaw Rate Sensor (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="left">
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

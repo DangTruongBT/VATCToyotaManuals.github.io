@@ -1,0 +1,102 @@
+<!-- $Id: whatsnew.html,v 1.10 2005/02/16 08:11:47 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  テンプレート編集要領(長文)                                            -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>What's New</title>
+<style type="text/css">
+body {
+	font-family: verdana, sans-serif;
+	font-size:   10pt;
+	margin:      2px;
+}
+p {
+	font-size:   12pt;
+	font-weight: bold;	
+}
+td {
+  border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #cccccc;
+	vertical-align:top;
+}
+a {
+	font-size:       10pt;
+	color:           #000000;
+	vertical-align:  top;
+	text-decoration: none;
+}
+a:hover {
+	color:           #990000;
+}
+img {
+	margin:  2px 5px 2px 20px;
+	border-width: 0px;
+}
+</style>
+</head>
+<body>
+<!--===================================================================-->
+<!--
+### 新着情報テンプレート ###
+
+1. はじめに
+もし、現在のスタイルを利用するのであれば、<tr>...</tr>の行を追加(挿入)する
+形式で編集を行なってください。
+異なる形式で表示を行なう場合には、"TEMPLATE START"から"TEMPLATE END"まで
+削除し、新たに編集を行なってください。
+
+2. 表示スタイルの設定
+   <style>...</style>内で設定を行なっています。この記述を変更することで
+   表示スタイルをある程度変更することが可能です。(フォントなど)
+   設定内容の詳細は、内部設計書を参照してください。
+
+3. 修理書特定パラグラフの表示
+修理書の特定パラグラフを表示する場合には、以下のように記述を行なってください。
+(1) 同じ画面で表示
+    以下のように記述してください。但し同一パブ内のコンテンツに限られます。
+    xxxxx   表示を行なうパラグラフの修理書パラグラフID
+    c       表示を行なうパラグラフのパラグラフカテゴリ
+    yyyymm  表示を行なうパラグラフの適用時期
+    foo   画面にリンクとして表示する内容
+    <a href="../etc/linkage.html?parag=xxxxx&paracat=c&term=yyyymm">foo</a>
+(2) 別画面で表示
+    以下のように記述してください。但し同一パブ内のコンテンツに限られます。
+    xxxxx   表示を行なうパラグラフの修理書パラグラフID
+    c       表示を行なうパラグラフのパラグラフカテゴリ
+    yyyymm  表示を行なうパラグラフの適用時期
+    title   新規ウィンドウのタイトル(ウィンドウに表示されるタイトルではない
+　　　　　　通常は無指定('')で問題なし)
+    setting 新規ウィンドウの設定(ツールバー, ステータスバーなど)
+            詳細は、javascriptのwindow.openメソッドを別途参照してください。
+    foo     画面にリンクとして表示する内容
+    (⇒折り返し 実際には一行)
+    <a href="#" onClick="javascript:window.open('../etc/linkage.html ⇒
+             ?parag=xxxxx&paracat=c&term=yyyymm', 'title', 'setting')">foo</a>
+
+4. 注意事項
+編集を行う際には、可能な限りテキストエディタをご利用ください。
+MS WORDのHTML編集機能および各種HTMLエディタを利用すると、
+ファイル内に想定していない記述が自動的にされる可能性があります。
+-->
+<!--===================================================================-->
+<!--==============           TEMPLATE START              ==============-->
+<p>What's New</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="18px"><img src="right-arrow-grayframe.png"></td>
+		<td>
+			<a href="#">No contents available</a>
+		</td>
+	</tr>
+</table>
+<!--==============           TEMPLATE END                ==============-->
+<!--===================================================================-->
+</body>
+</html>

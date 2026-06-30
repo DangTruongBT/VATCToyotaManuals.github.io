@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM0000011GD006X" category="D" type-id="303F2" name-id="DL07S-06" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM0000011GD006X_z0" proc-id="RM0250U___00009FC00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>POWER DOOR LOCK CONTROL SYSTEM DESCRIPTION</ptxt>
+<step2>
+<ptxt>The power door lock system locks/unlocks all the doors.</ptxt>
+<ptxt>The master switch and the door control switch on the passenger door send "lock/unlock" request signals to the main body ECU. Then, the main body ECU sends these request signals to the lock motors in each door to lock/unlock all the doors at once in response to the inputs.</ptxt>
+<ptxt>Operating the driver's door lock using a mechanical key sends request signals to lock/unlock the doors to the main body ECU via the master switch. "2-step unlock function" is optional for unlocking procedures of the key-linked lock for the driver side door. </ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENT</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Components</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Multiplex network master switch assembly (Manual door lock switch)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch on master switch assembly locks/unlocks all doors.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door control switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch on passenger side door locks/unlocks all doors.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door courtesy switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Placed on each door. Detects door status (open or closed) and outputs data to main body ECU. Turns on when door is open and turns off when door is closed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Driver side door lock</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Built-in motor locks/unlocks door.</ptxt>
+</item>
+<item>
+<ptxt>Built-in door control switch (key-linked) detects door key operation's door status (locked or unlocked) and outputs data to main body ECU.</ptxt>
+</item>
+<item>
+<ptxt>Built-in position switch detects door status (locked or unlocked) and outputs data to main body ECU. This switch turns off when door is locked and turns on when door is unlocked.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front passenger side door lock, luggage compartment door lock, rear LH and RH door locks</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Built-in motor locks/unlocks door.</ptxt>
+</item>
+<item>
+<ptxt>Built-in position switch detects door status (locked or unlocked) and outputs data to main body ECU. This switch turns off when door is locked and turns on when door is unlocked.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SYSTEM FUNCTION</ptxt>
+<atten4>
+<ptxt>The following functions' default settings are ON. Some of these functions can be customized (See page <xref label="Seep01" href="RM0000011GH007X"/>).</ptxt>
+</atten4>
+<step2>
+<ptxt>This system is controlled by the main body ECU. The main body ECU outputs signals to each door lock motor. The door lock control system of the CAMRY has the following functions:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.56in"/>
+<colspec colname="COL2" colwidth="3.52in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Outline</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Manual lock and unlock function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function can lock or unlock all doors by the door lock control switch operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key-linked lock and unlock function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function, which is linked with the key cylinder, can lock or unlock all the doors when a lock or unlock operation is effected.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Manual unlock prohibition function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Performing the door lock operation with an electrical key (*1) or a mechanical key (transmitter) will prohibit the unlock operation by the door lock control switch.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key lock-in prevention function (Electrical key)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If a each door lock (*1) or driver's door lock (*2) operation is performed when the electrical key (*1) or mechanical key is in the cabin (*1) or ignition key cylinder (*2), all the doors will be unlocked.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift-linked automatic door lock function (A/T)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the conditions listed below are met consecutively, this function causes all the doors to be automatically locked.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The ignition switch is on (IG).</ptxt>
+</item>
+<item>
+<ptxt>All doors are closed.</ptxt>
+</item>
+<item>
+<ptxt>The shift lever is moved out of the P position.</ptxt>
+</item>
+<item>
+<ptxt>Any of the doors are unlocked.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift-linked automatic door unlock function (A/T)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the ignition switch is on (IG), if moving the shift lever to the P position from any other position, all the doors will be automatically unlocked.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>One-motion open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the door is locked, this function enables the door to be unlocked by pulling the inside handle of the driver's or front passenger's door.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2-step unlock function</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function is provided to unlock the driver's door by turning the key cylinder once and to unlock the remaining doors by turning it the second time.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: w/ Smart Key System</ptxt>
+<ptxt>*2: w/o Smart Key System</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDV012X" category="C" type-id="302GR" name-id="ES41M-01" from="200601">
+<dtccode>P0016</dtccode>
+<dtcname>Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)</dtcname>
+<dtccode>P0017</dtccode>
+<dtcname>Crankshaft Position - Camshaft Position Correlation  (Bank 1 Sensor B)</dtcname>
+<dtccode>P0018</dtccode>
+<dtcname>Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)</dtcname>
+<dtccode>P0019</dtccode>
+<dtcname>Crankshaft Position - Camshaft Position Correlation  (Bank 2 Sensor B)</dtcname>
+<subpara id="RM000000PDV012X_01" type-id="60" category="03" proc-id="RM0250U___00002GM00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>In the VVT system, the appropriate intake and exhaust valve open and close timings are controlled by the ECM. The ECM performs intake and exhaust valve control by performing the following: 1) controlling the camshaft and camshaft oil control valve, and operating the camshaft timing gear; and 2) changing the relative positions of the gaps between the camshaft and crankshaft.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0016</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Deviation in crankshaft position sensor signal and VVT sensor 1 (for intake camshaft (bank 1)) signal (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Mechanical system (Timing chain has jumped teeth or chain stretched)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0017</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Deviation in crankshaft position sensor signal and VVT sensor 1 (for exhaust camshaft (bank 1)) signal (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Mechanical system (Timing chain has jumped teeth or chain stretched)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0018</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Deviation in crankshaft position sensor signal and VVT sensor 2 (for intake camshaft (bank 2)) signal (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Mechanical system (Timing chain has jumped teeth or chain stretched)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0019</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Deviation in crankshaft position sensor signal and VVT sensor 2 (for exhaust camshaft (bank 2)) signal (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Mechanical system (Timing chain has jumped teeth or chain stretched)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_02" type-id="64" category="03" proc-id="RM0250U___00002GN00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>To monitor the correlation of the intake camshaft position and crankshaft position, the ECM checks the VVT learning value while the engine is idling. The VVT learning value is calibrated based on the camshaft position and crankshaft position. The intake valve timing is set to the most retarded angle while the engine is idling. If the VVT learning value is out of the specified range in consecutive driving cycles, the ECM illuminates the MIL and sets the DTC P0016 (Bank 1) or P0018 (Bank 2).</ptxt>
+</item>
+<item>
+<ptxt>To monitor the correlation of the exhaust camshaft position and crankshaft position, the ECM checks the VVT learning value while the engine is idling. The VVT learning value is calibrated based on the camshaft position and crankshaft position. The exhaust valve timing is set to the most advanced angle while the engine is idling. If the VVT learning value is out of the specified range in consecutive driving cycles, the ECM illuminates the MIL and sets the DTC P0017 (Bank 1) or P0019 (Bank 2).</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_03" type-id="65" category="03" proc-id="RM0250U___00002GO00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0016: Camshaft timing misalignment at idle (intake camshaft bank 1)</ptxt>
+<ptxt>P0017: Camshaft timing misalignment at idle (exhaust camshaft bank 1)</ptxt>
+<ptxt>P0018: Camshaft timing misalignment at idle (intake camshaft bank 2)</ptxt>
+<ptxt>P0019: Camshaft timing misalignment at idle (exhaust camshaft bank 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT actuator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft position sensor, Crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per drive cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 1 minute</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_04" type-id="66" category="03" proc-id="RM0250U___00002GP00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0011 (VVT system 1 - advance)</ptxt>
+<ptxt>P0012 (VVT system 1 - retard)</ptxt>
+<ptxt>P0021 (VVT system 2 - advance)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Intake side:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>500 to 1,000 rpm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Exhaust side:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VVT feedback mode</ptxt>
+</entry>
+<entry>
+<ptxt>Executing</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VVT</ptxt>
+</entry>
+<entry>
+<ptxt>Maximum advanced position</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry>
+<ptxt>500 to 1,000 rpm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_05" type-id="67" category="03" proc-id="RM0250U___00002GQ00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<title>Intake side:</title>
+<tgroup cols="2">
+<colspec colname="col1" align="left" colwidth="3.54in"/>
+<colspec colname="col2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>One of the following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition 1 or 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. VVT leaning value at maximum retarded valve timing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 18.5°CA</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. VVT leaning valve at maximum retarded valve timing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 43.5°CA</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Exhaust side:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>One of the following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition 1 or 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. VVT leaning value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 77°CA</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. VVT leaning value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 102°CA</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_06" type-id="32" category="03" proc-id="RM0250U___00002GR00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0335 (See page <xref label="Seep01" href="RM000000TCW01QX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_07" type-id="51" category="05" proc-id="RM0250U___00002GS00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>). </ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PDV012X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PDV012X_08_0001" proc-id="RM0250U___00002GT00000">
+<testtitle>CHECK VALVE TIMING (CHECK FOR LOOSE AND A JUMPED TOOTH OF TIMING CHAIN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the cylinder head covers RH and LH.</ptxt>
+<figure>
+<graphic graphicname="A135015E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the crankshaft pulley, and align its groove with the timing mark "0" of the timing chain cover.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the timing marks of the camshaft timing gears are aligned with the timing marks of the bearing cap as shown in the illustration.</ptxt>
+<ptxt>If not, turn the crankshaft 1 revolution (360°), then align the marks as above.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Timing marks on camshaft timing gears are aligned as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the cylinder head covers.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDV012X_08_0002" fin="true">OK</down>
+<right ref="RM000000PDV012X_08_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDV012X_08_0002">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PDV012X_08_0003">
+<testtitle>ADJUST VALVE TIMING (REPAIR OR REPLACE TIMING CHAIN)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

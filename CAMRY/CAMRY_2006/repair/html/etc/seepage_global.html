@@ -1,0 +1,83 @@
+<!-- $Id: seepage_global.html,v 1.4 2005/08/26 01:25:39 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 Close                                                           -->
+<!--    001 Preparation                                                     -->
+<!--    002 Print                                                           -->
+<!--    003 Tech Tips                                                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Reference Page Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var DELIM   = " &gt; ";
+var pprList = null; 
+var g_tips  = null;
+function init() {
+	setGlobalLinks();
+}
+
+function setGlobalLinks() {
+	pprList = parent.getPreparationArray(parent.g_objXml, parent.g_tocXml);
+//	document.all('ppr').style.visibility = (pprList==null) ? "hidden" : "";
+	document.all('ppr').style.display = (pprList==null) ? "none" : "";
+
+	g_tips = parent.getTips(parent.g_objXml);
+	document.all('tps').style.display = (g_tips==null) ? "none" : "";
+}
+
+function callPreparationItems(pprXmlList) {
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	parent.openPreparationItems(pprXmlList, dialogTitle);
+}
+
+function callTips(tipsXml) {
+	var dialogTitle = parent.g_sectionName
+					+ DELIM + parent.g_titleName
+					+ DELIM + parent.g_paragraphName;
+	parent.openTips(tipsXml, dialogTitle);
+}
+
+</script>
+</head>
+<body onLoad="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td></td></tr>
+	<tr>
+		<td align="center">
+			<table width="98%" cellpadding="2" cellspacing="0" border="0">
+				<tr>
+					<td width="2"><br></td>
+					<td align="left">
+						<a class="window-control-button" href="javascript:parent.framePrint(parent.contents)">
+						  Print<!-- 002 -->
+						</a>
+					</td>
+					<td align="center">
+						<a id="ppr" class="popup-button" href="#" onClick="callPreparationItems(pprList)">
+						  Preparation<!-- 001 -->
+						</a>
+						<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">
+						  Tech Tips<!-- 003 -->
+						</a>
+					</td>
+					<td align="right">
+						<a class="window-control-button" href="javascript:parent.window.close();">
+						  Close<!-- 000 -->
+						</a>
+					</td>
+					<td width="2"><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHO009X" category="D" type-id="303F2" name-id="BC02F-09" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000XHO009X_z0" proc-id="RM0250U___00005R800000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FUNCTION DESCRIPTION</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The skid control ECU is located within the brake actuator assembly.</ptxt>
+</item>
+<item>
+<ptxt>The yaw rate sensor and acceleration sensor are combined in a single unit. This unit communicates with the skid control ECU through CAN communication.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>ABS (Anti-lock Brake System)</ptxt>
+<ptxt>The ABS helps prevent the wheels from locking when the brakes are applied firmly or when braking on a slippery surface.</ptxt>
+<figure>
+<graphic graphicname="C109467E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>Operation description</ptxt>
+<ptxt>The skid control ECU detects wheel lock based on speed signals it receives from the wheel speed sensors. Based on this information, the skid control ECU controls the pump motor and solenoid valves. The pump motor and solenoid valves are used to prevent wheel lock by controlling the hydraulic pressure applied to the brakes at each wheel. The ABS warning light will come on when the system is malfunctioning.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>EBD (Electronic Brake force Distribution)</ptxt>
+<ptxt>The EBD control utilizes ABS, and performs proper brake force distribution between the front and rear wheels in accordance with driving conditions.</ptxt>
+<ptxt>When braking while cornering, it also controls the brake forces of the right and left wheels, helping to maintain vehicle behavior.</ptxt>
+<figure>
+<graphic graphicname="C109468E02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<step3>
+<ptxt>Operation description</ptxt>
+<ptxt>The skid control ECU receives a speed signal from each wheel speed sensor, and uses these signals to detect locking of the wheels. The ECU uses this information in order to determine appropriate control of the solenoid valves.</ptxt>
+<ptxt>The solenoid valves control the hydraulic pressure applied to the brake cylinder at each wheel. In this way, the solenoid valves are used to control the brake power split between the front and rear, and left and right wheels. The BRAKE warning light will come on if there is a malfunction in the EBD system.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>BA (Brake Assist)</ptxt>
+<ptxt>The primary purpose of the brake assist system is to provide auxiliary brake force to assist the driver who cannot generate a large enough brake force during emergency braking, thus helping to maximize the brake performance of the vehicle.</ptxt>
+<figure>
+<graphic graphicname="C109469E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step3>
+<ptxt>Operation description</ptxt>
+<ptxt>The skid control ECU receives the speed signal from each speed sensor and the fluid pressure signal from the master cylinder pressure sensor to determine whether brake assist is necessary. If brake assist is necessary, the skid control ECU sends control signals to the pump motor and solenoid. The pump and the solenoid valve then control the pressure applied to each wheel cylinder.</ptxt>
+<ptxt>The ABS warning light comes on to indicate a malfunction in the BA system.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>TRAC (Traction Control)</ptxt>
+<ptxt>The TRAC system helps prevent the drive wheels from slipping when the driver depresses the accelerator pedal excessively when starting off or accelerating on a slippery surface.</ptxt>
+<figure>
+<graphic graphicname="C109470E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step3>
+<ptxt>Operation description</ptxt>
+<ptxt>The skid control ECU detects wheelspin by receiving signals from each speed sensor and the ECM via CAN communication. The skid control ECU controls engine torque with the ECM via CAN communication and brake hydraulic pressure through the pump and solenoid valve.</ptxt>
+<ptxt>The SLIP indicator light blinks when the system is operating. When there is a malfunction in the TRAC system, both VSC warning light (models without multi information display) and SLIP indicator light will come on and the DTC will be displayed on the multi information display (models with multi information display).</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>VSC (Vehicle Stability Control)</ptxt>
+<ptxt>The VSC system helps prevent the vehicle from slipping sideways as a result of strong front or rear wheel skid during cornering.</ptxt>
+<figure>
+<graphic graphicname="C109471E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<step3>
+<ptxt>Operation description</ptxt>
+<ptxt>The skid control ECU determines the vehicle operating conditions based on signals received from the wheel speed sensors, yaw rate and acceleration sensor, and steering angle sensor. The skid control ECU sends signals via CAN communication to the ECM in order to control engine torque. The skid control ECU controls brake hydraulic pressure using the pump and solenoid valves.</ptxt>
+<ptxt>The SLIP indicator light will blink, and the skid control buzzer will sound when the system is operating. If a malfunction occurs in the VSC system, both the VSC warning light (models without multi information display) and the SLIP indicator light will come on. In addition, the DTC will appear on the multi information display (models with multi information display).</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ABS with EBD, BA, TRAC and VSC OPERATION</ptxt>
+<step2>
+<ptxt>The skid control ECU calculates vehicle stability tendency based on the signals from the speed sensor, yaw rate and acceleration sensor, and steering angle sensor. In addition, it evaluates the results of the calculations to determine whether any control actions (control of the engine output torque by electronic throttle control and of the wheel brake pressure by the brake actuator assembly) should be implemented.</ptxt>
+</step2>
+<step2>
+<ptxt>The SLIP indicator blinks and the skid control buzzer sounds to inform the driver that the VSC system is operating. The SLIP indicator also blinks when traction control is operating, and the operation being performed is displayed.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>FAIL SAFE</ptxt>
+<step2>
+<ptxt>When a failure occurs in the ABS with BA, TRAC and VSC systems, the ABS warning, VSC warning (models without multi information display), and SLIP indicator lights come on or the DTC will be displayed on the multi information display (models with multi information display) and ABS with BA, TRAC and VSC operations are prohibited. In addition, when there is a failure that disables the EBD operation, the BRAKE warning light also comes on and the EBD operation is prohibited.</ptxt>
+</step2>
+<step2>
+<ptxt>If control is prohibited due to a malfunction during operation, control will be disabled gradually.</ptxt>
+<ptxt>This is to avoid sudden vehicle instability.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>INITIAL CHECK</ptxt>
+<step2>
+<ptxt>When the vehicle speed first becomes approximately 4 mph (6 km/h) or more after the ignition switch is turned on (IG), each solenoid valve and motor of the brake actuator is sequentially activated to perform an electrical check. During the initial check, the operating sound of solenoid valve and motor can be heard from the engine compartment, but this is not a malfunction.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>INSPECTION MODE</ptxt>
+<step2>
+<ptxt>	VSC operation can be disabled by operating the intelligent tester.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF COMPONENTS</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Components</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Speed sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detects the wheel speed and sends the signal to the skid control ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+<ptxt>(housed in brake actuator assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Processes the signals sent from each sensor to control the ABS, BA, TRAC, and VSC.</ptxt>
+</item>
+<item>
+<ptxt>Sends and receives the control signals to or from the ECM, yaw rate and acceleration sensor, and steering angle sensor, etc. via CAN communication.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake actuator assembly</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Consists of the master cylinder cut solenoid valve, retention solenoid valve, pressure reduction solenoid valve, pump motor, and reservoir, and adjusts the brake fluid pressure applied to each wheel cylinder.</ptxt>
+</item>
+<item>
+<ptxt>Houses the skid control ECU.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Solenoid relay</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Supplies power to each solenoid.</ptxt>
+</item>
+<item>
+<ptxt>Housed in the skid control ECU.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Motor relay (VSC NO. 2 relay)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Supplies power to the pump motor.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fail safe relay (VSC NO. 1 relay)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cuts off power to the motor when the pump motor circuit malfunctions.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering angle sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Installed in the combination switch.</ptxt>
+</item>
+<item>
+<ptxt>Detects the steering amount and direction and sends the signals to the skid control ECU via CAN communication.</ptxt>
+</item>
+<item>
+<ptxt>Has the magnetic resistance element which detects the rotation of the magnet housed in the detection gear in order to detect the changes of magnetic resistance and the steering amount and direction.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Acceleration sensor measures the capacity of the condenser that changes the distance between the electrodes depending on G force, which occurs when the vehicle is accelerated, and converts the measured value into electrical signals.</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor detects the vehicle's angular velocity (yaw rate) in the vertical direction based on the amount and direction of the piezoelectric ceramics deflection.</ptxt>
+</item>
+<item>
+<ptxt>Sends signals to the skid control ECU via CAN communication.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Master cylinder pressure sensor</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Detects the fluid pressure in the master cylinder.</ptxt>
+</item>
+<item>
+<ptxt>Housed in the brake actuator assembly.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stop light switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detects the brake operating conditions and inputs the results to the skid control ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controls the engine output when TRAC and VSC are operating with the skid control ECU via CAN communication.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid control buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intermittently sounds to inform the driver that the VSC is operating.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ABS warning light</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Comes on to inform the driver that a malfunction in the ABS or BA has occurred.</ptxt>
+</item>
+<item>
+<ptxt>Blinks to output DTC.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE warning light</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Comes on to inform the driver that the parking brake is ON when the system is normal, or the brake fluid has decreased.</ptxt>
+</item>
+<item>
+<ptxt>Comes on to inform the driver that a malfunction in the EBD has occurred.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC warning light (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Comes on to inform the driver that a malfunction in the VSC system has occurred.</ptxt>
+</item>
+<item>
+<ptxt>Blinks to output DTC.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Multi information display (*2)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Displays to inform the driver that a malfunction in the VSC system has occurred.</ptxt>
+</item>
+<item>
+<ptxt>Displays to output DTC.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIP indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blinks to inform the driver that TRAC and VSC are operating.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Master caution indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Comes on to inform the driver that a malfunction.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>(*1): Models without multi information display</ptxt>
+<ptxt>(*2): Models with multi information display</ptxt>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

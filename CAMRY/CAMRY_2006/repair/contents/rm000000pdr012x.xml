@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDR012X" category="D" type-id="303OL" name-id="ES06B-36" from="200601">
+<name>CHECKING MONITOR STATUS</name>
+<subpara id="RM000000PDR012X_z0" proc-id="RM0250U___0000BEK00000">
+<content5 releasenbr="1">
+<ptxt>The purpose of the monitor result (mode 06) is to allow access to the results for on-board diagnostic monitoring tests of specific components/systems that are not continuously monitored. Examples are catalyst, evaporative emission (EVAP) and thermostat. </ptxt>
+<ptxt>The monitor result allows the OBD II scan tool to display the monitor status, test value, minimum test limit and maximum test limit. These data are displayed after the vehicle has been driven to run the monitor.</ptxt>
+<ptxt>When the test value is not between the minimum test limit and maximum test limit, the ECM (PCM) interprets this as a malfunction. When the component is not malfunctioning, if the difference of the test value and test limit is very small, the component will malfunction in the near future.</ptxt>
+<ptxt>Perform the following instructions to view the monitor status. Although the Toyota diagnostic tester is used in the following instructions, it can be checked using a generic OBD II scan tool. Refer to your scan tool operator's manual for specific procedures.</ptxt>
+<step1>
+<ptxt>PERFORM MONITOR DRIVE PATTERN </ptxt>
+<ptxt>The monitor results and test values can be checked with the OBD II scan tool or the intelligent tester. The engine control module (ECM) monitors the emissions-related components such as the thermostat, catalyst converter and evaporative emissions (EVAP), and determines whether they are functioning normally or not. When monitoring is finished, the ECM stores the monitor results and the test values. The monitor result indicates whether the component is functioning normally or not. The test value is the value that was used to determine the monitor result. If the test value is outside of the test limit (malfunction criterion), the ECM determines the component is malfunctioning. Some emissions-related components have multiple test values to determine monitor result. If one of these test values is outside of the test limit, the ECM determines the component is malfunctioning.</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Start the engine and turn the tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Clear the DTCs.</ptxt>
+</step2>
+<step2>
+<ptxt>Run the vehicle in accordance with the applicable drive pattern described in READINESS MONITOR DRIVE PATTERN (See page <xref label="Seep01" href="RM000002207003X"/>). DO NOT turn the engine switch off.</ptxt>
+<atten3>
+<ptxt>The test results will be lost if the engine switch is turned off.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>ACCESS MONITOR RESULT</ptxt>
+<step2>
+<ptxt>Select the following menus on the intelligent tester: DIAGNOSIS, ENHANCED OBDII, MONITOR INFO and MONITOR RESULT. The monitor status appears after the component name.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>INCMP: The component has not been monitored yet.</ptxt>
+</item>
+<item>
+<ptxt>PASS: The component is functioning normally.</ptxt>
+</item>
+<item>
+<ptxt>FAIL: The component is malfunctioning.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Confirm that the component is either PASS or FAIL.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the component and press ENTER. The accuracy test value appears if the monitor status is either PASS or FAIL.</ptxt>
+<atten4>
+<ptxt>The monitor result might be PASS on rare occasions even if the Malfunction Indicator Lamp (MIL) is illuminated. This indicates that the system was malfunctioning in the previous driving cycle. This might be caused by an intermittent problem.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK COMPONENT STATUS</ptxt>
+<step2>
+<ptxt>Compare the test value with the minimum test limit (MIN LIMIT) and maximum test limit (MAX LIMIT). </ptxt>
+</step2>
+<step2>
+<ptxt>If the test value is between the minimum test limit and maximum test limit, the component is functioning normally. If not, the component is malfunctioning. The test value is usually significantly higher or lower than the test limit. If the test value is on the borderline of the test limit, the component will malfunction in the near future.</ptxt>
+</step2>
+</step1>
+<atten4>
+<ptxt>The monitor result might be PASS on rare occasions even if the Malfunction Indicator Lamp (MIL) is illuminated. This indicates that the system was malfunctioning in the previous driving cycle. This might be caused by an intermittent problem.</ptxt>
+</atten4>
+<step1>
+<ptxt>MONITOR RESULT INFORMATION</ptxt>
+<ptxt>If you use a generic scan tool, multiply the test value by the scaling value listed below.</ptxt>
+</step1>
+<table pgwide="1">
+<title>A/F Sensor Bank 1:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.50in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$01</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$8E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.0003</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No dimension </ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>A/F sensor deterioration level</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$01</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$91</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.004</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>mA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>A/F sensor current</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>HO2S Bank 1 Sensor 2:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.82in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$02</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$07</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Minimum sensor voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$02</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$08</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Maximum sensor voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$02</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$8F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.003</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>g</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Maximum oxygen storage capacity</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>A/F Sensor Bank 2:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.81in"/>
+<colspec colname="COL2" colwidth="0.79in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<colspec colname="COL4" colwidth="0.84in"/>
+<colspec colname="COL5" colwidth="3.52in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$05</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$8E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.0003</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No dimension</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>A/F sensor deterioration level</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$05</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$91</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.004</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>mA</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>A/F sensor current</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>HO2S Bank 2 Sensor 2:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.82in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$06</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$07</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Minimum sensor voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$06</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$08</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Maximum sensor voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$06</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$8F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.003</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>g</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Maximum oxygen storage capacity</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Catalyst-Bank 1:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.81in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$21</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$A9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.003</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No dimension</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Oxygen storage capacity of catalyst-bank 1</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Catalyst-Bank 2:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.81in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.51in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$22</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$A9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.003</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No dimension</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Oxygen storage capacity of catalyst-bank 2</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>EVAP:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.81in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.50in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$C9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for small leak (P0456)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$CA</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for gross leak (P0455)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$CB</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for leak detection pump OFF stuck (P2401)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$CD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for leak detection pump ON stuck (P2402)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$CE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for vent valve OFF stuck (P2420)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$CF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for vent valve ON stuck (P2419)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$D0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for reference orifice low flow (P043E)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$D1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for reference orifice high flow (P043F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$D4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for purge VSV close stuck (P0441)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$D5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for purge VSV open stuck (P0441)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$3D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$D7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>kPa</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Test value for purge flow insufficient (P0441)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Misfire:</title>
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="0.78in"/>
+<colspec colname="COL2" colwidth="0.82in"/>
+<colspec colname="COL3" colwidth="1.12in"/>
+<colspec colname="COL4" colwidth="0.82in"/>
+<colspec colname="COL5" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Exponential Weighted Moving Average (EWMA) misfire for all cylinders: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for all cylinders: Misfire counts for last/current driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>EWMA misfire for cylinder 1: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for cylinder 1: Misfire counts for last/current driving cycle-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>EWMA misfire for cylinder 2: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for cylinder 2: Misfire counts for last/current driving cycle-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>EWMA misfire for cylinder 3: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for cylinder 3: Misfire counts for last/current driving cycle-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>EWMA misfire for cylinder 4: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for cylinder 4: Misfire counts for last/current driving cycle-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>EWMA misfire for cylinder 5: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for cylinder 5: Misfire counts for last/current driving cycle-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>EWMA misfire for cylinder 6: Misfire counts for last ten driving cycles-Total</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>$A7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>$0C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Multiply by 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry>
+<ptxt>Misfire rate for cylinder 6: Misfire counts for last/current driving cycle-Total</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Rear Oxygen Sensor Heater:</title>
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="0.81in"/>
+<colspec colname="COL3" colwidth="1.11in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<colspec colname="COL5" colwidth="3.50in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Monitor ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Scaling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>$42</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$91</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.001</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ohm</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Oxygen sensor heater resistance bank 1 sensor 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>$46</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>$91</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multiply by 0.004</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ohm</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Oxygen sensor heater resistance bank 2 sensor 2</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

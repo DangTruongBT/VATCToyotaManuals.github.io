@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000WZ3011X" category="J" type-id="302Q6" name-id="ES2KM-02" from="200601">
+<dtccode/>
+<dtcname>Cranking Holding Function Circuit</dtcname>
+<subpara id="RM000000WZ3011X_01" type-id="60" category="03" proc-id="RM0250U___00002X000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The cranking holding control system provides current to the starter when the ECM detects the engine switch's start signal (STSW). When the ECM performs a firing judgment, the system cuts current to the starter. When an ECM receives the STSW signal, it turns on the ST CUT relay, which prevents flickering of the combination meter, clock, audio system, etc. Also, the ECM sends a signal to the ECM's STAR terminal. Then the STAR output signal travels through the park/neutral position (PNP) switch to the STARTER relay, causing the starter to activate.</ptxt>
+<ptxt>When the engine is cranking, the starter operation signal is sent to the ECM's STA terminal.</ptxt>
+<figure>
+<graphic graphicname="A103821E19" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WZ3011X_02" type-id="32" category="03" proc-id="RM0250U___00002X100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0617 (See page <xref label="Seep01" href="RM000000TA001RX_05"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WZ3011X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000WZ3011X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WZ3011X_05_0023" proc-id="RM0250U___00006LD00000">
+<testtitle>CHECK CRANKING</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>When starting the engine, check whether the starter motor starts.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0024" fin="false">NG</down>
+<right ref="RM000000WZ3011X_05_0037" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0024" proc-id="RM0250U___0000AZP00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (STA SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ALL / STARTER SIG. Read the values.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the result when the ignition switch is turned on (IG) and when the engine is started.</ptxt>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="3.55in"/>
+<colspec colname="COL2" align="center" colwidth="3.53in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Display (STARTER SIG)</ptxt>
+</entry>
+<entry>
+<ptxt>Ignition Switch Position</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+<entry>
+<ptxt>START</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0025" fin="false">NG</down>
+<right ref="RM000000WZ3011X_05_0030" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0025" proc-id="RM0250U___0000AZQ00000">
+<testtitle>INSPECT ECM (STSW VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM Connector.</ptxt>
+<figure>
+<graphic graphicname="A115671E32" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the ECM connector and body ground while cranking the engine.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STSW (A55-14) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0026" fin="false">OK</down>
+<right ref="RM000000WZ3011X_05_0035" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0026" proc-id="RM0250U___0000AZR00000">
+<testtitle>INSPECT ECM (STAR VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST CUT relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A137045E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the engine room R/B and body ground while cranking the engine.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ST CUT relay (3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the ST CUT relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0027" fin="false">OK</down>
+<right ref="RM000000WZ3011X_05_0031" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0027" proc-id="RM0250U___0000AZS00000">
+<testtitle>INSPECT ST CUT RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST CUT relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B016200E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(when battery voltage applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the ST CUT relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0028" fin="false">OK</down>
+<right ref="RM000000WZ3011X_05_0038" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0028" proc-id="RM0250U___0000AZT00000">
+<testtitle>INSPECT PARK/NEUTRAL SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the Park / Neutral Position (PNP) switch.</ptxt>
+<figure>
+<graphic graphicname="A107908E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the C1 switch connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title> Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Gear Selector Lever Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the PNP switch connector.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0029" fin="true">OK</down>
+<right ref="RM000000WZ3011X_05_0039" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0029">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0030" proc-id="RM0250U___0000AZU00000">
+<testtitle>INSPECT STARTER RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B016200E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(when battery voltage applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the ST relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0031" fin="false">OK</down>
+<right ref="RM000000WZ3011X_05_0040" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0031" proc-id="RM0250U___0000AZV00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PARK / NEUTRAL POSITION SWITCH - STARTER RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C1 park/neutral position switch connector.</ptxt>
+<figure>
+<graphic graphicname="A137047E03" width="2.775699831in" height="6.791605969in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the ST relay from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1-9 - ST relay terminal (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1-9 or ST relay terminal (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the ST relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0032" fin="false">OK</down>
+<right ref="RM000000WZ3011X_05_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0032" proc-id="RM0250U___0000AZW00000">
+<testtitle>INSPECT ENGINE ROOM RELAY BLOCK (STARTER RELAY VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A137046E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the engine room R/B and body ground.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ST relay (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0033" fin="false">OK</down>
+<right ref="RM000000WZ3011X_05_0042" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0033">
+<testtitle>INSPECT STARTER ASSEMBLY</testtitle>
+<res>
+<down ref="RM000000WZ3011X_05_0034" fin="true">OK</down>
+<right ref="RM000000WZ3011X_05_0043" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0034">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (STARTER RELAY - STARTER, STARTER - BATTERY)</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0035" proc-id="RM0250U___0000AZX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E6 main body ECU connector.</ptxt>
+<figure>
+<graphic graphicname="A137048E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STSW (E9-4) - STSW (A55-14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STSW (E9-4) or STSW (A55-14) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the main body ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ3011X_05_0036" fin="true">OK</down>
+<right ref="RM000000WZ3011X_05_0044" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0036">
+<testtitle>GO TO SMART KEY SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0037">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0038">
+<testtitle>REPLACE ST CUT RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0039">
+<testtitle>REPLACE PARK/NEUTRAL POSITION SWITCH ASSEMBLY<xref label="Seep01" href="RM0000016E100FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0040">
+<testtitle>REPLACE STARTER RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0041">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0042">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0043">
+<testtitle>REPAIR OR REPLACE STARTER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ3011X_05_0044">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

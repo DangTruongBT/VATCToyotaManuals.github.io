@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020Q9002X" category="J" type-id="304M4" name-id="NS0OD-03" from="200601">
+<dtccode/>
+<dtcname>Radio and Navigation Assembly Power Source Circuit</dtcname>
+<subpara id="RM0000020Q9002X_01" type-id="60" category="03" proc-id="RM0250U___00004Y200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This is the power source circuit to operate the radio and navigation assembly.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020Q9002X_02" type-id="32" category="03" proc-id="RM0250U___00004Y300000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121223E13" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020Q9002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020Q9002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020Q9002X_04_0001" proc-id="RM0250U___00004Y400000">
+<testtitle>INSPECT RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector F9.</ptxt>
+<figure>
+<graphic graphicname="E113513E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>GND - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B - GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC - GND</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition SW on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020Q9002X_04_0002" fin="true">OK</down>
+<right ref="RM0000020Q9002X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020Q9002X_04_0002">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020Q9002X_04_0003">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

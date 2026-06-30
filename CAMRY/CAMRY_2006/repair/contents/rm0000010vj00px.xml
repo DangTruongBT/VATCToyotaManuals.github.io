@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM0000010VJ00PX" category="D" type-id="303F3" name-id="RS24Z-02" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM0000010VJ00PX_z0" proc-id="RM0250U___0000AA100000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK DLC3</ptxt>
+<step2>
+<ptxt>The ECU uses ISO 15765-4 for communication. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<figure>
+<graphic graphicname="H100769E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bus "+" Line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Chassis Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off (*)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off (*)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off (*)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off (*)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off (*)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches, or the door.</ptxt>
+</atten3>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>If the display shows a communication error message when connecting the cable of the intelligent tester to the DLC3, turning the ignition switch on (IG) and operating the intelligent tester, there is a problem on the vehicle side or tester side.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tester is connected to another vehicle, inspect the DLC3 on the original vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If communication is still not possible when the tester is connected to another vehicle, the problem is probably in the tester itself. Consult the Service Department listed in the tester's instruction manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>SYMPTOM SIMULATION</ptxt>
+<atten4>
+<ptxt>The most difficult case in troubleshooting is when no symptoms occur. In such cases, a thorough customer problem analysis must be carried out. Then the same or similar conditions and environment in which the problem occurred in the customer's vehicle should be simulated. No matter how experienced or skilled a technician may be, if he proceeds to troubleshoot without confirming the problem symptoms, he will likely overlook something important and make a wrong guess at some points in the repair operation.</ptxt>
+<ptxt>This leads to a standstill in troubleshooting.</ptxt>
+</atten4>
+<step2>
+<ptxt>Vibration method: When vibration seems to be the major cause.</ptxt>
+<figure>
+<graphic graphicname="D025083E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>Perform the simulation method only during the primary check period (for approximately 6 seconds after the ignition switch is turned on (IG)).</ptxt>
+</atten4>
+<step3>
+<ptxt>Slightly vibrate the part of the sensor considered to be the problem cause with your fingers and check whether the malfunction occurs.</ptxt>
+<atten4>
+<ptxt>Shaking the relays too strongly may result in open relays.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Slightly shake the connector vertically and horizontally.</ptxt>
+</step3>
+<step3>
+<ptxt>Slightly shake the wire harness vertically and horizontally.</ptxt>
+<ptxt>The connector joint and fulcrum of the vibration are the major areas to be checked thoroughly.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Simulation method for DTC B1794:</ptxt>
+<ptxt>Turn the ignition switch from the off to on (IG), hold it for 10 seconds, and back to off again 50 times in a row.</ptxt>
+<atten4>
+<ptxt>DTC B1794 is output if the occupant classification ECU receives the ignition switch off-on (IG)-off signal 50 times in a row when a malfunction occurs in the power circuit for the occupant classification system.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF PASSENGER AIRBAG ON/OFF INDICATOR</ptxt>
+<step2>
+<ptxt>Initial check.</ptxt>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>The passenger airbag ON/OFF indicator ("ON" and "OFF") comes on for approximately 4 seconds, then goes off for approximately 2 seconds.</ptxt>
+</step3>
+<step3>
+<ptxt>Approximately 6 seconds after the ignition switch is turned to on (IG), the passenger airbag ON/OFF indicator will show ON or OFF depending on the conditions listed below.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON Indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF Indicator</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Vacant</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Adult is seated. (Above 36 kg (79.37 lb))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Child is seated. (Less than 36 kg (79.37 lb))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Child restraint system is set. (*)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front passenger occupant classification system failure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: Child restraint system less than 7 kg (15.43 lb) and passenger side buckle switch is ON, then 7 to 36 kg (15.43 to 79.37 lb) is set.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The passenger airbag ON/OFF indicator is based on the timing chart below in order to check the indicator light circuit.</ptxt>
+</item>
+<item>
+<ptxt>When the occupant classification system has trouble, both the SRS warning light and the passenger airbag ON/OFF indicator ("OFF") come on. In this case, check the DTCs in "AIRBAG SYSTEM" first.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="H043700E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK PASSENGER AIRBAG ON/OFF INDICATOR</ptxt>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+<figure>
+<graphic graphicname="C123721" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check that the passenger airbag ON/OFF indicator ("ON" and "OFF") come on for approximately 4 seconds, then goes off for approximately 2 seconds.</ptxt>
+<atten4>
+<ptxt>Refer to the table in step 3 regarding the passenger airbag ON/OFF indicator when the ignition switch is turned on (IG) and approximately 6 seconds pass.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

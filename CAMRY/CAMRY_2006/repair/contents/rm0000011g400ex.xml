@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_73040_T00DI" variety="T00DI">
+<name>KEY REMINDER WARNING SYSTEM</name>
+<para id="RM0000011G400EX" category="U" type-id="3001G" name-id="DL04E-07" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000011G400EX_z0" proc-id="RM0250U___00008PI00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK MAIN BODY ECU (INSTRUMENT PANEL J/B)</ptxt>
+<step2>
+<ptxt>Disconnect the IF and IM, ID*1 or IA*2 junction block connectors.</ptxt>
+<ptxt>*1: for TMC Made</ptxt>
+<ptxt>*2: for TMMK Made</ptxt>
+</step2>
+<step2>
+<ptxt>Disconnect the E7 and E9 main body ECU connectors.</ptxt>
+<figure>
+<graphic graphicname="B128346E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (IF-10) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (IM-9) - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BECU*1 (ID-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O*1 - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Power source</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATB*2 (IA-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B*2 - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>DCTY (E7-24) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Driver door courtesy light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch pushed (Door closed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch free (Door opened)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>KSW (E9-5) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Key unlock warning switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for TMC Made</ptxt>
+<ptxt>*2: for TMMK Made</ptxt>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

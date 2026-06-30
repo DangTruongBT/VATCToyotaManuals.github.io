@@ -1,0 +1,2312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000XVK00QX" category="U" type-id="3001G" name-id="CA00V-04" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000XVK00QX_z0" proc-id="RM0250U___000099V00000">
+<content5 releasenbr="1">
+<atten3>
+<ptxt>This section describes the standard CAN values for all CAN related components.</ptxt>
+</atten3>
+<step1>
+<ptxt>JUNCTION CONNECTOR (NO. 1 CAN J/C, NO. 2 CAN J/C)</ptxt>
+<step2>
+<ptxt>No. 1 CAN J/C</ptxt>
+<figure>
+<graphic graphicname="C137761E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 1 CAN J/C connectors ("A" side, with earth terminal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connector Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-H)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-L)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CAN Main Bus Wire (E42)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>White</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Airbag Sensor Assembly Center (E45)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Black</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COLSPEC1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 1 CAN J/C connectors ("B" side, with earth terminal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connector Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-H)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-L)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Yaw Rate Sensor* (E46)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blue</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DLC3 (E62)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Gray</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Angle Sensor* (E63)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brown</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter (E43)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>White</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main Body ECU (E44)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Black</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: with VSC</ptxt>
+</step2>
+<step2>
+<ptxt>No. 2 CAN J/C (FRONT OF THE VEHICLE) </ptxt>
+<figure>
+<graphic graphicname="C137762E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connects to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A40-1 (CANH)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECM (CANH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A40-7 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECM (CANL)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A40-2 (CANH)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU (CANH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A40-8 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU (CANL)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>No. 2 CAN J/C (REAR OF THE VEHICLE)</ptxt>
+<figure>
+<graphic graphicname="C137763E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connects to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E41-1 (CANH)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accessory Gateway (CANH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E41-7 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Accessory Gateway (CANL)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E41-2 (CANH)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/C Amplifier (CANH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E41-8 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/C Amplifier (CANL)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E41-4 (CANH)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No. 1 CAN J/C (CANH)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E41-10 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No. 1 CAN J/C (CANL)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt> The connection diagram of the components which are connected to the CAN J/C</ptxt>
+<figure>
+<graphic graphicname="C136707E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DLC3</ptxt>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C125062E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-6 (CANH) - E10-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-6 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-14 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-6 (CANH) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-14 (CANL) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>SKID CONTROL ECU (w/o VSC) </ptxt>
+<step2>
+<ptxt>Disconnect the A25 connector from the skid control ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C131970E11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC1" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-26 (CANH) - A25-15 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-26 (CANH) - A25-4 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-15 (CANL) - A25-4 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-26 (CANH) - A25-3 (+BS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-15 (CANL) - A25-3 (+BS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>SKID CONTROL ECU WITH ACTUATOR (w/ VSC)</ptxt>
+<step2>
+<ptxt>TMC made</ptxt>
+<figure>
+<graphic graphicname="E069126E52" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Disconnect A26 connector from the skid control ECU.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-11 (CANH) - A26-25 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-11 (CANH) - A26-32 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-25 (CANL) - A26-32 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-11 (CANH) - A26-31 (+BS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-25 (CANL)- A26-31 (+BS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+<step2>
+<ptxt>TMMK made</ptxt>
+<figure>
+<graphic graphicname="C136493E10" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the A60 connector from the skid control ECU.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-35 (CANH) - A60-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-35 (CANH) - A60-4 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-14 (CANL) - A60-4 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-35 (CANH) - A60-3 (+BS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-14 (CANL)- A60-3 (+BS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>STEERING ANGLE SENSOR (W/ VSC)</ptxt>
+<step2>
+<ptxt>Disconnect the E17 connector from the steering angle sensor.</ptxt>
+<figure>
+<graphic graphicname="G026357E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC3" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E17-10 (CANH) - E17-9 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E17-10 (CANH) - E17-2 (ESS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E17-9 (CANL) - E17-2 (ESS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E17-10 (CANH) - E17-3 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E17-9 (CANL) - E17-3 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>YAW RATE SENSOR (W/ VSC)</ptxt>
+<step2>
+<ptxt>TMC made</ptxt>
+<figure>
+<graphic graphicname="G026641E19" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the E34 connector from the yaw rate sensor.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC4" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E34-3 (CANH) - E34-2 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E34-3 (CANH) - E34-1 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E34-2 (CANL) - E34-1 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E34-3 (CANH) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - O</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E34-2 (CANL) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - O</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+<step2>
+<ptxt>TMMK made</ptxt>
+<step3>
+<ptxt>Disconnect the E34 connector from the yaw rate sensor.</ptxt>
+<figure>
+<graphic graphicname="C136716E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC4" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E65-3 (CANH) - E65-2 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E65-3 (CANH) - E65-1 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E65-2 (CANL) - E65-1 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E65-3 (CANH) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - O</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E65-2 (CANL) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - O</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CENTER AIRBAG SENSOR ASSEMBLY</ptxt>
+<step2>
+<ptxt>Disconnect the E30 connector from the center airbag sensor assembly.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C125063E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC7" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-13 (CANH) - E30-22 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-13 (CANH) - E30-25 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-22 (CANL) - E30-25 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-13 (CANH) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-22 (CANL) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>ECM</ptxt>
+<step2>
+<ptxt>2AZ-FE</ptxt>
+<figure>
+<graphic graphicname="A107881E28" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the A24 connector from the ECM.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.37in"/>
+<colspec colname="COL4" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-41 (CANH) - A29-49 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136709E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC8" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-41 (CANH) - A24-49 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-41 (CANH) - C24-104 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-49 (CANL) - C24-104 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-41 (CANH) - A24-20 (BATT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - Y</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-49 (CANL) - A24-20 (BATT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - Y</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+<step2>
+<ptxt>2GR-FE</ptxt>
+<figure>
+<graphic graphicname="A107881E23" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the A55 connector from the ECM.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.37in"/>
+<colspec colname="COL4" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-41 (CANH) - A55-49 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136709E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC8" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-41 (CANH) - A55-49 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-41 (CANH) - C55-81 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-49 (CANL) - C55-81 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-41 (CANH) - A55-20 (BATT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - Y</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-49 (CANL) - A55-20 (BATT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - Y</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>AIR CONDITIONING AMPLIFIER</ptxt>
+<step2>
+<ptxt>Check the harness side connector (E38) of the air conditioning amplifier.</ptxt>
+<figure>
+<graphic graphicname="E124470E20" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Disconnect the connector (E38) from the air conditioning amplifier.</ptxt>
+</step3>
+<step3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC8" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-11 (CANH) - E38-12 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-11 (CANH) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-12 (CANL) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-11 (CANH) - E38-21 (B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - GR</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E38-12 (CANL) - E38-21 (B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - GR</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>COMBINATION METER ECU</ptxt>
+<step2>
+<ptxt>Disconnect the F1 connector from the combination meter.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C133254E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COLSPEC0" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.37in"/>
+<colspec colname="COL4" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-17 (CANH) - F1-18 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C133255E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC8" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-17 (CANH) - F1-18 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-17 (CANH) - F1-12 (E2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-18 (CANL) - F1-12 (E2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-17 (CANH) - F1-2 (B2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-18 (CANL) - F1-2 (B2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>CERTIFICATION ECU (W/ SMART KEY SYSTEM)</ptxt>
+<step2>
+<ptxt>Disconnect the E58 connector from the certification ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136713E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC7" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-27 (CANH) - E58-28 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-27 (CANH) - E58-17 (E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-28 (CANL) - E58-17 (E)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-27 (CANH) - E58-1 (+B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-28 (CANL) - E58-1 (+B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus wire - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>MAIN BODY ECU (INSTRUMENT PANEL J/B)</ptxt>
+<step2>
+<ptxt>Disconnect the E8 connector from the main body ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136714E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COLSPEC7" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E8-5 (CANH) - E8-6 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E8-16 (CANP) - E8-15 (CANN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - L</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+<step1>
+<ptxt>ACCESSORY GATEWAY</ptxt>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136715E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COLSPEC7" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E61-6 (CANH) - E61-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus wire - LOW-level CAN bus wire</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

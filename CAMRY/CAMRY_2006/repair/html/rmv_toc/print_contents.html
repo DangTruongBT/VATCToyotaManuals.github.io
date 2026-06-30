@@ -1,0 +1,33 @@
+<!-- $Id: print_contents.html,v 1.6 2004/04/26 05:09:03 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Installation and Removal -Print Preview-</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css"><br>
+<script language="javaScript">
+function init() {
+	var args = window.dialogArguments;
+	if (args==null || args.length!=2) return;
+	var illustId = args[0];
+	var dialogTitle = args[1];
+	if (illustId==null) return;
+	png.innerHTML="<img src='../../png/"+illustId.toLowerCase()+".png' width='100%' alt='"+illustId+"'></img>";
+	svgTitle.innerHTML = illustId;
+	ttl.innerHTML = dialogTitle;
+}
+</script>
+</head>
+<body onLoad="init();">
+	<p id="ttl" class="location"></p>
+	<div id="png"></div>
+	<br/>
+	<div id='svgTitle' class='illustId'></div>
+</body>
+</html>

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000025JZ000X" category="J" type-id="300WI" name-id="AX0Z1-01" from="200601">
+<dtccode/>
+<dtcname>Park / Neutral Position Switch Circuit</dtcname>
+<subpara id="RM0000025JZ000X_01" type-id="60" category="03" proc-id="RM0250U___00009XL00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The park/neutral position switch detects the shift lever position and sends signals to the TCM.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000025JZ000X_02" type-id="32" category="03" proc-id="RM0250U___0000CAJ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133257E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000025JZ000X_03" type-id="51" category="05" proc-id="RM0250U___00009XM00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>According to the DATA LIST displayed on the intelligent tester, you can read the value of switches, sensors, actuators and other items without removing any parts. Reading the DATA LIST as the first step in troubleshooting is one method to save labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether a part is faulty.</ptxt>
+</atten3>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, read "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/ </ptxt>
+<ptxt>Range (display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>PNP SW [NSW]</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP Switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P and N: ON</ptxt>
+<ptxt>Except P and N: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REVERSE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP Switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>R: ON</ptxt>
+<ptxt>Except R: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARKING</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP Switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P: ON</ptxt>
+<ptxt>Except P: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NEUTRAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP Switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>N: ON</ptxt>
+<ptxt>Except N: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DRIVE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>PNP Switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>D and S: ON</ptxt>
+<ptxt>Except D and S: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MODE SELECT SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Sport Mode Select Switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>S, "+" and "-": ON</ptxt>
+<ptxt>Except S, "+" and "-": OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM0000025JZ000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000025JZ000X_04_0001" proc-id="RM0250U___00009XN00000">
+<testtitle>INSPECT PARK/NEUTRAL POSITION SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the park/neutral position switch connector.</ptxt>
+<figure>
+<graphic graphicname="C110340E42" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 3 and 4 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 8 and 4 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D, S, "+" and "-"</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except D, S, "+" and "-"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000025JZ000X_04_0002" fin="false">OK</down>
+<right ref="RM0000025JZ000X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0002" proc-id="RM0250U___00009XO00000">
+<testtitle>INSPECT TRANSMISSION CONTROL SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the park/neutral position switch connector.</ptxt>
+<figure>
+<graphic graphicname="C110341E16" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the transmission control switch connector of the shift lock control unit assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>S, "+" and "-"</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except S, "+" and "-"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000025JZ000X_04_0003" fin="false">OK</down>
+<right ref="RM0000025JZ000X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0003" proc-id="RM0250U___00009XP00000">
+<testtitle>CHECK ECU TERMINAL VOLTAGE (STA TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the transmission control switch connector of the shift lock control unit assembly.</ptxt>
+<figure>
+<graphic graphicname="C133210E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below while cranking the engine.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STA (C56-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000025JZ000X_04_0004" fin="false">OK</down>
+<right ref="RM0000025JZ000X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0004" proc-id="RM0250U___00009XQ00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PARK/NEUTRAL POSITION SWITCH - TCM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the TCM connector.</ptxt>
+<figure>
+<graphic graphicname="C133210E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and measure the voltage according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>R</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>R (C56-15) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V *</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>D (C56-16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>*: The voltage will drop slightly because the back up light is turned on.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000025JZ000X_04_0005" fin="true">OK</down>
+<right ref="RM0000025JZ000X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0005">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0006">
+<testtitle>REPLACE PARK/NEUTRAL POSITION SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0007">
+<testtitle>REPLACE TRANSMISSION CONTROL SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (TCM - ECM)</testtitle>
+</testgrp>
+<testgrp id="RM0000025JZ000X_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (PARK/NEUTRAL POSITION SWITCH - TCM)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

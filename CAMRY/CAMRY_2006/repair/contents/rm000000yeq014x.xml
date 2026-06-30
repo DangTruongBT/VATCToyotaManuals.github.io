@@ -1,0 +1,2601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000YEQ014X" category="J" type-id="304WY" name-id="ES3Y3-01" from="200601">
+<dtccode/>
+<dtcname>EVAP System</dtcname>
+<subpara id="RM000000YEQ014X_01" type-id="78" category="03" proc-id="RM0250U___00007P300000">
+<name>RELATED DTCS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.85in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<colspec colname="COL3" colwidth="1.27in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Monitoring Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P043E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference orifice clogged (built into canister pump module)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>
+<xref label="Seep01" href="RM0000012LM005X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P043F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference orifice high-flow (built into canister pump module)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0441</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Purge VSV (Vacuum Switching Valve) stuck closed</ptxt>
+</item>
+<item>
+<ptxt>Purge VSV stuck open</ptxt>
+</item>
+<item>
+<ptxt>Purge flow</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep02" href="RM000000SWF015X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0450</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor (built into canister pump module) voltage abnormal fluctuation</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>
+<xref label="Seep03" href="RM0000012MC005X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0451</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Canister pressure sensor (built into canister pump module) noise</ptxt>
+</item>
+<item>
+<ptxt>Canister pressure sensor (built into canister pump module) signal becomes fixed/flat</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0452</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor (built into canister pump module) voltage low</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0453</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor (built into canister pump module) voltage high</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0455</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP gross leak</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>
+<xref label="Seep04" href="RM000000SWH00XX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0456</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP small leak</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2401</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leak detection pump stuck OFF (built into canister pump module) </ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>
+<xref label="Seep05" href="RM0000012LM005X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2402</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leak detection pump stuck ON (built into canister pump module) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2419</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vent valve stuck closed (built into canister pump module) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2420</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vent valve stuck open (vent) (built into canister pump module) </ptxt>
+</entry>
+<entry align="center">
+<ptxt>
+<xref label="Seep06" href="RM000002D84000X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2610</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Soak timer (built into ECM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep07" href="RM000000T6X010X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If any EVAP system DTCs are set, the malfunctioning area can be determined using the table below.</ptxt>
+<figure>
+<graphic graphicname="A106731E11" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<atten3>
+<ptxt>If the reference pressure difference between the first and second checks is greater than the specification, all the DTCs relating to the reference pressure (P043E, P043F, P2401, P2402 and P2419) are stored.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000YEQ014X_02" type-id="60" category="03" proc-id="RM0250U___00007P400000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A135200E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<figure>
+<graphic graphicname="A135201E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<figure>
+<graphic graphicname="A122570E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<atten3>
+<ptxt>In this vehicle's EVAP system, turning ON the vent valve does not seal off the EVAP system. To check for leaks in the EVAP system, disconnect the air inlet vent hose and apply pressure from the atmospheric side of the canister.</ptxt>
+</atten3>
+<ptxt>While the engine is running, if a predetermined condition (closed-loop, etc.) is met, the purge VSV is opened by the ECM and stored fuel vapors in the canister are purged into the intake manifold. The ECM changes the duty cycle ratio of the purge VSV to control purge flow volume.</ptxt>
+<ptxt>The purge flow volume is also determined by the intake manifold pressure. Atmospheric pressure is allowed into the canister through the vent valve to ensure that the purge flow is maintained when the negative pressure (vacuum) is applied to the canister.</ptxt>
+<ptxt>The following two monitors run to confirm the appropriate EVAP system operation.</ptxt>
+<step1>
+<ptxt>Key-off monitor</ptxt>
+<ptxt>This monitor checks for EVAP (Evaporative Emission) system leaks and canister pump module malfunctions. The monitor starts 5 hours* after the ignition switch is turned off. At least 5 hours are required for the fuel to cool down to stabilize the EVAP pressure, thus making the EVAP system monitor more accurate.</ptxt>
+<ptxt>The leak detection pump creates negative pressure (vacuum) in the EVAP system and the pressure is measured. Finally, the ECM monitors for leaks from the EVAP system, and malfunctions in both the canister pump module and purge VSV, based on the EVAP pressure.</ptxt>
+<atten4>
+<ptxt>*: If the engine coolant temperature is not below 35°C (95°F) 5 hours after the ignition switch is turned off, the monitor check starts 2 hours later. If it is still not below 35°C (95°F) 7 hours after the ignition switch is turned off, the monitor check starts 2.5 hours later.</ptxt>
+</atten4>
+</step1>
+<step1>
+<ptxt>Purge flow monitor</ptxt>
+<ptxt>The purge flow monitor consists of the two monitors. The 1st monitor is conducted every time and the 2nd monitor is activated if necessary.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The 1st monitor</ptxt>
+<ptxt>While the engine is running and the purge VSV (Vacuum Switching Valve) is ON (open), the ECM monitors the purge flow by measuring the EVAP pressure change. If negative pressure is not created, the ECM begins the 2nd monitor.</ptxt>
+</item>
+<item>
+<ptxt>The 2nd monitor</ptxt>
+<ptxt>The vent valve is turned OFF (open) and the EVAP pressure is measured. If the variation in the pressure is less than 0.5 kPa-g (3.75 mmHg-g), the ECM interprets this as the purge VSV being stuck closed, and illuminates the MIL and sets DTC P0441 (2 trip detection logic).</ptxt>
+</item>
+</list1>
+</step1>
+<ptxt>Atmospheric pressure check:</ptxt>
+<ptxt>In order to ensure reliable malfunction detection, the variation between the atmospheric pressures, before and after conduction of the purge flow monitor, is measured by the ECM.</ptxt>
+<figure>
+<graphic graphicname="A122571E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.20in"/>
+<colspec colname="COL2" colwidth="5.88in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Components</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operations</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Canister</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Contains activated charcoal to absorb EVAP (Evaporative Emissions) generated in fuel tank.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cut-off valve</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Located in fuel tank. Valve floats and closes when fuel tank 100 % full.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Purge VSV (Vacuum Switching Valve)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Opens or closes line between canister and intake manifold. ECM uses purge VSV to control EVAP purge flow. In order to discharge EVAP absorbed by canister to intake manifold, ECM opens purge VSV. EVAP discharge volume to intake manifold controlled by purge VSV duty cycle ratio (current-carrying time) (Open: ON; Closed: OFF).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Refueling valve</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controls EVAP pressure from fuel tank to canister. Valve consists of diaphragm, spring and restrictor (diameter: 0.08 inch). When fuel vapor and pressure inside fuel tank increase, valve opens. While EVAP purged, valve closes and restrictor prevents large amount of vacuum from affecting pressure in fuel tank. Valve opened while refueling.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Roll-over valve</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Located in fuel tank. Valve closed by its own weight when vehicle overturns to prevent fuel from spilling out.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Soak timer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Built into ECM. To ensure accurate EVAP monitor, measures 5 hours (+-15 min) after ignition switch turned off. This allows fuel to cool down, stabilizing EVAP pressure. When approximately 5 hours elapsed, ECM activates (refer to fig. 3).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Canister pump module</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Consists of (a) to (d) below. Canister pump module cannot be disassembled.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Vent valve</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vents and closes EVAP system. When ECM turns valve ON, EVAP system closed. When ECM turns valve OFF, EVAP system vented. Negative pressure (vacuum) created in EVAP system to check for EVAP leaks by closing purge VSV, turning on vent valve (closed) and operating leak detection pump (refer to fig. 1).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Canister pressure sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates pressure as voltages. ECM supplies regulated 5 V to canister pressure sensor, and uses feedback from sensor to monitor EVAP system pressure (refer to fig. 2).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(c) Leak detection pump</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Creates negative pressure (vacuum) in EVAP system for leak check.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(d) Reference orifice</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Has opening with 0.02 inch diameter. Vacuum produced through orifice by closing purge VSV, turning off vent valve and operating leak detection pump, to monitor reference pressure. Reference pressure indicates small leak of EVAP.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="A115902E04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<figure>
+<graphic graphicname="A115543E06" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="A135035E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YEQ014X_03" type-id="32" category="03" proc-id="RM0250U___00007P500000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132282E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YEQ014X_04" type-id="51" category="05" proc-id="RM0250U___00007P600000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>The intelligent tester is required to conduct the following diagnostic troubleshooting procedure.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Using intelligent tester monitor results enables the EVAP (Evaporative Emission) system to be confirmed.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000YEQ014X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000YEQ014X_05_0001" proc-id="RM0250U___00007P700000">
+<testtitle>CONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off and wait for 10 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off and wait for 10 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect an intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Confirm DTCs and freeze frame data.</ptxt>
+<ptxt>If any EVAP system DTCs are set, the malfunctioning area can be determined using the table below.</ptxt>
+<atten3>
+<ptxt>If the reference pressure difference between the first and second checks is greater than the specification, all the DTCs relating to the reference pressure (P043E, P043F, P2401, P2402 and P2419) are stored.</ptxt>
+</atten3>
+</test1>
+<figure>
+<graphic graphicname="A106731E11" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0002" proc-id="RM0250U___00007P800000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (AUTO OPERATION)</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The EVAP SYSTEM CHECK (AUTO OPERATION) consists of 5 steps performed automatically by the intelligent tester. It takes a maximum of approximately 18 minutes.</ptxt>
+</item>
+<item>
+<ptxt>Do not perform the EVAP SYSTEM CHECK when the fuel tank is more than 90% full because the cut-off valve may be closed, making the fuel tank leak check unavailable.</ptxt>
+</item>
+<item>
+<ptxt>Do not run the engine during this operation.</ptxt>
+</item>
+<item>
+<ptxt>When the temperature of the fuel is 35°C (95°F) or more, a large amount of vapor forms and any check results become inaccurate. When performing the EVAP SYSTEM CHECK, keep the temperature below 35°C (95°F).</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / SYSTEM CHECK / EVAP SYS CHECK / AUTO OPERATION.</ptxt>
+</test1>
+<test1>
+<ptxt>After the EVAP SYSTEM CHECK is completed, check for pending DTCs by selecting the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES.</ptxt>
+<atten4>
+<ptxt>If no pending DTCs are displayed, perform MONITOR CONFIRMATION (see "Diagnostic Help" menu). After this confirmation, check for pending DTCs. If no DTCs are displayed, the EVAP system is normal.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0003" proc-id="RM0250U___00007P900000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (MANUAL OPERATION)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106735E08" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>In the EVAP SYSTEM CHECK (MANUAL OPERATION), perform the series of 5 EVAP SYSTEM CHECK steps manually using the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>Do not perform the EVAP SYSTEM CHECK when the fuel tank is more than 90% full because the cut-off valve may be closed, making the fuel tank leak check unavailable.</ptxt>
+</item>
+<item>
+<ptxt>Do not run the engine during this operation.</ptxt>
+</item>
+<item>
+<ptxt>When the temperature of the fuel is 35°C (95°F) or more, a large amount of vapor forms and any check results become inaccurate. When performing the EVAP SYSTEM CHECK, keep the temperature below 35°C (95°F).</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / SYSTEM CHECK / EVAP SYS CHECK / MANUAL OPERATION.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0004" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0004" proc-id="RM0250U___00007PA00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 1/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106736E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Check the EVAP pressure in step 1/5.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Virtually no variation in EVAP pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not yet determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0451</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure fluctuates by +-0.3 kPa-g (2.25 mmHg-g) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor noise</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0005" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0030" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0005" proc-id="RM0250U___00007PB00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 1/5 TO 2/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106737E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Check the EVAP pressure in steps 1/5 and 2/5.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Results</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Virtually no variation in EVAP pressure during step 1/5. Then decreases to reference pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not yet determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2402</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Small difference between EVAP pressures during steps 1/5 and 2/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leak detection pump stuck ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+<atten4>
+<ptxt>The first reference pressure is the value determined in step 2/5.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0006" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0022" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0006" proc-id="RM0250U___00007PC00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 2/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106738E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<atten4>
+<ptxt>Make a note of the pressures checked in steps (a) and (b) below.</ptxt>
+</atten4>
+<test1>
+<ptxt>Check the EVAP pressure 4 seconds after the leak detection pump is activated*.</ptxt>
+<atten4>
+<ptxt>*: The leak detection pump begins to operate as step 1/5 finishes and step 2/5 starts.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check the EVAP pressure again when it has stabilized. This pressure is the reference pressure.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure in step (b) between -4.85 kPa-g and -1.057 kPa-g (-36.4 mmHg-g and -7.93 mmHg-g)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not yet determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P043F and P2401</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure in step (b) -1.057 kPa-g (-7.93 mmHg-g) or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Reference orifice high-flow</ptxt>
+</item>
+<item>
+<ptxt>Leak detection pump stuck OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P043E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure in step (b) below -4.85 kPa-g (-36.4 mmHg-g)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference orifice clogged</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2419</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure in step (a) more than -1.057 kPa-g (-7.93 mmHg-g)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vent valve stuck closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0007" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0011" fin="false">B</right>
+<right ref="RM000000YEQ014X_05_0030" fin="false">C</right>
+<right ref="RM000000YEQ014X_05_0020" fin="false">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0007" proc-id="RM0250U___00007PD00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 2/5 TO 3/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106739E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Check the EVAP pressure increases in step 3/5.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure increases by 0.3 kPa-g (2.25 mmHg-g) or more within 10 seconds of proceeding from step 2/5 to step 3/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not yet determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2420</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No variation in EVAP pressure despite proceeding from step 2/5 to step 3/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vent valve stuck open (vent)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0451</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No variation in EVAP pressure during steps 1/5 through 3/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Canister pressure sensor malfunction fixed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0008" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0019" fin="false">B</right>
+<right ref="RM000000YEQ014X_05_0030" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0008" proc-id="RM0250U___00007PE00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 3/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106740E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Wait until the EVAP pressure change is less than 0.1 kPa-g (0.75 mmHg-g) for 30 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the EVAP pressure and record it.</ptxt>
+<atten4>
+<ptxt>A few minutes are required for the EVAP pressure to become saturated. When there is little fuel in the fuel tank, it takes up to 15 minutes.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0009" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0009" proc-id="RM0250U___00007PF00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 4/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106741E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Check the EVAP pressure in step 4/5.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure increases by 0.3 kPa-g (2.25 mmHg-g) or more within 10 seconds of proceeding from step 3/5 to step 4/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not yet determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0441</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure increases by 0.3 kPa-g (2.25 mmHg-g) or more within 10 seconds of proceeding from step 3/5 to step 4/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Problems in EVAP hose between purge VSV and intake manifold</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0441</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variation in EVAP pressure less than 0.3 kPa-g (2.25 mmHg-g) for 10 seconds, after proceeding from step 3/5 to step 4/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV stuck closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0010" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0015" fin="false">B</right>
+<right ref="RM000000YEQ014X_05_0012" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0010" proc-id="RM0250U___00007PG00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 5/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106735E09" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Check the EVAP pressure in step 5/5.</ptxt>
+</test1>
+<test1>
+<ptxt>Compare the EVAP pressure in step 3/5 and the second reference pressure (step 5/5).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure (step 3/5) lower than second reference pressure (step 5/5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not yet determined (no leakage from EVAP system)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0441 and P0455</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure (step 3/5) higher than [second reference pressure (step 5/5) x 0.2]</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Purge VSV stuck open</ptxt>
+</item>
+<item>
+<ptxt>EVAP gross leak</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0456</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure (step 3/5) higher than second reference pressure (step 5/5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP small leak</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0036" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0012" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0011" proc-id="RM0250U___00007PH00000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (STEP 3/5)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A106742E04" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Check the EVAP pressure in step 3/5.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<colspec colname="COL3" colwidth="2.55in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P043F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure less than [reference pressure] measured at 2/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reference orifice high-flow</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2401</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP pressure almost same as [reference pressure] measured at 2/5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leak detection pump stuck OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: These DTCs are already present in the ECM when the vehicle arrives and are confirmed in the "CONFIRM DTC" procedures above.</ptxt>
+<atten4>
+<ptxt>The first reference pressure is the value determined in step 2/5.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0030" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0022" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0012" proc-id="RM0250U___00007PI00000">
+<testtitle>PERFORM ACTIVE TEST USING INTELLIGENT TESTER (PURGE VSV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>On the intelligent tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / EVAP VSV (ALONE).</ptxt>
+<figure>
+<graphic graphicname="A136177E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the hose (connected to the canister) from the purge VSV.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the tester, turn off the purge VSV (EVAP VSV: OFF).</ptxt>
+</test1>
+<test1>
+<ptxt>Use your finger to confirm that the purge VSV has no suction.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the tester, turn on the purge VSV (EVAP VSV: ON).</ptxt>
+</test1>
+<test1>
+<ptxt>Use your finger to confirm that the purge VSV has suction.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="3.04in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No suction when purge VSV turned OFF, and suction applied when turned ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Suction applied when purge VSV turned OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV stuck open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No suction when purge VSV turned ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Purge VSV stuck closed</ptxt>
+</item>
+<item>
+<ptxt>Problems with EVAP hose between purge VSV and intake manifold</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the hose.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0013" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0014" fin="false">B</right>
+<right ref="RM000000YEQ014X_05_0015" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0013" proc-id="RM0250U___00007PJ00000">
+<testtitle>CHECK FUEL CAP</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the fuel cap is correctly installed and confirm the fuel cap meets OEM specifications.</ptxt>
+</test1>
+<test1>
+<ptxt>Tighten the fuel cap until a few click sounds are heard.</ptxt>
+<atten4>
+<ptxt>If an EVAP tester is available, check the fuel cap using the tester.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Remove the fuel cap and install it onto a fuel cap adapter.</ptxt>
+</item>
+<item>
+<ptxt>Connect an EVAP tester pump hose to the adapter, and pressurize the cap to 3.2 to 3.7 kPa (24 to 28 mmHg) using an EVAP tester pump.</ptxt>
+</item>
+<item>
+<ptxt>Seal the adapter and wait for 2 minutes.</ptxt>
+</item>
+<item>
+<ptxt>Check the pressure. If the pressure is 2 kPa (15 mmHg) or more, the fuel cap is normal.</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="3.04in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Fuel cap correctly installed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel cap loose</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Fuel cap improperly installed</ptxt>
+</item>
+<item>
+<ptxt>Defective fuel cap</ptxt>
+</item>
+<item>
+<ptxt>Fuel cap does not meet OEM specifications</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Defective fuel cap</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No fuel cap</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the fuel cap.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0029" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0027" fin="false">B</right>
+<right ref="RM000000YEQ014X_05_0028" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0014" proc-id="RM0250U___00007PK00000">
+<testtitle>INSPECT DUTY VACUUM SWITCHING VALVE (PURGE VSV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="A135202E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C6 purge VSV connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the hose (connected to the canister) from the purge VSV.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Use your finger to confirm that the purge VSV has no suction.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="3.04in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No suction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Suction applied</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the purge VSV connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the hose.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0035" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0031" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0015" proc-id="RM0250U___00007PL00000">
+<testtitle>CHECK EVAP HOSE (PURGE VSV - INTAKE MANIFOLD)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the hose (connected to the intake manifold) from the purge VSV.</ptxt>
+<figure>
+<graphic graphicname="A135203E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Use your finger to confirm that the hose has suction.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Suction applied</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP hose between purge VSV and intake manifold normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No suction</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Intake manifold port</ptxt>
+</item>
+<item>
+<ptxt>EVAP hose between purge VSV and intake manifold</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<test1>
+<ptxt>Reconnect the hose.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0016" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0026" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0016" proc-id="RM0250U___00007PM00000">
+<testtitle>INSPECT DUTY VACUUM SWITCHING VALVE (PURGE VSV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the purge VSV.</ptxt>
+<figure>
+<graphic graphicname="A135066E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply the battery voltage to the terminals of the purge VSV.</ptxt>
+</test1>
+<test1>
+<ptxt>Using an air gun, confirm that air flows from port A to port B.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Air flows</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No air flow</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<test1>
+<ptxt>Install the purge VSV.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0017" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0031" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0017" proc-id="RM0250U___00007PN00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (POWER SOURCE OF PURGE VSV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C6 purge VSV connector.</ptxt>
+<figure>
+<graphic graphicname="A052933E25" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between terminal 1 of the purge VSV connector and body ground.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Other than result above</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wire harness or connectors between purge VSV and ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the purge VSV connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0018" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0032" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0018" proc-id="RM0250U___00007PO00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PURGE VSV - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C24 ECM connector and the C6 purge VSV connector.</ptxt>
+<figure>
+<graphic graphicname="A112616E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C24-49 (PRG) - C6-2 (Purge VSV)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C24-49 (PRG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C6-2 (Purge VSV) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the purge VSV connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0035" fin="false">OK</right>
+<right ref="RM000000YEQ014X_05_0032" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0019" proc-id="RM0250U___00007PP00000">
+<testtitle>INSPECT CANISTER PUMP MODULE (POWER SOURCE FOR VENT VALVE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="A135029E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the VLVB terminal of the canister pump module connector and body ground.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Wire harness between vent valve and ECM</ptxt>
+</item>
+<item>
+<ptxt>Vent valve</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 3 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source wire harness of vent valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0020" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0032" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0020" proc-id="RM0250U___00007PQ00000">
+<testtitle>INSPECT CANISTER PUMP MODULE (VENT VALVE OPERATION)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="A135039E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Apply the battery voltage to the VLVB and VGND terminals of the canister pump module.</ptxt>
+</test1>
+<test1>
+<ptxt>Touch the canister pump module to confirm the vent valve operation.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Areat</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1. Wire harness between vent valve and ECM</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Not operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vent valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the canister connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0021" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0030" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0021" proc-id="RM0250U___00007PR00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - CANISTER PUMP MODULE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A112621E09" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the VPMP terminal of the ECM connector and the VGND terminal of the canister pump module connector.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wire harness between ECM and canister pump module</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0035" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0032" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0022" proc-id="RM0250U___00007PS00000">
+<testtitle>PERFORM ACTIVE TEST USING INTELLIGENT TESTER (VACUUM PUMP (ALONE))</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="A135029E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>On the intelligent tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / VACUUM PUMP.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between MTRB terminal 1 of the canister pump module connector and body ground when the leak detection pump is turned ON and OFF using the tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Below 3 V when OFF</ptxt>
+<ptxt>9 to 14 V when ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Wire harness between leak detection pump and body ground</ptxt>
+</item>
+<item>
+<ptxt>Leak detection pump </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 3 V when OFF and ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Wire harness between leak detection pump and ECM</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0024" fin="false">A</down>
+<right ref="RM000000YEQ014X_05_0025" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0024" proc-id="RM0250U___00007PT00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CANISTER PUMP MODULE - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="A135029E04" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the MGND terminal of the canister pump module connector and body ground.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Leak detection pump</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wire harness between canister pump module and body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0030" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0032" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0025" proc-id="RM0250U___00007PU00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - CANISTER PUMP MODULE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="A112621E10" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the MPMP terminal of the ECM connector and the MTRB terminal of the canister pump module connector.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wire harness between ECM and canister pump module</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0035" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0032" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0026" proc-id="RM0250U___00007PV00000">
+<testtitle>INSPECT INTAKE MANIFOLD (EVAP PURGE PORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Stop the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the EVAP hose from the intake manifold.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Use your finger to confirm that the port of the intake manifold has suction.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Suction applied</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP hose between intake manifold and purge VSV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No suction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake manifold</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<test1>
+<ptxt>Reconnect the EVAP hose.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0033" fin="false">A</right>
+<right ref="RM000000YEQ014X_05_0034" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0027" proc-id="RM0250U___00007PW00000">
+<testtitle>CORRECTLY REINSTALL OR REPLACE FUEL CAP</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When reinstalling the fuel cap, tighten it until a few click sounds are heard.</ptxt>
+</item>
+<item>
+<ptxt>When replacing the fuel cap, use a fuel cap that meets OEM specifications.</ptxt>
+</item>
+</list1>
+</atten4>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0028" proc-id="RM0250U___00007PX00000">
+<testtitle>REPLACE FUEL CAP</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>When installing the fuel cap, tighten it until a few click sounds are heard.</ptxt>
+</atten4>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0029" proc-id="RM0250U___00007PY00000">
+<testtitle>LOCATE EVAP LEAK PART</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="A135204E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Disconnect the vent hose.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the EVAP pressure tester tool to the canister pump module with the adapter.</ptxt>
+</test1>
+<test1>
+<ptxt>Pressurize the EVAP system to 3.2 to 3.7 kPa (24 to 28 mmHg).</ptxt>
+</test1>
+<test1>
+<ptxt>Apply soapy water to the piping and connecting parts of the EVAP system.</ptxt>
+</test1>
+<test1>
+<ptxt>Look for areas where bubbles appear. This indicates the leak point.</ptxt>
+</test1>
+<test1>
+<ptxt>Repair or replace the leak point.</ptxt>
+<atten4>
+<ptxt>Disconnect the hose between the canister and the fuel tank from the canister. Block the canister side and conduct an inspection. In this way, the fuel tank can be excluded as an area suspected of causing fuel leaks.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0030" proc-id="RM0250U___00007PZ00000">
+<testtitle>REPLACE CHARCOAL CANISTER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the canister assembly (See page <xref label="Seep01" href="RM000001OOG002X_01_0011"/>).</ptxt>
+<atten3>
+<ptxt>When replacing the canister, check the canister pump module interior and related pipes for water, fuel and other liquids. If liquids are present, check for disconnections and/or cracks in the following: 1) the pipe from the air inlet port to the canister pump module; 2) the canister filter; and 3) the fuel tank vent hose.</ptxt>
+</atten3>
+<figure>
+<graphic graphicname="A132283E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="A132284E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0031" proc-id="RM0250U___00007Q000000">
+<testtitle>REPLACE DUTY VACUUM SWITCHING VALVE (PURGE VSV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector and the hoses from the purge VSV.</ptxt>
+<figure>
+<graphic graphicname="A135206E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the purge VSV.</ptxt>
+</test1>
+<test1>
+<ptxt>Install a new purge VSV.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the connector and hoses.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0032">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0033">
+<testtitle>REPLACE EVAP HOSE (INTAKE MANIFOLD - PURGE VSV)</testtitle>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0034" proc-id="RM0250U___00007Q100000">
+<testtitle>INSPECT INTAKE MANIFOLD (EVAP PURGE PORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the EVAP purge port of the intake manifold is not clogged. If necessary, replace the intake manifold.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0035" proc-id="RM0250U___00007Q200000">
+<testtitle>REPLACE ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the ECM (See page <xref label="Seep01" href="RM0000017UO007X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0036" proc-id="RM0250U___00007Q300000">
+<testtitle>REPAIR OR REPLACE PARTS AND COMPONENTS INDICATED BY OUTPUT DTCS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Repair the malfunctioning areas indicated by the DTCs that had been confirmed when the vehicle was brought in.</ptxt>
+</test1>
+</content6>
+<res>
+<right ref="RM000000YEQ014X_05_0037" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0037" proc-id="RM0250U___00007Q400000">
+<testtitle>PERFORM EVAP SYSTEM CHECK (AUTO OPERATION)</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The EVAP SYSTEM CHECK (AUTO OPERATION) consists of 5 steps performed automatically by the intelligent tester. It takes a maximum of approximately 18 minutes.</ptxt>
+</item>
+<item>
+<ptxt>Do not perform the EVAP SYSTEM CHECK when the fuel tank is more than 90% full because the cut-off valve may be closed, making the fuel tank leak check unavailable.</ptxt>
+</item>
+<item>
+<ptxt>Do not run the engine in this step.</ptxt>
+</item>
+<item>
+<ptxt>When the temperature of the fuel is 35°C (95°F) or more, a large amount of vapor forms and any check results become inaccurate. When performing an EVAP SYSTEM CHECK, keep the temperature below 35°C (95°F).</ptxt>
+</item>
+</list1>
+</atten3>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>On the intelligent tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / SYSTEM CHECK / EVAP SYS CHECK / AUTO OPERATION.</ptxt>
+</test1>
+<test1>
+<ptxt>After the SYSTEM CHECK is completed, check for pending DTCs by selecting the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES.</ptxt>
+<atten4>
+<ptxt>If no pending DTCs are found, the repair has been successfully completed.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YEQ014X_05_0038" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000YEQ014X_05_0038">
+<testtitle>COMPLETED</testtitle>
+</testgrp>
+</subpara>
+<subpara id="RM000000YEQ014X_06" type-id="73" category="03" proc-id="RM0250U___00007Q500000">
+<name>CONFIRMATION DRIVING PATTERN</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After a repair, check Monitor Status by performing the Key-Off Monitor Confirmation and Purge Flow Monitor Confirmation described below.</ptxt>
+</atten4>
+<step1>
+<ptxt>KEY-OFF MONITOR CONFIRMATION</ptxt>
+<step2>
+<ptxt>Preconditions</ptxt>
+<ptxt>The monitor will not run unless:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle has been driven for 10 minutes or more (in a city area or on a freeway)</ptxt>
+</item>
+<item>
+<ptxt>The fuel tank is less than 90 % full</ptxt>
+</item>
+<item>
+<ptxt>The altitude is less than 8,000 ft (2,400 m)</ptxt>
+</item>
+<item>
+<ptxt>The Engine Coolant Temperature (ECT) is between 4.4°C and 35°C (40°F and 95°F)</ptxt>
+</item>
+<item>
+<ptxt>The Intake Air Temperature (IAT) is between 4.4°C and 35°C (40°F and 95°F)</ptxt>
+</item>
+<item>
+<ptxt>The vehicle remains stationary (the vehicle speed is 0 mph (0 km/h))</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Monitor Conditions</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Allow the engine to idle for at least 5 minutes.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch off and wait for 6 hours (8 or 10.5 hours).</ptxt>
+<atten4>
+<ptxt>Do not start the engine until checking MONITOR STATUS. If the engine is started, the steps described above must be repeated.</ptxt>
+</atten4>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Monitor Status</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / MONITOR STATUS.</ptxt>
+</item>
+<item>
+<ptxt>Check the Monitor Status displayed on the tester.</ptxt>
+<atten4>
+<ptxt>If INCMP is displayed, the monitor is not complete. Make sure that the preconditions have been met, and perform the Monitor Conditions again.</ptxt>
+</atten4>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>PURGE FLOW MONITOR CONFIRMATION (P0441)</ptxt>
+<atten4>
+<ptxt>Perform this monitor confirmation after the Key-Off Monitor Confirmation shows COMPL (complete).</ptxt>
+</atten4>
+<step2>
+<ptxt>Preconditions</ptxt>
+<ptxt>The monitor will not run unless:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle has been driven for 10 minutes or more (in a city area or on a freeway)</ptxt>
+</item>
+<item>
+<ptxt>The ECT is between 4.4°C and 35°C (40°F and 95°F)</ptxt>
+</item>
+<item>
+<ptxt>The IAT is between 4.4°C and 35°C (40°F and 95°F)</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Monitor Conditions</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Release the pressure from the fuel tank by removing and reinstalling the fuel cap.</ptxt>
+</item>
+<item>
+<ptxt>Warm the engine up until the ECT reaches more than 75°C (167°F).</ptxt>
+</item>
+<item>
+<ptxt>Increase the engine speed to 3,000 rpm once.</ptxt>
+</item>
+<item>
+<ptxt>Allow the engine to idle and turn A/C ON for 1 minute.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Monitor Status</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Turn the ignition switch off (if ON or the engine is running).</ptxt>
+</item>
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / MONITOR STATUS.</ptxt>
+</item>
+<item>
+<ptxt>Check the Monitor Status displayed on the tester.</ptxt>
+<atten4>
+<ptxt>If INCMP is displayed, the monitor is not complete. Make sure that the preconditions have been met, and perform the Monitor Conditions again.</ptxt>
+</atten4>
+</item>
+</list1>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM000000YEQ014X_07" type-id="68" category="03" proc-id="RM0250U___00007Q600000">
+<name>MONITOR RESULT</name>
+<content5 releasenbr="1">
+<ptxt>Refer to CHECKING MONITOR STATUS (See page <xref label="Seep01" href="RM000000PDR010X"/>).</ptxt>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

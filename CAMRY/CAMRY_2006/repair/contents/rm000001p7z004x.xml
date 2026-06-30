@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72XW4_T0085" variety="T0085">
+<name>FRONT DOOR LOCK</name>
+<para id="RM000001P7Z004X" category="G" type-id="3001K" name-id="DL0Y8-01" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001P7Z004X_01" type-id="01" category="01">
+<s-1 id="RM000001P7Z004X_01_0001" proc-id="RM0250U___000031W00000">
+<ptxt>INSPECT FRONT DOOR LOCK LH ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the front door lock assembly LH.</ptxt>
+</s2>
+<s2>
+<ptxt>Check operation of the door lock motor.</ptxt>
+<figure>
+<graphic graphicname="B065427E20" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Apply battery voltage and check operation of the door lock motor.</ptxt>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Check operation of the door key lock and unlock switch.</ptxt>
+<figure>
+<graphic graphicname="B065428E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7 - 9</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON (Door lock set to LOCK)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7 - 9</ptxt>
+<ptxt>7 - 10</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF (Free)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>7 - 10</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON (Door lock set to UNLOCK)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Check operation of the door unlock detection switch.</ptxt>
+<figure>
+<graphic graphicname="B065427E20" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door Lock Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7 - 8 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7 - 8 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001P7Z004X_01_0002" proc-id="RM0250U___000031X00000">
+<ptxt>INSPECT FRONT DOOR LOCK RH ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the front door lock assembly RH.</ptxt>
+</s2>
+<s2>
+<ptxt>Check operation of the door lock motor.</ptxt>
+<figure>
+<graphic graphicname="B065429E21" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Apply battery voltage and check operation of the door lock motor.</ptxt>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Check operation of the door key lock and unlock switch.</ptxt>
+<figure>
+<graphic graphicname="B112613E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 - 8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+<ptxt>(Door lock set to UNLOCK)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 - 8</ptxt>
+<ptxt>6 - 8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF (Free)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6 - 8</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+<ptxt>(Door lock set to LOCK)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Check operation of the door unlock detection switch.</ptxt>
+<figure>
+<graphic graphicname="B065429E21" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door Lock Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(Specified Condition)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7 - 8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7 - 8</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

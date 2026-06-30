@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000000YE200SX" category="J" type-id="303L1" name-id="RS2U9-01" from="200601">
+<dtccode/>
+<dtcname>SRS Warning Light Remains ON</dtcname>
+<subpara id="RM000000YE200SX_01" type-id="60" category="03" proc-id="RM0250U___000072600000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The SRS warning light is located on the combination meter assembly.</ptxt>
+<ptxt>When the SRS is normal, the SRS warning light comes on for approximately 6 seconds after the ignition switch is turned from off to on (IG), and then goes off automatically.</ptxt>
+<ptxt>If there is a malfunction in the SRS, the SRS warning light comes on to inform the driver of a problem.</ptxt>
+<ptxt>When terminals TC and CG of the DLC3 are connected, the DTC is displayed by blinking of the SRS warning light.</ptxt>
+<ptxt>The SRS is equipped with a voltage-increase circuit (DC-DC converter) in the center airbag sensor assembly in case the source voltage drops.</ptxt>
+<ptxt>When the battery voltage drops, the voltage-increase circuit (DC-DC converter) functions to increase the voltage of the SRS to normal voltage.</ptxt>
+<ptxt>A malfunction in this circuit is not recorded in the center airbag sensor assembly. The SRS warning light automatically goes off when the source voltage returns to normal.</ptxt>
+<ptxt>The signal to illuminate the SRS warning light is transmitted from the center airbag sensor assembly to the combination meter assembly through the CAN communication system.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000YE200SX_02" type-id="32" category="03" proc-id="RM0250U___000072700000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C123738E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C123739E01" width="7.106578999in" height="9.803535572in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YE200SX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000YE200SX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000YE200SX_05_0011" proc-id="RM0250U___000072D00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if a CAN communication DTC is output (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed To</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YE200SX_05_0001" fin="false">A</down>
+<right ref="RM000000YE200SX_05_0013" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0001" proc-id="RM0250U___000072800000">
+<testtitle>CHECK BATTERY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage of the battery.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YE200SX_05_0002" fin="false">OK</down>
+<right ref="RM000000YE200SX_05_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0002" proc-id="RM0250U___000072900000">
+<testtitle>CHECK CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors are properly connected to the center airbag sensor assembly and combination meter assembly.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are properly connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YE200SX_05_0003" fin="false">OK</down>
+<right ref="RM000000YE200SX_05_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0003" proc-id="RM0250U___000072A00000">
+<testtitle>CHECK WIRE HARNESS (CENTER AIRBAG SENSOR ASSEMBLY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors from the center airbag sensor assembly.</ptxt>
+<figure>
+<graphic graphicname="G027651E43" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Operate all components of the electrical system (defogger, wipers, headlight, heater blower, etc.).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-21 (IG2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-25 (E1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E30-26 (E2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YE200SX_05_0004" fin="false">OK</down>
+<right ref="RM000000YE200SX_05_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0004" proc-id="RM0250U___000072B00000">
+<testtitle>CHECK WIRE HARNESS (COMBINATION METER ASSEMBLY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+<figure>
+<graphic graphicname="E123360E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the F1 connector from the combination meter assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-1 (B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-2 (B2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-13 (IG+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-12 (E2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-24 (ES) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YE200SX_05_0005" fin="false">OK</down>
+<right ref="RM000000YE200SX_05_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0005" proc-id="RM0250U___000072C00000">
+<testtitle>CHECK SRS WARNING LIGHT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connector to the combination meter assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check the SRS warning light condition.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>After the primary check period, SRS warning light goes off for approximately 10 seconds, and remains on.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>The primary check period shows approximately 6 seconds after the ignition switch is turned on (IG).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YE200SX_05_0006" fin="true">OK</down>
+<right ref="RM000000YE200SX_05_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0006">
+<testtitle>REPLACE CENTER AIRBAG SENSOR ASSEMBLY<xref label="Seep01" href="RM000000UWV00HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0007">
+<testtitle>CHECK AND REPLACE BATTERY OR CHARGING SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0008">
+<testtitle>CONNECT CONNECTORS PROPERLY</testtitle>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0009">
+<testtitle>REPAIR OR REPLACE WIRE HARNESS</testtitle>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0010">
+<testtitle>GO TO METER / GAUGE SYSTEM<xref label="Seep01" href="RM0000012G100JX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000YE200SX_05_0013">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001IGP002X" category="C" type-id="3018W" name-id="EI0EL-01" from="200601">
+<dtccode>B2799</dtccode>
+<dtcname>Engine Immobiliser System Malfunction</dtcname>
+<subpara id="RM000001IGP002X_01" type-id="60" category="03" proc-id="RM0250U___00008FV00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the ECM detects errors in communication with the transponder key ECU, and in the communication lines.</ptxt>
+<ptxt>This DTC is also output when an engine start is attempted while the ECU communication ID between the transponder key ECU and the ECM is different.</ptxt>
+<ptxt>Before troubleshooting for this DTC, make sure that there is no DTC detected in the transponder key ECU. If there is any key code related DTC detected in the transponder key ECU, repair it first.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2799</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Error in communication between ECM and transponder key ECU assembly, and in communication line</ptxt>
+<ptxt>Communication ID is different during communication with transponder key ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness</ptxt>
+</item>
+<item>
+<ptxt>Transponder key ECU assembly</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001IGP002X_02" type-id="32" category="03" proc-id="RM0250U___00008FW00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128330E05" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001IGP002X_03" type-id="51" category="05" proc-id="RM0250U___00008KQ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the transponder key ECU assembly is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the ECM is replaced, register the ECU communication ID (See page <xref label="Seep02" href="RM00000120Y006X"/>).</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001IGP002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001IGP002X_04_0002" proc-id="RM0250U___00008FY00000">
+<testtitle>RE-REGISTER ECU COMMUNICATION ID</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Re-register the ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>) between the transponder key ECU assembly and ECM.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the engine starts.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The engine starts.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001IGP002X_04_0001" fin="false">NG</down>
+<right ref="RM000001IGP002X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001IGP002X_04_0001" proc-id="RM0250U___00008FX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TRANSPONDER KEY ECU - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E15 ECU and A24*1 or A55*2 ECM connectors.</ptxt>
+<figure>
+<graphic graphicname="B139202E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-12 (EFII) - A24*1, A55*2-10 (IMO)</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-13 (EFIO) - A24*1, A55*2-11 (IMI)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-12 (EFII) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-13 (EFIO) - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<ptxt>*1: for 2AZ-FE</ptxt>
+<ptxt>*2: for 2GR-FE</ptxt>
+</content6>
+<res>
+<down ref="RM000001IGP002X_04_0003" fin="false">OK</down>
+<right ref="RM000001IGP002X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001IGP002X_04_0003" proc-id="RM0250U___00008FZ00000">
+<testtitle>REPLACE TRANSPONDER KEY ECU ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>After replacing the transponder key ECU assembly with a normally functioning transponder key ECU assembly, check that the engine starts.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The engine starts.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001IGP002X_04_0005" fin="true">OK</down>
+<right ref="RM000001IGP002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001IGP002X_04_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001IGP002X_04_0005">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000001IGP002X_04_0006">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

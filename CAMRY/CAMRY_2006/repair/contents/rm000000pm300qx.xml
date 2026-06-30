@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000PM300QX" category="U" type-id="303FJ" name-id="CC00F-33" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000PM300QX_z0" proc-id="RM0250U___00007ZV00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester's DATA LIST allows switch, sensor, actuator, and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to save time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>ECM (Cruise control):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed / min.: 0 km/h (0 mph), max.: 255 km/h (158 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MEMORY SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise control memorized speed / min.: 36 km/h (22.5 mph), max.: 200 km/h (125 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual stored vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>THROTTLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle opening angle / min.: 0°, max.: 125°</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual demanded throttle angle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CRUISE CONTROL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise control system active condition / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Cruise control activated</ptxt>
+<ptxt>OFF: Cruise control deactivated</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MAIN SW (MAIN)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main switch signal (Main CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Cruise control main switch on</ptxt>
+<ptxt>OFF: Cruise control main switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>"1"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CCS READY M</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise control system standby condition (Main CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Each time main switch is pushed, ON is displayed and then OFF is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>"1"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CCS INDICATOR M</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise indicator signal (Main CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: "CRUISE" on</ptxt>
+<ptxt>OFF: "CRUISE" off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANCEL SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANCEL switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: CANCEL switch on</ptxt>
+<ptxt>OFF: CANCEL switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SET/COAST SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SET / COAST switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: - (COAST) / SET switch on</ptxt>
+<ptxt>OFF: - (COAST) / SET  switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RES/ACC SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RES / ACC switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: + (ACCEL) / RES (RESUME) switch on</ptxt>
+<ptxt>OFF: + (ACCEL) / RES (RESUME) switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STP LIGHT SW M (STP)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal (Main CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CCS OPER STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise control condition / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Cruise control operated</ptxt>
+<ptxt>OFF: Cruise control operation stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>"1" is OK but CRUISE main indicator light does not illuminate → CRUISE main indicator light, wire harness, or ECM failure</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's ACTIVE TEST allows relays, VSVs, actuators, and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<atten4>
+<ptxt>The ignition switch must be turned on (IG) to proceed to with the ACTIVE TEST using the intelligent tester.</ptxt>
+</atten4>
+<table pgwide="1">
+<title>Combination meter:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CRUISE INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns CRUISE main indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON /OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

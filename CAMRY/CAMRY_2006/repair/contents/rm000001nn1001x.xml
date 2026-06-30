@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72WHC_T0069" variety="T0069">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001NN1001X" category="M" type-id="80037" name-id="DL0TL-02" from="200601">
+<name>REGISTRATION</name>
+<subpara id="RM000001NN1001X_01" type-id="11" category="10" proc-id="RM0250U___00001HT00000">
+<content3 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Register the recognition code when replacing the door control transmitter or the door control receiver.</ptxt>
+</item>
+<item>
+<ptxt>Add mode is used to register new recognition codes while still retaining codes already registered. This mode is used when a new transmitter is added. If the number of registered codes exceeds 6, the previously registered codes will be erased in order, starting from the first registered code.</ptxt>
+</item>
+<item>
+<ptxt>Rewrite mode is used to erase all the previously registered recognition codes in order to register all-new recognition codes. This mode is used when the transmitter or the door control receiver is replaced with a new one.</ptxt>
+</item>
+<item>
+<ptxt>Confirmation mode is used to confirm how many recognition codes have already been registered before another recognition code is registered.</ptxt>
+</item>
+<item>
+<ptxt>Prohibition mode is used to erase all the registered codes and disable the wireless door lock function.</ptxt>
+<ptxt>This mode is used when the transmitter is lost.</ptxt>
+</item>
+<item>
+<ptxt>All the following registration procedures must be performed in order.</ptxt>
+</item>
+</list1>
+</atten4>
+</content3>
+</subpara>
+<subpara id="RM000001NN1001X_02" type-id="01" category="01">
+<s-1 id="RM000001NN1001X_02_0001" proc-id="RM0250U___00001HU00000">
+<ptxt>REGISTRATION OF RECOGNITION CODE (USING INTELLIGENT TESTER)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Turn the ignition switch ON.</ptxt>
+</s2>
+<s2>
+<ptxt>Select the add or rewrite mode according to the intelligent tester display.</ptxt>
+</s2>
+<s2>
+<ptxt>The number of registered codes is indicated.</ptxt>
+</s2>
+<s2>
+<ptxt>Registration of the door control transmitter.</ptxt>
+<s3>
+<ptxt>If the add mode or rewrite mode has been selected, press the LOCK and UNLOCK switches on the transmitter simultaneously.</ptxt>
+</s3>
+<s3>
+<ptxt>Within 3 seconds of releasing the LOCK and UNLOCK switches, press either of the switches on the door control transmitter.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not press the LOCK and UNLOCK switches simultaneously for more than 1.5 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Do the operation within 1 meter of the driver's seat to register the transmitter.</ptxt>
+</item>
+<item>
+<ptxt>Do not push other transmitter switches during the transmitter registration process.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>The main body ECU automatically performs the power door LOCK-UNLOCK operation once and sounds the wireless door lock buzzer twice, in order to indicate whether registration has been completed correctly or not.</ptxt>
+</s3>
+<s3>
+<ptxt>If registration is continued, the next recognition code must be registered in the door control transmitter within 30 seconds.</ptxt>
+<atten4>
+<ptxt>Up to 6 recognition codes can be registered.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Completing the registration mode.</ptxt>
+<s3>
+<ptxt>The registration mode will cease when any of the following occurs:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>30 seconds or more have elapsed after a code is registered.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester is used to complete.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester is disconnected.</ptxt>
+</item>
+<item>
+<ptxt>The ignition switch is turned off.</ptxt>
+</item>
+</list1>
+</s3>
+</s2>
+<s2>
+<ptxt>Perform the following after registration is completed.</ptxt>
+<s3>
+<ptxt>Perform the wireless door lock control operation check (See page <xref label="Seep01" href="RM000001NMX001X"/>).</ptxt>
+<atten4>
+<ptxt>If the wireless door lock control does not operate, perform the registration procedure again.</ptxt>
+</atten4>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

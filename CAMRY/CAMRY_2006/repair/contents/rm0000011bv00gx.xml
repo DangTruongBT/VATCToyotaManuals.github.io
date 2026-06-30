@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000011BV00GX" category="D" type-id="303FG" name-id="NS1F4-01" from="200601">
+<name>DISPLAY CHECK MODE</name>
+<subpara id="RM0000011BV00GX_z0" proc-id="RM0250U___00004XF00000">
+<content5 releasenbr="2">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>This mode checks the color display on the display.</ptxt>
+</item>
+<item>
+<ptxt>Illustrations may differ from the actual vehicle depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle.</ptxt>
+</item>
+</list1>
+</atten4>
+<step1>
+<ptxt>ENTER DIAGNOSTIC MODE (See page <xref label="Seep01" href="RM0000011BU00FX"/>)</ptxt>
+</step1>
+<step1>
+<ptxt>DISPLAY CHECK</ptxt>
+<step2>
+<ptxt>Select "Display Check" from the "Diagnosis MENU" screen.</ptxt>
+<figure>
+<graphic graphicname="E120055E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>COLOR BAR CHECK</ptxt>
+<step2>
+<ptxt>Select "Color Bar Check" from the "Display Check" screen.</ptxt>
+<figure>
+<graphic graphicname="E120053E38" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Select a color bar from the "Color Bar Check Mode" screen.</ptxt>
+<figure>
+<graphic graphicname="E120102" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check the display color.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The entire screen turns to the color or stripe selected.</ptxt>
+</item>
+<item>
+<ptxt>Touching the display will return to the "Color Bar Check" screen.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>TOUCH SWITCH CHECK</ptxt>
+<step2>
+<ptxt>Select "Touch Switch Check" from the "Display Check" screen.</ptxt>
+<figure>
+<graphic graphicname="E125809E09" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Touch the display anywhere in the open area to perform the check when the "Touch Switch Check" screen is displayed.</ptxt>
+<figure>
+<graphic graphicname="E120103" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A "+" mark is displayed where the display is touched.</ptxt>
+</item>
+<item>
+<ptxt>The "+" mark remains on the display even after the finger is removed.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>PANEL SWITCH CHECK</ptxt>
+<step2>
+<ptxt>Select "Panel Switch Check" from the "Display Check" screen.</ptxt>
+<figure>
+<graphic graphicname="E125809E10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Operate each switch and check that the switch name and condition are correctly displayed.</ptxt>
+<figure>
+<graphic graphicname="I100041E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Push switch name/*1</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Name of the pressed switch is displayed.</ptxt>
+</item>
+<item>
+<ptxt>If more than one switch is pressed, "MULTIPLE" is displayed.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rotary switch name/*2 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Name of the rotary switch is displayed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rotary switch direction/*3 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direction of the rotary switch is displayed.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>VEHICLE SIGNAL CHECK</ptxt>
+<step2>
+<ptxt>Select "Vehicle Signal Check" from the "Display Check" screen.</ptxt>
+<figure>
+<graphic graphicname="E125809E12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>When the "Vehicle Signal Check Mode" screen is displayed, check all the vehicle signal conditions.</ptxt>
+<figure>
+<graphic graphicname="E125810" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Only conditions having inputs are displayed.</ptxt>
+</item>
+<item>
+<ptxt>This screen is updated once per second when input signals to the vehicle are changed.</ptxt>
+</item>
+<item>
+<ptxt>For details of this function, refer to DIAGNOSIS DISPLAY DETAILED DESCRIPTION (See page <xref label="Seep02" href="RM0000014SL00FX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

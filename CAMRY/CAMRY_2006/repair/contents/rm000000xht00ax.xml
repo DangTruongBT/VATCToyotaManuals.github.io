@@ -1,0 +1,928 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHT00AX" category="D" type-id="304SG" name-id="BC02J-09" from="200601">
+<name>TEST MODE PROCEDURE</name>
+<subpara id="RM000000XHT00AX_z0" proc-id="RM0250U___00005RT00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>WARNING LIGHT AND INDICATOR LIGHT INITIAL CHECK</ptxt>
+<step2>
+<ptxt>Release the parking brake.</ptxt>
+<figure>
+<graphic graphicname="C140885E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<atten3>
+<ptxt>Before releasing the parking brake, move the shift lever to the P position for safety (A/T) or set the chocks to hold the vehicle for safety (M/T).</ptxt>
+</atten3>
+<atten4>
+<ptxt>When the parking brake is applied or the level of the brake fluid is low, the BRAKE warning light comes on.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>When the ignition switch is turned on (IG), check that the ABS warning, BRAKE warning, SLIP indicator, and master caution indicator lights come on for approximately 3 seconds. Vehicles equipped with VSC, which are not equipped with a multi information display, the VSC warning light will illuminate instead of the master caution indicator light.</ptxt>
+<atten4>
+<ptxt>If the ECU stores a DTC, the ABS warning, BRAKE warning, VSC warning and SLIP indicator lights will come on.</ptxt>
+</atten4>
+<ptxt>If the vehicle is equipped with a multi information display, and the vehicle stores a DTC, the master caution indicator light will illuminate, and the multi information display will indicate the malfunction instead of the VSC warning light. In this case, the ABS warning, BRAKE warning, and SLIP indicator lights will also come on.</ptxt>
+<ptxt>If the indicator remains on or does not come on, proceed to troubleshooting for the light circuits listed below.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL2" align="center" colwidth="1.57in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep01" href="RM000000XIH00AX"/> or <xref label="Seep02" href="RM000000XIQ00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>BRAKE warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep03" href="RM000000YHG00BX"/> or <xref label="Seep04" href="RM000000YHH00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VSC warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep05" href="RM000000XIO00AX"/> or <xref label="Seep06" href="RM000000XIT00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>SLIP indicator light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep07" href="RM000000YHI00AX"/> or <xref label="Seep08" href="RM000000YHJ00AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>SENSOR CHECK USING TEST MODE (SIGNAL CHECK) (INTELLIGENT TESTER)</ptxt>
+<atten3>
+<ptxt>After replacement of the brake actuator assembly and/or yaw rate and acceleration sensor, perform zero point calibration of the yaw rate and acceleration sensor.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the ignition switch is turned from on (IG) to on (ACC) or off during Test Mode (signal check), DTCs of the signal check function will be erased.</ptxt>
+</item>
+<item>
+<ptxt>During Test Mode (signal check), the skid control ECU records all DTCs of the signal check function. By performing the Test Mode (signal check), the codes are erased if a normal condition is confirmed. The remaining codes are the codes where an abnormality was found.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Procedure to enter Test Mode.</ptxt>
+<figure>
+<graphic graphicname="C131977E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (A/T) or apply the parking brake (M/T).</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Set the intelligent tester to Test Mode (select "SIGNAL CHECK").</ptxt>
+<figure>
+<graphic graphicname="C106533" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check that the ABS and VSC (models without multi information display) warning lights blink or "CHECK VSC SYSTEM" is displayed on the multi information display (models with multi information display) (Test Mode).</ptxt>
+<figure>
+<graphic graphicname="C135802E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The SLIP indicator light remains on during Test Mode because TRAC is prohibited.</ptxt>
+</item>
+<item>
+<ptxt>If the ABS and VSC (models without multi information display) warning lights do not blink or "CHECK VSC SYSTEM" is not displayed on the multi information display (models with multi information display), inspect the TS and CG terminal circuit, and ABS and VSC warning light circuits.</ptxt>
+</item>
+</list1>
+</atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL2" align="center" colwidth="1.57in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>TS and CG terminal circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep09" href="RM000000XIV00CX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ABS warning light circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep10" href="RM000000XIQ00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VSC warning light circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep11" href="RM000000XIT00AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Check the ABS sensor.</ptxt>
+<figure>
+<graphic graphicname="BR03904E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Check that the ABS warning light is blinking in Test Mode and perform the check.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ACCELERATION SENSOR CHECK (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Keep the vehicle stationary on a level surface for 1 second or more.</ptxt>
+<atten4>
+<ptxt>Acceleration sensor check can be performed with the master cylinder pressure sensor check below.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>MASTER CYLINDER PRESSURE SENSOR CHECK (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Leave the vehicle in a stationary condition and release the brake pedal for 1 second or more, and quickly and continuously depress the brake pedal with a force of 98 N (10 kgf, 22 lbf) or more for 1 second.</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the ABS warning light stays on for 3 seconds.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Ensure that the ABS warning light comes on.</ptxt>
+</item>
+<item>
+<ptxt>While the ABS warning light stays on, continue to depress the brake pedal with a force of 98 N (10 kgf, 22 lbf) or more.</ptxt>
+</item>
+<item>
+<ptxt>The ABS warning light comes on for 3 seconds every time brake pedal operation above is performed.</ptxt>
+</item>
+<item>
+<ptxt>If the check of the master cylinder pressure sensor is not completed, depressing the brake pedal causes further decrease in the negative pressure, making the sensor check difficult to be completed.</ptxt>
+</item>
+<item>
+<ptxt>If the negative pressure is insufficient, the master cylinder pressure sensor check may not be completed. In this case, run the engine at idle to obtain sufficient negative pressure.</ptxt>
+</item>
+<item>
+<ptxt>If the brake pedal is strongly depressed when the negative pressure is insufficient, the BRAKE warning light may come on in accordance with the booster pressure control. In this case, run the engine at idle to obtain sufficient negative pressure.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>SPEED SENSOR CHECK (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Check the speed sensor signal.</ptxt>
+<step3>
+<ptxt>Drive the vehicle straight ahead.</ptxt>
+<ptxt>Accelerate the vehicle to a speed of 28 mph (45 km/h) or more for several seconds and check that the ABS warning light goes off.</ptxt>
+<atten4>
+<ptxt>The sensor check may not be completed if wheelspin occurs.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Stop the vehicle.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the speed sensor check, complete the acceleration sensor and master cylinder pressure sensor checks.</ptxt>
+</item>
+<item>
+<ptxt>The speed sensor check may not be completed if the speed sensor check is started while turning the steering wheel or spinning the wheels.</ptxt>
+</item>
+<item>
+<ptxt>After the ABS warning light goes off and if the vehicle speed exceeds 50 mph (80 km/h), a signal check code will be stored again. Accelerate or stop the vehicle before the speed reaches 50 mph (80 km/h).</ptxt>
+</item>
+<item>
+<ptxt>If the signal check has not been completed, the ABS warning light blinks while driving and the ABS system does not operate.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>When the sensor check has been completed, the ABS warning light goes off while driving and blinks in the Test Mode pattern while stationary.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Check the VSC sensor.</ptxt>
+<figure>
+<graphic graphicname="C135802E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<ptxt>Check that the VSC warning light (models without multi information display) blinks or "CHECK VSC SYSTEM" is displayed on the multi information display (models with multi information display), and perform the check.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>YAW RATE SENSOR CHECK (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Check the output of the yaw rate sensor.</ptxt>
+<figure>
+<graphic graphicname="C137757E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Keep the vehicle in a stationary condition on a level surface for 1 second or more.</ptxt>
+</step3>
+<step3>
+<ptxt>Move the shift lever from P to the D position (A/T) or release the parking brake (M/T) and drive the vehicle at a speed of approximately 3 mph (5 km/h), and turn the steering wheel either to the left or right 90° or more until the vehicle makes a 180° turn.</ptxt>
+</step3>
+<step3>
+<ptxt>Stop the vehicle and move the shift lever to the P position (A/T) or apply the parking brake (M/T). Check that the skid control buzzer sounds for 3 seconds.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the skid control buzzer sounds, the sensor check is completed normally.</ptxt>
+</item>
+<item>
+<ptxt>If the skid control buzzer does not sound, check the skid control buzzer circuit (See page <xref label="Seep12" href="RM000000XIS00AX"/>), then perform the sensor check again.</ptxt>
+</item>
+<item>
+<ptxt>If the skid control buzzer still does not sound, there is a malfunction in the yaw rate sensor, so check the DTC.</ptxt>
+</item>
+<item>
+<ptxt>Make a 180° turn. At the end of the turn, the direction of the vehicle should be within 180° +-  5° of its start position.</ptxt>
+</item>
+<item>
+<ptxt>Do not spin the wheels.</ptxt>
+</item>
+<item>
+<ptxt>Do not turn the ignition switch off while turning.</ptxt>
+</item>
+<item>
+<ptxt>Do not move the shift lever to the P position (A/T) or do not apply the parking brake (M/T) while turning, but changing in the vehicle speed, stopping, or driving in reverse is possible.</ptxt>
+</item>
+<item>
+<ptxt>Complete the turn within 20 seconds.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>END OF SENSOR CHECK (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>If the sensor check is completed, the ABS warning light blinks (Test Mode) when the vehicle stops and the ABS warning light is off while the vehicle is driving.</ptxt>
+<figure>
+<graphic graphicname="BR03904E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the yaw rate sensor, acceleration sensor, speed sensor, and master cylinder pressure sensor checks are completed, the sensor check is completed.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor check is not completed, the ABS warning light blinks even while the vehicle is driving and the ABS does not operate.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>READ DTC OF SIGNAL CHECK FUNCTION (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Read the DTC(s) by following the tester screen.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If only the DTCs are displayed, repair the malfunction area and clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>If the DTCs or Test Mode codes (DTC of signal check function) are displayed, repair the malfunction area, clear the DTCs and perform the Test Mode inspection.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>See the list of DTC (See procedure "A").</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>SENSOR CHECK USING TEST MODE (SIGNAL CHECK) (SST CHECK WIRE)</ptxt>
+<atten3>
+<ptxt>After replacement of the brake actuator assembly and/or yaw rate and acceleration sensor, perform zero point calibration of the yaw rate and acceleration sensor.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the ignition switch is turned from on (IG) to on (ACC) or off during Test Mode (signal check), DTCs of the signal check function will be erased.</ptxt>
+</item>
+<item>
+<ptxt>During Test Mode (signal check), the skid control ECU records all DTCs of the signal check function. By performing the Test Mode (signal check), the codes are erased if a normal condition is confirmed. The remaining codes are the codes where an abnormality was found.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Procedure to enter Test Mode.</ptxt>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (A/T) or apply the parking brake (M/T).</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, connect terminals TS and CG of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022987E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the ABS and VSC (models without multi information display) warning lights blink or "CHECK VSC SYSTEM" is displayed on the multi information display (models with multi information display) (Test Mode).</ptxt>
+<figure>
+<graphic graphicname="C135802E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The SLIP indicator light remains on during Test Mode because TRAC is prohibited.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the ABS and VSC (models without multi information display) warning lights do not blink or "CHECK VSC SYSTEM" is not displayed on the multi information display (models with multi information display), inspect the TS and CG terminal circuit, and ABS and VSC warning light circuits.</ptxt>
+</item>
+</list1>
+</atten4>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>TS and CG terminal circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep13" href="RM000000XIV00CX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ABS warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep14" href="RM000000XIQ00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>VSC warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep15" href="RM000000XIT00AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Check the ABS sensor.</ptxt>
+<figure>
+<graphic graphicname="BR03904E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Check that the ABS warning light is blinking in Test Mode and perform the check.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ACCELERATION SENSOR CHECK (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Keep the vehicle stationary on a level surface for 1 second or more.</ptxt>
+<atten4>
+<ptxt>Acceleration sensor check can be performed with the master cylinder pressure sensor check below.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>MASTER CYLINDER PRESSURE SENSOR CHECK (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Leave the vehicle in a stationary condition and release the brake pedal for 1 second or more, and quickly and continuously depress the brake pedal with a force of 98 N (10 kgf, 22 lbf) or more for 1 second.</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the ABS warning light stays on for 3 seconds.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Ensure that the ABS warning light comes on.</ptxt>
+</item>
+<item>
+<ptxt>While the ABS warning light stays on, continue to depress the brake pedal with a force of 98 N (10 kgf, 22 lbf) or more.</ptxt>
+</item>
+<item>
+<ptxt>The ABS warning light comes on for 3 seconds every time the brake pedal operation above is performed.</ptxt>
+</item>
+<item>
+<ptxt>If the check of the master cylinder pressure sensor is not completed, depressing the brake pedal causes further decrease in the negative pressure, making the sensor check difficult to be completed.</ptxt>
+</item>
+<item>
+<ptxt>If the negative pressure is insufficient, the master cylinder pressure sensor check may not be completed. In this case, run the engine at idle to obtain sufficient negative pressure.</ptxt>
+</item>
+<item>
+<ptxt>If the brake pedal is strongly depressed when the negative pressure is insufficient, the BRAKE warning light may come on in accordance with the booster pressure control. In this case, run the engine at idle to obtain sufficient negative pressure.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>SPEED SENSOR CHECK (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Check the speed sensor signal.</ptxt>
+<step3>
+<ptxt>Drive the vehicle straight ahead.</ptxt>
+<ptxt>Accelerate the vehicle to a speed of 28 mph (45 km/h) or more for several seconds and check that the ABS warning light goes off.</ptxt>
+<atten4>
+<ptxt>The sensor check may not be completed if wheelspin occurs.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Stop the vehicle.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before performing the speed sensor check, complete the acceleration sensor and master cylinder pressure sensor checks.</ptxt>
+</item>
+<item>
+<ptxt>The speed sensor check may not be completed if the speed sensor check is started while turning the steering wheel or spinning the wheels.</ptxt>
+</item>
+<item>
+<ptxt>After the ABS warning light goes off, if vehicle speed exceeds 50 mph (80 km/h), a signal check code will be stored again. Accelerate or stop the vehicle before the speed reaches 50 mph (80 km/h).</ptxt>
+</item>
+<item>
+<ptxt>If the signal check has not been completed, the ABS warning light blinks while driving and the ABS system does not operate.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>When the sensor check has been completed, the ABS warning light goes off while driving and blinks in the Test Mode pattern while stationary.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Check the VSC sensor.</ptxt>
+<figure>
+<graphic graphicname="C135802E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<ptxt>Check that the VSC warning light (models without multi information display) blinks or "CHECK VSC SYSTEM" is displayed on the multi information display (models with multi information display), and perform the check.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>YAW RATE SENSOR CHECK (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Check the output of the yaw rate sensor.</ptxt>
+<figure>
+<graphic graphicname="C137757E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Keep the vehicle stationary on a level surface for 1 second or more.</ptxt>
+</step3>
+<step3>
+<ptxt>Move the shift lever from P to the D position (A/T) or release the parking brake (M/T) and drive the vehicle at a vehicle speed of approximately 3 mph (5 km/h) and turn the steering wheel either to the left or right 90° or more and until the vehicle makes a 180° turn.</ptxt>
+</step3>
+<step3>
+<ptxt>Stop the vehicle and move the shift lever to the P position (A/T) or apply the parking brake (M/T). Check that the skid control buzzer sounds for 3 seconds.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the skid control buzzer sounds, the sensor check is completed normally.</ptxt>
+</item>
+<item>
+<ptxt>If the skid control buzzer does not sound, check the skid control buzzer circuit (See page <xref label="Seep16" href="RM000000XIS00AX"/>), then perform the sensor check again.</ptxt>
+</item>
+<item>
+<ptxt>If the skid control buzzer still does not sound, there is a malfunction in the yaw rate sensor, so check the DTC.</ptxt>
+</item>
+<item>
+<ptxt>Make a 180° turn. At the end of the turn, the direction of the vehicle should be within 180° +- 5° of its start position.</ptxt>
+</item>
+<item>
+<ptxt>Do not spin the wheels.</ptxt>
+</item>
+<item>
+<ptxt>Do not turn the ignition switch off while turning.</ptxt>
+</item>
+<item>
+<ptxt>Do not move the shift lever to the P position (A/T) or do not apply the parking brake (M/T) while turning, but changing in the vehicle speed, stopping, or driving in reverse is possible.</ptxt>
+</item>
+<item>
+<ptxt>Complete the turn within 20 seconds.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>END OF SENSOR CHECK (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>If the sensor check is completed, the ABS warning light blinks (Test Mode) when the vehicle stops and the ABS warning light is off while the vehicle is driving.</ptxt>
+<figure>
+<graphic graphicname="BR03904E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the yaw rate sensor, acceleration sensor, speed sensor, and master cylinder pressure sensor checks are completed, the sensor check is completed.</ptxt>
+</item>
+<item>
+<ptxt>If the sensor check is not completed, the ABS warning light blinks even while the vehicle is driving and the ABS does not operate.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>READ DTC OF SIGNAL CHECK FUNCTION (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Using SST, connect terminals TC and CG of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022988E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Count the number of blinks of the ABS and VSC (models without multi information display) warning lights or read "DIAG VSC" on the multi information display (models with multi information display).</ptxt>
+<figure>
+<graphic graphicname="C135803E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If only the DTCs are displayed, repair the malfunction area and clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>If the DTCs or Test Mode codes (DTC of signal check function) are displayed, repair the malfunction area, clear the DTCs and perform the Test Mode inspection.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If more than 1 malfunction is detected at the same time, the lowest numbered code will be displayed first.</ptxt>
+</item>
+<item>
+<ptxt>See the list of DTC (See procedure "A").</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>After performing the check, disconnect the SST from terminals TS and CG, and TC and CG of the DLC3 and turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the ignition switch is not turned on (IG) after the SST is removed from the DLC3, the previous Test Mode will continue.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition switch is turned on (IG) with terminals TS and CG shorted, the previous Test Mode will continue.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC OF TEST MODE (SIGNAL CHECK) FUNCTION (Procedure "A")</ptxt>
+<table pgwide="1">
+<title>ABS sensor:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Code No. </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1271/71</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of front speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Front speed sensor RH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1272/72</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of front speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Front speed sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1273/73</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of rear speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor RH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1274/74</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of rear speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1275/75</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of front speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1276/76</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of front speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1277/77</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of rear speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1278/78</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of rear speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed sensor rotor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1279/79</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Acceleration sensor output voltage malfunction</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1281/81</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Master cylinder pressure sensor output malfunction</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Stop light switch</ptxt>
+</item>
+<item>
+<ptxt>Master cylinder pressure sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>VSC sensor:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.84in"/>
+<colspec colname="COL3" colwidth="2.84in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Code No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C0371/71</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Yaw rate sensor</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The codes in this table are output only in Test Mode (signal check).</ptxt>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

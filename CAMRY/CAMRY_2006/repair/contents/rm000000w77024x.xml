@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W77024X" category="D" type-id="303F4" name-id="AT037-64" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM000000W77024X_z0" proc-id="RM0250U___000063600000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DTC CHECK (NORMAL MODE)</ptxt>
+<atten3>
+<ptxt>When the diagnostic system is switched from the normal mode to the check mode, all the DTCs and freeze frame data recorded in the normal mode will be erased. So before switching modes, always check the DTCs and freeze frame data, and note them down. </ptxt>
+<ptxt>DTCs which are stored in the ECM can be displayed with the intelligent tester or generic OBD II scan tool. These scan tools can display pending DTCs and current DTCs. Some DTC aren't stored if the ECM doesn't detect a malfunction during consecutive driving. However, the detected malfunction during once driving is stored as pending DTC.</ptxt>
+</atten3>
+<step2>
+<ptxt>Checking DTCs using the OBD II scan tool or intelligent tester.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Connect the intelligent tester to the Controller Area Network Vehicle Interface Module (CAN VIM). Then connect the CAN VIM to the Data Link Connector 3 (DLC3).</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES (or PENDING CODE).</ptxt>
+</step3>
+<step3>
+<ptxt>Use the OBD II scan tool or intelligent tester to check the DTCs and freeze frame data and note them down (For operating instructions, see the OBD II scan tool's instruction book).</ptxt>
+<atten3>
+<ptxt>When simulating symptoms with an OBD II scan tool (excluding intelligent tester) to check the DTCs, use the normal mode. For codes on the DTCs chart which are subject to "2 trip detection logic",</ptxt>
+</atten3>
+<ptxt>Turn the engine switch off after the symptom is simulated once. Then repeat the simulation process again. When the problem has been simulated twice, the MIL illuminates and the DTCs are recorded in the ECM.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CLEAR</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the CAN VIM. Then connect the CAN VIM to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CLEAR CODES and press YES.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

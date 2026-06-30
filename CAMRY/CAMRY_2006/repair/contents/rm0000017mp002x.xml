@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_7309N_T00EZ" variety="T00EZ">
+<name>BACK-UP LIGHT SWITCH</name>
+<para id="RM0000017MP002X" category="G" type-id="3001K" name-id="LI0G2-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM0000017MP002X_01" type-id="01" category="01">
+<s-1 id="RM0000017MP002X_01_0001" proc-id="RM0250U___00009WM00000">
+<ptxt>INSPECT BACK-UP LIGHT BULB (for Manual Transmission)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B113725E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Switch Operation</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch ON</ptxt>
+<ptxt>(Ball is not pressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch OFF</ptxt>
+<ptxt>(Ball is pressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the back-up light switch.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

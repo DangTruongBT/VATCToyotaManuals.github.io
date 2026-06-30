@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM000001YYZ00BX" category="C" type-id="801O3" name-id="NS0M0-08" from="200601">
+<dtccode>57-47</dtccode>
+<dtcname>Bluetooth Module Initialization Failed</dtcname>
+<subpara id="RM000001YYZ00BX_01" type-id="60" category="03" proc-id="RM0250U___0000AN600000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>57-47</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>"Bluetooth" module is not installed.</ptxt>
+</item>
+<item>
+<ptxt>Problem with "Bluetooth" module</ptxt>
+</item>
+<item>
+<ptxt>Problem in communication line to "Bluetooth" module</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Radio receiver</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001YYZ00BX_02" type-id="51" category="05" proc-id="RM0250U___0000AN700000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After the inspection is completed, clear the DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001YYZ00BX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001YYZ00BX_03_0001">
+<testtitle>REPLACE RADIO RECEIVER</testtitle>
+<res>
+<down ref="RM000001YYZ00BX_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001YYZ00BX_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

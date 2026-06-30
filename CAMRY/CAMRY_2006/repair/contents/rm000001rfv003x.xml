@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000001RFV003X" category="C" type-id="801LO" name-id="BC1N5-01" from="200601">
+<dtccode>C1232/32</dtccode>
+<dtcname>Stuck in Acceleration Sensor</dtcname>
+<dtccode>C0371/71</dtccode>
+<dtcname>Yaw Rate Sensor (Test Mode DTC)</dtcname>
+<dtccode>C1234/34</dtccode>
+<dtcname>Yaw Rate Sensor Malfunction</dtcname>
+<dtccode>C1243/43</dtccode>
+<dtcname>Acceleration Sensor Stuck Malfunction</dtcname>
+<dtccode>C1244/44</dtccode>
+<dtcname>Open or Short in Acceleration Sensor Circuit</dtcname>
+<dtccode>C1245/45</dtccode>
+<dtcname>Acceleration Sensor Output Malfunction</dtcname>
+<dtccode>C1279/79</dtccode>
+<dtcname>Acceleration Sensor Output Voltage Malfunction (Test Mode DTC)</dtcname>
+<dtccode>C1381/97</dtccode>
+<dtcname>Yaw Rate and / or Acceleration Sensor Power Supply Voltage Malfunction</dtcname>
+<subpara id="RM000001RFV003X_01" type-id="60" category="03" proc-id="RM0250U___00005SJ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system.</ptxt>
+<ptxt>The yaw rate sensor has a built in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2).</ptxt>
+<ptxt>If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, the DTC U0123/62 (malfunction in CAN communication with the yaw rate sensor) and U0124/95 (malfunction in CAN communication with the acceleration sensor) are output.</ptxt>
+<ptxt>These DTCs are also output when calibration has not been completed.</ptxt>
+<ptxt>DTCs C0371/71 and C1279/79 can be deleted when the yaw rate and acceleration sensor sends a yaw rate and/or acceleration signal or the Test Mode ends. DTCs C0371/71 and C1279/79 are output only in the Test Mode.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1232/32</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At a vehicle speed of 6 mph (10 km/h) or more, either GL1 or GL2 (input signal) does not change for 30 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1234/34</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor malfunction signal is received from the yaw rate sensor.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1243/43</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>While the vehicle speed changes from 19 mph (30 km/h) to 0 mph (0 km/h), the condition that the values of GL1 and GL2 do not change occurs 16 times or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1244/44</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>A data malfunction signal is received from the acceleration sensor.</ptxt>
+</item>
+<item>
+<ptxt>After the difference between GL1 and GL2 becomes 0.6 G or more with the vehicle stationary, the difference remains 0.4 G or more for 60 seconds or more.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1245/45</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At a vehicle speed of 19 mph (30 km/h) or more, the difference between the forward and backward G calculated from the acceleration sensor value and that calculated from the vehicle speed sensor exceeds 0.35 G for 60 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1381/97</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>At a vehicle speed of more than 2 mph (3 km/h), the acceleration sensor power source malfunction signal is received for 10 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor power source circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001RFV003X_02" type-id="32" category="03" proc-id="RM0250U___00005SK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136028E04" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001RFV003X_03" type-id="51" category="05" proc-id="RM0250U___00005SL00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the yaw rate and acceleration sensor, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+<atten4>
+<ptxt>When U0123/62, U0124/95 or U0126/63 is output together with C1232/32, C1234/34, C1243/43, C1244/44, C1245/45, or C1381/97, inspect and repair the trouble areas indicated by U0123/62, U0124/95 or U0126/63 first.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001RFV003X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001RFV003X_04_0001" proc-id="RM0250U___00005SM00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>At a speed of 19 mph (30 km/h) or more, drive the vehicle, turn the steering wheel, and decelerate the vehicle (depress the brake pedal).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) again and check that no CAN communication system DTC is output.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if DTCs for zero point calibration of the yaw rate sensor undone (C1210/36) or for zero point calibration of the acceleration sensor undone (C1336/39) are output.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C1210/36, C1336/39 and/or CAN communication system DTC) are not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C1210/36 and/or C1336/39) are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001RFV003X_04_0002" fin="false">A</down>
+<right ref="RM000001RFV003X_04_0010" fin="true">B</right>
+<right ref="RM000001RFV003X_04_0006" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0002" proc-id="RM0250U___00005SN00000">
+<testtitle>CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the yaw rate and acceleration sensor has been installed properly (See page <xref label="Seep01" href="RM0000022M0000X"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The sensor is tightened to the specified torque.</ptxt>
+</specitem>
+<specitem>
+<ptxt>The sensor is not tilted.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001RFV003X_04_0003" fin="false">OK</down>
+<right ref="RM000001RFV003X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0003" proc-id="RM0250U___00005SO00000">
+<testtitle>INSPECT YAW RATE AND ACCELERATION SENSOR (IG TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the yaw rate and acceleration sensor connector.</ptxt>
+<figure>
+<graphic graphicname="G026359E61" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E34-5 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001RFV003X_04_0004" fin="false">OK</down>
+<right ref="RM000001RFV003X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0004" proc-id="RM0250U___00005SP00000">
+<testtitle>INSPECT YAW RATE AND ACCELERATION SENSOR (GND TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="G026359E62" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E34-1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Check the yaw rate and acceleration sensor signal after replacement (See page <xref label="Seep01" href="RM000000XHT00AX"/>).</ptxt>
+</atten3>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep02" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001RFV003X_04_0005" fin="true">OK</down>
+<right ref="RM000001RFV003X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0005">
+<testtitle>REPLACE YAW RATE AND ACCELERATION SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0010">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0006">
+<testtitle>REPAIR CIRCUIT INDICATED BY OUTPUT DTC<xref label="Seep01" href="RM000000XHU00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0007">
+<testtitle>INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY</testtitle>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (IG CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001RFV003X_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

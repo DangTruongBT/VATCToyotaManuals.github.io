@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000SVT00ZX" category="C" type-id="302B4" name-id="ES41X-01" from="200601">
+<dtccode>P0327</dtccode>
+<dtcname>Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)</dtcname>
+<dtccode>P0328</dtccode>
+<dtcname>Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)</dtcname>
+<dtccode>P0332</dtccode>
+<dtcname>Knock Sensor 2 Circuit Low Input (Bank 2)</dtcname>
+<dtccode>P0333</dtccode>
+<dtcname>Knock Sensor 2 Circuit High Input (Bank 2)</dtcname>
+<subpara id="RM000000SVT00ZX_01" type-id="60" category="03" proc-id="RM0250U___00002MH00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>A flat type knock sensor (non-resonant type) has a structure that can detect vibrations over a wide band of frequencies: between approximately 6 kHz and 15 kHz. </ptxt>
+<ptxt>Knock sensors are fitted onto the engine block to detect engine knocking.</ptxt>
+<ptxt>The knock sensor contains a piezoelectric element which generates a voltage when it becomes deformed.</ptxt>
+<ptxt>The voltage is generated when the engine block vibrates due to knocking. Any occurrence of engine knocking can be suppressed by delaying the ignition timing.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0327</ptxt>
+<ptxt>P0332</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Output voltage of knock sensor 1 or 2 is 0.5 V or less</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Short in knock sensor 1 or 2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Knock sensor 1 or 2</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0328</ptxt>
+<ptxt>P0333</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Output voltage of knock sensor 1 or 2 is 4.5 V or more</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in knock sensor 1 or 2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Knock sensor 1 or 2</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When any of DTCs P0327, P0328, P0332 and P0333 are set, the ECM enters fail-safe mode. During fail-safe mode, the ignition timing is delayed to its maximum retardation. Fail-safe mode continues until the engine switch is turned off.</ptxt>
+</atten4>
+<ptxt>Reference: Inspection using an oscilloscope</ptxt>
+<figure>
+<graphic graphicname="A140638E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<ptxt>The correct waveform is as shown.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>KNK1 - EKNK</ptxt>
+<ptxt>or</ptxt>
+<ptxt>KNK2 -EKN2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Equipment Settings</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.01 to 10 V/DIV.</ptxt>
+<ptxt>0.01 to 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Keep engine speed at 4,000 rpm with warm engine</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_02" type-id="64" category="03" proc-id="RM0250U___00002MI00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The knock sensor, located on the cylinder block, detects spark knock. When spark knock occurs, the piezoelectric element of the sensor vibrates. When the ECM detects a voltage in this frequency range, it retards the ignition timing to suppress spark knock.</ptxt>
+<ptxt>The ECM also senses background engine noise with the knock sensor and uses this noise to check for faults in the sensor. If the knock sensor signal level is too low for more than 10 seconds, or if the knock sensor output voltage is outside the normal range, the ECM interprets this as a fault in the knock sensor and sets a DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_03" type-id="65" category="03" proc-id="RM0250U___00002MJ00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0327: Knock sensor (Bank 1) open/short (Low voltage)</ptxt>
+<ptxt>P0328: Knock sensor (Bank 1) open/short (High voltage)</ptxt>
+<ptxt>P0332: Knock sensor (Bank 2) open/short (Low voltage)</ptxt>
+<ptxt>P0333: Knock sensor (Bank 2) open/short (High voltage)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Knock sensor (Bank 1 and 2) </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 second</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_04" type-id="66" category="03" proc-id="RM0250U___00002MK00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 seconds  or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_05" type-id="67" category="03" proc-id="RM0250U___00002ML00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Knock Sensor Range Check (Low voltage) P0327 and P0332:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Knock sensor voltage				</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Knock Sensor Range Check (High voltage) P0328 and P0333:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Knock sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 4.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_06" type-id="32" category="03" proc-id="RM0250U___00002MM00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A133852E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_07" type-id="51" category="05" proc-id="RM0250U___00002MN00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTCs P0327 and P0328 are for the bank 1 knock sensor circuit.</ptxt>
+</item>
+<item>
+<ptxt>DTCs P0332 and P0333 are for the bank 2 knock sensor circuit.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000SVT00ZX_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000SVT00ZX_08_0001" proc-id="RM0250U___00002MO00000">
+<testtitle>READ OUTPUT DTC (CHECK KNOCK SENSOR CIRCUIT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the CV1 connector.</ptxt>
+<figure>
+<graphic graphicname="G041090E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Using lead wires, connect the connectors as follows:</ptxt>
+<table>
+<tgroup cols="1" align="center">
+<colspec colname="COL1" colwidth="4.13in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Male Connector - Female Connector</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Terminal 2 - Terminal 4</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Terminal 1 - Terminal 3</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Terminal 4 - Terminal 2</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Terminal 3 - Terminal 1</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Warm up the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Run the engine at 3,000 rpm for 10 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs same as when vehicle brought in P0327, P0328 → P0327, P0328 or P0332, P0333 → P0332, P0333</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs different from when vehicle brought in P0327, P0328 → P0332, P0333 or P0332, P0333 → P0327, P0328</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the CV1 connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000SVT00ZX_08_0002" fin="false">A</down>
+<right ref="RM000000SVT00ZX_08_0007" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0002" proc-id="RM0250U___00002MP00000">
+<testtitle>CHECK WIRE HARNESS AND CONNECTOR (CONNECTOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the CV1 connector.</ptxt>
+<figure>
+<graphic graphicname="A135193E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 2 - KNK1 (C55-95)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 1 - EKNK (C55-94)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 4 - KNK2 (C55-118)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 3 - EKN2 (C55-117)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 2 or KNK1 (C55-95) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 1 or EKNK (C55-94) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 4 or KNK2 (C55-118) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 3 or EKN2 (C55-117) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the CV1 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000SVT00ZX_08_0003" fin="false">OK</down>
+<right ref="RM000000SVT00ZX_08_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0003" proc-id="RM0250U___00002MQ00000">
+<testtitle>INSPECT ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the CV1 connector.</ptxt>
+<figure>
+<graphic graphicname="A137955E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 2 - 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 female connector 4 - 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000SVT00ZX_08_0006" fin="true">OK</down>
+<right ref="RM000000SVT00ZX_08_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0005">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0006">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0007" proc-id="RM0250U___00002MR00000">
+<testtitle>INSPECT KNOCK SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the CV1 connector.</ptxt>
+<figure>
+<graphic graphicname="G042949E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>120 to 280 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 3- 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>120 to 280 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the CV1 connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000SVT00ZX_08_0008" fin="false">NG</down>
+<right ref="RM000000SVT00ZX_08_0009" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0008" proc-id="RM0250U___00002MS00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CONNECTOR - KNOCK SENSOR)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If DTC P0327 or P0328 has changed to P0332 or P0333, check the knock sensor circuit on the right bank side.</ptxt>
+</item>
+<item>
+<ptxt>If DTC P0332 or P0333 has changed to P0327 or P0328, check the knock sensor circuit on the left bank side.</ptxt>
+</item>
+</list1>
+</atten4>
+<test1>
+<ptxt>Disconnect the CV1 connector.</ptxt>
+<figure>
+<graphic graphicname="A135025E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the V2 and V1 knock sensor connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 2 - V2-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 1 - V2-1 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 4 - V1-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 3 - V1-1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 2 or V2-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 1 or V2-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 4 or V1-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CV1 male connector 3 or V1-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the CV1 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the knock sensor connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000SVT00ZX_08_0011" fin="true">OK</down>
+<right ref="RM000000SVT00ZX_08_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0009">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000SVT00ZX_08_0011">
+<testtitle>REPLACE KNOCK SENSOR<xref label="Seep01" href="RM0000022NQ001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

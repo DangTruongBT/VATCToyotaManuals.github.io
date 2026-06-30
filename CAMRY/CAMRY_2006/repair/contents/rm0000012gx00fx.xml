@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM0000012GX00FX" category="D" type-id="303F3" name-id="WS0R0-02" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM0000012GX00FX_z0" proc-id="RM0250U___000057B00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<step2>
+<ptxt>The power window control system data can be read from the Data Link Connector 3 (DLC3) of the vehicle. When the system seems to be malfunctioning, use the intelligent tester to check for malfunctions and perform repairs.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK DLC3</ptxt>
+<figure>
+<graphic graphicname="H100769E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>The ECU uses ISO 15765-4 communication. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the door.</ptxt>
+</atten3>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Connect the cable of the intelligent tester to the DLC3, turn the ignition switch on (IG) and attempt to use the tester. If the display indicates that a communication error has occurred, there is a problem either with the vehicle or with the tester.</ptxt>
+</atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tester is connected to another vehicle, inspect the DLC3 of the original vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If communication is still not possible when the tester is connected to another vehicle, the problem may be in the tester itself. Consult the Service Department listed in the tester's instruction manual.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK DIAGNOSIS (WITH JAM PROTECTION)</ptxt>
+<atten4>
+<ptxt>If there is a malfunction in the pulse sensor, manually operating the power window switch will cause the power window switch light to blink.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="B140750" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Manually operate the power window master switch or power window switch on each door.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the blinking pattern of the AUTO light as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="B145472E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>If pattern (A) is displayed, check the wire harness or power window ECU.</ptxt>
+</step3>
+<step3>
+<ptxt>If pattern (B) is displayed, check the power window regulator motor or power window ECU.</ptxt>
+</step3>
+<step3>
+<ptxt>If the normal pattern is displayed, replace the power window regulator master switch.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

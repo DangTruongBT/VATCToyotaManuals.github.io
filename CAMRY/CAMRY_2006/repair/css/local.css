@@ -1,0 +1,200 @@
+/* $Id: local.css,v 1.14 2004/05/26 02:34:43 s-okino Exp $ */
+
+body {
+	font-family:      verdana, sans-serif;
+	font-size:        10pt;
+	color:            #000000; /*#666666;*/
+	margin:           5px 1px 5px 5px;
+	background-color: #e9eeea; /*#d9ddda*/
+}
+
+p.title-name {
+	font-size:     11pt;
+	font-weight:   bold;
+	border-style:  solid;
+	border-width:  0px 0px 1px 0px;
+	border-color:  #000000;
+}
+
+div.main-item {
+	font-size:   10pt;
+	font-weight: bold;
+	color:       #cc0c00;
+	margin:      1px 1px 5px 1px;
+}
+
+div.proc-items {
+	margin:       1px 1px 1px 1px;
+	height:       370px;
+	overflow:     auto;
+}
+
+div.sub-items {
+	width:        100%;
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: #666666; 
+	padding-top:  4px;
+	height:       90px;
+	overflow:     auto;
+	position:     absolute;
+	bottom:       0px;
+}
+
+ol.number-no {
+	font-size:       9pt;
+	list-style-type: disc;
+	margin:          2px 2px 8px 20px;
+	line-height:     2em;
+	word-break:      normal;
+}
+
+ol.numbering {
+	font-size:       9pt;
+	list-style-type: decimal;
+	margin:          2px 2px 8px 36px;
+	line-height:     2em;
+	word-break:      normal;
+}
+
+table.menubox {
+	width: 100%;
+	border: 0;
+}
+
+td.whitebox {
+	width: 100%;
+}
+
+a:link {
+	color:           #000000;
+	text-decoration: none;
+}
+
+a:visited {
+	color:           #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color:           #3b96bf;
+	text-decoration: none;
+}
+
+a:active {
+	color:           #1b6384;
+	text-decoration: underline;
+}
+
+a.menu {
+	width:          100%;
+	height:         20px;
+	font-size:      10pt;
+	border-style:   solid;
+	border-width:   1px 1px 1px 1px;
+	border-color:   #cccccc;
+	padding-top:    3px;
+	padding-bottom: 3px;
+	padding-left:   5px;
+}
+
+a.menu:link {
+	color:            #666666;
+	background-color: #ffffff;
+	text-decoration:  none;
+}
+
+a.menu:visited {
+	color:            #666666;
+	background-color: #ffffff;
+	text-decoration:  none;
+}
+
+a.menu:hover {
+	color:            #ffffff;
+	background-color: #c6cfd3;
+	text-decoration:  none;
+}
+
+a.menu:active {
+	color:            #ffffff;
+	background-color: #a9b2b7;
+	text-decoration:  none;
+}
+
+a.mokuji {
+	width:            100%;
+	height:           20px;
+	color:            #666666;
+	background-color: #f3f8fa;
+	font-size:        10pt;
+	text-decoration:  none;
+	border:           solid 1px #cccccc;
+	padding:          2px 8px 2px 8px;
+}
+
+a.mokuji:hover {
+	color:            #ffffff;
+	background-color: #99c5d5;
+	text-decoration:  none;
+}
+
+a.mokuji:active {
+	color:            #ffffff;
+	background-color: #a9b2b7;
+	text-decoration:  none;
+}
+
+a.paras {
+	line-height: 1.5em;
+	font-size:   9pt;
+	font-weight: bold;
+}
+
+a.procedure {
+	font-size:   9pt;
+	font-weight: normal;
+}
+
+a.choice-procedure {
+	font-size:   9pt;
+	font-weight: bold;
+}
+
+a.choice-procedure:link {
+	text-decoration: none;
+	color:           #9c0000;
+}
+
+a.choice-procedure:visited {
+	text-decoration: none;
+	color:           #9c0000;
+}
+
+a.choice-procedure:hover {
+	text-decoration: none;
+	color:           #9c0000;
+}
+
+a.choice-procedure:active {
+	text-decoration: none;
+	color:           #9c0000;
+}
+
+input.tinput {
+	color:            #000000;
+	background-color: #ffffff;
+	font-size:        9pt;
+	vertical-align:   top;
+	border:           solid 1px #000000;
+	ime-mode:         disabled;
+}
+
+.binput {
+	color:            #000000;
+	background-color: #999999;
+	font-size:        9pt;
+	vertical-align:   top;
+	border:           solid 1px #000000;
+	cursor:           hand;
+}

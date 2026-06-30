@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM000000X8Z00DX" category="U" type-id="303FP" name-id="WS020-13" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000000X8Z00DX_z0" proc-id="RM0250U___0000BZA00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>POWER WINDOW OPERATION IN FAIL-SAFE MODE</ptxt>
+<atten4>
+<ptxt>If the pulse sensor built into the power window regulator motor (on the driver side) malfunctions, the power window control system enters fail-safe mode.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fail mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fail Detection Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pulse direction error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With the door glass going up or down, the pulse that indicates door glass operation in the opposite direction is detected for 400 msec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Pulse stop error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With the door glass going up or down, no pulse is detected for 350 to 450 msec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<step2>
+<ptxt>The power window control system prohibits the following power window operation when the pulse sensor for the jam protection function has problems and the window position or the learned value is abnormal.</ptxt>
+<table pgwide="1">
+<title>Power window control system</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Power window operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key-off</ptxt>
+<ptxt>(Within approx. 45 seconds after ignition switch turned off)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key-off</ptxt>
+<ptxt>(After approx. 45 seconds elapsed after ignition switch turned off)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Manual UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Manual DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative</ptxt>
+<ptxt>(Jam protection not operative)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO UP</ptxt>
+<ptxt>(hold switch at AUTO UP position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative</ptxt>
+<ptxt>(in MANUAL mode)</ptxt>
+<ptxt>(Jam protection not operative)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operation prohibited</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When the pulse sensor is normal, the AUTO UP / DOWN function can be resumed by deactivating fail-safe mode. To deactivate fail-safe mode, pull up the driver door power window switch to the AUTO UP position and hold it for at least 1 second to fully close the window from the fully open position.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>If the LIN communication system malfunctions (communication blackout), the power window control system prohibits the following operations.</ptxt>
+<table pgwide="1">
+<title>LIN communication system</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Power window operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MANUAL UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative (Jam protection operative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MANUAL DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative (Jam protection not operative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO UP (hold switch at AUTO UP position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative (Jam protection operative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative (Jam protection operative)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operative (Jam protection not operative)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

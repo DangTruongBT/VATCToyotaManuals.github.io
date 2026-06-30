@@ -1,0 +1,27 @@
+<!-- $Id: contents.html,v 1.5 2004/04/26 05:04:53 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Service Specification Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javaScript">
+function init() {
+  if(parent.g_tocXml!=null && parent.g_lstXsl!=null)	parent.display(parent.g_tocXml, parent.g_lstXsl, disp, null);
+}
+</script>
+</head>
+<body onLoad="init();">
+<p class="tbl-cap">
+  Service Specification
+</p>
+<div id="disp"></div>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM000000TNZ00BX" category="U" type-id="303FJ" name-id="DL01O-12" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000TNZ00BX_z0" proc-id="RM0250U___00009FH00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester's DATA LIST allows switch, sensor, actuator, and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to save time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>D DOR CTY SW</ptxt>
+</entry>
+<entry>
+<ptxt>Driver side door courtesy light switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Driver side door is OPEN</ptxt>
+<ptxt>OFF: Driver side door is CLOSED</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P DOR CTY SW</ptxt>
+</entry>
+<entry>
+<ptxt>Passenger side door courtesy light switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Passenger side door is OPEN</ptxt>
+<ptxt>OFF: Passenger side door is CLOSED</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>RR DOR CTY SW</ptxt>
+</entry>
+<entry>
+<ptxt>Rear right door courtesy light switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Rear right door is OPEN</ptxt>
+<ptxt>OFF: Rear right door is CLOSED</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>RL DOR CTY SW</ptxt>
+</entry>
+<entry>
+<ptxt>Rear left door courtesy light switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Rear left door is OPEN</ptxt>
+<ptxt>OFF: Rear left door is CLOSED</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>D LOCK POS SW</ptxt>
+</entry>
+<entry>
+<ptxt>Driver side door lock position switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Driver side door is unlocked</ptxt>
+<ptxt>OFF: Driver side door is locked</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P LOCK POS SW</ptxt>
+</entry>
+<entry>
+<ptxt>Front passenger side door lock position switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Front passenger side door is unlocked</ptxt>
+<ptxt>OFF: Front passenger side door is locked</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>RR LOCK POS SW (*1)</ptxt>
+</entry>
+<entry>
+<ptxt>Rear right door lock position switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Rear right door is unlocked</ptxt>
+<ptxt>OFF: Rear right door is locked</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>RL LOCK POS SW (*1)</ptxt>
+</entry>
+<entry>
+<ptxt>Rear left door lock position switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Rear left door is unlocked</ptxt>
+<ptxt>OFF: Rear left door is locked</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>LUGG COURTSY SW</ptxt>
+</entry>
+<entry>
+<ptxt>Luggage compartment door courtesy light switch signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Luggage compartment door is OPEN</ptxt>
+<ptxt>OFF: Luggage compartment door is CLOSED</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>D/L SW-LOCK</ptxt>
+</entry>
+<entry>
+<ptxt>Door control switch lock signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Door control switch is pushed to lock position</ptxt>
+<ptxt>OFF: Door control switch is not pushed to lock position</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>D/L SW-UNLOCK</ptxt>
+</entry>
+<entry>
+<ptxt>Door control switch unlock signal/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Door control switch is pushed to unlock position</ptxt>
+<ptxt>OFF: Door control switch is not pushed to unlock position</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DOR KEY SW-LOCK</ptxt>
+</entry>
+<entry>
+<ptxt>Driver door lock/unlock switch lock signal (key-linked lock switch)/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Driver side door key cylinder is turned to lock position</ptxt>
+<ptxt>OFF: Driver side door key cylinder is turned to unlock position</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DOR KEY SW-ULCK</ptxt>
+</entry>
+<entry>
+<ptxt>Driver door lock/unlock switch unlock signal (key-linked unlock switch)/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Driver side door key cylinder is turned to unlock position</ptxt>
+<ptxt>OFF: Driver side door key cylinder is turned to lock position</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>D DOR KEY SW-UL</ptxt>
+</entry>
+<entry>
+<ptxt>Driver door lock/unlock switch unlock signal (2 times key-linked unlock switch)/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Driver side door key cylinder is turned to unlock position</ptxt>
+<ptxt>OFF: Driver side door key cylinder is turned to lock position</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>TRUNK KEY UNLK</ptxt>
+</entry>
+<entry>
+<ptxt>Luggage compartment door key cylinder switch/ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Ignition key is inserted and turned to lock position</ptxt>
+<ptxt>OFF: Ignition key is inserted and turned to unlock position</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: w/ Smart Key System, w/o Smart Key System with Theft Deterrent System</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's ACTIVE TEST allows relays, VSVs, actuators, and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DOOR LOCK</ptxt>
+</entry>
+<entry>
+<ptxt>Operate door lock motor</ptxt>
+</entry>
+<entry>
+<ptxt>LOCK/UNLOCK</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>D DOOR UNLOCK</ptxt>
+</entry>
+<entry>
+<ptxt>Operate driver door lock motor</ptxt>
+</entry>
+<entry>
+<ptxt>UNLOCK</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>TRUNK/BDOR OPEN</ptxt>
+</entry>
+<entry>
+<ptxt>Operate luggage compartment door lock motor</ptxt>
+</entry>
+<entry>
+<ptxt>UNLOCK</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM00000133900BX" category="U" type-id="3001G" name-id="WS0QZ-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM00000133900BX_z0" proc-id="RM0250U___000057800000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>POWER WINDOW REGULATOR MASTER SWITCH ASSEMBLY</ptxt>
+<figure>
+<graphic graphicname="B137056E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the M1 switch connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage and resistance of each terminal according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E (M1-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (M1-6) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction in the wire harness.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the M1 switch connector and reset the power window motor.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<subtitle>with Jam protection</subtitle>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>UP (M1-8) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → 0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>AUTO (M1-4) - E (M1-1)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>B - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor AUTO UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window fully open → driver side power window switch UP (AUTO UP position) → driver side power window fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → 0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Power window motor AUTO DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window fully closed → driver side power window switch DOWN (AUTO UP position) → driver side power window fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → 0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DN (M1-5) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → 0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PU (M1-16) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PD (M1-15) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RLU (M1-12) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear LH side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RLD (M1-13) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear LH side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RRU (M1-10) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear RH side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RRD (M1-18) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear RH side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>without Jam protection</subtitle>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>UP (M1-3) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>DN (M1-4) - E (M1-1)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>G - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Power window motor AUTO DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driver side power window fully closed → driver side power window switch DOWN (AUTO operation) → driver side power window fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → 0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PU (M1-16) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PD (M1-15) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RLU (M1-12) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear LH side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RLD (M1-13) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear LH side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RRU (M1-10) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear RH side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RRD (M1-18) - E (M1-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), rear RH side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction in the wire harness.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK POWER WINDOW REGULATOR SWITCH ASSEMBLY (FRONT RH)</ptxt>
+<figure>
+<graphic graphicname="B137057E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the H6 switch connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (H6-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction in the wire harness.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the H6 switch connector and reset the power window motor.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U (H6-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D (H6-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, the power window regulator switch assembly may have a malfunction.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK POWER WINDOW REGULATOR SWITCH  ASSEMBLY (REAR LH)</ptxt>
+<figure>
+<graphic graphicname="B137057E02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the K1 switch connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (K1-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction in the wire harness.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the K1 switch connector and reset the power window motor.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U (K1-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D (K1-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, the power window regulator switch assembly may have a malfunction.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK POWER WINDOW REGULATOR SWITCH  ASSEMBLY (REAR RH)</ptxt>
+<figure>
+<graphic graphicname="B137057E03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the J1 switch connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (J1-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction in the wire harness.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the J1 switch connector and reset the power window motor.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.54in"/>
+<colspec colname="COL2" align="center" colwidth="1.54in"/>
+<colspec colname="COL3" colwidth="1.54in"/>
+<colspec colname="COL4" colwidth="1.54in"/>
+<colspec colname="COL5" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>U (J1-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor UP output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → UP (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D (J1-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power window motor DOWN output</ptxt>
+
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), front passenger side power window switch OFF → DOWN (Manual operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, the power window regulator switch assembly may have a malfunction.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

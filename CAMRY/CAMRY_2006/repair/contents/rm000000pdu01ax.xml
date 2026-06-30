@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDU01AX" category="C" type-id="302GP" name-id="ES3X4-01" from="200601">
+<dtccode>P0011</dtccode>
+<dtcname>Camshaft Position "A" - Timing Over-Advanced or System Performance (Bank 1)</dtcname>
+<dtccode>P0012</dtccode>
+<dtcname>Camshaft Position "A" - Timing Over-Retarded (Bank 1)</dtcname>
+<subpara id="RM000000PDU01AX_01" type-id="60" category="03" proc-id="RM0250U___000079L00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The VVT system includes the ECM, Oil Control Valve (OCV) and VVT controller. The ECM sends a target duty-cycle control signal to the OCV. This control signal regulates the oil pressure applied to the VVT controller. Camshaft timing control is performed according to engine operating conditions such as the intake air volume, throttle valve position and engine coolant temperature. The ECM controls the OCV, based on the signals transmitted by several sensors. The VVT controller regulates the intake camshaft angle using oil pressure through the OCV. As a result, the relative positions of the camshaft and crankshaft are optimized, the engine torque and fuel economy improve, and the exhaust emissions decrease under overall driving conditions. The ECM detects the actual intake valve timing using signals from the camshaft and crankshaft position sensors, and performs feedback control. This is how the target intake valve timing is verified by the ECM.</ptxt>
+<figure>
+<graphic graphicname="A103843E08" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Conditions</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Areas</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0011</ptxt>
+</entry>
+<entry>
+<ptxt>Advanced camshaft timing:</ptxt>
+<ptxt>With warm engine and engine speed of between 550 rpm and 4,000 rpm, all conditions (1), (2) and (3) are met (1 trip detection logic):</ptxt>
+<ptxt>1. Difference between target and actual intake valve timings more than 5°CA (Crankshaft Angle) for 4.5 seconds</ptxt>
+<ptxt>2. Current intake valve timing fixed (timing changes less than 5°CA in 5 seconds)</ptxt>
+<ptxt>3. Variations in VVT controller timing more than 19°CA of maximum delayed timing (malfunction in advance timing)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Valve timing</ptxt>
+</item>
+<item>
+<ptxt>OCV</ptxt>
+</item>
+<item>
+<ptxt>OCV filter</ptxt>
+</item>
+<item>
+<ptxt>Camshaft timing gear assembly</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0012</ptxt>
+</entry>
+<entry>
+<ptxt>Retarded camshaft timing:</ptxt>
+<ptxt>With warm engine and engine speed of between 550 rpm and 4,000 rpm, all conditions (1), (2) and (3) are met (2 trip detection logic):</ptxt>
+<ptxt>1. Difference between target and actual intake valve timings more than 5°CA (Crankshaft Angle) for 4.5 seconds</ptxt>
+<ptxt>2. Current intake valve timing fixed (timing changes less than 5°CA in 5 seconds)</ptxt>
+<ptxt>3. Variations in VVT controller timing 19°CA or less of maximum delayed timing (malfunction in retarded timing)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Valve timing</ptxt>
+</item>
+<item>
+<ptxt>OCV</ptxt>
+</item>
+<item>
+<ptxt>OCV filter</ptxt>
+</item>
+<item>
+<ptxt>Camshaft timing gear assembly</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_02" type-id="64" category="03" proc-id="RM0250U___000079M00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The ECM optimizes the intake valve timing using the VVT (Variable Valve Timing) system to control the intake camshaft. The VVT system includes the ECM, the Oil Control Valve (OCV) and the VVT controller. The ECM sends a target duty-cycle control signal to the OCV. This control signal regulates the oil pressure supplied to the VVT controller. The VVT controller can advance or retard the intake camshaft.</ptxt>
+</item>
+<item>
+<ptxt>If the difference between the target and actual intake valve timings is large, and changes in the actual intake valve timing are small, the ECM interprets this as the VVT controller stuck malfunction and sets a DTC.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>Example:</ptxt>
+</item>
+<item>
+<ptxt>A DTC is set when the following conditions 1, 2 and 3 are met:</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>The difference between the target and actual intake valve timings is more than 5°CA (Crankshaft Angle) and the condition continues for more than 4.5 seconds.</ptxt>
+</item>
+<item>
+<ptxt>It takes 5 seconds or more to change the valve timing by 5°CA.</ptxt>
+</item>
+<item>
+<ptxt>After above conditions 1 and 2 are met, the OCV is forcibly activated during 10 seconds.</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>DTC P0011 (Advanced Cam Timing) is subject to 1 trip detection logic.</ptxt>
+</item>
+<item>
+<ptxt>DTC P0012 (Retarded Cam Timing) is subject to 2 trip detection logic.</ptxt>
+</item>
+<item>
+<ptxt>These DTCs indicate that the VVT controller cannot operate properly due to OCV malfunctions or the presence of foreign objects in the OCV.</ptxt>
+</item>
+<item>
+<ptxt>The monitor will run if all of the following conditions are met:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>The engine is warm (the engine coolant temperature is 75°C (167°F) or more).</ptxt>
+</item>
+<item>
+<ptxt>The vehicle has been driven at more than 40 mph (64 km/h) for 3 minutes.</ptxt>
+</item>
+<item>
+<ptxt>The engine has idled for 3 minutes.</ptxt>
+</item>
+</list2>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_03" type-id="65" category="03" proc-id="RM0250U___000079N00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0011: Advanced camshaft timing</ptxt>
+<ptxt>P0012: Retarded camshaft timing</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT OCV and VVT Actuator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor, camshaft position sensor and engine coolant temperature sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 10 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Advanced camshaft timing: Immediate</ptxt>
+<ptxt>Retarded camshaft timing: 2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_04" type-id="66" category="03" proc-id="RM0250U___000079O00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry>
+<ptxt>P0100 - P0103 (MAF meter)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0125 (Insufficient ECT for closed loop)</ptxt>
+<ptxt>P0335 (CKP sensor)</ptxt>
+<ptxt>P0340 (CMP sensor)</ptxt>
+<ptxt>P0351 - P0354 (Igniter)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry>
+<ptxt>11 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine RPM</ptxt>
+</entry>
+<entry>
+<ptxt>550 to 4,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT</ptxt>
+</entry>
+<entry>
+<ptxt>75°C (167°F) to 100°C (212°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_05" type-id="67" category="03" proc-id="RM0250U___000079P00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Advanced camshaft timing:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>All of the following conditions are met</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Crank angle between reference position and actual intake camshaft angle</ptxt>
+</entry>
+<entry>
+<ptxt>67°CA or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Valve timing</ptxt>
+</entry>
+<entry>
+<ptxt>No change at advanced valve timing</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Retard camshaft timing:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>All of the following conditions are met</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Crank angle between reference point and actual intake camshaft angle</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 67°CA</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Valve timing</ptxt>
+</entry>
+<entry>
+<ptxt>No change at retarded valve timing</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the difference between the target and actual camshaft timings is greater than the specified value, the ECM operates the VVT actuator.</ptxt>
+</item>
+<item>
+<ptxt>Then, the ECM monitors the camshaft timing change for 5 seconds.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_07" type-id="32" category="03" proc-id="RM0250U___000079Q00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0010 (See page <xref label="Seep01" href="RM000000PDW01AX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_08" type-id="51" category="05" proc-id="RM0250U___000079R00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>DTC P0011 or P0012 may be set when foreign objects in the engine oil are caught in some parts of the system. The DTC will remain set even if the system returns to normal after a short time. Foreign objects are filtered out by the oil filter.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If DTC P0011 or P0012 is present, check the VVT (Variable Valve Timing) system.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PDU01AX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PDU01AX_09_0001" proc-id="RM0250U___000079S00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0011 OR P0012)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0011 or P0012</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0011 or P0012 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0011 or P0012 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0002" fin="false">A</down>
+<right ref="RM000000PDU01AX_09_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0002" proc-id="RM0250U___000079T00000">
+<testtitle>PERFORM ACTIVE TEST USING INTELLIGENT TESTER (OPERATE OCV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Warm up the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / VVT CTRL B1.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the engine speed while operating the Oil Control Valve (OCV) using the tester.</ptxt>
+<spec>
+<title>OK</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Operation</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>OCV OFF</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Normal engine speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OCV ON</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Engine idles roughly or stalls</ptxt>
+<ptxt>(soon after OCV switched from OFF to ON)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0003" fin="false">OK</down>
+<right ref="RM000000PDU01AX_09_0005" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0003" proc-id="RM0250U___000079U00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (DTC P0011 OR P0012)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up.</ptxt>
+</test1>
+<test1>
+<ptxt>Switch the ECM from normal mode to check mode using the tester.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle for more than 10 minutes.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC output.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0004" fin="true">OK</down>
+<right ref="RM000000PDU01AX_09_0005" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0005" proc-id="RM0250U___000079V00000">
+<testtitle>CHECK VALVE TIMING (CHECK FOR LOOSE AND JUMPED TEETH ON TIMING CHAIN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the cylinder head cover.</ptxt>
+<figure>
+<graphic graphicname="A098172E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the crankshaft pulley, and align its groove with the timing mark "0" on the timing chain cover.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the timing marks on the camshaft timing sprocket and camshaft timing gear are facing upward as shown in the illustration.</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>If not, turn the crankshaft 1 revolution (360°), then align the marks as above.</ptxt>
+</item>
+</list1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Timing marks on camshaft timing gears are aligned as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the cylinder head cover.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0006" fin="false">OK</down>
+<right ref="RM000000PDU01AX_09_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0006" proc-id="RM0250U___000079W00000">
+<testtitle>INSPECT CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY (OCV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the OCV.</ptxt>
+<figure>
+<graphic graphicname="A095415E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the OCV.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>6.9 to 7.9 Ω at 20°C (68°F)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Apply positive battery voltage to terminal 1 and negative battery voltage to terminal 2. Check the valve operation.</ptxt>
+<figure>
+<graphic graphicname="A097066E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Valve moves quickly.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the OCV.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0007" fin="false">OK</down>
+<right ref="RM000000PDU01AX_09_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0007" proc-id="RM0250U___000079X00000">
+<testtitle>INSPECT OIL CONTROL VALVE FILTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the generator.</ptxt>
+<figure>
+<graphic graphicname="A098169E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the OCV filter.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the filter is not clogged.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Filter is not clogged.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the OCV filter.</ptxt>
+</test1>
+<test1>
+<ptxt>Reinstall the generator.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0016" fin="false">OK</down>
+<right ref="RM000000PDU01AX_09_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0016">
+<testtitle>REPLACE CAMSHAFT TIMING GEAR ASSEMBLY</testtitle>
+<res>
+<down ref="RM000000PDU01AX_09_0013" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0009">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0010">
+<testtitle>ADJUST VALVE TIMING</testtitle>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0011">
+<testtitle>REPLACE CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0012">
+<testtitle>CLEAN OIL CONTROL VALVE FILTER</testtitle>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0013" proc-id="RM0250U___000079Y00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up.</ptxt>
+</test1>
+<test1>
+<ptxt>Switch the ECM from normal mode to check mode using the tester.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle for more than 10 minutes.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the output DTCs using the tester.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>No DTC output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>DTC P0011 or P0012 is output when foreign objects in engine oil are caught in some parts of the system. These codes will stay output for a short time even after the system returns to normal. These foreign objects are then captured by the oil filter, thus eliminating the source of the problem.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDU01AX_09_0015" fin="true">OK</down>
+<right ref="RM000000PDU01AX_09_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0014">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000PDU01AX_09_0015">
+<testtitle>SYSTEM OK</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

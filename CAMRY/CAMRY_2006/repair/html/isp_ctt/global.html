@@ -1,0 +1,171 @@
+<!-- $Id: global.html,v 1.17 2005/10/28 01:54:24 n-tamamura Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 Parts Location                                                  -->
+<!--    005 Preparation                                                     -->
+<!--    006 Tech Tips                                                       -->
+<!--    011 EWD                                                             -->
+<!--    012 Tech Description                                                -->
+<!--    007 Install/Remove                                                  -->
+<!--    008 print(attribute)                                                -->
+<!--    009 PRINT_WINDOW_TITLE                                              -->
+<!--    010 logo(attribute)                                                 -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var g_pprList = null;
+var g_tips    = null;
+var g_rmvs    = null;
+var DELIM     = " &gt; ";
+
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	setLinks(true);
+}
+
+function setLinks(isInitial) {
+	if (parent.g_objXml==null) return;
+	g_pprList = parent.getPreparationArray(parent.g_objXml, parent.g_tocXml);
+	document.all('ppr').style.visibility = (g_pprList==null) ? "hidden" : "";
+	g_tips = parent.getTips(parent.g_objXml);
+	document.all('tps').style.visibility = (g_tips==null) ? "hidden" : "";
+	if (isInitial) {
+		g_rmvs = parent.getSiblingList(parent.g_paraId, parent.g_tocXml, "A");
+		document.all('rmv').style.visibility = (g_rmvs==null || g_rmvs.length==0) ? "hidden" : "";
+	}
+	var titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var ncfXml = parent.initXml("../../../ncf/toc_ncf.xml", true, false);
+	if (ncfXml==null) {
+		tec.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ncfXml, ltec, titleName, "ncf", parent.g_term);
+		if (ltec.innerHTML.length==0) tec.style.visibility = "hidden";
+	}
+	var ewdXml = parent.initXml("../../../ewd/toc_ewd.xml", true, false);
+	if (ewdXml==null) {
+		ewd.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ewdXml, lewd, titleName, "ewd", parent.g_term);
+		if (lewd.innerHTML.length==0) ewd.style.visibility = "hidden";
+	}
+}
+// Print Preview
+var PRINT_WINDOW_TITLE = "Inspection"; // 009
+function callPrintPreview(objXml, objXsl) {
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	parent.openPrintPreview(objXml, objXsl, null, PRINT_WINDOW_TITLE, dialogTitle, false);
+}
+// Parts Location
+function callPartsLocation(parts, illust) {
+	if (illust==null) {
+		alert(parent.PARTS_LOCATION_ERROR);
+		return;
+	}
+//	var dialogTitle = parent.g_sectionName + DELIM + parent.g_titleName;
+	var plParaId  = parent.g_cmpXml.selectSingleNode("//para[.//illust/@id='" +illust +"']/@id").nodeTypedValue;
+	var plSecName = parent.g_tocXml.selectSingleNode("//section[.//para/@id='" +plParaId +"']/name").nodeTypedValue;
+	var plTtlName = parent.g_tocXml.selectSingleNode("//ttl[.//para/@id='" +plParaId +"']/name").nodeTypedValue;
+	var dialogTitle = plSecName +DELIM +plTtlName;  
+	parent.openPartsLocation(parts, illust, dialogTitle, plParaId);
+}
+// Preparation Items
+function callPreparationItems(pprXmlList) {
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	parent.openPreparationItems(pprXmlList, dialogTitle);
+}
+// Tips List
+function callTips(tipsXml) {
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	parent.openTips(tipsXml, dialogTitle);
+}
+
+// Back
+function callBackPage(term, vin, filter, bp) {
+	var idx = parent.findParameterValue("idx", parent.location.search);
+	if (bp==null && idx==null) {
+		parent.openTopPage(term, vin, filter);
+		return;
+	} else if (idx!=null) {
+		parent.openBackPage(term, vin, filter, idx);
+		return;
+	} else {
+		var cate=parent.g_tocXml.selectSingleNode("//para[@id='"+bp+"']/@category");
+		if (cate.nodeTypedValue=="T") {
+			parent.openBackPage(term, vin, filter, "trb_toc");
+		} else {
+			parent.openBackPage(term, vin, filter, "isp_toc");
+		}
+		return;
+	}
+}
+
+function openInstallRemove() {
+	if (g_rmvs==null || g_rmvs.length==0) return;
+	var tmp = g_rmvs.item(0);
+	var ttlIdNode = tmp.selectSingleNode("parent::ttl/@id");
+	var secIdNode = tmp.selectSingleNode("ancestor::section/@id");
+	var ttlId = ttlIdNode.nodeTypedValue;
+	var secId = secIdNode.nodeTypedValue;
+	if (ttlId==null || secId==null) return;
+	var param = parent.getDefaultParameter(parent.g_term, parent.g_vin, parent.g_filter);
+	param += ((param.length==0) ? "?" : "&")
+				+ "section=" + secId + "&ttl=" + ttlId;
+	parent.openNewWindow("../rmv_ctt/frame.html"+param, "", null, null, null)
+}
+</script>
+</head>
+<body onLoad="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 010 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="callBackPage(parent.g_term, parent.g_vin, parent.g_filter, parent.g_bp)">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="right">
+			<a id="pts" href="#" class="popup-button" onClick="callPartsLocation(parent.g_ptsId, parent.g_ilstId)">Parts Location</a><!-- 004 -->
+			<a id="ppr" href="#" class="popup-button" onClick="callPreparationItems(g_pprList)">Preparation</a><!-- 005 -->
+			<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">Tech Tips</a><!-- 006 -->
+			<a id="ewd" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, lewd);" onMouseOut="parent.dropDownDelayUndisp();">EWD</a><!-- 011 -->
+			<div id="lewd" style="display: none"></div>
+			<a id="tec" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, ltec);" onMouseOut="parent.dropDownDelayUndisp();">Tech Description</a><!-- 012 -->
+			<div id="ltec" style="display: none"></div>
+			<a id="rmv" href="#" class="popup-button" onClick="openInstallRemove()">Install/Remove</a><!-- 007 -->
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px">
+			<a href="#" onClick="callPrintPreview(parent.g_objXml, parent.g_cttXsl);">
+				<img alt="print" src="../../img/print.png" class="print"><!-- 008 -->
+			</a>
+		</td>
+		<td class="boundary-top">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

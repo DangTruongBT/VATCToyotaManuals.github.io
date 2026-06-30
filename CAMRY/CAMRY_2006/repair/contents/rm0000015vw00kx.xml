@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000015VW00KX" category="C" type-id="302FZ" name-id="AX02W-12" from="200601">
+<dtccode>P0741</dtccode>
+<dtcname>Torque Converter Clutch Solenoid Performance (Shift Solenoid Valve DSL)</dtcname>
+<subpara id="RM0000015VW00KX_01" type-id="61" category="03" proc-id="RM0250U___00005ZP00000">
+<name>SYSTEM DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM uses the signals from the throttle position sensor, air-flow meter, turbine (input) speed sensor, intermediate (counter) shaft speed sensor and crankshaft position sensor to monitor the engagement condition of the lock-up clutch.</ptxt>
+<ptxt>Then the ECM compares the engagement condition of the lock-up clutch with the lock-up schedule in the ECM memory to detect a mechanical problems of the shift solenoid valve DSL, valve body and torque converter clutch.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="0.82in"/>
+<colspec colname="COL2" colwidth="3.17in"/>
+<colspec colname="COL3" colwidth="3.09in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection CondS1ition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0741</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Lock-up does not occur when driving in the lock-up range (normal driving at 80 km/h [50 mph]), or lock up remains  ON in the lock-up OFF range.  </ptxt>
+<ptxt>(2-trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Shift solenoid valve DSL remains open or closed</ptxt>
+</item>
+<item>
+<ptxt>Valve body is blocked</ptxt>
+</item>
+<item>
+<ptxt>Torque converter clutch</ptxt>
+</item>
+<item>
+<ptxt>Automatic transaxle (clutch, brake or gear etc.)</ptxt>
+</item>
+<item>
+<ptxt>Line pressure is too low</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VW00KX_02" type-id="64" category="03" proc-id="RM0250U___00005ZQ00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Torque converter lock-up is controlled by the ECM based on the speed sensor (NT), speed sensor (NC), engine rpm, engine load, engine temperature, vehicle speed, transmission temperature, and gear selection. The ECM determines the lock-up status of the torque converter by comparing the engine rpm (NE) to the input turbine rpm (NT). The ECM calculates the actual transmission gear by comparing input turbine rpm (NT) to counter gear rpm (NC). When conditions are appropriate, the ECM requests "lock-up" by applying control voltage to the shift solenoid DSL. When the DSL is turned on, it applies pressure to the lock-up relay valve and locks the torque converter clutch.</ptxt>
+<ptxt>If the ECM detects no lock-up after lock-up has been requested or if it detects lock-up when it is not requested, the ECM interprets this as a fault in the shift solenoid valve DSL or lock-up system performance. The ECM will turn on the MIL and store the DTC.</ptxt>
+<atten4>
+<title>Example:</title>
+<ptxt>When any of the following is met, the system judges it as a malfunction.</ptxt>
+</atten4>
+<list1 type="unordered">
+<item>
+<ptxt>There is a difference in rotation between the input side (engine speed) and output side (input turbine speed) of the torque converter when the ECM commands lock-up.</ptxt>
+<ptxt>(Engine speed is at least 75 rpm greater than input turbine speed.)</ptxt>
+</item>
+<item>
+<ptxt>There is no difference in rotation between the input side (engine speed) and output side (input turbine speed) of the torque converter when the ECM commands lock-up off.</ptxt>
+<ptxt>(The difference between engine speed and input turbine speed is less than 35 rpm.)</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM0000015VW00KX_03" type-id="65" category="03" proc-id="RM0250U___00005ZR00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>P0741:</ptxt>
+<ptxt>Shift solenoid valve DSL/OFF malfunction</ptxt>
+<ptxt>Shift solenoid valve DSL/ON malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Shift solenoid valve DSL, Speed sensor (NT), Speed sensor (NC), Crankshaft position sensor (NE), Throttle position sensor (VPA1), Mass air flow sensor (MAF), Transmission temperature sensor (THO1), Engine coolant temperature sensor (ECT)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OFF malfunction</ptxt>
+<ptxt>3.5 sec.</ptxt>
+<ptxt>ON malfunction</ptxt>
+<ptxt>1.8 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VW00KX_04" type-id="66" category="03" proc-id="RM0250U___00005ZS00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ALL:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="4.07in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0125 (Insufficient ECT for closed loop)</ptxt>
+<ptxt>P0500 (VSS)</ptxt>
+<ptxt>P0748, P0778, P0798 (Shift solenoid valve (range))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (Engine coolant temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10°C (50°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Transmission range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>"D"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-20°C (-4°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intermediate shaft speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL1 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL2 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL3 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve S4 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SR circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve DSL circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electronic throttle system</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1">
+<title>OFF malfunction</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECM lock-up command</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECM selected gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd, 4th or 5th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>25 km/h (15.5 mph) or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1">
+<title>ON malfunction</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECM lock-up command</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECM selected gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3rd, 4th or 5th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Throttle valve opening angle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>8.5% or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>25 to 60 km/h (15.5 to 37.3 mph)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VW00KX_05" type-id="67" category="03" proc-id="RM0250U___00005ZT00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<title>Either of the following conditions is met: OFF malfunction or ON malfunction OFF malfunction:</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine Speed - Input (turbine) speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>100 rpm or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1">
+<title>ON malfunction:</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Difference between engine speed and input (turbine) speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 35 rpm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VW00KX_06" type-id="51" category="05" proc-id="RM0250U___00005ZU00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows the relay, VSV, actuator and so on to operate without parts removal. Performing the ACTIVE TEST as the first step of troubleshooting is one method to shorten labor time.</ptxt>
+<ptxt>It is possible to display the DATA LIST during the ACTIVE TEST.</ptxt>
+</atten4>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the item "DIAGNOSIS / OBD/MOBD / ECT / ACTIVE TEST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, perform the "ACTIVE TEST".</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.79in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>[Test Details]</ptxt>
+<ptxt>Control the shift solenoid DSL to set the automatic transaxle to the lock-up condition.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<ptxt>Vehicle Speed: 60 km/h (37 mph) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible to check the DSL operation.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>This test can be conducted when the vehicle speed is 60 km/h (37 mph) or more.</ptxt>
+</item>
+<item>
+<ptxt>This test can be conducted in the 5th gear.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Lightly depress the accelerator pedal and check that the engine speed does not change abruptly.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When changing the accelerator pedal opening angle while driving, if the engine speed does not change, lock-up is on.</ptxt>
+</item>
+<item>
+<ptxt>Slowly release, but not fully, the accelerator pedal in order to decelerate. (Fully releasing the pedal will close the throttle valve and lock-up may be turned off.)</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="G029214E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM0000015VW00KX_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000015VW00KX_07_0001" proc-id="RM0250U___00005ZV00000">
+<testtitle>CHECK OTHER DTCS OUTPUT (IN ADDITION TO DTC P0741)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the OBD II scan tool or the intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the OBD II scan tool or the intelligent tester main switch ON.</ptxt>
+</test1>
+<test1>
+<ptxt>When you use intelligent tester:</ptxt>
+<ptxt>Select the item "DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES".</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the OBD II scan tool or the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.89in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0741" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"P0741" and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any other codes besides "P0741" are output, perform the troubleshooting for those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0002" fin="false">A</down>
+<right ref="RM0000015VW00KX_07_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0002" proc-id="RM0250U___00005ZW00000">
+<testtitle>INSPECT TRANSMISSION WIRE (DSL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the transmission wire connector from the transaxle.</ptxt>
+<figure>
+<graphic graphicname="C113969E25" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 13 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0003" fin="false">OK</down>
+<right ref="RM0000015VW00KX_07_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0003" proc-id="RM0250U___00005ZX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TRANSMISSION WIRE - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the transmission wire connector.</ptxt>
+<figure>
+<graphic graphicname="A136781E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C24-79 (DSL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 13 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0004" fin="false">OK</down>
+<right ref="RM0000015VW00KX_07_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0004" proc-id="RM0250U___00005ZY00000">
+<testtitle>INSPECT SHIFT SOLENOID VALVE (DSL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the shift solenoid valve DSL.</ptxt>
+<figure>
+<graphic graphicname="C113970E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Solenoid Connector (DSL) - Solenoid Body (DSL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 13 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the positive (+) lead to the terminal of the solenoid connector, and the negative (-) lead to the solenoid body.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The solenoid valve makes an operating sound.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0005" fin="false">OK</down>
+<right ref="RM0000015VW00KX_07_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0005" proc-id="RM0250U___00005ZZ00000">
+<testtitle>CHECK TRANSMISSION WIRE</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors and pins are securely installed. </ptxt>
+<ptxt>There is no open or short on the wire harness.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0006" fin="false">OK</down>
+<right ref="RM0000015VW00KX_07_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0006" proc-id="RM0250U___000060000000">
+<testtitle>INSPECT TRANSMISSION VALVE BODY ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>There are no foreign objects on each valve.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0007" fin="false">OK</down>
+<right ref="RM0000015VW00KX_07_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0007" proc-id="RM0250U___000060100000">
+<testtitle>INSPECT TORQUE CONVERTER CLUTCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The torque converter clutch operates normally.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000015VW00KX_07_0008" fin="true">OK</down>
+<right ref="RM0000015VW00KX_07_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0008">
+<testtitle>REPAIR AUTOMATIC TRANSAXLE ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0009">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0011">
+<testtitle>REPLACE SHIFT SOLENOID VALVE (DSL)</testtitle>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0012">
+<testtitle>REPAIR OR REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0013">
+<testtitle>REPAIR OR REPLACE TRANSMISSION VALVE BODY ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000015VW00KX_07_0014">
+<testtitle>REPLACE TORQUE CONVERTER CLUTCH ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

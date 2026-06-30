@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_730K2_T00F6" variety="T00F6">
+<name>ABS MOTOR RELAY (w/ VSC)</name>
+<para id="RM0000028CH000X" category="G" type-id="8000T" name-id="BC1XB-01" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000028CH000X_01" type-id="01" category="01">
+<s-1 id="RM0000028CH000X_01_0001" proc-id="RM0250U___0000A3F00000">
+<ptxt>INSPECT VSC NO. 1 (FAIL SAFE) RELAY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the VSC NO. 1 (fail safe) relay.</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Apply B+ between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<figure>
+<graphic graphicname="F050241E11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If the value is not as specified, replace the VSC NO. 1 (fail safe) relay.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000028CH000X_01_0002" proc-id="RM0250U___0000A3G00000">
+<ptxt>INSPECT VSC NO. 2 RELAY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the VSC NO. 2 relay.</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below. </ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Apply B+ between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<figure>
+<graphic graphicname="F050240E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If the value is not as specified, replace the VSC NO. 2 relay.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

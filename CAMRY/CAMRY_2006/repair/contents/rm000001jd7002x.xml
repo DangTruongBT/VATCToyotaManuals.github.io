@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JD7002X" category="C" type-id="3024T" name-id="BC0SD-03" from="200601">
+<dtccode>C0278/11</dtccode>
+<dtcname>Open or Short Circuit in ABS Solenoid Relay Circuit</dtcname>
+<subpara id="RM000001JD7002X_01" type-id="60" category="03" proc-id="RM0250U___000010L00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This relay supplies power to each ABS solenoid. If the ABS initial check is OK after the ignition switch is turned on (IG), the skid control ECU will turn the ABS solenoid relay on.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C0278/11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>3 or more solenoid valves are found faulty and simultaneously valve supply voltage is detected to be abnormal.</ptxt>
+</item>
+<item>
+<ptxt>Solenoid valve relay is not switched off.</ptxt>
+</item>
+<item>
+<ptxt>Valve relay is stuck open even through the valve relay supply voltage is high.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness (+BS circuit)</ptxt>
+</item>
+<item>
+<ptxt>ABS No. 2 fuse (Fusible link)</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (Solenoid relay)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001JD7002X_02" type-id="32" category="03" proc-id="RM0250U___000010M00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C131988E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001JD7002X_04" type-id="51" category="05" proc-id="RM0250U___000010R00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When C1241/41 is output together with C0278/11, inspect and repair the trouble areas indicated by C1241/41 (See page <xref label="Seep01" href="RM000001JD2002X"/>).</ptxt>
+</item>
+<item>
+<ptxt>Check the condition of each related circuit before troubleshooting (See page <xref label="Seep02" href="RM000000UZ301TX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001JD7002X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001JD7002X_03_0001" proc-id="RM0250U___000010N00000">
+<testtitle>INSPECT FUSIBLE LINK (ABS NO. 2 FUSE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the fusible link from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="C136500E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check if the fusible link is melted.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The fusible link is not melted.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the fusible link to the engine room R/B with the nut.</ptxt>
+</test1>
+<torque>
+<torqueitem>
+<t-value1> 5.4 </t-value1>
+<t-value2>55 </t-value2>
+<t-value3>48 </t-value3>
+</torqueitem>
+</torque>
+</content6>
+<res>
+<down ref="RM000001JD7002X_03_0002" fin="false">OK</down>
+<right ref="RM000001JD7002X_03_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0002" proc-id="RM0250U___000010O00000">
+<testtitle>INSPECT SKID CONTROL ECU CONNECTOR (+BS CIRCUIT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C131970E10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A25-3 (+BS) -</ptxt>
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD7002X_03_0003" fin="false">OK</down>
+<right ref="RM000001JD7002X_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0003" proc-id="RM0250U___000010P00000">
+<testtitle>INSPECT SKID CONTROL ECU CONNECTOR (GND TERMINAL CONTINUITY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C131970E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A25-4 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A25-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD7002X_03_0004" fin="false">OK</down>
+<right ref="RM000001JD7002X_03_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0004" proc-id="RM0250U___000010Q00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>This code is detected when a problem is identified in the brake actuator assembly.</ptxt>
+<ptxt>The solenoid circuit is in the brake actuator assembly.</ptxt>
+<ptxt>Therefore, solenoid circuit inspection and solenoid unit inspection cannot be performed. Be sure to check if the DTC is output before replacing the brake actuator assembly.</ptxt>
+</atten4>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000001JB8002X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of 12 mph (20 km/h) or more for 30 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000001JB8002X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the sensors, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harnesses, and fuses of the brake actuator assembly. Make sure that no DTCs are output.</ptxt>
+</item>
+<item>
+<ptxt>If any DTCs are output while jiggling a connector or wire harness of the brake actuator (skid control ECU), inspect and repair the connector or wire harness.</ptxt>
+</item>
+<item>
+<ptxt>It is suspected that the DTCs were output due to a bad connection of the connector terminal.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD7002X_03_0005" fin="true">A</down>
+<right ref="RM000001JD7002X_03_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0005">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)<xref label="Seep01" href="RM000001JB7002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0006">
+<testtitle>REPLACE FUSIBLE LINK</testtitle>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (+BS CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD7002X_03_0009">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000011BN00EX" category="D" type-id="3001B" name-id="NS087-13" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM0000011BN00EX_z0" proc-id="RM0250U___00004VB00000">
+<content5 releasenbr="2">
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT INTO A WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DIAGNOSTIC QUESTIONING AND SYMPTOM CONFIRMATION</testtitle>
+<test1>
+<ptxt>Ask the customer about symptoms and confirm malfunctions.</ptxt>
+</test1>
+<results>
+<result/>
+<action-ci-right>THE SCREEN DISPLAYS NOTHING (GO TO STEP 8, AND PROCEED TO "BLACK SCREEN")</action-ci-right>
+<result/>
+<action-ci-right>OTHER SYMPTOMS (GO TO STEP 3)</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRM THE SYSTEM NORMAL CONDITION</testtitle>
+<results>
+<result/>
+<action-ci-right>APPLICABLE (THIS IS NOT A MALFUNCTION)</action-ci-right>
+<result/>
+<action-ci-right>NOT APPLICABLE (GO TO STEP 4)</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK DTC</testtitle>
+<atten4>
+<ptxt>If the system cannot enter the diagnostic mode, inspect the AVC-LAN and all the components that connect to the AVC-LAN for short circuits and repair or replace the problem part.</ptxt>
+</atten4>
+<results>
+<result/>
+<action-ci-right>A CODE IS OUTPUT (GO TO STEP 5)</action-ci-right>
+<result/>
+<action-ci-right>A CODE IS NOT OUTPUT (GO TO STEP 8)</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CLEAR</testtitle>
+<test1>
+<ptxt>Clear the DTCs and finish the diagnostic mode.</ptxt>
+<atten4>
+<ptxt>The currently output DTCs may not indicate actual malfunctions depending on the vehicle conditions.</ptxt>
+</atten4>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>RECHECK DTC</testtitle>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the system cannot enter the diagnostic mode, inspect the AVC-LAN and all the components that connect to the AVC-LAN for short circuits.</ptxt>
+</item>
+<item>
+<ptxt>Even if the malfunction symptom is not confirmed, check for diagnostic trouble codes. This is because the system stores past diagnostic trouble codes.</ptxt>
+</item>
+<item>
+<ptxt>Refer to the detailed description on the diagnostic screen as necessary (See page <xref label="Seep01" href="RM0000014SL00FX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Check the diagnostic trouble code and inspect the area the code indicates.</ptxt>
+</item>
+</list1>
+</atten4>
+<results>
+<result/>
+<action-ci-right>A CODE IS OUTPUT (GO TO STEP 7)</action-ci-right>
+<result/>
+<action-ci-right>A CODE IS NOT OUTPUT (GO TO STEP 8)</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DIAGNOSTIC TROUBLE CODE CHART</testtitle>
+<test1>
+<ptxt>Find the output code in the diagnostic trouble code chart (See page <xref label="Seep03" href="RM0000011BO00DX"/>).</ptxt>
+</test1>
+<results>
+<result>NEXT</result>
+<action-ci-right>GO TO STEP 10</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<test1>
+<ptxt>Find the applicable symptom code in the problem symptoms table (See page <xref label="Seep02" href="RM0000011BR00CX"/>).</ptxt>
+<atten4>
+<ptxt>If the symptom does not recur and no code is output, perform the symptom reproduction method (See page <xref label="Seep04" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</test1>
+<results>
+<result/>
+<action-ci-right>THERE IS AN APPLICABLE SYMPTOM CODE IN THE TABLE (GO TO STEP 10)</action-ci-right>
+<result/>
+<action-ci-right>THERE IS NO APPLICABLE SYMPTOM CODE IN THE TABLE (GO TO STEP 9)</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK THE ECU TERMINAL ARRANGEMENT BASED ON THE MALFUNCTION SYMPTOM</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK THE CIRCUIT</testtitle>
+<test1>
+<ptxt>Adjust, repair, or replace as necessary.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>RECHECK THE DIAGNOSTIC TROUBLE CODE</testtitle>
+<atten4>
+<ptxt>After deleting the DTCs, recheck for diagnostic trouble codes.</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PERFORM CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

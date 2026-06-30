@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000002CNM000X" category="C" type-id="801YV" name-id="BC1WW-01" from="200601">
+<dtccode>43</dtccode>
+<dtcname>ABS Control System Malfunction</dtcname>
+<subpara id="RM000002CNM000X_01" type-id="60" category="03" proc-id="RM0250U___0000BZ000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the VSC system detects a malfunction in the ABS control system.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>43</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction in the ABS control system.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS control system</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002CNM000X_02" type-id="51" category="05" proc-id="RM0250U___0000BZ100000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000002CNM000X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002CNM000X_03_0001" proc-id="RM0250U___0000BZ200000">
+<testtitle>CHECK ABS CONTROL SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (ABS control system DTC) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (ABS control system DTC) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002CNM000X_03_0002" fin="false">A</down>
+<right ref="RM000002CNM000X_03_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002CNM000X_03_0002" proc-id="RM0250U___0000BZ300000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (43) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (43) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002CNM000X_03_0003" fin="true">A</down>
+<right ref="RM000002CNM000X_03_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002CNM000X_03_0003">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM000002CNM000X_03_0004">
+<testtitle>REPAIR CIRCUIT INDICATED BY OUTPUT DTC<xref label="Seep01" href="RM000000XHU00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002CNM000X_03_0005">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

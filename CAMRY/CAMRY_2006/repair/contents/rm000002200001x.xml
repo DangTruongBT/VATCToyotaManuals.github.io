@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_7306D_T00E7" variety="T00E7">
+<name>CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY</name>
+<para id="RM000002200001X" category="G" type-id="8000T" name-id="ES3PA-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000002200001X_01" type-id="01" category="01">
+<s-1 id="RM000002200001X_01_0001" proc-id="RM0250U___000092100000">
+<ptxt>INSPECT CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s2>
+<s2>
+<ptxt>Start and warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the intelligent tester and select VVT from the ACTIVE TEST menu.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the engine speed when the OCV is operated with the intelligent tester.</ptxt>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT system is OFF (OCV is OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal engine speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT system is ON (OCV is ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rough idle or engine stalled</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

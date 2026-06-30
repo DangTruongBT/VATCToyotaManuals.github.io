@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XMM008X" category="D" type-id="303F2" name-id="TW00L-10" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000XMM008X_z0" proc-id="RM0250U___00005GH00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION OF SYSTEM</ptxt>
+<step2>
+<ptxt>A tire pressure warning valve and transmitter is equipped with a tire pressure sensor and a transmitter and is installed in a tire wheel assembly. The sensor measures the tire pressure. The measured value and transmitter ID are transmitted to the tire pressure warning antenna and receiver on the body as radio waves and then sent to the tire pressure warning ECU from the tire pressure warning antenna and receiver. If the transmitter ID has already been registered, the ECU compares the measured air pressure value with the standard value. When the value is less than the standard value registered in the tire pressure warning ECU, the warning light on the combination meter comes on.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>For the differences in the air pressure settings by the type of tires, a tire pressure warning reset switch has been adopted.</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname="E129451E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>WHEN TIRE PRESSURE WARNING LIGHT IS LIT</ptxt>
+<step2>
+<ptxt>When the tire pressure warning light does not go off, or when it comes on during driving, check tire pressure. If the tire pressure warning light comes on within several hours after adjusting the tire pressure, the tire may have a slow air leak.</ptxt>
+</step2>
+<step2>
+<ptxt>Under the following conditions, the system may not function properly.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Facilities or devices that use similar radio frequencies are located in the vicinity of the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>A radio device of similar frequency is used in the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>A large amount of snow or ice is stuck to the vehicle, especially onto the wheels and around the wheel houses.</ptxt>
+</item>
+<item>
+<ptxt>The battery of the sensor has been depleted.</ptxt>
+</item>
+<item>
+<ptxt>The tires without tire pressure warning valve and transmitter are used.</ptxt>
+</item>
+<item>
+<ptxt>Tire chains are used.</ptxt>
+</item>
+<item>
+<ptxt>When the full-size spare tire is not within the receivable range of the electric wave, a signal may not be received because the full-size spare tire is fixed. Accordingly, the system may not function properly. If there is a possibility that the tire pressure warning system does not receive a signal from the full-size spare tire, rotate the tire 90°.</ptxt>
+</item>
+<item>
+<ptxt>If any wheels other than the specified ones are used, the system may not function properly because interference may prevent the radio waves from being correctly transmitted from the tire pressure sensor.</ptxt>
+</item>
+<item>
+<ptxt>Depending on the tire type, the system may not function properly even though the specified wheels are used.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>The average usage life of the grommet of the tire pressure warning valve and transmitter is approximately 5 years, at which time it must be replaced.</ptxt>
+<ptxt>Re-tighten the valve nut if the valve is leaking air, although it is less than 5 years old and there is no problem with grommets.</ptxt>
+</step2>
+<step2>
+<ptxt>After removing and installing the ECU or a sensor, check for a diagnostic trouble code and verify that it is a normal code.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF COMPONENTS</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.82in"/>
+<colspec colname="COL2" colwidth="4.26in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Components</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combined as a single unit with a disc wheel air valve, it measures tire pressure and temperature and transmits an ID number for measurement value and identification. Built-in the battery.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure warning antenna and receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives and transmits a necessary signal from the transmitter to the tire pressure warning ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure warning ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives the signal from the receiver and identifies it as vehicle's own signal. If the measured value is equal to or lower than the specified value, it transmits a signal so that the air pressure warning light on the combination meter comes on.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Located in the combination meter, it informs the driver of lowered tire air pressure and system failure.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure warning reset switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enters the initialization mode for tire or wheel replacement.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>TIRE PRESSURE WARNING RESET SWITCH</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>By operating the tire pressure warning reset switch, the tire pressure warning ECU can be set to issue a warning at an inflation pressure that corresponds to the type of tires. </ptxt>
+<ptxt>Therefore, the dealer must set the warning threshold to the proper value in order to comply with the local regulations.</ptxt>
+</item>
+<item>
+<ptxt>Operate the tire pressure warning reset switch only after the inflation pressures of all tires (including the full-size spare tire) have been adjusted on the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>To initialize the system, press and hold the tire pressure warning reset switch for 3 seconds or longer with the ignition switch on (IG). After the initialization process has started, the warning light blinks 3 times (1 second on, 1 second off).</ptxt>
+</item>
+<item>
+<ptxt>During initialization, the tire pressure warning valve and transmitter measures the inflation pressure of the tires, and registers the signals that are transmitted into the tire pressure warning ECU at a frequency of once per minute. The initialization process is completed when signals from the all tires (including the full-size spare tire) have been received.</ptxt>
+</item>
+</list1>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

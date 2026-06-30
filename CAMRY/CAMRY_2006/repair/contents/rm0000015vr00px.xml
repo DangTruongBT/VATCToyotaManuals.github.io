@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000015VR00PX" category="C" type-id="302FF" name-id="AX02U-11" from="200601">
+<dtccode>P0717</dtccode>
+<dtcname>Turbine Speed Sensor Circuit No Signal</dtcname>
+<subpara id="RM0000015VR00PX_01" type-id="60" category="03" proc-id="RM0250U___00005XQ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This sensor detects the rotation speed of the input turbine. By comparing the input turbine speed signal (NT) with the counter gear speed sensor signal (NC), the ECM detects the shift timing of the gears and appropriately controls the engine torque and hydraulic pressure according to various conditions. Thus, providing smooth gear shift.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="3.14in"/>
+<colspec colname="COL3" colwidth="3.11in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0717</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ECM detects conditions (a), (b) and (c) continuously for 5 sec. or more: (1-trip detection logic)</ptxt>
+<ptxt>(a) Vehicle speed: 50 km/h (31 mph) or more</ptxt>
+<ptxt>(b) Park/neutral position switch (STAR and R) is OFF</ptxt>
+<ptxt>(c) Speed sensor (NT): less than 300 rpm</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in transmission revolution sensor NT (speed sensor NT) circuit</ptxt>
+</item>
+<item>
+<ptxt>Transmission revolution sensor NT (speed sensor NT)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>Automatic transaxle assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="C053419E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Reference (Using an oscilloscope):</ptxt>
+<ptxt>Check the waveform between terminals NT+ and NT- of the ECM connector.</ptxt>
+<spec>
+<title>Standard: Refer to the illustration.</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NT+ - NT-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 0.5ms/DIV</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 20 km/h (12 mph)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_02" type-id="64" category="03" proc-id="RM0250U___00005XR00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The NT terminal of the ECM detects a revolution signal from the speed sensor (NT) (input RPM). The ECM calculates a gearshift comparing the speed sensor (NT) with the speed sensor (NC).</ptxt>
+<ptxt>While the vehicle is operating in 2nd, 3rd, 4th or 5th gear in the shift position of D, if the input shaft revolution is less than 300 rpm <sup>*1</sup>although the output shaft revolution is more than 1,000 rpm <sup>*2</sup>, the ECM detects the trouble, illuminates the MIL and stores the DTC. </ptxt>
+<ptxt>*1: Pulse is not output or is irregularly output.</ptxt>
+<ptxt>*2: The vehicle speed is 50 km/h (31 mph) or more.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_03" type-id="65" category="03" proc-id="RM0250U___00005XS00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>P0717: Speed sensor (NT) / Verify pulse input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed sensor (NT), Speed sensor (NC)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>5 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_04" type-id="66" category="03" proc-id="RM0250U___00005XT00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="4.08in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P0500 (VSS)</ptxt>
+<ptxt>P0748, P0778, P0798 (Shift solenoid valve (range))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift change</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shift change is completed and before starting next shift change operation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECM selected gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2nd, 3rd, 4th or 5th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output shaft rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1,000 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NSW switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_05" type-id="67" category="03" proc-id="RM0250U___00005XU00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Sensor signal rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 300 rpm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_06" type-id="70" category="03" proc-id="RM0250U___00005XV00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Speed sensor (NT)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Turbine speed is equal to engine speed with lock-up ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_07" type-id="32" category="03" proc-id="RM0250U___00005XW00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="G031763E44" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000015VR00PX_08" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000015VR00PX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000015VR00PX_09_0001" proc-id="RM0250U___00005XX00000">
+<testtitle>INSPECT SPEED SENSOR INSTALLATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the speed sensor installation.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The installation bolt is tightened properly and there is no clearance between the sensor and transaxle case.</ptxt>
+</specitem>
+</spec>
+<figure>
+<graphic graphicname="BR03795E36" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VR00PX_09_0002" fin="false">OK</down>
+<right ref="RM0000015VR00PX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VR00PX_09_0002" proc-id="RM0250U___00005XY00000">
+<testtitle>INSPECT SPEED SENSOR (NT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the speed sensor connector from the transaxle.</ptxt>
+<figure>
+<graphic graphicname="C110343E37" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20 °C (68 °F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>560 to 680 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VR00PX_09_0003" fin="false">OK</down>
+<right ref="RM0000015VR00PX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VR00PX_09_0003" proc-id="RM0250U___00005XZ00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SPEED SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the speed sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A136781E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-125 (NT+) - C24-124 (NT-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>560 to 680 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C24-125 (NT+) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C24-124 (NT-) - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000015VR00PX_09_0004" fin="true">OK</down>
+<right ref="RM0000015VR00PX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000015VR00PX_09_0004">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM0000015VR00PX_09_0005">
+<testtitle>REPLACE SPEED SENSOR (NT)</testtitle>
+</testgrp>
+<testgrp id="RM0000015VR00PX_09_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

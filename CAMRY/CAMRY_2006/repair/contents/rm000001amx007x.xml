@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_731VU_T00G1" variety="T00G1">
+<name>ACCELERATOR PEDAL ROD</name>
+<para id="RM000001AMX007X" category="G" type-id="8000T" name-id="ES1RG-05" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000001AMX007X_01" type-id="01" category="01">
+<s-1 id="RM000001AMX007X_01_0001" proc-id="RM0250U___0000B7000000">
+<ptxt>CHECK ACCELERATOR PEDAL ROD</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the voltage.</ptxt>
+<s3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the intelligent tester ON.</ptxt>
+</s3>
+<s3>
+<ptxt>Select the menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ALL / ACCEL POS #1, ACCEL POS #2.</ptxt>
+</s3>
+<s3>
+<ptxt>Operate the accelerator pedal, and then check that the ACCEL POS #1 and ACCEL POS #2 values are within the specifications.</ptxt>
+<spec>
+<title>Standard voltage (ACCEL POS #1)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.11in"/>
+<colspec colname="COL2" colwidth="2.02in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Accelerator Pedal Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Released</ptxt>
+</entry>
+<entry>
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Depressed</ptxt>
+</entry>
+<entry>
+<ptxt>2.5 to 4.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard voltage (ACCEL POS #2)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.11in"/>
+<colspec colname="COL2" colwidth="2.02in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Accelerator Pedal Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Released</ptxt>
+</entry>
+<entry>
+<ptxt>1.2 to 2.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Depressed</ptxt>
+</entry>
+<entry>
+<ptxt>3.4 to 5.0 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, check the accelerator pedal rod, wire harness or ECM.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

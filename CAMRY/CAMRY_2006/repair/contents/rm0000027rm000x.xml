@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM0000027RM000X" category="C" type-id="3025J" name-id="BC24H-01" from="200601">
+<dtccode>C1288/88</dtccode>
+<dtcname>ECU Version Miss Match</dtcname>
+<subpara id="RM0000027RM000X_01" type-id="60" category="03" proc-id="RM0250U___0000A8000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1288/88</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM does not match</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000027RM000X_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000027RM000X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000027RM000X_03_0001" proc-id="RM0250U___0000A4K00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if a CAN communication system DTC is output (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027RM000X_03_0002" fin="false">A</down>
+<right ref="RM0000027RM000X_03_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027RM000X_03_0002" proc-id="RM0250U___0000A4L00000">
+<testtitle>PERFORM ENGINE VARIANT LEARNING</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform engine variant learning (See page <xref label="Seep01" href="RM000001NKD001X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027RM000X_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000027RM000X_03_0003" proc-id="RM0250U___0000A4M00000">
+<testtitle>CONFIRM RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027RM000X_03_0006" fin="true">A</down>
+<right ref="RM0000027RM000X_03_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027RM000X_03_0004">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM<xref label="Seep01" href="RM000000WI600QX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000027RM000X_03_0005">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM0000027RM000X_03_0006">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000000XF700CX" category="S" type-id="3001E" name-id="RS068-20" from="200601">
+<name>DIAGNOSTIC TROUBLE CODE CHART</name>
+<subpara id="RM000000XF700CX_z0" proc-id="RM0250U___000071K00000">
+<content5 releasenbr="1">
+<ptxt>If a trouble code is displayed during the DTC check, check the circuit listed for the code in the table below (refer to the appropriate page).</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When the SRS warning light remains on and the DTC output is the normal system code, a voltage source drop is likely to occur. This malfunction is not stored in the memory by the center airbag sensor assembly. If the power source voltage returns to normal, the SRS warning light will automatically go off.</ptxt>
+</item>
+<item>
+<ptxt>When 2 or more codes are indicated, the code with the lower number appears first.</ptxt>
+</item>
+<item>
+<ptxt>If a code is not listed on the display chart, the center airbag sensor assembly may have failed.</ptxt>
+</item>
+<item>
+<ptxt>In the case of any malfunction concerning an open circuit, short to ground, or short to B+ due to a squib, other trouble codes may not be detected. In this case, repair the malfunction currently indicated and then perform malfunction diagnosis again.</ptxt>
+</item>
+<item>
+<ptxt>Mark in the check mode column:</ptxt>
+<ptxt>*1: DTC is not corresponding to the check mode.</ptxt>
+<ptxt>*2: DTC is corresponding to the check mode.</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>AIRBAG SYSTEM:</title>
+<tgroup cols="5" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" align="center" colwidth="1.42in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.42in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.42in" colsep="0"/>
+<colspec colnum="4" colname="4" align="center" colwidth="1.42in" colsep="0"/>
+<colspec colnum="5" colname="5" align="center" colwidth="1.4in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>DTC Code</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>Check Mode</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1000/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Center Airbag Sensor Assembly Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YTI00LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1603/83</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Satellite Sensor Bus RH Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Engine room main wire</ptxt>
+<ptxt>3. Front airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027RR000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1608/84</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Satellite Sensor Bus LH Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Engine room main wire</ptxt>
+<ptxt>3. Front airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027RS000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1610/13</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Airbag Sensor RH Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Front airbag sensor RH</ptxt>
+<ptxt>2. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002C9O000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1612/83</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Front Airbag Sensor RH</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Engine room main wire</ptxt>
+<ptxt>3. Front airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027RR000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1613/83</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Airbag Sensor RH Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Engine room main wire</ptxt>
+<ptxt>3. Front airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027RR000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1615/14</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Airbag Sensor LH Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Front airbag sensor LH</ptxt>
+<ptxt>2. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002C9H000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1617/84</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Front Airbag Sensor LH</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Engine room main wire</ptxt>
+<ptxt>3. Front airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027RS000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1618/84</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Airbag Sensor LH Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Engine room main wire</ptxt>
+<ptxt>3. Front airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027RS000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1620/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver Side - Side Airbag Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Side airbag sensor LH</ptxt>
+<ptxt>2. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002C9I000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1622/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Driver Side - Side Airbag Sensor Assembly</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Side airbag sensor LH</ptxt>
+<ptxt>3. Rear airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E2000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1623/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver Side - Side Airbag Sensor Assembly Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Side airbag sensor LH</ptxt>
+<ptxt>3. Rear airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E2000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1625/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Passenger Side - Side Airbag Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Side airbag sensor RH</ptxt>
+<ptxt>2. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002C9K000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1627/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Front Passenger Side - Side Airbag Sensor Assembly</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Side airbag sensor RH</ptxt>
+<ptxt>3. Rear airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E4000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1628/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Passenger Side - Side Airbag Sensor Assembly Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Side airbag sensor RH</ptxt>
+<ptxt>3. Rear airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E4000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1630/23</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver Side Rear Airbag Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Rear airbag sensor LH</ptxt>
+<ptxt>2. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002C9J000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1632/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Driver Side Rear Airbag Sensor</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Side airbag sensor LH</ptxt>
+<ptxt>3. Rear airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E2000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1633/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver Side Rear Airbag Sensor Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Side airbag sensor LH</ptxt>
+<ptxt>3. Rear airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E2000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1635/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Passenger Side Rear Airbag Sensor Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Rear airbag sensor RH</ptxt>
+<ptxt>2. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000002C9L000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1637/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Passenger Side Rear Airbag Sensor</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Side airbag sensor RH</ptxt>
+<ptxt>3. Rear airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E4000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1638/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Passenger Side Rear Airbag Sensor Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Side airbag sensor RH</ptxt>
+<ptxt>3. Rear airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E4000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1642/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Driver Side Satellite Sensor Bus</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Side airbag sensor LH</ptxt>
+<ptxt>3. Rear airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E2000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1643/81</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver Side Satellite Sensor Bus Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Side airbag sensor LH</ptxt>
+<ptxt>3. Rear airbag sensor LH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E2000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1647/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Lost Communication with Front Passenger Side Satellite Sensor Bus</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Side airbag sensor RH</ptxt>
+<ptxt>3. Rear airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E4000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1648/82</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Front Passenger Side Satellite Sensor Bus Initialization Incomplete</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Side airbag sensor RH</ptxt>
+<ptxt>3. Rear airbag sensor RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000027E4000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1650/32</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Occupant Classification System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Occupant classification system</ptxt>
+<ptxt>3. Front seat wire RH</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000016WN004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1653/35</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Seat Position Airbag Sensor Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Seat position airbag sensor</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YTS00OX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1655/37</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Driver Side Seat Belt Buckle Switch Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Front seat inner belt assembly LH (Driver side seat belt buckle switch)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001NZY008X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1660/43</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Passenger Airbag ON / OFF Indicator Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Instrument panel wire No. 2</ptxt>
+<ptxt>3. Clock assembly (Passnger airbag ON/OFF indicator)</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*1</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001W28002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1800/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Driver Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Spiral cable</ptxt>
+<ptxt>3. Steering pad (Driver side squib)</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFI00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1801/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Driver Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC  B1800/51</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFI00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1802/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Driver Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1800/51</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFI00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1803/51</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Driver Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1800/51</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFI00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1805/52</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Passenger Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Instrument panel wire assembly</ptxt>
+<ptxt>3. Front passenger airbag assembly</ptxt>
+<ptxt> (Front passenger side squib 2nd step)</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFJ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1806/52</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Passenger Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1805/52</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFJ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1807/52</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Passenger Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1805/52</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFJ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1808/52</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Passenger Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1805/52</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XFJ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1810/53</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Driver Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Spiral cable</ptxt>
+<ptxt>3. Steering pad (Driver side squib 2nd step)</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDY00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1811/53</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Driver Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1810/53</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDY00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1812/53</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Driver Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1810/53</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDY00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1813/53</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Driver Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1810/53</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDY00PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1815/54</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Passenger Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Instrument panel wire assembly</ptxt>
+<ptxt>3. Front passenger airbag assembly (Front passenger side squib)</ptxt>
+<ptxt>4. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDZ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1816/54</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Passenger Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1815/54</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDZ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1817/54</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Passenger Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1815/54</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDZ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1818/54</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Passenger Side Squib 2nd Step Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1815/54</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YDZ00QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1820/55</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Driver Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Front seat  side airbag  assembly RH (Front driver side - side squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001NZQ009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1821/55</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Driver Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1820/55</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001NZQ009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1822/55</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Driver Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1820/55</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001NZQ009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1823/55</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Driver Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1820/55</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001NZQ009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1825/56</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Passenger Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Front seat  side airbag  assembly RH (Front passenger side - side squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O02009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1826/56</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Passenger Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1825/56</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O02009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1827/56</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Passenger Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1825/56</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O02009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1828/56</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Passenger Side - Side Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1825/56</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O02009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1830/57</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Driver Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Curtain shield airbag assembly LH (Driver side curtain shield squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O03009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1831/57</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Driver Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1830/57</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O03009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1832/57</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Driver Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1830/57</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O03009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1833/57</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Driver Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1830/57</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O03009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1835/58</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Passenger Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire No. 2</ptxt>
+<ptxt>2. Curtain shield airbag assembly RH (Front passenger side curtain shield squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O04009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1836/58</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Passenger Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1835/58</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O04009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1837/58</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Passenger Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1835/58</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O04009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1838/58</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Passenger Side Curtain Shield Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1835/58</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O04009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1860/64</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Driver Side Knee Airbag Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Instrument panel wire</ptxt>
+<ptxt>2. Driver side knee airbag assembly (Driver side knee airbag squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YTT00IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1861/64</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Driver Side Knee Airbag Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1860/64</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YTT00IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1862/64</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Driver Side Knee Airbag Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1860/64</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YTT00IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1863/64</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Driver Side Knee Airbag Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1860/64</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YTT00IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1900/73</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Driver Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Front seat outer belt assembly LH (Front driver side pretensioner squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O05009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1901/73</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Driver Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1900/73</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O05009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1902/73</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Driver Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1900/73</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O05009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1903/73</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Driver Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1900/73</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O05009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1905/74</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short in Front Passenger Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>1. Floor wire</ptxt>
+<ptxt>2. Front seat outer belt assembly LH (Front passenger side pretensioner squib)</ptxt>
+<ptxt>3. Center airbag sensor assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O06009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1906/74</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Open in Front Passenger Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1905/74</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O06009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1907/74</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to GND in Front Passenger Side Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1905/74</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O06009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>B1908/74</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Short to B+ in Front Passenger Side Front Pretensioner Squib Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>Same as DTC B1905/74</ptxt>
+</entry>
+<entry colname="4" colsep="1" valign="middle">
+<ptxt>*2</ptxt>
+</entry>
+<entry colname="5" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001O06009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

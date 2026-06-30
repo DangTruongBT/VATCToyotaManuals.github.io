@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000W4600BX" category="J" type-id="800MY" name-id="EI0EH-01" from="200601">
+<dtccode/>
+<dtcname>Certification ECU Power Source Circuit</dtcname>
+<subpara id="RM000000W4600BX_01" type-id="60" category="03" proc-id="RM0250U___00008EO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit provides power to operate the certification ECU.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W4600BX_02" type-id="32" category="03" proc-id="RM0250U___00008EP00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128353E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W4600BX_03" type-id="51" category="05" proc-id="RM0250U___00009VQ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<ptxt>If the certification ECU is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000W4600BX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W4600BX_04_0001" proc-id="RM0250U___00008EQ00000">
+<testtitle>INSPECT FUSE (EFI NO. 1)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the EFI No. 1 fuse from the No. 1 engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W4600BX_04_0002" fin="false">OK</down>
+<right ref="RM000000W4600BX_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W4600BX_04_0002" proc-id="RM0250U___00008ER00000">
+<testtitle>CHECK WIRE HARNESS (CERTIFICATION ECU - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 ECU connector.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="B107456E47" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E58-1 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W4600BX_04_0006" fin="false">OK</down>
+<right ref="RM000000W4600BX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W4600BX_04_0006" proc-id="RM0250U___00008ES00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B107456E40" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E58-17 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W4600BX_04_0003" fin="true">OK</down>
+<right ref="RM000000W4600BX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W4600BX_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000W4600BX_04_0004">
+<testtitle>REPLACE FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000W4600BX_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

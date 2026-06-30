@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000VYK002X" category="J" type-id="303DX" name-id="CA0J1-01" from="200601">
+<dtccode/>
+<dtcname>CAN Bus Line</dtcname>
+<subpara id="RM000000VYK002X_01" type-id="60" category="03" proc-id="RM0250U___00009BO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When any DTC of the CAN communication system is output, first measure the resistance between the terminals of the DLC3 to confirm the trouble area.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000VYK002X_02" type-id="32" category="03" proc-id="RM0250U___00009BP00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136704E04" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000VYK002X_03" type-id="51" category="05" proc-id="RM0250U___0000CLE00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn the ignition switch off before measuring the resistance of the CAN main wire and CAN branch wires.</ptxt>
+</item>
+<item>
+<ptxt>After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating.</ptxt>
+</item>
+<item>
+<ptxt>Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If doors need to be opened in order to check connectors, open the doors and leave them open.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Operating the ignition switch, any other switches or any triggers related ECU and sensor communication on the CAN, which would cause resistance reading variations.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000VYK002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000VYK002X_04_0001" proc-id="RM0250U___00009BQ00000">
+<testtitle>CHECK CAN BUS WIRE (MAIN BUS WIRE FOR DISCONNECTION, BUS WIRES FOR SHORT CIRCUIT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126400E08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<colspec colname="COL4" colwidth="0.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E10-6 (CANH) - E10-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>69 Ω or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Below 54 Ω</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000VYK002X_04_0002" fin="false">A</down>
+<right ref="RM000000VYK002X_04_0004" fin="true">B</right>
+<right ref="RM000000VYK002X_04_0005" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0002" proc-id="RM0250U___00009BR00000">
+<testtitle>CHECK CAN BUS WIRE (SHORT TO B+ IN CAN BUS WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126400E09" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.63in"/>
+<colspec colname="COL2" colwidth="1.50in"/>
+<colspec colname="COL3" colwidth="1.00in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E10-6 (CANH) - E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E10-14 (CANL) -</ptxt>
+<ptxt>E10-16 (BAT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000VYK002X_04_0003" fin="false">OK</down>
+<right ref="RM000000VYK002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0003" proc-id="RM0250U___00009BS00000">
+<testtitle>CHECK CAN BUS WIRE (SHORT TO GND IN CAN BUS WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126400E10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.61in"/>
+<colspec colname="COL2" colwidth="1.47in"/>
+<colspec colname="COL3" colwidth="1.05in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E10-4 (CG) - E10-6 (CANH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E10-4 (CG) - E10-14 (CANL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000VYK002X_04_0008" fin="true">OK</down>
+<right ref="RM000000VYK002X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0004">
+<testtitle>OPEN IN CAN BUS MAIN WIRE<xref label="Seep01" href="RM000000WIM00GX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0005">
+<testtitle>SHORT IN CAN BUS WIRES<xref label="Seep01" href="RM000000WIN00OX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0006">
+<testtitle>SHORT TO B+ IN CAN BUS WIRE<xref label="Seep01" href="RM000000WIT00PX"/>
+
+</testtitle>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0007">
+<testtitle>SHORT TO GND IN CAN BUS WIRE<xref label="Seep01" href="RM000000WIU00QX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000VYK002X_04_0008">
+<testtitle>GO TO "HOW TO PROCEED WITH TROUBLESHOOTING"<xref label="Seep01" href="RM000000WI600QX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

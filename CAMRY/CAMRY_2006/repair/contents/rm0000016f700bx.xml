@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="10021_S001F" variety="S001F">
+<name>HORN</name>
+<ttl id="10021_S001F_731DF_T00FL" variety="T00FL">
+<name>HORN RELAY</name>
+<para id="RM0000016F700BX" category="G" type-id="3001K" name-id="HO04F-04" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM0000016F700BX_01" type-id="01" category="01">
+<s-1 id="RM0000016F700BX_01_0001" proc-id="RM0250U___0000AS200000">
+<ptxt>INSPECT FUSE (HORN)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the resistance of the HORN fuse.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000016F700BX_01_0002" proc-id="RM0250U___0000AS300000">
+<ptxt>INSPECT HORN RELAY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the engine room R/B and J/B (horn relay).</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B131164E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1G-1 - 1B-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1G-1 - 1B-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When battery voltage is applied to terminals 1G-1 and 1D-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

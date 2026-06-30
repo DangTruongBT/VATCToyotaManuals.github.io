@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000011BQ00CX" category="U" type-id="3001G" name-id="NS08C-09" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000011BQ00CX_z0" proc-id="RM0250U___00004VE00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>RADIO AND NAVIGATION ASSEMBLY</ptxt>
+<figure>
+<graphic graphicname="E126216E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.27in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specification</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SPD (F13-3) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed signal from combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See "Vehicle Signal Check" (See page <xref label="Seep02" href="RM0000011BV00GX"/>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REV (F13-5) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Reverse signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See "Vehicle Signal Check" (See page <xref label="Seep03" href="RM0000011BV00GX"/>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SWG (F10-6) - Body ground </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SW1 (F10-7) - SWG (F10-6)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No switch is pushed</ptxt>
+<ptxt>→ SEEK+ switch pushed</ptxt>
+<ptxt>→ SEEK- switch pushed</ptxt>
+<ptxt>→ VOL+ switch pushed</ptxt>
+<ptxt>→ VOL- switch pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4 V or more</ptxt>
+<ptxt>→ Approx. 0.5 V</ptxt>
+<ptxt>→ Approx. 0.9 V</ptxt>
+<ptxt>→ Approx. 2.0 V</ptxt>
+<ptxt>→ Approx. 3.4 V </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SW2 (F10-8) - SWG (F10-6)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No switch is pushed</ptxt>
+<ptxt>→ MODE switch pushed</ptxt>
+<ptxt>→ ON HOOK switch pushed</ptxt>
+<ptxt>→ OFF HOOK switch pushed</ptxt>
+<ptxt>→ VOICE switch pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4 V or more</ptxt>
+<ptxt>→ Approx. 0.5 V</ptxt>
+<ptxt>→ Approx. 0.9 V</ptxt>
+<ptxt>→ Approx. 2.0 V</ptxt>
+<ptxt>→ Approx. 3.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IVO+ (F10-11) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice guidance signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice guidance is playing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IVO- (F10-12) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice guidance signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice guidance is playing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLD1 (F10-13) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shielded - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voice sound signal shielded ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B (F9-1) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L-Y - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL+ (F9-2) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (IG)</ptxt>
+<ptxt>Light control switch OFF → TAIL or ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ATX+ (F9-5) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVC-LAN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MUTE (F9-7) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mute signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing → Changing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Above 3.5 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R+ (F9-8) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L+ (F9-9) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLD (F9-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shielded - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shielded ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (F9-11) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accessory (ON)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch off → on (ACC or IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL- (F9-12) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (IG)</ptxt>
+<ptxt>Light control switch OFF → TAIL or ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V →10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ANT (F9-13) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of antenna</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radio switch ON and AM or FM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ATX- (F9-15) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>AVC-LAN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R- (F9-18) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L- (F9-19) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND (F9-20) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIC- (F12-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Microphone voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See "Microphone Check" (See page <xref label="Seep05" href="RM0000011BW00EX"/>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW- (F12-12) - GND (F9 -20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Telephone relation switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MACC (F12-17) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Microphone AMP power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch off → on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SGND (F12-18) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIC+ (F12-19) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Microphone voice signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See "Microphone Check" (See page <xref label="Seep04" href="RM0000011BW00EX"/>)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VAR+ (F14-2) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Right)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is playing (When stereo jack is used)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sounds is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VAL+ (F14-3) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sound signal (Left)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is playing (When stereo jack is used)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A waveform synchronized with sound is output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VA- (F14-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shielded ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ADPG (F14 - 6) - GND (F9-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device connection detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>External device is connected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>STEREO COMPONENT AMPLIFIER (See page <xref label="Seep06" href="RM0000012A700EX"/>)</ptxt>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

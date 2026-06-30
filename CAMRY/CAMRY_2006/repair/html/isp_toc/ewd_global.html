@@ -1,0 +1,63 @@
+<!-- $Id: ewd_global.html,v 1.5 2004/04/26 05:02:36 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 Install/Remove                                                  -->
+<!--    001 Print                                                           -->
+<!--    002 Close                                                           -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Menu Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var rmvTitle   = null;
+var rmvSection = null;
+function setLinks(ttlId) {
+	var rmvList = parent.g_tocXml.selectNodes("//ttl[@id='"+ttlId+"']/para[@category='A']");
+	if (rmvList.length==0) {
+		rmv.style.visibility = "hidden";
+	}
+	rmvTitle = ttlId;
+	rmvSection = ttlId.split("_")[0]+"_"+ttlId.split("_")[1];
+}
+
+function openInstallRemove() {
+	if (rmvTitle==null || rmvSection==null) return;
+	var param = parent.getDefaultParameter(parent.g_term, parent.g_vin, parent.g_filter);
+	param += ((param.length==0) ? "?" : "&")
+				+ "section=" + rmvSection + "&ttl=" + rmvTitle;
+	parent.openNewWindow("../rmv_ctt/frame.html"+param, "", null, null, null)
+
+}
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td></td></tr>
+	<tr>
+		<td align="center">
+			<table width="98%" cellpadding="2" cellspacing="0" border="0">
+				<tr>
+					<td width="2"><br></td>
+					<td id="rmv" width="33%" align="left">	
+						<a class="popup-button" href="#" onClick="openInstallRemove();">Install/Remove</a><!-- 000 -->
+					</td>
+					<td width="33%" align="center">	
+						<a class="window-control-button" href="#" onClick="parent.framePrint(parent.contents);">Print</a><!-- 001 -->
+					</td>
+					<td width="33%" align="right">	
+						<a class="window-control-button" href="#" onClick="parent.window.close();">Close</a><!-- 002 -->
+					</td>
+					<td width="2"><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

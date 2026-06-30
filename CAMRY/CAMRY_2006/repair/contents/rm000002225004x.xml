@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000002225004X" category="J" type-id="301YT" name-id="ES3S3-05" from="200601">
+<dtccode/>
+<dtcname>ACIS Control Circuit</dtcname>
+<subpara id="RM000002225004X_01" type-id="60" category="03" proc-id="RM0250U___0000B0400000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit opens and closes the Intake Air Control Valve (IACV) in response to changes in the engine load in order to increase the intake efficiency (ACIS: Acoustic Control Induction System).</ptxt>
+<ptxt>When the engine speed is between 0 and 4,450 rpm and the throttle valve opening angle is 60° or more, the ECM supplies current to the VSV (ON status), to close the IACV. Under other conditions, the VSV is usually OFF and the IACV is open.</ptxt>
+<figure>
+<graphic graphicname="G041080E04" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002225004X_02" type-id="32" category="03" proc-id="RM0250U___0000B0500000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A137320E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002225004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000002225004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002225004X_04_0001" proc-id="RM0250U___0000B0600000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (OPERATE VSV FOR ACIS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / INTAKE CTL VSC48. Operate the VSV for AICS.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Operational noise can be heard.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002225004X_04_0002" fin="false">NG</down>
+<right ref="RM000002225004X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000002225004X_04_0002" proc-id="RM0250U___0000B0700000">
+<testtitle>CHECK INTAKE AIR CONTROL VALVE (OPERATION)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C48 air intake valve connector.</ptxt>
+<figure>
+<graphic graphicname="E121181E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply battery voltage between the terminals of the air intake valve connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the air intake valve operation.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Operational noise can be heard.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002225004X_04_0003" fin="false">OK</down>
+<right ref="RM000002225004X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002225004X_04_0003" proc-id="RM0250U___0000B0800000">
+<testtitle>CHECK HARNESS AND CONNECTOR (VSV FOR ACIS - ECM, VSV FOR ACIS - EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the wire harness and connectors between the VSV for ACIS and ECM.</ptxt>
+<figure>
+<graphic graphicname="A137082E01" width="2.775699831in" height="8.799559038in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the C48 VSV for ACIS connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance between the terminals of the VSV for ACIS connector and ECM connector.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV for ACIS (C48-1) - ACIS (C55-107)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV for ACIS (C48-1) or ACIS (C55-107) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the VSV for ACIS connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the EFI No. 3 fuse.</ptxt>
+<test2>
+<ptxt>Remove the EFI No. 3 fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the EFI No. 3 fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the EFI No. 3 fuse</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the wire harness between the VSV for ACIS connector and EFI MAIN relay.</ptxt>
+<test2>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the C48 VSV connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV for ACIS (C48-2) - 1E-6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test2>
+<test2>
+<ptxt>Reconnect the VSV connector.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002225004X_04_0004" fin="true">OK</down>
+<right ref="RM000002225004X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002225004X_04_0004">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002225004X_04_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE<xref label="Seep01" href="RM000002205002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002225004X_04_0006">
+<testtitle>REPLACE INTAKE AIR SURGE TANK</testtitle>
+</testgrp>
+<testgrp id="RM000002225004X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

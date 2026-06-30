@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000YA100NX" category="J" type-id="304VK" name-id="ST0YQ-01" from="200601">
+<dtccode/>
+<dtcname>Engine does not Start</dtcname>
+<subpara id="RM000000YA100NX_01" type-id="60" category="03" proc-id="RM0250U___00009K500000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<step1>
+<ptxt>ENGINE START SYSTEM FUNCTION</ptxt>
+<step2>
+<ptxt>If the engine switch is pressed with the shift lever in the P or N position and the brake pedal depressed, the main body ECU determines that it is an engine start request.</ptxt>
+</step2>
+<step2>
+<ptxt>The certification ECU and other ECUs perform key verification via the LIN communication line.</ptxt>
+</step2>
+<step2>
+<ptxt>The main body ECU activates the ACC relay.</ptxt>
+</step2>
+<step2>
+<ptxt>The main body ECU activates the IG1 and IG2 relays.</ptxt>
+</step2>
+<step2>
+<ptxt>The certification ECU outputs a steering UNLOCK signal. The signal is sent to the main body ECU via the steering lock ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>The main body ECU sends an engine start request signal to the ECM.</ptxt>
+</step2>
+<step2>
+<ptxt>The ECM sends an ACC cut request signal to the main body ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>The ECM and main body ECU activate the ST relay.</ptxt>
+</step2>
+<step2>
+<ptxt>The main body ECU deactivates the ACC relay until the ECU detects an engine start.</ptxt>
+</step2>
+<step2>
+<ptxt>When engine revolution speed reaches 1200 rpm, the ECM determines that the engine has been started.</ptxt>
+<ptxt>The ECM stop sending an ACC cut request signal to the main body ECU.</ptxt>
+<ptxt>The main body ECU reactivates the ACC relay and turns off the engine switch indicator light, when engine revolution speed reaches 800 rpm.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols of main body ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signals</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>STP</ptxt>
+</entry>
+<entry>
+<ptxt>Stop light switch ON signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>SSW1/SSW2</ptxt>
+</entry>
+<entry>
+<ptxt>Engine switch ON signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ACCD</ptxt>
+</entry>
+<entry>
+<ptxt>ACC relay operation signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>IG2D</ptxt>
+</entry>
+<entry>
+<ptxt>IG2 relay operation signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>STR2</ptxt>
+</entry>
+<entry>
+<ptxt>ST relay operation signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>STR</ptxt>
+</entry>
+<entry>
+<ptxt>Park/neutral position switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>TACH</ptxt>
+</entry>
+<entry>
+<ptxt>Engine start detection signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>STSW</ptxt>
+</entry>
+<entry>
+<ptxt>Starter activation request signal</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ACCR</ptxt>
+</entry>
+<entry>
+<ptxt>ACC cut request signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<figure>
+<graphic graphicname="B137946E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="B137970E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YA100NX_02" type-id="32" category="03" proc-id="RM0250U___00009K600000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>See CRANKING HOLDING FUNCTION CIRCUIT (See page <xref label="Seep01" href="RM000000WZ3011X"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000YA100NX_03" type-id="51" category="05" proc-id="RM0250U___0000BEP00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<step1>
+<ptxt>EMERGENCY ENGINE START CONTROL</ptxt>
+<step2>
+<ptxt>If there is a malfunction in the stop light switch or STOP fuse, their signals may not be correctly transmitted to the main body ECU. This may result in the engine not starting even if the engine switch is pressed while the brake pedal is depressed and the shift lever is in the P position.</ptxt>
+<ptxt>To activate the starter:</ptxt>
+<step3>
+<ptxt>Turn the engine switch from off to on (ACC).</ptxt>
+</step3>
+<step3>
+<ptxt>Press and hold the engine switch for 15 seconds.</ptxt>
+</step3>
+</step2>
+</step1>
+<atten4>
+<ptxt>After the main body ECU, certification ECU, steering lock ECU, ID code box and/or ECM are/is replaced, perform the registration procedures for the engine immobiliser system (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000YA100NX_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000YA100NX_07_0065" proc-id="RM0250U___0000BEQ00000">
+<testtitle>CHECK ENTRY FUNCTION DETECTION AREA</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect entry detection area.</ptxt>
+<figure>
+<graphic graphicname="B137958E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>When the electrical key is in either of the 2 inspection points in the illustration, the shift lever is in the P position and the brake pedal is depressed, check that the engine switch indicator illuminates in green.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine switch illuminates in green.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the engine switch does not illuminate, perform troubleshooting according to the PROBLEM SYMPTOMS TABLE (See page <xref label="Seep01" href="RM000000XI600OX"/>).</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0005" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0059" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0005" proc-id="RM0250U___00009KA00000">
+<testtitle>CHECK IF ENGINE STARTS (INITIALIZE STEERING LOCK)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Make sure that the shift lever is in the P position.</ptxt>
+</test1>
+<test1>
+<ptxt>Open and close the driver's door with the engine switch off. Check if the engine can be started.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine can be started.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>After the battery is discharged and then recharged, the engine may not start unless the steering lock is initialized using the above procedure (See page <xref label="Seep01" href="RM000001PWX002X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0001" fin="false">NG</down>
+<right ref="RM000000YA100NX_07_0058" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0001" proc-id="RM0250U___00009K700000">
+<testtitle>CHECK FOR DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000000YEH00LX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTCs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC is output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If smart key system (start) DTCs are output (See page <xref label="Seep02" href="RM000000XIZ00PX"/>).</ptxt>
+</item>
+<item>
+<ptxt>If smart key system (entry) DTCs are output (See page <xref label="Seep03" href="RM000000TNR00CX"/>).</ptxt>
+</item>
+<item>
+<ptxt>If electrical steering lock DTCs are output (See page <xref label="Seep06" href="RM0000027KJ000X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If engine immobiliser system DTCs are output (See page <xref label="Seep04" href="RM000000XWM008X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If engine control system DTCs are output (See page <xref label="Seep05" href="RM000002203002X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0002" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0002" proc-id="RM0250U___00009K800000">
+<testtitle>CHECK ENGINE SWITCH CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the power source mode change.</ptxt>
+<test2>
+<ptxt>When the key is inside the vehicle and the shift lever is in the P position, check that pressing the engine switch causes the power source mode to change as follows:</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>off → on (ACC) → on (IG) → off</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If power mode does not change to ON (IG and ACC) (See page <xref label="Seep01" href="RM0000020S9004X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If power mode does not change to ON (IG) (See page <xref label="Seep02" href="RM0000020SA004X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If power mode does not change to ON (ACC) (See page <xref label="Seep03" href="RM0000020SB004X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0004" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0059" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0004" proc-id="RM0250U___00009K900000">
+<testtitle>CHECK CRANKING FUNCTION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the engine cranking function.</ptxt>
+<test2>
+<ptxt>When there is fuel in the fuel tank, the key is inside the vehicle, and the shift lever is in the P position, check that depressing the brake pedal and pressing the engine switch crank the engine.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine cranks.</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0048" fin="false">NG</down>
+<right ref="RM000000YA100NX_07_0035" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0048" proc-id="RM0250U___00009KM00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (P SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DATA LIST according to the displays on the tester screen.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SHIFT P SIG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift P signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Shift position is P</ptxt>
+<ptxt>OFF: Shift position is not P</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>ON (P signal is ON) and OFF (P signal is OFF) appear on the screen.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, perform troubleshooting for DTC B2281 first (See page <xref label="Seep01" href="RM000001LV2001X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0025" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0070" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0025" proc-id="RM0250U___00009KD00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (STOP LIGHT SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DATA LIST for proper functioning of the stop light switch.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STOP LAMP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light Switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>ON (brake pedal depressed) and OFF (brake pedal released) appear on the screen.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, perform troubleshooting for DTC B2284 first (See page <xref label="Seep01" href="RM000000XEW00IX"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0026" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0071" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0026" proc-id="RM0250U___00009KE00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (STEERING LOCK)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STR UNLOCK SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock condition / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Steering is unlocked (Engine switch on (ACC))</ptxt>
+<ptxt>OFF: Steering is locked (Engine switch off)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>ON (steering is unlocked) and OFF (steering is locked) appear on the screen.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, perform troubleshooting for DTCs B2285 and B2288 first (See page <xref label="Seep01" href="RM000000XIZ00PX"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0027" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0072" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0027" proc-id="RM0250U___00009KF00000">
+<testtitle>CHECK STEERING LOCK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the steering lock is released when turning the engine switch on (ACC).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The steering lock is released.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0066" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0060" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0066" proc-id="RM0250U___0000BEF00000">
+<testtitle>INSPECT MAIN BODY ECU (STSW VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="B138004E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E9-4 (STSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal depressed, engine switch held on (ST)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage at terminal AM1 or AM2 is -2 V or more.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, perform troubleshooting for DTC B2275 first (See page <xref label="Seep01" href="RM000001LUZ001X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0049" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0073" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0049" proc-id="RM0250U___00009KN00000">
+<testtitle>INSPECT ECM (ACCR VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the connector.</ptxt>
+<figure>
+<graphic graphicname="B138007E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ACCR (E6-3) - GND2 (IM-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal depressed, shift lever P position, engine switch is pushed once → on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.1 to 0.8 V*<sup>1</sup> → Output voltage at terminal AM1 or AM2 is -2 V or more.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*<sup>1</sup>: Voltage is output only when the engine is cranking.</ptxt>
+<atten4>
+<ptxt>If the result is not as specified, perform troubleshooting for DTC B2276 first (See page <xref label="Seep01" href="RM000001LV8001X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0067" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0074" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0067" proc-id="RM0250U___0000BEG00000">
+<testtitle>INSPECT ECM (STR2 VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B138004E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STR2 (E9-6) - GND2 (IM-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal depressed, shift lever P or N position, engine switch on (ST)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage at terminal AM1 or AM2 is -3.5 V or more.*<sup>1</sup>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*<sup>1</sup>: Voltage is output for 0.3 seconds when the engine is cranking to start.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0068" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0061" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0068" proc-id="RM0250U___0000BER00000">
+<testtitle>CHECK WIRE HARNESS (MAIN BODY ECU -ECM - ENGINE ROOM R/B)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST CUT relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B138009E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C55-63 (STAR) - E9-6 (STR2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C55-63 (STAR) - ST CUT relay terminal - 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C55-63 (STAR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0023" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0018" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0023" proc-id="RM0250U___00009KC00000">
+<testtitle>INSPECT RELAY (ST CUT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance of the ST CUT relay.</ptxt>
+<figure>
+<graphic graphicname="B016200E23" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(when battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0050" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0039" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0050" proc-id="RM0250U___00009KO00000">
+<testtitle>INSPECT PARK/NEUTRAL POSITION SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the park/neutral position (PNP) switch connector.</ptxt>
+<figure>
+<graphic graphicname="B138018E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according the the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except P and N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0051" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0069" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0051" proc-id="RM0250U___0000BES00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PARK/NEUTRAL POSITION SWITCH - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="B138010E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C55-62 (NSW) - C1-4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C55-62 (NSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0022" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0018" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0022" proc-id="RM0250U___00009KB00000">
+<testtitle>INSPECT RELAY (ST)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the starter relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B016200E23" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the starter relay.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(when battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0052" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0039" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0052" proc-id="RM0250U___00009KP00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM AND STARTER - ST RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="B138011E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C3 starter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according the the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A55-48 (STA) - ST relay terminal - 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A55-48 (STA) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C3-1 - ST relay terminal - 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C3-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0053" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0018" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0053" proc-id="RM0250U___00009KQ00000">
+<testtitle>INSPECT ENGINE ROOM RELAY BLOCK (ST RELAY VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B138012E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ST relay terminal - 5 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0054" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0018" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0054" proc-id="RM0250U___00009KR00000">
+<testtitle>INSPECT STARTER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>See page <xref label="Seep01" href="RM000001QLZ002X"/>.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0055" fin="true">OK</down>
+<right ref="RM000000YA100NX_07_0063" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0055">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (PNP SWITCH - ST RELAY, STARTER - BATTERY)</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0035" proc-id="RM0250U___00009KI00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (L CODE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<atten4>
+<ptxt>When using the intelligent tester with the engine switch off, turn on and off any of the door courtesy light switches repeatedly at 1.5 second intervals or less until communication between the tester and vehicle starts.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+<table pgwide="1">
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>L CODE CHK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L code check / ON or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Normal</ptxt>
+<ptxt>NG: Malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Electrical key in the cabin</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>OK is displayed on the screen.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction with the steering lock ECU or the ID code box.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0036" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0036" proc-id="RM0250U___00009KJ00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (ENGINE START REQUEST)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<atten4>
+<ptxt>When using the intelligent tester with the engine switch off, turn on and off any of the door courtesy light switches repeatedly at 1.5 second intervals or less until communication between the tester and vehicle starts.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+<table pgwide="1">
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>START RQST</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start request signal response / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Received</ptxt>
+<ptxt>NG: Not received</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>OK (received) and NG (not received) appear on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0037" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0044" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0037" proc-id="RM0250U___00009KK00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (S CODE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<atten4>
+<ptxt>When using the intelligent tester with the engine switch off, turn on and off any of the door courtesy light switches repeatedly at 1.5 second intervals or less until communication between the tester and vehicle starts.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+<table pgwide="1">
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S CODE CHK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>S code check / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Normal</ptxt>
+<ptxt>NG: Malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>OK is displayed on the screen.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the result is not as specified, there may be a malfunction with the certification ECU or the ID code box.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0038" fin="false">OK</down>
+<right ref="RM000000YA100NX_07_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0038" proc-id="RM0250U___00009KL00000">
+<testtitle>INSPECT ID CODE BOX</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the input signal waveform.</ptxt>
+<figure>
+<graphic graphicname="B138013E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Connect an oscilloscope to terminal E50-6 (EFIO) and body ground.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test2>
+<test2>
+<ptxt>Check the signal waveform according to the condition(s) in the table below.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV., 100 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA100NX_07_0058" fin="true">OK</down>
+<right ref="RM000000YA100NX_07_0045" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0058">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0011">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0059">
+<testtitle>GO TO OTHER PROBLEM</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0060">
+<testtitle>GO TO STEERING LOCK SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0061">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0018">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0039">
+<testtitle>REPLACE RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0063">
+<testtitle>REPAIR OR REPLACE STARTER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0016">
+<testtitle>GO TO ENGINE IMMOBILISER SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0044">
+<testtitle>REPLACE CERTIFICATION ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0010">
+<testtitle>GO TO ENGINE IMMOBILISER SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0045">
+<testtitle>REPLACE ID CODE BOX</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0069">
+<testtitle>REPLACE PARK/NEUTRAL POSITION SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0070">
+<testtitle>GO TO DTC B2281</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0071">
+<testtitle>GO TO DTC B2284</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0072">
+<testtitle>GO TO DTC B2285</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0073">
+<testtitle>GO TO DTC B2275</testtitle>
+</testgrp>
+<testgrp id="RM000000YA100NX_07_0074">
+<testtitle>GO TO DTC B2276</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

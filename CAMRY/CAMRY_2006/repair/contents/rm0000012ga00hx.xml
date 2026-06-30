@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002T_S001K" variety="S001K">
+<name>OTHER SYSTEM</name>
+<ttl id="1002T_S001K_72YEU_T009D" variety="T009D">
+<name>CLOCK</name>
+<para id="RM0000012GA00HX" category="U" type-id="3001G" name-id="OT04U-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000012GA00HX_z0" proc-id="RM0250U___000078E00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CLOCK ASSEMBLY</ptxt>
+<figure>
+<graphic graphicname="E128062E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B (F3-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>ACC (F3-2) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Ignition switch signal (Accessory)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>ILL+ (F3-4) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>O - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Illumination signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), light control switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), cover the automatic light control sensor by hand, and light control switch TAIL/HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (F3-19) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

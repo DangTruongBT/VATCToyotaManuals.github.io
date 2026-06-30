@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7K01WX" category="D" type-id="304R5" name-id="AT033-59" from="200601">
+<name>MONITOR DRIVE PATTERN</name>
+<subpara id="RM000000W7K01WX_z0" proc-id="RM0250U___00003AM00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>MONITOR DRIVE PATTERN FOR ECT TEST</ptxt>
+<step2>
+<ptxt>Perform this drive pattern as one method to simulate the detection conditions of the ECT malfunctions. (The DTCs may not be detected due to differences from the actual driving conditions. Some codes may not be detected using this drive pattern.)</ptxt>
+<atten4>
+<ptxt>Preparation for driving</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Warm up the engine sufficiently. (Engine coolant temperature should be 60°C (140°F) or higher)</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle when the atmospheric temperature is -10°C (14°F) or higher. (Malfunction may not be detected when the atmospheric temperature is less than -10°C (14°F))</ptxt>
+</item>
+</list1>
+<ptxt>Notice on driving</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Drive the vehicle through all gears.</ptxt>
+<ptxt>Stop to 1st to 2nd to 3rd to 4th to 5th to 6th (lock-up ON).</ptxt>
+</item>
+<item>
+<ptxt>Confirm engine braking using the S position.</ptxt>
+<ptxt>While driving in the 6 (S) position and 6th gear lock-up, shift to the "-" position to down-shift from 6th to 5th, 5th to 4th, 4th to 3rd, 3rd to 2nd, 2nd to 1st.</ptxt>
+<ptxt>Check that proper engine braking occurs whenever down-shift takes place.</ptxt>
+</item>
+<item>
+<ptxt>Repeat the above driving pattern three times or more.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The monitor status can be checked using the intelligent tester. When using the intelligent tester, monitor status can be found in "OBD/MOBD / ECT / DATA LIST".</ptxt>
+</item>
+<item>
+<ptxt>In the event that the drive pattern must be interrupted (possibly due to traffic conditions or other factors), the drive pattern can be resumed and, in most cases, the monitor can be completed.</ptxt>
+</item>
+<item>
+<ptxt>Perform this drive pattern on a road with the fewest hills possible and strictly observe the posted speed limits and traffic laws while driving.</ptxt>
+</item>
+</list1>
+</atten3>
+<figure>
+<graphic graphicname="G031593E30" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<atten4>
+<ptxt>*1: Drive the vehicle at a sufficient speed in the uppermost gear, to allow lock-up to engage. The vehicle can be driven at a speed lower than that in the above diagram under the lock-up condition.</ptxt>
+</atten4>
+<atten3>
+<ptxt>It is necessary to drive the vehicle for approximately 30 minutes to detect DTC P0711 (ATF temperature sensor malfunction).</ptxt>
+</atten3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

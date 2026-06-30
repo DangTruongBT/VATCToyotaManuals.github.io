@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_731VN_T00FU" variety="T00FU">
+<name>THROTTLE BODY</name>
+<para id="RM0000012NA004X" category="G" type-id="8000T" name-id="ES10C-05" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000012NA004X_01" type-id="01" category="01">
+<s-1 id="RM0000012NA004X_01_0001" proc-id="RM0250U___0000B5A00000">
+<ptxt>INSPECT THROTTLE BODY ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Listen to the throttle control motor operating sounds.</ptxt>
+<s3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s3>
+<s3>
+<ptxt>When pressing the accelerator pedal position sensor lever, listen to the running motor. Make sure that no friction noise comes from the motor.</ptxt>
+<ptxt>If friction noise exists, replace the throttle body assembly.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect the throttle position sensor.</ptxt>
+<s3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G041046E29" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the MIL turns off.</ptxt>
+</s3>
+<s3>
+<ptxt>Under CURRENT DATA, the throttle valve opening percentage (THROTTLE POS) should be within the standard range below.</ptxt>
+<spec>
+<title>Standard throttle valve opening percentage</title>
+<specitem>
+<ptxt>60% or more</ptxt>
+</specitem>
+</spec>
+<ptxt>If the percentage is less than 60%, replace the throttle body assembly.</ptxt>
+<atten3>
+<ptxt>When checking the throttle valve opening percentage, the transmission should be in neutral.</ptxt>
+</atten3>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

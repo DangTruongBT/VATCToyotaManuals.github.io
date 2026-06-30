@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000012G300CX" category="D" type-id="303F2" name-id="ME02N-09" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM0000012G300CX_z0" proc-id="RM0250U___00007TP00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>METER GAUGE</ptxt>
+<figure>
+<graphic graphicname="E128076E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="E128139E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<title>METER GAUGE:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detail</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Speedometer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the vehicle speed receiving a signal from the skid Control ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tachometer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the engine speed based on a signal received from the ECM. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine Coolant Temperature Receiver Gauge</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the engine coolant temperature based on a signal received from the ECM. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel Receiver Gauge</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicates the fuel level based on a signal the fuel sender gauge. (Direct Line)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>WARNING/INDICATOR:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detail</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TURN SIGNAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a turn signal from the turn signal flasher. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BEAM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a beam signal from the main body ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CHARGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a charge light signal from the alternator L terminal. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CHECK E/G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a check engine light signal from the ECM. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DOOR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open door indicator light comes on receiving a door condition signal from the main body ECU. (CAN (CAN MS Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D-BELT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a driver side seat belt signal from the center airbag sensor assembly. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P-BELT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a passenger side seat belt signal from the center airbag sensor assembly via the main body ECU (CAN) and transmits a passenger side seat belt condition signal to the clock assembly. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HEAD (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a HEAD indicator light signal from main body ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TAIL (*2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a TAIL indicator light signal from the main body ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A/T SHIFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives an A/T shift condition and A/T gear position signal from the park/neutral position switch and the ECM. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FUEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a fuel signal from the fuel sender gauge. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ABS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives an ABS signal from the skid Control ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIP (*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a SLIP signal from the skid Control ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC (*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a VSC signal from the skid Control ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a brake signal from the brake fluid level warning switch (Direct Line) and the skid Control ECU and main body ECU. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CRUISE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a cruise signal from the ECM. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AIRBAG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives an airbag signal from the center airbag sensor assembly. (CAN (CAN No. 1 Bus))</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Oil pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives an oil pressure signal from the engine oil pressure switch. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure (*4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a tire pressure signal from the tire pressure warning ECU. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Washer (*5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives a washer signal from the washer level warning switch. (Direct Line)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Maintenance required (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>An oil change reminder light comes on/blinks to remind the driver to change the engine oil depending on the vehicle driving distance. </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for U.S.A.</ptxt>
+<ptxt>*2: except for U.S.A.</ptxt>
+<ptxt>*3: with VSC</ptxt>
+<ptxt>*4: with Tire Pressure Warning System</ptxt>
+<ptxt>*5: with Washer Level Indicator</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The multi-information display has been located in the center of the combination meter assembly.</ptxt>
+</item>
+<item>
+<ptxt>The display shows a message or animation for each of the functions described in the table below.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<title>MULTI-INFORMATION DISPLAY:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry align="center">
+
+<ptxt>Detail</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Door warning</ptxt>
+</entry>
+<entry>
+<ptxt>When a door (driver/passenger/rear left/rear right/back/hood) of the vehicle is opened or closed, this item displays a warning message and animation to inform the driver of the condition of the door.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Maintenance required (*1)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>A maintenance required will display the warning message to remind the driver to change the engine oil depending on the vehicle driving distance.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Displays the mode while in the maintenance request reset mode.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ODO/TRIP display</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>This display switches between odometer, trip meter A, and trip meter B in accordance with the operation of the ODO/TRIP switch.</ptxt>
+</item>
+<item>
+<ptxt>It is possible to reset the trip display to keep pressing the trip reset knob for 0.8 second or more.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Outside temperature display</ptxt>
+</entry>
+<entry>
+<ptxt>Displays the outside temperature in accordance with the ambient temperature signal from the A/C control amplifier.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Average fuel consumption (after refueling)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Displays the value that has been calculated by the meter CPU, which is based on the driven distance and the fuel consumption volume after the ignition switch is on (IG).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The average fuel consumption exceeds 99.9 or more, the indication will be "99.9".</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Possible running distance</ptxt>
+</entry>
+<entry>
+<ptxt>Displays the value that has been calculated by the meter CPU, which is based on the the fuel consumption volume, fuel level, and vehicle speed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cruising distance</ptxt>
+</entry>
+<entry>
+<ptxt>Displays the cruising distance after starting the engine.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Average vehicle speed</ptxt>
+</entry>
+<entry>
+<ptxt>Displays the average vehicle speed after starting the engine.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Warning message</ptxt>
+</entry>
+<entry>
+<ptxt>Illuminates or blinks the master warning light and displays a warning message for each type of system failure.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (Diagnostic Trouble Code) display (*3)</ptxt>
+</entry>
+<entry>
+<ptxt>Displays the DTCs pertaining to the VSC function.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for U.S.A.</ptxt>
+<ptxt>*2: Except for U.S.A.</ptxt>
+<ptxt>*3: with VSC</ptxt>
+</step1>
+<step1>
+<ptxt>MULTI-INFORMATION DISPLAY</ptxt>
+<figure>
+<graphic graphicname="E128064E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="E128065E01" width="7.106578999in" height="9.803535572in"/>
+</figure>
+<figure>
+<graphic graphicname="E132650E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="E128066E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</step1>
+<step1>
+<ptxt>DIAGNOSIS SYSTEM</ptxt>
+<figure>
+<graphic graphicname="E128079" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The multi-information display shows "DIAG" when turn the ignition switch on (IG) (See page <xref label="Seep01" href="RM000000XHV009X"/> for Advics, <xref label="Seep02" href="RM000001NK5001X"/> for Bosch).</ptxt>
+</item>
+<item>
+<ptxt>Diagnosis information can be displayed on the multi-information display after connecting a jumper wire between TC and CG of the DLC3 connector.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

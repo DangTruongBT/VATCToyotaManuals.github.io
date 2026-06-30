@@ -1,0 +1,42 @@
+<!-- $Id: tps_contents.html,v 1.7 2005/01/13 06:28:44 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Technical Tips-</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script language="javascript">
+//
+//  初期化
+//
+function init() {
+	var args = window.dialogArguments;
+	if (args == null || args.length == 0 ) return;
+	var tipsXml   = args[0];
+	var dispPage  = "";
+	var objXsl    = initXsl("../../xsl/utl/tips.xsl");
+	ttl.innerHTML = args[1];
+	display(tipsXml, objXsl, disp, null);
+}
+
+function openTips(url) {
+	parent.window.close();
+	openNewWindow(url, "");
+}
+</script>
+</head>
+<body onLoad="init();">
+	<p id="ttl" class='location'></p>
+	<div id="disp"></div>
+</body>
+</html>

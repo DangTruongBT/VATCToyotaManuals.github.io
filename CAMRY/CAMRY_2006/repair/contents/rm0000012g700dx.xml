@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000012G700DX" category="U" type-id="303FJ" name-id="ME02T-12" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM0000012G700DX_z0" proc-id="RM0250U___00007RW00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<ptxt>According to the DATA LIST displayed by the intelligent tester, you can read the values of the switches, sensors, actuators and so on without parts removal. Reading the DATA LIST as the first step of troubleshooting is one method to shorten work time.</ptxt>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter following menus: DIAGNOSIS / OBD/MOBD / METER / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Check values by referring to the table below.</ptxt>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>TAIL CANCEL SW</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Tail cancel switch is ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rheostat knob turns fully clockwise</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF: Rheostat knob turns fully counterclockwise</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>ODO/TRIP SW</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>ODO/TRIP switch is ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Switch is pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF: Switch is released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>P-BELT BUCKL SW</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Front passenger buckle switch is ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Seat belt is fastened</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF: Seat belt is unfastened</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPEED METER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed/Min.: 0 km/h (0 mph), Max.: 255 km/h (158 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost same as actual vehicle speed (When driving)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>If data received from the skid control ECU exceeds the range that can be displayed on the meter, the meter continues to display the maximum value of the range.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TACHO METER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed/Min.: 0 rpm, Max.: 12,750 rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Almost same at the meter rpm (When engine is running)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>If data received from the ECM exceeds the range that can be displayed on the meter, the meter continues to display the maximum value of the range.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature/Min.: 0°C (32°F), Max.: 127.5°C (261.5°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>After warming up: 78°C (172.4°F) to 105°C (221°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<list1 type="unordered">
+<item>
+<ptxt>If -40°C (-40°F): sensor circuit open</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If 140°C (284°F) or more: sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>WASHER SW</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Washer level switch is ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Washer level is more than low</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF: Washer level is less than low</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>MULTI DISP SW </ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>MODE switch in the steering pad is ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Mode switch is ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF: Mode switch is OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B VOLTAGE VAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery voltage/Min.: 0 V, Max.: 25.5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OIL MAINTENANCE (*)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Oil maintenance warning value: Min.: 0, Max. 25500 (mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The running distance after performing oil maintenance resetting procedure is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>If the value is 5,000 or  more, perform oil maintenance resetting procedure after changing the oil.		 		</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle">
+<ptxt>FUEL GAUGE</ptxt>
+</entry>
+<entry morerows="4" valign="middle">
+<ptxt>Fuel input signal Min.: 0, Max. 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel gauge indicates (F): 35</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel gauge indicates (3/4): 85</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel gauge indicates (1/2): 145</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel gauge indicates (1/4): 186</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel gauge indicates (E): 205</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AMBIENT TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outside temperature: Min.: -40°C (-40°F) to 87.5°C (189.5°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost same as actual outside temperature</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>The temperature displayed on the multi-information display is -22 to 122°C (-30 to 50 °F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RHEOSTAT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light Control Rheostat/Min.: 0%, Max.: 100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control rheostat switch is Dark (0%) → Bright (100%)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OUTSIDE LIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Quantity of outside light/Min.: 0%, Max.: 100%</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outside light is Dark (0%) → Bright (100%)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>ECM/PCM DTC 1 to 3</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Communication error: not occurred/occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not occurred: Unrec</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Occurred: Rec</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECM/PCM ODO 1 to 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance when DTC is output Min.: 0, Max.: 999999</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>ABS/VSC DTC 1 to 3</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Communication error: not occurred/occurred</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not occurred: Unrec</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Occurred: Rec</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ABS/VSC ODO 1 to 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance when DTC is output Min.: 0, Max.: 999999</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KEY REMND SOUND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The cycle of the key reminder warning buzzer is FAST, NORMAL, SLOW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The customized setting of the cycle of the key reminder warning buzzer is displayed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEAT-BELT WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The volume of the seat belt warning buzzer is D/P ON, D ON, P ON, D/P OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The customized setting of the volume of the seat belt warning buzzer is displayed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CODES#</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The number of the DTC which is currently output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KEY REMND VOLUM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The volume of the key reminder warning buzzer is LARGE, MEDIUM, SMALL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The customized setting of the volume of the key reminder warning buzzer is displayed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ABS/TRAC/VSC:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>FR/FL/RR/RL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed/Min.: 0 km/h (0 mph), Max.: 326 km/h (202 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost same as actual vehicle speed (When driving)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed/Min.: 0 km/h (0 mph), Max.: 326 km/h (202 mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost same as actual vehicle speed (When driving)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ECM:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ENGINE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed/Min.: 0 rpm, Max.: 16,383.75 rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Almost same as actual engine speed (When driving)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature:</ptxt>
+<ptxt>Min.: -40°C (-40°F), Max.: 140°C (284°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>80 to 100°C (176 to 212°F):</ptxt>
+<ptxt> After warming up</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>If -40°C (-40°F): sensor circuit open</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If 140°C (284°F) or more: sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows the meters, indicators and so on to operate without parts removal. Performing the ACTIVE TEST as the first step of troubleshooting is one way to shorten labor time.</ptxt>
+<ptxt>It is possible to display the DATA LIST on the intelligent tester during the ACTIVE TEST.</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter following menus: DIAGNOSIS / OBD/MOBD / METER / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>From the display on the tester, performing the "ACTIVE TEST".</ptxt>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COLSPEC1" colwidth="1.78in"/>
+<colspec colname="COL2" colwidth="1.76in"/>
+<colspec colname="COL3" colwidth="1.79in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>SPEED METER</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Speedometer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0, 40, 80, 120, 160 200 (mph) (*1)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+
+<row>
+<entry valign="middle">
+<ptxt>0, 40, 80, 120, 160, 200, 240 km/h (*2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TACHOMETER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tachometer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0, 1,000, 2,000, 3,000, 4,000, 5,000, 6,000, 7,000 (rpm)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FUEL GAUGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel receiver gauge</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EMPTY, 1/2, FULL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature receiver gauge</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW, NORM, HIGH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/T INDIC (1) (*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/T shift indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/T shift indicator light L, 2, 3, 4, S, D, N, R, P is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/T INDIC (2) (*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/T gear range indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/T gear range indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center"/>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>METER DISPLAY 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Multi-information display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All the dot in the multi-information display OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>METER DISPLAY 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/T shift indicator display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All the dot in the A/T shift indicator display OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SRS WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Airbag warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Airbag warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OPEN DOOR WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open door indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open door indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P-BELT REMIND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side seat belt warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side seat belt warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D-BELT REMIND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side seat belt warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side seat belt warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ABS WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DISCHARGE WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Charge warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Charge warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC WARN (*4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SLIP INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slip indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slip indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HIGH BEAM INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hi-beam indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hi-beam indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HEADLIGHT INDIC (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Head indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Head indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TAILLIGHT INDIC (*2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tail indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tail indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Fr FOG INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front fog indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front fog indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D/P/RR/RL/LUGG DOOR OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door open warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door open warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LOW WASHER WARN (*5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Low washer fluid warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Low washer fluid warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LOW FUEL WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Low fuel warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIRE PRESS WARN (*6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECB INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CRUISE INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BRAKE WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake warning light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OIL MAINTENANCE (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Maintenance indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Maintenance indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MST WARN INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master caution indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master caution indicator light is OFF/ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confirm that the vehicle is stopped, engine idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for U.S.A.</ptxt>
+<ptxt>*2: for Canada</ptxt>
+<ptxt>*3: for Automatic Transaxle</ptxt>
+<ptxt>*4: without Multi-information Display, with VSC</ptxt>
+<ptxt>*5: with Washer Level Warning Light</ptxt>
+<ptxt>*6: with Tire Pressure Warning System</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DIMMER SIG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> Auto dimmer signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Auto dimmer signal OFF/ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

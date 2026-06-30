@@ -1,0 +1,46 @@
+<!-- $Id: status.html,v 1.4 2004/04/26 05:08:10 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Status Navi</title>
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var DELIM = " &gt; "
+function init() {
+	if (parent.g_paraId==null) return;
+	var paragraphName = "";
+	var nameList = parent.getParagraphNameList(parent.g_paraId, "dtcname", parent.g_objXml);
+	if (nameList==null) return;
+	var dtcCodeList = new Array();
+	if (parent.g_paracat=="C") {
+		dtcCodeList = parent.getParagraphNameList(parent.g_paraId, "dtccode", parent.g_objXml);
+		for (var i=0; i<nameList.length; i++) {
+			var tmpStr = (i<dtcCodeList.length) ?  dtcCodeList[i] : "";
+			nameList[i] = tmpStr + " " + nameList[i];
+		}
+	}
+	for (var i=0; i<nameList.length; i++) {
+		if (i!=0) paragraphName += " / ";
+		paragraphName += nameList[i];
+	}
+	var sectionName = parent.getSectionName(parent.g_paraId, parent.g_objXml);
+	var titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	disp.innerHTML = sectionName + DELIM + titleName + DELIM + paragraphName;
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><div id="disp" class="paragraph-name"></div></td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<TITLE>Control</TITLE>
+	<script type="text/javascript" src="../../scripts/fig/figctrl.js"></script>
+	<script type="text/javascript" src="../../scripts/lib/openwin.js"></script>
+	<script type="text/javascript" src="../../scripts/lib/url.js"></script>
+	<script type="text/javascript" src="../../scripts/lib/hashtable.js"></script>
+	<link rel="stylesheet" href="../../styles/basic.css" />
+</HEAD>
+
+<BODY bgcolor="white" onload="call_runOnLoadProc()">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td align="left">
+				<table border="0">
+					<tr>
+						<td>
+							ZOOM:
+							<select name="d_zoomSelector" onChange="call_zooming()">
+								<option>50%</option>
+								<option>60%</option>
+								<option>80%</option>
+								<option selected>100%</option>
+								<option>150%</option>
+								<option>200%</option>
+								<option>400%</option>
+							</select>
+						</td>
+						<td>
+							<img src="../../icon/plus.png"  id="d_zIn"  title="zoom in" onclick="call_zoomIn()" />
+							<img src="../../icon/minus.png" id="d_zOut" title="zoom out" onclick="call_zoomOut()" />
+							<img src="../../icon/reset.png" id="d_fit"  title="Fit to window" onclick="call_fitToWindow()" />
+							<img src="../../icon/vbar.png" />
+						</td>
+						<td>
+							<img src="../../icon/link.png" id="d_showConnList" title="Show connector list that linked to selected Wire Harness" onclick="call_showConnectList()" height="25" />
+						</td>
+						<td>
+							<table id="page_select">
+								<tr>
+									<td id="page_rect_object" class="ctrl_page_rect">
+										<a id="page_object" class="ctrl_page_no" href="javascript:call_runOnClickPage('object')">1</a>
+									</td>
+									<td id="page_rect_inner" class="ctrl_page_rect">
+										<a id="page_inner"  class="ctrl_page_no" href="javascript:call_runOnClickPage('inner')">2</a>
+									</td>
+									<td id="page_rect_plate" class="ctrl_page_rect">
+										<a id="page_plate"  class="ctrl_page_no" href="javascript:call_runOnClickPage('plate')">3</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td>
+							<table id="fig_select" cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td><input id="fig_back" type="button" value="<" onclick="call_runOnClickFigBack()" /></td>
+									<td><span id="fig_no" style="padding:0px 8px;"></span></td>
+									<td><input id="fig_next" type="button" value=">" onclick="call_runOnClickFigNext()" /></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td align="right">
+				<table border="0">
+					<tr>
+						<td>
+							<a id="btn_outline" href="#" onClick="call_runOnClickSystemOutLine()" class="ewd-button">
+								System Outline
+							</a>
+						</td>
+						<td>
+							<img src="../../icon/vbar.png" />
+							<img src="../../icon/print.png" id="d_print" title="Print" onclick="call_printEWD()" height="25" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</BODY>
+</HTML>

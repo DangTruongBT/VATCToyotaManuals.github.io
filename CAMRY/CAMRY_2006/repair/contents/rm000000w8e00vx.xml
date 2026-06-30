@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000W8E00VX" category="C" type-id="302I1" name-id="ES29G-02" from="200601">
+<dtccode>P0500</dtccode>
+<dtcname>Vehicle Speed Sensor "A"</dtcname>
+<subpara id="RM000000W8E00VX_01" type-id="60" category="03" proc-id="RM0250U___00005JS00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The speed sensor detects the wheel speed and sends the appropriate signals to the skid control ECU. The skid control ECU converts these wheel speed signals into a 4-pulse signal and outputs it to the ECM via the combination meter. The ECM determines the vehicle speed based on the frequency of these pulse signals.</ptxt>
+<figure>
+<graphic graphicname="A079413E16" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" colwidth="1.42in"/>
+<colspec colnum="2" colname="c2" colwidth="2.83in"/>
+<colspec colnum="3" colname="c3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0500</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed signal from vehicle speed sensor is cut for 0.14 sec. or more while cruise control is in operation</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed sensor</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed sensor signal circuit</ptxt>
+</item>
+<item>
+<ptxt>Combination meter</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>Skid control ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_02" type-id="64" category="03" proc-id="RM0250U___00005JT00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM assumes that the vehicle is being driven when the transmission counter gear indicates more than 300 rpm and over 30 seconds have passed since the park/neutral position switch was turned OFF. If there is no signal from the vehicle speed sensor with these conditions satisfied, the ECM concludes that the vehicle speed sensor is malfunctioning. The ECM will turn on the MIL and a DTC will be set.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_03" type-id="65" category="03" proc-id="RM0250U___00005JU00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>P0500: Vehicle Speed Sensor Circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Required sensors / components (Main)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed sensor, Combination meter, ABS ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Required sensors / components (Sub)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Counter gear Speed (CS) sensor, ECT sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>8 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Sequence operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_04" type-id="66" category="03" proc-id="RM0250U___00005JV00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>The monitor will run whenever these DTCs are not present</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>P0100 - P0103 (MAF sensor)</ptxt>
+<ptxt>P0105 - P0108 (MAP sensor)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0120 - P02238 (TP sensor)</ptxt>
+<ptxt>P0125 (VSS/ECT1 sensor, non-ECT)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine coolant temperature</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>70°C (158°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2,000 to 5,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine load</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>30.37 % or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Fuel cut high engine speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Not executing</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ETC sensor circuit fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MAF sensor circuit fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_05" type-id="67" category="03" proc-id="RM0250U___00005JW00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed sensor signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>No pulse input</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_07" type-id="32" category="03" proc-id="RM0250U___00005JX00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A135032E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_08" type-id="51" category="05" proc-id="RM0250U___00005JY00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester or the OBD II scan tool. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00VX_10" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W8E00VX_10_0008" proc-id="RM0250U___0000CJD00000">
+<testtitle>CHECK SPEEDOMETER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Drive the vehicle and check whether the operation of the speedometer in the combination meter is normal.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle speed sensor is operating normally if the speedometer reading is normal.</ptxt>
+</item>
+<item>
+<ptxt>If the speedometer does not operate, check it by following the procedure described in speedometer malfunction.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00VX_10_0009" fin="false">OK</down>
+<right ref="RM000000W8E00VX_10_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0009" proc-id="RM0250U___0000CJE00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (VEHICLE SPEED)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / VEHICLE SPD.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the value displayed on the tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Vehicle speeds displayed on tester and speedometer display are equal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00VX_10_0010" fin="false">OK</down>
+<right ref="RM000000W8E00VX_10_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0010" proc-id="RM0250U___0000CJF00000">
+<testtitle>CHECK COMBINATION METER ASSEMBLY (+S VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the F2 combination meter connector.</ptxt>
+<figure>
+<graphic graphicname="A132286E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminal of the combination meter and body ground.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F2-12 (+S) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the combination meter connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00VX_10_0011" fin="false">OK</down>
+<right ref="RM000000W8E00VX_10_0012" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0011" proc-id="RM0250U___0000CJG00000">
+<testtitle>CHECK COMBINATION METER ASSEMBLY (SPD SIGNAL WAVEFORM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Shift the transmission gear selector lever to the neutral position.</ptxt>
+<figure>
+<graphic graphicname="A132287E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Jack up the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminal of the combination meter and body ground while the wheel is turned slowly.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F2-12 (+S) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage generated intermittently</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The output voltage should fluctuate up and down, similarly to the diagram, when the wheel is turned slowly.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00VX_10_0012" fin="false">OK</down>
+<right ref="RM000000W8E00VX_10_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0012" proc-id="RM0250U___0000CJH00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (COMBINATION METER ASSEMBLY - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the F2 combination meter connector.</ptxt>
+<figure>
+<graphic graphicname="A132288E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+S (F2-12) - SPD (A55-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+S (F2-12) or SPD (A55-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the combination meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00VX_10_0013" fin="true">OK</down>
+<right ref="RM000000W8E00VX_10_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0013">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0014">
+<testtitle>GO TO SPEEDOMETER CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0015">
+<testtitle>CHECK INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0016">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY<xref label="Seep01" href="RM0000024D7000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000W8E00VX_10_0017">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

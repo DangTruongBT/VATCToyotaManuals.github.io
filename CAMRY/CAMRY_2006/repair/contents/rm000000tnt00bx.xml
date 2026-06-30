@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM000000TNT00BX" category="U" type-id="3001G" name-id="DL18R-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000TNT00BX_z0" proc-id="RM0250U___00009F600000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK MAIN BODY ECU (INSTRUMENT PANEL JUNCTION BLOCK)</ptxt>
+<figure>
+<graphic graphicname="B112605E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the E6, E7, IO, IK, IM, ID, IA, IF, IJ, and E9 J/B and ECU connectors.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DCTY (E7-24) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door courtesy switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door CLOSED → OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RCTY (E6-5 (*1), 7 (*2)) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door courtesy switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door CLOSED → OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PCTY (E6-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door courtesy switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door CLOSED → OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LCTY (IO-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door courtesy switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door CLOSED → OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (IM-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (IF-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L1 (IJ-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door control switch LOCK input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door control switch OFF → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UL1 (IJ-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door control switch UNLOCK input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door control switch OFF → UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L1 (IK-15) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door control switch LOCK input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door control switch OFF → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UL1 (IK-12) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door control switch UNLOCK input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door control switch OFF → UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KSW (*1) (E9-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock warning switch signal input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder → Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LGCY (E6-25) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door courtesy switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door CLOSED → OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW (E6-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door key-linked door unlock input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Using mechanical key, operate luggage compartment door lock cylinder to LOCK → OPEN → UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher →</ptxt>
+<ptxt>Below 1 Ω →</ptxt>
+<ptxt>10 kΩ or higher →</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BECU (*1) (ID-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B (BECU) power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: w/o Smart Key System</ptxt>
+<ptxt>*2: w/ Smart Key System</ptxt>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the J/B and ECU connectors.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IG (IF-11) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) → off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (IF-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (ACC) → off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LSWL (*2), LSR (*1) (IP-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door lock position switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LSWL (*1) (IL-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door lock position switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LSWD (E7-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door lock position switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UL3 (E7-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door key-linked door unlock input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Using mechanical key, operate driver door lock cylinder to LOCK → UNLOCK </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L2 (IK-16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door key-linked door lock input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Using mechanical key, operate driver door lock cylinder to UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UL2 (IK-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger door key-linked door unlock input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Using mechanical key, operate passenger door lock cylinder to LOCK → UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>L2 (IJ-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger door key-linked door lock input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Using mechanical key, operate passenger door lock cylinder to UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT+ (IJ-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor LOCK drive output (Front passenger  door)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → LOCK →   OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT+ (IP-11) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor LOCK drive output (Rear door LH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → LOCK →   OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT+ (IF-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor LOCK drive output (Rear door RH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → LOCK →   OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT- (IP-6) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor UNLOCK drive output (Rear door LH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → UNLOCK   → OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT- (IF-18) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor UNLOCK drive output (Rear door RH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → UNLOCK   → OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TR+ (E7-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor UNLOCK drive output (Luggage compartment door)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment open switch (Transmitter) or luggage compartment door key cylinder OFF → UNLOCK → OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACTD (E7-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor UNLOCK drive output (Driver door)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → UNLOCK → OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT+ (IK-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor LOCK drive output (Driver door)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → LOCK → OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACT- (IJ-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door lock motor UNLOCK drive output (Front passenger)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door control switch (Master switch or passenger side switch) or driver side door key cylinder OFF → UNLOCK → OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V →</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LSWR (*2) (E6-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door lock position switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LSWP (E6-27) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door lock position switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger door UNLOCK → LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V →</ptxt>
+<ptxt>10 to 14 V (or pulse generation)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: w/o Smart Key System</ptxt>
+<ptxt>*2: w/ Smart Key System</ptxt>
+<ptxt>If the result is not as specified, the main body ECU (instrument panel J/B) may have a malfunction.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

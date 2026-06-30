@@ -1,0 +1,67 @@
+<!-- $Id: note_frame.html,v 1.13 2005/01/13 06:28:47 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Note-</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javaScript">
+var args = window.dialogArguments;
+var g_tocXml;
+var g_sectionName;
+var g_ttlName;
+var g_paraName;
+var g_objXml;
+var g_cttNode;
+var g_procId;
+var g_lclXsl;
+var g_cttXsl;
+var g_dgTitle;
+
+function init() {
+	g_lclXsl = initXsl("../../xsl/rmv/note_local.xsl");
+	g_cttXsl = initXsl("../../xsl/rmv/contents.xsl");
+	if(args!=null && args.length==1)  {
+		g_tocXml = args[0];
+	}
+	else {
+		g_tocXml = initXml("toc_rpr.xml");
+		var g_fltXsl = initXsl("../../xsl/utl/filter.xsl");
+		var g_filter = findParameterValue("filter");
+		if (g_filter!=null) {
+			g_tocXml = setFilter(g_tocXml, g_fltXsl, "../../filter/"+g_filter+".xml");
+		}
+	}
+	g_cttNode = g_tocXml.selectNodes("//para[@category='M']");
+	if(g_cttNode.length>0)	g_procId  = g_cttNode.item(0).getAttribute("id");
+}
+init();
+</script>
+</head>
+<frameset rows="35, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="note_global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="note_local.html" frameborder="no" scrolling="auto">
+		<frameset rows="30, *" frameborder="no" framespaceing="0">
+			<frame name="sts" src="note_status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="note_contents.html" frameborder="no" scrolling="auto">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

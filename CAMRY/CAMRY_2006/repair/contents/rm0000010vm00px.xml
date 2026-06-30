@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM0000010VM00PX" category="U" type-id="303FJ" name-id="RS0B8-25" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM0000010VM00PX_z0" proc-id="RM0250U___0000AA300000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>By accessing the DATA LIST displayed on the intelligent tester, you can perform such functions as reading the values of switches and sensors without removing any parts. Reading the DATA LIST is the first step in troubleshooting is one method to save labor time.</ptxt>
+</atten4>
+<step1>
+<ptxt>DATA LIST FOR OCCUPANT CLASSIFICATION ECU</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / OCCUPANT DETECT / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the values by referring to the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch condition/</ptxt>
+<ptxt>ON: Ignition switch on (IG)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P BUCKLE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side buckle switch/</ptxt>
+<ptxt>SET: The seat belt is fastened</ptxt>
+<ptxt>UNSET: The seat belt is not fastened</ptxt>
+<ptxt>NG: Data is not determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SET/UNSET</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PASSENGER CLASS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger classification/</ptxt>
+<ptxt>AM50: Adult (more than 54 kg (119.05 lb)) is seated</ptxt>
+<ptxt>AF05: Adult (36 to 54 kg (79.37 to 119.05 lb)) is seated</ptxt>
+<ptxt>CHILD: Child (less than 36 kg (79.37 lb)) is seated</ptxt>
+<ptxt>CRS: Child restraint system (less than 7 kg (15.43 lb)) and passenger side buckle switch is ON, then 7 to 36 kg (15.43 to 79.37 lb) is set</ptxt>
+<ptxt>OFF: Vacant</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>AM50/AF05/CHILD/CRS/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SENS RANGE INF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor range information/</ptxt>
+<ptxt>OK: The value of a sensor is within the range</ptxt>
+<ptxt>NG: The value of a sensor is over the range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL SENS RANGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front left sensor range information/</ptxt>
+<ptxt>OK: Sensor range is -17 to 27 kg (-37.48 to 59.52 lb)</ptxt>
+<ptxt>Min.: Less than -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: More than 27 kg (59.52 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR SENS RANGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front right sensor range information/</ptxt>
+<ptxt>OK: Sensor range is -17 to 27 kg (-37.48 to 59.52 lb)</ptxt>
+<ptxt>Min.: Less than -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: More than 27 kg (59.52 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL SENS RANGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left sensor range information/</ptxt>
+<ptxt>OK: Sensor range is -17 to 37 kg (-37.48 to 81.57 lb)</ptxt>
+<ptxt>Min.: Less than -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: More than 37 kg (81.57 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR SENS RANGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right sensor range information/</ptxt>
+<ptxt>OK: Sensor range is -17 to 37 kg (-37.48 to 81.57 lb)</ptxt>
+<ptxt>Min.: Less than -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: More than 37 kg (81.57 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL SENS VOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front left sensor voltage/</ptxt>
+<ptxt>Min.: 0 V</ptxt>
+<ptxt>Max.: 19.8 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 4.7 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR SENS VOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front right sensor voltage/</ptxt>
+<ptxt>Min.: 0 V</ptxt>
+<ptxt>Max.: 19.8 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 4.7 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL SENS VOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left sensor voltage/</ptxt>
+<ptxt>Min.: 0 V</ptxt>
+<ptxt>Max.: 19.8 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 4.7 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR SENS VOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right sensor voltage/</ptxt>
+<ptxt>Min.: 0 V</ptxt>
+<ptxt>Max.: 19.8 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 4.7 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL SENS WEIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front left sensor weight information/</ptxt>
+<ptxt>Min.: -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: 27 kg (59.52 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-17 to 27 kg</ptxt>
+<ptxt>(-37.48 to 59.52 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR SENS WEIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front right sensor weight information/</ptxt>
+<ptxt>Min.: -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: 27 kg (59.52 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-17 to 27 kg</ptxt>
+<ptxt>(-37.48 to 59.52 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL SENS WEIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left sensor weight information/</ptxt>
+<ptxt>Min.: -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: 37 kg (81.57 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-17 to 37 kg</ptxt>
+<ptxt>(-37.48 to 81.57 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR SENS WEIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right sensor weight information/</ptxt>
+<ptxt>Min.: -17 kg (-37.48 lb)</ptxt>
+<ptxt>Max.: 37 kg (81.57 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-17 to 37 kg</ptxt>
+<ptxt>(-37.48 to 81.57 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TOTAL WEIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Total weight information/</ptxt>
+<ptxt>Min.: -68 kg (-149.91 lb)</ptxt>
+<ptxt>Max.: 128 kg (282.19 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-68 to 128 kg</ptxt>
+<ptxt>(-149.91 to 282.19 lb)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#PRESENT CODES</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of present DTC recorded/</ptxt>
+<ptxt>Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#PAST CODES</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of past DTC recorded/</ptxt>
+<ptxt>Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

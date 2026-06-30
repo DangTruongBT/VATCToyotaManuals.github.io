@@ -1,0 +1,49 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- XML DTD for TOYOTA EWD -->
+
+
+
+<!ENTITY % CountryCode
+	"(en | fr | de | es | pt | it | sv | da | fi | no | nl | el | cs | hu | pl | ja)"
+>
+<!ENTITY % Capacity	"CDATA">
+<!ENTITY % Code		"CDATA">
+<!ENTITY % RefData "(name,refs)" >
+
+
+
+<!ELEMENT	LoadList	(Block|GP)+>
+<!ELEMENT	Block		(blockname,Fuse+)>
+<!ELEMENT	blockname	(#PCDATA)>
+<!ELEMENT	GP		(%RefData;)>
+<!ELEMENT	Fuse		(%RefData;)>
+<!ELEMENT	name		(#PCDATA)>
+<!ELEMENT	refs		(System*,Routing*)>
+<!ELEMENT	System		(#PCDATA)>
+<!ELEMENT	Routing		(#PCDATA)>
+
+
+
+<!ATTLIST LoadList
+	ver		CDATA		"1.0"
+	pubno		CDATA		#REQUIRED
+	xml:lang	%CountryCode;	#REQUIRED
+>
+<!ATTLIST Block
+	code		%Code;		#REQUIRED
+>
+<!ATTLIST GP
+	code		%Code;		#REQUIRED
+>
+<!ATTLIST Fuse
+	capacity	%Capacity;	#REQUIRED
+>
+<!ATTLIST name
+	code		%Code;		#IMPLIED
+>
+<!ATTLIST System
+	code		%Code;		#REQUIRED
+>
+<!ATTLIST Routing
+	code		%Code;		#REQUIRED
+>

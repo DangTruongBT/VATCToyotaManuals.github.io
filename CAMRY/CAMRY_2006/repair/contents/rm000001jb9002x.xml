@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JB9002X" category="U" type-id="303FI" name-id="BC0RX-03" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM000001JB9002X_z0" proc-id="RM0250U___00000Z500000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C131987E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Transmitting ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receiving ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Communication method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>ABS warning light signal</ptxt>
+</item>
+<item>
+<ptxt>BRAKE warning light signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift position signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

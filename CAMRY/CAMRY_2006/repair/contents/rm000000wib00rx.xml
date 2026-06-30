@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000WIB00RX" category="D" type-id="303F3" name-id="CA008-22" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000WIB00RX_z0" proc-id="RM0250U___00009BU00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt> BUS CHECK</ptxt>
+<step2>
+<ptxt>Select "BUS CHECK" from the "OBD/MOBD MENU" screen. </ptxt>
+<figure>
+<graphic graphicname="C113760" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>The ECUs and sensors that are properly connected to the CAN communication system can be displayed using the intelligent tester via the CAN VIM.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Press "ENTER" on the intelligent tester.</ptxt>
+<figure>
+<graphic graphicname="C113761" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The screen displays the ECUs and sensors that are properly connected to the CAN communication system.</ptxt>
+<figure>
+<graphic graphicname="C113762" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Properly connected ECUs or sensors that are not displayed on the screen indicate that a communication stop is occuring in the system, sensor, or ECU which is not displayed.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK FOR INSTALLED SYSTEMS (ECUS AND SENSORS) THAT USE CAN COMMUNICATION</ptxt>
+<step2>
+<ptxt>Systems (ECUs, sensors) that use CAN communication vary depending on the vehicle's optional  equipment. Check which systems (ECUs, sensors) are installed on the vehicle. </ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>ECU/Sensor name</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Check method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS/VSC/TRC</ptxt>
+</entry>
+<entry>
+<ptxt>Installed on all vehicles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>STEERING SENSOR</ptxt>
+</entry>
+<entry>
+<ptxt>With VSC system</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>YAW / DECELERAT</ptxt>
+</entry>
+<entry>
+<ptxt>With VSC system</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ENGINE</ptxt>
+</entry>
+<entry>
+<ptxt>Installed on all vehicles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT</ptxt>
+</entry>
+<entry>
+<ptxt>With automatic transaxle</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>SRS AIRBAG</ptxt>
+</entry>
+<entry>
+<ptxt>Installed on all vehicles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A/C</ptxt>
+</entry>
+<entry>
+<ptxt>Installed on all vehicles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>METER</ptxt>
+</entry>
+<entry>
+<ptxt>Installed on all vehicles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MAIN BODY</ptxt>
+</entry>
+<entry>
+<ptxt>Installed on all vehicles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ACCESSORY G/W</ptxt>
+</entry>
+<entry>
+<ptxt>With dealer option</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>SMART ACCESS/KEY</ptxt>
+</entry>
+<entry>
+<ptxt>With smart key system</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC TABLE BY ECU</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>For the CAN communication system, CAN communication system DTCs stored in certain ECUs can be displayed using the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>If CAN communication system DTCs are output, trouble cannot be determined only by the DTCs. Perform troubleshooting according to "HOW TO PROCEED WITH TROUBLESHOOTING" (See page <xref label="Seep02" href="RM000000WI600QX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>ECM (2AZ-FE)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="4.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0101*</ptxt>
+</entry>
+<entry>
+<ptxt>High speed CAN Communication Bus</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC communication is via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: The ECM is malfunctioning if only U0101 is output. Replace the ECM.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>ECM (2GR-FE)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="4.09in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0101*</ptxt>
+</entry>
+<entry>
+<ptxt>High speed CAN Communication Bus</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC communication is via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: The ECM is malfunctioning if only U0101 is output. Refer to SFI system (See page <xref label="Seep11" href="RM000001O2V006X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>ECT (2AZ-FE)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.00in"/>
+<colspec colname="COL2" colwidth="4.08in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100*</ptxt>
+</entry>
+<entry>
+<ptxt>High speed CAN Communication Bus</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC communication is via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: The ECM is malfunctioning if only U0100 is output. Replace the ECM.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>ECT (2GR-FE)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.99in"/>
+<colspec colname="COL2" colwidth="4.09in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100*</ptxt>
+</entry>
+<entry>
+<ptxt>High speed CAN Communication Bus</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC communication is via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: The ECM is malfunctioning if only U0100 is output. Refer to Automatic Transaxle system (See page <xref label="Seep12" href="RM000001RRQ004X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>SKID CONTROL ECU (with VSC)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.97in"/>
+<colspec colname="COL2" colwidth="4.11in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073</ptxt>
+</entry>
+<entry>
+<ptxt>Control Module Communication Bus Off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry>
+<ptxt>Lost Communication With ECM/PCM "A"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0123</ptxt>
+</entry>
+<entry>
+<ptxt>Lost Communication With Yaw Rate Sensor Module</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0124*</ptxt>
+</entry>
+<entry>
+<ptxt>Lost Communication With Lateral Acceleration Sensor Module</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0126</ptxt>
+</entry>
+<entry>
+<ptxt>Lost Communication With Steering Angle Sensor Module</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC communication is via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: TMC made only</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>SKID CONTROL ECU (without VSC)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.96in"/>
+<colspec colname="COL2" colwidth="4.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073</ptxt>
+</entry>
+<entry>
+<ptxt>Control Module Communication Bus Off</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>DTC communication is via the CAN communication system. </ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>COMBINATION METER ECU</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.94in"/>
+<colspec colname="COL2" colwidth="4.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry>
+<ptxt>Lost Communication With ECM/PCM "A"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129</ptxt>
+</entry>
+<entry>
+<ptxt>Lost Communication with Brake System Control Mode</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>DTC communication is via the CAN communication system. </ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>AIR CONDITIONER AMPLIFIER</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.93in"/>
+<colspec colname="COL2" colwidth="4.15in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1499</ptxt>
+</entry>
+<entry>
+<ptxt>Multiplex Communication Circuit</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>DTC communication is via the CAN communication system. </ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>MAIN BODY ECU (with smart key system)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.92in"/>
+<colspec colname="COL2" colwidth="4.16in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1207*</ptxt>
+</entry>
+<entry>
+<ptxt>Certification ECU Communication Malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2326*</ptxt>
+</entry>
+<entry>
+<ptxt>CAN MS Bus Line Communication Malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTC communication is via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: The main body ECU is malfunctioning if B1207 and/or B2326 are output alone. Refer to DTC chart (See page <xref label="Seep13" href="RM000000W7101XX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>MAIN BODY ECU (without smart key system)</ptxt>
+<atten4>
+<ptxt>Although the center airbag sensor is connected to the CAN communication system, CAN communication DTCs are not output.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>CENTER AIRBAG SENSOR</ptxt>
+<atten4>
+<ptxt>Although the center airbag sensor is connected to the CAN communication system, CAN communication DTCs are not output.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>CERTIFICATION ECU</ptxt>
+<atten4>
+<ptxt>Although the Main Body ECU is connected to the CAN communication system, CAN communication DTCs are not output.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC COMBINATION TABLE </ptxt>
+<step2>
+<ptxt>with VSC SYSTEM</ptxt>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.07in"/>
+<colspec colname="COL2" colwidth="1.07in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<colspec colname="COL4" colwidth="1.23in"/>
+<colspec colname="COLSPEC2" colwidth="1.23in"/>
+<colspec colname="COL5" colwidth="1.25in"/>
+<thead>
+<row>
+<entry namest="COL1" nameend="COL2" align="center">
+<ptxt>DTC</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL5" valign="middle" align="center">
+<ptxt>Trouble Mode</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Output from</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECM Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Steering Angle Sensor Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Yaw Rate Sensor Communication Stop Mode</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>Skid Control ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>▲ During driving</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>▲ During driving</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0123</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0124*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Combination Meter ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioner Amplifier ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B1499</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL1" nameend="COL2" valign="middle" align="center">
+<ptxt>No DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: TMC made only.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>○: Set</ptxt>
+</item>
+<item>
+<ptxt>X: Not set or may be set according to the malfunctioning part when one side of the CAN bus wire opens</ptxt>
+</item>
+<item>
+<ptxt>▲: Set under the condition shown in the table above</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.07in"/>
+<colspec colname="COL2" colwidth="1.07in"/>
+<colspec colname="COL8" colwidth="1.23in"/>
+<colspec colname="COLSPEC1" colwidth="1.23in"/>
+<colspec colname="COLSPEC0" colwidth="1.24in"/>
+<colspec colname="COLSPEC4" colwidth="1.24in"/>
+<thead>
+<row>
+<entry namest="COL1" nameend="COL2" align="center">
+<ptxt>DTC</ptxt>
+</entry>
+<entry namest="COL8" nameend="COLSPEC4" valign="middle" align="center">
+<ptxt>Trouble Mode</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Output from</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioner Amplifier ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Body ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Combination Meter ECU Communication Stop Mode</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>Skid Control ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0123</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0124*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0126</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Combination Meter ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioner Amplifier ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B1499</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>▲</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>▲</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL1" nameend="COL2" valign="middle" align="center">
+<ptxt>No DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: TMC made only.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>○: Set</ptxt>
+</item>
+<item>
+<ptxt>X: Not set or may be set according to the malfunctioning part when one side of the CAN bus wire opens</ptxt>
+</item>
+<item>
+<ptxt>▲: The combination meter and main body ECU indicate communication errors.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>without VSC SYSTEM</ptxt>
+<table pgwide="1">
+<tgroup cols="8">
+<colspec colname="COL1" colwidth="0.79in"/>
+<colspec colname="COL2" colwidth="0.79in"/>
+<colspec colname="COL3" colwidth="0.91in"/>
+<colspec colname="COL4" colwidth="0.91in"/>
+<colspec colname="COL6" colwidth="0.91in"/>
+<colspec colname="COL8" colwidth="0.91in"/>
+<colspec colname="COLSPEC1" colwidth="0.91in"/>
+<colspec colname="COLSPEC0" colwidth="0.949999999999999in"/>
+<thead>
+<row>
+<entry namest="COL1" nameend="COL2" align="center">
+<ptxt>DTC</ptxt>
+</entry>
+<entry namest="COL3" nameend="COLSPEC0" valign="middle" align="center">
+<ptxt>Trouble Mode</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Output from</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECM Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Combination Meter ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioner Amplifier ECU Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Body ECU Communication Stop Mode</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Skid Control ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>U0073</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Combination Meter ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0129</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Air Conditioner Amplifier ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B1499</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>▲</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>▲</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL1" nameend="COL2" valign="middle" align="center">
+<ptxt>No DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>X</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>○: Set</ptxt>
+</item>
+<item>
+<ptxt>X: Not set or may be set according to the malfunctioning part when one side of the CAN bus wire becomes open.</ptxt>
+</item>
+<item>
+<ptxt>▲: The combination meter and main body ECU indicate communication errors.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Perform troubleshooting depending on the combination of DTCs output.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>ECM Communication Stop Mode (See Page <xref label="Seep03" href="RM000000WIP00HX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Skid Control ECU Communication Stop Mode (See page <xref label="Seep04" href="RM000000WII00LX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Steering Angle Sensor Communication Stop Mode (See page <xref label="Seep05" href="RM000000WIH00MX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Yaw Rate Sensor Communication Stop Mode (See page <xref label="Seep06" href="RM000000WIJ00LX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Combination Meter ECU Communication Stop Mode (See page <xref label="Seep07" href="RM000001F1S003X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Center Airbag Sensor Communication Stop Mode (See page <xref label="Seep08" href="RM000001WG9001X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Air Conditioner Amplifier ECU Communication Stop Mode (See page <xref label="Seep09" href="RM000001F1U002X"/>)</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU Communication Stop Mode (See page <xref label="Seep10" href="RM000001F1V003X"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

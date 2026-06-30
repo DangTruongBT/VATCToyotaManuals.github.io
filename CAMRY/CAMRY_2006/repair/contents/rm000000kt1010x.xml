@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000000KT1010X" category="L" type-id="3001A" name-id="RS2CP-02" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000000KT1010X_z0" proc-id="RM0250U___000071I00000">
+<content5 releasenbr="1">
+<atten2>
+<list1 type="unordered">
+<item>
+<ptxt>The vehicle is equipped with a Supplemental Restraint System (SRS). It consists of a driver airbag, front passenger airbag, driver side knee airbag, front side airbag, curtain shield airbag, and front seat belt pretensioner. Failure to carry out service operations in the correct sequence could cause the SRS to unexpectedly deploy during servicing, possibly leading to a serious accident. Further, if a mistake is made in servicing the SRS, it is possible that the SRS may fail to operate when required. Before performing servicing (including removal or installation of parts, inspection or replacement), be sure to read the following items carefully, then follow the correct procedures indicated in the repair manual.</ptxt>
+</item>
+<item>
+<ptxt>Wait at least 90 seconds after the ignition switch is turned off and the negative (-) terminal cable is disconnected from the battery before starting the operation.</ptxt>
+<ptxt>(The SRS is equipped with a backup power source, so if work is started within 90 seconds after disconnecting the negative (-) terminal cable from the battery, the SRS may be deployed.)</ptxt>
+</item>
+<item>
+<ptxt>Do not expose the steering pad, front passenger airbag assembly, driver side knee airbag assembly, center airbag sensor assembly, front airbag sensor, front seat inner belt assembly, seat position airbag sensor, occupant classification ECU, front seat side airbag assembly, side airbag sensor, curtain shield airbag assembly, rear airbag sensor, or front seat outer belt assembly directly to hot air or flames.</ptxt>
+</item>
+</list1>
+</atten2>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Malfunction symptoms of the SRS are difficult to confirm, so DTCs are the most important source of information when troubleshooting. When troubleshooting the SRS, always inspect DTCs before disconnecting the battery.</ptxt>
+</item>
+<item>
+<ptxt>Even in the case of a minor collision when the SRS does not deploy, the steering pad, front passenger airbag assembly, driver side knee airbag assembly, center airbag sensor assembly, front airbag sensor, front seat inner belt assembly, seat position airbag sensor, occupant classification ECU, front seat side airbag assembly, side airbag sensor, curtain shield airbag assembly, rear airbag sensor, or front seat outer belt assembly should be inspected.</ptxt>
+</item>
+<item>
+<ptxt>Before repair work, remove the airbag sensor if any kind of shock is likely to occur to the airbag sensor during the operation.</ptxt>
+</item>
+<item>
+<ptxt>Never use SRS parts from another vehicle. When replacing parts, replace them with new ones.</ptxt>
+</item>
+<item>
+<ptxt>Never disassemble or repair any of the following parts in order to reuse them. If any of these parts have been dropped, or a defect is found (e.g. cracks, dents or any other defects) in any of the housings, brackets or connectors, then replace the part with a new one.</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>Steering Pad</ptxt>
+</item>
+<item>
+<ptxt>Front Passenger Airbag Assembly</ptxt>
+</item>
+<item>
+<ptxt>Driver Side Knee Airbag Assembly</ptxt>
+</item>
+<item>
+<ptxt>Front Seat Side Airbag Assembly</ptxt>
+</item>
+<item>
+<ptxt>Curtain Shield Airbag Assembly</ptxt>
+</item>
+<item>
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Front Airbag Sensor</ptxt>
+</item>
+<item>
+<ptxt>Front Seat Inner Belt Assembly</ptxt>
+</item>
+<item>
+<ptxt>Seat Position Airbag Sensor</ptxt>
+</item>
+<item>
+<ptxt>Occupant Classification ECU</ptxt>
+</item>
+<item>
+<ptxt>Side Airbag Sensor</ptxt>
+</item>
+<item>
+<ptxt>Rear Airbag Sensor</ptxt>
+</item>
+<item>
+<ptxt>Front Seat Outer Belt Assembly</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Use an volt/ohmmeter with high impedance (10 kΩ/V minimum) for troubleshooting the electrical circuits.</ptxt>
+</item>
+<item>
+<ptxt>Information labels are attached near the SRS components. Follow the instructions in the caution.</ptxt>
+</item>
+<item>
+<ptxt>After work on the SRS is completed, perform the SRS warning light check (See page <xref label="Seep01" href="RM000000XFD00ZX"/>).</ptxt>
+</item>
+<item>
+<ptxt>When the negative (-) terminal cable is disconnected from the battery, the memory will be cleared. Because of this, be sure to make a record of the contents memorized in each system before starting work. When work is finished, adjust each system as it was before. Never attempt to avoid erasing vehicle system memories by using a backup power supply from outside the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If the vehicle is equipped with a mobile communication system, refer to the precaution in the INTRODUCTION section.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>In the airbag system, the center airbag sensor assembly, front airbag sensor LH and RH, side airbag sensor LH and RH, and rear airbag sensor LH and RH are collectively referred to as the airbag sensors.</ptxt>
+</atten4>
+<step1>
+<ptxt>HANDLING PRECAUTIONS FOR AIRBAG SENSORS</ptxt>
+<step2>
+<ptxt>Before starting the following operations, wait for at least 90 seconds after disconnecting the negative (-) terminal cable from the battery:</ptxt>
+<step3>
+<ptxt>Replacement of the airbag sensors.</ptxt>
+</step3>
+<step3>
+<ptxt>Adjustment of the front/rear doors of the vehicle equipped with the side airbag and curtain shield airbag (fitting adjustment).</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>When connecting or disconnecting the airbag sensor connectors, ensure that each sensor is installed in the vehicle.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not use the airbag sensors which have been dropped during the operation or transportation.</ptxt>
+</step2>
+<step2>
+<ptxt>Do not disassemble the airbag sensors.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>INSPECTION PROCEDURE FOR VEHICLE INVOLVED IN ACCIDENT</ptxt>
+<step2>
+<ptxt>When the airbag has not deployed, confirm the DTCs by checking the SRS warning light. If there is any malfunction in the SRS airbag system, perform troubleshooting.</ptxt>
+</step2>
+<step2>
+<ptxt>When any of the airbags have deployed, replace the airbag sensors and check the installation condition.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>EXPRESSIONS OF IGNITION SWITCH</ptxt>
+<ptxt>The type of ignition switch used on this model differs according to the specifications of the vehicle. The expressions listed in the table below are used in this section.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" align="center" colwidth="2.36in"/>
+<colspec colname="COL3" align="center" colwidth="2.36in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Expression</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Switch Type</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition Switch (position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Switch (condition)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Ignition Switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition Switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>On (IG)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition Switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>On (Acc)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine Start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>START</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SRS CONNECTORS</ptxt>
+<step2>
+<ptxt>SRS connectors are located as shown in the following illustration.</ptxt>
+<figure>
+<graphic graphicname="C123769E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C123770E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="0.96in"/>
+<colspec colname="COL2" colwidth="3.07in"/>
+<colspec colname="COL3" colwidth="3.05in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Application</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>(1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Twin-Lock Mechanism</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connectors 5, 6, 9, 10, 15, 16, 20, 22, 23, 24, 31, 32</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Activation Prevention Mechanism</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connectors 2, 4, 5, 10, 11, 13, 23, 25, 27</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Half Connection Prevention Mechanism</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connectors 5, 6, 9, 16, 20, 22, 24</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connector Position Assurance Mechanism</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connector 18</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connector Lock Mechanism (1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connectors 8, 12, 14, 26, 28</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connector Lock Mechanism (2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connector 2, 4</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Improper Connection Prevention Lock Mechanism</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Connector 1, 3</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>All connectors in the SRS, except the seat position airbag sensor connector, are colored yellow to distinguish them from other connectors. These connectors have special functions, and are specially designed for the SRS. All SRS connectors use durable gold-plated terminals, and are placed in the locations shown on the previous page to ensure high reliability.</ptxt>
+<figure>
+<graphic graphicname="Z005953E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Terminal twin-lock mechanism:</ptxt>
+<ptxt>All connectors with a terminal twin-lock mechanism have a two-piece component consisting of a housing and a spacer. This design enables the terminal to be locked securely by two locking devices (the retainer and the lance) to prevent terminals from coming out.</ptxt>
+</step3>
+<step3>
+<ptxt>Activation prevention mechanism:</ptxt>
+<ptxt>All connectors with an activation prevention mechanism contain a short spring plate. When these connectors are disconnected, the short spring plate creates a short circuit by automatically connecting the positive (+) and negative (-) terminals of the squib.</ptxt>
+<figure>
+<graphic graphicname="H045309E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Half connection prevention mechanism:</ptxt>
+<ptxt>If the connector is not completely connected, the connector is disconnected due to the spring operation so that no continuity exists.</ptxt>
+<figure>
+<graphic graphicname="H040180E07" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Connector position assurance mechanism:</ptxt>
+<ptxt>Only when the housing lock (white part) is completely engaged, the CPA (yellow part) slides, which completes the connector engagement.</ptxt>
+<figure>
+<graphic graphicname="H043306E02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Connector lock mechanism (1):</ptxt>
+<ptxt>Locking the connector lock button connects the connector securely.</ptxt>
+<figure>
+<graphic graphicname="H040181E04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Connector lock mechanism (2):</ptxt>
+<ptxt>Both the primary lock with holder lances and the secondary lock with retainer prevent the connectors from becoming disconnected.</ptxt>
+<figure>
+<graphic graphicname="H043918E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Improper connection prevention lock mechanism:</ptxt>
+<ptxt>When connecting the holder, the lever is pushed into the end by rotating around the A axis to lock the holder securely.</ptxt>
+<figure>
+<graphic graphicname="H043245E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DISCONNECTION OF CONNECTORS FOR STEERING PAD, FRONT PASSENGER AIRBAG ASSEMBLY (SQUIB SIDE), DRIVER SIDE KNEE AIRBAG ASSEMBLY, CURTAIN SHIELD AIRBAG ASSEMBLY, AND FRONT SEAT OUTER BELT ASSEMBLY</ptxt>
+<atten4>
+<ptxt>Tape up the screwdriver tip before use.</ptxt>
+</atten4>
+<step2>
+<ptxt>Release the lock button (yellow part) of the connector using a screwdriver.</ptxt>
+</step2>
+<step2>
+<ptxt>Insert the screwdriver tip between the connector and the base, and then raise the connector.</ptxt>
+<figure>
+<graphic graphicname="C123672E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CONNECTION OF CONNECTORS FOR STEERING PAD, FRONT PASSENGER AIRBAG ASSEMBLY (SQUIB SIDE), DRIVER SIDE KNEE AIRBAG ASSEMBLY, CURTAIN SHIELD AIRBAG ASSEMBLY, AND FRONT SEAT OUTER BELT ASSEMBLY</ptxt>
+<step2>
+<ptxt>Connect the connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Push down securely on the lock button (yellow part) of the connector. (When locking, a click sound can be heard.)</ptxt>
+<figure>
+<graphic graphicname="H043151E04" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DISCONNECTION OF CONNECTOR FOR SPIRAL CABLE (INSTRUMENT PANEL WIRE SIDE) AND FRONT PASSENGER AIRBAG ASSEMBLY (INSTRUMENT PANEL WIRE SIDE) </ptxt>
+<step2>
+<ptxt>Place a finger on the slider, slide the slider to release the lock, and then disconnect the connector.</ptxt>
+<figure>
+<graphic graphicname="H001586E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CONNECTION OF CONNECTOR FOR SPIRAL CABLE (INSTRUMENT PANEL WIRE SIDE) AND FRONT PASSENGER AIRBAG ASSEMBLY (INSTRUMENT PANEL WIRE SIDE)</ptxt>
+<step2>
+<ptxt>Connect the connector as shown in the illustration. (When locking, make sure that the slider returns to its original position and a click sound can be heard.)</ptxt>
+<atten4>
+<ptxt>When connecting, the slider will slide. Be sure not to touch the slider while connecting, as it may result in an insecure fit.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H043731E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DISCONNECTION OF CONNECTORS FOR FRONT SEAT SIDE AIRBAG ASSEMBLY</ptxt>
+<step2>
+<ptxt>Place a finger on the slider, slide the slider to release the lock, and then disconnect the connector.</ptxt>
+<figure>
+<graphic graphicname="H001584E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CONNECTION OF CONNECTORS FOR FRONT SEAT SIDE AIRBAG ASSEMBLY</ptxt>
+<step2>
+<ptxt>Connect the connector as shown in the illustration. (When locking, make sure that the slider returns to its original position and a click sound can be heard.)</ptxt>
+<atten4>
+<ptxt>When connecting, the slider will slide. Be sure not to touch the slider while connecting, as it may result in an insecure fit.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H043169E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DISCONNECTION OF CONNECTOR FOR CENTER AIRBAG SENSOR ASSEMBLY</ptxt>
+<step2>
+<ptxt>Pull the lever by pushing part A as shown in the illustration and disconnect the holder (with connectors).</ptxt>
+<figure>
+<graphic graphicname="H045112E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Perform the following procedures when replacing the holder.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Remove the holder.</ptxt>
+<step3>
+<ptxt>Using a screwdriver, unlock the retainer.</ptxt>
+<figure>
+<graphic graphicname="H043188E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Release the fitting lance and remove the holder.</ptxt>
+<figure>
+<graphic graphicname="H043189E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Install the holder.</ptxt>
+<figure>
+<graphic graphicname="H043190E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Install the connectors to the holder. (When locking, a click sound can be heard.)</ptxt>
+<atten4>
+<ptxt>The retainer is locked when the holder is connected.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CONNECTION OF CONNECTOR FOR CENTER AIRBAG SENSOR ASSEMBLY</ptxt>
+<step2>
+<ptxt>Firmly insert the holder (with connectors) into the center airbag sensor assembly until it cannot be pushed any further.</ptxt>
+</step2>
+<step2>
+<ptxt>Push the lever to connect the holder (with connectors). (When locking, a click sound can be heard.)</ptxt>
+<atten4>
+<ptxt>The holder slides into the center airbag sensor assembly when it is being connected. Be sure not to hold the holder while connecting, as it may result in an insecure fit.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H045113E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DISCONNECTION OF CONNECTOR FOR FRONT AIRBAG SENSOR</ptxt>
+<step2>
+<ptxt>Push down the housing lock (white part) and slide the CPA (yellow part). (At this time, the connector cannot be disconnected yet.)</ptxt>
+</step2>
+<step2>
+<ptxt>Push down the housing lock (white part) again and disconnect the connector.</ptxt>
+<atten4>
+<ptxt>Do not push down the A part shown in the illustration when disconnecting.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H043302E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>After disconnecting the connector, check that the position of the housing lock (white part) is as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="H043303E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CONNECTION OF CONNECTOR FOR FRONT AIRBAG SENSOR</ptxt>
+<step2>
+<ptxt>Before connecting the connectors, check that the position of the housing lock (white part) is as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="H043304E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Be sure to engage the connectors until they are locked. (When locking, make sure that a click sound can be heard.)</ptxt>
+<atten4>
+<ptxt>When connecting them, the housing lock (white part) slides. Be sure not to hold the housing lock (white part) and A part, as it may result in an insecure fit.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H043305E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DISCONNECTION OF CONNECTORS FOR SIDE AIRBAG SENSOR AND REAR AIRBAG SENSOR</ptxt>
+<step2>
+<ptxt>While holding the sides of the outer connector locking sleeve, slide the outer in the direction shown by the arrow.</ptxt>
+<figure>
+<graphic graphicname="H002763E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>When the connector lock is released, the connectors are disconnected.</ptxt>
+<atten4>
+<ptxt>Be sure to hold both outer flank sides. Holding the top and bottom will make disconnection difficult.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H002764E02" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CONNECTION OF CONNECTORS FOR SIDE AIRBAG SENSOR AND REAR AIRBAG SENSOR</ptxt>
+<step2>
+<ptxt>Connect the connector as shown in the illustration (When locking, make sure that the outer returns to its original position and a click sound can be heard).</ptxt>
+<atten4>
+<ptxt>When connecting, the outer will slide. Be sure not to hold the outer while connecting, as it may result in an insecure fit.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="H002768E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script type="text/javascript" src="../scripts/select.js"></script>
+		<script type="text/javascript" src="../scripts/print.js"></script>
+		<script type="text/javascript" src="../scripts/fig/printfig.js"></script>
+		<script type="text/javascript" src="../scripts/lib/TitleList.js"></script>
+		<script type="text/javascript" src="../scripts/lib/openwin.js"></script>
+		<script type="text/javascript" src="../scripts/lib/domparser.js"></script>
+		<script type="text/javascript" src="../scripts/lib/url.js"></script>
+		<script type="text/javascript" src="../scripts/lib/hashtable.js"></script>
+		<link rel="stylesheet" type="text/css" href="../styles/global.css"/>
+	</head>
+	<body TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0" onload="call_runOnLoadProc()">
+		<!-- 上段 -->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td nowrap="nowrap" width="170">
+					<img class="logo" alt="logo" src="../icon/logo.png"/>
+				</td>
+				<td nowrap="nowrap">
+					<p class="system-name">GSIC - Global Service Information Center</p>
+				</td>
+				<td nowrap="nowrap" width="250">
+					<p class="select-name">Your select: CAMRY</p>
+				</td>
+			</tr>
+		</table>
+		<!-- 下段 -->
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td nowrap="nowrap" align="left" width="180">
+					<a class="window-control-button" href="#" onClick="call_runOnClickTop()">Top</a><!-- 001 -->
+					<a class="window-control-button" href="#" onClick="call_runOnClickBack()">Back</a><!-- 002 -->
+					<a class="window-control-button" href="#" onClick="call_runOnClickNew()">New</a><!-- 003 -->
+				</td>
+				<td nowrap="nowrap" align="left">
+					<a class="popup-button" href="#" onClick="call_runOnClickLocation()">Location</a>
+					<a class="popup-button" href="#" onClick="call_runOnClickDiagram()">Wiring Diagram</a>
+					<a class="popup-button" href="#" onClick="call_runOnClickList()">Chart / List</a>
+				</td>
+				<td nowrap="nowrap" align="right">
+					<a class="popup-button" href="#" onClick="call_runOnClickIntro()">Introduction</a>
+					<a class="window-control-button" id="printBtn" href="#" onClick="call_runOnClickPrint()">Print</a>
+				</td>
+			</tr>
+		</table>
+		<!-- Popup -->
+		<!-- Wiring Diagram -->
+		<div id="Diagram" style="display: none">
+			<a onClick="parent.call_runOnClickPopUpItem(this)" onMouseOver="parent.call_runOnMouseOver(this)" onMouseOut="parent.call_runOnMouseOut(this)" class="popup-item" id="diag_ps">Power Source</a><br/>
+			<a onClick="parent.call_runOnClickPopUpItem(this)" onMouseOver="parent.call_runOnMouseOver(this)" onMouseOut="parent.call_runOnMouseOut(this)" class="popup-item" id="diag_system">System Circuit</a><br/>
+			<a onClick="parent.call_runOnClickPopUpItem(this)" onMouseOver="parent.call_runOnMouseOver(this)" onMouseOut="parent.call_runOnMouseOut(this)" class="popup-item" id="diag_gp">Ground Point</a><br/>
+			<a onClick="parent.call_runOnClickPopUpItem(this)" onMouseOver="parent.call_runOnMouseOver(this)" onMouseOut="parent.call_runOnMouseOut(this)" class="popup-item" id="diag_overall">Overall EWD</a><br/>
+		</div>
+		<!-- Chart / List -->
+		<div id="List" style="display: none">
+			<a onMouseOver="parent.call_runOnMouseOver(this)" onMouseOut="parent.call_runOnMouseOut(this)" onClick="parent.call_runOnClickPopUpItem(this)" class="popup-item" id="list_conn">Connector List</a><br/>
+			<a onMouseOver="parent.call_runOnMouseOver(this)" onMouseOut="parent.call_runOnMouseOut(this)" onClick="parent.call_runOnClickPopUpItem(this)" class="popup-item" id="list_ps">Power Source</a><br/>
+		</div>
+		<input id="val-popup-width" type="hidden" value="130"/>
+		<input id="val-popup-height" type="hidden" value="20"/>
+	</body>
+</html>

@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GUS002X" category="U" type-id="3001G" name-id="EI074-03" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000001GUS002X_z0" proc-id="RM0250U___00008EY00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK TRANSPONDER KEY AMPLIFIER</ptxt>
+<step2>
+<ptxt>Disconnect the E25 amplifier connector and measure the resistance between the terminal of the wire harness side connector and body ground.</ptxt>
+<figure>
+<graphic graphicname="B065593E20" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E25-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the E25 amplifier connector and measure the resistance and voltage of each terminal of the connector.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>VC5 (E25-1) - AGND (E25-7)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>O - V</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Power source</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>CODE (E25-4) - AGND (E25-7)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>BR - V</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Demodulated signal of key code data</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 1</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>TXCT (E25-5) - AGND (E25-7)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R - V</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Key code output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E25-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the amplifier may have a malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139208E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.60in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CODE (E25-4) - AGND (E25-7)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139205E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.60in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TXCT (E25-5) - AGND (E25-7)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK TRANSPONDER KEY ECU ASSEMBLY</ptxt>
+<step2>
+<ptxt>Disconnect the E15 ECU connector and measure the resistance and voltage between each terminal of the wire harness side connector.</ptxt>
+<figure>
+<graphic graphicname="B088367E04" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND (E15-16) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (E15-1) - GND (E15-16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>IG (E15-2) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Ignition switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>KSW (E15-3) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Unlock warning switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the E15 ECU connector and measure the voltage of each terminal of the connector.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E15-5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>KSW (E15-3) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Unlock warning switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>VC5 (E15-14) - AGND (E15-5)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>O - V</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Power source</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>TXCT (E15-4) - AGND (E15-5)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R - V</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Transponder key amplifier communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 1</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>CODE (E15-15) - AGND (E15-5)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>BR - V</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Transponder key amplifier communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 2</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>EFIO (E15-13) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>ECM output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 3</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>EFII (E15-12) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>ECM input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 4</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>D (E15-9) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Diagnostic tester communication</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Without communication</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>During communication</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pules generation</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>CTY (E15-7) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Door courtesy signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch free</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>IND (E15-8) - GND (E15-16)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Security indicator signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security indicator light is on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Security indicator light is off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139205E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.60in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TXCT (E15-4) - AGND (E15-5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139208E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CODE (E15-15) - AGND (E15-5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 3 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139206E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.50in"/>
+<colspec colname="COL2" colwidth="2.63in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFIO (E15-13) - GND (E15-16)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 1 s./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 4 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139207E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.49in"/>
+<colspec colname="COL2" colwidth="2.64in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFII (E15-12) - GND (E15-16)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 1 s./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK ECM</ptxt>
+<step2>
+<ptxt>Disconnect the C24*1 or C55*2 ECM connector and measure the resistance between the terminal of the wire harness side connector and body ground.</ptxt>
+<figure>
+<graphic graphicname="A107881E15" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E1 (C24-104)*1 - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E1 (C55-81)*2 - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for 2AZ-FE</ptxt>
+<ptxt>*2: for 2GR-FE</ptxt>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the C24*1 or C55*2 ECM connector. Measure the voltage between each terminal of the connector according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.84in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IMI (A24-11)*1 - E1 (C24-104)*1</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Transponder key ECU input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>IMI (A55-11)*2 - E1 (C55-81)*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IMO (A24-10)*1 - E1 (C24-104)*1</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Transponder key ECU output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>IMO (A55-10)*2 - E1 (C55-81)*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Waveform 2</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for 2AZ-FE</ptxt>
+<ptxt>*2: for 2GR-FE</ptxt>
+<ptxt>If the result is not as specified, the ECM may have a malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139206E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="2.60in"/>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IMI (A24-11)*1 - E1 (C24-104)*1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IMI (A55-11)*2 - E1 (C55-81)*2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 1 s./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for 2AZ-FE</ptxt>
+<ptxt>*2: for 2GR-FE</ptxt>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139207E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IMO (A24-10)*1 - E1 (C24-104)*1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IMO (A55-10)*2 - E1 (C55-81)*2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 1 s./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for 2AZ-FE</ptxt>
+<ptxt>*2: for 2GR-FE</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

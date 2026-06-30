@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002Z_S001S" variety="S001S">
+<name>SLIDING ROOF</name>
+<ttl id="1002Z_S001S_732XN_T00GB" variety="T00GB">
+<name>SLIDING ROOF SYSTEM</name>
+<para id="RM000000UZV00HX" category="J" type-id="304XI" name-id="RF07G-01" from="200601">
+<dtccode/>
+<dtcname>Sliding Roof Control Switch Circuit</dtcname>
+<subpara id="RM000000UZV00HX_01" type-id="60" category="03" proc-id="RM0250U___0000BG400000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The sliding roof drive gear sub-assembly (sliding roof control ECU) receives slide switch and tilt switch signals and drives its built-in motor.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000UZV00HX_02" type-id="32" category="03" proc-id="RM0250U___0000BG500000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC B2341 (See page <xref label="Seep01" href="RM0000029GG003X_02"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000UZV00HX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000UZV00HX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000UZV00HX_04_0001" proc-id="RM0250U___0000BG600000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (SLIDING ROOF OPERATION)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select the ACTIVE TEST, use the intelligent tester to generate a control command, and then check that the sliding roof slides open/close and tilts up/down.</ptxt>
+<spec>
+<title>Sliding roof ECU</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<colspec colname="COL3" align="center" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SLIDING ROOF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operate sliding roof SLIDE CLOSE/TILT UP</ptxt>
+<ptxt>CLOS/UP: Sliding roof SLIDE CLOSE or TILT UP operation occurs</ptxt>
+<ptxt>OFF: Sliding roof is not operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIDING ROOF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operate sliding roof SLIDE OPEN/TILT DOWN</ptxt>
+<ptxt>OPEN/DOWN: Sliding roof SLIDE OPEN or TILT DOWN operation occurs</ptxt>
+<ptxt>OFF: Sliding roof is not operating</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>OK</subtitle>
+<specitem>
+<ptxt>Sliding roof operates normally.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000UZV00HX_04_0002" fin="false">OK</down>
+<right ref="RM000000UZV00HX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000UZV00HX_04_0002" proc-id="RM0250U___0000BG700000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (SLIDING ROOF SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Use the DATA LIST to check if the sliding roof switch is functioning properly.</ptxt>
+<spec>
+<title>Sliding roof ECU</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OPEN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slide switch open signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: OPEN switch is pressed.</ptxt>
+<ptxt>OFF: OPEN switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLOSE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slide switch close signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: CLOSE switch is pressed.</ptxt>
+<ptxt>OFF: CLOSE switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tilt switch up signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: UP switch is pressed.</ptxt>
+<ptxt>OFF: UP switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DOWN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tilt switch down signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: DOWN switch is pressed.</ptxt>
+<ptxt>OFF: DOWN switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>OK</subtitle>
+<specitem>
+<ptxt>The intelligent tester displays as shown in the table according to the operation of each switch.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000UZV00HX_04_0004" fin="false">NG</down>
+<right ref="RM000000UZV00HX_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000UZV00HX_04_0004" proc-id="RM0250U___0000BG900000">
+<testtitle>CHECK WIRE HARNESS (SLIDING ROOF CONTROL ECU - ROOF CONSOLE BOX ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the Q13 <sup>(*1)</sup> or R1 <sup>(*2)</sup> and Q6 connectors.</ptxt>
+<figure>
+<graphic graphicname="B131169E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Q13-2 (E) - Q6-3 (GND)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-7 (OPN) - Q6-2 (OPN)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-8 (DWN) - Q6-4 (DOWN)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-9 (CLS) - Q6-1 (CLS)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-10 (UP) - Q6-5 (UP)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-2 (E) - Q6-3 (GND)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-7 (DWN) - Q6-4 (DOWN)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-8 (CLS) - Q6-1 (CLS)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-9 (UP) - Q6-5 (UP)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-10 (OPN) - Q6-2 (OPN)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-1 (CLS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-2 (OPN) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-4 (DOWN) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-5 (UP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: TMC made</ptxt>
+</item>
+<item>
+<ptxt>*2: TMMK made</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000UZV00HX_04_0006" fin="true">OK</down>
+<right ref="RM000000UZV00HX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000UZV00HX_04_0005">
+<testtitle>REPLACE SLIDING ROOF DRIVE GEAR SUB-ASSEMBLY (SLIDING ROOF CONTROL ECU)</testtitle>
+</testgrp>
+<testgrp id="RM000000UZV00HX_04_0006">
+<testtitle>REPLACE ROOF CONSOLE BOX ASSEMBLY (SLIDING ROOF CONTROL SWITCH)</testtitle>
+</testgrp>
+<testgrp id="RM000000UZV00HX_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

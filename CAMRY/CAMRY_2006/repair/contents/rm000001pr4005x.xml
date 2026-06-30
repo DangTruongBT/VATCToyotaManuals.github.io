@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_730O6_T00F9" variety="T00F9">
+<name>THEFT DETERRENT SYSTEM (w/ Smart Key System)</name>
+<para id="RM000001PR4005X" category="J" type-id="3024U" name-id="TD052-05" from="200601">
+<dtccode/>
+<dtcname>Horn Circuit</dtcname>
+<subpara id="RM000001PR4005X_01" type-id="60" category="03" proc-id="RM0250U___00005EZ00001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the theft deterrent system is switched from the armed state to the alarm sounding state, the main body ECU transmits a signal to cause the horn to sound at intervals of 0.4 seconds.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001PR4005X_02" type-id="32" category="03" proc-id="RM0250U___00005F000001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B139444E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001PR4005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001PR4005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001PR4005X_04_0001" proc-id="RM0250U___00005F100001">
+<testtitle>INSPECT HORNS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Press the horn switch and check if the horns sound.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Go to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Horns sound</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Horns do not sound</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR4005X_04_0002" fin="true">A</down>
+<right ref="RM000001PR4005X_04_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR4005X_04_0002">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001PR4005X_04_0003">
+<testtitle>GO TO HORN SYSTEM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

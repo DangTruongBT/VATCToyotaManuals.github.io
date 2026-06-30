@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7C026X" category="D" type-id="303FD" name-id="AT031-66" from="200601">
+<name>MANUAL SHIFTING TEST</name>
+<subpara id="RM000000W7C026X_z0" proc-id="RM0250U___000063B00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PERFORM MANUAL SHIFTING TEST</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>With this test, it can be determined whether the trouble occurs in the electrical circuit or is a mechanical problem in the transaxle.</ptxt>
+</item>
+<item>
+<ptxt>If any abnormalities are found in the following test, the problem is in the transaxle itself.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Disconnect the connector of the transmission wire.</ptxt>
+<figure>
+<graphic graphicname="C109079E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Drive with the transmission wire disconnected.</ptxt>
+<ptxt>Shifting the shift lever in the order of L, 2, 3, 4 and D position to check whether the shifting condition changes the table below.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shifting Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>L ←→ 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No Shift (Not Change)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 ←→ 3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Down Shift ←→ Up Shift</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 ←→ 4 ←→ D</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No Shift (Not Change)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When driving with the transmission wire disconnected, the shift lever position is in L or 2, the gear position is held in 3rd and the shift lever position is in 3, 4 or D, the gear position is held in 4th. However, when the shift position is in R or P, the operation is same as usual.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Connect the connector of the transmission wire.</ptxt>
+</step2>
+<step2>
+<ptxt>Clear the DTC.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

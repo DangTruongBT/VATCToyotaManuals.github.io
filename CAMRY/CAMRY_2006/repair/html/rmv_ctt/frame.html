@@ -1,0 +1,115 @@
+<!-- $Id: frame.html,v 1.17 2005/10/28 01:54:24 n-tamamura Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Installation and Removal Menu</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script src="../../js/dropdown.js"></script>
+<script language="javaScript">
+var g_ilstId = null;  // Illust ID
+var g_ptsId  = null;  // Parts ID
+var g_secId = null;	//Section Id
+var g_ttlId  = null;  // Title ID
+var g_paraId = null;  // Paragraph ID
+var g_term   = null;  // term
+var g_filter = null;  // Filter ID
+var g_vin    = null;  // VIN No.
+var g_tocXml = null;  // toc_rpr.xml
+var g_objXml = null;  // paraId.xml
+var g_cmpXml = null;  // components.xml
+var g_prcXml = null;  // proc.xsl
+var g_fltXsl = null;  // filter.xsl
+var g_cttXsl = null;  // contents.xsl
+var g_prtCttXsl = null;  //print_contents.xsl
+var g_lclXsl = null;  // local.xsl
+var g_carType= null;  // car type
+var g_bp     = null;  // Back Paragraph
+var g_s1     = null; // proc ID
+
+var g_sectionName   = null;
+var g_titleName     = null;
+var g_paragraphName = null;
+
+function init() {
+	g_term   = findParameterValue("term");
+	g_filter = findParameterValue("filter");
+	g_vin    = findParameterValue("vin");
+	g_secId  = findParameterValue("section");
+	g_ttlId  = findParameterValue("ttl");
+	g_paraId = findParameterValue("parag");
+	g_ilstId = findParameterValue("illust");
+	g_bp     = findParameterValue("bp");
+	g_s1     = findParameterValue("s1");
+	g_ptsId  = findParameterValue("partId");	
+	g_tocXml = initXml("toc_rpr.xml");
+	g_cmpXml = initXml("components.xml");
+	if(g_secId!=null) g_prcXml = initXml("proc_" +g_secId +".xml", false, false);
+	g_fltXsl = initXsl("../../xsl/utl/filter.xsl");
+	if (g_filter!=null) {
+		g_tocXml = setFilter(g_tocXml, g_fltXsl, "../../filter/"+g_filter.toLowerCase()+".xml");
+		g_cmpXml = setFilter(g_cmpXml, g_fltXsl, "../../filter/"+g_filter.toLowerCase()+".xml");
+	}
+	g_tocXml.setProperty("SelectionLanguage", "XPath");
+	if (g_paraId==null) {
+		if (g_ttlId==null) return;
+		if (g_ptsId != null) {
+			var procXml = initXml("proc_" + g_secId + ".xml", false, false);
+			paraList = g_tocXml.selectNodes("//ttl[@id='"+g_ttlId+"']/para[@category='A']/@id");
+			var s1List = procXml.selectNodes("//s-1[parts[@id='" + g_ptsId + "']]");
+			for (i = 0; i < s1List.length; ++i) {
+				var s1Id = s1List.item(i).getAttribute("id");
+				for(j = 0; j < paraList.length; ++j) {
+					var paraId = paraList.item(j).nodeTypedValue;
+					if (s1Id.indexOf(paraId, 0) >= 0) {
+						g_s1 = s1Id;
+						g_paraId = paraId;
+						break;
+					}
+				}
+				if (g_paraId != null) {
+					break;
+				}
+			}
+		}
+		if (g_paraId == null) {				
+			g_paraId=g_tocXml.selectSingleNode("//ttl[@id='"+g_ttlId+"']/para[@category='A']/@id").nodeTypedValue;
+		}
+	}
+	g_objXml = initXml(g_paraId.toLowerCase()+".xml");
+	g_cttXsl = initXsl("../../xsl/rmv/contents.xsl");
+	g_prtCttXsl = initXsl("../../xsl/rmv/print_contents.xsl");
+	g_lclXsl = initXsl("../../xsl/rmv/local.xsl");
+	g_carType = getCarType(g_filter);
+//	var ttlId = g_objXml.selectSingleNode("//ttl/@id").nodeTypedValue;	//It is for Index, Search function.
+}
+init();
+</script>
+</head>
+<frameset rows="85, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" scrolling="no">
+		<frameset rows="35, *" frameborder="no" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no" scrolling="auto">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

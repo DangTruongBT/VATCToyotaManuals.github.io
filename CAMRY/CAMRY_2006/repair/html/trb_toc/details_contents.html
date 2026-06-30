@@ -1,0 +1,25 @@
+<!-- $Id: details_contents.html,v 1.3 2004/04/26 05:10:17 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics -DTC Chart-</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	ttl.innerHTML = parent.g_title;
+	parent.display(parent.g_objXml, parent.g_objXsl, disp, null);
+}
+</script>
+</head>
+<body onLoad="init()">
+	<p id="ttl" class="location"></p>	
+	<div id="disp"></div>
+</body>
+</html>

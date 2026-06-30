@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000XWR008X" category="D" type-id="303F2" name-id="SR00M-08" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000XWR008X_z0" proc-id="RM0250U___00009ZJ00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<step2>
+<ptxt>The steering lock system locks or unlocks the steering lock by activating the steering lock bar with a motor. The steering lock ECU activates the motor based on signals from the certification ECU and main body ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>A LIN (Local Interconnect Network) is used for communication between different ECUs in this system.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTIONS OF COMPONENTS</ptxt>
+<step2>
+<ptxt>The steering lock ECU controls the system based on information from the following components.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Steering lock actuator assembly</ptxt>
+</entry>
+<entry>
+<ptxt>Consists of a motor, lock bar, lock and unlock position sensors, etc. Activated by the steering lock ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Steering lock ECU</ptxt>
+</entry>
+<entry>
+<ptxt>Included in the steering lock actuator assembly. This ECU activates the steering lock motor based on permission signals from the main body ECU and certification ECU. </ptxt>
+<ptxt>Detects steering lock or unlock state and transmits this status to other ECUs.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry>
+<ptxt>Permits the steering lock ECU to supply power to activate the motor. The main body ECU and certification ECU permit engine start after receiving an unlock signal from the steering lock ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry>
+<ptxt>Orders the steering lock ECU to lock / unlock the steering. The main body ECU and certification ECU permit engine start after receiving an unlock signal from the steering lock ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>IG2 relay</ptxt>
+</entry>
+<entry>
+<ptxt>Controlled by the main body ECU. This ECU sends IG signals to the steering lock ECU.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_7375N_T00GR" variety="T00GR">
+<name>IG2 RELAY</name>
+<para id="RM000002D4B000X" category="G" type-id="3001K" name-id="ES4R9-01" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000002D4B000X_01" type-id="01" category="01">
+<s-1 id="RM000002D4B000X_01_0001" proc-id="RM0250U___0000C8400000">
+<ptxt>INSPECT IG2 RELAY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using an ohmmeter, measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B016200" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry>
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry>
+<ptxt>Below 1 Ω (Battery voltage applied between terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the relay.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

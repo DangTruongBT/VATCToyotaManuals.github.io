@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XMX008X" category="D" type-id="303F4" name-id="TW0DF-03" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM000000XMX008X_z0" proc-id="RM0250U___00005GT00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DTC CHECK (USING SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Check DTCs.</ptxt>
+<figure>
+<graphic graphicname="E129455E01" width="2.775699831in" height="7.795582503in"/>
+</figure>
+<step3>
+<ptxt>Using the SST, connect terminals TC and CG of DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Read and record any DTCs from the tire pressure warning light on the combination meter. Refer to the illustration on the left for examples of a normal system code and codes 13 and 33.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the tire pressure warning light does not indicate any DTCs or the normal system code, inspect the tire pressure warning light circuit or TC and CG terminal circuit.</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" align="center" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep01" href="RM000000XN3007X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TC and CG terminal circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep02" href="RM000000XN5008X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<item>
+<ptxt>If 2 or more malfunctions are indicated at the same time, the lowest numbered DTC is displayed first.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Refer to the Diagnostic Trouble Code Chart (See page <xref label="Seep03" href="RM000000XMR008X"/>) for DTC information.</ptxt>
+</step3>
+<step3>
+<ptxt>After completing the check, turn the ignition switch off and remove the SST from DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CHECK (USING INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Check DTCs.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Read the DTCs following the prompts on the tester screen.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Clear the DTCs.</ptxt>
+<atten4>
+<ptxt>After repairing the malfunctions, clear the DTCs.</ptxt>
+</atten4>
+<step3>
+<ptxt>Connect the intelligent tester to DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Clear the DTCs following the prompts on the tester screen.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000WIP00HX" category="J" type-id="303TO" name-id="CA0ER-01" from="200601">
+<dtccode/>
+<dtcname>ECM Communication Stop Mode</dtcname>
+<subpara id="RM000000WIP00HX_01" type-id="60" category="03" proc-id="RM0250U___00009BX00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="2.36in"/>
+<colspec colname="COL2" align="center" colwidth="2.36in"/>
+<colspec colname="COL3" align="center" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECM Communication Stop Mode</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>"Engine" and "ECT" are not displayed on the "Communication Bus Check" screen of the intelligent tester </ptxt>
+</item>
+<item>
+<ptxt>Applies to "ECM Communication Stop Mode" in the "DTC COMBINATION TABLE"</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Power source circuit of the ECM</ptxt>
+</item>
+<item>
+<ptxt>ECM main bus wire or connector</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WIP00HX_02" type-id="32" category="03" proc-id="RM0250U___00009BY00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C126217E08" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<figure>
+<graphic graphicname="C126217E09" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WIP00HX_03" type-id="51" category="05" proc-id="RM0250U___0000CLC00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn the ignition switch off before measuring the resistance of the CAN main wire and CAN branch wires.</ptxt>
+</item>
+<item>
+<ptxt>After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating.</ptxt>
+</item>
+<item>
+<ptxt>Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If doors need to be opened in order to check connectors, open the doors and leave them open.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Operating the ignition switch, any other switches or any triggers related ECU and sensor communication on the CAN, which would cause resistance reading variations.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000WIP00HX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WIP00HX_05_0006" proc-id="RM0250U___0000CH800000">
+<testtitle>CHECK OPEN IN CAN BUS WIRE (ECU MAIN BUS WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the  CAN main bus wire connector (A40) to the No. 2 CAN J/C (front side of the vehicle).</ptxt>
+<figure>
+<graphic graphicname="G100098E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>2AZ-FE</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A24-41 (CANH) - A24-49 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>2GR-FE</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A55-41 (CANH) - A55-49 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>108 to 132 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIP00HX_05_0007" fin="false">OK</down>
+<right ref="RM000000WIP00HX_05_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIP00HX_05_0007" proc-id="RM0250U___0000CH900000">
+<testtitle>CHECK ECM POWER SOURCE CIRCUIT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the ECM power source circuit (2AZ-FE: See page <xref label="Seep01" href="RM000002769000X"/> or 2GR-FE: See page <xref label="Seep02" href="RM000000WZ000YX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIP00HX_05_0008" fin="true">OK</down>
+<right ref="RM000000WIP00HX_05_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIP00HX_05_0008">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000WIP00HX_05_0009">
+<testtitle>REPAIR OR REPLACE CAN MAIN WIRE OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIP00HX_05_0010">
+<testtitle>REPAIR OR REPLACE ECM POWER SOURCE CIRCUIT</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

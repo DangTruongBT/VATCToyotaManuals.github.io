@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GUW002X" category="C" type-id="3010H" name-id="EI07D-03" from="200601">
+<dtccode>B2795</dtccode>
+<dtcname>Unmatched Key Code</dtcname>
+<subpara id="RM000001GUW002X_01" type-id="60" category="03" proc-id="RM0250U___00008FJ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when a key with a key code that has not been registered in the ECU is inserted into the ignition key cylinder.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2795</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key with unregistered key code is inserted</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001GUW002X_02" type-id="51" category="05" proc-id="RM0250U___00008KL00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>If the key is replaced, register the key (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GUW002X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GUW002X_03_0001" proc-id="RM0250U___00008FK00000">
+<testtitle>RE-REGISTER KEY</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000001GV8002X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Re-register the key (See page <xref label="Seep02" href="RM00000120Y006X"/>) and insert this key into the ignition key cylinder. Check that the engine starts with this key.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The engine starts.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GUW002X_03_0003" fin="true">OK</down>
+<right ref="RM000001GUW002X_03_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GUW002X_03_0002">
+<testtitle>REPLACE KEY</testtitle>
+</testgrp>
+<testgrp id="RM000001GUW002X_03_0003">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,66 @@
+<!-- $Id: contents.html,v 1.8 2005/08/26 01:25:39 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Please wait...                                                    -->
+<!--  001 Please choose a system on the left window.                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script src="../../js/svg.js"></script>
+<script language="javascript">
+function init() {
+	initSvg(window.self);
+	paraId = parent.findParameterValue("parag", location.search, parent.location.search);
+	parent.g_illustId = parent.findParameterValue("illust" , location.search , parent.location.search);
+	if (parent.g_illustId==null) {
+		if (paraId==null) {
+			document.all('msg').style.display = "none";
+			return;
+		}
+		var illustIds = parent.getIllustIdList(paraId);
+		if (illustIds==null) return;
+		parent.g_illustId = illustIds[0];
+	}
+	if (parent.g_illustId==null) return;
+	disp.innerHTML = "<embed src='../../svgz/"
+								+ parent.g_illustId.toLowerCase() + ".svgz' "
+								+ " width='" + (g_iOrgSvgWidth)
+								+ "' height='" + (g_iOrgSvgWidth*HEIGHT_WIDTH_RATE)
+								+ "' name='svgdata'></embed>";
+	svgTitle.innerHTML = parent.g_illustId;
+	setTimeout("changeColorPart()", ONLOAD_POLLING_TIME);
+	setTimeout("hideMessage()", ONLOAD_POLLING_TIME);
+	parent.global.document.getElementById('print').style.visibility="visible";
+	parent.global.setGlobalLinks();
+}
+  
+function changeColorPart(){
+	var svgobj = document.all('svgdata');
+	if (svgobj != null) {
+		forceChangeAllTxtCol( svgdata , COLOR_DEF_LINK);
+	}else{
+		setTimeout("changeColorPart()", ONLOAD_POLLING_TIME);
+	}
+}
+
+</script>
+</head>
+<body onLoad="init();">
+	<center>
+		<div id='msg' class='message'>
+			<br/><br/><br/>Please wait...<!-- 000 -->
+		</div>
+	</center>
+	<div id="disp">
+		Please choose a system on the left window.<!-- 001 -->
+	</div>
+	<div id='svgTitle' class='illustId'></div>
+</body>
+</html>

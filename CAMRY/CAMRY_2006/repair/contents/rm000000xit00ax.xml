@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIT00AX" category="J" type-id="3019E" name-id="BC1MX-01" from="200601">
+<dtccode/>
+<dtcname>VSC Warning Light does not Come ON</dtcname>
+<subpara id="RM000000XIT00AX_01" type-id="60" category="03" proc-id="RM0250U___00005PP00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU communicates with the combination meter via CAN communication. If the ECU stores a DTC, the DTC will be displayed on the multi information display in the combination meter (models with multi information display). On models without a multi information display, the VSC warning light will come on when the skid control ECU stores a DTC. </ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XIT00AX_02" type-id="32" category="03" proc-id="RM0250U___00005PQ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C109475E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIT00AX_03" type-id="51" category="05" proc-id="RM0250U___00005PR00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XIT00AX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIT00AX_04_0001" proc-id="RM0250U___00005PS00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the CAN communication system DTC is output (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIT00AX_04_0003" fin="false">A</down>
+<right ref="RM000000XIT00AX_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIT00AX_04_0003" proc-id="RM0250U___00005PU00000">
+<testtitle>CHECK VSC WARNING LIGHT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select "VSC WARN LAMP" in the Active Test and operate the VSC warning light (models without multi information display) or multi information display (models with multi information display) using the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>ABS / VSC:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition / Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSC WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn VSC warning light (*1) or multi information display (*2) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe combination meter</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>(*1): Models without multi information display</ptxt>
+<ptxt>(*2): Models with multi information display</ptxt>
+</test1>
+<test1>
+<ptxt>Check that "ON" and "OFF" of the VSC warning light (models without multi information display) or multi information display (models with multi information display) are indicated on the combination meter when using the intelligent tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The VSC warning light (models without multi information display) or multi information display (models with multi information display) turns on or off in accordance with the intelligent tester.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step before replacing the part (See page <xref label="Seep01" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIT00AX_04_0004" fin="false">NG</down>
+<right ref="RM000000XIT00AX_04_0008" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIT00AX_04_0004" proc-id="RM0250U___00005PV00000">
+<testtitle>INSPECT COMBINATION METER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform Active Test of the combination meter (meter CPU) using the intelligent tester (See page <xref label="Seep01" href="RM0000012G700DX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The VSC warning light (models without multi information display) or multi information display (models with multi information display) turns on or off in accordance with the intelligent tester.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep02" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIT00AX_04_0008" fin="true">OK</down>
+<right ref="RM000000XIT00AX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIT00AX_04_0006">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XIT00AX_04_0008">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIT00AX_04_0009">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

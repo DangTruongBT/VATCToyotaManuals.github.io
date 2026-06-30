@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM0000011GH007X" category="D" type-id="303FN" name-id="DL07T-06" from="200601">
+<name>CUSTOMIZE PARAMETERS</name>
+<subpara id="RM0000011GH007X_z0" proc-id="RM0250U___00009FI00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CUSTOMIZING FUNCTION WITH INTELLIGENT TESTER</ptxt>
+<atten4>
+<ptxt>The following items can be customized.</ptxt>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before attempting to customize vehicle settings, confirm whether it is possible to make the change that the customer has requested.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to record the current settings before customizing.</ptxt>
+</item>
+<item>
+<ptxt>When troubleshooting, make sure that the item in question has not been disabled using the customizing function. </ptxt>
+</item>
+</list1>
+</atten3>
+<table pgwide="1">
+<title>DOOR LOCK:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+<ptxt>(Item)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Default</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>UNLOCK/PARK</ptxt>
+<ptxt>(Unlock w/ ignition switch on (IG), shift P, speed 0 km/h (0 mph))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/T: ON</ptxt>
+<ptxt>M/T: OFF (Cannot be changed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that unlocks doors when the shift lever is moved to the P position from any other position while the ignition switch is on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ALL UNLK/OPN-CL</ptxt>
+<ptxt>(All unlock w/ D door open-close)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/T: OFF</ptxt>
+<ptxt>M/T: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that unlocks all other doors when opening driver side door within 10 seconds after turning the ignition switch off from on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UNLK/KEY TWICE</ptxt>
+<ptxt>(Unlock w/ 2 times D key operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Function that unlocks only the driver side door when the driver side door key cylinder is turned to unlock once and unlocks all the doors when it is turned to unlock twice</ptxt>
+</item>
+<item>
+<ptxt>In the OFF setting, turning it once unlocks all doors</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO LOCK/SHIFT</ptxt>
+<ptxt>(Auto lock/shift not P)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/T: ON</ptxt>
+<ptxt>M/T: OFF (Cannot be changed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that locks doors when the shift lever is moved from the P position to any other position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AUTO LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that locks doors when vehicle reaches a vehicle speed 20 km/h (13 mph)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>WIRELESS D LOCK:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+<ptxt>(Item)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Default</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Setting</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AUTO LOCK DELAY</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>60s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that selects AUTO LOCK time (30 sec. or 60 sec.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>30s/60s</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

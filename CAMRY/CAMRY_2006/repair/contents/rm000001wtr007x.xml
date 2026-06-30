@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000001WTR007X" category="C" type-id="800FJ" name-id="NS0M3-07" from="200601">
+<dtccode>63-10</dtccode>
+<dtcname>CD Changer Mechanical Error</dtcname>
+<dtccode>63-11</dtccode>
+<dtcname>CD Insertion and Ejection Error</dtcname>
+<dtccode>63-12</dtccode>
+<dtcname>CD Reading Abnormal</dtcname>
+<subpara id="RM000001WTR007X_01" type-id="60" category="03" proc-id="RM0250U___00004Z900000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>63-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A mechanical error in the CD changer is detected while the CD is not being inserted or ejected.</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Radio and navigation assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>63-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD insertion or ejection is failed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>63-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD read problem occurs.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001WTR007X_02" type-id="51" category="05" proc-id="RM0250U___00004ZA00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After the inspection is completed, clear the DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001WTR007X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001WTR007X_03_0001">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<res>
+<down ref="RM000001WTR007X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001WTR007X_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

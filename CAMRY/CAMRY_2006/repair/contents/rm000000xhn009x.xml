@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHN009X" category="T" type-id="3001H" name-id="BC02K-09" from="200601">
+<name>PROBLEM SYMPTOMS TABLE</name>
+<subpara id="RM000000XHN009X_z0" proc-id="RM0250U___00005LA00000">
+<content5 releasenbr="1">
+<ptxt>If there are no DTCs output and the problem still occurs, check the circuits for each problem symptom in the order given in the table below and proceed to the relevant troubleshooting page.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Inspect the fuse and relay before investigating the suspected areas as shown in the table below.</ptxt>
+</item>
+<item>
+<ptxt>Inspect each malfunction circuit in numerical order for the corresponding symptom.</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>Vehicle Stability Control System:</title>
+<tgroup cols="3" colsep="1" rowsep="1" align="center">
+<colspec colnum="1" colname="1" colwidth="2.79in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="3.17in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.12in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" valign="middle">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle">
+<ptxt>Suspected Area</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" morerows="5" colsep="1" valign="middle" align="left">
+<ptxt>ABS, BA and/or EBD does not operate</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. Check the DTC again and make sure that the normal system code is output.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XHV009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. IG power source circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XW6009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>3. Front speed sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>4. Rear speed sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>5. Check the brake actuator assembly with the intelligent tester. (Check brake actuator assembly operation using the Active Test function.) If abnormal, check the hydraulic circuit for leakage.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P9004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>6. If the symptoms still occur even after the above circuits in suspected areas have been inspected and proved to be normal, replace the brake actuator assembly (skid control ECU).</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="5" colsep="1" valign="middle" align="left">
+<ptxt>ABS, BA and/or EBD does not operate efficiently</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. Check the DTC again and make sure that the normal system code is output.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XHV009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Front speed sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>3. Rear speed sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>4. Stop light switch circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIE009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>5. Check the brake actuator assembly with the intelligent tester. (Check brake actuator assembly operation using the Active Test function.) If abnormal, check the hydraulic circuit for leakage.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P9004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>6. If the symptoms still occur even after the above circuits in suspected areas have been inspected and proved to be normal, replace the brake actuator assembly (skid control ECU).</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="2" colsep="1" valign="middle" align="left">
+<ptxt>ABS sensor DTC check cannot be done</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. Check the DTC again and make sure that the normal system code is output.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XHV009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. TC and CG terminal circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIU009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>3. If the symptoms still occur even after the above circuit in suspected areas has been inspected and proved to be normal, replace the brake actuator assembly (skid control ECU).</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>ABS warning light abnormal (Remains on)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. ABS warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIH00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>ABS warning light abnormal (Does not come on)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. ABS warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIQ00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>BRAKE warning light abnormal (Remains on)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. BRAKE warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YHG00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>BRAKE warning light abnormal (Does not come on)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. BRAKE warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YHH00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="7" colsep="1" valign="middle" align="left">
+<ptxt>VSC and/or TRAC does not operate</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. Check the DTC again and make sure that the normal system code is output.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XHV009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. IG power source circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XW6009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>3. Check the hydraulic circuit for leakage</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>4. Front speed sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XI9009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>5. Rear speed sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIA009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>6. Yaw rate and acceleration sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000001RFV003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>7. Steering angle sensor circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIM00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>8. If the symptoms still occur even after the above circuits in suspected areas have been inspected and proved to be normal, replace the brake actuator assembly (skid control ECU).</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="2" colsep="1" valign="middle" align="left">
+<ptxt>VSC sensor DTC check cannot be done</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. Check the DTC again and make sure that the normal system code is output.</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XHV009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. TC and CG terminal circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIU009X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>3. If the symptoms still occur even after the above circuit in suspected areas has been inspected and proved to be normal, replace the brake actuator assembly (skid control ECU).</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>VSC warning light abnormal (Remains on) (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. VSC warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIO00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>VSC warning light abnormal (Does not come on) (*1)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. VSC warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIT00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>Multi information display abnormal (Remains on) (*2)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. VSC warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIO00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>Multi information display abnormal (Does not come on) (*2)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. VSC warning light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIT00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>SLIP indicator light abnormal (Remains on)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. SLIP indicator light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YHI00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>SLIP indicator light abnormal (Does not come on)</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. SLIP indicator light circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000YHJ00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>Sensor check cannot be done</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. TS and CG terminal circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIV00CX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" morerows="1" colsep="1" valign="middle" align="left">
+<ptxt>Skid control buzzer abnormal</ptxt>
+</entry>
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>1. Skid control buzzer circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM000000XIS00AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="2" colsep="1" valign="middle" align="left">
+<ptxt>2. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" valign="middle">
+<ptxt>
+<xref href="RM0000013P6003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>(*1): Models without multi information display</ptxt>
+<ptxt>(*2): Models with multi information display</ptxt>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

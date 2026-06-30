@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM0000010VP00OX" category="J" type-id="800WN" name-id="RS0BN-21" from="200601">
+<dtccode/>
+<dtcname>Trouble in Passenger Airbag ON / OFF Indicator</dtcname>
+<subpara id="RM0000010VP00OX_01" type-id="60" category="03" proc-id="RM0250U___0000AFW00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The occupant classification system detects the front passenger seat condition. It then informs a passenger of the front passenger airbag assembly and front seat side airbag assembly condition (activated/not activated) by the passenger airbag ON/OFF indicator.</ptxt>
+<atten4>
+<ptxt>Approximately 6 seconds after the ignition switch is turned to the on (IG), the passenger airbag ON/OFF indicator will be ON/OFF depending on the conditions listed below.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Front passenger seat condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON Indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF Indicator</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Adult is seated.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Child is seated.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vacant</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Occupant classification system failure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000010VP00OX_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000010VP00OX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000010VP00OX_03_0001" proc-id="RM0250U___0000AFX00000">
+<testtitle>CHECK SRS WARNING LIGHT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG), and check the SRS warning light condition.</ptxt>
+<atten4>
+<ptxt>If this trouble occurs, the SRS warning light is off. If the light is on, a DTC is output. Troubleshoot for the output DTC.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>After the primary check period, SRS warning light goes off.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>The primary check period is approximately 6 seconds after the ignition switch is turned on (IG).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0003" fin="false">OK</down>
+<right ref="RM0000010VP00OX_03_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0003" proc-id="RM0250U___0000AFZ00000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETE" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0004" fin="false">OK</down>
+<right ref="RM0000010VP00OX_03_0005" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0004" proc-id="RM0250U___0000AG000000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0005" fin="false">NG</down>
+<right ref="RM0000010VP00OX_03_0013" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0005" proc-id="RM0250U___0000AG100000">
+<testtitle>RETIGHTEN FRONT SEAT ASSEMBLY RH BOLT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Loosen the 4 installation bolts of the front seat assembly RH.</ptxt>
+</test1>
+<test1>
+<ptxt>Tighten the 4 installation bolts of the front seat assembly RH to the specified torque.</ptxt>
+</test1>
+<torque>
+<torqueitem>
+<t-value1>37</t-value1>
+<t-value2>377</t-value2>
+<t-value4>27</t-value4>
+</torqueitem>
+</torque>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0006" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0006" proc-id="RM0250U___0000AG200000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETE" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0007" fin="false">OK</down>
+<right ref="RM0000010VP00OX_03_0008" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0007" proc-id="RM0250U___0000AG300000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0008" fin="false">NG</down>
+<right ref="RM0000010VP00OX_03_0013" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0008" proc-id="RM0250U___0000AG400000">
+<testtitle>CHECK CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors are properly connected to the occupant classification ECU and the 4 occupant  classification sensors.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are properly connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the occupant classification ECU and the 4 occupant classification  sensors.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors are not damaged or deformed.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0009" fin="false">OK</down>
+<right ref="RM0000010VP00OX_03_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0009" proc-id="RM0250U___0000AG500000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the connectors to the occupant classification ECU and the 4 occupant classification sensors.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep03" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC is not output.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0010" fin="false">OK</down>
+<right ref="RM0000010VP00OX_03_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0010" proc-id="RM0250U___0000AG600000">
+<testtitle>REPLACE OCCUPANT CLASSIFICATION ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Replace the occupant classification ECU (See page <xref label="Seep01" href="RM0000011JG003X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0011" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0011" proc-id="RM0250U___0000AG700000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETE" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0012" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0012" proc-id="RM0250U___0000AG800000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VP00OX_03_0013" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0013">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0014">
+<testtitle>REPAIR OR REPLACE CONNECTOR, THEN GO TO STEP 1</testtitle>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0015">
+<testtitle>REPLACE CENTER AIRBAG SENSOR ASSEMBLY<xref label="Seep01" href="RM000000UWV00HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000010VP00OX_03_0016">
+<testtitle>GO TO DTC CHART<xref label="Seep01" href="RM000000XF700CX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

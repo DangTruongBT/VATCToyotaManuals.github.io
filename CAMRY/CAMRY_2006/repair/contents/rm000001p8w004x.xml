@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000001P8W004X" category="J" type-id="304YP" name-id="DL14B-01" from="200601">
+<dtccode/>
+<dtcname>Touch Sensor Circuit</dtcname>
+<subpara id="RM000001P8W004X_01" type-id="60" category="03" proc-id="RM0250U___00009NO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit receives a signal indicating whether a touch sensor signal is detected.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001P8W004X_02" type-id="32" category="03" proc-id="RM0250U___00009NP00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B112470E04" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001P8W004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001P8W004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001P8W004X_04_0001" proc-id="RM0250U___00009NQ00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Following the display on the tester, select "DATA LIST".</ptxt>
+<table pgwide="1">
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D TOUCH SENSOR</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Status of touch sensor front LH/ ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Touch sensor is touched</ptxt>
+<ptxt>OFF: Touch sensor is not touched</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P TOUCH SENSOR</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Status of touch sensor front RH/ ON or OFF</ptxt>
+</entry>
+<entry>
+<ptxt>ON: Touch sensor is touched</ptxt>
+<ptxt>OFF: Touch sensor is not touched</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"ON" (screen is touched) or "OFF" (screen is not touched) appears on the tester screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8W004X_04_0002" fin="false">NG</down>
+<right ref="RM000001P8W004X_04_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0002" proc-id="RM0250U___00009NR00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU - ELECTRICAL KEY OSCILLATOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B137964E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the oscillator connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-5 (SEL1) - X2-4 (SEL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-22 (SEN1) - X2-6 (SENS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-6 (SEL2) - W2-4 (SEL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-23 (SEN2) - W2-6 (SENS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-5 (SEL1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-22 (SEN1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-6 (SEL2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-23 (SEN2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8W004X_04_0004" fin="false">OK</down>
+<right ref="RM000001P8W004X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0004" proc-id="RM0250U___00009NT00000">
+<testtitle>CHECK AND REPLACE ELECTRICAL KEY OSCILLATOR (CHECK OPERATION OF OSCILLATOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the door oscillator.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the entry UNLOCK function operates normally.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Entry UNLOCK function operates normally.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8W004X_04_0003" fin="false">OK</down>
+<right ref="RM000001P8W004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0003" proc-id="RM0250U___00009NS00000">
+<testtitle>INSPECT CERTIFICATION ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the ECU and the oscillator connectors.</ptxt>
+<figure>
+<graphic graphicname="B137963E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.53in"/>
+<colspec colname="COL3" colwidth="1.15in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-5 (SEL1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Move the key more than 5 m (16.4 ft) away from the front door LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-5 (SEL1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Bring it to the outside handle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-6 (SEL2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Move the key more than 5 m (16.4 ft) away from the front door RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-6 (SEL2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Bring it to the outside handle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-22 (SEN1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front door LH outside handle is not held (Bring the electrical key to the outside handle)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-22 (SEN1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front door LH outside handle is held</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-23 (SEN2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front door RH outside handle is not held (Bring the electrical key to the outside handle)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-23 (SEN2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front door RH outside handle is held</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8W004X_04_0006" fin="true">OK</down>
+<right ref="RM000001P8W004X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0005">
+<testtitle>END (ELECTRICAL KEY OSCILLATOR IS DEFECTIVE)</testtitle>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0006">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001P8W004X_04_0008">
+<testtitle>REPLACE CERTIFICATION ECU</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

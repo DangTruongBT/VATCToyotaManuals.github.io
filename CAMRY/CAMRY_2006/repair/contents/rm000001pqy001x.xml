@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_72WHB_T0068" variety="T0068">
+<name>THEFT DETERRENT SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001PQY001X" category="U" type-id="303FJ" name-id="TD076-09" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000001PQY001X_z0" proc-id="RM0250U___00005ET00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester DATA LIST allows switch, sensor, actuator and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to shorten labor time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / MAIN BODY / DATA LIST / DIAG&amp;CUSTOMIZE.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (Main body ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="0.71in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>KEY UNLK WRN SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock warning switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Key is inserted in the ignition key cylinder</ptxt>
+<ptxt>OFF: Key is removed from the ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch is ACC</ptxt>
+<ptxt>OFF: Ignition switch is OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch is ON</ptxt>
+<ptxt>OFF: Ignition switch is OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D door courtesy switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is OPEN</ptxt>
+<ptxt>OFF: Driver side door is CLOSED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P door courtesy switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Front passenger side door is OPEN</ptxt>
+<ptxt>OFF: Front passenger side door is CLOSED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RR DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right door courtesy switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear right door is OPEN</ptxt>
+<ptxt>OFF: Rear right door is CLOSED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RL DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left door courtesy switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear left door is OPEN</ptxt>
+<ptxt>OFF: Rear left door is CLOSED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LUGG COURTSY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment door courtesy switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Luggage compartment door is OPEN</ptxt>
+<ptxt>OFF: Luggage compartment door is CLOSED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver's door lock position switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver's door is UNLOCKED</ptxt>
+<ptxt>OFF: Driver's door is LOCKED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger door lock position switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Passenger door is UNLOCKED</ptxt>
+<ptxt>OFF: Passenger door is LOCKED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HOOD COURTSY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine hood courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Engine hood is OPEN</ptxt>
+<ptxt>OFF: Engine hood is CLOSED</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PASSIVE MODE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passive mode/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Passive mode ON</ptxt>
+<ptxt>OFF: Passive mode OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WARN BY HORN</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Warning by horn/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Vehicle horns sound during alarm sounding state</ptxt>
+<ptxt>OFF: Vehicle horns do not sound during alarm sounding state</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENTRY DELAY</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Entry delay time during passive mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0s: Entry delay time is 0 sec.</ptxt>
+<ptxt>14s: Entry delay time is 14 sec.</ptxt>
+<ptxt>30s: Entry delay time is 30 sec.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester ACTIVE TEST allows relay, VSV, actuator and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to shorten the labor time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / MAIN BODY / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (Main body ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.02in"/>
+<colspec colname="COLSPEC0" colwidth="2.02in"/>
+<colspec colname="COL3" align="center" colwidth="1.52in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>HAZARD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hazard warning light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>VEHICLE HORN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle horn</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SECURITY INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SECURITY HORN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security horn</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

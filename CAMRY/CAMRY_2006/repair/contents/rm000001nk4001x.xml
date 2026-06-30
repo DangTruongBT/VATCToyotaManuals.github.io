@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NK4001X" category="D" type-id="303F3" name-id="BC144-02" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000001NK4001X_z0" proc-id="RM0250U___000012Q00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DIAGNOSIS SYSTEM</ptxt>
+<step2>
+<ptxt>Inspect the battery voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If the voltage is below 11 V, recharge the battery before proceeding.</ptxt>
+</step2>
+<step2>
+<ptxt>The vehicle's ECU uses the ISO 15765-4 for communication protocol. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<figure>
+<graphic graphicname="A082779E65" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Connect the cable of the intelligent tester to the DLC3, turn the ignition switch on (IG) and attempt to use the intelligent tester. If the screen displays a communication error message, a problem exists on either the vehicle side or the tester side.</ptxt>
+</atten4>
+<ptxt>If the communication is normal when the tester is connected to another vehicle, inspect the DLC3 on the original vehicle.</ptxt>
+<ptxt>If the communication is still impossible when the tester is connected to another vehicle, the problem is probably in the tester itself. Consult the Service Department listed in the tester's instruction manual.</ptxt>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.75in"/>
+<colspec colname="COL4" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CANH (6) - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CANL (14) - Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<atten3>
+<ptxt>When releasing the parking brake, set chocks to hold the vehicle for safety.</ptxt>
+</atten3>
+<step2>
+<ptxt>If the skid control ECU detects a malfunction, the ABS, VSC (without multi-information display), and BRAKE warning lights, and master caution and SLIP indicator lights will come on and the multi-information display shows a warning message in order to warn the driver.</ptxt>
+<figure>
+<graphic graphicname="C137469E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<ptxt>The table below indicates which lights will come on when there is a malfunction in a particular function.</ptxt>
+<table pgwide="1">
+<tgroup cols="6" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.13in"/>
+<colspec colname="COL3" colwidth="1.13in"/>
+<colspec colname="COL4" colwidth="1.13in"/>
+<colspec colname="COL5" colwidth="1.13in"/>
+<colspec colname="COL6" colwidth="1.14in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item/Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EBD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BA</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TRAC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ABS Warning Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE Warning Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC Warning Light (without multi-information display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIP Indicator Light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>○: Light ON</ptxt>
+<ptxt>-: Light OFF</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The DTCs are simultaneously stored in the memory. The DTCs can be read by connecting the SST between terminals TC and CG of the DLC3 and observing the blinking pattern of the ABS warning light by connecting the intelligent tester (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</item>
+<item>
+<ptxt>This system has a signal check function (TEST MODE) (See page <xref label="Seep10" href="RM000001NKD001X"/>).</ptxt>
+<ptxt>The DTC can be read by connecting the intelligent tester and observing the blinking pattern of the ABS warning.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>WARNING LIGHT AND INDICATOR LIGHT INITIAL CHECK</ptxt>
+<figure>
+<graphic graphicname="C137469E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<step2>
+<ptxt>Release the parking brake.</ptxt>
+<atten3>
+<ptxt>Before releasing the parking brake, move the shift lever to the P position for safety (Automatic Transaxle model) or set the chocks to hold the vehicle for safety (Manual Transaxle model).</ptxt>
+</atten3>
+<atten4>
+<ptxt>When the parking brake is applied or the level of the brake fluid is low, the BRAKE warning light comes on.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>When the ignition switch is turned on (IG), check that the ABS, VSC (without multi-information display), and BRAKE warning lights, and master caution and SLIP indicator lights come on for approximately 3 seconds.</ptxt>
+<atten4>
+<ptxt>If the ECU stores any DTCs, the ABS, BRAKE, and VSC warning (multi-information display and master caution indicator light) lights, and SLIP indicator light come on.</ptxt>
+<ptxt>If the indicator remains on or does not come on, proceed to troubleshooting for the light circuits listed below.</ptxt>
+</atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry align="center">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS warning light (Remains on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep02" href="RM000000XIH009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ABS warning light (Does not come on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep03" href="RM000000XIQ009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>BRAKE warning light (Remains on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep04" href="RM000000YHG00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>BRAKE warning light (Does not come on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep05" href="RM000000YHH009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VSC warning light (Remains on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep06" href="RM000000XIO009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VSC warning light (Does not come on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep07" href="RM000000XIT009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>SLIP indicator light (Remains on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep08" href="RM000000YHI009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>SLIP indicator light (Does not come on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep09" href="RM000000YHJ009X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>SYMPTOM SIMULATION</ptxt>
+<atten4>
+<ptxt>The most difficult case in troubleshooting is when no symptoms occur. In such cases, a thorough customer problem analysis must be carried out. Then the same or similar conditions and environment in which the problem occurred in the customer's vehicle should be reproduced. No matter how experienced or skilled a technician may be, if he proceeds to troubleshoot without confirming the problem symptoms, he will likely overlook something important and make a wrong guess at some points in the repair operation. This leads to a standstill in troubleshooting.</ptxt>
+</atten4>
+<step2>
+<ptxt>Vibration method: When vibration seems to be the major cause.</ptxt>
+<figure>
+<graphic graphicname="D025083E14" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>Perform the simulation method only during the primary check period (for approximately 6 seconds after the ignition switch is turned on (IG)).</ptxt>
+</atten4>
+<step3>
+<ptxt>Slightly vibrate the part of the sensor considered to be the problem cause with your fingers and check whether the malfunction occurs.</ptxt>
+</step3>
+<step3>
+<ptxt>Slightly shake the connector vertically and horizontally.</ptxt>
+<atten4>
+<ptxt>Shaking the relays too strongly may result in open relays.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Slightly shake the wire harness vertically and horizontally. The connector joint and fulcrum of the vibration are the major areas to be checked thoroughly.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,165 @@
+<!-- $Id: button.html,v 1.15 2005/02/14 06:26:38 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 ILLUST_NOT_EXISTS_ERROR                                           -->
+<!--  001 CONTENT_NOT_EXISTS_ERROR                                          -->
+<!--========================================================================-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Button</title>
+<link href="../../css/button.css" rel="stylesheet" type="text/css">
+<script src="../../js/svgpage.js"></script>
+<script language="javascript">
+// ERROR MESSAGES
+var ILLUST_NOT_EXISTS_ERROR  = "There are no illustrations available."; // 000
+var CONTENT_NOT_EXISTS_ERROR = "There is no information available.";   // 001
+
+function init() {
+	parent.g_illustId = parent.findParameterValue("illust", location.search, parent.location.search);
+	parent.g_term = parent.findParameterValue("term", location.search, parent.location.search);
+	parent.g_paraId = parent.findParameterValue("parag", location.search, parent.location.search);
+	if (parent.g_paraId==null || parent.g_tocXml==null) return;
+
+	var secIdNode = parent.g_tocXml.selectSingleNode("//section[descendant::para/@id='"+parent.g_paraId+"']/@id");
+	if (secIdNode==null) return;
+	var secId = secIdNode.nodeTypedValue;
+
+	var SVGItem = parent.getIllustIdList(parent.g_paraId);
+	if (SVGItem==null || SVGItem.length==0) {
+		alert(ILLUST_NOT_EXISTS_ERROR);
+		return;
+	}
+	parent.g_procXml = parent.initXml("proc_"+secId.toLowerCase()+".xml", false, true);
+	if (parent.g_procXml==null) return;
+	if (parent.g_filter!=null) {
+		parent.g_procXml = parent.setFilter(parent.g_procXml, parent.g_fltXsl, "../../filter/"+parent.g_filter.toLowerCase()+".xml");
+	}
+	if (parent.g_illustId==null) {
+		parent.g_illustId = SVGItem[0];
+	} else {
+		for (var i=0; i<SVGItem.length; i++) {
+			if (SVGItem[i]==parent.g_illustId) break;
+			if (i==SVGItem.length-1) parent.g_illustId = SVGItem[0];
+		}
+	}
+	var dispPage = createDispPage(SVGItem);
+	disp.innerHTML = dispPage;
+	selPage(parent.g_illustId);
+}
+
+function allDisplay() {
+	var partId = parent.contents.getXMLSelectPartID();
+	// 同一セクション内検索
+	var ttl = parent.g_procXml.selectNodes("//ttl[para[@category='G'] and parts[@id='"+partId+"']]");
+	if (ttl.length==1) {
+		var id = ttl.item(0).getAttribute("id");
+		var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, id, parent.g_tocXml);
+		if (param!=null) {
+			parent.location.href = "../isp_ctt/frame.html" + param;
+		} else {
+			alert(CONTENT_NOT_EXISTS_ERROR);
+		}
+		return;
+	} else if (ttl.length>1) {
+		var ret = openTitleSelection(ttl, partId, parent.g_tocXml);
+		if (ret!=null) {
+			var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, ret, parent.g_tocXml);
+			if (param!=null) {
+				parent.location.href = "../isp_ctt/frame.html" + param;
+			} else {
+				alert(CONTENT_NOT_EXISTS_ERROR);
+			}
+			return;
+		} else {
+			return;
+		}
+	}
+	// go to next step (servcat)
+	// 同一サービスカテゴリ内検索
+	var sctId = parent.g_procXml.selectSingleNode("//servcat/@id").nodeTypedValue;
+	var tmpXml = parent.initXml("psearch_"+sctId +".xml",false,false);
+	if (tmpXml==null) {
+		alert(CONTENT_NOT_EXISTS_ERROR);
+		return;
+	}
+	if (parent.g_filter!=null) {
+		tmpXml = parent.setFilter(tmpXml, parent.g_fltXsl, "../../filter/"+parent.g_filter+".xml");
+	}
+	ttl = tmpXml.selectNodes("//ttl[para[@category='G'] and parts[@id='"+partId+"']]");
+	if (ttl.length==1) {
+		id = ttl.item(0).getAttribute("id");
+		var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, id, parent.g_tocXml);
+		if (param!=null) {
+			parent.location.href = "../isp_ctt/frame.html" + param;
+		} else {
+			alert(CONTENT_NOT_EXISTS_ERROR);
+		}
+		return;
+	} else if (ttl.length>1) {
+		//var ret = openTitleSelection(ttl, partId, parent.g_tocXml);
+		var ret = openTitleSelection(ttl, partId, parent.g_tocXml);
+		if (ret!=null) {
+			var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, ret, parent.g_tocXml);
+			if (param!=null) {
+				parent.location.href = "../isp_ctt/frame.html" + param;
+			} else {
+				alert(CONTENT_NOT_EXISTS_ERROR);
+			}
+			return;
+		} else {
+			return;
+		}
+	}
+	// go to next step (out of servcat)
+	// サービスカテゴリ外検索
+	tmpXml = parent.initXml("psearch_all.xml",false,false);
+	if (tmpXml==null) {
+		alert(CONTENT_NOT_EXISTS_ERROR);
+		return;
+	}
+	if (parent.g_filter!=null) {
+		tmpXml = parent.setFilter(tmpXml, parent.g_fltXsl, "../../filter/"+parent.g_filter+".xml");
+	}
+	ttl = tmpXml.selectNodes("//ttl[para[@category='G'] and parts[@id='"+partId+"']]");
+	if (ttl.length==1) {
+		id = ttl.item(0).getAttribute("id");
+		var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, id, parent.g_tocXml);
+		if (param!=null) {
+			parent.location.href = "../isp_ctt/frame.html" + param;
+		} else {
+			alert(CONTENT_NOT_EXISTS_ERROR);
+		}
+	} else if (ttl.length>1) {
+		//var ret = openTitleSelection(ttl, partId, parent.g_tocXml);
+		var ret = openTitleSelection(ttl, partId, parent.g_tocXml);
+		if (ret!=null) {
+			var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, ret, parent.g_tocXml);
+			if (param!=null) {
+				parent.location.href = "../isp_ctt/frame.html" + param;
+			} else {
+				alert(CONTENT_NOT_EXISTS_ERROR);
+			}
+		}
+	} else {
+		alert(CONTENT_NOT_EXISTS_ERROR);
+	}
+	return;
+}
+
+function openTitleSelection(ttl, pId, tocXml) {
+	var parts = parent.getPartsName(pId);
+	parent.setDialogArgs(ttl, parts, tocXml);
+	var ret=parent.openDialog("ttl_frame.html", "tls");
+	parent.clearDialogArgs();
+	return ret;
+}
+</script>
+</head>
+<body onLoad="init();">
+<div id="disp"></div>
+</body>
+</html>

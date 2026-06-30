@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIM00AX" category="C" type-id="300F4" name-id="BC1N6-01" from="200601">
+<dtccode>C1231/31</dtccode>
+<dtcname>Steering Angle Sensor Circuit Malfunction</dtcname>
+<subpara id="RM000000XIM00AX_01" type-id="60" category="03" proc-id="RM0250U___00005OQ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The steering angle sensor signal is sent to the skid control ECU via the CAN communication system. When there is a malfunction in the CAN communication system, it will be detected by the steering angle sensor zero point malfunction diagnostic function.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1231/31</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>When ECU IG1 terminal voltage is 9.5 V or more, the steering angle sensor malfunction signal is received.</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Steering angle sensor</ptxt>
+</item>
+<item>
+<ptxt>Steering angle sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>Steering angle sensor power supply</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (Skid control ECU)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XIM00AX_02" type-id="32" category="03" proc-id="RM0250U___00005OR00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136024E04" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIM00AX_03" type-id="51" category="05" proc-id="RM0250U___00005OS00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When U0073/94, U0123/62, U0124/95 or U0126/63 is output together with C1231/31, inspect and repair the trouble areas indicated by U0073/94, U0123/62, U0124/95 or U0126/63 first.</ptxt>
+</item>
+<item>
+<ptxt>When the speed sensor or the yaw rate sensor has trouble, DTCs for the steering angle sensor may be output even when the steering angle sensor is normal. When DTCs for the speed sensor or yaw rate sensor are output together with other DTCs for the steering angle sensor, inspect and repair the speed sensor and yaw rate sensor first, and then inspect and repair the steering angle sensor.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XIM00AX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIM00AX_04_0002" proc-id="RM0250U___00005OT00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) again and check that no CAN communication system DTC is output.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle and turn the steering wheel to the right and left at the speed of 22 mph (35 km/h) and check that no speed sensor and yaw rate sensor DTCs are output.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No CAN communication system DTC and the speed sensor or yaw rate sensor DTC are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Speed sensor or yaw rate sensor DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a malfunction in the speed sensor or the yaw rate sensor, an abnormal value may be output although the steering angle sensor is normal.</ptxt>
+</item>
+<item>
+<ptxt>If the speed sensor and the yaw rate sensor DTCs are output simultaneously, repair the sensors and inspect the steering angle sensor.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIM00AX_04_0003" fin="false">A</down>
+<right ref="RM000000XIM00AX_04_0011" fin="true">B</right>
+<right ref="RM000000XIM00AX_04_0007" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0003" proc-id="RM0250U___00005OU00000">
+<testtitle>INSPECT STEERING ANGLE SENSOR (POWER SOURCE TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="G030156E15" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the steering wheel and the column cover lower.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the steering angle sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E17-1 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E17-3 (BAT) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIM00AX_04_0010" fin="false">OK</down>
+<right ref="RM000000XIM00AX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0010" proc-id="RM0250U___00005OV00000">
+<testtitle>INSPECT STEERING ANGLE SENSOR (GROUND TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="G030156E16" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E17-2 (ESS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep01" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIM00AX_04_0008" fin="true">OK</down>
+<right ref="RM000000XIM00AX_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0008">
+<testtitle>REPLACE STEERING ANGLE SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0011">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0007">
+<testtitle>REPAIR CIRCUIT INDICATED BY OUTPUT DTC<xref label="Seep01" href="RM000000XHU00AX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIM00AX_04_0012">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GROUND CIRCUIT)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

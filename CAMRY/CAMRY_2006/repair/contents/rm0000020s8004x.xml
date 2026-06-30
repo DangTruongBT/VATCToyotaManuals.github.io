@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM0000020S8004X" category="C" type-id="304N7" name-id="ST0VZ-03" from="200601">
+<dtccode>B2289</dtccode>
+<dtcname>Key Collation Waiting Time Over</dtcname>
+<subpara id="RM0000020S8004X_01" type-id="60" category="03" proc-id="RM0250U___00009K200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="2">
+<ptxt>This DTC is output when there is a LIN communication problem between the main body ECU and certification ECU or when there is a problem in the engine immobiliser system.</ptxt>
+<atten4>
+<ptxt>After the main body ECU is replaced, perform the registration procedures for the engine immobiliser system (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2289</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Either condition below is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Cable and CAN are abnormal between the main body ECU and the engine immobiliser system</ptxt>
+</item>
+<item>
+<ptxt>The engine immobiliser system is malfunctioning</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>Engine immobiliser system</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="B137997E02" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020S8004X_02" type-id="32" category="03" proc-id="RM0250U___00009K300000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137989E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020S8004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020S8004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020S8004X_04_0001" proc-id="RM0250U___00009K400000">
+<testtitle>CHECK FOR DTCS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000000YEH00LX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check for DTC B2289 and B2785.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>"DTC B2289" only</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"DTC B2785" only</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If DTC B2785 is output, perform troubleshooting for DTC B2785 first (See page <xref label="Seep02" href="RM00000100200BX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020S8004X_04_0002" fin="false">A</down>
+<right ref="RM0000020S8004X_04_0003" fin="true">B</right>
+<right ref="RM0000020S8004X_04_0006" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0002" proc-id="RM0250U___0000BEL00000">
+<testtitle>CHECK WIRE HARNESS (MAIN BODY ECU - CERTIFICATION ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 and IR ECU connectors.</ptxt>
+<figure>
+<graphic graphicname="B137998E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IR-9 (LIN1) - E58-10 (LIN)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IR-9 (LIN1) or E58-10 (LIN) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020S8004X_04_0004" fin="false">OK</down>
+<right ref="RM0000020S8004X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0004" proc-id="RM0250U___0000BEM00000">
+<testtitle>CHECK MAIN BODY ECU OPERATION</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>After replacing the main body ECU with a normally functioning ECU, check that the engine starts.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine can start normally.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the engine does not start, refer to PROBLEM SYMPTOMS TABLE of the smart key system (entry) (matching for the inside of the cabin cannot be performed) (See page <xref label="Seep01" href="RM000000XUB008X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020S8004X_04_0005" fin="true">OK</down>
+<right ref="RM0000020S8004X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0005">
+<testtitle>END (MAIN BODY ECU DEFECTIVE)</testtitle>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0003">
+<testtitle>GO TO DTC B2785</testtitle>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0006">
+<testtitle>CHECK INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020S8004X_04_0008">
+<testtitle>GO TO SMART KEY SYSTEM (ENTRY)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000000XCQ005X" category="J" type-id="800OV" name-id="AC1OP-01" from="200601">
+<dtccode/>
+<dtcname>Air Conditioning Compressor Magnetic Clutch Circuit</dtcname>
+<subpara id="RM000000XCQ005X_01" type-id="60" category="03" proc-id="RM0250U___00004I700000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the A/C amplifier is turned on, a magnetic clutch ON signal is sent from the MGC terminal of the A/C amplifier. Then, the MG CLT relay turns on to operate the magnetic clutch.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XCQ005X_02" type-id="32" category="03" proc-id="RM0250U___00004I800000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E124490E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XCQ005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000XCQ005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XCQ005X_04_0020" proc-id="RM0250U___00004IG00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Use the intelligent tester to check if the CAN Communication System is functioning normally.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CAN DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CAN DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0021" fin="false">A</down>
+<right ref="RM000000XCQ005X_04_0025" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0021" proc-id="RM0250U___00004IH00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the A/C switch on and off.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>DATA LIST / ENGINE:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measure Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A/C SIGNAL</ptxt>
+<ptxt>(A/C Signal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: A/C ON</ptxt>
+<ptxt>OFF: A/C OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The display is as specified in the normal condition column.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0001" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0016" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0001" proc-id="RM0250U___00004I900000">
+<testtitle>INSPECT FUSE (A/C NO. 2)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the A/C No. 2 fuse from the instrument panel J/B.</ptxt>
+<figure>
+<graphic graphicname="E124481E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A/C No. 2 fuse</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the A/C No. 2 fuse to the instrument panel J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0004" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0004" proc-id="RM0250U___00004IB00000">
+<testtitle>INSPECT RELAY (MG CLT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the MG CLT relay from the engine room R/B and J/B.</ptxt>
+<figure>
+<graphic graphicname="B060778E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(when battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the MG CLT relay to the engine room R/B and J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0005" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0005" proc-id="RM0250U___00004IC00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/C AMPLIFIER - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E124470E13" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-20 (MGC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-20 (MGC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0027" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0027" proc-id="RM0250U___00004IK00000">
+<testtitle>INSPECT AIR CONDITIONING AMPLIFIER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the connector to the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E124471E11" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-20 (MGC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>A/C switch: OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-20 (MGC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0033" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0033" proc-id="RM0250U___0000B3R00000">
+<testtitle>INSPECT A/C COMPRESSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the A/C compressor.</ptxt>
+<figure>
+<graphic graphicname="E005280E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the magnetic clutch.</ptxt>
+<figure>
+<graphic graphicname="E124482E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C53-3 (MG+) - A-1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C53-3 (MG+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0006" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0006" proc-id="RM0250U___00004ID00000">
+<testtitle>INSPECT MAGNETIC CLUTCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E113611E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.4 to 3.8 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>When connector terminal A1 is connected to the positive (+) battery terminal, check that the following occurs: 1) the magnetic clutch's operating sound can be heard, and 2) the magnetic clutch's hub and rotor lock.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0007" fin="false">OK</down>
+<right ref="RM000000XCQ005X_04_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0007" proc-id="RM0250U___00004IE00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE ROOM R/B AND J/B - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the MG CLT relay from the engine room R/B and J/B.</ptxt>
+<figure>
+<graphic graphicname="E124483E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Relay block MG CLT relay terminal 5 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Relay block MG CLT relay terminal 1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XCQ005X_04_0014" fin="true">OK</down>
+<right ref="RM000000XCQ005X_04_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0009">
+<testtitle>REPLACE FUSE (A/C NO. 2)</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0016">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0012">
+<testtitle>REPLACE RELAY (MG CLT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0013">
+<testtitle>REPLACE A/C COMPRESSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0014">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (ENGINE ROOM R/B AND J/B - A/C COMPRESSOR)</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0025">
+<testtitle>GO TO CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0028">
+<testtitle>REPLACE MAGNETIC CLUTCH</testtitle>
+</testgrp>
+<testgrp id="RM000000XCQ005X_04_0029">
+<testtitle>REPLACE AIR CONDITIONING AMPLIFIER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

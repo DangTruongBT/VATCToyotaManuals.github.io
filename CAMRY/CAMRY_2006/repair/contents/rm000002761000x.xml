@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002T_S001K" variety="S001K">
+<name>OTHER SYSTEM</name>
+<ttl id="1002T_S001K_72YEU_T009D" variety="T009D">
+<name>CLOCK</name>
+<para id="RM000002761000X" category="J" type-id="801WX" name-id="OT07B-01" from="200601">
+<dtccode/>
+<dtcname>Clock Display Circuit</dtcname>
+<subpara id="RM000002761000X_01" type-id="60" category="03" proc-id="RM0250U___00008LL00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The clock assembly uses this circuit to communicate with the main body ECU via the direct line. The main body ECU uses this circuit to send an auto dimmer signal to the clock assembly. The main body ECU detects the position of the light control switch according to the resistance. When the light control switch is set to the HEAD/TAIL position, the resistance between the HEAD/TAIL terminal and body ground is below 1 Ω. When the light control switch is set to the HEAD/TAIL position, the main body ECU sends an auto dimmer signal to the clock assembly. When the clock assembly receives an auto dimmer signal from the main body ECU, the clock assembly causes the clock display to be dimmed. </ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The maximum clock assembly margin of error is -4 to 4 seconds per day when the temperature is between -20 (-4°F) and 60°C (140°F).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the clock assembly error is greater than specified above, replace the clock assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000002761000X_02" type-id="32" category="03" proc-id="RM0250U___00008LM00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E128067E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002761000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000002761000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002761000X_04_0003" proc-id="RM0250U___00008LP00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CLOCK ASSEMBLY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E6 and F3 connectors.</ptxt>
+<figure>
+<graphic graphicname="E128073E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E6-16 (ACAN) - F3-4 (ILL+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F3-4 (ILL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002761000X_04_0004" fin="false">OK</down>
+<right ref="RM000002761000X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002761000X_04_0004" proc-id="RM0250U___00008LQ00000">
+<testtitle>INSPECT MAIN BODY ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the F3 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E128063E07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E6-16 (ACAN) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG), cover the automatic light control sensor by hand, and light control switch TAIL/HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002761000X_04_0006" fin="true">OK</down>
+<right ref="RM000002761000X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002761000X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000002761000X_04_0007">
+<testtitle>GO TO LIGHTING SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000002761000X_04_0006">
+<testtitle>PROCEED TO NEXT INSPECTION PROCEDURE SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

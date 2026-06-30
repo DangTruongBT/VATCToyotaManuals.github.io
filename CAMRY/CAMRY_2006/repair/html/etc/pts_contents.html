@@ -1,0 +1,65 @@
+<!-- $Id: pts_contents.html,v 1.9 2005/08/26 01:25:39 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 Please wait...                                                  -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Parts Location-</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script src="../../js/util.js"></script>
+<script src="../../js/svg.js"></script>
+<script language="javascript">
+var g_partId  = null;
+
+//  画面の初期表示
+function init() {
+	initSvg(window.self);
+	var args = window.dialogArguments;
+	if (args==null || args.length!=4) return;
+
+	g_partId = args[0];
+	if (g_partId==null) return;
+
+	var illustId = args[1];
+	if (illustId==null) return;
+
+	ttl.innerHTML = args[2];
+	disp.innerHTML = "<embed src='../../svgz/" + illustId.toLowerCase() + ".svgz'"
+		+ " width='" + (g_iOrgSvgWidth) + "' height='"
+		+ (g_iOrgSvgWidth*HEIGHT_WIDTH_RATE) + "' name='svgdata'>";
+	svgTitle.innerHTML = illustId;
+
+	setIsAcceptEvent(false);
+	setTimeout("hideMessage()", ONLOAD_POLLING_TIME*5);
+	setTimeout("selectPart()", ONLOAD_POLLING_TIME*5);
+}
+
+//SVG画像中の部品位置を取り出し、中央に配置されるよう画像をスクロールする。
+//該当する部品の選択した色を変更する。
+function selectPart(){
+	var svgobj = document.all('svgdata');
+	if( g_partId==null)	return;
+	if (svgobj!=null) {
+		forceChangeTxtCol(g_partId , svgdata , COLOR_SELECT);
+		centerItem(g_partId, window.self, svgdata);
+	} else {
+		setTimeout("selectPart()", ONLOAD_POLLING_TIME*5);
+	}
+}
+</script>
+</head>
+<body onLoad="init();">
+<center>
+	<div id="msg" class='message'><br/><br/><br/>Please wait...</div><!-- 000 -->
+	<p id="ttl" class='location'></p>
+	<div id="disp"></div>
+</center>
+<div id='svgTitle' class='illustId'></div>
+</body>
+</html>

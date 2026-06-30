@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000001WTT007X" category="C" type-id="800HC" name-id="NS0M6-07" from="200601">
+<dtccode>63-43</dtccode>
+<dtcname>CD-ROM Abnormal</dtcname>
+<subpara id="RM000001WTT007X_01" type-id="60" category="03" proc-id="RM0250U___00004ZI00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>63-43</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CD-ROM operation is abnormal.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>CD</ptxt>
+</item>
+<item>
+<ptxt>Radio and navigation assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001WTT007X_02" type-id="51" category="05" proc-id="RM0250U___00004ZJ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After the inspection is completed, clear the DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001WTT007X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001WTT007X_03_0001" proc-id="RM0250U___00004ZK00000">
+<testtitle>CHECK IF A PROPER CD IS INSERTED</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Make sure that the CD is an audio CD or a CD with an MP3 or WMA file, and that it is not deformed, flawed, stained, burred, or otherwise defective.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal CD</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Translucent or uniquely-shaped CDs cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>CD with adhesive paper labels should not be played.</ptxt>
+</item>
+<item>
+<ptxt>Commercial audio CDs can be played.</ptxt>
+</item>
+<item>
+<ptxt>CD-DA files on CD-ROMs, CD-Rs, and CD-RWs can be played.</ptxt>
+</item>
+<item>
+<ptxt>MP3 and WMA files on CD-ROMs, CD-Rs, and CD-RWs can be played.</ptxt>
+</item>
+<item>
+<ptxt>For details on playable CDs, refer to the Owner's Manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001WTT007X_03_0002" fin="false">OK</down>
+<right ref="RM000001WTT007X_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001WTT007X_03_0002" proc-id="RM0250U___00004ZL00000">
+<testtitle>REPLACE CD WITH ANOTHER AND RECHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the CD with another and recheck.</ptxt>
+<test2>
+<ptxt>Replace the CD with another normal one.</ptxt>
+</test2>
+<test2>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM0000011BU00FX"/>).</ptxt>
+</test2>
+<test2>
+<ptxt>Recheck for DTCs and check if the same trouble occurs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001WTT007X_03_0003" fin="true">OK</down>
+<right ref="RM000001WTT007X_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001WTT007X_03_0003">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000001WTT007X_03_0004">
+<testtitle>CD IS FAULTY</testtitle>
+</testgrp>
+<testgrp id="RM000001WTT007X_03_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

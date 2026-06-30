@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM0000025HI000X" category="C" type-id="300EZ" name-id="BC24F-01" from="200601">
+<dtccode>C1201/51</dtccode>
+<dtcname>Engine Control System Malfunction</dtcname>
+<subpara id="RM0000025HI000X_01" type-id="60" category="03" proc-id="RM0250U___00003LZ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="2">
+<ptxt>If a malfunction in the engine control system is detected, the operations of VSC and TRAC are prohibited by the fail safe function (See page <xref label="Seep01" href="RM000001NK9001X"/>).</ptxt>
+<ptxt>When the signals from the engine are input normally, the fail safe is cancelled and the DTC is not stored.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1201/51</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A trouble signal in the engine control system is input.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine control system</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000025HI000X_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000025HI000X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000025HI000X_03_0001" proc-id="RM0250U___00003M000000">
+<testtitle>CHECK DTC (ENGINE CONTROL SYSTEM)</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Clear the DTC (engine control system) (See page <xref label="Seep01" href="RM000000PDK01MX"/> for 2AZ-FE, <xref label="Seep02" href="RM000000PDK01HX"/> for 2GR-FE).</ptxt>
+</test1>
+<test1>
+<ptxt>Perform a road test.</ptxt>
+</test1>
+<test1>
+<ptxt>Check for the DTC (engine control system).</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC (engine control system) is not output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC (engine control system) is output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000025HI000X_03_0002" fin="true">A</down>
+<right ref="RM0000025HI000X_03_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025HI000X_03_0002">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM0000025HI000X_03_0003">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS (ENGINE CONTROL SYSTEM)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

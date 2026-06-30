@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000025JY000X" category="J" type-id="3009M" name-id="AX0Z2-01" from="200601">
+<dtccode/>
+<dtcname>ECU Power Source Circuit</dtcname>
+<subpara id="RM0000025JY000X_01" type-id="60" category="03" proc-id="RM0250U___00009Y300000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the ignition switch is turned on (IG), voltage from the ECM's MREL terminal is applied to the EFI relay. This causes the contacts of the EFI relay to close, which supplies power to terminal +B of the TCM.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000025JY000X_02" type-id="32" category="03" proc-id="RM0250U___0000CAI00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133264E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000025JY000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000025JY000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000025JY000X_04_0001" proc-id="RM0250U___00009Y400000">
+<testtitle>INSPECT ECU TERMINAL VOLTAGE (+B TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the TCM connector.</ptxt>
+<figure>
+<graphic graphicname="C133210E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (C56-18) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000025JY000X_04_0002" fin="false">NG</down>
+<right ref="RM0000025JY000X_04_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025JY000X_04_0002" proc-id="RM0250U___00009Y500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TCM - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C133210E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E1 (C56-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the TCM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000025JY000X_04_0003" fin="true">OK</down>
+<right ref="RM0000025JY000X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000025JY000X_04_0003">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (TCM - EFI RELAY)</testtitle>
+</testgrp>
+<testgrp id="RM0000025JY000X_04_0004">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM0000025JY000X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (TCM - BODY GROUND)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

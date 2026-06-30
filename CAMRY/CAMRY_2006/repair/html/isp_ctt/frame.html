@@ -1,0 +1,112 @@
+<!-- $Id: frame.html,v 1.13 2005/10/28 01:54:24 n-tamamura Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Menu</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script src="../../js/dropdown.js"></script>
+<script language="javascript">
+var g_ilstId = null;  // Illust ID
+var g_ptsId  = null;  // Parts ID
+var g_srvId  = null;  // Service Category ID
+var g_ttlId  = null;  // Title ID
+var g_paraId = null;  // Paragraph ID
+var g_term   = null;  // term
+var g_filter = null;  // Filter ID
+var g_vin    = null;  // VIN No.
+var g_tocXml = null;  // toc_rpr.xml
+var g_objXml = null;  // paraId.xml
+var g_cmpXml = null;  // components.xml
+var g_psrhXml= null;  // psearch_xx.xml
+var g_fltXsl = null;  // filter.xsl
+var g_cttXsl = null;  // contents.xsl
+var g_lclXsl = null;  // local.xsl
+var g_carType= null; // car type
+var g_bp     = null; // Back Paragraph
+var g_s1     = null; // proc ID
+
+var g_sectionName   = null;
+var g_titleName     = null;
+var g_paragraphName = null;
+
+function init() {
+	g_term   = findParameterValue("term");
+	g_filter = findParameterValue("filter");
+	g_vin    = findParameterValue("vin");
+	g_ttlId  = findParameterValue("ttl");
+	g_paraId = findParameterValue("parag");
+	g_ilstId = findParameterValue("illust");
+	g_bp     = findParameterValue("bp");
+	g_s1     = findParameterValue("s1");
+	//g_ttlId  = "10006_S0002_706BZ_T000I";  // for Test from PARTS LOCATION
+	//g_paraId = "RM0000000Q1000X"           // for Test from INDEX
+	//g_ilstId = "A080359";                  // for Test
+	g_tocXml = initXml("toc_rpr.xml");
+	g_cmpXml = initXml("components.xml");
+	g_fltXsl = initXsl("../../xsl/utl/filter.xsl");
+	if (g_filter!=null) {
+		g_tocXml = setFilter(g_tocXml, g_fltXsl, "../../filter/"+g_filter.toLowerCase()+".xml");
+		g_cmpXml = setFilter(g_cmpXml, g_fltXsl, "../../filter/"+g_filter.toLowerCase()+".xml");
+	}
+	g_tocXml.setProperty("SelectionLanguage", "XPath");
+	if (g_paraId==null) {
+		if (g_ttlId==null) return;
+		g_paraId=g_tocXml.selectSingleNode("//ttl[@id='"+g_ttlId+"']/para[@category='G']/@id").nodeTypedValue;
+	}
+	g_objXml = initXml(g_paraId.toLowerCase()+".xml");
+	if (g_objXml==null) return;
+	g_srvId =	g_objXml.selectSingleNode("//servcat/@id").nodeTypedValue;
+	g_psrhXml = initXml("psearch_"+g_srvId+".xml");
+	if (g_filter!=null) {
+		g_psrhXml = setFilter(g_psrhXml, g_fltXsl, "../../filter/"+g_filter.toLowerCase()+".xml");
+	}
+	g_cttXsl = initXsl("../../xsl/isp/contents.xsl");
+	g_lclXsl = initXsl("../../xsl/isp/local.xsl");
+	g_carType = getCarType(g_filter);
+
+	// DO NOT SUBSTITUTE for g_ttlId!!!
+	var ttlId = g_objXml.selectSingleNode("//ttl/@id").nodeTypedValue;
+	pts = g_psrhXml.selectSingleNode("//ttl[@id='"+ttlId+"']/parts/@id");
+	g_ptsId = (pts!=null) ? pts.nodeTypedValue : null;
+	if (g_ilstId==null && g_ptsId!=null) {
+		var illust = g_cmpXml.selectSingleNode("//servcat[@id='"+g_srvId+"']//para[@category='R']//illust[parts/@id='"+g_ptsId+"']/@id");
+		if (illust!=null) {	
+			g_ilstId = illust.nodeTypedValue;
+		} else {
+			illust = g_cmpXml.selectSingleNode("//servcat//para[@category='R']//illust[parts/@id='"+g_ptsId+"']/@id");
+			g_ilstId = (illust!=null) ? illust.nodeTypedValue : null;
+		}
+	}
+}
+
+init();
+</script>
+</head>
+<frameset rows="85, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" scrolling="no">
+		<frameset rows="35, *" frameborder="no" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no" scrolling="auto">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

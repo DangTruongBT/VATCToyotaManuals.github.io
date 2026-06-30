@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000012G100JX" category="D" type-id="3001B" name-id="ME032-19" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM0000012G100JX_z0" proc-id="RM0250U___00007XK00000">
+<content5 releasenbr="2">
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<test1>
+<ptxt>Check for DTC output.</ptxt>
+<atten4>
+<ptxt>See page <xref label="Seep01" href="RM000000WIB00RX"/>.</ptxt>
+</atten4>
+</test1>
+<results>
+<result/>
+<action-ci-right>CAN DTC OUTPUT (PROCEED TO "CAN COMMUNICATION SYSTEM")</action-ci-right>
+<result/>
+<action-ci-right>NO CAN DTC (GO TO STEP 4)</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOM CONFIRMATION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<atten4>
+<ptxt>See page <xref label="Seep02" href="RM0000012GB00IX"/>.</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

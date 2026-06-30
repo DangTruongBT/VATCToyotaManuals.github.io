@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W6Z01ZX" category="D" type-id="3001B" name-id="AT02X-75" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000W6Z01ZX_z0" proc-id="RM0250U___000033C00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The TCM of this system is connected to the CAN communication system. Therefore, before starting troubleshooting, make sure to check that there is no trouble in the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>*: Use the intelligent tester.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>INSPECT BATTERY VOLTAGE</testtitle>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If the voltage is below 11 V, recharge or replace the battery before proceeding.</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONNECT INTELLIGENT TESTER TO DLC3*</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK AND CLEAR DTCS AND FREEZE FRAME DATA*</testtitle>
+<test1>
+<ptxt>Refer to the DTC CHECK / CLEAR (See page <xref label="Seep01" href="RM000000W7701XX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>VISUAL INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SETTING CHECK MODE DIAGNOSIS*</testtitle>
+<test1>
+<ptxt>Refer to the CHECK MODE PROCEDURE (See page <xref label="Seep02" href="RM000000W7801XX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOM CONFIRMATION</testtitle>
+<test1>
+<ptxt>Refer to the ROAD TEST (See page <xref label="Seep03" href="RM000000W7901TX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symptom does not occur</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Symptom occurs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO STEP 10</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM SIMULATION</testtitle>
+<test1>
+<ptxt>Refer to the ELECTRONIC CIRCUIT INSPECTION PROCEDURE (See page <xref label="Seep04" href="RM000000UZ301TX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHECK*</testtitle>
+<test1>
+<ptxt>Refer to the DTC CHECK / CLEAR (See page <xref label="Seep05" href="RM000000W7701XX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO STEP 18</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>BASIC INSPECTION</testtitle>
+<test1>
+<ptxt>Refer to the AUTOMATIC TRANSMISSION FLUID (See page <xref label="Seep06" href="RM0000013BU00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Refer to the PARK/NEUTRAL POSITION SWITCH (See page <xref label="Seep07" href="RM00000251P000X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Refer to the SHIFT LEVER ASSEMBLY (See page <xref label="Seep08" href="RM00000251U000X"/>).</ptxt>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO STEP 21</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>MECHANICAL SYSTEM TEST</testtitle>
+<test1>
+<ptxt>Refer to the MECHANICAL SYSTEM TEST (See page <xref label="Seep09" href="RM000000W7A01YX"/>).</ptxt>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO STEP 17</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>HYDRAULIC TEST</testtitle>
+<test1>
+<ptxt>Refer to the HYDRAULIC TEST (See page <xref label="Seep10" href="RM000000W7B025X"/>).</ptxt>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO STEP 17</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>MANUAL SHIFTING TEST</testtitle>
+<test1>
+<ptxt>Refer to the MANUAL SHIFTING TEST (See page <xref label="Seep11" href="RM000000W7C01YX"/>).</ptxt>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO STEP 16</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE CHAPTER 1</testtitle>
+<test1>
+<ptxt>Refer to the PROBLEM SYMPTOMS TABLE (See page <xref label="Seep12" href="RM000000W73020X"/>).</ptxt>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO STEP 19</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE CHAPTER 2</testtitle>
+<test1>
+<ptxt>Refer to the PROBLEM SYMPTOMS TABLE (See page <xref label="Seep13" href="RM000000W73020X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PART INSPECTION</testtitle>
+<results>
+<result>NEXT</result>
+<action-ci-right>GO TO STEP 21</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHART</testtitle>
+<test1>
+<ptxt>Refer to the DIAGNOSTIC TROUBLE CODE CHART (See page <xref label="Seep14" href="RM000000W7101XX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>IDENTIFICATION OF PROBLEM</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

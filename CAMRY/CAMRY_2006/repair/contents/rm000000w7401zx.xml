@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7401ZX" category="U" type-id="3011K" name-id="AX0MC-03" from="200601">
+<name>TERMINALS OF ECM</name>
+<subpara id="RM000000W7401ZX_z0" proc-id="RM0250U___00005XJ00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ECM</ptxt>
+<figure>
+<graphic graphicname="A107881E12" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Each ECM terminal's standard voltage is shown in the table below.</ptxt>
+<ptxt>In the table, first follow the information under "Condition". Look under "Symbols (Terminal No.)" for the terminals to inspected. The standard voltage between the terminals is shown under "Specific Condition".</ptxt>
+<ptxt>Use the illustration above as a reference for the ECM terminals.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" align="center" colwidth="0.71in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<colspec colname="COL5" align="center" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminals No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>D (C24-56) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>D shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever D and 4 position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except D and 4 position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>R (C24-53) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever R position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except R position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (A24-8) - E1 (C24-104)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 20 km/h (12mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>STP (A24-36) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal is depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>7.5 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal is released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>4 (A24-25) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>4 shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever 4 position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except 4 position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3 (A24-26) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>3 shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever 3 position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except 3 position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>2 (C24-55) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>2 shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever 2 and L position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except 2 and L position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>L (C24-74) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>L shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever L position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except L position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>P (C24-73) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Park position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever P position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except P position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>N (C24-54) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>SB - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Neutral position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>NSW (C24-52) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>SB - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Park neutral switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever P and N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) and shift lever except P and N position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DSL (C24-79) - E1 (C24-104)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DSL solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 65 km/h (40mph), lock-up (ON to OFF)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>SR (C24-80) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>SR solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3rd, 4th or 5th gear</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1st or 2nd gear</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>S4 (C24-78) - E1 (C24-104)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>S4 solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5th gear</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except 5th gear</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL3+ (C24-60) - SL3- (C24-61)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - Y</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL3 solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL2+ (C24-58) - SL2- (C24-59)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL2 solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 4)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SL1+ (C24-57) - SL1- (C24-77)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - L-G</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1 solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC+ (C24-101) - NC- (C24-102)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LG - P</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor (NC) signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 30 km/h (19mph): (3rd gear)</ptxt>
+<ptxt>Engine speed 1,400 rpm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 6)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT+ (C24-125) - NT- (C24-124)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Speed sensor (NT) signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 20 km/h (12mph)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 7)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLT+ (C24-76) - SLT- (C24-75)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SLT solenoid signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THO1 (C24-72) - ETHO (C24-95)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - BR</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ATF temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF temperature: 115°C (239°F) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step2>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="G023426E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Terminal</ptxt>
+</entry>
+<entry>
+<ptxt>SLT+ - SLT-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry>
+<ptxt>5 V/DIV, 1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry>
+<ptxt>Engine idle speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 2</ptxt>
+<figure>
+<graphic graphicname="C053420E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DSL - E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV, 100ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 65 km/h (40 mph), lock-up (ON to OFF)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 3</ptxt>
+<figure>
+<graphic graphicname="G023426E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SL3+ - SL3-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 4</ptxt>
+<figure>
+<graphic graphicname="G023426E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SL2+ - SL2-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 5</ptxt>
+<figure>
+<graphic graphicname="G023426E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SL1+ - SL1-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idle speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 6</ptxt>
+<figure>
+<graphic graphicname="C093866E08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NC+ - NC-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 V/DIV, 1ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 30 km/h (19 mph): (3rd gear)</ptxt>
+<ptxt>Engine speed 1.400 rpm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 7</ptxt>
+<figure>
+<graphic graphicname="C053419E12" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NT+ - NT-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 0.5ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 20 km/h (12 mph)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 8</ptxt>
+<figure>
+<graphic graphicname="C053421E08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SPD - E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 20ms/DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 20 km/h (12 mph)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>Depending on the vehicle, the output waveform voltage, influenced by optionally installed systems, may become 5V.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

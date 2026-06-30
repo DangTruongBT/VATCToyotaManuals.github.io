@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XN5008X" category="J" type-id="3037E" name-id="TW0JF-01" from="200601">
+<dtccode/>
+<dtcname>TC and CG Terminal Circuit</dtcname>
+<subpara id="RM000000XN5008X_02" type-id="60" category="03" proc-id="RM0250U___00005JA00001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>DTC output mode is set by connecting terminals 13 (TC) and 4 (CG) of the DLC3. The DTCs are indicated by the blinking of the tire pressure warning light.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XN5008X_03" type-id="32" category="03" proc-id="RM0250U___00005JB00001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E110507E13" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<atten4>
+<ptxt>When each warning light blinks continuously, a ground short in the wiring of terminal TC of the DLC3 or an internal ground short in an ECU connected to this circuit may have occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XN5008X_04" type-id="51" category="05" proc-id="RM0250U___00005XC00001">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>It is necessary to register an ID code after replacing the tire pressure warning valve and transmitter and/or the tire pressure warning ECU (See page <xref label="Seep01" href="RM000000XN1008X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XN5008X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XN5008X_05_0013" proc-id="RM0250U___00005XD00001">
+<testtitle>CHECK HARNESS AND CONNECTOR (DLC3 - TIRE PRESSURE WARNING ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E60 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="E129465E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E60-3 (TC) - E10-13 (TC)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E10-4 (CG) - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XN5008X_05_0014" fin="true">OK</down>
+<right ref="RM000000XN5008X_05_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XN5008X_05_0014">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000XN5008X_05_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

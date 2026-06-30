@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72Y6C_T008U" variety="T008U">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System)</name>
+<para id="RM000001NN0002X" category="D" type-id="303FN" name-id="DL0TM-07" from="200601">
+<name>CUSTOMIZE PARAMETERS</name>
+<subpara id="RM000001NN0002X_z0" proc-id="RM0250U___00001HV00001">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>The following items can be customized.</ptxt>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When the customer requests a change in a function, first make sure that customization of the function(s) is possible.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to record the current settings before customizing.</ptxt>
+</item>
+<item>
+<ptxt>When troubleshooting a function, first make sure that the function is not set to OFF.</ptxt>
+</item>
+</list1>
+</atten3>
+<step1>
+<ptxt>CUSTOMIZE</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: CUSTOMIZE / INDIVIDUAL CHANGE / WIRELESS D LOCK.</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<title>WIRELESS DOOR LOCK CONTROL SYSTEM</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="2.12in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display (item)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Default</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Setting</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRUNK LID OPER</ptxt>
+<ptxt>(Wireless trunk opener function setting)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.8 s PR ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function changes operation method of transmitter to open luggage compartment door.</ptxt>
+<ptxt>1 TIME: Push 1 time</ptxt>
+<ptxt>2 TIMES: Push 2 times</ptxt>
+<ptxt>0.8 s PR: Push and hold 0.8 seconds</ptxt>
+<ptxt>OFF: Does not operate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 TIME/2 TIMES/0.8 s PR/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WIRELESS OPER</ptxt>
+<ptxt>(Wireless door lock control function)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that turns wireless door lock function ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HAZARD ANS BACK</ptxt>
+<ptxt>(Hazard answer-back for wireless door lock control)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the doors are locked by wireless operation, the hazard warning lights flash once.</ptxt>
+</item>
+<item>
+<ptxt>When the doors are unlocked by wireless operation, the hazard warning lights flash twice.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OPEN DOOR WARN</ptxt>
+<ptxt>(Door ajar warning)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The buzzer sounds when LOCK is pressed when any of the doors are ajar.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AUTO LOCK DELAY</ptxt>
+<ptxt>(Auto lock time)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>60 s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function regulates the interval between unlocking and automatic relocking of doors.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>30 s/60 s</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>UNLOCK /2OPER</ptxt>
+<ptxt>(Wireless unlock operated twice)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function unlocks the driver's door when the UNLOCK switch is pressed once, and unlocks all doors when pressed twice within 3 seconds.</ptxt>
+<ptxt>If set to OFF, pressing UNLOCK once unlocks all doors.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ALARM FUNCTION</ptxt>
+<ptxt>(Panic function)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This function operates the theft deterrent system when PANIC is pressed and held for 0.8 seconds.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WIRLS BUZZ RESP</ptxt>
+<ptxt>(Wireless buzzer answer-back)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer response/ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDC01SX" category="D" type-id="303HX" name-id="ES065-53" from="200601">
+<name>DEFINITION OF TERMS</name>
+<subpara id="RM000000PDC01SX_z0" proc-id="RM0250U___00002EM00000">
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.53in"/>
+<colspec colname="COL2" colwidth="4.55in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Terms</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Definition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Monitor Description</ptxt>
+</entry>
+<entry>
+<ptxt>Description of what ECM monitors and how to detect malfunctions (monitoring purpose and its details).</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>A group of diagnostic trouble codes that are output by ECM based on the same malfunction detection logic.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Typical Enabling Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Preconditions that allow ECM to detect malfunctions.</ptxt>
+<ptxt>With all preconditions satisfied, ECM sets DTC when monitored value(s) exceeds malfunction threshold(s).</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Order of monitor priority, applied if multiple sensors and components are involved in single malfunction detection process.</ptxt>
+<ptxt>Each sensor and component monitored in turn and not monitored until previous detection operation is completed.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensor/Components</ptxt>
+</entry>
+<entry>
+<ptxt>Sensors and components used by ECM to detect each malfunction.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Number of times ECM checks for each malfunction during each driving cycle.</ptxt>
+<ptxt>"Once per driving cycle" means that ECM checks for malfunctions only once in single driving cycle.</ptxt>
+<ptxt>"Continuous" means that ECM checks for malfunctions whenever enabling conditions are met.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>Minimum time for which ECM must detect continuous deviation in monitored value(s) in order to set DTC. Timing begins when Typical Enabling Conditions are met.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Malfunction Thresholds</ptxt>
+</entry>
+<entry>
+<ptxt>Value, beyond which, ECM determines malfunctions exist and sets DTCs.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Timing of MIL illumination after a malfunction is detected. </ptxt>
+<ptxt>"Immediate" means that ECM illuminates MIL as soon as a malfunction is detected.</ptxt>
+<ptxt>"2 driving cycle" means that ECM illuminates MIL if the same malfunction is detected twice during next sequential driving cycle.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

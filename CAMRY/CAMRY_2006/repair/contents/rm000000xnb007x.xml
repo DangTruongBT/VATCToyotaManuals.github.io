@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XNB007X" category="J" type-id="304RU" name-id="TW0JC-01" from="200601">
+<dtccode/>
+<dtcname>Tire Pressure Warning Reset Switch Circuit</dtcname>
+<subpara id="RM000000XNB007X_02" type-id="60" category="03" proc-id="RM0250U___00005IS00001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Receiving a signal from the tire pressure warning reset switch, the tire pressure warning ECU and receiver indicates the initialization of the tire pressure warning system.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XNB007X_03" type-id="32" category="03" proc-id="RM0250U___00005IT00001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E129459E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XNB007X_04" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000XNB007X_01" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XNB007X_01_0008" proc-id="RM0250U___00005IP00001">
+<testtitle>CHECK TIRE PRESSURE WARNING RESET SWITCH FUNCTION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform the tire pressure warning reset switch test in TEST MODE PROCEDURE (See page <xref label="Seep01" href="RM000000XN0008X"/>).</ptxt>
+<spec>
+<title>OK</title>
+<subtitle>Reset switch ON</subtitle>
+<specitem>
+<ptxt>Tire pressure warning light comes on.</ptxt>
+</specitem>
+<subtitle>Reset switch OFF</subtitle>
+<specitem>
+<ptxt>Tire pressure warning light blinks.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XNB007X_01_0013" fin="true">OK</down>
+<right ref="RM000000XNB007X_01_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XNB007X_01_0002" proc-id="RM0250U___00005IN00001">
+<testtitle>INSPECT TIRE PRESSURE WARNING RESET SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the tire pressure warning reset switch connector.</ptxt>
+<figure>
+<graphic graphicname="C107260E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between terminals 1 and 2 of the tire pressure warning reset switch when the tire pressure warning switch is ON and OFF.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XNB007X_01_0005" fin="false">OK</down>
+<right ref="RM000000XNB007X_01_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XNB007X_01_0005" proc-id="RM0250U___00005X500001">
+<testtitle>CHECK HARNESS AND CONNECTOR (TIRE PRESSURE WARNING RESET SW - TIRE PRESSURE WARNING ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the tire pressure warning reset switch E53 connector and tire pressure warning ECU E60 connector.</ptxt>
+<figure>
+<graphic graphicname="C111010E06" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E60-1 (CLSW) - E53-1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E60-1 (CLSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E53-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XNB007X_01_0012" fin="true">OK</down>
+<right ref="RM000000XNB007X_01_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XNB007X_01_0011">
+<testtitle>REPLACE TIRE PRESSURE WARNING RESET SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000XNB007X_01_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XNB007X_01_0012">
+<testtitle>REPLACE TIRE PRESSURE WARNING ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000XNB007X_01_0013">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

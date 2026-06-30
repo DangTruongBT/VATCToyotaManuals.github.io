@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-db>
+<pub id="RM0251U">
+
+
+
+
+<servcat id="30">
+<name>ENGINE</name>
+<shortname>ENGINE</shortname><section id="10006_S0004" variety="S0004" category="ES" volume="1">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<seq no="6"/>
+<sub-servcat id="30" type="2">
+<name>ENGINE</name>
+</sub-servcat>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000PDW01AX"><dtccode>P0010</dtccode><detection-item>Camshaft Position "A" Actuator Circuit (Bank 1)</detection-item></dtc>
+<dtc id="RM000000PDU01AX"><dtccode>P0011</dtccode><detection-item>Camshaft Position "A" - Timing Over-Advanced or System Performance (Bank 1)</detection-item><dtccode>P0012</dtccode><detection-item>Camshaft Position "A" - Timing Over-Retarded (Bank 1)</detection-item></dtc>
+<dtc id="RM000000PDV017X"><dtccode>P0016</dtccode><detection-item>Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)</detection-item></dtc>
+<dtc id="RM000000WC101DX"><dtccode>P0031</dtccode><detection-item>Oxygen (A/F) Sensor Heater Control Circuit Low (Bank 1 Sensor 1)</detection-item><dtccode>P0032</dtccode><detection-item>Oxygen (A/F) Sensor Heater Control Circuit High (Bank 1 Sensor 1)</detection-item></dtc>
+<dtc id="RM000000PFA01CX"><dtccode>P0037</dtccode><detection-item>Oxygen Sensor Heater Control Circuit Low (Bank 1 Sensor 2)</detection-item><dtccode>P0038</dtccode><detection-item>Oxygen Sensor Heater Control Circuit High (Bank 1 Sensor 2)</detection-item><dtccode>P0141</dtccode><detection-item>Oxygen Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)</detection-item></dtc>
+<dtc id="RM000000U5B01FX"><dtccode>P0100</dtccode><detection-item>Mass or Volume Air Flow Circuit</detection-item><dtccode>P0102</dtccode><detection-item>Mass or Volume Air Flow Circuit Low Input</detection-item><dtccode>P0103</dtccode><detection-item>Mass or Volume Air Flow Circuit High Input</detection-item></dtc>
+<dtc id="RM000000PF400RX"><dtccode>P0101</dtccode><detection-item>Mass Air Flow Circuit Range / Performance Problem</detection-item></dtc>
+<dtc id="RM000000PF301EX"><dtccode>P0110</dtccode><detection-item>Intake Air Temperature Circuit Malfunction</detection-item><dtccode>P0112</dtccode><detection-item>Intake Air Temperature Circuit Low Input</detection-item><dtccode>P0113</dtccode><detection-item>Intake Air Temperature Circuit High Input</detection-item></dtc>
+<dtc id="RM000001WPH002X"><dtccode>P0111</dtccode><detection-item>Intake Air Temperature Sensor Gradient Too High</detection-item></dtc>
+<dtc id="RM000000PF501DX"><dtccode>P0115</dtccode><detection-item>Engine Coolant Temperature Circuit Malfunction</detection-item><dtccode>P0117</dtccode><detection-item>Engine Coolant Temperature Circuit Low Input</detection-item><dtccode>P0118</dtccode><detection-item>Engine Coolant Temperature Circuit High Input</detection-item></dtc>
+<dtc id="RM000000PFB01CX"><dtccode>P0116</dtccode><detection-item>Engine Coolant Temperature Circuit Range / Performance Problem</detection-item></dtc>
+<dtc id="RM000000PF6018X"><dtccode>P0120</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit Malfunction</detection-item><dtccode>P0122</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit Low Input</detection-item><dtccode>P0123</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit High Input</detection-item><dtccode>P0220</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "B" Circuit</detection-item><dtccode>P0222</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "B" Circuit Low Input</detection-item><dtccode>P0223</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "B" Circuit High Input</detection-item><dtccode>P2135</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" / "B" Voltage Correlation</detection-item></dtc>
+<dtc id="RM000000PF7016X"><dtccode>P0121</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit Range / Performance Problem</detection-item></dtc>
+<dtc id="RM000000T9P012X"><dtccode>P0125</dtccode><detection-item>Insufficient Coolant Temperature for Closed Loop Fuel Control</detection-item></dtc>
+<dtc id="RM000000TB300OX"><dtccode>P0128</dtccode><detection-item>Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)</detection-item></dtc>
+<dtc id="RM000000TEO00UX"><dtccode>P0136</dtccode><detection-item>Oxygen Sensor Circuit Malfunction (Bank 1 Sensor 2)</detection-item><dtccode>P0137</dtccode><detection-item>Oxygen Sensor Circuit Low Voltage (Bank 1 Sensor 2)</detection-item><dtccode>P0138</dtccode><detection-item>Oxygen Sensor Circuit High Voltage (Bank 1 Sensor 2)</detection-item></dtc>
+<dtc id="RM000000WC3018X"><dtccode>P0171</dtccode><detection-item>System Too Lean (Bank 1)</detection-item><dtccode>P0172</dtccode><detection-item>System Too Rich (Bank 1)</detection-item></dtc>
+<dtc id="RM000000XH301HX"><dtccode>P0300</dtccode><detection-item>Random / Multiple Cylinder Misfire Detected</detection-item><dtccode>P0301</dtccode><detection-item>Cylinder 1 Misfire Detected</detection-item><dtccode>P0302</dtccode><detection-item>Cylinder 2 Misfire Detected</detection-item><dtccode>P0303</dtccode><detection-item>Cylinder 3 Misfire Detected</detection-item><dtccode>P0304</dtccode><detection-item>Cylinder 4 Misfire Detected</detection-item></dtc>
+<dtc id="RM000000SVT014X"><dtccode>P0327</dtccode><detection-item>Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)</detection-item><dtccode>P0328</dtccode><detection-item>Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)</detection-item></dtc>
+<dtc id="RM000000TCW01VX"><dtccode>P0335</dtccode><detection-item>Crankshaft Position Sensor "A" Circuit</detection-item><dtccode>P0339</dtccode><detection-item>Crankshaft Position Sensor "A" Circuit Intermittent</detection-item></dtc>
+<dtc id="RM0000012JE00EX"><dtccode>P0340</dtccode><detection-item>Camshaft Position Sensor "A" Circuit (Bank 1 or Single Sensor)</detection-item></dtc>
+<dtc id="RM000000XH401BX"><dtccode>P0351</dtccode><detection-item>Ignition Coil "A" Primary / Secondary Circuit</detection-item><dtccode>P0352</dtccode><detection-item>Ignition Coil "B" Primary / Secondary Circuit</detection-item><dtccode>P0353</dtccode><detection-item>Ignition Coil "C" Primary / Secondary Circuit</detection-item><dtccode>P0354</dtccode><detection-item>Ignition Coil "D" Primary / Secondary Circuit</detection-item></dtc>
+<dtc id="RM000000TMD00XX"><dtccode>P0420</dtccode><detection-item>Catalyst System Efficiency Below Threshold (Bank 1)</detection-item></dtc>
+<dtc id="RM0000012LM005X"><dtccode>P043E</dtccode><detection-item>Evaporative Emission System Reference Orifice Clog Up</detection-item><dtccode>P043F</dtccode><detection-item>Evaporative Emission System Reference Orifice High Flow</detection-item><dtccode>P2401</dtccode><detection-item>Evaporative Emission Leak Detection Pump Stuck OFF</detection-item><dtccode>P2402</dtccode><detection-item>Evaporative Emission Leak Detection Pump Stuck ON</detection-item><dtccode>P2419</dtccode><detection-item>Evaporative Emission System Switching Valve Control Circuit Low</detection-item></dtc>
+<dtc id="RM000000SWF015X"><dtccode>P0441</dtccode><detection-item>Evaporative Emission Control System Incorrect Purge Flow</detection-item></dtc>
+<dtc id="RM0000012MC005X"><dtccode>P0450</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor / Switch</detection-item><dtccode>P0451</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor Range / Performance</detection-item><dtccode>P0452</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor / Switch Low Input</detection-item><dtccode>P0453</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor / Switch High Input</detection-item></dtc>
+<dtc id="RM000000SWH00XX"><dtccode>P0455</dtccode><detection-item>Evaporative Emission Control System Leak Detected (Gross Leak)</detection-item><dtccode>P0456</dtccode><detection-item>Evaporative Emission Control System Leak Detected (Very Small Leak)</detection-item></dtc>
+<dtc id="RM0000012ME00EX"><dtccode>P0500</dtccode><detection-item>Vehicle Speed Sensor "A"</detection-item></dtc>
+<dtc id="RM000000XCT00ZX"><dtccode>P0504</dtccode><detection-item>Brake Switch "A" / "B" Correlation</detection-item></dtc>
+<dtc id="RM000000T8M01UX"><dtccode>P0505</dtccode><detection-item>Idle Control System Malfunction</detection-item></dtc>
+<dtc id="RM000001BFY008X"><dtccode>P050A</dtccode><detection-item>Cold Start Idle Air Control System Performance</detection-item><dtccode>P050B</dtccode><detection-item>Cold Start Ignition Timing Performance</detection-item></dtc>
+<dtc id="RM000000T8P01UX"><dtccode>P0560</dtccode><detection-item>System Voltage</detection-item></dtc>
+<dtc id="RM000000W95016X"><dtccode>P0604</dtccode><detection-item>Internal Control Module Random Access Memory (RAM) Error</detection-item><dtccode>P0606</dtccode><detection-item>ECM / PCM Processor</detection-item><dtccode>P0607</dtccode><detection-item>Control Module Performance</detection-item><dtccode>P0657</dtccode><detection-item>Actuator Supply Voltage Circuit / Open</detection-item></dtc>
+<dtc id="RM000000TA001WX"><dtccode>P0617</dtccode><detection-item>Starter Relay Circuit High</detection-item></dtc>
+<dtc id="RM000000PGD00FX"><dtccode>P0630</dtccode><detection-item>VIN not Programmed or Mismatch - ECM / PCM</detection-item></dtc>
+<dtc id="RM000000W8801BX"><dtccode>P0724</dtccode><detection-item>Brake Switch "B" Circuit High</detection-item></dtc>
+<dtc id="RM00000276A000X"><dtccode>P2004</dtccode><detection-item>Intake Manifold Runner Control Stuck Open (Bank 1)</detection-item><dtccode>P2006</dtccode><detection-item>Intake Manifold Runner Control Stuck Closed (Bank 1)</detection-item></dtc>
+<dtc id="RM00000276B000X"><dtccode>P2009</dtccode><detection-item>Intake Manifold Runner Control Circuit Low (Bank 1)</detection-item><dtccode>P2010</dtccode><detection-item>Intake Manifold Runner Control Circuit High (Bank 1)</detection-item></dtc>
+<dtc id="RM00000276C000X"><dtccode>P2014</dtccode><detection-item>Intake Manifold Runner Position Sensor / Switch Circuit (Bank 1)</detection-item><dtccode>P2016</dtccode><detection-item>Intake Manifold Runner Position Sensor / Switch Circuit Low (Bank 1)</detection-item><dtccode>P2017</dtccode><detection-item>Intake Manifold Runner Position Sensor / Switch Circuit High (Bank 1)</detection-item></dtc>
+<dtc id="RM000000PFU01PX"><dtccode>P2102</dtccode><detection-item>Throttle Actuator Control Motor Circuit Low</detection-item><dtccode>P2103</dtccode><detection-item>Throttle Actuator Control Motor Circuit High</detection-item></dtc>
+<dtc id="RM000000PFV01QX"><dtccode>P2111</dtccode><detection-item>Throttle Actuator Control System - Stuck Open</detection-item><dtccode>P2112</dtccode><detection-item>Throttle Actuator Control System - Stuck Closed</detection-item></dtc>
+<dtc id="RM000000PFW01SX"><dtccode>P2118</dtccode><detection-item>Throttle Actuator Control Motor Current Range / Performance</detection-item></dtc>
+<dtc id="RM000000PFX01QX"><dtccode>P2119</dtccode><detection-item>Throttle Actuator Control Throttle Body Range / Performance</detection-item></dtc>
+<dtc id="RM000000PFY01LX"><dtccode>P2120</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit</detection-item><dtccode>P2122</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit Low Input</detection-item><dtccode>P2123</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit High Input</detection-item><dtccode>P2125</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "E" Circuit</detection-item><dtccode>P2127</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "E" Circuit Low Input</detection-item><dtccode>P2128</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "E" Circuit High Input</detection-item><dtccode>P2138</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" / "E" Voltage Correlation</detection-item></dtc>
+<dtc id="RM000000PFZ01NX"><dtccode>P2121</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit Range / Performance</detection-item></dtc>
+<dtc id="RM000000WC401FX"><dtccode>P2195</dtccode><detection-item>Oxygen (A/F) Sensor Signal Stuck Lean (Bank 1 Sensor 1)</detection-item><dtccode>P2196</dtccode><detection-item>Oxygen (A/F) Sensor Signal Stuck Rich (Bank 1 Sensor 1)</detection-item></dtc>
+<dtc id="RM0000028K6000X"><dtccode>P2237</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit / Open (Bank 1 Sensor 1)</detection-item><dtccode>P2238</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit Low (Bank 1 Sensor 1)</detection-item><dtccode>P2239</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit High (Bank 1 Sensor 1)</detection-item><dtccode>P2252</dtccode><detection-item>Oxygen (A/F) Sensor Reference Ground Circuit Low (Bank 1 Sensor 1)</detection-item><dtccode>P2253</dtccode><detection-item>Oxygen (A/F) Sensor Reference Ground Circuit High (Bank 1 Sensor 1)</detection-item></dtc>
+<dtc id="RM000002D84000X"><dtccode>P2420</dtccode><detection-item>Evaporative Emission System Switching Valve Control Circuit High</detection-item></dtc>
+<dtc id="RM000000T6X010X"><dtccode>P2610</dtccode><detection-item>ECM / PCM Internal Engine Off Timer Performance</detection-item></dtc>
+<dtc id="RM0000013H8009X"><dtccode>P2A00</dtccode><detection-item>A/F Sensor Circuit Slow Response (Bank 1 Sensor 1)</detection-item></dtc>
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<section id="10006_S000F" variety="S000F" category="ES" volume="1">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<seq no="6"/>
+<sub-servcat id="30" type="2">
+<name>ENGINE</name>
+</sub-servcat>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000PDW015X"><dtccode>P0010</dtccode><detection-item>Camshaft Position "A" Actuator Circuit (Bank 1)</detection-item><dtccode>P0020</dtccode><detection-item>Camshaft Position "A" Actuator Circuit (Bank 2)</detection-item></dtc>
+<dtc id="RM000000PDU015X"><dtccode>P0011</dtccode><detection-item>Camshaft Position "A" - Timing Over-Advanced or System Performance (Bank 1)</detection-item><dtccode>P0012</dtccode><detection-item>Camshaft Position "A" - Timing Over-Retarded (Bank 1)</detection-item><dtccode>P0021</dtccode><detection-item>Camshaft Position "A" - Timing Over-Advanced or System Performance (Bank 2)</detection-item><dtccode>P0022</dtccode><detection-item>Camshaft Position "A" - Timing Over-Retarded (Bank 2)</detection-item></dtc>
+<dtc id="RM000000XH700LX"><dtccode>P0013</dtccode><detection-item>Camshaft Position "B" Actuator Circuit / Open (Bank 1)</detection-item><dtccode>P0023</dtccode><detection-item>Camshaft Position "B" Actuator Circuit / Open (Bank 2)</detection-item></dtc>
+<dtc id="RM000000XH800LX"><dtccode>P0014</dtccode><detection-item>Camshaft Position "B" - Timing Over-Advanced or System Performance (Bank 1)</detection-item><dtccode>P0015</dtccode><detection-item>Camshaft Position "B"  - Timing Over-Retarded (Bank 1)</detection-item><dtccode>P0024</dtccode><detection-item>Camshaft Position "B" - Timing Over-Advanced or System Performance (Bank 2)</detection-item><dtccode>P0025</dtccode><detection-item>Camshaft Position "B"  - Timing Over-Retarded (Bank 2)</detection-item></dtc>
+<dtc id="RM000000PDV012X"><dtccode>P0016</dtccode><detection-item>Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)</detection-item><dtccode>P0017</dtccode><detection-item>Crankshaft Position - Camshaft Position Correlation  (Bank 1 Sensor B)</detection-item><dtccode>P0018</dtccode><detection-item>Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)</detection-item><dtccode>P0019</dtccode><detection-item>Crankshaft Position - Camshaft Position Correlation  (Bank 2 Sensor B)</detection-item></dtc>
+<dtc id="RM000000WC1018X"><dtccode>P0031</dtccode><detection-item>Oxygen (A/F) Sensor Heater Control Circuit Low (Bank 1 Sensor 1)</detection-item><dtccode>P0032</dtccode><detection-item>Oxygen (A/F) Sensor Heater Control Circuit High (Bank 1 Sensor 1)</detection-item><dtccode>P0051</dtccode><detection-item>Oxygen (A/F) Sensor Heater Control Circuit Low (Bank 2 Sensor 1)</detection-item><dtccode>P0052</dtccode><detection-item>Oxygen (A/F) Sensor Heater Control Circuit High (Bank 2 Sensor 1)</detection-item></dtc>
+<dtc id="RM000000PFA017X"><dtccode>P0037</dtccode><detection-item>Oxygen Sensor Heater Control Circuit Low (Bank 1 Sensor 2)</detection-item><dtccode>P0038</dtccode><detection-item>Oxygen Sensor Heater Control Circuit High (Bank 1 Sensor 2)</detection-item><dtccode>P0057</dtccode><detection-item>Oxygen Sensor Heater Control Circuit Low (Bank 2 Sensor 2)</detection-item><dtccode>P0058</dtccode><detection-item>Oxygen Sensor Heater Control Circuit High (Bank 2 Sensor 2)</detection-item><dtccode>P0141</dtccode><detection-item>Oxygen Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)</detection-item><dtccode>P0161</dtccode><detection-item>Oxygen Sensor Heater Circuit Malfunction (Bank 2 Sensor 2)</detection-item></dtc>
+<dtc id="RM000000U5B01AX"><dtccode>P0100</dtccode><detection-item>Mass or Volume Air Flow Circuit</detection-item><dtccode>P0102</dtccode><detection-item>Mass or Volume Air Flow Circuit Low Input</detection-item><dtccode>P0103</dtccode><detection-item>Mass or Volume Air Flow Circuit High Input</detection-item></dtc>
+<dtc id="RM000000PF400OX"><dtccode>P0101</dtccode><detection-item>Mass Air Flow Circuit Range / Performance Problem</detection-item></dtc>
+<dtc id="RM000000PF301AX"><dtccode>P0110</dtccode><detection-item>Intake Air Temperature Circuit Malfunction</detection-item><dtccode>P0112</dtccode><detection-item>Intake Air Temperature Circuit Low Input</detection-item><dtccode>P0113</dtccode><detection-item>Intake Air Temperature Circuit High Input</detection-item></dtc>
+<dtc id="RM000001MJM003X"><dtccode>P0111</dtccode><detection-item>Intake Air Temperature Sensor Gradient Too High</detection-item></dtc>
+<dtc id="RM000000PF5019X"><dtccode>P0115</dtccode><detection-item>Engine Coolant Temperature Circuit Malfunction</detection-item><dtccode>P0117</dtccode><detection-item>Engine Coolant Temperature Circuit Low Input</detection-item><dtccode>P0118</dtccode><detection-item>Engine Coolant Temperature Circuit High Input</detection-item></dtc>
+<dtc id="RM000000PFB017X"><dtccode>P0116</dtccode><detection-item>Engine Coolant Temperature Circuit Range / Performance Problem</detection-item></dtc>
+<dtc id="RM000000PF6014X"><dtccode>P0120</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit Malfunction</detection-item><dtccode>P0122</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit Low Input</detection-item><dtccode>P0123</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit High Input</detection-item><dtccode>P0220</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "B" Circuit</detection-item><dtccode>P0222</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "B" Circuit Low Input</detection-item><dtccode>P0223</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "B" Circuit High Input</detection-item><dtccode>P2135</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" / "B" Voltage Correlation</detection-item></dtc>
+<dtc id="RM000000PF701EX"><dtccode>P0121</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "A" Circuit Range / Performance Problem</detection-item></dtc>
+<dtc id="RM000000T9P00YX"><dtccode>P0125</dtccode><detection-item>Insufficient Coolant Temperature for Closed Loop Fuel Control</detection-item></dtc>
+<dtc id="RM000000TB300KX"><dtccode>P0128</dtccode><detection-item>Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)</detection-item></dtc>
+<dtc id="RM000000WBY011X"><dtccode>P0136</dtccode><detection-item>Oxygen Sensor Circuit Malfunction (Bank 1 Sensor 2)</detection-item><dtccode>P0137</dtccode><detection-item>Oxygen Sensor Circuit Low Voltage (Bank 1 Sensor 2)</detection-item><dtccode>P0138</dtccode><detection-item>Oxygen Sensor Circuit High Voltage (Bank 1 Sensor 2)</detection-item><dtccode>P0156</dtccode><detection-item>Oxygen Sensor Circuit Malfunction (Bank 2 Sensor 2)</detection-item><dtccode>P0157</dtccode><detection-item>Oxygen Sensor Circuit Low Voltage (Bank 2 Sensor 2)</detection-item><dtccode>P0158</dtccode><detection-item>Oxygen Sensor Circuit High Voltage (Bank 2 Sensor 2)</detection-item></dtc>
+<dtc id="RM00000221B001X"><dtccode>P0171</dtccode><detection-item>System Too Lean (Bank 1)</detection-item><dtccode>P0172</dtccode><detection-item>System Too Rich (Bank 1)</detection-item><dtccode>P0174</dtccode><detection-item>System Too Lean (Bank 2)</detection-item><dtccode>P0175</dtccode><detection-item>System Too Rich (Bank 2)</detection-item></dtc>
+<dtc id="RM000000XH301BX"><dtccode>P0300</dtccode><detection-item>Random / Multiple Cylinder Misfire Detected</detection-item><dtccode>P0301</dtccode><detection-item>Cylinder 1 Misfire Detected</detection-item><dtccode>P0302</dtccode><detection-item>Cylinder 2 Misfire Detected</detection-item><dtccode>P0303</dtccode><detection-item>Cylinder 3 Misfire Detected</detection-item><dtccode>P0304</dtccode><detection-item>Cylinder 4 Misfire Detected</detection-item><dtccode>P0305</dtccode><detection-item>Cylinder 5 Misfire Detected</detection-item><dtccode>P0306</dtccode><detection-item>Cylinder 6 Misfire Detected</detection-item></dtc>
+<dtc id="RM000000SVT00ZX"><dtccode>P0327</dtccode><detection-item>Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)</detection-item><dtccode>P0328</dtccode><detection-item>Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)</detection-item><dtccode>P0332</dtccode><detection-item>Knock Sensor 2 Circuit Low Input (Bank 2)</detection-item><dtccode>P0333</dtccode><detection-item>Knock Sensor 2 Circuit High Input (Bank 2)</detection-item></dtc>
+<dtc id="RM000000TCW01QX"><dtccode>P0335</dtccode><detection-item>Crankshaft Position Sensor "A" Circuit</detection-item><dtccode>P0339</dtccode><detection-item>Crankshaft Position Sensor "A" Circuit Intermittent</detection-item></dtc>
+<dtc id="RM000000WBZ00YX"><dtccode>P0340</dtccode><detection-item>Camshaft Position Sensor Circuit Malfunction</detection-item><dtccode>P0342</dtccode><detection-item>Camshaft Position Sensor "A" Circuit Low Input (Bank 1 or Single Sensor)</detection-item><dtccode>P0343</dtccode><detection-item>Camshaft Position Sensor "A" Circuit High Input (Bank 1 or Single Sensor)</detection-item><dtccode>P0345</dtccode><detection-item>Camshaft Position Sensor "A" Circuit (Bank 2)</detection-item><dtccode>P0347</dtccode><detection-item>Camshaft Position Sensor "A" Circuit Low Input (Bank 2)</detection-item><dtccode>P0348</dtccode><detection-item>Camshaft Position Sensor "A" Circuit High Input (Bank 2)</detection-item></dtc>
+<dtc id="RM000000XH4017X"><dtccode>P0351</dtccode><detection-item>Ignition Coil "A" Primary / Secondary Circuit</detection-item><dtccode>P0352</dtccode><detection-item>Ignition Coil "B" Primary / Secondary Circuit</detection-item><dtccode>P0353</dtccode><detection-item>Ignition Coil "C" Primary / Secondary Circuit</detection-item><dtccode>P0354</dtccode><detection-item>Ignition Coil "D" Primary / Secondary Circuit</detection-item><dtccode>P0355</dtccode><detection-item>Ignition Coil "E" Primary / Secondary Circuit</detection-item><dtccode>P0356</dtccode><detection-item>Ignition Coil "F" Primary / Secondary Circuit</detection-item></dtc>
+<dtc id="RM000000YTB00KX"><dtccode>P0365</dtccode><detection-item>Camshaft Position Sensor "B" Circuit (Bank 1)</detection-item><dtccode>P0367</dtccode><detection-item>Camshaft Position Sensor "B" Circuit Low Input (Bank 1)</detection-item><dtccode>P0368</dtccode><detection-item>Camshaft Position Sensor "B" Circuit High Input (Bank 1)</detection-item><dtccode>P0390</dtccode><detection-item>Camshaft Position Sensor "B" Circuit (Bank 2)</detection-item><dtccode>P0392</dtccode><detection-item>Camshaft Position Sensor "B" Circuit Low Input (Bank 2)</detection-item><dtccode>P0393</dtccode><detection-item>Camshaft Position Sensor "B" Circuit High Input (Bank 2)</detection-item></dtc>
+<dtc id="RM000000WC0011X"><dtccode>P0420</dtccode><detection-item>Catalyst System Efficiency Below Threshold (Bank 1)</detection-item><dtccode>P0430</dtccode><detection-item>Catalyst System Efficiency Below Threshold (Bank 2)</detection-item></dtc>
+<dtc id="RM00000221E003X"><dtccode>P043E</dtccode><detection-item>Evaporative Emission System Reference Orifice Clog Up</detection-item><dtccode>P043F</dtccode><detection-item>Evaporative Emission System Reference Orifice High Flow</detection-item><dtccode>P2401</dtccode><detection-item>Evaporative Emission System Leak Detection Pump Control Circuit Low</detection-item><dtccode>P2402</dtccode><detection-item>Evaporative Emission System Leak Detection Pump Control Circuit High</detection-item><dtccode>P2419</dtccode><detection-item>Evaporative Emission System Switching Valve Control Circuit Low</detection-item></dtc>
+<dtc id="RM000000SWF011X"><dtccode>P0441</dtccode><detection-item>Evaporative Emission Control System Incorrect Purge Flow</detection-item></dtc>
+<dtc id="RM000000SWG00EX"><dtccode>P0450</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor / Switch</detection-item><dtccode>P0451</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor Range / Performance</detection-item><dtccode>P0452</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor / Switch Low Input</detection-item><dtccode>P0453</dtccode><detection-item>Evaporative Emission Control System Pressure Sensor / Switch High Input</detection-item></dtc>
+<dtc id="RM000000SWH00TX"><dtccode>P0455</dtccode><detection-item>Evaporative Emission Control System Leak Detected (Gross Leak)</detection-item><dtccode>P0456</dtccode><detection-item>Evaporative Emission Control System Leak Detected (Very Small Leak)</detection-item></dtc>
+<dtc id="RM000000W8E00VX"><dtccode>P0500</dtccode><detection-item>Vehicle Speed Sensor "A"</detection-item></dtc>
+<dtc id="RM000000XCT00UX"><dtccode>P0504</dtccode><detection-item>Brake Switch "A" / "B" Correlation</detection-item><dtccode>P0724</dtccode><detection-item>Brake Switch "B" Circuit High</detection-item></dtc>
+<dtc id="RM000000T8M01OX"><dtccode>P0505</dtccode><detection-item>Idle Control System Malfunction</detection-item></dtc>
+<dtc id="RM000001BFY004X"><dtccode>P050A</dtccode><detection-item>Cold Start Idle Air Control System Performance</detection-item><dtccode>P050B</dtccode><detection-item>Cold Start Ignition Timing Performance</detection-item></dtc>
+<dtc id="RM000000T8P01PX"><dtccode>P0560</dtccode><detection-item>System Voltage</detection-item></dtc>
+<dtc id="RM000000W95011X"><dtccode>P0604</dtccode><detection-item>Internal Control Module Random Access Memory (RAM) Error</detection-item><dtccode>P0606</dtccode><detection-item>ECM / PCM Processor</detection-item><dtccode>P0607</dtccode><detection-item>Control Module Performance</detection-item><dtccode>P0657</dtccode><detection-item>Actuator Supply Voltage Circuit / Open</detection-item></dtc>
+<dtc id="RM000000TA001RX"><dtccode>P0617</dtccode><detection-item>Starter Relay Circuit High</detection-item></dtc>
+<dtc id="RM000000PGD00BX"><dtccode>P0630</dtccode><detection-item>VIN not Programmed or Mismatch - ECM / PCM</detection-item></dtc>
+<dtc id="RM000000W84026X"><dtccode>P0705</dtccode><detection-item>Transmission Range Sensor Circuit Malfunction (PRNDL Input)</detection-item></dtc>
+<dtc id="RM000000PFU01KX"><dtccode>P2102</dtccode><detection-item>Throttle Actuator Control Motor Circuit Low</detection-item><dtccode>P2103</dtccode><detection-item>Throttle Actuator Control Motor Circuit High</detection-item></dtc>
+<dtc id="RM000000PFV01LX"><dtccode>P2111</dtccode><detection-item>Throttle Actuator Control System - Stuck Open</detection-item><dtccode>P2112</dtccode><detection-item>Throttle Actuator Control System - Stuck Closed</detection-item></dtc>
+<dtc id="RM000000PFW01NX"><dtccode>P2118</dtccode><detection-item>Throttle Actuator Control Motor Current Range / Performance</detection-item></dtc>
+<dtc id="RM000000PFX01LX"><dtccode>P2119</dtccode><detection-item>Throttle Actuator Control Throttle Body Range / Performance</detection-item></dtc>
+<dtc id="RM000000PFY01GX"><dtccode>P2120</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit</detection-item><dtccode>P2122</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit Low Input</detection-item><dtccode>P2123</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit High Input</detection-item><dtccode>P2125</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "E" Circuit</detection-item><dtccode>P2127</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "E" Circuit Low Input</detection-item><dtccode>P2128</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "E" Circuit High Input</detection-item><dtccode>P2138</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" / "E" Voltage Correlation</detection-item></dtc>
+<dtc id="RM000000PFZ01IX"><dtccode>P2121</dtccode><detection-item>Throttle / Pedal Position Sensor / Switch "D" Circuit Range / Performance</detection-item></dtc>
+<dtc id="RM000000WC401AX"><dtccode>P2195</dtccode><detection-item>Oxygen (A/F) Sensor Signal Stuck Lean (Bank 1 Sensor 1)</detection-item><dtccode>P2196</dtccode><detection-item>Oxygen (A/F) Sensor Signal Stuck Rich (Bank 1 Sensor 1)</detection-item><dtccode>P2197</dtccode><detection-item>Oxygen (A/F) Sensor Signal Stuck Lean (Bank 2 Sensor 1)</detection-item><dtccode>P2198</dtccode><detection-item>Oxygen (A/F) Sensor Signal Stuck Rich (Bank 2 Sensor 1)</detection-item></dtc>
+<dtc id="RM000000XOK019X"><dtccode>P2238</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit Low (Bank 1 Sensor 1)</detection-item><dtccode>P2239</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit High (Bank 1 Sensor 1)</detection-item><dtccode>P2241</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit Low (Bank 2 Sensor 1)</detection-item><dtccode>P2242</dtccode><detection-item>Oxygen (A/F) Sensor Pumping Current Circuit High (Bank 2 Sensor 1)</detection-item><dtccode>P2252</dtccode><detection-item>Oxygen (A/F) Sensor Reference Ground Circuit Low (Bank 1 Sensor 1)</detection-item><dtccode>P2253</dtccode><detection-item>Oxygen (A/F) Sensor Reference Ground Circuit High (Bank 1 Sensor 1)</detection-item><dtccode>P2255</dtccode><detection-item>Oxygen (A/F) Sensor Reference Ground Circuit Low (Bank 2 Sensor 1)</detection-item><dtccode>P2256</dtccode><detection-item>Oxygen (A/F) Sensor Reference Ground Circuit High (Bank 2 Sensor 1)</detection-item></dtc>
+<dtc id="RM000002CNZ001X"><dtccode>P2420</dtccode><detection-item>Evaporative Emission System Switching Valve Control Circuit High</detection-item></dtc>
+<dtc id="RM000000T6X00WX"><dtccode>P2610</dtccode><detection-item>ECM / PCM Internal Engine Off Timer Performance</detection-item></dtc>
+<dtc id="RM000000WC2015X"><dtccode>P2A00</dtccode><detection-item>A/F Sensor Circuit Slow Response (Bank 1 Sensor 1)</detection-item><dtccode>P2A03</dtccode><detection-item>A/F Sensor Circuit Slow Response (Bank 2 Sensor 1)</detection-item></dtc>
+<dtc id="RM000001O2V006X"><dtccode>U0101</dtccode><detection-item>Lost Communication with TCM</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="10024_S000P" variety="S000P" category="ST" volume="1">
+<name>2GR-FE STARTING</name>
+<seq no="16"/>
+<sub-servcat id="30" type="2">
+<name>ENGINE</name>
+</sub-servcat>
+
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001LUV001X"><dtccode>B2271</dtccode><detection-item>Ignition Hold Monitor Malfunction</detection-item></dtc>
+<dtc id="RM000001LUW001X"><dtccode>B2272</dtccode><detection-item>Ignition 1 Monitor Malfunction</detection-item></dtc>
+<dtc id="RM000001LUX001X"><dtccode>B2273</dtccode><detection-item>Ignition 2 Monitor Malfunction</detection-item></dtc>
+<dtc id="RM000001LUY001X"><dtccode>B2274</dtccode><detection-item>ACC Monitor Malfunction</detection-item></dtc>
+<dtc id="RM000001LUZ001X"><dtccode>B2275</dtccode><detection-item>STSW Monitor Malfunction</detection-item></dtc>
+<dtc id="RM000001LV8001X"><dtccode>B2276</dtccode><detection-item>ACCR Signal Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001LV0001X"><dtccode>B2277</dtccode><detection-item>Detecting Vehicle Submersion</detection-item></dtc>
+<dtc id="RM000000Y7Z00MX"><dtccode>B2278</dtccode><detection-item>Engine Switch Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001LV2001X"><dtccode>B2281</dtccode><detection-item>"P" Signal Malfunction</detection-item></dtc>
+<dtc id="RM000000XEV00MX"><dtccode>B2282</dtccode><detection-item>Vehicle Speed Signal Malfunction</detection-item></dtc>
+<dtc id="RM0000020S6004X"><dtccode>B2283</dtccode><detection-item>Vehicle Speed Sensor Malfunction</detection-item></dtc>
+<dtc id="RM000000XEW00IX"><dtccode>B2284</dtccode><detection-item>Brake Signal Malfunction</detection-item></dtc>
+<dtc id="RM000000YD300MX"><dtccode>B2285</dtccode><detection-item>Steering Lock Position Signal Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000000YD400MX"><dtccode>B2286</dtccode><detection-item>Runnable Signal Malfunction</detection-item></dtc>
+<dtc id="RM000000XEY00MX"><dtccode>B2287</dtccode><detection-item>LIN Communication Master Malfunction</detection-item></dtc>
+<dtc id="RM0000020S7004X"><dtccode>B2288</dtccode><detection-item>Steering Lock Signal Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000020S8004X"><dtccode>B2289</dtccode><detection-item>Key Collation Waiting Time Over</detection-item></dtc>
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+</section>
+
+
+</servcat>
+<servcat id="33">
+<name>TRANSMISSION</name>
+<shortname>TRANSMISSION</shortname><section id="1002B_S000S" variety="S000S" category="AX" volume="1">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<seq no="26"/>
+<sub-servcat id="33" type="2">
+<name>TRANSMISSION</name>
+</sub-servcat>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000W8401ZX"><dtccode>P0705</dtccode><detection-item>Transmission Range Sensor Circuit Malfunction (PRNDL Input)</detection-item></dtc>
+<dtc id="RM000000W8501ZX"><dtccode>P0710</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Circuit</detection-item><dtccode>P0712</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Circuit Low Input</detection-item><dtccode>P0713</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Circuit High Input</detection-item></dtc>
+<dtc id="RM000000W7Z01VX"><dtccode>P0711</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Performance</detection-item></dtc>
+<dtc id="RM0000015VR00PX"><dtccode>P0717</dtccode><detection-item>Turbine Speed Sensor Circuit No Signal</detection-item></dtc>
+<dtc id="RM0000015W000MX"><dtccode>P0724</dtccode><detection-item>Brake Switch "B" Circuit High</detection-item></dtc>
+<dtc id="RM0000015VW00KX"><dtccode>P0741</dtccode><detection-item>Torque Converter Clutch Solenoid Performance (Shift Solenoid Valve DSL)</detection-item></dtc>
+<dtc id="RM0000015VT00KX"><dtccode>P0746</dtccode><detection-item>Pressure Control Solenoid "A" Performance (Shift Solenoid Valve SL1)</detection-item></dtc>
+<dtc id="RM0000015W400KX"><dtccode>P0748</dtccode><detection-item>Pressure Control Solenoid "A" Electrical (Shift Solenoid Valve SL1)</detection-item></dtc>
+<dtc id="RM000000W8201HX"><dtccode>P0766</dtccode><detection-item>Shift Solenoid "D" Performance (Shift Solenoid Valve S4)</detection-item></dtc>
+<dtc id="RM0000015VX00HX"><dtccode>P0771</dtccode><detection-item>Shift Solenoid "E" Performance (Shift Solenoid Valve SR)</detection-item></dtc>
+<dtc id="RM0000015VU00KX"><dtccode>P0776</dtccode><detection-item>Pressure Control Solenoid "B" Performance (Shift Solenoid Valve SL2)</detection-item></dtc>
+<dtc id="RM0000015W500KX"><dtccode>P0778</dtccode><detection-item>Pressure Control Solenoid "B" Electrical (Shift Solenoid Valve SL2)</detection-item></dtc>
+<dtc id="RM0000015VS00KX"><dtccode>P0793</dtccode><detection-item>Intermediate Shaft Speed Sensor "A"</detection-item></dtc>
+<dtc id="RM0000015VV00HX"><dtccode>P0796</dtccode><detection-item>Pressure Control Solenoid "C" Performance (Shift Solenoid Valve SL3)</detection-item></dtc>
+<dtc id="RM0000015W800HX"><dtccode>P0798</dtccode><detection-item>Pressure Control Solenoid "C" Electrical (Shift Solenoid Valve SL3)</detection-item></dtc>
+<dtc id="RM0000015W200KX"><dtccode>P0982</dtccode><detection-item>Shift Solenoid "D" Control Circuit Low (Shift Solenoid Valve S4)</detection-item><dtccode>P0983</dtccode><detection-item>Shift Solenoid "D" Control Circuit High (Shift Solenoid Valve S4)</detection-item></dtc>
+<dtc id="RM0000015W600IX"><dtccode>P0985</dtccode><detection-item>Shift Solenoid "E" Control Circuit Low (Shift Solenoid Valve SR)</detection-item><dtccode>P0986</dtccode><detection-item>Shift Solenoid "E" Control Circuit High (Shift Solenoid Valve SR)</detection-item></dtc>
+<dtc id="RM0000028QE000X"><dtccode>P2714</dtccode><detection-item>Pressure Control Solenoid "D" Performance (Shift Solenoid Valve SLT)</detection-item></dtc>
+<dtc id="RM0000015W100RX"><dtccode>P2716</dtccode><detection-item>Pressure Control Solenoid "D" Electrical (Shift Solenoid Valve SLT)</detection-item></dtc>
+<dtc id="RM0000015W900KX"><dtccode>P2769</dtccode><detection-item>Torque Converter Clutch Solenoid Circuit Low (Shift Solenoid Valve DSL)</detection-item><dtccode>P2770</dtccode><detection-item>Torque Converter Clutch Solenoid Circuit High (Shift Solenoid Valve DSL)</detection-item></dtc>
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<section id="1002B_S000T" variety="S000T" category="AX" volume="1">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<seq no="26"/>
+<sub-servcat id="33" type="2">
+<name>TRANSMISSION</name>
+</sub-servcat>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000W8E00WX"><dtccode>P0500</dtccode><detection-item>Vehicle Speed Sensor "A"</detection-item></dtc>
+<dtc id="RM000000T8P01VX"><dtccode>P0560</dtccode><detection-item>System Voltage</detection-item></dtc>
+<dtc id="RM000000TA002NX"><dtccode>P0617</dtccode><detection-item>Starter Relay Circuit High</detection-item></dtc>
+<dtc id="RM000000W84039X"><dtccode>P0705</dtccode><detection-item>Transmission Range Sensor Circuit Malfunction (PRNDL Input)</detection-item></dtc>
+<dtc id="RM000000W8501SX"><dtccode>P0710</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Circuit</detection-item><dtccode>P0712</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Circuit Low Input</detection-item><dtccode>P0713</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Circuit High Input</detection-item></dtc>
+<dtc id="RM000000W7Z01PX"><dtccode>P0711</dtccode><detection-item>Transmission Fluid Temperature Sensor "A" Performance</detection-item></dtc>
+<dtc id="RM0000025K0000X"><dtccode>P0715</dtccode><detection-item>Input / Turbine Speed Sensor Circuit Malfunction</detection-item><dtccode>P0717</dtccode><detection-item>Input Speed Sensor Circuit No Signal</detection-item></dtc>
+<dtc id="RM000000W88018X"><dtccode>P0724</dtccode><detection-item>Brake Switch "B" Circuit High</detection-item></dtc>
+<dtc id="RM0000027R7000X"><dtccode>P0741</dtccode><detection-item>Torque Converter Clutch Solenoid Performance (Shift Solenoid Valve SL)</detection-item></dtc>
+<dtc id="RM0000015VT00LX"><dtccode>P0746</dtccode><detection-item>Pressure Control Solenoid "A" Performance (Shift Solenoid Valve SL1)</detection-item></dtc>
+<dtc id="RM000000W8F016X"><dtccode>P0748</dtccode><detection-item>Pressure Control Solenoid "A" Electrical (Shift Solenoid Valve SL1)</detection-item></dtc>
+<dtc id="RM0000015VU00LX"><dtccode>P0776</dtccode><detection-item>Pressure Control Solenoid "B" Performance (Shift Solenoid Valve SL2)</detection-item></dtc>
+<dtc id="RM000000W8G015X"><dtccode>P0778</dtccode><detection-item>Pressure Control Solenoid "B" Electrical (Shift Solenoid Valve SL2)</detection-item></dtc>
+<dtc id="RM0000026VM000X"><dtccode>P0791</dtccode><detection-item>Intermediate Shaft Speed Sensor "A" Circuit</detection-item><dtccode>P0793</dtccode><detection-item>Intermediate Shaft Speed Sensor "A"</detection-item></dtc>
+<dtc id="RM0000015VV00IX"><dtccode>P0796</dtccode><detection-item>Pressure Control Solenoid "C" Performance (Shift Solenoid Valve SL3)</detection-item></dtc>
+<dtc id="RM0000015W800IX"><dtccode>P0798</dtccode><detection-item>Pressure Control Solenoid "C" Electrical (Shift Solenoid Valve SL3)</detection-item></dtc>
+<dtc id="RM0000026VN000X"><dtccode>P0872</dtccode><detection-item>Transmission Fluid Pressure Switch No.1 Circuit Low</detection-item><dtccode>P0873</dtccode><detection-item>Transmission Fluid Pressure Switch No.1 Circuit High</detection-item></dtc>
+<dtc id="RM0000026VO000X"><dtccode>P0877</dtccode><detection-item>Transmission Fluid Pressure Switch No.2 Circuit Low</detection-item><dtccode>P0878</dtccode><detection-item>Transmission Fluid Pressure Switch No.2 Circuit High</detection-item></dtc>
+<dtc id="RM0000026VP000X"><dtccode>P0989</dtccode><detection-item>Transmission Fluid Pressure Switch No.3 Circuit Low</detection-item><dtccode>P0990</dtccode><detection-item>Transmission Fluid Pressure Switch No.3 Circuit High</detection-item></dtc>
+<dtc id="RM000000W83016X"><dtccode>P2714</dtccode><detection-item>Pressure Control Solenoid "D" Performance (Shift Solenoid Valve SLT)</detection-item></dtc>
+<dtc id="RM000000W8A017X"><dtccode>P2716</dtccode><detection-item>Pressure Control Solenoid "D" Electrical (Shift Solenoid Valve SLT)</detection-item></dtc>
+<dtc id="RM000000W8D013X"><dtccode>P2757</dtccode><detection-item>Torque Converter Clutch Pressure Control Solenoid Performance (Shift Solenoid Valve SLU)</detection-item></dtc>
+<dtc id="RM000000W89010X"><dtccode>P2759</dtccode><detection-item>Torque Converter Clutch Pressure Control Solenoid Control Circuit Electrical (Shift Solenoid Valve SLU)</detection-item></dtc>
+<dtc id="RM000001IYS002X"><dtccode>P2769</dtccode><detection-item>Short in Torque Converter Clutch Solenoid Circuit (Shift Solenoid Valve SL)</detection-item><dtccode>P2770</dtccode><detection-item>Open in Torque Converter Clutch Solenoid Circuit (Shift Solenoid Valve SL)</detection-item></dtc>
+<dtc id="RM0000026VQ000X"><dtccode>P2808</dtccode><detection-item>Pressure Control Solenoid "G" Performance or Stuck OFF (Shift Solenoid Valve SL4)</detection-item></dtc>
+<dtc id="RM0000026VR000X"><dtccode>P2810</dtccode><detection-item>Pressure Control Solenoid "G" Electrical (Shift Solenoid Valve SL4)</detection-item></dtc>
+<dtc id="RM000001RRQ004X"><dtccode>U0100</dtccode><detection-item>Lost Communication with ECM/PCM "A"</detection-item></dtc>
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+</servcat>
+
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<shortname>SUSPENSION &amp; AXLE</shortname>
+
+<section id="1000J_S000X" variety="S000X" category="TW" volume="1">
+<name>TIRE AND WHEEL</name>
+<seq no="43"/>
+<sub-servcat id="35" type="2">
+<name>SUSPENSION &amp; AXLE</name>
+</sub-servcat>
+
+
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000002DZD000X"><dtccode>C2111/11</dtccode><detection-item>Transmitter ID1 Operation Stop</detection-item><dtccode>C2112/12</dtccode><detection-item>Transmitter ID2 Operation Stop</detection-item><dtccode>C2113/13</dtccode><detection-item>Transmitter ID3 Operation Stop</detection-item><dtccode>C2114/14</dtccode><detection-item>Transmitter ID4 Operation Stop</detection-item><dtccode>C2115/15</dtccode><detection-item>Transmitter ID5 Operation Stop</detection-item></dtc>
+<dtc id="RM000000ZUQ008X"><dtccode>C2121/21</dtccode><detection-item>No Signal from Transmitter ID1 in Main Mode</detection-item><dtccode>C2122/22</dtccode><detection-item>No Signal from Transmitter ID2 in Main Mode</detection-item><dtccode>C2123/23</dtccode><detection-item>No Signal from Transmitter ID3 in Main Mode</detection-item><dtccode>C2124/24</dtccode><detection-item>No Signal from Transmitter ID4 in Main Mode</detection-item><dtccode>C2125/25</dtccode><detection-item>No Signal from Transmitter ID5 in Main Mode</detection-item><dtccode>C2181/81</dtccode><detection-item>Transmitter ID1 not Received (Test Mode DTC)</detection-item><dtccode>C2182/82</dtccode><detection-item>Transmitter ID2 not Received (Test Mode DTC)</detection-item><dtccode>C2183/83</dtccode><detection-item>Transmitter ID3 not Received (Test Mode DTC)</detection-item><dtccode>C2184/84</dtccode><detection-item>Transmitter ID4 not Received (Test Mode DTC)</detection-item><dtccode>C2185/85</dtccode><detection-item>Transmitter ID5 not Received (Test Mode DTC)</detection-item></dtc>
+<dtc id="RM000000XN4008X"><dtccode>C2141/41</dtccode><detection-item>Transmitter ID1 Error</detection-item><dtccode>C2142/42</dtccode><detection-item>Transmitter ID2 Error</detection-item><dtccode>C2143/43</dtccode><detection-item>Transmitter ID3 Error</detection-item><dtccode>C2144/44</dtccode><detection-item>Transmitter ID4 Error</detection-item><dtccode>C2145/45</dtccode><detection-item>Transmitter ID5 Error</detection-item></dtc>
+<dtc id="RM000000XN7008X"><dtccode>C2165/65</dtccode><detection-item>Abnormal Temperature Inside ID1 Tire</detection-item><dtccode>C2166/66</dtccode><detection-item>Abnormal Temperature Inside ID2 Tire</detection-item><dtccode>C2167/67</dtccode><detection-item>Abnormal Temperature Inside ID3 Tire</detection-item><dtccode>C2168/68</dtccode><detection-item>Abnormal Temperature Inside ID4 Tire</detection-item><dtccode>C2169/69</dtccode><detection-item>Abnormal Temperature Inside ID5 Tire</detection-item></dtc>
+<dtc id="RM000002DZY000X"><dtccode>C2171/71</dtccode><detection-item>Transmitter ID not Registered</detection-item></dtc>
+<dtc id="RM0000026PN002X"><dtccode>C2176/76</dtccode><detection-item>Receiver Error</detection-item></dtc>
+<dtc id="RM000000Z81008X"><dtccode>C2177/77</dtccode><detection-item>Initialization not Completed</detection-item></dtc>
+<dtc id="RM000000XNA009X"><dtccode>C2191/91</dtccode><detection-item>Vehicle Speed Signal Error (Test Mode DTC)</detection-item></dtc>
+
+
+
+
+</ttl>
+
+
+
+
+</section>
+</servcat>
+<servcat id="36">
+<name>BRAKE</name>
+<shortname>BRAKE</shortname><section id="1002J_S0010" variety="S0010" category="BC" volume="1">
+<name>BRAKE CONTROL</name>
+<seq no="44"/>
+<sub-servcat id="36" type="2">
+<name>BRAKE</name>
+</sub-servcat>
+
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001JBG002X"><dtccode>C0200/31</dtccode><detection-item>Right Front Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C0205/32</dtccode><detection-item>Left Front Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C1271/71</dtccode><detection-item>Low Output Signal of Front Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1272/72</dtccode><detection-item>Low Output Signal of Front Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1275/75</dtccode><detection-item>Abnormal Change in Output Signal of Front Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1276/76</dtccode><detection-item>Abnormal Change in Output Signal of Front Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1330/35</dtccode><detection-item>Right Front Speed Sensor Circuit</detection-item><dtccode>C1331/36</dtccode><detection-item>Left Front Speed Sensor Circuit</detection-item></dtc>
+<dtc id="RM000001JDB002X"><dtccode>C0210/33</dtccode><detection-item>Right Rear Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C0215/34</dtccode><detection-item>Left Rear Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C1273/73</dtccode><detection-item>Low Output Signal of Rear Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1274/74</dtccode><detection-item>Low Output Signal of Rear Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1277/77</dtccode><detection-item>Abnormal Change in Output Signal of Rear Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1278/78</dtccode><detection-item>Abnormal Change in Output Signal of Rear Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1332/38</dtccode><detection-item>Right Rear Speed Sensor Circuit</detection-item><dtccode>C1333/39</dtccode><detection-item>Left Rear Speed Sensor Circuit</detection-item></dtc>
+<dtc id="RM000001JD1002X"><dtccode>C0226/21</dtccode><detection-item>SFR Solenoid Circuit</detection-item><dtccode>C0236/22</dtccode><detection-item>SFL Solenoid Circuit</detection-item><dtccode>C0246/23</dtccode><detection-item>SRR Solenoid Circuit</detection-item><dtccode>C0256/24</dtccode><detection-item>SRL Solenoid Circuit</detection-item></dtc>
+<dtc id="RM000001JD6002X"><dtccode>C0273/13</dtccode><detection-item>Open or Short Circuit in ABS Motor Relay Circuit</detection-item></dtc>
+<dtc id="RM000001JD7002X"><dtccode>C0278/11</dtccode><detection-item>Open or Short Circuit in ABS Solenoid Relay Circuit</detection-item></dtc>
+<dtc id="RM000001JD5002X"><dtccode>C1237/37</dtccode><detection-item>Speed Sensor Rotor Faulty</detection-item></dtc>
+<dtc id="RM000001JD2002X"><dtccode>C1241/41</dtccode><detection-item>Low Battery Positive Voltage or Abnormally High Battery Positive Voltage</detection-item></dtc>
+<dtc id="RM0000023CJ000X"><dtccode>C1249/49</dtccode><detection-item>Open in Stop Light Switch Circuit</detection-item></dtc>
+<dtc id="RM000001JHK002X"><dtccode>C1300/62</dtccode><detection-item>Skid Control ECU Malfunction</detection-item></dtc>
+<dtc id="RM0000024PB000X"><dtccode>U0073/94</dtccode><detection-item>Control Module Communication Bus OFF</detection-item></dtc>
+
+
+
+
+
+
+</ttl>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000002CNM000X"><dtccode>43</dtccode><detection-item>ABS Control System Malfunction</detection-item></dtc>
+<dtc id="RM000000XI9009X"><dtccode>C0200/31</dtccode><detection-item>Front Speed Sensor RH Circuit</detection-item><dtccode>C0205/32</dtccode><detection-item>Front Speed Sensor LH Circuit</detection-item><dtccode>C1271/71</dtccode><detection-item>Low Output Signal of Front Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1272/72</dtccode><detection-item>Low Output Signal of Front Speed Sensor LH (Test Mode DTC)</detection-item></dtc>
+<dtc id="RM000000XIA009X"><dtccode>C0210/33</dtccode><detection-item>Rear Speed Sensor RH Circuit</detection-item><dtccode>C0215/34</dtccode><detection-item>Rear Speed Sensor LH Circuit</detection-item><dtccode>C1273/73</dtccode><detection-item>Low Output Signal of Rear Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1274/74</dtccode><detection-item>Low Output Signal of Rear Speed Sensor LH (Test Mode DTC)</detection-item></dtc>
+<dtc id="RM000000XI8009X"><dtccode>C0226/21</dtccode><detection-item>SFR Solenoid Circuit</detection-item><dtccode>C0236/22</dtccode><detection-item>SFL Solenoid Circuit</detection-item><dtccode>C0246/23</dtccode><detection-item>SRR Solenoid Circuit</detection-item><dtccode>C0256/24</dtccode><detection-item>SRL Solenoid Circuit</detection-item><dtccode>C1225/25</dtccode><detection-item>SM Solenoid Circuit</detection-item></dtc>
+<dtc id="RM000000XIB009X"><dtccode>C0273/13</dtccode><detection-item>Open in ABS Motor Relay Circuit</detection-item><dtccode>C0274/14</dtccode><detection-item>Short to B+ in ABS Motor Relay Circuit</detection-item><dtccode>C1361/91</dtccode><detection-item>Short Circuit in ABS Motor Fail Safe Relay Circuit</detection-item></dtc>
+<dtc id="RM000000XI7009X"><dtccode>C0278/11</dtccode><detection-item>Open in ABS Solenoid Relay Circuit</detection-item><dtccode>C0279/12</dtccode><detection-item>Short to B+ in ABS Solenoid Relay Circuit</detection-item></dtc>
+<dtc id="RM000000XII009X"><dtccode>C1201/51</dtccode><detection-item>Engine Control System Malfunction</detection-item></dtc>
+<dtc id="RM000000XIJ007X"><dtccode>C1203/53</dtccode><detection-item>ECM Communication Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000000XIK009X"><dtccode>C1210/36</dtccode><detection-item>Zero Point Calibration of Yaw Rate Sensor Undone</detection-item><dtccode>C1336/39</dtccode><detection-item>Zero Point Calibration of Acceleration Sensor Undone</detection-item></dtc>
+<dtc id="RM000000XIM00AX"><dtccode>C1231/31</dtccode><detection-item>Steering Angle Sensor Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001RFV003X"><dtccode>C1232/32</dtccode><detection-item>Stuck in Acceleration Sensor</detection-item><dtccode>C0371/71</dtccode><detection-item>Yaw Rate Sensor (Test Mode DTC)</detection-item><dtccode>C1234/34</dtccode><detection-item>Yaw Rate Sensor Malfunction</detection-item><dtccode>C1243/43</dtccode><detection-item>Acceleration Sensor Stuck Malfunction</detection-item><dtccode>C1244/44</dtccode><detection-item>Open or Short in Acceleration Sensor Circuit</detection-item><dtccode>C1245/45</dtccode><detection-item>Acceleration Sensor Output Malfunction</detection-item><dtccode>C1279/79</dtccode><detection-item>Acceleration Sensor Output Voltage Malfunction (Test Mode DTC)</detection-item><dtccode>C1381/97</dtccode><detection-item>Yaw Rate and / or Acceleration Sensor Power Supply Voltage Malfunction</detection-item></dtc>
+<dtc id="RM000000XIC009X"><dtccode>C1235/35</dtccode><detection-item>Foreign Object is Attached on Tip of Front Speed Sensor RH</detection-item><dtccode>C1236/36</dtccode><detection-item>Foreign Object is Attached on Tip of Front Speed Sensor LH</detection-item><dtccode>C1238/38</dtccode><detection-item>Foreign Object is Attached on Tip of Rear Speed Sensor RH</detection-item><dtccode>C1239/39</dtccode><detection-item>Foreign Object is Attached on Tip of Rear Speed Sensor LH</detection-item><dtccode>C1275/75</dtccode><detection-item>Abnormal Change in Output Signal of Front Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1276/76</dtccode><detection-item>Abnormal Change in Output Signal of Front Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1277/77</dtccode><detection-item>Abnormal Change in Output Signal of Rear Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1278/78</dtccode><detection-item>Abnormal Change in Output Signal of Rear Speed Sensor LH (Test Mode DTC)</detection-item></dtc>
+<dtc id="RM000000XW6009X"><dtccode>C1241/41</dtccode><detection-item>Low Battery Positive Voltage</detection-item></dtc>
+<dtc id="RM000000XIG00AX"><dtccode>C1246/46</dtccode><detection-item>Master Cylinder Pressure Sensor Malfunction</detection-item><dtccode>C1281/81</dtccode><detection-item>Master Cylinder Pressure Sensor Output Malfunction (Test Mode DTC)</detection-item></dtc>
+<dtc id="RM000000XIE009X"><dtccode>C1249/49</dtccode><detection-item>Open in Stop Light Switch Circuit</detection-item></dtc>
+<dtc id="RM000000XIF009X"><dtccode>C1251/51</dtccode><detection-item>Open in Pump Motor Circuit</detection-item></dtc>
+<dtc id="RM000000ZRR00LX"><dtccode>C1290/66</dtccode><detection-item>Steering Angle Sensor Zero Point Malfunction</detection-item></dtc>
+<dtc id="RM000000YUO00BX"><dtccode>U0073/94</dtccode><detection-item>Control Module Communication Bus OFF</detection-item><dtccode>U0100/65</dtccode><detection-item>Lost Communication with ECM / PCM</detection-item><dtccode>U0123/62</dtccode><detection-item>Lost Communication with Yaw Rate Sensor Module</detection-item><dtccode>U0124/95</dtccode><detection-item>Lost Communication with Lateral Acceleration Sensor Module</detection-item><dtccode>U0126/63</dtccode><detection-item>Lost Communication with Steering Angle Sensor Module</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+
+
+</ttl>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM0000025HK000X"><dtccode>43</dtccode><detection-item>ABS Control System Malfunction</detection-item></dtc>
+<dtc id="RM000001NKF001X"><dtccode>C0200/31</dtccode><detection-item>Right Front Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C0205/32</dtccode><detection-item>Left Front Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C1271/71</dtccode><detection-item>Low Output Signal of Front Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1272/72</dtccode><detection-item>Low Output Signal of Front Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1275/75</dtccode><detection-item>Abnormal Change in Output Signal of Front Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1276/76</dtccode><detection-item>Abnormal Change in Output Signal of Front Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1330/35</dtccode><detection-item>Right Front Speed Sensor Circuit</detection-item><dtccode>C1331/36</dtccode><detection-item>Left Front Speed Sensor Circuit</detection-item></dtc>
+<dtc id="RM000001NKG001X"><dtccode>C0210/33</dtccode><detection-item>Right Rear Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C0215/34</dtccode><detection-item>Left Rear Wheel Speed Sensor Signal Malfunction</detection-item><dtccode>C1273/73</dtccode><detection-item>Low Output Signal of Rear Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1274/74</dtccode><detection-item>Low Output Signal of Rear Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1277/77</dtccode><detection-item>Abnormal Change in Output Signal of Rear Speed Sensor RH (Test Mode DTC)</detection-item><dtccode>C1278/78</dtccode><detection-item>Abnormal Change in Output Signal of Rear Speed Sensor LH (Test Mode DTC)</detection-item><dtccode>C1332/38</dtccode><detection-item>Right Rear Speed Sensor Circuit</detection-item><dtccode>C1333/39</dtccode><detection-item>Left Rear Speed Sensor Circuit</detection-item></dtc>
+<dtc id="RM000001NJK001X"><dtccode>C0226/21</dtccode><detection-item>SFR Solenoid Circuit</detection-item><dtccode>C0236/22</dtccode><detection-item>SFL Solenoid Circuit</detection-item><dtccode>C0246/23</dtccode><detection-item>SRR Solenoid Circuit</detection-item><dtccode>C0256/24</dtccode><detection-item>SRL Solenoid Circuit</detection-item></dtc>
+<dtc id="RM000001NJX001X"><dtccode>C0273/13</dtccode><detection-item>Open or Short Circuit in ABS Motor Relay Circuit</detection-item></dtc>
+<dtc id="RM000001NJY001X"><dtccode>C0278/11</dtccode><detection-item>Open or Short Circuit in ABS Solenoid Relay Circuit</detection-item></dtc>
+<dtc id="RM0000025HJ000X"><dtccode>C0365/28</dtccode><detection-item>Malfunction in Deceleration Sensor</detection-item><dtccode>C1234/34</dtccode><detection-item>Yaw Rate Sensor Malfunction</detection-item></dtc>
+<dtc id="RM0000025HI000X"><dtccode>C1201/51</dtccode><detection-item>Engine Control System Malfunction</detection-item></dtc>
+<dtc id="RM000001PTO001X"><dtccode>C1225/25</dtccode><detection-item>SMC Solenoid Circuit</detection-item><dtccode>C1226/26</dtccode><detection-item>SMC Solenoid Circuit</detection-item><dtccode>C1227/27</dtccode><detection-item>SRC Solenoid Circuit</detection-item><dtccode>C1228/28</dtccode><detection-item>SRC Solenoid Circuit</detection-item></dtc>
+<dtc id="RM000000XIM009X"><dtccode>C1231/31</dtccode><detection-item>Steering Angle Sensor Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001NJT001X"><dtccode>C1237/37</dtccode><detection-item>Tires of Different Size</detection-item></dtc>
+<dtc id="RM000001NJL001X"><dtccode>C1241/41</dtccode><detection-item>Low Battery Positive Voltage or Abnormally High Battery Positive Voltage</detection-item></dtc>
+<dtc id="RM000000XIG009X"><dtccode>C1246/46</dtccode><detection-item>Master Cylinder Pressure Sensor Malfunction</detection-item></dtc>
+<dtc id="RM0000025HM000X"><dtccode>C1249/49</dtccode><detection-item>Open in Stop Light Switch Circuit</detection-item></dtc>
+<dtc id="RM0000027RM000X"><dtccode>C1288/88</dtccode><detection-item>ECU Version Miss Match</detection-item></dtc>
+<dtc id="RM000001NSJ001X"><dtccode>C1300/62</dtccode><detection-item>Skid Control ECU Malfunction</detection-item></dtc>
+<dtc id="RM000000YUO00AX"><dtccode>U0073/94</dtccode><detection-item>Control Module Communication Bus OFF</detection-item><dtccode>U0100/65</dtccode><detection-item>Lost Communication with ECM / PCM</detection-item><dtccode>U0123/62</dtccode><detection-item>Lost Communication with Yaw Rate Sensor Module</detection-item><dtccode>U0126/63</dtccode><detection-item>Lost Communication with Steering Angle Sensor Module</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+</section>
+
+
+</servcat>
+<servcat id="37">
+<name>STEERING</name>
+<shortname>STEERING</shortname><section id="1000U_S0013" variety="S0013" category="SR" volume="1">
+<name>STEERING COLUMN</name>
+<seq no="48"/>
+<sub-servcat id="37" type="2">
+<name>STEERING</name>
+</sub-servcat>
+
+
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000YQZ008X"><dtccode>B2781</dtccode><detection-item>Open / Short in Steering Lock ECU</detection-item></dtc>
+<dtc id="RM000000YR0008X"><dtccode>B2782</dtccode><detection-item>Power Source Control ECU Malfunction</detection-item></dtc>
+<dtc id="RM000000YR1008X"><dtccode>B2788</dtccode><detection-item>IG2 Signal Malfunction</detection-item></dtc>
+
+
+
+</ttl>
+
+</section>
+
+</servcat>
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<shortname>HEATER &amp; AIR CONDITIONING SYSTEM</shortname><section id="1002K_S0015" variety="S0015" category="AC" volume="1">
+<name>AIR CONDITIONING</name>
+<seq no="52"/>
+<sub-servcat id="38" type="2">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+</sub-servcat>
+
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001M2X004X"><dtccode>B1411/11</dtccode><detection-item>Room Temperature Sensor Circuit</detection-item></dtc>
+<dtc id="RM000000STK007X"><dtccode>B1412/12</dtccode><detection-item>Ambient Temperature Sensor Circuit</detection-item></dtc>
+<dtc id="RM000000STL007X"><dtccode>B1413/13</dtccode><detection-item>Evaporator Temperature Sensor Circuit</detection-item></dtc>
+<dtc id="RM000000STN005X"><dtccode>B1421/21</dtccode><detection-item>Solar Sensor Circuit (Passenger Side)</detection-item></dtc>
+<dtc id="RM0000026BV000X"><dtccode>B1422/22</dtccode><detection-item>Compressor Lock Sensor Circuit</detection-item></dtc>
+<dtc id="RM000000STP005X"><dtccode>B1423/23</dtccode><detection-item>Pressure Sensor Circuit</detection-item></dtc>
+<dtc id="RM000000STQ005X"><dtccode>B1424/24</dtccode><detection-item>Solar Sensor Circuit (Driver Side)</detection-item></dtc>
+<dtc id="RM000000STR005X"><dtccode>B1441/41</dtccode><detection-item>Air Mix Damper Control Servo Motor Circuit (Passenger Side)</detection-item></dtc>
+<dtc id="RM000000STS005X"><dtccode>B1442/42</dtccode><detection-item>Air Inlet Damper Control Servo Motor Circuit</detection-item></dtc>
+<dtc id="RM000000STT005X"><dtccode>B1443/43</dtccode><detection-item>Air Outlet Damper Control Servo Motor Circuit</detection-item></dtc>
+<dtc id="RM000000STU005X"><dtccode>B1446/46</dtccode><detection-item>Air Mix Damper Control Servo Motor Circuit (Driver Side)</detection-item></dtc>
+<dtc id="RM000000VAV005X"><dtccode>B1451/51</dtccode><detection-item>Compressor Solenoid Circuit</detection-item></dtc>
+<dtc id="RM000000VAW003X"><dtccode>B1497/97</dtccode><detection-item>BUS IC Communication Malfunction</detection-item></dtc>
+<dtc id="RM0000017SQ006X"><dtccode>B1499/99</dtccode><detection-item>Multiplex Communication Circuit</detection-item></dtc>
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+</servcat>
+<servcat id="39">
+<name>RESTRAINTS</name>
+<shortname>RESTRAINTS</shortname><section id="1000Y_S0016" variety="S0016" category="RS" volume="1">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<seq no="56"/>
+<sub-servcat id="39" type="2">
+<name>RESTRAINTS</name>
+</sub-servcat>
+
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000YTI00LX"><dtccode>B1000/31</dtccode><detection-item>Center Airbag Sensor Assembly Malfunction</detection-item></dtc>
+<dtc id="RM0000027RR000X"><dtccode>B1603/83</dtccode><detection-item>Front Satellite Sensor Bus RH Initialization Incomplete</detection-item><dtccode>B1612/83</dtccode><detection-item>Lost Communication with Front Airbag Sensor RH</detection-item><dtccode>B1613/83</dtccode><detection-item>Front Airbag Sensor RH Initialization Incomplete</detection-item></dtc>
+<dtc id="RM0000027RS000X"><dtccode>B1608/84</dtccode><detection-item>Front Satellite Sensor Bus LH Initialization Incomplete</detection-item><dtccode>B1617/84</dtccode><detection-item>Lost Communication with Front Airbag Sensor LH</detection-item><dtccode>B1618/84</dtccode><detection-item>Front Airbag Sensor LH Initialization Incomplete</detection-item></dtc>
+<dtc id="RM000002C9O000X"><dtccode>B1610/13</dtccode><detection-item>Front Airbag Sensor RH Malfunction</detection-item></dtc>
+<dtc id="RM000002C9H000X"><dtccode>B1615/14</dtccode><detection-item>Front Airbag Sensor LH Malfunction</detection-item></dtc>
+<dtc id="RM000002C9I000X"><dtccode>B1620/21</dtccode><detection-item>Driver Side - Side Airbag Sensor Malfunction</detection-item></dtc>
+<dtc id="RM0000027E2000X"><dtccode>B1622/81</dtccode><detection-item>Lost Communication with Driver Side - Side Airbag Sensor Assembly</detection-item><dtccode>B1623/81</dtccode><detection-item>Driver Side - Side Airbag Sensor Assembly Initialization Incomplete</detection-item><dtccode>B1632/81</dtccode><detection-item>Lost Communication with Driver Side Rear Airbag Sensor</detection-item><dtccode>B1633/81</dtccode><detection-item>Driver Side Rear Airbag Sensor Initialization Incomplete</detection-item><dtccode>B1642/81</dtccode><detection-item>Lost Communication with Driver Side Satellite Sensor Bus</detection-item><dtccode>B1643/81</dtccode><detection-item>Driver Side Satellite Sensor Bus Initialization Incomplete</detection-item></dtc>
+<dtc id="RM000002C9K000X"><dtccode>B1625/22</dtccode><detection-item>Front Passenger Side - Side Airbag Sensor Malfunction</detection-item></dtc>
+<dtc id="RM0000027E4000X"><dtccode>B1627/82</dtccode><detection-item>Lost Communication with Front Passenger Side - Side Airbag Sensor Assembly</detection-item><dtccode>B1628/82</dtccode><detection-item>Front Passenger Side - Side Airbag Sensor Assembly Initialization Incomplete</detection-item><dtccode>B1637/82</dtccode><detection-item>Lost Communication with Passenger Side Rear Airbag Sensor</detection-item><dtccode>B1638/82</dtccode><detection-item>Passenger Side Rear Airbag Sensor Initialization Incomplete</detection-item><dtccode>B1647/82</dtccode><detection-item>Lost Communication with Front Passenger Side Satellite Sensor Bus</detection-item><dtccode>B1648/82</dtccode><detection-item>Front Passenger Side Satellite Sensor Bus Initialization Incomplete</detection-item></dtc>
+<dtc id="RM000002C9J000X"><dtccode>B1630/23</dtccode><detection-item>Driver Side Rear Airbag Sensor Malfunction</detection-item></dtc>
+<dtc id="RM000002C9L000X"><dtccode>B1635/24</dtccode><detection-item>Front Passenger Side Rear Airbag Sensor Malfunction</detection-item></dtc>
+<dtc id="RM0000016WN004X"><dtccode>B1650/32</dtccode><detection-item>Occupant Classification System Malfunction</detection-item></dtc>
+<dtc id="RM000000YTS00OX"><dtccode>B1653/35</dtccode><detection-item>Seat Position Airbag Sensor Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001NZY008X"><dtccode>B1655/37</dtccode><detection-item>Driver Side Seat Belt Buckle Switch Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001W28002X"><dtccode>B1660/43</dtccode><detection-item>Passenger Airbag ON / OFF Indicator Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000000XFI00PX"><dtccode>B1800/51</dtccode><detection-item>Short in Driver Side Squib Circuit</detection-item><dtccode>B1801/51</dtccode><detection-item>Open in Driver Side Squib Circuit</detection-item><dtccode>B1802/51</dtccode><detection-item>Short to GND in Driver Side Squib Circuit</detection-item><dtccode>B1803/51</dtccode><detection-item>Short to B+ in Driver Side Squib Circuit</detection-item></dtc>
+<dtc id="RM000000XFJ00QX"><dtccode>B1805/52</dtccode><detection-item>Short in Front Passenger Side Squib Circuit</detection-item><dtccode>B1806/52</dtccode><detection-item>Open in Front Passenger Side Squib Circuit</detection-item><dtccode>B1807/52</dtccode><detection-item>Short to GND in Front Passenger Side Squib Circuit</detection-item><dtccode>B1808/52</dtccode><detection-item>Short to B+ in Front Passenger Side Squib Circuit</detection-item></dtc>
+<dtc id="RM000000YDY00PX"><dtccode>B1810/53</dtccode><detection-item>Short in Driver Side Squib 2nd Step Circuit</detection-item><dtccode>B1811/53</dtccode><detection-item>Open in Driver Side Squib 2nd Step Circuit</detection-item><dtccode>B1812/53</dtccode><detection-item>Short to GND in Driver Side Squib 2nd Step Circuit</detection-item><dtccode>B1813/53</dtccode><detection-item>Short to B+ in Driver Side Squib 2nd Step Circuit</detection-item></dtc>
+<dtc id="RM000000YDZ00QX"><dtccode>B1815/54</dtccode><detection-item>Short in Front Passenger Side Squib 2nd Step Circuit</detection-item><dtccode>B1816/54</dtccode><detection-item>Open in Front Passenger Side Squib 2nd Step Circuit</detection-item><dtccode>B1817/54</dtccode><detection-item>Short to GND in Front Passenger Side Squib 2nd Step Circuit</detection-item><dtccode>B1818/54</dtccode><detection-item>Short to B+ in Front Passenger Side Squib 2nd Step Circuit</detection-item></dtc>
+<dtc id="RM000001NZQ009X"><dtccode>B1820/55</dtccode><detection-item>Short in Front Driver Side - Side Squib Circuit</detection-item><dtccode>B1821/55</dtccode><detection-item>Open in Front Driver Side - Side Squib Circuit</detection-item><dtccode>B1822/55</dtccode><detection-item>Short to GND in Front Driver Side - Side Squib Circuit</detection-item><dtccode>B1823/55</dtccode><detection-item>Short to B+ in Front Driver Side - Side Squib Circuit</detection-item></dtc>
+<dtc id="RM000001O02009X"><dtccode>B1825/56</dtccode><detection-item>Short in Front Passenger Side - Side Squib Circuit</detection-item><dtccode>B1826/56</dtccode><detection-item>Open in Front Passenger Side - Side Squib Circuit</detection-item><dtccode>B1827/56</dtccode><detection-item>Short to GND in Front Passenger Side - Side Squib Circuit</detection-item><dtccode>B1828/56</dtccode><detection-item>Short to B+ in Front Passenger Side - Side Squib Circuit</detection-item></dtc>
+<dtc id="RM000001O03009X"><dtccode>B1830/57</dtccode><detection-item>Short in Driver Side Curtain Shield Squib Circuit</detection-item><dtccode>B1831/57</dtccode><detection-item>Open in Driver Side Curtain Shield Squib Circuit</detection-item><dtccode>B1832/57</dtccode><detection-item>Short to GND in Driver Side Curtain Shield Squib Circuit</detection-item><dtccode>B1833/57</dtccode><detection-item>Short to B+ in Driver Side Curtain Shield Squib Circuit</detection-item></dtc>
+<dtc id="RM000001O04009X"><dtccode>B1835/58</dtccode><detection-item>Short in Front Passenger Side Curtain Shield Squib Circuit</detection-item><dtccode>B1836/58</dtccode><detection-item>Open in Front Passenger Side Curtain Shield Squib Circuit</detection-item><dtccode>B1837/58</dtccode><detection-item>Short to GND in Front Passenger Side Curtain Shield Squib Circuit</detection-item><dtccode>B1838/58</dtccode><detection-item>Short to B+ in Front Passenger Side Curtain Shield Squib Circuit</detection-item></dtc>
+<dtc id="RM000000YTT00IX"><dtccode>B1860/64</dtccode><detection-item>Short in Driver Side Knee Airbag Squib Circuit</detection-item><dtccode>B1861/64</dtccode><detection-item>Open in Driver Side Knee Airbag Squib Circuit</detection-item><dtccode>B1862/64</dtccode><detection-item>Short to GND in Driver Side Knee Airbag Squib Circuit</detection-item><dtccode>B1863/64</dtccode><detection-item>Short to B+ in Driver Side Knee Airbag Squib Circuit</detection-item></dtc>
+<dtc id="RM000001O05009X"><dtccode>B1900/73</dtccode><detection-item>Short in Front Driver Side Pretensioner Squib Circuit</detection-item><dtccode>B1901/73</dtccode><detection-item>Open in Front Driver Side Pretensioner Squib Circuit</detection-item><dtccode>B1902/73</dtccode><detection-item>Short to GND in Front Driver Side Pretensioner Squib Circuit</detection-item><dtccode>B1903/73</dtccode><detection-item>Short to B+ in Front Driver Side Pretensioner Squib Circuit</detection-item></dtc>
+<dtc id="RM000001O06009X"><dtccode>B1905/74</dtccode><detection-item>Short in Front Passenger Side Pretensioner Squib Circuit</detection-item><dtccode>B1906/74</dtccode><detection-item>Open in Front Passenger Side Pretensioner Squib Circuit</detection-item><dtccode>B1907/74</dtccode><detection-item>Short to GND in Front Passenger Side Pretensioner Squib Circuit</detection-item><dtccode>B1908/74</dtccode><detection-item>Short to B+ in Front Passenger Side Front Pretensioner Squib Circuit</detection-item></dtc>
+
+
+
+</ttl>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM0000010V600QX"><dtccode>B1771</dtccode><detection-item>Passenger Side Buckle Switch Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000010V700NX"><dtccode>B1780</dtccode><detection-item>Front Occupant Classification Sensor LH Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000010V800NX"><dtccode>B1781</dtccode><detection-item>Front Occupant Classification Sensor RH Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000010V900NX"><dtccode>B1782</dtccode><detection-item>Rear Occupant Classification Sensor LH Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000010VA00NX"><dtccode>B1783</dtccode><detection-item>Rear Occupant Classification Sensor RH Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000010VB00NX"><dtccode>B1785</dtccode><detection-item>Front Occupant Classification Sensor LH Collision Detection</detection-item></dtc>
+<dtc id="RM0000010VC00NX"><dtccode>B1786</dtccode><detection-item>Front Occupant Classification Sensor RH Collision Detection</detection-item></dtc>
+<dtc id="RM0000010VD00NX"><dtccode>B1787</dtccode><detection-item>Rear Occupant Classification Sensor LH Collision Detection</detection-item></dtc>
+<dtc id="RM0000010VE00NX"><dtccode>B1788</dtccode><detection-item>Rear Occupant Classification Sensor RH Collision Detection</detection-item></dtc>
+<dtc id="RM0000010VF00NX"><dtccode>B1790</dtccode><detection-item>Center Airbag Sensor Assembly Communication Circuit Malfunction</detection-item></dtc>
+<dtc id="RM0000010VG00NX"><dtccode>B1793</dtccode><detection-item>Occupant Classification Sensor Power Supply Circuit Malfunction</detection-item></dtc>
+<dtc id="RM000001O5S001X"><dtccode>B1794</dtccode><detection-item>Open in Occupant Classification ECU Battery Positive Line</detection-item></dtc>
+<dtc id="RM0000010VH00PX"><dtccode>B1795</dtccode><detection-item>Occupant Classification ECU Malfunction</detection-item></dtc>
+<dtc id="RM0000010VO00NX"><dtccode>B1796</dtccode><detection-item>Sleep Operation Failure of Occupant Classification ECU</detection-item></dtc>
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+</servcat>
+<servcat id="40">
+<name>SECURITIES</name>
+<shortname>SECURITIES</shortname>
+<section id="1002O_S0019" variety="S0019" category="EI" volume="1">
+<name>ENGINE IMMOBILISER</name>
+<seq no="59"/>
+<sub-servcat id="40" type="2">
+<name>SECURITIES</name>
+</sub-servcat>
+
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000QYJ00DX"><dtccode>B2784</dtccode><detection-item>Antenna Coil Open / Short</detection-item></dtc>
+<dtc id="RM00000100200BX"><dtccode>B2785</dtccode><detection-item>Communication Malfunction between ECUs Connected by LIN</detection-item></dtc>
+<dtc id="RM00000100300BX"><dtccode>B2786</dtccode><detection-item>No Response from Steering Lock ECU</detection-item></dtc>
+<dtc id="RM000000Y7V00AX"><dtccode>B2789</dtccode><detection-item>No Response from ID BOX</detection-item></dtc>
+<dtc id="RM000000TUF00CX"><dtccode>B278A</dtccode><detection-item>Short to GND in Immobiliser System Power Source Circuit</detection-item></dtc>
+<dtc id="RM000000TUG00BX"><dtccode>B2790</dtccode><detection-item>ID BOX EEPROM Malfunction</detection-item></dtc>
+<dtc id="RM00000100400BX"><dtccode>B2791</dtccode><detection-item>Communication Condition Failure between ECM</detection-item></dtc>
+<dtc id="RM000000SJV00BX"><dtccode>B2799</dtccode><detection-item>Engine Immobiliser System Malfunction</detection-item></dtc>
+
+
+</ttl>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001GV0002X"><dtccode>B2780</dtccode><detection-item>Push Switch / Key Unlock Warning Switch Malfunction</detection-item></dtc>
+<dtc id="RM000001GV5002X"><dtccode>B2784</dtccode><detection-item>Antenna Coil Open / Short</detection-item></dtc>
+<dtc id="RM000001GV1002X"><dtccode>B2793</dtccode><detection-item>Transponder Chip Malfunction</detection-item></dtc>
+<dtc id="RM000001GV2002X"><dtccode>B2794</dtccode><detection-item>Unmatched Encryption Code</detection-item></dtc>
+<dtc id="RM000001GUW002X"><dtccode>B2795</dtccode><detection-item>Unmatched Key Code</detection-item></dtc>
+<dtc id="RM000001GUX002X"><dtccode>B2796</dtccode><detection-item>No Communication in Immobiliser System</detection-item><dtccode>B2798</dtccode><detection-item>Communication Malfunction No. 2</detection-item></dtc>
+<dtc id="RM000001GUY002X"><dtccode>B2797</dtccode><detection-item>Communication Malfunction No. 1</detection-item></dtc>
+<dtc id="RM000001IGP002X"><dtccode>B2799</dtccode><detection-item>Engine Immobiliser System Malfunction</detection-item></dtc>
+
+
+
+
+</ttl>
+</section>
+</servcat>
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<shortname>CRUISE CONTROL SYSTEM</shortname><section id="1001O_S001A" variety="S001A" category="CC" volume="1">
+<name>CRUISE CONTROL</name>
+<seq no="60"/>
+<sub-servcat id="41" type="2">
+<name>CRUISE CONTROL SYSTEM</name>
+</sub-servcat>
+
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000000ZRD00FX"><dtccode>P0500</dtccode><detection-item>Vehicle Speed Sensor Malfunction</detection-item><dtccode>P0503</dtccode><detection-item>Vehicle Speed Sensor "A" Intermittent / Erratic / High</detection-item></dtc>
+<dtc id="RM000000ZRE00LX"><dtccode>P0571</dtccode><detection-item>Brake Switch "A" Circuit</detection-item></dtc>
+<dtc id="RM000000ZRF00LX"><dtccode>P0607</dtccode><detection-item>Control Module Performance</detection-item></dtc>
+
+
+
+
+</ttl>
+
+
+</section>
+</servcat>
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<shortname>BODY ELECTRICAL</shortname><section id="1001A_S001B" variety="S001B" category="LI" volume="1">
+<name>LIGHTING</name>
+<seq no="61"/>
+<sub-servcat id="42" type="2">
+<name>BODY ELECTRICAL</name>
+</sub-servcat>
+
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM0000011M1005X"><dtccode>B1244</dtccode><detection-item>Light Sensor Circuit Malfunction</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+<section id="1001I_S001E" variety="S001E" category="DL" volume="1">
+<name>DOOR LOCK</name>
+<seq no="63"/>
+<sub-servcat id="42" type="2">
+<name>BODY ELECTRICAL</name>
+</sub-servcat>
+
+
+<ttl id="1001I_S001E_72Y6C_T008U" variety="T008U">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System)</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000002075002X"><dtccode>B1242</dtccode><detection-item>Wireless Door Lock Tuner Circuit Malfunction</detection-item></dtc>
+
+
+</ttl>
+<ttl id="1001I_S001E_72WHC_T0069" variety="T0069">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/o Smart Key System)</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001NN3001X"><dtccode>B1242</dtccode><detection-item>Wireless Door Lock Tuner Circuit Malfunction</detection-item></dtc>
+
+</ttl>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001P8U004X"><dtccode>B1242</dtccode><detection-item>Wireless Door Lock Tuner Circuit Malfunction</detection-item></dtc>
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+</section>
+<section id="1002P_S001H" variety="S001H" category="ME" volume="1">
+<name>METER</name>
+<seq no="64"/>
+<sub-servcat id="42" type="2">
+<name>BODY ELECTRICAL</name>
+</sub-servcat>
+
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM0000029ZA000X"><dtccode>U0100</dtccode><detection-item>Lost Communication with ECM/PCM "A"</detection-item></dtc>
+<dtc id="RM0000029ZB000X"><dtccode>U0129</dtccode><detection-item>Lost Communication with Skid Control ECU</detection-item></dtc>
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+</section>
+<section id="1001C_S001D" variety="S001D" category="AV" volume="1">
+<name>AUDIO / VISUAL</name>
+<seq no="65"/>
+<sub-servcat id="42" type="2">
+<name>BODY ELECTRICAL</name>
+</sub-servcat>
+
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM00000183S00HX"><dtccode>01-21</dtccode><detection-item>ROM Error</detection-item><dtccode>01-22</dtccode><detection-item>RAM Error</detection-item></dtc>
+<dtc id="RM00000183T00HX"><dtccode>01-D5</dtccode><detection-item>Absence of Registration Unit</detection-item><dtccode>01-D8</dtccode><detection-item>No Response for Connection Check</detection-item><dtccode>01-D9</dtccode><detection-item>Last Mode Error</detection-item><dtccode>01-DA</dtccode><detection-item>No Response Against ON / OFF Command</detection-item><dtccode>01-DB</dtccode><detection-item>Mode Status Error</detection-item><dtccode>01-DE</dtccode><detection-item>Slave Reset</detection-item></dtc>
+<dtc id="RM00000183U00HX"><dtccode>01-D6</dtccode><detection-item>No Master</detection-item><dtccode>01-D7</dtccode><detection-item>Connection Check Error</detection-item></dtc>
+<dtc id="RM00000183V00HX"><dtccode>01-DC</dtccode><detection-item>Transmission Error</detection-item></dtc>
+<dtc id="RM00000183W00HX"><dtccode>01-DD</dtccode><detection-item>Master Reset</detection-item><dtccode>01-E1</dtccode><detection-item>Voice Processing Device ON Error</detection-item></dtc>
+<dtc id="RM00000183X00HX"><dtccode>01-DF</dtccode><detection-item>Master Error</detection-item></dtc>
+<dtc id="RM000001WQS00AX"><dtccode>01-E0</dtccode><detection-item>Registration Complete Indication Error</detection-item><dtccode>01-E3</dtccode><detection-item>Registration Demand Transmission</detection-item><dtccode>01-E4</dtccode><detection-item>Multiple Frame Incomplete</detection-item></dtc>
+<dtc id="RM00000183Z00HX"><dtccode>01-E2</dtccode><detection-item>ON / OFF Indication Parameter Error</detection-item></dtc>
+<dtc id="RM000001YYZ00BX"><dtccode>57-47</dtccode><detection-item>Bluetooth Module Initialization Failed</detection-item></dtc>
+<dtc id="RM0000020EW003X"><dtccode>62-10</dtccode><detection-item>CD Player Mechanical Error</detection-item><dtccode>62-11</dtccode><detection-item>CD Insertion and Ejection Error</detection-item><dtccode>62-12</dtccode><detection-item>CD Reading Abnormal</detection-item><dtccode>63-10</dtccode><detection-item>CD Changer Mechanical Error</detection-item><dtccode>63-11</dtccode><detection-item>CD Insertion and Ejection Error</detection-item><dtccode>63-12</dtccode><detection-item>CD Reading Abnormal</detection-item></dtc>
+<dtc id="RM0000020EY003X"><dtccode>62-41</dtccode><detection-item>Wrong Disc</detection-item><dtccode>62-42</dtccode><detection-item>Disc cannot be Read</detection-item><dtccode>63-41</dtccode><detection-item>Wrong Disc</detection-item><dtccode>63-42</dtccode><detection-item>Disc cannot be Read</detection-item></dtc>
+<dtc id="RM0000020EZ003X"><dtccode>62-43</dtccode><detection-item>CD-ROM Abnormal</detection-item><dtccode>63-43</dtccode><detection-item>CD-ROM Abnormal</detection-item></dtc>
+<dtc id="RM0000020F0003X"><dtccode>62-44</dtccode><detection-item>CD Abnormal</detection-item><dtccode>62-48</dtccode><detection-item>Excess Current</detection-item><dtccode>62-50</dtccode><detection-item>Tray Insertion / Ejection Error</detection-item><dtccode>63-44</dtccode><detection-item>CD Abnormal</detection-item><dtccode>63-48</dtccode><detection-item>Excess Current</detection-item><dtccode>63-50</dtccode><detection-item>Tray Insertion / Ejection Error</detection-item></dtc>
+<dtc id="RM0000020F1003X"><dtccode>62-45</dtccode><detection-item>Eject Error</detection-item><dtccode>62-51</dtccode><detection-item>Elevator Error</detection-item><dtccode>62-52</dtccode><detection-item>Clamp Error</detection-item><dtccode>63-45</dtccode><detection-item>Eject Error</detection-item><dtccode>63-51</dtccode><detection-item>Elevator Error</detection-item><dtccode>63-52</dtccode><detection-item>Clamp Error</detection-item></dtc>
+<dtc id="RM0000020F2003X"><dtccode>62-46</dtccode><detection-item>Scratched / Reversed Disc</detection-item><dtccode>63-46</dtccode><detection-item>Scratched / Reversed Disc</detection-item></dtc>
+<dtc id="RM0000020F3003X"><dtccode>62-47</dtccode><detection-item>High Temperature</detection-item><dtccode>63-47</dtccode><detection-item>High Temperature</detection-item></dtc>
+<dtc id="RM0000020FB002X"><dtccode>62-78</dtccode><detection-item>DSP Error</detection-item><dtccode>63-78</dtccode><detection-item>DSP Error</detection-item></dtc>
+<dtc id="RM0000020S4002X"><dtccode>62-7D</dtccode><detection-item>Disc cannot be Played</detection-item><dtccode>62-7E</dtccode><detection-item>No Playable Files</detection-item><dtccode>62-7F</dtccode><detection-item>Copyright Protection Error</detection-item><dtccode>63-7D</dtccode><detection-item>Disc cannot be Played</detection-item><dtccode>63-7E</dtccode><detection-item>No Playable Files</detection-item><dtccode>63-7F</dtccode><detection-item>Copyright Protection Error</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+
+
+</section>
+<section id="1002Q_S001I" variety="S001I" category="NS" volume="1">
+<name>NAVIGATION</name>
+<seq no="66"/>
+<sub-servcat id="42" type="2">
+<name>BODY ELECTRICAL</name>
+</sub-servcat>
+
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM00000182H00LX"><dtccode>01-21</dtccode><detection-item>ROM Error</detection-item><dtccode>01-22</dtccode><detection-item>RAM Error</detection-item></dtc>
+<dtc id="RM00000182I00LX"><dtccode>01-D5</dtccode><detection-item>Absence of Registration Unit</detection-item><dtccode>01-D8</dtccode><detection-item>No Response for Connection Check</detection-item><dtccode>01-D9</dtccode><detection-item>Last Mode Error</detection-item><dtccode>01-DA</dtccode><detection-item>No Response Against ON / OFF Command</detection-item><dtccode>01-DB</dtccode><detection-item>Mode Status Error</detection-item><dtccode>01-DE</dtccode><detection-item>Slave Reset</detection-item></dtc>
+<dtc id="RM00000182J00LX"><dtccode>01-D6</dtccode><detection-item>No Master</detection-item><dtccode>01-D7</dtccode><detection-item>Connection Check Error</detection-item></dtc>
+<dtc id="RM00000182K00LX"><dtccode>01-DC</dtccode><detection-item>Transmission Error</detection-item></dtc>
+<dtc id="RM00000182L00LX"><dtccode>01-DD</dtccode><detection-item>Master Reset</detection-item><dtccode>01-E1</dtccode><detection-item>Voice Processing Device ON Error</detection-item></dtc>
+<dtc id="RM00000182M00HX"><dtccode>01-DF</dtccode><detection-item>Master Error</detection-item></dtc>
+<dtc id="RM00000182N00MX"><dtccode>01-E0</dtccode><detection-item>Registration Complete Indication Error</detection-item><dtccode>01-E3</dtccode><detection-item>Registration Demand Transmission</detection-item><dtccode>01-E4</dtccode><detection-item>Multiple Frame Incomplete</detection-item></dtc>
+<dtc id="RM00000182O00LX"><dtccode>01-E2</dtccode><detection-item>ON / OFF Indication Parameter Error</detection-item></dtc>
+<dtc id="RM00000182P00FX"><dtccode>21-10</dtccode><detection-item>Panel Switch Error</detection-item><dtccode>21-11</dtccode><detection-item>Touch Switch Error</detection-item><dtccode>23-10</dtccode><detection-item>Panel Switch Error</detection-item><dtccode>23-11</dtccode><detection-item>Touch Switch Error</detection-item><dtccode>24-10</dtccode><detection-item>Panel Switch Error</detection-item><dtccode>24-11</dtccode><detection-item>Touch Switch Error</detection-item><dtccode>25-10</dtccode><detection-item>Panel Switch Error</detection-item><dtccode>25-11</dtccode><detection-item>Touch Switch Error</detection-item></dtc>
+<dtc id="RM00000182Q00GX"><dtccode>34-10</dtccode><detection-item>Error in Picture Circuit</detection-item><dtccode>34-11</dtccode><detection-item>No Current in Back-light</detection-item><dtccode>34-12</dtccode><detection-item>Excess Current in Back-light</detection-item></dtc>
+<dtc id="RM000001YYZ006X"><dtccode>57-47</dtccode><detection-item>Bluetooth Module Initialization Failed</detection-item></dtc>
+<dtc id="RM00000182R00GX"><dtccode>58-10</dtccode><detection-item>Gyro Error</detection-item><dtccode>80-10</dtccode><detection-item>Gyro Error</detection-item></dtc>
+<dtc id="RM00000182S00GX"><dtccode>58-11</dtccode><detection-item>GPS Receiver Error</detection-item><dtccode>80-11</dtccode><detection-item>GPS Receiver Error</detection-item></dtc>
+<dtc id="RM00000182T00GX"><dtccode>58-40</dtccode><detection-item>GPS Antenna Error</detection-item><dtccode>58-41</dtccode><detection-item>GPS Antenna Power Source Error</detection-item><dtccode>80-40</dtccode><detection-item>GPS Antenna Error</detection-item><dtccode>80-41</dtccode><detection-item>GPS Antenna Power Source Error</detection-item></dtc>
+<dtc id="RM00000182U00GX"><dtccode>58-42</dtccode><detection-item>Map Disc Read Error</detection-item><dtccode>80-42</dtccode><detection-item>Map Disc Read Error</detection-item></dtc>
+<dtc id="RM00000182V00GX"><dtccode>58-43</dtccode><detection-item>SPD Signal Error</detection-item><dtccode>80-43</dtccode><detection-item>SPD Signal Error</detection-item></dtc>
+<dtc id="RM00000182W00EX"><dtccode>58-44</dtccode><detection-item>Player Error</detection-item><dtccode>80-44</dtccode><detection-item>Player Error</detection-item></dtc>
+<dtc id="RM00000182X00EX"><dtccode>58-45</dtccode><detection-item>High Temperature</detection-item><dtccode>80-45</dtccode><detection-item>High Temperature</detection-item></dtc>
+<dtc id="RM000001WTR007X"><dtccode>63-10</dtccode><detection-item>CD Changer Mechanical Error</detection-item><dtccode>63-11</dtccode><detection-item>CD Insertion and Ejection Error</detection-item><dtccode>63-12</dtccode><detection-item>CD Reading Abnormal</detection-item></dtc>
+<dtc id="RM000001WTS007X"><dtccode>63-41</dtccode><detection-item>Wrong Disc</detection-item><dtccode>63-42</dtccode><detection-item>Disc cannot be Read</detection-item></dtc>
+<dtc id="RM000001WTT007X"><dtccode>63-43</dtccode><detection-item>CD-ROM Abnormal</detection-item></dtc>
+<dtc id="RM000001WTU007X"><dtccode>63-44</dtccode><detection-item>CD Abnormal</detection-item><dtccode>63-48</dtccode><detection-item>Excess Current</detection-item><dtccode>63-50</dtccode><detection-item>Tray Insertion / Ejection Error</detection-item></dtc>
+<dtc id="RM000001WTV007X"><dtccode>63-45</dtccode><detection-item>Eject Error</detection-item><dtccode>63-51</dtccode><detection-item>Elevator Error</detection-item><dtccode>63-52</dtccode><detection-item>Clamp Error</detection-item></dtc>
+<dtc id="RM000001WTW007X"><dtccode>63-46</dtccode><detection-item>Scratched / Reversed Disc</detection-item></dtc>
+<dtc id="RM000001WTX007X"><dtccode>63-47</dtccode><detection-item>High Temperature</detection-item></dtc>
+<dtc id="RM000001YZ0006X"><dtccode>63-78</dtccode><detection-item>DSP Error</detection-item></dtc>
+<dtc id="RM000001YZ1006X"><dtccode>63-7D</dtccode><detection-item>Disc cannot be Played</detection-item><dtccode>63-7E</dtccode><detection-item>No Playable Files</detection-item><dtccode>63-7F</dtccode><detection-item>Copyright Protection Error</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ttl>
+
+
+</section>
+
+
+
+</servcat>
+<servcat id="43">
+<name>BODY</name>
+<shortname>BODY</shortname><section id="1002U_S001N" variety="S001N" category="WS" volume="1">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<seq no="76"/>
+<sub-servcat id="43" type="2">
+<name>BODY</name>
+</sub-servcat>
+
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000001LZX005X"><dtccode>B2311</dtccode><detection-item>Driver Door Motor Malfunction</detection-item></dtc>
+<dtc id="RM000001LZY005X"><dtccode>B2312</dtccode><detection-item>Driver Side Door Master Switch Malfunction</detection-item></dtc>
+<dtc id="RM000001LZZ005X"><dtccode>B2313</dtccode><detection-item>Glass Position Initialization Incomplete</detection-item></dtc>
+
+
+
+
+
+
+
+
+</ttl>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<section id="1002Z_S001S" variety="S001S" category="RF" volume="1">
+<name>SLIDING ROOF</name>
+<seq no="86"/>
+<sub-servcat id="43" type="2">
+<name>BODY</name>
+</sub-servcat>
+
+<ttl id="1002Z_S001S_732XN_T00GB" variety="T00GB">
+<name>SLIDING ROOF SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM0000029GG003X"><dtccode>B2341</dtccode><detection-item>Sensor (Motor) Failure</detection-item><dtccode>B2344</dtccode><detection-item>Position Failure</detection-item></dtc>
+<dtc id="RM0000029GH003X"><dtccode>B2342</dtccode><detection-item>Switch Failure</detection-item></dtc>
+<dtc id="RM0000029GI003X"><dtccode>B2343</dtccode><detection-item>Position Initialization Incomplete</detection-item></dtc>
+
+
+</ttl>
+
+
+</section>
+</servcat>
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<shortname>COMMUNICATION SYSTEM</shortname><section id="10033_S001U" variety="S001U" category="CA" volume="1">
+<name>CAN COMMUNICATION</name>
+<seq no="95"/>
+<sub-servcat id="45" type="2">
+<name>COMMUNICATION SYSTEM</name>
+</sub-servcat>
+
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+
+
+
+
+
+
+
+
+
+
+
+<dtc id="RM000002B6W000X"><dtccode>B1207</dtccode><detection-item>Certification ECU Communication Malfunction</detection-item><dtccode>B2326</dtccode><detection-item>CAN MS Bus Line Communication Malfunction</detection-item></dtc>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-db>

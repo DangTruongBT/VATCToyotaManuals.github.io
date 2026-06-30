@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM0000024PB000X" category="C" type-id="303RJ" name-id="BC21M-01" from="200601">
+<dtccode>U0073/94</dtccode>
+<dtcname>Control Module Communication Bus OFF</dtcname>
+<subpara id="RM0000024PB000X_01" type-id="60" category="03" proc-id="RM0250U___000021J00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>The skid control ECU receives the signal sent from the ECM via the CAN communication system.</ptxt>
+</item>
+<item>
+<ptxt>When DTCs indicating a CAN communication system malfunction are output, repair the CAN communication system before repairing each corresponding sensor.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073/94</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>The skid control ECU cannot send a signal (30 cycles).</ptxt>
+</item>
+<item>
+<ptxt>The condition that bus OFF state occurs for 300 msec.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness (CANL, CANH circuit)</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (Skid control ECU)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000024PB000X_02" type-id="51" category="05" proc-id="RM0250U___000021K00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<ptxt>Proceed to CAN communication system troubleshooting (See page <xref label="Seep01" href="RM000000WI600QX"/>).</ptxt>
+<atten4>
+<ptxt>When DTCs indicating a CAN communication system malfunction are output, repair the CAN communication system before repairing each corresponding sensor.</ptxt>
+</atten4>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

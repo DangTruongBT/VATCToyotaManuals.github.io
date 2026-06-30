@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JD8002X" category="J" type-id="3025M" name-id="BC1GH-01" from="200601">
+<dtccode/>
+<dtcname>Brake Warning Light Remains ON</dtcname>
+<subpara id="RM000001JD8002X_01" type-id="60" category="03" proc-id="RM0250U___000011S00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU sends the indicator signals to the combination meter assembly via the CAN communication system.</ptxt>
+<ptxt>If any of the following is detected, the brake warning light remains on:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The skid control ECU connector is disconnected from the skid control ECU.</ptxt>
+</item>
+<item>
+<ptxt>The brake fluid level is insufficient.</ptxt>
+</item>
+<item>
+<ptxt>The parking brake is applied.</ptxt>
+</item>
+<item>
+<ptxt>EBD operation is not possible.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000001JD8002X_02" type-id="32" category="03" proc-id="RM0250U___000011T00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136504E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C136505E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001JD8002X_03" type-id="51" category="05" proc-id="RM0250U___000022S00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep01" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001JD8002X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001JD8002X_05_0024" proc-id="RM0250U___00003BF00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if an ABS DTC is output (See page <xref label="Seep01" href="RM000001JB8002X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>CAN communication system DTC is not output</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>CAN communication system DTC is output</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0025" fin="false">A</down>
+<right ref="RM000001JD8002X_05_0036" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0025" proc-id="RM0250U___00003BG00000">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if a CAN communication system DTC is output (See page <xref label="Seep01" href="RM000001JB8002X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0027" fin="false">A</down>
+<right ref="RM000001JD8002X_05_0038" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0027" proc-id="RM0250U___00003BI00000">
+<testtitle>CHECK IF SKID CONTROL ECU CONNECTOR SECURELY CONNECTED</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the skid control ECU connector is connected securely.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connector should be securely connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0028" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0039" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0028" proc-id="RM0250U___00003BJ00000">
+<testtitle>CHECK BATTERY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the battery voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0029" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0040" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0029" proc-id="RM0250U___00003BK00000">
+<testtitle>INSPECT SKID CONTROL ECU CONNECTOR (IG1 TERMINAL VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C131970E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A25-18 (IG1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0030" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0030" proc-id="RM0250U___00003BL00000">
+<testtitle>INSPECT SKID CONTROL ECU CONNECTOR (GND TERMINAL CONTINUITY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C131970E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A25-4 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A25-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0031" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0042" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0031" proc-id="RM0250U___00003BM00000">
+<testtitle>INSPECT PARKING BRAKE SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the parking brake switch.</ptxt>
+<figure>
+<graphic graphicname="C109430E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the parking brake switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<title>Automatic Transaxle</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>(A18-1) - Ground part</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Free</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(A18-1) - Ground part</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pushed in</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Manual Transaxle</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>(E33-1) - Ground part</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Free</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(E33-1) - Ground part</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pushed in</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0032" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0043" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0032" proc-id="RM0250U___00003BN00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU TO PARKING BRAKE SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the main body ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C136418E03" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>Automatic Transaxle</subtitle>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IC-14 - A18-1 (PKB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A18-1 (PKB) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>Manual Transaxle</subtitle>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IM-2 (PKB) - E33-1 (PKB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E33-1 (PKB) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0033" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0044" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0033" proc-id="RM0250U___00003BO00000">
+<testtitle>INSPECT BRAKE FLUID LEVEL WARNING SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the reservoir tank cap.</ptxt>
+<figure>
+<graphic graphicname="C139740E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the brake fluid level warning switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<atten4>
+<ptxt>A float is located inside the reservoir.</ptxt>
+<ptxt>Its position can be changed by increasing or decreasing the level of brake fluid.</ptxt>
+</atten4>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>(A16-1) - (A16-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Float UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+<ptxt>(No Continuity)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(A16-1) - (A16-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Float DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(Continuity)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If there is no problem after finishing the above check, adjust the brake fluid level to the MAX level.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0034" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0045" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0034" proc-id="RM0250U___00003BP00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BRAKE FLUID LEVEL WARNING SWITCH TO COMBINATION METER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the combination meter assembly connector.</ptxt>
+<figure>
+<graphic graphicname="C136033E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A16-1 - F2-6 (B/LE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F2-6 (B/LE) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A16-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0035" fin="false">OK</down>
+<right ref="RM000001JD8002X_05_0046" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0035" proc-id="RM0250U___00003BQ00000">
+<testtitle>INSPECT COMBINATION METER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the "ACTIVE TEST" on the tester (See page <xref label="Seep01" href="RM000001JBA002X"/>).</ptxt>
+<table pgwide="1">
+<title>ACTIVE TEST: ABS</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle Condition / Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE WARN LIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn brake warning light ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe combination meter</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the ABS warning light operation.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The BRAKE warning light turns on or off in accordance with the intelligent tester.</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK (When troubleshooting in accordance with the PROBLEM SYMPTOMS TABLE)</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JD8002X_05_0050" fin="true">A</down>
+<right ref="RM000001JD8002X_05_0049" fin="true">B</right>
+<right ref="RM000001JD8002X_05_0047" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0036">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS<xref label="Seep01" href="RM000001JB2002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0038">
+<testtitle>REPAIR CAN COMMUNICATION SYSTEM<xref label="Seep01" href="RM000000WI600QX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0039">
+<testtitle>CONNECT CONNECTOR TO ECU CORRECTLY</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0040">
+<testtitle>INSPECT CHARGING SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0041">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (IG1 CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0042">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0043">
+<testtitle>REPLACE PARKING BRAKE SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0044">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (MAIN BODY ECU TO PARKING BRAKE SWITCH)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0045">
+<testtitle>REPLACE BRAKE MASTER CYLINDER RESERVOIR SUB-ASSEMBLY (BRAKE FLUID LEVEL WARNING SWITCH)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0046">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (BRAKE FLUID LEVEL WARNING SWITCH TO COMBINATION METER)</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0047">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY<xref label="Seep01" href="RM0000024D7000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0049">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE<xref label="Seep01" href="RM000001JB5002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001JD8002X_05_0050">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

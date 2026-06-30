@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000001370001X" category="U" type-id="3001G" name-id="AX0Q5-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000001370001X_z0" proc-id="RM0250U___00008M000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>TCM</ptxt>
+<figure>
+<graphic graphicname="C133222E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Each TCM terminal's standard voltage is shown in the table below.</ptxt>
+<ptxt>In the table, first follow the information under "Condition". Look under "Symbols (Terminals No.)" for the terminals to be inspected. The standard voltage between the terminals is shown under "Specified Condition".</ptxt>
+<ptxt>Use the illustration above as a reference for the TCM terminals.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminals No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R (C56-15) - E1 (C56-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>W - B-W</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>R shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in R position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in any position except R position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>D (C56-16) - E1 (C56-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R - B-W</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>D shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in D or 3 position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in any position except D and 3 position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>STP (C56-12) - E1 (C56-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>B - B-W</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal is depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7.5 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal is released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>NSW (C56-11) - E1 (C56-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>L - B-W</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Park/neutral switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in P or N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in any position except P or N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>STA (C56-10) - E1 (C56-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Y - B-W</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Starter signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cranking (shift lever position in P or N position, ignition switch START)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in any position except P or N position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SPD1 (C56-3) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - B-W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed signal from combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 12 mph (20 km/h)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BATT (C56-1) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-L - B-W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery (for measuring battery voltage and for TCM memory)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG2 (C56-13) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L-B - B-W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+B (C56-18) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-L - B-W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of TCM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAN+ (C56-6) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - B-W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAN- (C56-7) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - B-W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 3)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step2>
+<ptxt>Waveform 1</ptxt>
+<figure>
+<graphic graphicname="G034872E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SPD1 - E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed 12 mph (20 km/h)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 2</ptxt>
+<figure>
+<graphic graphicname="G036660E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN+ - E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 V/DIV., 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine is stopped, ignition ON (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 3</ptxt>
+<figure>
+<graphic graphicname="G036661E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Reference:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN- - E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 V/DIV., 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine is stopped, ignition ON (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ECM</ptxt>
+<atten4>
+<ptxt>Each ECM terminal's standard voltage is shown in the table below.</ptxt>
+<ptxt>In the table, first follow the information under "Condition". Look under "Symbols (Terminals No.)" for the terminals to be inspected. The standard voltage between the terminals is shown under "Specified Condition".</ptxt>
+<ptxt>Use the illustration below as a reference for the ECM terminals.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A107881E27" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminals No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>S (A55-25) - E1 (C55-81)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>S shift position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in S position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in any position except S position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>SFTU (A55-16) - E1 (C55-81)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Up shift switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in S position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in "+" position (Up shift)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>SFTD (A55-51) - E1 (C55-81)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Down shift switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in S position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG switch ON (IG) and shift lever in "-" position (Down shift)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

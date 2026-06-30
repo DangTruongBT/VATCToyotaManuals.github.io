@@ -1,0 +1,75 @@
+<!-- $Id: prd.html,v 1.6 2004/04/26 05:01:22 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 from                                                              -->
+<!--  001 to                                                                -->
+<!--  002 Select Production Date                                            -->
+<!--  003 Production Date:                                                  -->
+<!--  004 Submit(Attribute)                                                 -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Production Infomation</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script src="../../js/util.js"></script>
+<script language="javascript">
+var args = window.dialogArguments;
+var FROM = "from ";  // 000
+var TO   = " to ";   // 001
+function init() {
+	if (args==null) selectDate(false);  // return;
+
+	var dateList = args[0];
+	var terms = "<select id='pd' size='3'>";
+	for (var i=dateList.length-1; i>=0; i--) {
+		var from = dateList[i];
+		var to = (i!=dateList.length-1) ? dateList[i+1] : null;
+		terms += "<option value='" + from+ "'" 
+					 + ((i==dateList.length-1) ? " selected" : "") + ">"
+					 + FROM + getFormatDate(from)
+					 + ((to!=null) ? TO + getFormatDate(to) : "")
+					 + "</option>";
+	}
+	terms += "</select>";
+	disp.innerHTML = terms;
+	if(dateList.length==1) {
+		selectDate(); 
+	}
+}
+function selectDate() {
+	if (arguments[0]==false) {
+		window.close();
+	}
+	var idx = document.all('pd').selectedIndex;
+	if (idx==-1) return;
+	returnValue = document.all('pd').options[idx].value;
+	window.close();
+	return returnValue;
+}
+</script>
+</head>
+<body onLoad="init()" style="margin:20px" onUnLoad="selectDate()">
+	<form>
+	<p id="ttl" class="location">Select Production Date</p><!-- 002 -->
+	<br/>
+	<table width="100%" border="0">
+		<tr>
+			<td width="50%" align="center">Procuction Date:</td><!-- 003 -->
+			<td width="50%" align="left"><div id="disp"></div></td>
+		</tr>
+		<tr><td colspan="2"><br/></td></tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="button" value="Submit" onClick="selectDate()" class="submit-button"><!-- 004 -->
+			</td>
+		</tr>
+	</table>
+	</form>
+	<hr width="100%"/>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM000001MEH001X" category="J" type-id="302UE" name-id="LI20K-01" from="200601">
+<dtccode/>
+<dtcname>Taillight Relay Circuit</dtcname>
+<subpara id="RM000001MEH001X_01" type-id="60" category="03" proc-id="RM0250U___00008OF00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU receives a light control switch TAIL signal from the headlight dimmer switch assembly, and turns the taillight relay on.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001MEH001X_02" type-id="32" category="03" proc-id="RM0250U___00008OG00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121493E02" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<figure>
+<graphic graphicname="E121494E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001MEH001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001MEH001X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001MEH001X_05_0001" proc-id="RM0250U___00008OH00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the ACTIVE TEST and then check that the relay operates.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TAIL LIGHT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Taillight relay ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Taillight relay operates. (Taillights illuminate.)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MEH001X_05_0010" fin="false">NG</down>
+<right ref="RM000001MEH001X_05_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0010" proc-id="RM0250U___0000CER00000">
+<testtitle>INSPECT FUSE (TAIL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TAIL fuse from the instrument panel J/B assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MEH001X_05_0011" fin="false">OK</down>
+<right ref="RM000001MEH001X_05_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0011" proc-id="RM0250U___0000CET00000">
+<testtitle>INSPECT TAILLIGHT RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the taillight relay from the instrument panel J/B assembly.</ptxt>
+<figure>
+<graphic graphicname="A087121E11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.32in"/>
+<colspec colname="COL2" colwidth="2.81in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω (When battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>10 kΩ or higher (When battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MEH001X_05_0004" fin="false">OK</down>
+<right ref="RM000001MEH001X_05_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0004" proc-id="RM0250U___00008OK00000">
+<testtitle>INSPECT INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E121540E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IC-4 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IC-5 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ID-6 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ID-14 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IP-8 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF → TAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MEH001X_05_0003" fin="false">NG</down>
+<right ref="RM000001MEH001X_05_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0003" proc-id="RM0250U___00008OJ00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BATTERY - INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the IA instrument panel J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121505E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IA-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MEH001X_05_0009" fin="true">OK</down>
+<right ref="RM000001MEH001X_05_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY - BODY GROUND)</testtitle>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0009">
+<testtitle>REPLACE INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0012">
+<testtitle>REPLACE FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000001MEH001X_05_0013">
+<testtitle>REPLACE TAILLIGHT RELAY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000002224003X" category="J" type-id="301YS" name-id="ES3S4-04" from="200601">
+<dtccode/>
+<dtcname>Air Intake Control Circuit</dtcname>
+<subpara id="RM000002224003X_01" type-id="60" category="03" proc-id="RM0250U___0000B0900000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The air cleaner is equipped with two inlets, one of which is opened or closed by the Air Intake Control Valve (AICV). This system reduces intake noise and increases engine power at low-to-high engine speeds range.</ptxt>
+<ptxt>When the engine is operating in the low-to-mid speed range, this control operates the AICV to close one of the air cleaner inlets. When the engine speed is more than 3,600 rpm and the opening angle of the throttle valve is more than 60°, the ECM activates the VSV and opens the AICV.</ptxt>
+<figure>
+<graphic graphicname="A061332E03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002224003X_02" type-id="32" category="03" proc-id="RM0250U___0000B0A00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A137320E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002224003X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000002224003X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002224003X_04_0001" proc-id="RM0250U___0000B0B00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (VSV FOR AICV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester ON.</ptxt>
+<figure>
+<graphic graphicname="A067588E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / INTAKE CTL VSV1 and operate the VSV for AICV.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the operation of the VSV when the VSV is operated by the intelligent tester.</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV is ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air from port E flows out through port F</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV is OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air from port E flows out through the air filter</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002224003X_04_0002" fin="false">NG</down>
+<right ref="RM000002224003X_04_0004" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000002224003X_04_0002" proc-id="RM0250U___0000B0C00000">
+<testtitle>CHECK VSV (FOR AICV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the intake air control valve assembly (See page <xref label="Seep01" href="RM000001IRQ001X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002224003X_04_0003" fin="false">OK</down>
+<right ref="RM000002224003X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002224003X_04_0003" proc-id="RM0250U___0000B0D00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (VSV FOR AICV - ECM, VSV FOR AICV - EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the wire harness between the VSV for AICV connector and the ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A137083E01" width="2.775699831in" height="8.799559038in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the A53 VSV for AICV connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors and body ground.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV for AICV (A53-2) - AICV (A55-4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV for AICV (A53-2) or AICV (A55-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the EFI No. 3 fuse.</ptxt>
+<test2>
+<ptxt>Remove the EFI No. 3 fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance EFI No. 3 fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the EFI No. 3 fuse.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the wire harness between the VSV for AICV and the EFI relay.</ptxt>
+<test2>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VSV for AICV (A53-1) - 1E-6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the VSV for AICV connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002224003X_04_0004" fin="false">OK</down>
+<right ref="RM000002224003X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002224003X_04_0004" proc-id="RM0250U___0000B0E00000">
+<testtitle>INSPECT VACUUM TANK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the vacuum tank (See page <xref label="Seep01" href="RM000001IRN001X_01_0002"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002224003X_04_0005" fin="true">OK</down>
+<right ref="RM000002224003X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002224003X_04_0005">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002224003X_04_0006">
+<testtitle>REPLACE INTAKE AIR CONTROL VALVE ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000002224003X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000002224003X_04_0008">
+<testtitle>REPAIR OR REPLACE AIR CLEANER CAP</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

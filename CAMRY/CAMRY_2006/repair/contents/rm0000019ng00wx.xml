@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM0000019NG00WX" category="J" type-id="302YQ" name-id="AV1EY-01" from="200601">
+<dtccode/>
+<dtcname>AVC-LAN Circuit</dtcname>
+<subpara id="RM0000019NG00WX_01" type-id="60" category="03" proc-id="RM0250U___00004PM00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Each unit of the audio system connected to the AVC-LAN (communication bus) transfers the signal of each switch by communication.</ptxt>
+<ptxt>When a short to +B or short to ground occurs in this AVC-LAN, the audio system will not function normally as the communication is discontinued.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000019NG00WX_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000019NG00WX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000019NG00WX_03_0001" proc-id="RM0250U___00004PN00000">
+<testtitle>INSPECT RADIO RECEIVER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio receiver connector.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="E129798E04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>ATX+ (F26-5) - ATX- (F26-15)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>60 to 80 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000019NG00WX_03_0002" fin="false">OK</down>
+<right ref="RM0000019NG00WX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000019NG00WX_03_0002" proc-id="RM0250U___00004PO00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For details of the connectors, refer to the "TERMINALS OF ECU" (See page <xref label="Seep01" href="RM0000012A700EX"/>).</ptxt>
+</atten4>
+<test1>
+<ptxt>Referring to the AVC-LAN wiring diagram below, check all AVC-LAN circuits.</ptxt>
+<test2>
+<ptxt>Disconnect all connectors in all AVC-LAN circuits.</ptxt>
+</test2>
+<test2>
+<ptxt>Check for an open or short in all AVC-LAN circuits.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>There is no open or short circuit.</ptxt>
+</specitem>
+</spec>
+<figure>
+<graphic graphicname="E111831E15" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000019NG00WX_03_0003" fin="true">OK</down>
+<right ref="RM0000019NG00WX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000019NG00WX_03_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000019NG00WX_03_0004">
+<testtitle>REPLACE RADIO RECEIVER</testtitle>
+</testgrp>
+<testgrp id="RM0000019NG00WX_03_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

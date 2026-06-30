@@ -1,0 +1,58 @@
+<!--
+	EWD DTD
+	
+	Copyright (c) 2000-2003 SHINTEC HOZUMI Co.,LTD.
+	All Rights Reserved. 
+-->
+
+<!ENTITY % CountryCode
+	"(en | fr | de | es | pt | it | sv | da | fi | no | nl | el | cs | hu | pl | ja)"
+>
+
+<!ENTITY % PartsType "(conn | w2w | jb | jbc | jc | gp | sp | fl | relay | name)">
+	<!--
+		conn: connector
+		w2w: Wire and Wire
+		jb: Junction Block
+		jbc: Junction Block Connector
+		jc: Junction Connector
+		gp: Ground Point
+		sp: Splice Point
+		fl: Fusible Link
+		relay: Relay
+		name: Named Item
+	-->
+
+<!ENTITY % Sex		"(male | female)">
+<!ENTITY % Number	"CDATA">
+
+
+
+<!ELEMENT	SysRefs		(connector+)>
+<!ELEMENT	connector	(pin*)>
+<!ELEMENT	pin		(system*)>
+<!ELEMENT	system		EMPTY>
+
+
+
+<!ATTLIST SysRefs
+	ver		CDATA		"1.0"
+	pubno		CDATA		#REQUIRED
+	xml:lang	%CountryCode;	#REQUIRED
+>
+
+<!ATTLIST connector
+	type		%PartsType;	#REQUIRED
+	code		CDATA		#REQUIRED
+	subcode		CDATA		#IMPLIED
+	sex		%Sex;		#IMPLIED
+	spec		CDATA		#IMPLIED
+>
+
+<!ATTLIST pin
+	no		%Number;	#REQUIRED
+>
+
+<!ATTLIST system
+	code		CDATA		#REQUIRED
+>

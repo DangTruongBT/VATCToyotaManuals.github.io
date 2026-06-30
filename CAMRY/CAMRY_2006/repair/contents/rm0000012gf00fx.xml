@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000012GF00FX" category="J" type-id="800LR" name-id="ME0NQ-02" from="200601">
+<dtccode/>
+<dtcname>Engine Coolant Temperature Receiver Gauge Malfunction</dtcname>
+<subpara id="RM0000012GF00FX_04" type-id="60" category="03" proc-id="RM0250U___0000A2Q00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The meter CPU receives engine coolant temperature signals from the ECM via the CAN communication lines (CAN No. 1 Bus). The meter CPU displays engine coolant temperature that is calculated based on the data received from the ECM.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000012GF00FX_01" type-id="32" category="03" proc-id="RM0250U___00007SD00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E128087E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000012GF00FX_02" type-id="51" category="05" proc-id="RM0250U___00007SE00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>If there is an open or short in the engine coolant temperature sensor circuit, the ECM outputs the DTCs. Perform troubleshooting with the "SFI System" (See page <xref label="Seep01" href="RM000000PDK01MX"/> for 2AZ-FE, <xref label="Seep02" href="RM000002203002X"/> for 2GR-FE).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012GF00FX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000012GF00FX_03_0007" proc-id="RM0250U___0000BMF00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if CAN communication DTC is output (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CAN communication DTC is not output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CAN communication DTC is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B (See page <xref label="Seep02" href="RM000002B6V000X"/>)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GF00FX_03_0001" fin="false">A</down>
+<right ref="RM0000012GF00FX_03_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0001" proc-id="RM0250U___00007SF00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / METER / ACTIVE TEST.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the values by referring to the values in the table below.</ptxt>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COLSPEC0" colwidth="1.78in"/>
+<colspec colname="COL2" colwidth="1.76in"/>
+<colspec colname="COL3" colwidth="1.79in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine coolant temperature receiver gauge</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW, NORMAL, HI</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Needle indication is normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GF00FX_03_0008" fin="false">OK</down>
+<right ref="RM0000012GF00FX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0008" proc-id="RM0250U___0000BMA00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / METER / DATA LIST.</ptxt>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" align="center" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature: 0°C (-40°F) to 127.5°C (284°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>After warming up: 80 to 95°C (176  to 203°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<list1 type="unordered">
+<item>
+<ptxt>If -40°C (-40°F): sensor circuit open</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If 140°C (284°F) or more: sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine coolant temperature value displayed on the tester is almost the same as needle indication.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GF00FX_03_0002" fin="false">OK</down>
+<right ref="RM0000012GF00FX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0002" proc-id="RM0250U___00007SG00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ENGINE / DATA LIST.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the values by referring to the values in the table below.</ptxt>
+<table pgwide="1">
+<title>ECM:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" align="center" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WATER TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature: -40°C (-40°F) to 140°C (284°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>80 to 100°C (176 to 212°F):</ptxt>
+<ptxt> After warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<list1 type="unordered">
+<item>
+<ptxt>If -40°C (-40°F): sensor circuit open</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If 140°C (284°F) or more: sensor circuit shorted</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine coolant temperature value displayed on the tester is almost the same as needle indication.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GF00FX_03_0003" fin="false">OK</down>
+<right ref="RM0000012GF00FX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0003" proc-id="RM0250U___0000A2R00000">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the combination meter assembly to a new or a normal one.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The operation of the combination meter assembly returns to normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GF00FX_03_0006" fin="true">OK</down>
+<right ref="RM0000012GF00FX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0009">
+<testtitle>GO TO CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0004">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0005">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM0000012GF00FX_03_0006">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

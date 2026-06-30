@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="1000C_S000L" variety="S000L">
+<name>2AZ-FE COOLING</name>
+<ttl id="1000C_S000L_72Z7W_T00BH" variety="T00BH">
+<name>COOLING FAN SYSTEM</name>
+<para id="RM000000XW000MX" category="G" type-id="8000T" name-id="CO01F-07" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000000XW000MX_02" type-id="01" category="01">
+<s-1 id="RM000000XW000MX_02_0006" proc-id="RM0250U___0000BIL00000">
+<ptxt>INSPECT COOLING FAN OPERATION AT LOW TEMPERATURES (Below 83°C (181°F))</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the cooling fan stops.</ptxt>
+<ptxt>If not, check the cooling fan relay and engine coolant temperature sensor, and check whether there is disconnection or an open circuit between them.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the engine coolant temperature sensor connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the cooling fan rotates.</ptxt>
+<ptxt>If not, check the fuses, cooling fan relay, ECM and cooling fan, and check for a short circuit between the cooing fan relay and engine coolant temperature sensor.</ptxt>
+</s2>
+<s2>
+<ptxt>Reconnect the engine coolant temperature sensor connector.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000XW000MX_02_0007" proc-id="RM0250U___0000BIM00000">
+<ptxt>INSPECT COOLING FAN OPERATION AT HIGH TEMPERATURES (Above 93°C (199°F))</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Start the engine, and raise the engine coolant temperature to above 93°C (199°F).</ptxt>
+<atten4>
+<ptxt>Engine coolant temperature is detected by the engine coolant temperature sensor on the water outlet.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Check that the cooling fan rotates.</ptxt>
+<ptxt>If not, replace the engine coolant temperature sensor.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

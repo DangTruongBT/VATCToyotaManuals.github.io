@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000YQZ008X" category="C" type-id="3053B" name-id="SR00T-08" from="200601">
+<dtccode>B2781</dtccode>
+<dtcname>Open / Short in Steering Lock ECU</dtcname>
+<subpara id="RM000000YQZ008X_01" type-id="60" category="03" proc-id="RM0250U___00009ZP00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If the steering lock ECU determines that there is a malfunction inside the ECU, it outputs this DTC. The steering lock ECU diagnosis information cannot be read directly from the steering lock ECU by the tester. The diagnosis information from the steering lock ECU is transmitted to the tester via the certification ECU to the tester using the controller area network (CAN).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2781</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Steering lock motor drive circuit is defective.</ptxt>
+</item>
+<item>
+<ptxt>Both lock and unlock position sensors detect "ON".   </ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock actuator assembly (Steering lock ECU)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000YQZ008X_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000YQZ008X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000YQZ008X_03_0001" proc-id="RM0250U___00009ZQ00000">
+<testtitle>REPLACE STEERING LOCK ACTUATOR ASSEMBLY (STEERING LOCK ECU)</testtitle>
+<content6 releasenbr="2">
+<atten4>
+<ptxt>The steering lock ECU and steering lock actuator assembly are supplied as a unit.</ptxt>
+</atten4>
+<test1>
+<ptxt>Replace the steering lock actuator assembly (See page <xref label="Seep01" href="RM000000WAE00AX"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YQZ008X_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000YQZ008X_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHK00BX" category="D" type-id="3001B" name-id="BC02G-10" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000XHK00BX_z0" proc-id="RM0250U___00005L500000">
+<content5 releasenbr="2">
+<atten4>
+<ptxt>The intelligent tester can be used at steps 3, 7, and 10.</ptxt>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS</testtitle>
+<test1>
+<ptxt>Interview the customer and confirm the trouble (See page <xref label="Seep01" href="RM000000UZ100YX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK DTC AND FREEZE FRAME DATA</testtitle>
+<test1>
+<ptxt>Check and record a DTC and Freeze Frame Data.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTC and Freeze Frame Data (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Reconfirm the DTC.</ptxt>
+<test2>
+<ptxt>Reconfirm the DTC based on the recorded DTC and Freeze Frame Data (See page <xref label="Seep03" href="RM000000XHV009X"/> for DTC Check/Clear, and <xref label="Seep05" href="RM000000XHY009X"/> for Freeze Frame Data).</ptxt>
+<atten4>
+<ptxt>If any of the DTCs U0100/65, U0123/62, U0124/95, and U0126/63 is output together with a CAN communication DTC, first check the appropriate sensor for a momentary open circuit (See page <xref label="Seep04" href="RM000000XHS00JX"/>).</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC is not output (Problem symptom does not occur)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC is not output (Problem symptom occurs)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO STEP 5</action-ci-right>
+<result>C</result>
+<action-ci-right>GO TO STEP 6</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DIAGNOSTIC TROUBLE CODE CHART</testtitle>
+<test1>
+<ptxt>Proceed to Diagnostic Trouble Code Chart (See page <xref label="Seep06" href="RM000000XHU00AX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>GO TO STEP 7</action-ci-fin>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM SIMULATION</testtitle>
+<test1>
+<ptxt>Proceed to Diagnosis System (See page <xref label="Seep07" href="RM000000XHP009X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<test1>
+<ptxt>Proceed to Problem Symptoms Table (See page <xref label="Seep08" href="RM000000XHN009X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>IDENTIFICATION OF PROBLEM</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACEMENT</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

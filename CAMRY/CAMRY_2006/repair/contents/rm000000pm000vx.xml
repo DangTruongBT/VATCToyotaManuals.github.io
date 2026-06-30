@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000PM000VX" category="D" type-id="303F3" name-id="CC00C-35" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000PM000VX_z0" proc-id="RM0250U___00007ZS00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<ptxt>The ECU controls the cruise control system of the vehicle. The data and DTCs relating to the cruise control system can be read from the DLC3 of the vehicle. If either DTC or CRUISE OK is not displayed on the multi-information display on the combination meter when checking for DTCs, there may be a problem with either the combination meter or the CAN communication and multiplex communication systems. Use the intelligent tester to check and solve the problem.</ptxt>
+</step1>
+<step1>
+<ptxt>CHECK DLC3</ptxt>
+<figure>
+<graphic graphicname="H100769E66" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>The ECU uses the ISO 15765-4 for communication protocol. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL (14) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors.</ptxt>
+</atten3>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the cable of the intelligent tester to the DLC3, turn the ignition switch on (IG), and attempt to use the tester. If the display indicates that a communication error has occurred, there is a problem with either the vehicle or the tester.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tester is connected to another vehicle, inspect the DLC3 of the original vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If communication is still not possible when the tester is connected to another vehicle, the problem may be in the tester itself. Consult the Service Department listed in the tester's instruction manual.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK INDICATOR</ptxt>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+<figure>
+<graphic graphicname="E129948E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check that the CRUISE main indicator light illuminates when the cruise control main switch is turned on, and that the indicator light turns off when the main switch is turned off. If the results are not as specified, inspect the CRUISE main indicator light circuit (See page <xref label="Seep01" href="RM000000PLV00QX"/>).</ptxt>
+<atten4>
+<ptxt>While driving with cruise control, the ECM activates AUTO CANCEL of the cruise control system when a malfunction occurs in one of the following: vehicle speed sensors, stop light switch, or other related parts. When AUTO CANCEL is activated, the CRUISE main indicator light outputs the blinking pattern shown to the left. At the same time, data of the malfunction is stored as a DTC.</ptxt>
+<figure>
+<graphic graphicname="BE04034E23" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

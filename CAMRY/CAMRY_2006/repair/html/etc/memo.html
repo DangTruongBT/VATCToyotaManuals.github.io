@@ -1,0 +1,109 @@
+<!-- $Id: memo.html,v 1.6 2005/01/13 06:28:45 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Can not find paragraphs.                                          -->
+<!--  001 Can not find a file.                                              -->
+<!--  002 Close                                                             -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Memo-</title>
+<link href="../../css/memo.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="../../js/xml.js"></script>
+<script language="JavaScript" src="../../js/hashtable.js"></script>
+<script language="JavaScript" src="../../js/util.js"></script>
+<script language="javascript">
+var g_parentWin;
+var g_memoId ;
+var g_markId ;
+//
+//  初期化
+//
+function init() {
+	var args = window.dialogArguments;
+	if (args==null || args.length!=4 ) return;
+
+	var textId   = dialogArguments[0];
+	g_memoId     = dialogArguments[1];
+	g_markId     = dialogArguments[2];
+	g_parentWin  = dialogArguments[3];
+
+	var i = textId.indexOf("_");
+	if(i==-1){
+		alert("Can not find paragraphs."); // 000
+		return;
+	}
+	var titleText = "";
+
+	var paraXml = initXml(textId.substring(0,i)+".xml", false, false);
+	if (paraXml==null) {
+		alert("Can not find a file. "+extId.substring(0,i)+".xml"); // 001
+		return;
+	}
+	var paraNode = paraXml.selectSingleNode("//para");
+	var category = paraNode.getAttribute("category");
+
+	switch ( category ) {
+		//脱着か点検から　手順S-1IDのメモ処理
+		case "A":
+		case "M":
+		case "N":
+		case "G":
+			var textNode = paraXml.selectSingleNode("//s-1[@id='"+ textId +"']");
+			if (textNode != null) {
+				titleText  = textNode.getElementsByTagName("ptxt").item(0).nodeTypedValue;
+			}
+			break;
+		//トラブルシュートから　testgrpIDのメモ処理
+		case "C":
+		case "J":
+			var textNode = paraXml.selectSingleNode("//testgrp[@id='"+ textId +"']");
+			if (textNode != null) {
+				titleText = textNode.getElementsByTagName("testtitle").item(0).nodeTypedValue;
+			}
+			break;
+		//一般パラグラフから　subparaIDのメモ処理
+		case "L":
+		case "F":
+		case "H":
+		case "S":
+		case "T":
+		case "D":
+		case "U":
+		case "V":
+			var textNode = paraXml.selectSingleNode("//subpara");
+			if (textNode != null) {
+				titleText = textNode.parentNode.getElementsByTagName("name").item(0).nodeTypedValue;
+			}
+			break;
+		//その他
+		default:
+			var textNode = paraXml.selectSingleNode("//subpara");
+			if (textNode != null) {
+				titleText = textNode.parentNode.getElementsByTagName("name").item(0).nodeTypedValue;
+			}
+	}
+	disp.innerHTML = titleText;
+	memoForm.memoArea.value = g_parentWin.readMemo(g_memoId, g_markId);
+}
+</script>
+</head>
+<body onload="init()" onUnLoad="try{ g_parentWin.closeMemo(g_memoId, memoForm.memoArea.value, g_markId);}catch(e){};">
+<p id="disp" class="s1"></p>
+<form id="memoForm">
+	<textarea class="storeuserData" id="memoArea" name="" rows="8" cols="64" style="font-family: sans-serif"></textarea>
+	<table width="96%">
+		<tr>
+			<td align="right">
+				<a class="memo-button" href="#" onClick="window.close()">Close</a><!-- 002 -->
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

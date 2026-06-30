@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000PLU00SX" category="J" type-id="300WK" name-id="CC0GY-05" from="200601">
+<dtccode/>
+<dtcname>Cruise Control Switch Circuit</dtcname>
+<subpara id="RM000000PLU00SX_01" type-id="60" category="03" proc-id="RM0250U___000080D00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The cruise control main switch operates 7 functions: SET, - (COAST), TAP-DOWN, RES (RESUME), + (ACCEL), TAP-UP, and CANCEL. The SET, TAP-DOWN, and - (COAST) functions, and the RES (RESUME), TAP-UP, and + (ACCEL) functions are operated with the same switch. The cruise control main switch is an automatic return type switch which turns on only while operating it in the direction of each arrow and turns off after releasing it. The internal contact point of the cruise control main switch is turned on with the switch operation. Then the ECM reads the voltage value that has been changed by the switch operation to control SET, - (COAST), RES (RESUME), + (ACCEL), and CANCEL.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PLU00SX_02" type-id="32" category="03" proc-id="RM0250U___000080E00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E133779E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PLU00SX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PLU00SX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PLU00SX_04_0001" proc-id="RM0250U___000080F00000">
+<testtitle>READ VALUE ON INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="E107091E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DATA LIST for proper functioning of the cruise control main switch.</ptxt>
+<table pgwide="1">
+<title>ECM (Cruise control):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MAIN SW (MAIN)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main switch signal (Main CPU)/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Cruise control main switch on</ptxt>
+<ptxt>OFF: Cruise control main switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANCEL SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANCEL switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: CANCEL switch on</ptxt>
+<ptxt>OFF: CANCEL switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SET / COAST SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SET / COAST switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: - (COAST)/SET switch on</ptxt>
+<ptxt>OFF: - (COAST)/SET switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RES / ACC SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RES / ACC switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: + (ACCEL)/RES (RESUME) switch on</ptxt>
+<ptxt>OFF: + (ACCEL)/RES (RESUME) switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MAIN SW (SUB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main switch signal (Sub CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Cruise control main switch ON</ptxt>
+<ptxt>OFF: Cruise control main switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>When the cruise control main switch is operated, the display changes as shown above.</ptxt>
+</specitem>
+<table>
+<title>Result</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG (All items are defective)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NG (1 to 4 items are defective)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PLU00SX_04_0003" fin="false">B</down>
+<right ref="RM000000PLU00SX_04_0002" fin="true">A</right>
+<right ref="RM000000PLU00SX_04_0007" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0003" proc-id="RM0250U___000080G00000">
+<testtitle>INSPECT CRUISE CONTROL MAIN SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the cruise control main switch (See page <xref label="Seep01" href="RM000000VQ3007X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E106137E06" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A-1 (CCS) - A-3 (ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Neutral</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A-1 (CCS) - A-3 (ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+ (ACCEL)/RES (RESUME)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>216 to 264 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A-1 (CCS) - A-3 (ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>- (COAST)/SET</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>567 to 693 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A-1 (CCS) - A-3 (ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANCEL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1,386 to 1,694 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A-1 (CCS) - A-3 (ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A-1 (CCS) - A-3 (ECC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Switch on</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000PLU00SX_04_0011" fin="false">OK</down>
+<right ref="RM000000PLU00SX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0011" proc-id="RM0250U___000080J00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CRUISE CONTROL MAIN SWITCH - SPIRAL CABLE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the b1 connector from the spiral cable.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="E103330E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A-1 - b1-3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-3 - b1-4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000PLU00SX_04_0004" fin="false">OK</down>
+<right ref="RM000000PLU00SX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0004" proc-id="RM0250U___000080H00000">
+<testtitle>CHECK SPIRAL CABLE</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<ptxt>The spiral cable is an important part of the SRS airbag system. Incorrect removal or installation of the spiral cable may prevent the airbag from deploying. Be sure to read the page shown in the brackets.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Removal (See page <xref label="Seep01" href="RM000000UWD00LX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Installation (See page <xref label="Seep02" href="RM000000UWA00KX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+<test1>
+<ptxt>Remove the spiral cable.</ptxt>
+</test1>
+<figure>
+<graphic graphicname="E106780E15" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Spiral Cable Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>b1-3 - E18-1 (CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the left</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the right</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>b1-4 - E18-2 (ECC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the left</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the right</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The spiral cable makes a maximum of approximately 5 rotations.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000PLU00SX_04_0005" fin="false">OK</down>
+<right ref="RM000000PLU00SX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0005" proc-id="RM0250U___000080I00000">
+<testtitle>CHECK WIRE HARNESS (SPIRAL CABLE - ECM AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E126837E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E18-1 - A55-40 (CCS)<sup>*1</sup>
+</ptxt>
+<ptxt>E18-1 - A24-40 (CCS)<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-40 (CCS) - Body ground<sup>*1</sup>
+</ptxt>
+<ptxt>A24-40 (CCS) - Body ground<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E18-2 (ECC) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>*1: 2GR-FE</ptxt>
+<ptxt>*2: 2AZ-FE</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PLU00SX_04_0012" fin="true">OK</down>
+<right ref="RM000000PLU00SX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0002">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0007">
+<testtitle>REPLACE CRUISE CONTROL MAIN SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0009">
+<testtitle>REPLACE SPIRAL CABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PLU00SX_04_0012">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

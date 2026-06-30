@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM00000276B000X" category="C" type-id="3033M" name-id="ES4U6-01" from="200601">
+<dtccode>P2009</dtccode>
+<dtcname>Intake Manifold Runner Control Circuit Low (Bank 1)</dtcname>
+<dtccode>P2010</dtccode>
+<dtcname>Intake Manifold Runner Control Circuit High (Bank 1)</dtcname>
+<subpara id="RM00000276B000X_01" type-id="60" category="03" proc-id="RM0250U___00008PX00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The Intake Manifold Runner Valve (IMRV) motor is driven by the ECM. The IMRV motor opens and closes the IMRV.</ptxt>
+<ptxt>When the current of the IMRV motor deviates from the standard range, the ECM determines that there is a malfunction.</ptxt>
+<ptxt>The related DTCs are P2004 and P2006 (See page <xref label="Seep01" href="RM00000276A000X"/>), and P2014, P2016 and P2017 (See page <xref label="Seep02" href="RM00000276C000X"/>).</ptxt>
+<atten3>
+<ptxt>Do not disassemble the IMRV and the IMRV motor.</ptxt>
+</atten3>
+<figure>
+<graphic graphicname="A076832E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2009</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detecting open (in the motor or in the motor circuit) Condition (a) and (b) continue for 1 second:</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+<ptxt>(a) IMRV motor output duty is 100 %</ptxt>
+<ptxt>(b) IMRV motor current is less than 0.35 A</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in IMRV motor circuit</ptxt>
+</item>
+<item>
+<ptxt>IMRV motor</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2010</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Detecting excess current (in the motor or in the motor circuit) Condition (a) continues for 0.2 seconds:</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>(a) IMRV motor current is 10 A or more</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Condition (a) continues for 0.5 seconds:</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>(a) IMRV motor current is 7 A or more</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short in IMRV motor circuit</ptxt>
+</item>
+<item>
+<ptxt>IMRV motor</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_02" type-id="65" category="03" proc-id="RM0250U___00008PY00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P2009: IMRC Actuator Range Check (Low Current)</ptxt>
+<ptxt>P2010: IMRC Actuator Range Check (High Current)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required sensors/components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>IMRC Valve (Actuator)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required sensors/components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry>
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>1 second: IMRC Actuator Range Check (Low Current)</ptxt>
+<ptxt>6 times: IMRC Actuator Range Check (High Current)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry>
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_03" type-id="66" category="03" proc-id="RM0250U___00008PZ00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry>
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Starter</ptxt>
+</entry>
+<entry>
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_04" type-id="67" category="03" proc-id="RM0250U___00008Q000000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P2009:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC actuator current</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 0.35 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2010:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC actuator control IC current limiter port</ptxt>
+</entry>
+<entry>
+<ptxt>Fail</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_05" type-id="70" category="03" proc-id="RM0250U___00008Q100000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC actuator current</ptxt>
+</entry>
+<entry>
+<ptxt>0.4 to 3 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_06" type-id="32" category="03" proc-id="RM0250U___00008Q200000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132328E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_07" type-id="51" category="05" proc-id="RM0250U___00008Q300000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000276B000X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000276B000X_08_0001" proc-id="RM0250U___00008Q400000">
+<testtitle>INSPECT INTAKE MANIFOLD RUNNER VALVE ASSEMBLY (IMRV MOTOR RESISTANCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C33 IMRV connector.</ptxt>
+<figure>
+<graphic graphicname="A066037E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the motor resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C33-5 (IAC+) - C33-4 (IAC-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 to 19 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000276B000X_08_0002" fin="false">OK</down>
+<right ref="RM00000276B000X_08_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000276B000X_08_0002" proc-id="RM0250U___00008Q700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (IMRV MOTOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A132309E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C33 IMRV motor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A24-33 (IAC+) - C33-5 (IAC+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A24-52 (IAC-) - C33-4 (IAC-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A24-33 (IAC+) or C33-5 (IAC+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A24-52 (IAC-) or C33-4 (IAC-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000276B000X_08_0003" fin="false">OK</down>
+<right ref="RM00000276B000X_08_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000276B000X_08_0003" proc-id="RM0250U___00008Q800000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Run the engine at more than 3,000 rpm.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<atten4>
+<ptxt>As running the engine to 3,000 rpm, the IMRV usually becomes fully opened. If the ignition switch is turned off under this condition, the IMRV is fully closed and then becomes half-opening angle.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Read the DTC.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2009 and/or P2010 are output again</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000276B000X_08_0004" fin="true">A</down>
+<right ref="RM00000276B000X_08_0007" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000276B000X_08_0004">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM00000276B000X_08_0005">
+<testtitle>REPLACE INTAKE MANIFOLD RUNNER VALVE ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM00000276B000X_08_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM00000276B000X_08_0007">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000PLO00VX" category="D" type-id="3001B" name-id="CC008-30" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000PLO00VX_z0" proc-id="RM0250U___00007ZO00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Use the following procedures to troubleshoot the cruise control system.</ptxt>
+</item>
+<item>
+<ptxt>*: Use the intelligent tester.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOM CONFIRMATION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK CAN COMMUNICATION SYSTEM*</testtitle>
+<ptxt>Refer to PRECAUTION (See page <xref label="Seep01" href="RM000000WI500TX"/>).</ptxt>
+<test1>
+<ptxt>Check for output DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAN DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAN DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The ECM of this system is connected to the CAN communication system. Therefore, before starting troubleshooting, make sure to check that there is no trouble in the CAN communication system.</ptxt>
+</atten4>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>PROCEED TO "CAN COMMUNICATION SYSTEM"</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHECK AND CLEAR*</testtitle>
+<ptxt>Refer to DTC CHECK / CLEAR (See page <xref label="Seep03" href="RM000000PM100QX"/>).</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHECK (OTHER THAN CAN SYSTEM DTC)*</testtitle>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>A</result>
+<action-ci-right>GO TO STEP 7</action-ci-right>
+<result-ci-down>B</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHART</testtitle>
+<ptxt>Refer to DIAGNOSTIC TROUBLE CODE CHART (See page <xref label="Seep05" href="RM000000PLQ00QX"/>).</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>GO TO STEP 10</action-ci-fin>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOM CONFIRMATION</testtitle>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom occurs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom does not occur</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>A</result>
+<action-ci-right>GO TO STEP 9</action-ci-right>
+<result-ci-down>B</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM SIMULATION</testtitle>
+<ptxt>Refer to ELECTRONIC CIRCUIT INSPECTION PROCEDURE (See page <xref label="Seep02" href="RM000000UZ301TX"/>).</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>Go to step 7</action-ci-fin>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<ptxt>Refer to the PROBLEM SYMPTOMS TABLE (See page <xref label="Seep07" href="RM000000PLS00OX"/>).</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>TERMINALS OF ECM</testtitle>
+<ptxt>Refer to TERMINALS OF ECM (See page <xref label="Seep10" href="RM000001W1U007X"/>).</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>IDENTIFICATION OF PROBLEM</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

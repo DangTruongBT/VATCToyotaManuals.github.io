@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001M2X004X" category="C" type-id="3007N" name-id="AC22C-02" from="200601">
+<dtccode>B1411/11</dtccode>
+<dtcname>Room Temperature Sensor Circuit</dtcname>
+<subpara id="RM000001M2X004X_01" type-id="60" category="03" proc-id="RM0250U___00004FO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This sensor detects the cabin temperature that is used as the basis for temperature control and sends a signal to the A/C amplifier.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B1411/11</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Room temperature sensor circuit (Open or short)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>A/C room temperature sensor</ptxt>
+</item>
+<item>
+<ptxt>Harness or connector between A/C room temperature sensor and A/C amplifier</ptxt>
+</item>
+<item>
+<ptxt>A/C amplifier</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001M2X004X_02" type-id="32" category="03" proc-id="RM0250U___00004FP00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="I008282E06" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001M2X004X_04" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001M2X004X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001M2X004X_03_0001" proc-id="RM0250U___00004FQ00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>DATA LIST / AIR CONDITIONER:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ROOM TEMP</ptxt>
+<ptxt>(Room temperature sensor)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Room temperature sensor / min.: -6.5°C (20.3°F), max.: 57.25°C (135.05°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual cabin temperature is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The display is as specified in the normal condition column.</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>OK (When troubleshooting according to the PROBLEM SYMPTOMS TABLE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>OK (When troubleshooting according to the DTC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001M2X004X_03_0002" fin="false">A</down>
+<right ref="RM000001M2X004X_03_0005" fin="true">B</right>
+<right ref="RM000001M2X004X_03_0006" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0002" proc-id="RM0250U___00004FR00000">
+<testtitle>INSPECT AIR CONDITIONING AMPLIFIER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the A/C amplifier with the connectors still connected.</ptxt>
+<figure>
+<graphic graphicname="E124471E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-29 (TR) - E38-34 (SG-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) at 25°C (77°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.35 to 1.75 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-29 (TR) - E38-34 (SG-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) at 40°C (104°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.9 to 1.2 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>As the temperature increases, the voltage decreases.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>OK (When troubleshooting according to the PROBLEM SYMPTOMS TABLE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>OK (When troubleshooting according to the DTC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001M2X004X_03_0003" fin="false">A</down>
+<right ref="RM000001M2X004X_03_0005" fin="true">B</right>
+<right ref="RM000001M2X004X_03_0006" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0003" proc-id="RM0250U___00004FS00000">
+<testtitle>INSPECT A/C ROOM TEMPERATURE SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the A/C room temperature sensor.</ptxt>
+<figure>
+<graphic graphicname="E110805E04" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10°C (50°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.00 to 3.73 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>15°C (59°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.45 to 2.88 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.95 to 2.30 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>25°C (77°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.60 to 1.80 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>30°C (86°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.28 to 1.47 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>35°C (95°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.00 to 1.22 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>40°C (104°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.80 to 1.00 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>45°C (113°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.65 to 0.85 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50°C (122°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.50 to 0.70 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>55°C (131°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.44 to 0.60 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E27-1 - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>60°C (140°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.36 to 0.50 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Hold the sensor only by its connector. Touching the sensor may change the resistance value.</ptxt>
+</item>
+<item>
+<ptxt>When measuring, the sensor temperature must be the same as the ambient temperature.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>As the temperature increases, the resistance decreases (see the graph).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001M2X004X_03_0004" fin="false">OK</down>
+<right ref="RM000001M2X004X_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0004" proc-id="RM0250U___00004FT00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/C ROOM TEMPERATURE SENSOR - AIR CONDITIONING AMPLIFIER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E124470E29" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the A/C room temperature sensor.</ptxt>
+<figure>
+<graphic graphicname="E124472E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-29 (TR) - E27-1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-34 (SG-1) - E27-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-29 (TR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-34 (SG-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001M2X004X_03_0006" fin="true">OK</down>
+<right ref="RM000001M2X004X_03_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0006">
+<testtitle>REPLACE AIR CONDITIONING AMPLIFIER</testtitle>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0007">
+<testtitle>REPLACE A/C ROOM TEMPERATURE SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000001M2X004X_03_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

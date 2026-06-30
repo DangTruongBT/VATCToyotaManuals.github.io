@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W88018X" category="C" type-id="302GG" name-id="AT129-01" from="200601">
+<dtccode>P0724</dtccode>
+<dtcname>Brake Switch "B" Circuit High</dtcname>
+<subpara id="RM000000W88018X_01" type-id="60" category="03" proc-id="RM0250U___000036R00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The purpose of this circuit is to prevent the engine from stalling while driving in lock-up condition when brakes are suddenly applied.</ptxt>
+<ptxt>When the brake pedal is depressed, this switch sends a signal to the TCM. Then the TCM cancels the operation of the lock-up clutch while braking is in progress.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="center" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0724</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The stop light switch remains ON even when the vehicle is driven in a STOP (less than 2 mph (3 km/h)) and GO (19 mph (30 km/h) or more) fashion 5 times. (2-trip detection logic).</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Short in stop light switch signal circuit</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W88018X_02" type-id="64" category="03" proc-id="RM0250U___000036S00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC indicates that the stop light switch remains ON. When the stop light switch remains ON during "stop and go" driving, the TCM interprets this as a fault in the stop light switch, illuminates the MIL, and stores the DTC. The vehicle must stop (less than 2 mph (3 km/h)) and go (19 mph (30 km/h) or more) five times for two consecutive driving cycles in order to set this DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W88018X_09" type-id="65" category="03" proc-id="RM0250U___000036X00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0724: Stop light switch/Range check/Rationality</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GO and STOP 5 times</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W88018X_10" type-id="66" category="03" proc-id="RM0250U___000036Y00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>The stop light switch remains ON during GO and STOP 10 times.</title>
+<ptxt>GO and STOP are defined as follows;</ptxt>
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="3.04in"/>
+<colspec colname="COL2" align="left" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GO: (Vehicle speed is 18.63 mph (30 km/h) or more)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>18.7 mph (30 km/h) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STOP: (Vehicle speed is less than 1.86 mph (3 km/h))</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 1.86 mph (3 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W88018X_11" type-id="67" category="03" proc-id="RM0250U___000036Z00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Switch status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON stuck</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W88018X_06" type-id="32" category="03" proc-id="RM0250U___000036T00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133263E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W88018X_07" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000W88018X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W88018X_08_0001" proc-id="RM0250U___000036U00000">
+<testtitle>READ VALUE OF DATA LIST (STP SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>According to the DATA LIST displayed on the intelligent tester, you can read the value of switches, sensors, actuators and other items without removing any parts. Reading the DATA LIST as the first step in troubleshooting is one method to save labor time.</ptxt>
+</atten4>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn on the tester.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DATA LIST".</ptxt>
+</test1>
+<test1>
+<ptxt>According to the display on the tester, read "DATA LIST".</ptxt>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.47in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<colspec colname="COL3" colwidth="3.07in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/</ptxt>
+<ptxt>Range (display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STOP LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Brake pedal is depressed: ON</ptxt>
+</item>
+<item>
+<ptxt>Brake pedal is released: OFF</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>In the table above, the conditions listed under "Normal Condition" are reference conditions. Do not depend solely on these reference conditions when deciding whether a part is faulty.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W88018X_08_0003" fin="false">NG</down>
+<right ref="RM000000W88018X_08_0004" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W88018X_08_0003" proc-id="RM0250U___000036V00000">
+<testtitle>INSPECT STOP LIGHT SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the stop light switch assembly.</ptxt>
+<figure>
+<graphic graphicname="I013683E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Switch pin free</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch pin pushed in</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch pin free</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch pin pushed in</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W88018X_08_0004" fin="false">OK</down>
+<right ref="RM000000W88018X_08_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W88018X_08_0004" proc-id="RM0250U___000036W00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STOP LIGHT SWITCH ASSEMBLY - TCM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Install the stop light switch assembly.</ptxt>
+<figure>
+<graphic graphicname="C133210E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the TCM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below when the brake pedal is depressed and released.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal is depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C56-12 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal is released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C56-12 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W88018X_08_0005" fin="true">OK</down>
+<right ref="RM000000W88018X_08_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W88018X_08_0005">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000W88018X_08_0007">
+<testtitle>REPLACE STOP LIGHT SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000W88018X_08_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

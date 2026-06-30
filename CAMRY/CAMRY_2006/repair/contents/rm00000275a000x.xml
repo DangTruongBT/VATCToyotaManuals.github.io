@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001B_S001C" variety="S001C">
+<name>WIPER AND WASHER</name>
+<ttl id="1001B_S001C_72WDN_T0064" variety="T0064">
+<name>WIPER SWITCH</name>
+<para id="RM00000275A000X" category="G" type-id="3001K" name-id="WW0O2-01" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM00000275A000X_01" type-id="01" category="01">
+<s-1 id="RM00000275A000X_01_0001" proc-id="RM0250U___000071G00000">
+<ptxt>INSPECT WINDSHIELD WIPER SWITCH ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the continuity of the windshield wiper switch assembly.</ptxt>
+<figure>
+<graphic graphicname="E069286E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>Front Wiper Switch</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Resistance</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MIST</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E20-2 (+B) - E20-3 (+1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E20-1 (+S) - E20-3 (+1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E20-1 (+S) - E20-3 (+1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E20-2 (+B) - E20-3 (+1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HI</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E20-2 (+B) - E20-4 (+2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>Front Washer Switch</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Resistance</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E19-3 (WF) - E19-2 (EW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E19-3 (WF) - E19-2 (EW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+</s2>
+<s2>
+<ptxt>Intermittent Operation Check</ptxt>
+<s3>
+<ptxt>Connect the voltmeter (+) terminal to terminal E20-3 (+1) of the connector and the voltmeter (-) terminal to terminal E19-2 (EW).</ptxt>
+</s3>
+<s3>
+<ptxt>Connect a positive (+) battery lead to terminal E20-2 (+B) of the connector and a negative (-) battery lead to terminals E19-2 (EW) and E20-1 (+S).</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the wiper switch to the INT position.</ptxt>
+</s3>
+<s3>
+<ptxt>Connect a positive (+) battery lead to terminal E20-1 (+S) of the connector for 5 seconds.</ptxt>
+</s3>
+<s3>
+<ptxt>Connect a negative (-) battery lead to terminal E20-4 (+2) of the connector. Operate the intermittent wiper adjustment ring and measure the voltage between terminals E20-3 (+1) and E19-2 (EW).</ptxt>
+<figure>
+<graphic graphicname="E056399E31" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

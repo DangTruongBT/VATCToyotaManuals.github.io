@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM00000221B001X" category="C" type-id="302OP" name-id="ES41V-01" from="200601">
+<dtccode>P0171</dtccode>
+<dtcname>System Too Lean (Bank 1)</dtcname>
+<dtccode>P0172</dtccode>
+<dtcname>System Too Rich (Bank 1)</dtcname>
+<dtccode>P0174</dtccode>
+<dtcname>System Too Lean (Bank 2)</dtcname>
+<dtccode>P0175</dtccode>
+<dtcname>System Too Rich (Bank 2)</dtcname>
+<subpara id="RM00000221B001X_01" type-id="60" category="03" proc-id="RM0250U___00006BF00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The fuel trim is related to the feedback compensation value, not to the basic injection time. The fuel trim consists of both the short-term and long-term fuel trims.</ptxt>
+<ptxt>The short-term fuel trim is fuel compensation that is used to constantly maintain the air-fuel ratio at stoichiometric levels. The signal from the Air-Fuel Ratio (A/F) sensor indicates whether the air-fuel ratio is rich or lean compared to the stoichiometric ratio. This triggers a reduction in the fuel injection volume if the air-fuel ratio is rich and an increase in the fuel injection volume if it is lean.</ptxt>
+<ptxt>Factors such as individual engine differences, wear over time and changes in operating environment cause short-term fuel trim to vary from the central value. The long-term fuel trim, which controls overall fuel compensation, compensates for long-term deviations in the fuel trim from the central value caused by the short-term fuel trim compensation.</ptxt>
+<ptxt>If both the short-term and long-term fuel trims are lean or rich beyond predetermined values, it is interpreted as a malfunction, and the ECM illuminates the MIL and sets a DTC.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Conditions</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Areas</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0171</ptxt>
+<ptxt>P0174</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With warm engine and stable air-fuel ratio feedback, fuel trim considerably in error to lean side (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Air induction system</ptxt>
+</item>
+<item>
+<ptxt>Injector blockage</ptxt>
+</item>
+<item>
+<ptxt>Mass Air Flow (MAF) meter</ptxt>
+</item>
+<item>
+<ptxt>Engine Coolant Temperature (ECT) sensor</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+</item>
+<item>
+<ptxt>Open or short in A/F sensor (bank 1, 2 sensor 1) circuit</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor (bank 1, 2 sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater (bank 1, 2 sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater relay</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater and A/F sensor heater relay circuits</ptxt>
+</item>
+<item>
+<ptxt>PCV valve and hose</ptxt>
+</item>
+<item>
+<ptxt>PCV hose connections</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0172</ptxt>
+<ptxt>P0175</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With warm engine and stable air-fuel ratio feedback, fuel trim considerably in error to rich side (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Injector leakage or blockage</ptxt>
+</item>
+<item>
+<ptxt>MAF meter</ptxt>
+</item>
+<item>
+<ptxt>ECT sensor</ptxt>
+</item>
+<item>
+<ptxt>Ignition system</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+</item>
+<item>
+<ptxt>Open or short in A/F sensor (bank 1, 2 sensor 1) circuit</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor (bank 1, 2 sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater (bank 1, 2 sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater relay</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater and A/F sensor heater relay circuits</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When DTC P0171 or P0174 is set, the actual air-fuel ratio is on the lean side. When DTC P0172 or P0175 is set, the actual air-fuel ratio is on the rich side.</ptxt>
+</item>
+<item>
+<ptxt>If the vehicle runs out of fuel, the air-fuel ratio is lean and DTC P0171 or P0174 may be set. The MIL is then illuminated.</ptxt>
+</item>
+<item>
+<ptxt>When the total of the short-term and long-term fuel trim values is within the malfunction threshold (and the engine coolant temperature is more than 75°C [167°F]), the system is functioning normally.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_02" type-id="64" category="03" proc-id="RM0250U___00006BG00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Under closed-loop fuel control, fuel injection volumes that deviate from those estimated by the ECM cause changes in the long-term fuel trim compensation value. The long-term fuel trim is adjusted when there are persistent deviations in the short-term fuel trim values. Deviations from the ECM's estimated fuel injection volumes also affect the average fuel trim learning value, which is a combination of the average short-term fuel trim (fuel feedback compensation value) and the average long-term fuel trim (learning value of the air-fuel ratio). If the average fuel trim learning value exceeds the malfunction thresholds, the ECM interprets this as a fault in the fuel system and sets a DTC.</ptxt>
+<list1 type="nonmark">
+<title>Example:</title>
+<item>
+<ptxt>The average fuel trim learning value is more than +35% or less than -35%, the ECM interprets this as a fuel system malfunction.</ptxt>
+<figure>
+<graphic graphicname="A082386E30" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_03" type-id="65" category="03" proc-id="RM0250U___00006BH00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0171: Fuel trim Lean (Bank 1)</ptxt>
+<ptxt>P0172: Fuel trim Rich (Bank 1)</ptxt>
+<ptxt>P0174: Fuel trim Lean (Bank 2)</ptxt>
+<ptxt>P0175: Fuel trim Rich (Bank 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors / Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors / Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor, Mass air flow meter, Crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 10 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_04" type-id="66" category="03" proc-id="RM0250U___00006BI00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Fuel-trim:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever these DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0010, P0020 (VVT VSV1, 2), P0011, P0012 (VVT System-Advance, Retard), P0021, P0022(VVT System2-Adavance, Retard), P0031, P0031, P0032, P0051, P0052 (A/F Sensor heater Sensor 1), P0100, P0101, P0102, P0103 (MAF Sensor), P0115, P0116, P0117, P0118 (ECT Sensor), P0120, P0121, P0122, P0123, P0220,  P0222, P0223 , P2135 (TP Sensor), P0125 (Insufficient ECT for Closed Loop), P0335 (CKP Sensor), P0340, P0342, P0343, P0345 (VVT Sensor 1, 2), P0351, P0352, P0353, P0354, P0356 (Ignitor), P0500 (VSS), </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel system status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Closed-loop</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of following conditions is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition 1 or 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 1,100 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Intake air amount per revolution</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.22 g/rev or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_05" type-id="67" category="03" proc-id="RM0250U___00006BJ00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Fuel trim:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>EVAP purge-cut</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Executing</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of following conditions met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition 1 or 2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Average between short-term fuel trim and long-term fuel trim</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>35% or more at 80°C (176°F) of ECT</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Average between short-term fuel trim and long-term fuel trim</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-35% or less at 80°C (176°F) of ECT</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_06" type-id="32" category="03" proc-id="RM0250U___00006BK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P2195 (See page <xref label="Seep01" href="RM000000WC401AX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_07" type-id="51" category="05" proc-id="RM0250U___00006BL00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>For use of the intelligent tester only:</ptxt>
+<ptxt>Malfunctioning areas can be identified by performing the A/F CONTROL function provided in the ACTIVE TEST. The A/F CONTROL function can help to determine whether the Air-Fuel Ratio (A/F) sensor, Heated Oxygen (HO2) sensor and other potential trouble areas are malfunctioning.</ptxt>
+<ptxt>The following instructions describe how to conduct the A/F CONTROL operation using the intelligent tester.</ptxt>
+</atten4>
+<list1 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Start the engine and turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Warm up the engine at an engine speed of 2,500 rpm for approximately 90 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Select the following menu items on the tester: DIAGNOSIS / ENHANCEDOBD II / ACTIVE TEST / A/F CONTROL.</ptxt>
+</item>
+<item>
+<ptxt>Perform the A/F CONTROL operation with the engine in an idling condition (press the RIGHT or LEFT button to change the fuel injection volume).</ptxt>
+</item>
+<item>
+<ptxt>Monitor the voltage outputs of the A/F and HO2 sensors (AFS B1S1 and O2S B1S2 or AFS B2S1 and O2S B2S2) displayed on the tester.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The A/F CONTROL operation lowers the fuel injection volume by 12.5% or increases the injection volume by 25%.</ptxt>
+</item>
+<item>
+<ptxt>Each sensor reacts in accordance with increases and decreases in the fuel injection volume.</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display (Sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volumes</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltages</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AFS B1S1 or AFS B2S1 (A/F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+25%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 3.0</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AFS B1S1 or AFS B2S1 (A/F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>More than 3.35</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2S B1S2 or O2S B2S2 (HO2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+25%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>More than 0.55</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2S B1S2 or O2S B2S2 (HO2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 0.4</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>The Air-Fuel Ratio (A/F) sensor has an output delay of a few seconds and the Heated Oxygen (HO2) sensor has a maximum output delay of approximately 20 seconds.</ptxt>
+</atten3>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" align="center" colwidth="0.55in"/>
+<colspec colname="COLSPEC0" colwidth="1.13in"/>
+<colspec colname="COL2" align="center" colwidth="1.47in"/>
+<colspec colname="COLSPEC1" colwidth="1.14in"/>
+<colspec colname="COL3" align="center" colwidth="1.48in"/>
+<colspec colname="COL4" align="center" colwidth="1.31in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Case</ptxt>
+</entry>
+<entry namest="COLSPEC0" nameend="COL2" valign="middle" align="center">
+<ptxt>A/F Sensor (Sensor 1)</ptxt>
+<ptxt>Output Voltage</ptxt>
+</entry>
+<entry namest="COLSPEC1" nameend="COL3" valign="middle" align="center">
+<ptxt>HO2 Sensor (Sensor 2)</ptxt>
+<ptxt>Output Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main Suspected Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 3.35 V</ptxt>
+<ptxt>Less than 3.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A107708" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 0.55 V</ptxt>
+<ptxt>Less than 0.4 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103186" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>A/F sensor</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 0.55 V</ptxt>
+<ptxt>Less than 0.4 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103186" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>HO2 sensor</ptxt>
+</item>
+<item>
+<ptxt>HO2 sensor heater</ptxt>
+</item>
+<item>
+<ptxt>HO2 sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 3.35 V</ptxt>
+<ptxt>Less than 3.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A107708" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25%</ptxt>
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Injector</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+<ptxt>(Air-fuel ratio extremely lean or rich)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Following the A/F CONTROL procedure enables technicians to check and graph the voltage outputs of both the A/F and HO2 sensors.</ptxt>
+</item>
+<item>
+<ptxt>To display the graph, select the following menu items on the tester: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / A/F CONTROL / USER DATA / AFS B1S1 and O2S B1S2 or AFS B2S1 and O2S B2S2. Press the YES button and then the ENTER button. Then press the F4 button.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction.</ptxt>
+</item>
+<item>
+<ptxt>A low A/F sensor voltage could be caused by a rich air-fuel mixture. Check for conditions that would cause the engine to run rich.</ptxt>
+</item>
+<item>
+<ptxt>A high A/F sensor voltage could be caused by a lean air-fuel mixture. Check for conditions that would cause the engine to run lean.</ptxt>
+</item>
+</list1>
+</atten4>
+</item>
+</list2>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM00000221B001X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000221B001X_08_0001" proc-id="RM0250U___00006BM00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0171, P0172, P0174 OR P0175)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>P0171, P0172, P0174 or P0175</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>P0171, P0172, P0174 or P0175 and other DTCs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0171, P0172, P0174 or P0175 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0002" fin="false">A</down>
+<right ref="RM00000221B001X_08_0018" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0002" proc-id="RM0250U___00006BN00000">
+<testtitle>CHECK PCV HOSE CONNECTIONS</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>PCV hose is connected correctly and is not damaged.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0003" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0019" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0003" proc-id="RM0250U___00006BO00000">
+<testtitle>CHECK AIR INDUCTION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the air induction system for vacuum leakage.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No leakage from the air induction system.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0004" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0004" proc-id="RM0250U___00006BP00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (A/F CONTROL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Warm up the engine at an engine speed of 2,500 rpm for approximately 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items on the tester: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / A/F CONTROL.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform the A/F CONTROL operation with the engine in an idling condition (press the RIGHT or LEFT button to change the fuel injection volume).</ptxt>
+</test1>
+<test1>
+<ptxt>Monitor the voltage outputs of the A/F and HO2 sensors (AFS B1S1 and O2S B1S2 or AFS B2S1 and O2S B2S2) displayed on the tester.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The A/F CONTROL operation lowers the fuel injection volume by 12.5% or increases the injection volume by 25%.</ptxt>
+</item>
+<item>
+<ptxt>Each sensor reacts in accordance with increases and decreases in the fuel injection volume.</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display (Sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volumes</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltages</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AFS B1S1 or AFS B2S1 (A/F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+25%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 3.0</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AFS B1S1 or AFS B2S1 (A/F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>More than 3.35</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2S B1S2 or O2S B2S2 (HO2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>+25%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>More than 0.55</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2S B1S2 or O2S B2S2 (HO2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-12.5%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 0.4</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="0.99in"/>
+<colspec colname="COL2" colwidth="0.99in"/>
+<colspec colname="COL3" colwidth="1.56in"/>
+<colspec colname="COL4" colwidth="0.99in"/>
+<colspec colname="COL5" colwidth="1.63in"/>
+<colspec colname="COL6" colwidth="0.92in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Status AFS B1S1 or AFS B2S1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Status O2S B1S2 or O2S B2S2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/F Condition and A/F Sensor Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Misfires</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Suspected Trouble Areas</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Lean/Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean/Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual air-fuel ratio lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>May occur</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>PCV valve and hose</ptxt>
+</item>
+<item>
+<ptxt>PCV hose connections</ptxt>
+</item>
+<item>
+<ptxt>Injector blockage</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+</item>
+<item>
+<ptxt>Air induction system</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Mass Air Flow (MAF) meter</ptxt>
+</item>
+<item>
+<ptxt>Engine Coolant Temperature (ECT) sensor</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual air-fuel ratio rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Injector leakage or blockage</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+</item>
+<item>
+<ptxt>Ignition system</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>MAF meter</ptxt>
+</item>
+<item>
+<ptxt>ECT sensor</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Lean</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean/Rich</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Rich</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lean/Rich</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>Lean: During A/F CONTROL, the A/F sensor output voltage (AFS) is consistently more than 3.35 V, and the HO2 sensor output voltage (O2S) is consistently less than 0.4 V.</ptxt>
+<ptxt>Rich: During A/F CONTROL, the AFS is consistently less than 3.0 V, and the O2S is consistently more than 0.55 V.</ptxt>
+<ptxt>Lean/Rich: During A/F CONTROL of the ACTIVE TEST, the output voltage of the heated oxygen sensor alternates correctly.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0005" fin="false">A</down>
+<right ref="RM00000221B001X_08_0011" fin="false">B</right>
+<right ref="RM00000221B001X_08_0015" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0005" proc-id="RM0250U___00006BQ00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (COOLANT TEMP)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / COOLANT TEMP.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the COOLANT TEMP twice, when the engine is both cold and warmed up.</ptxt>
+<spec>
+<title>Standard</title>
+<subtitle>With cold engine</subtitle>
+<specitem>
+<ptxt>Same as ambient air temperature.</ptxt>
+</specitem>
+<subtitle>With warm engine</subtitle>
+<specitem>
+<ptxt>Between 75°C and 95°C (167°F and 203°F)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0006" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0006" proc-id="RM0250U___00006BR00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (MAF)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / MAF and COOLANT TEMP.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle until the COOLANT TEMP reaches 75°C (167°F) or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the MAF with the engine in an idling condition and at an engine speed of 2,500 rpm.</ptxt>
+<spec>
+<title>Standard</title>
+<subtitle>MAF while engine is idling</subtitle>
+<specitem>
+<ptxt>Between 3.2 g/s and 4.7 g/s (shift position: N, A/C: OFF).</ptxt>
+</specitem>
+<subtitle>MAF at engine speed of 2,500 rpm</subtitle>
+<specitem>
+<ptxt>Between 13.1 g/s and 18.9 g/s (shift position: N, A/C: OFF).</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0007" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0007" proc-id="RM0250U___00006BS00000">
+<testtitle>CHECK FUEL PRESSURE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the fuel pressure (See page <xref label="Seep01" href="RM000001IQZ001X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0008" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0008" proc-id="RM0250U___00006BT00000">
+<testtitle>CHECK FOR EXHAUST GAS LEAKS</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No gas leakage.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0009" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0009" proc-id="RM0250U___00006BU00000">
+<testtitle>CHECK FOR SPARKS AND IGNITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for sparks and ignition (See page <xref label="Seep01" href="RM000001IQS001X"/>).</ptxt>
+<atten4>
+<ptxt>If the spark plugs or ignition system malfunctions, engine misfire may occur. The misfire count can be read using the intelligent tester. Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / CYL #1 (to CYL #6).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0010" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0010" proc-id="RM0250U___00006BV00000">
+<testtitle>INSPECT FUEL INJECTOR ASSEMBLY (INJECTION AND VOLUME)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the fuel injector assembly (See page <xref label="Seep01" href="RM000001IR1001X"/>).</ptxt>
+<atten4>
+<ptxt>If the injectors malfunction, engine misfire may occur. The misfire count can be read using the intelligent tester. Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / CYL #1 (to CYL #6).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0011" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0011" proc-id="RM0250U___00006BW00000">
+<testtitle>INSPECT AIR FUEL RATIO SENSOR (HEATER RESISTANCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C15 or C35 A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A126269E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the A/F sensor connector.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>Bank 1</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA1A (1) - +B (2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.8 to 3.4 Ω at 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA1A (1) - A1A- (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>Bank 2</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA2A (1) - +B (2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.8 to 3.4 Ω at 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HT2A (1) - A2A- (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the A/F sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0012" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0012" proc-id="RM0250U___00006BX00000">
+<testtitle>INSPECT ENGINE ROOM JUNCTION BLOCK (A/F SENSOR HEATER RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A140654E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the A/F relay resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1G-1 - 1A-4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1G-1 - 1A-4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(when battery voltage applied to terminals 1E-6 and 1E-10)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0013" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0027" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0013" proc-id="RM0250U___00006BY00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/F SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C15 or C35 A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A127715E14" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the +B terminal of the A/F sensor connector and body ground.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+B (C15-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+B (C35-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA1A (C15-1) - HA1A (C55-86)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1A+ (C15-3) - A1A+ (C55-93)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1A- (C15-4) - A1A- (C55-116)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA2A (C35-1) - HA2A (C55-109)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2A+ (C35-3) - A2A+ (C55-120)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2A- (C35-4) - A2A- (C55-119)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.73in"/>
+<colspec colname="COL2" colwidth="1.40in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connections</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA1A (C15-1) or HA1A (C55-86) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1A+ (C15-3) or A1A+ (C55-93) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A1A- (C15-4) or A1A- (C55-116) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HA2A (C35-1) or HA2A (C55-109) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2A+ (C35-3) or A2A+ (C55-120) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A2A- (C35-4) or A2A- (C55-119) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A133850E04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0014" fin="false">OK</down>
+<right ref="RM00000221B001X_08_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0014" proc-id="RM0250U___0000CI300000">
+<testtitle>REPLACE AIR FUEL RATIO SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the air fuel ratio sensor (See page <xref label="Seep01" href="RM000001OOL001X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0015" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0015" proc-id="RM0250U___00006BZ00000">
+<testtitle>PERFORM CONFIRMATION DRIVING PATTERN</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3 (Procedure A).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester on (Procedure B).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01HX"/>) (Procedure C).</ptxt>
+</test1>
+<test1>
+<ptxt>Select the check mode using the tester (See page <xref label="Seep02" href="RM000000PDL01LX"/>) (Procedure D).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up with all the accessories switched off (Procedure E).</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at between 38 mph and 75 mph (60 km/h and 120 km/h) and at an engine speed of between 1,400 rpm and 3,200 rpm for 3 to 5 minutes (Procedure F).</ptxt>
+<figure>
+<graphic graphicname="A079199E68" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>If the system is still malfunctioning, the MIL will be illuminated during procedure "F".</ptxt>
+</atten4>
+<atten3>
+<ptxt>If the conditions in this test are not strictly followed, no malfunction will be detected.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0016" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0016" proc-id="RM0250U___00006C000000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (DTC P0171, P0172, P0174 OR P0175)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>P0171, P0172, P0174 or P0175</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000221B001X_08_0017" fin="true">A</down>
+<right ref="RM00000221B001X_08_0005" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0017">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0018">
+<testtitle>GO TO DTC CHART<xref label="Seep01" href="RM000002203002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0019">
+<testtitle>REPAIR OR REPLACE PCV HOSE</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0020">
+<testtitle>REPAIR OR REPLACE AIR INDUCTION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0021">
+<testtitle>REPLACE ENGINE COOLANT TEMPERATURE SENSOR<xref label="Seep01" href="RM0000027V1000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0022">
+<testtitle>REPLACE MASS AIR FLOW METER<xref label="Seep01" href="RM0000027UV000X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0023">
+<testtitle>REPAIR OR REPLACE FUEL SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0024">
+<testtitle>REPAIR OR REPLACE EXHAUST SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0029">
+<testtitle>REPAIR OR REPLACE IGNITION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0025">
+<testtitle>REPLACE FUEL INJECTOR ASSEMBLY<xref label="Seep01" href="RM000001IR3001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0026">
+<testtitle>REPLACE AIR FUEL RATIO SENSOR<xref label="Seep01" href="RM000001OOL001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0027">
+<testtitle>REPLACE ENGINE ROOM JUNCTION BLOCK</testtitle>
+</testgrp>
+<testgrp id="RM00000221B001X_08_0028">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

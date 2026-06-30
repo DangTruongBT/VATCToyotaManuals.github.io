@@ -1,0 +1,49 @@
+<!-- $Id: global.html,v 1.6 2005/01/13 06:28:44 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 logo(attribute)                                                 -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Index Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+}
+
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 004 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="right"><br/></td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px"><br/></td>
+		<td class="boundary-top">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

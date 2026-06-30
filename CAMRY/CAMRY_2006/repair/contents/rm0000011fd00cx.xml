@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM0000011FD00CX" category="J" type-id="304TO" name-id="NS07J-16" from="200601">
+<dtccode/>
+<dtcname>Cellular Phone Registration Failure, Phone Directory Transfer Failure</dtcname>
+<subpara id="RM0000011FD00CX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011FD00CX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011FD00CX_02_0001" proc-id="RM0250U___0000AN800000">
+<testtitle>CHECK CURRENT CONDITIONS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Proceed to the next step according to the table below.</ptxt>
+<spec>
+<title>RESULT</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Another "Bluetooth" compatible cellular phone is present.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Another "Bluetooth" compatible vehicle is present.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>None of the above</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011FD00CX_02_0002" fin="false">A</down>
+<right ref="RM0000011FD00CX_02_0004" fin="false">B</right>
+<right ref="RM0000011FD00CX_02_0006" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0002" proc-id="RM0250U___0000AN900000">
+<testtitle>CHECK USING ANOTHER CELLULAR PHONE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the system functions using another "Bluetooth" compatible cellular phone.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Confirm that either the same or a different version of another "Bluetooth" compatible cellular phone complies with the system.</ptxt>
+</item>
+<item>
+<ptxt>Depending on the version, some "Bluetooth" compatible cellular phones cannot be used.</ptxt>
+</item>
+</list1>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The system functions.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011FD00CX_02_0003" fin="true">OK</down>
+<right ref="RM0000011FD00CX_02_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0003">
+<testtitle>USE A "BLUETOOTH" COMPATIBLE CELLULAR PHONE</testtitle>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0004" proc-id="RM0250U___0000ANA00000">
+<testtitle>CHECK USING ANOTHER "BLUETOOTH" COMPATIBLE VEHICLE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Register the cellular phone with another vehicle and check if the system functions normally.</ptxt>
+<atten4>
+<ptxt>Depending on the version, some "Bluetooth" compatible cellular phones cannot be used.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The system functions.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011FD00CX_02_0005" fin="true">NG</down>
+<right ref="RM0000011FD00CX_02_0008" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0005">
+<testtitle>USE A "BLUETOOTH" COMPATIBLE CELLULAR PHONE</testtitle>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0006" proc-id="RM0250U___0000ANB00000">
+<testtitle>CHECK CELLULAR PHONE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the cellular phone is "Bluetooth" compatible.</ptxt>
+<atten4>
+<ptxt>Some versions of "Bluetooth" compatible cellular phones may not function.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The phone is Bluetooth compatible.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011FD00CX_02_0007" fin="false">OK</down>
+<right ref="RM0000011FD00CX_02_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0007" proc-id="RM0250U___0000ANC00000">
+<testtitle>CHECK CELLULAR PHONE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if a call can be made from the cellular phone.</ptxt>
+<atten4>
+<ptxt>When the battery is low, registration or directory transfer cannot be done.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>A call can be made from the cellular phone.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011FD00CX_02_0008" fin="true">OK</down>
+<right ref="RM0000011FD00CX_02_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0008">
+<testtitle>REPLACE RADIO RECEIVER</testtitle>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0009">
+<testtitle>USE A "BLUETOOTH" COMPATIBLE CELLULAR PHONE</testtitle>
+</testgrp>
+<testgrp id="RM0000011FD00CX_02_0010">
+<testtitle>REPAIR OR REPLACE CELLULAR PHONE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

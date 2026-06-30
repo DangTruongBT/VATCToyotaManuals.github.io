@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM0000011V100CX" category="U" type-id="303FJ" name-id="WS03R-08" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM0000011V100CX_z0" proc-id="RM0250U___000057E00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>USING INTELLIGENT TESTER</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Monitor the ECU data by following the prompts on the tester screen.</ptxt>
+<atten4>
+<ptxt>The intelligent tester has a "Snapshot" function which records the monitored data. Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the DATA LIST displayed on the intelligent tester, the value of the switches, sensors, actuators, etc. can be read without part removal. Reading the DATA LIST as the first step in troubleshooting is one way to shorten the labor time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>D DOOR MOTOR:</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>D P/W AUTO SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver door power window auto switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver door power window auto switch operates</ptxt>
+<ptxt>OFF: Driver door power window auto switch does not operate</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P P/W AUTO SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front passenger door remote power window auto switch signal/ ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Front passenger door remote power window auto switch operates</ptxt>
+<ptxt>OFF: Front passenger door remote power window auto switch does not operate</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D P/W DOWN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver door power window manual down switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver door power window manual down switch operate</ptxt>
+<ptxt>OFF: Driver door power window manual down switch does not operate</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Body:</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Communication Master SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Master switch communication signal OK/STOP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Communication is normal</ptxt>
+<ptxt>STOP: Communication is stop</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition Switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Power source mode is (IG)</ptxt>
+<ptxt>OFF: Power source mode is off or on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D Door Courtesy SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door courtesy switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is open</ptxt>
+<ptxt>OFF: Driver side door is closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P Door Courtesy SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side door courtesy switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Front passenger side door is open</ptxt>
+<ptxt>OFF: Front passenger side door is closed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows you to operate the relay, VSV, actuator, etc. without parts removal. Performing the ACTIVE TEST as the first step in troubleshooting is one way to shorten the labor time. It is possible to display the DATA LIST during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>D DOOR MOTOR:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>POWER WINDOW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates power window UP/DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Body:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IG OFF P/W Control Permission Output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operates power window ON/OFF (After ignition OFF)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

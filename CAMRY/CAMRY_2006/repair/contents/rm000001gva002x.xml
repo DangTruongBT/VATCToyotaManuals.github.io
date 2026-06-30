@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GVA002X" category="U" type-id="303FJ" name-id="EI077-03" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000001GVA002X_z0" proc-id="RM0250U___00008F200000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the DATA LIST displayed on the intelligent tester, the values of the switches, sensors, actuators, etc. can be checked without part removal. Reading the DATA LIST as the first step in troubleshooting is one way to shorten labor time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>IMMOBILISER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>KEY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock warning switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Key is in ignition key cylinder</ptxt>
+<ptxt>OFF: No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Ignition switch ON or START</ptxt>
+<ptxt>OFF: Ignition switch ACC or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IMMOBILISER</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Immobiliser system status/SET or UNSET</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>UNSET: Ignition switch ON</ptxt>
+<ptxt>SET: Without key</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PERMIT (START)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Permit (Start) signal/OK or NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: No permission for engine start</ptxt>
+<ptxt>OK: Engine start permission</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RESPONSE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transponder chip data/NG or OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: Data error</ptxt>
+<ptxt>OK: Data OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FRAME</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transponder chip data/NG or OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: Data error</ptxt>
+<ptxt>OK: Data OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SERIAL NUMBER</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transponder chip data/NG or OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: Data error</ptxt>
+<ptxt>OK: Data OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENCRYPT CODE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transponder chip data/NG or OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: Data error</ptxt>
+<ptxt>OK: Data OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STATUS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transponder chip data/NG or OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: Data error</ptxt>
+<ptxt>OK: Data OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BCC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Transponder chip data/NG or OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG: Incorrect data being sent</ptxt>
+<ptxt>OK: Correct data being sent</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SUB KEY</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Sub key code signal/NOMATCH or MATCH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NOMATCH: Non-matching sub key code is sent</ptxt>
+<ptxt>MATCH: Sub key code is sent</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MASTER KEY</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Master key code signal/NOMATCH or MATCH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NOMATCH: Non-matching master key code is sent</ptxt>
+<ptxt>MATCH: Master key code is sent</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REGIST SUB CODE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of registered sub key/min. 0, max. 15</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of registered sub key</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REGIST MAS CODE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of registered master key/min. 0, max. 15</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of registered master key</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REG CODE SPACE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Memory space for key codes registration/NOT FULL or FULL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NOT FULL: More key code registration possible</ptxt>
+<ptxt>FULL: No more key code registration possible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>+B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Power source/BRAKE or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BRAKE: Power source open</ptxt>
+<ptxt>NORMAL: Power source normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ANTENNA COIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Antenna coil condition/NORMAL or FAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NORMAL: Antenna coil is normal</ptxt>
+<ptxt>FAIL: Antenna coil is malfunctioning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester ACTIVE TEST allows a relay, VSV, actuator and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to shorten labor time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SECURITY INDIC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Turn security indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

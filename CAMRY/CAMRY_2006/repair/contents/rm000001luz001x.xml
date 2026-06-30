@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000001LUZ001X" category="C" type-id="304MY" name-id="ST0W3-03" from="200601">
+<dtccode>B2275</dtccode>
+<dtcname>STSW Monitor Malfunction</dtcname>
+<subpara id="RM000001LUZ001X_01" type-id="60" category="03" proc-id="RM0250U___0000B1200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when there is an open, short, or any other problem in the engine start request output circuit inside the main body ECU or in the external circuit.</ptxt>
+<atten4>
+<ptxt>When the main body ECU is replaced with a new one and the negative (-) battery terminal is connected, the power source mode becomes the IG-ON mode. When the battery is removed and reinstalled, the power source mode that was selected when the battery was removed is restored.</ptxt>
+<ptxt>After the main body ECU is replaced, perform the registration procedures for the engine immobiliser system (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2275</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ST output circuit (engine starting request signal circuit) inside main body ECU or other related circuit is malfunctioning</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001LUZ001X_02" type-id="32" category="03" proc-id="RM0250U___0000B1300000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137975E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001LUZ001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001LUZ001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001LUZ001X_04_0001" proc-id="RM0250U___0000B1400000">
+<testtitle>CHECK DTC OUTPUT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000000YEH00LX"/>).</ptxt>
+<atten4>
+<ptxt>After all DTCs are cleared, turn the engine switch on (IG) and depress the brake pedal. After 15 seconds have elapsed, check if the trouble occurs again.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check for DTCs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC is output.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUZ001X_04_0006" fin="true">OK</down>
+<right ref="RM000001LUZ001X_04_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0006">
+<testtitle>CHECK INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0003" proc-id="RM0250U___0000B1600000">
+<testtitle>CHECK WIRE HARNESS (MAIN BODY ECU - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E9 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B137996E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E9-4 (STSW) - A55-14 (STSW)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E9-4 (STSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUZ001X_04_0002" fin="false">OK</down>
+<right ref="RM000001LUZ001X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0002" proc-id="RM0250U___0000B1500000">
+<testtitle>INSPECT MAIN BODY ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the connectors.</ptxt>
+<figure>
+<graphic graphicname="B138004E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E9-4 (STSW) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake pedal depressed, Engine switch hold on (ST)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output voltage at terminal AM1 or AM2 is -2 V or more.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUZ001X_04_0004" fin="false">OK</down>
+<right ref="RM000001LUZ001X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0004" proc-id="RM0250U___0000B1700000">
+<testtitle>CHECK MAIN BODY ECU OPERATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>After replacing the main body ECU with a normally functioning ECU, check that the engine can start.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine can start normally.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUZ001X_04_0005" fin="true">OK</down>
+<right ref="RM000001LUZ001X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0005">
+<testtitle>END (MAIN BODY ECU DEFECTIVE)</testtitle>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0007">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001LUZ001X_04_0009">
+<testtitle>GO TO ENGINE CONTROL SYSTEM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

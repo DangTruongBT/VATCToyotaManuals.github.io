@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM00000100400BX" category="C" type-id="800WH" name-id="EI0EE-01" from="200601">
+<dtccode>B2791</dtccode>
+<dtcname>Communication Condition Failure between ECM</dtcname>
+<subpara id="RM00000100400BX_01" type-id="60" category="03" proc-id="RM0250U___00008E800000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the ID code box does not respond to a verification request signal from the ECM.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the engine switch is turned off immediately after an engine start, this DTC is also detected.</ptxt>
+</item>
+<item>
+<ptxt>If this DTC is detected simultaneously with DTC B2799, troubleshoot DTC B2799 first.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2791</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID code box does not respond to a verification request signal from ECM</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness</ptxt>
+</item>
+<item>
+<ptxt>ID code box</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000100400BX_02" type-id="32" category="03" proc-id="RM0250U___00008E900000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128335E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000100400BX_03" type-id="51" category="05" proc-id="RM0250U___00009VI00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the ID code box is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the ECM is replaced, register the ECU communication ID (See page <xref label="Seep02" href="RM000000QYF004X"/>).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the engine can be started even when DTC B2791 is output, the ID code box can be considered normal. Be sure to recheck for DTCs after clearing the DTCs (See page <xref label="Seep03" href="RM000000QYC00BX"/>).</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000100400BX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000100400BX_04_0001" proc-id="RM0250U___00008EA00000">
+<testtitle>CHECK DTC OUTPUT</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Delete the DTCs (See page <xref label="Seep01" href="RM000000QYC00BX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck for DTCs (See page <xref label="Seep02" href="RM000000QYC00BX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>B2791 and other DTC output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>No DTC output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000100400BX_04_0011" fin="true">A</down>
+<right ref="RM00000100400BX_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000100400BX_04_0006">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000100400BX_04_0011">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

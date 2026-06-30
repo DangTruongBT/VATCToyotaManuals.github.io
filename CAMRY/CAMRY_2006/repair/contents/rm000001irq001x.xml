@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10009_S000I" variety="S000I">
+<name>2GR-FE INTAKE</name>
+<ttl id="10009_S000I_7306T_T00EN" variety="T00EN">
+<name>VACUUM SWITCHING VALVE</name>
+<para id="RM000001IRQ001X" category="G" type-id="3001K" name-id="IT05D-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001IRQ001X_01" type-id="01" category="01">
+<s-1 id="RM000001IRQ001X_01_0001" proc-id="RM0250U___000094U00000">
+<ptxt>INSPECT VACUUM SWITCHING VALVE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the VSV resistance.</ptxt>
+<figure>
+<graphic graphicname="A085570E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>37 to 44 Ω at 20 °C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1 - Body ground</ptxt>
+<ptxt>2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the VSV.</ptxt>
+</s2>
+<s2>
+<ptxt>Check VSV operation.</ptxt>
+<s3>
+<ptxt>When vacuum is applied to the E port, check that air is sucked into the filter.</ptxt>
+<figure>
+<graphic graphicname="A128950E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<ptxt>If the result is not as specified, replace the VSV.</ptxt>
+</s3>
+<s3>
+<ptxt>Apply battery voltage across the terminals. When vacuum is applied to the F port, check that air is sucked into the E port.</ptxt>
+<figure>
+<graphic graphicname="A128951E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<ptxt>If the result is not as specified, replace the VSV.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

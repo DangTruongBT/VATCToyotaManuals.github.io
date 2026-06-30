@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7I024X" category="D" type-id="303HX" name-id="AT02S-33" from="200601">
+<name>DEFINITION OF TERMS</name>
+<subpara id="RM000000W7I024X_z0" proc-id="RM0250U___000063G00000">
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="5.31in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Term</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Definition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Description of what the ECM monitors and how it detects malfunctions (monitoring purpose and its details).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic code</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Typical enabling condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Preconditions that allow the ECM to detect malfunctions.</ptxt>
+<ptxt>With all preconditions satisfied, the ECM sets the DTC when the monitored value(s) exceeds the malfunction threshold(s).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The priority order that is applied to monitoring, if multiple sensors and components are used to detect the malfunction.</ptxt>
+<ptxt>While another sensor is being monitored, the next sensor or component will not be monitored until the previous monitoring has concluded.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensor/components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The sensors and components that are used by the ECM to detect malfunctions.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The number of times that the ECM checks for malfunctions per driving cycle.</ptxt>
+<ptxt>"Once per driving cycle" means that the ECM detects malfunction only one time during a single driving cycle.</ptxt>
+<ptxt>"Continuous" means that the ECM detects malfunction every time when enabling condition is met.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The minimum time that the ECM must sense a continuous deviation in the monitored value(s) before setting a DTC. This timing begins after the "typical enabling conditions" are met.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction thresholds</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Beyond this value, the ECM will conclude that there is a malfunction and set a DTC.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MIL illumination timing after a defect is detected.</ptxt>
+<ptxt>"Immediately" means that the ECM illuminates MIL the instant the ECM determines that there is a malfunction.</ptxt>
+<ptxt>"2 driving cycle" means that the ECM illuminates MIL if the same malfunction is detected again in the 2nd driving cycle.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Component operating range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal operation range of sensors and solenoids under normal driving conditions.</ptxt>
+<ptxt>Use these ranges as a reference.</ptxt>
+<ptxt>They cannot be used to judge if a sensor or solenoid is defective or not.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

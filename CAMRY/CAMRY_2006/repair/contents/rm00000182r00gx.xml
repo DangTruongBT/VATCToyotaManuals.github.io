@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM00000182R00GX" category="C" type-id="80123" name-id="NS0VV-01" from="200601">
+<dtccode>58-10</dtccode>
+<dtcname>Gyro Error</dtcname>
+<dtccode>80-10</dtccode>
+<dtcname>Gyro Error</dtcname>
+<subpara id="RM00000182R00GX_01" type-id="60" category="03" proc-id="RM0250U___000051V00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground short, power supply short, or open circuit in the gyro signal</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Gyro sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Radio and navigation assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>80-10</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground short, power supply short, or open circuit in the gyro signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000182R00GX_02" type-id="51" category="05" proc-id="RM0250U___000051W00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After the inspection is completed, clear the DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000182R00GX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000182R00GX_03_0001" proc-id="RM0250U___000051X00000">
+<testtitle>CHECK VEHICLE SENSOR (NAVIGATION CHECK MODE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the "Navigation Check" mode (Vehicle Sensors) (See page <xref label="Seep01" href="RM0000011BW00EX"/>).</ptxt>
+<figure>
+<graphic graphicname="E120088" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check the gyro voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>0.1 to 4.5 V</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182R00GX_03_0002" fin="false">OK</down>
+<right ref="RM00000182R00GX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182R00GX_03_0002" proc-id="RM0250U___000051Y00000">
+<testtitle>CLEAR DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM0000011BU00FX"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182R00GX_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182R00GX_03_0003" proc-id="RM0250U___000051Z00000">
+<testtitle>RECHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Recheck for DTCs and check if the same trouble occurs again.</ptxt>
+<atten4>
+<ptxt>If DTCs are detected frequently, replace the radio and navigation assembly.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182R00GX_03_0004" fin="true">OK</down>
+<right ref="RM00000182R00GX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182R00GX_03_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000182R00GX_03_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

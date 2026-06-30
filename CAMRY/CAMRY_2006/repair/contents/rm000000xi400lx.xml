@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XI400LX" category="U" type-id="303FI" name-id="ST0VQ-01" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM000000XI400LX_z0" proc-id="RM0250U___00009H300000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137946E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="B137970E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<table pgwide="1">
+<title>Communication table:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Transmitting ECU </ptxt>
+<ptxt>(Transmitter)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving ECU</ptxt>
+<ptxt>(Receiver)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Communication method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN/Local communication</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock/unlock signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN/Local communication</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starter signal</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift position signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine revolution speed signal</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch position signal</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Courtesy light switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer request signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry start key signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer request signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination light request signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver seat ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Memory call replay request signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light answer back signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="8" valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry morerows="8" valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Meter buzzer single-shot request signal</ptxt>
+</entry>
+<entry morerows="8" valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Meter buzzer intermittence request signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Meter buzzer continuation request signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door open display signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Keyloss warning signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Low key battery warning signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift position warning signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock abnormal warning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock unlock warning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU/Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift lock control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift position signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN/Local communication</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key ID matching request signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID required signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

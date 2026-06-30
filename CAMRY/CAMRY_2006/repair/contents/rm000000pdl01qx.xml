@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDL01QX" category="D" type-id="303F5" name-id="ES06F-51" from="200601">
+<name>CHECK MODE PROCEDURE</name>
+<subpara id="RM000000PDL01QX_z0" proc-id="RM0250U___000079600000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Intelligent tester only:</ptxt>
+<ptxt>Compared to normal mode, check mode is more sensitive to malfunctions. Therefore, check mode can detect the malfunctions that cannot be detected by normal mode.</ptxt>
+</atten4>
+<atten3>
+<ptxt>All the stored DTCs and freeze frame data are erased if: 1) the ECM is changed from normal mode to check mode or vice versa; or 2) the ignition switch is turned from ON position to ACC position or off while in check mode. Before changing modes, always check and make a note of any DTCs and freeze frame data.</ptxt>
+</atten3>
+<step1>
+<ptxt>CHECK MODE PROCEDURE (Using intelligent tester)</ptxt>
+<step2>
+<ptxt>Check and ensure the following conditions:</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Battery positive voltage 11 V or more.</ptxt>
+</step3>
+<step3>
+<ptxt>Throttle valve fully closed.</ptxt>
+</step3>
+<step3>
+<ptxt>Transmission in the P or N position.</ptxt>
+</step3>
+<step3>
+<ptxt>A/C switch OFF.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II/ CHECK MODE.</ptxt>
+</step2>
+<step2>
+<ptxt>Switch the ECM from normal mode to check mode.</ptxt>
+</step2>
+<step2>
+<ptxt>Make sure that the MIL flashes as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="A076900E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Start the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Make sure that the MIL turns off.</ptxt>
+</step2>
+<step2>
+<ptxt>Simulate the conditions of the malfunction described by the customer.</ptxt>
+</step2>
+<step2>
+<ptxt>Check for DTCs and freeze frame data using the tester.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

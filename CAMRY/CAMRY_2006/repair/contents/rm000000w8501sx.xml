@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W8501SX" category="C" type-id="302G8" name-id="AT127-01" from="200601">
+<dtccode>P0710</dtccode>
+<dtcname>Transmission Fluid Temperature Sensor "A" Circuit</dtcname>
+<dtccode>P0712</dtccode>
+<dtcname>Transmission Fluid Temperature Sensor "A" Circuit Low Input</dtcname>
+<dtccode>P0713</dtccode>
+<dtcname>Transmission Fluid Temperature Sensor "A" Circuit High Input</dtcname>
+<subpara id="RM000000W8501SX_01" type-id="60" category="03" proc-id="RM0250U___000035V00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ATF (Automatic Transmission Fluid) temperature sensor converts the fluid temperature into a resistance value for use by the TCM.</ptxt>
+<figure>
+<graphic graphicname="G031389E14" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<ptxt>The TCM applies a voltage to the temperature sensor through terminal OIL of the TCM.</ptxt>
+<ptxt>The sensor resistance changes with the transmission fluid temperature. As the temperature becomes higher, the sensor resistance decreases.</ptxt>
+<ptxt>One terminal of the sensor is grounded so that the sensor resistance decreases and the voltage goes down as the temperature becomes higher.</ptxt>
+<ptxt>The TCM calculates the fluid temperature based on the voltage signal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" align="center" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0710</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(a) and (b) are detected momentarily within 0.5 sec. when neither P0712 nor P0713 is detected (1-trip detection logic)</ptxt>
+<ptxt>(a) ATF temperature sensor resistance is less than 79 Ω.</ptxt>
+<ptxt>(b) ATF temperature sensor resistance is more than 156 kΩ.</ptxt>
+<atten4>
+<ptxt>Within 0.5 sec., the malfunction switches from (a) to (b) or from (b) to (a)</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in ATF temperature sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire (ATF temperature sensor)</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0712</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF temperature sensor resistance is less than 79 Ω for 0.5 sec. or more have (1-trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Short in ATF temperature sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire (ATF temperature sensor)</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0713</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF temperature sensor resistance is more than 156 kΩ when 15 minutes or more have elapsed after the engine starts</ptxt>
+<ptxt>DTC is detected for 0.5 sec. or more (1-trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in ATF temperature sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire (ATF temperature sensor)</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_02" type-id="64" category="03" proc-id="RM0250U___000035W00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>These DTCs indicate an open or short in the automatic transmission fluid (ATF) temperature sensor (TFT sensor) circuit. The automatic transmission fluid (ATF) temperature sensor converts ATF temperature into an electrical resistance value. Based on the resistance, the TCM determines the ATF temperature, and the TCM detects an open or short in the ATF temperature circuit. If the resistance value of the ATF temperature is less than 79 Ω<sup>*1</sup> or more than 156 kΩ<sup>*2</sup>, the TCM interprets this as a fault in the ATF sensor or wiring. The TCM will turn on the MIL and store the DTC.</ptxt>
+<ptxt>*1: 150°C (302°F) or more is indicated regardless of the actual ATF temperature.</ptxt>
+<ptxt>*2: -40°C (-40°F) is indicated regardless of the actual ATF temperature.</ptxt>
+<atten4>
+<ptxt>The ATF temperature can be checked on the intelligent tester display.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_10" type-id="65" category="03" proc-id="RM0250U___000036100000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0710: ATF temperature sensor/Range check (Chattering)</ptxt>
+<ptxt>P0712: ATF temperature sensor/Range check (Low resistance)</ptxt>
+<ptxt>P0713: ATF temperature sensor/Range check (High resistance)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF temperature sensor (TFT sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediately</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_11" type-id="66" category="03" proc-id="RM0250U___000036200000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0710:</title>
+<ptxt>Range check (Chattering)</ptxt>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The typical enabling condition is not available.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0712:</title>
+<ptxt>Range check (Low resistance)</ptxt>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>The typical enabling condition is not available.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0713:</title>
+<ptxt>Range check (High resistance)</ptxt>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>15 min. or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_12" type-id="67" category="03" proc-id="RM0250U___000036300000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0710:</title>
+<ptxt>Range check (Chattering)</ptxt>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT (transmission fluid temperature) sensor resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 79 Ω or more than 156 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0712:</title>
+<ptxt>Range check (Low resistance)</ptxt>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 79 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0713:</title>
+<ptxt>Range check (High resistance)</ptxt>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 156 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_13" type-id="70" category="03" proc-id="RM0250U___000036400000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Atmospheric temperature to approx. 130°C (266°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_07" type-id="32" category="03" proc-id="RM0250U___000035X00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133262E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_08" type-id="51" category="05" proc-id="RM0250U___000035Y00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>According to the DATA LIST displayed on the intelligent tester, you can read the value of switches, sensors, actuators and other items without removing any parts. Reading the DATA LIST as the first step in troubleshooting is one method to save labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether a part is faulty.</ptxt>
+</atten3>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on tester, read "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="2.36in"/>
+<colspec colname="COL2" align="center" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/</ptxt>
+<ptxt>Range (display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AT OIL TEMP1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF Temp. Sensor Value/</ptxt>
+<ptxt>min.: -40°C (-40°F)</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>After Stall Test;</ptxt>
+<ptxt>Approx. 80°C (176°F)</ptxt>
+</item>
+<item>
+<ptxt>Equal to ambient temperature when cold soak</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When DTC P0712 is output and intelligent tester indicates 150°C (302°F) or more, there is a short circuit.</ptxt>
+<ptxt>When DTC P0713 is output and intelligent tester indicates -40°C (-40°F), there is an open circuit.</ptxt>
+<ptxt>Measure the resistance between terminal OIL and body ground.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Temperature Displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>-40°C (-40°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>150 °C (302°F) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short circuit</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If the circuit related to the ATF temperature sensor becomes open, P0713 is immediately set (in 0.5 seconds). When P0713 is set, P0711 cannot be detected.</ptxt>
+<ptxt>It is not necessary to inspect the circuit when P0711 is set.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM000000W8501SX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W8501SX_09_0001" proc-id="RM0250U___000035Z00000">
+<testtitle>INSPECT TRANSMISSION WIRE (ATF TEMPERATURE SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM from the transaxle.</ptxt>
+<figure>
+<graphic graphicname="C133212E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>17 (E2) - 18 (THO1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>90 Ω to 156 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>17 (E2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>18 (THO1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the resistance is out of the specified range with the ATF temperature shown in the table below, the driveability of the vehicle may decrease.</ptxt>
+</atten4>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>ATF Temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 °C (50°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.8 to 7.1 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>110°C (230°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.23 to 0.26 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8501SX_09_0003" fin="false">NG</down>
+<right ref="RM000000W8501SX_09_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8501SX_09_0006" proc-id="RM0250U___0000B2000000">
+<testtitle>INSPECT ATF TEMPERATURE SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the ATF temperature sensor connector from the transmission wire.</ptxt>
+<figure>
+<graphic graphicname="C133224E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E2 - THO1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>90 Ω to 156 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THO1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the resistance is out of the specified range with the ATF temperature shown in the table below, the driveability of the vehicle may decrease.</ptxt>
+</atten4>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>ATF Temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 °C (50°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.8 to 7.1 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>110°C (230°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.22 to 0.28 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8501SX_09_0003" fin="true">OK</down>
+<right ref="RM000000W8501SX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8501SX_09_0003">
+<testtitle>REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM000000W8501SX_09_0005">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000W8501SX_09_0007">
+<testtitle>REPLACE ATF TEMPERATURE SENSOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

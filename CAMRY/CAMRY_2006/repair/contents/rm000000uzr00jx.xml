@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002Z_S001S" variety="S001S">
+<name>SLIDING ROOF</name>
+<ttl id="1002Z_S001S_732XN_T00GB" variety="T00GB">
+<name>SLIDING ROOF SYSTEM</name>
+<para id="RM000000UZR00JX" category="U" type-id="303FJ" name-id="RF07B-02" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000UZR00JX_z0" proc-id="RM0250U___0000BI400000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester's Data List allows switch, sensor, actuator and other item values to be read without removing any parts. Reading the Data List early in troubleshooting is one way to save time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Read the Data List according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>SLIDE ROOF:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OPEN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slide switch open signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: OPEN switch is pressed.</ptxt>
+<ptxt>OFF: OPEN switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLOSE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Slide switch close signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: CLOSE switch is pressed.</ptxt>
+<ptxt>OFF: CLOSE switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tilt switch up signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: UP switch is pressed.</ptxt>
+<ptxt>OFF: UP switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DOWN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tilt switch down signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: DOWN switch is pressed.</ptxt>
+<ptxt>OFF: DOWN switch is not pressed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HALL IC1 STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof operation signal/NORMAL or LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NORMAL: Sliding roof motor is operating.</ptxt>
+<ptxt>LOCK: Sliding roof motor is not operating.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HALL IC1 PULSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof operation signal/LO or HI</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LO: Sliding roof motor is not operating.</ptxt>
+<ptxt>HI: Sliding roof motor is operating.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HALL IC2 STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof operation signal/NORMAL or LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NORMAL: Sliding roof motor is operating.</ptxt>
+<ptxt>LOCK: Sliding roof motor is not operating.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HALL IC2 PULSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof operation signal/LO or HI</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LO: Sliding roof motor is not operating.</ptxt>
+<ptxt>HI: Sliding roof motor is operating.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D-DOOR WARN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver's door courtesy light switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver's door is open.</ptxt>
+<ptxt>OFF: Driver's door is closed.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (MPX)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch signal (MPX signal)/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch on (IG)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (DIRCT SIG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch on (IG)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KEY OFF PERMS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key-OFF sliding roof operation permit signal (Current)/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver's side door is not closed within 45 sec. after ignition switch is turned off.</ptxt>
+<ptxt>OFF: Any status except "ON" status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CURRENT DOWN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Down switch failure signal (Current)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof tilt down signal failure (Current)</ptxt>
+<ptxt>Not Fail: Sliding roof tilt down signal not fail (Current)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CURRENT UP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Up switch failure signal (Current)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof tilt up signal failure (Current)</ptxt>
+<ptxt>Not Fail: Sliding roof tilt up signal not fail (Current)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CURRENT CLS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Close switch failure signal (Current)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof close signal failure (Current)</ptxt>
+<ptxt>Not Fail: Sliding roof close signal not fail (Current)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CURRENT OPN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open switch failure signal (Current)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof open signal failure (Current)</ptxt>
+<ptxt>Not Fail: Sliding roof open signal not fail (Current)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PAST DOWN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Down switch failure signal (Past)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof tilt down signal failure (Past)</ptxt>
+<ptxt>Not Fail: Sliding roof tilt down signal not fail (Past)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PAST UP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Up switch failure signal (Past)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof tilt up signal failure (Past)</ptxt>
+<ptxt>Not Fail: Sliding roof tilt up signal not fail (Past)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PAST CLS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Close switch failure signal (Past)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof close signal failure (Past)</ptxt>
+<ptxt>Not Fail: Sliding roof close signal not fail (Past)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PAST OPN SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open switch failure signal (Past)/Fail or Not Fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail: Sliding roof open signal failure (Past)</ptxt>
+<ptxt>Not Fail: Sliding roof open signal not fail (Past)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of trouble code</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of trouble code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's Active Test allows relay, VSV, actuator and other items to be operated without removing any parts. Performing the Active Test early in troubleshooting is one way to save time. The Data List can be displayed during the Active Test.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the Active Test according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>SLIDE ROOF:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="4.25in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SLIDE ROOF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operate sliding roof SLIDE CLOSE/TILT UP</ptxt>
+<ptxt>CLOS/UP: Sliding roof SLIDE CLOSE or TILT UP operation occurs.</ptxt>
+<ptxt>OFF: Sliding roof is not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIDE ROOF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operate sliding roof SLIDE OPEN/TILT DOWN</ptxt>
+<ptxt>OPEN/DWN: Sliding roof SLIDE OPEN or TILT DOWN operation occurs</ptxt>
+<ptxt>OFF: Sliding roof is not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

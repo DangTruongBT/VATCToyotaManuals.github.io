@@ -1,0 +1,145 @@
+<!-- $Id: button.html,v 1.12 2004/09/15 08:10:51 n-maeshiba Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 ILLUST_NOT_EXISTS_ERROR                                           -->
+<!--  001 CONTENT_NOT_EXISTS_ERROR                                          -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Installation/Removal Button</title>
+<link href="../../css/button.css" rel="stylesheet" type="text/css">
+<script src="../../js/svgpage.js"></script>
+<script language="javascript">
+// ERROR MESSAGES
+var ILLUST_NOT_EXISTS_ERROR  = "There are no illustrations available."; // 000
+var CONTENT_NOT_EXISTS_ERROR = "There is no information available.";	// 001
+
+function init() {
+	parent.g_illustId = parent.findParameterValue("illust", location.search, parent.location.search);
+	parent.g_term = parent.findParameterValue("term", location.search, parent.location.search);
+	parent.g_paraId = parent.findParameterValue("parag", location.search, parent.location.search);
+	if (parent.g_paraId==null) return;
+	var secIdNode = parent.g_tocXml.selectSingleNode("//section[descendant::para/@id='"+parent.g_paraId+"']/@id");
+	if (secIdNode==null) return;
+	var secId = secIdNode.nodeTypedValue;
+	var SVGItem = parent.getIllustIdList(parent.g_paraId);
+	if (SVGItem==null || SVGItem.length==0){
+		alert(ILLUST_NOT_EXISTS_ERROR);
+		return;
+	}
+	parent.g_procXml = parent.initXml("proc_"+secId.toLowerCase()+".xml", false, true);
+	if (parent.g_procXml==null) return;
+	if (parent.g_filter!=null) {
+		parent.g_procXml = parent.setFilter(parent.g_procXml, parent.g_fltXsl, "../../filter/"+parent.g_filter+".xml");
+	}
+	if (parent.g_illustId==null) {
+		parent.g_illustId = SVGItem[0];
+	} else {
+		for (var i=0; i<SVGItem.length; i++) {
+			if (SVGItem[i]==parent.g_illustId) break;
+			if (i==SVGItem.length-1) parent.g_illustId = SVGItem[0];
+		}
+	}
+	var dispPage = createDispPage(SVGItem);
+	disp.innerHTML = dispPage;
+	selPage(parent.g_illustId);
+}
+
+function allDisplay() {
+	var partId = parent.contents.getXMLSelectPartID();
+
+	// Search the title relevant to selected parts from the same <section>.
+	var ttl = parent.g_procXml.selectNodes("//ttl[para[@category='A'] and parts[@id='"+partId+"']]");
+	if (ttl.length==1) {	//When the search result hits only one <ttl>.
+		var id = ttl.item(0).getAttribute("id");
+		var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, id, parent.g_tocXml);
+		if (param!=null) {
+			param += "&partId=" + partId;		
+			parent.location.href = "../rmv_ctt/frame.html" + param;
+			return;
+		}
+	} else if (ttl.length>1) {	//When the search result hits more than two <ttl>s.
+		var ret = openTitleSelection(partId, parent.g_tocXml, parent.g_procXml);
+		if (ret!=null) {
+			var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, ret, parent.g_tocXml);
+			if (param!=null) {
+				param += "&partId=" + partId;
+				parent.location.href = "../rmv_ctt/frame.html" + param;
+			} else {
+				alert(CONTENT_NOT_EXISTS_ERROR);
+			}
+			return;
+		} else {
+			return;
+		}
+	} else {
+		// go to next step (from same Ttl)
+	}
+
+	// Search '<ttl>' which has '<s-1>' relevant to the selected parts item from 'Installation/Removal' paragraph of the same <ttl>.
+		if (parent.g_ttlId==null) {
+			parent.g_ttlId = parent.g_tocXml.selectSingleNode("//ttl[.//para[@id='"+parent.g_paraId +"']]/@id").nodeTypedValue;
+		}
+        ttl = parent.g_procXml.selectNodes("//ttl[@id='" +parent.g_ttlId +"' and para[@category='A']/subpara/s-1/parts[@id='" +partId +"']]");
+        if (ttl.length==1) {	//When the search result hits only one <ttl>.
+                var id = ttl.item(0).getAttribute("id");
+  		var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, id, parent.g_tocXml);
+  		if (param!=null) {
+			param += "&partId=" + partId;  		
+			parent.location.href = "../rmv_ctt/frame.html" + param;
+			return;
+		}
+        } else {
+                // go to next step (from same Section)
+        }
+
+	// Search '<ttl>' which has '<s-1>' relevant to the selected parts item from 'Installation/Removal' paragraph of the same <section>.
+        ttl = parent.g_procXml.selectNodes("//ttl[para[@category='A']/subpara/s-1/parts[@id='" +partId +"']]");
+        if (ttl.length==1) {	//When the search result hits only one <ttl>.
+                var id = ttl.item(0).getAttribute("id");
+  		var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, id, parent.g_tocXml);
+  		if (param!=null) {
+	  		param += "&partId=" + partId;
+			parent.location.href = "../rmv_ctt/frame.html" + param;
+			return;
+		}
+		alert(CONTENT_NOT_EXISTS_ERROR);
+		return;  
+        } else if(ttl.length>1) {	//When the search result hits more than two <ttl>s.
+		var ret = openTitleSelection(partId, parent.g_tocXml, parent.g_procXml);
+		if (ret!=null) {
+			var param = parent.getCttLink(parent.g_paraId, parent.g_illustId, parent.g_term, parent.g_vin, parent.g_filter, ret, parent.g_tocXml);
+			if (param!=null) {
+				param += "&partId=" + partId;			
+				parent.location.href = "../rmv_ctt/frame.html" + param;
+			} else {
+				alert(CONTENT_NOT_EXISTS_ERROR);
+			}
+			return;
+                } else {
+			return;
+		}
+        } else {	//In case of finding no paragraph relevant to the selected parts item.
+		alert(CONTENT_NOT_EXISTS_ERROR);
+		return;
+        }
+}
+
+function openTitleSelection(pId, tocXml, procXml) {
+	var parts = parent.getPartsName(pId);
+	parent.setDialogArgs(parts, pId, tocXml, procXml);
+	var ret=parent.openDialog("title_frame.html", "tls");
+	parent.clearDialogArgs();
+	return ret;
+}
+</script>
+</head>
+<body onLoad="init();">
+<div id="disp"></div>
+</body>
+</html>

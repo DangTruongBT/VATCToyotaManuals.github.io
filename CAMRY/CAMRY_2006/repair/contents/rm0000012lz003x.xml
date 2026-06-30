@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72WHC_T0069" variety="T0069">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/o Smart Key System)</name>
+<para id="RM0000012LZ003X" category="D" type-id="303F2" name-id="DL0A9-03" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM0000012LZ003X_z0" proc-id="RM0250U___00001HQ00000">
+<content5 releasenbr="2">
+<step1>
+<ptxt>WIRELESS DOOR LOCK CONTROL SYSTEM</ptxt>
+<ptxt>The wireless door lock control system functions to lock and unlock all the doors from a distance. The system is controlled by a hand-held transmitter which sends radio waves to the door control receiver. The main body ECU performs an ID code identification process and engages the door lock control.</ptxt>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENTS</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Door control transmitter</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Has LOCK, UNLOCK, LUGGAGE OPEN, and PANIC switches.</ptxt>
+</item>
+<item>
+<ptxt>Transmits weak radio waves (recognition codes and function codes) to the door control receiver.</ptxt>
+</item>
+<item>
+<ptxt>Illuminates the indicator light (LED) during transmission.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door control receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives weak radio waves (recognition codes and function codes) and outputs them as code data to the main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Front door courtesy light switch</ptxt>
+</item>
+<item>
+<ptxt>Rear door courtesy light switch</ptxt>
+</item>
+<item>
+<ptxt>Luggage compartment door courtesy light switch</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Turns on when a door is opened and turns off when it is closed. Outputs door status codes (open or closed) to the main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Unlock warning switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detects if the key is inserted in the ignition key cylinder or not.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door lock position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmits the door lock positions of each door to the main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Emits beep (answer back) when doors are locked or unlocked, or luggage compartment door is opened by wireless operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sends wireless door lock control signals in response to the code data from the door control receiver and signals from each switch.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SYSTEM FUNCTION</ptxt>
+<ptxt>The door control transmitter has the LOCK, UNLOCK, LUGGAGE OPEN, and PANIC switches. Operating these switches activates each function.</ptxt>
+<ptxt>The wireless door lock control system has the following functions:</ptxt>
+<atten4>
+<ptxt>The default settings of the following functions are ON. Part of these functions can be customized (See page <xref label="Seep01" href="RM000001NN0001X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All door lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the LOCK switch locks all doors.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>All door unlock</ptxt>
+<ptxt>(2-step unlock)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the UNLOCK switch twice within 3 seconds unlocks all the doors after the driver's door is unlocked.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Automatic lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If none of the doors is opened within 60 seconds after they are unlocked by the wireless door lock control, all the doors will lock again automatically.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Panic alarm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the PANIC switch of the transmitter for longer than about 0.8 seconds causes the following alarms to activate:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Sounds the horn and security horn.</ptxt>
+</item>
+<item>
+<ptxt>Flashes the hazard lights, headlights, and taillights.</ptxt>
+</item>
+<item>
+<ptxt>Illuminates the front interior light (when the switch is in the DOOR position).</ptxt>
+</item>
+</list1>
+<ptxt>While the panic alarm is operating, pressing any switch of the transmitter cancels the alarm operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Luggage compartment door opener</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the LUGGAGE OPEN switch of the transmitter opens the luggage compartment door.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Answer back</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the doors are locked by wireless operation, the wireless door lock buzzer sounds once and the hazard warning lights flash once.</ptxt>
+</item>
+<item>
+<ptxt>When the doors are unlocked by wireless operation, the wireless door lock buzzer sounds twice and the hazard warning lights flash twice.</ptxt>
+</item>
+<item>
+<ptxt>When the luggage compartment door is opened by wireless operation, the wireless door lock buzzer sounds once.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door ajar warning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The buzzer sounds when LOCK is pressed when any of the doors are ajar. When all the doors are closed or when UNLOCK is pressed, the buzzer will stop after it sounds for 10 seconds continuously.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Illuminated entry</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When all the doors are locked, pressing UNLOCK causes the interior lights to come on simultaneously with the unlock operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Self-diagnostic mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The following are ways to enter the self-diagnostic mode:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If the door control receiver receives normal radio waves from the door control transmitter when the system is in diagnostic mode, it sounds the wireless door lock buzzer and flashes the interior light in a normal pattern that corresponds to the function of each switch.</ptxt>
+</item>
+<item>
+<ptxt>Read DTCs with the intelligent tester.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Transmitter recognition code registration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Enables the registration (writing and storing) of 6 types of transmitter recognition codes in the EEPROM that is contained in the door control receiver.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>TRANSMITTER RECOGNITION CODE REGISTRATION FUNCTION</ptxt>
+<ptxt>The table below shows the 6 ID registration function modes by which up to 6 different codes can be registered. The codes are electronically registered (written and stored) in the EEPROM that is contained in the door control receiver.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Mode</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Add mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Adds a newly received code while preserving any previously registered codes.</ptxt>
+<ptxt>This mode is used when adding a new transmitter. If the number of registered codes exceeds 6, the oldest registered code is erased first.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Rewrite mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Erases all previously registered codes and registers only newly input codes.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Confirmation mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Confirms how many codes are currently registered. When adding a new code, this mode is used to check how many codes already exist.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Prohibition mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Deletes all the registered codes and disables the wireless door lock function.</ptxt>
+<ptxt>This mode is used when the transmitter is lost.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>CONDITIONS THAT WIRELESS FUNCTIONS DO NOT OPERATE</ptxt>
+<step2>
+<ptxt>Lock operation is not available when:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Any of the doors is open.</ptxt>
+</item>
+<item>
+<ptxt>The key is inserted in the ignition key cylinder.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Unlock operation is not available when:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The key is inserted in the ignition key cylinder.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Luggage compartment door opener is not available when:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The key is inserted in the ignition key cylinder.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

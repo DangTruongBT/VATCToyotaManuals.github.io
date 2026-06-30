@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PGD00FX" category="C" type-id="305GL" name-id="ES0DX-11" from="200601">
+<dtccode>P0630</dtccode>
+<dtcname>VIN not Programmed or Mismatch - ECM / PCM</dtcname>
+<subpara id="RM000000PGD00FX_01" type-id="60" category="03" proc-id="RM0250U___00007KW00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>DTC P0630 is set when the Vehicle Identification Number (VIN) is not stored in the Engine Control Module (ECM) or the input VIN is incorrect. Input the VIN with the intelligent tester.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0630</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>VIN not stored in ECM</ptxt>
+</item>
+<item>
+<ptxt>Input VIN incorrect</ptxt>
+</item>
+</list1>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM	</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PGD00FX_02" type-id="65" category="03" proc-id="RM0250U___00007KX00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P0630: VIN not programmed</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>ECM</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>0.325 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PGD00FX_03" type-id="66" category="03" proc-id="RM0250U___00007KY00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry>
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Starter</ptxt>
+</entry>
+<entry>
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PGD00FX_04" type-id="67" category="03" proc-id="RM0250U___00007KZ00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VIN code	</ptxt>
+</entry>
+<entry>
+<ptxt>Not programmed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PGD00FX_05" type-id="70" category="03" proc-id="RM0250U___00007L000000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VIN code</ptxt>
+</entry>
+<entry>
+<ptxt>Programmed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PGD00FX_06" type-id="51" category="05" proc-id="RM0250U___0000A6Y00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PGD00FX_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PGD00FX_07_0001" proc-id="RM0250U___00007L100000">
+<testtitle>READ CURRENT DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed To</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0630</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0630 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<ptxt>If any DTCs other than P0630 are output, troubleshoot those DTCs first.</ptxt>
+<atten3>
+<ptxt>If P0630 is set, the VIN must be input to the ECM using the intelligent tester. However, all DTCs are cleared automatically by the tester when the VIN is input. If DTCs other than P0630 are set, check them first.</ptxt>
+</atten3>
+</content6>
+<res>
+<down ref="RM000000PGD00FX_07_0002" fin="false">A</down>
+<right ref="RM000000PGD00FX_07_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PGD00FX_07_0002" proc-id="RM0250U___00007L200000">
+<testtitle>INPUT VIN WITH INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Refer to REGISTRATION (See page <xref label="Seep01" href="RM000000PDT013X_03_0003"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PGD00FX_07_0004" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PGD00FX_07_0003">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000PGD00FX_07_0004">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_730O6_T00F9" variety="T00F9">
+<name>THEFT DETERRENT SYSTEM (w/ Smart Key System)</name>
+<para id="RM0000010J6009X" category="J" type-id="3009M" name-id="TD0BA-01" from="200601">
+<dtccode/>
+<dtcname>ECU Power Source Circuit</dtcname>
+<subpara id="RM0000010J6009X_01" type-id="60" category="03" proc-id="RM0250U___0000A0N00001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit provides power for main body ECU operation.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000010J6009X_02" type-id="32" category="03" proc-id="RM0250U___0000A0O00001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B144363E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000010J6009X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000010J6009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000010J6009X_04_0002" proc-id="RM0250U___0000A0Q00001">
+<testtitle>CHECK INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY (MAIN BODY ECU) (POWER SOURCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the ID and IA J/B connectors.</ptxt>
+<figure>
+<graphic graphicname="B144364E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ID-16 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IA-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010J6009X_04_0003" fin="false">OK</down>
+<right ref="RM0000010J6009X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010J6009X_04_0003" proc-id="RM0250U___0000A0R00001">
+<testtitle>CHECK HARNESS AND CONNECTOR (INSTRUMENT PANEL J/B - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the IF and IM J/B connectors.</ptxt>
+<figure>
+<graphic graphicname="B110543E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol (Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IF-10 - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IM-9 - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010J6009X_04_0004" fin="true">OK</down>
+<right ref="RM0000010J6009X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010J6009X_04_0004">
+<testtitle>REPLACE PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000010J6009X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

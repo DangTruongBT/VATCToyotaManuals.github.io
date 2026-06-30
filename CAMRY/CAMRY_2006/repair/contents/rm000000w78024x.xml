@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W78024X" category="D" type-id="303F5" name-id="AT038-63" from="200601">
+<name>CHECK MODE PROCEDURE</name>
+<subpara id="RM000000W78024X_z0" proc-id="RM0250U___000063700000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Check mode has a higher sensitivity to malfunctions and can detect malfunction that normal mode cannot detect. Check mode can also detect all the malfunctions that normal mode can detect. In check mode, DTCs are detected with 1-trip detection logic.</ptxt>
+</atten4>
+<step1>
+<ptxt>DTC CHECK (CHECK MODE)</ptxt>
+<atten4>
+<ptxt>Intelligent tester only: Compared to the normal mode, the check mode is more sensitive for detecting malfunctions. Furthermore, the same diagnostic items which are detected in the normal mode can also be detected in the check mode.</ptxt>
+</atten4>
+<step2>
+<ptxt>Procedure for Check Mode using the intelligent tester. </ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Check the initial conditions.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Battery positive voltage 11 V or more</ptxt>
+</item>
+<item>
+<ptxt>Throttle valve fully closed</ptxt>
+</item>
+<item>
+<ptxt>Transaxle in the P or N position</ptxt>
+</item>
+<item>
+<ptxt>A/C switch is off</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester together with the Controller Area Network Vehicle Interface Module (CAN VIM) to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+<figure>
+<graphic graphicname="BR03904E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Select the item "DIAGNOSIS/ENHANCED OBD II/CHECK MODE" (Check that the MIL flashes).</ptxt>
+<atten3>
+<ptxt>All DTCs and freeze frame data recorded will be erased if: 1) the intelligent tester is used to change the ECM from normal mode to check mode or vice-versa; or 2) during check mode, the ignition switch is turned from the on (IG) to ACC position or turned OFF.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>Start the engine (the MIL goes off after the engine starts).</ptxt>
+</step3>
+<step3>
+<ptxt>Perform "MONITOR DRIVE PATTERN" for the ECT test (See page <xref label="Seep01" href="RM000000W7K023X"/>).  (Or, simulate the conditions of the malfunction described by the customer). </ptxt>
+<atten3>
+<ptxt>Leave the ignition switch on (IG) until you have checked the DTCs, etc.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>After simulating malfunction conditions, use the intelligent tester diagnosis selector to check the DTCs and freeze frame data, etc.</ptxt>
+</step3>
+<step3>
+<ptxt>When you use intelligent tester: Select the item "DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES".</ptxt>
+</step3>
+<step3>
+<ptxt>After checking the DTC, inspect the applicable circuit.</ptxt>
+</step3>
+<step3>
+<ptxt>(See page <xref label="Seep02" href="RM000000W71025X"/>) to confirm the details of the DTCs. </ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CLEAR</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the CAN VIM. Then connect the CAN VIM to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CLEAR CODES and press YES.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

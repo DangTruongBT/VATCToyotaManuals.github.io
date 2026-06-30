@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QYA00BX" category="D" type-id="303F2" name-id="EI00M-10" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000QYA00BX_z0" proc-id="RM0250U___00008D900000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ENGINE IMMOBILISER SYSTEM DESCRIPTION</ptxt>
+<step2>
+<ptxt>The immobiliser system is a theft deterrent system that determines whether to disable starting of the SFI system based on a comparison of the key's ID codes and the vehicle's pre-registered code. The immobiliser system compares the vehicle certification ECU's pre-registered ID code with the ID of the key-embedded transponder chip. If the ID codes do not match, the immobiliser system activates and the SFI system cannot be started. The certification ECU manages communication with the ECM, main body ECU, steering lock ECU and ID code box. When the ID codes of the transponder chip and certification ECU match, the certification ECU authorizes the SFI system to start.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENT</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Outline</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transponder key coil/amplifier (built into engine switch)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives key ID code, amplifies ID code and outputs the code to the certification ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmits key detection signals within the detection area in the vehicle interior upon receiving a transmission request signal from the certification ECU.</ptxt>
+<ptxt>Certification ECU request signal is activated when the key is brought into the vehicle interior and the engine switch is pushed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door control receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives an ID code from the key in the actuation area and transmits it to the certification ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Security indicator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates or starts flashing.</ptxt>
+<ptxt>Illumination is controlled by the certification ECU.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SYSTEM FUNCTION</ptxt>
+<step2>
+<ptxt>Using entry function</ptxt>
+<step3>
+<ptxt>When the driver (or passenger) is sitting in the vehicle while carrying the key, and the engine switch is pressed while the brake pedal is depressed, the main body ECU recognizes that the engine start operation has occurred and sends a certification request signal to the certification ECU. Upon receipt of the certification request signal, the certification ECU sends a request signal to the indoor electrical key oscillator. Upon receipt of the request signal, the indoor electrical key oscillator sends a request signal to detect if the key is inside the vehicle. When the key receives this request signal, it answers by sending an ID code containing a response code through the glass antenna to the door control receiver. Upon receipt of the ID code, the certification ECU analyzes the code. If the interior certification passes, then the main body ECU sends a certification pass response signal. When the main body ECU receives this signal, the ACC relay is switched on and the IG1 and IG2 relays are switched on in sequence. At this time, the engine switch indicator illuminates in green. Then the certification ECU checks that the power source mode has been changed and sends a steering lock command signal to the main body ECU. After receiving this signal, the main body ECU supplies power to the steering lock actuator. Then (via the ID code box) the steering lock ECU confirms that the certification ECU is certified and drives the steering actuator motor until the steering lock is unlocked. After unlocking the steering lock, an unlock completed signal is sent to the certification ECU. Upon receipt of this signal, the certification ECU sends an unset command signal to the ID code box. Once this signal is received, the ID code box confirms that the certification ECU is certified, sends an immobiliser unset command signal to the ECM and sends a security indicator light off signal to the certification ECU.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Not using the entry function (when key battery is depleted)</ptxt>
+<step3>
+<ptxt>When the driver is sitting in the vehicle while carrying the key and the brake pedal is depressed, the main body ECU recognizes that the stop light switch is on and sends a key confirmation request signal to the certification ECU. Upon receipt of this signal, the certification ECU drives the immobiliser amplifier built in the engine switch. At this time, the engine switch sends an RF wave communication signal to the immobiliser. If the driver holds the key up to the engine switch at this time, the engine switch receives the immobiliser RF wave signal and responds by sending a radio wave signal. When the engine switch receives the radio wave signal from the key, it duplicates the signal and sends an ID code to the certification ECU. Upon receipt of the ID code, the code is analyzed. If the certification passes, a key certification pass response signal is sent to the main body ECU while simultaneously sending a sound buzzer request signal to the meter ECU. When the main body ECU receives this signal, the ACC relay is switched on and the IG1 and IG2 relays are switched on in sequence. At this time, the engine switch indicator illuminates in green. Then the certification ECU checks that the power source mode has been changed and sends a steering lock command signal to the main body ECU. After receiving this signal, the main body ECU supplies power to the steering lock actuator. Then (via the ID code box) the steering lock ECU confirms that the certification ECU is certified and drives the steering actuator motor until the steering lock is unlocked. After unlocking the steering lock, an unlock completed signal is sent to the certification ECU. Upon receipt of this signal, the certification ECU sends an unset command signal to the ID code box. Once this signal is received, the ID code box confirms that the certification ECU is certified, sends an immobiliser unset command signal to the ECM and sends a security indicator light off signal to the certification ECU.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

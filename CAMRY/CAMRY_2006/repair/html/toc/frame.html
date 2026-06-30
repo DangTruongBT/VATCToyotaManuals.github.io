@@ -1,0 +1,46 @@
+<!-- $Id: frame.html,v 1.8 2005/01/13 06:28:44 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Index-</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script language="javascript">
+var g_filter = findParameterValue("filter");
+var g_term   = findParameterValue("term");
+var g_vin    = findParameterValue("vin");
+var g_tocXml = initXml("toc_rpr.xml");
+var g_fltXsl = initXsl("../../xsl/utl/filter.xsl");
+if (g_filter!=null) {
+	g_tocXml = setFilter(g_tocXml, g_fltXsl, "../../filter/"+g_filter+".xml");
+}
+var g_sctXsl = initXsl("../../xsl/toc/servcat.xsl");
+var g_lstXsl = initXsl("../../xsl/toc/list.xsl");
+var g_carType = getCarType(g_filter);
+</script>
+</head>
+<frameset rows="85, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="local.html" frameborder="no" scrolling="auto">
+		<frameset rows="35, *" frameborder="no" framespaceing="0">
+			<frame name="sts" src="status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="contents.html" frameborder="no" scrolling="auto">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

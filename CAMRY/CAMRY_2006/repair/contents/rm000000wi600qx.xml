@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000WI600QX" category="D" type-id="3001B" name-id="CA005-29" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000WI600QX_z0" proc-id="RM0250U___000099S00000">
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>DTCs for the CAN communication system are as follows: U0101, U0073, U0100, U0123, U0124, U0126, B1207, B1499, and B2326.</ptxt>
+</item>
+<item>
+<ptxt>Refer to troubleshooting of each system if DTCs regarding the CAN communication system are not output.</ptxt>
+</item>
+</list1>
+</atten3>
+<descript-diag>
+<descript-testgroup>
+<testtitle>CHECK AND CLEAR DTCS</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK FOR INSTALLED SYSTEMS (ECUS &amp; SENSORS) THAT ADOPT CAN COMMUNICATION)</testtitle>
+<test1>
+<ptxt>Check which of the following is adopted: SFI system, automatic transaxle system, brake control system, supplemental restraint system, smart key system, air conditioning system and meter / gauge system (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK CAN BUS WIRE</testtitle>
+<test1>
+<ptxt>Check the CAN bus wires (See page <xref label="Seep02" href="RM000000VYK002X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK INTELLIGENT TESTER </testtitle>
+<test1>
+<ptxt>Select "Communication Bus Check" (See page <xref label="Seep03" href="RM000000WIB00RX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COLSPEC0" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>All the ECUs and sensors connected to the CAN communication system are displayed on the screen.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Go to step 5</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>An ECU or sensor not connected to the CAN communication system is displayed on the screen.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep04" href="RM000000WI800PX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>More than one of the ECUs and sensors not connected to the CAN communication system are displayed on the screen. (If the displayed ECUs and sensors are only those relating to the "Engine" and "ECT", proceed to B.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep05" href="RM000001ZSO001X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The systems (ECUs, sensors) that adopt CAN communication vary depending on the vehicle and option settings. Check which systems (ECUs, sensors) are installed on the vehicle (See page <xref label="Seep06" href="RM000000WIB00RX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Non-installed ECUs or sensors are not displayed. Do not mistake ECUs that are not installed as being in communication stop mode.</ptxt>
+</item>
+<item>
+<ptxt>If 2 or more ECUs or sensors are not displayed on the intelligent tester, perform troubleshooting for communication stop mode for each undisplayed ECU or sensor. (Open in one side of the CAN branch wires.)</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO "COMMUNICATION STOP MODE TABLE"</action-ci-right>
+<result>C</result>
+<action-ci-right>GO TO "OPEN IN ONE SIDE OF CAN BRANCH LINE" </action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC COMBINATION TABLE</testtitle>
+<test1>
+<ptxt>Confirm trouble according to the combination of output DTCs regarding the CAN communication system (See page <xref label="Seep07" href="RM000000WIB00RX"/>).</ptxt>
+<atten4>
+<ptxt>Previous CAN communication system DTCs may be the cause if CAN communication system DTCs are output and all ECUs and sensors connected to the CAN communication system are displayed on the intelligent tester "Communication Bus Check" screen.</ptxt>
+</atten4>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>IDENTIFICATION OF PROBLEM </testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

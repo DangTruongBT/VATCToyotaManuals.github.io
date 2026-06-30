@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_7306G_T00EA" variety="T00EA">
+<name>THROTTLE BODY</name>
+<para id="RM0000022NM001X" category="G" type-id="8000T" name-id="ES3PI-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000022NM001X_01" type-id="01" category="01">
+<s-1 id="RM0000022NM001X_01_0001" proc-id="RM0250U___000092M00000">
+<ptxt>INSPECTION THROTTLE BODY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the throttle control motor for operating sounds.</ptxt>
+<figure>
+<graphic graphicname="A129612" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s3>
+<s3>
+<ptxt>When turning the accelerator pedal position sensor lever, check for running sounds of the motor. The motor should be running smoothly without friction sounds.</ptxt>
+<ptxt>If operation is not as specified, check the throttle control motor, wiring and ECM (See page <xref label="Seep01" href="RM0000022NJ001X_01_0001"/>).</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect the throttle position sensor.</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the MIL is off.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that, under the CURRENT DATA, THROTTLE POS (throttle valve opening percentage) is within the standard range below.</ptxt>
+<spec>
+<title>Standard throttle valve opening percentage</title>
+<specitem>
+<ptxt>60 % or more</ptxt>
+</specitem>
+</spec>
+<ptxt>If operation is not as specified, check the throttle position sensor, wiring and ECM (See page <xref label="Seep02" href="RM0000022NJ001X_01_0001"/>).</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

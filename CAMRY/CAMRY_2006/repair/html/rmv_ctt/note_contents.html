@@ -1,0 +1,35 @@
+<!-- $Id: note_contents.html,v 1.7 2005/08/26 01:25:39 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Note Dialog Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javaScript">
+function init() {
+	if(parent.g_objXml==null) {
+		if(parent.g_procId==null) return;
+		parent.g_objXml = parent.initXml(parent.g_procId +".xml");
+	}
+	setContents(parent.g_objXml);
+}
+
+function setContents(objXml) {
+	if (objXml==null || parent.g_cttXsl==null) return;
+	parent.display(objXml, parent.g_cttXsl, disp, null);
+	parent.loadMemoData(document, parent.REPAIR);
+	parent.global.setGlobalLinks();
+}
+</script>
+</head>
+<body onLoad="init();">
+	<a name="pageTop"></a>
+	<div id="disp"></div>
+</body>
+</html>

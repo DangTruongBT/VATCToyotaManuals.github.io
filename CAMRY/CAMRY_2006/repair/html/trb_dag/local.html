@@ -1,0 +1,63 @@
+<!-- $Id: local.html,v 1.7 2004/04/26 05:07:18 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Diagnostics                                                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Local Navi</title>
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (parent.g_objXml==null) return;
+	if (parent.g_defProc==null) return;
+	setProcedure(parent.g_defProc, this.document, (parent.g_s1!=null));
+	setSiblings(parent.g_defProc);
+	if (parent.g_s1!=null) location.hash = parent.g_s1;
+}
+
+function setProcedure(subparaId, doc) {
+	var args = new parent.Hashtable();
+	args.put("subparaId", subparaId);
+	parent.display(parent.g_objXml, parent.g_lclXsl, disp, args);
+	var aTag = doc.getElementsByTagName("a");
+	if (aTag!=null && aTag.length > 0) {
+		if (aTag[0].id!=null && aTag[0].id!=""){
+			var procIdVal = ( arguments[2] != null && arguments[2] ) ? parent.g_s1 : aTag[0].id;
+			parent.selectId(procIdVal, doc);
+		}
+	}
+}
+
+function setSiblings(extSubparaId, objXml) {
+	var tagBuf = "";
+	for (var i=0; i<parent.g_procList.length; i++) {
+		var subpara = parent.g_procList.item(i);
+		var subparaName = subpara.selectSingleNode("name");
+		var subparaId = subpara.getAttribute("id");
+		if (subparaId!=extSubparaId) {
+			tagBuf = tagBuf+"<a href=\"#\" class=\"paras\" onClick=\"replaceSubParagraph('"+subparaId+"', this.document)\">"+subparaName.nodeTypedValue+"</a><br/>";
+		}
+	}
+	paras.innerHTML = tagBuf;
+}
+
+function replaceSubParagraph(subparaId, doc) {
+	setProcedure(subparaId, doc);
+	setSiblings(subparaId, parent.g_objXml);
+	parent.contents.setContents(subparaId);
+	parent.g_defProc = subparaId
+}
+</script>
+</head>
+<body onLoad="init();parent.resize(document);" onResize="parent.resize(document);">
+	<p class="title-name">Diagnostics</p><!-- 000 -->
+	<div id="disp"></div>
+	<div id="paras" class="sub-items"></div>
+</body>
+</html>

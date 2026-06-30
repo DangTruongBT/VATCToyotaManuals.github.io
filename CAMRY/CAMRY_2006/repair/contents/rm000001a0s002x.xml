@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000V_S0014" variety="S0014">
+<name>POWER STEERING</name>
+<ttl id="1000V_S0014_72V9X_T0046" variety="T0046">
+<name>POWER STEERING SYSTEM</name>
+<para id="RM000001A0S002X" category="G" type-id="8000T" name-id="PS0HV-01" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000001A0S002X_01" type-id="01" category="01">
+<s-1 id="RM000001A0S002X_01_0001" proc-id="RM0250U___000004K00000">
+<ptxt>INSPECT DRIVE BELT</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Visually check the drive belt for excessive wear, frayed cords, etc.</ptxt>
+<figure>
+<graphic graphicname="F040449E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If any defect is found, replace the drive belt.</ptxt>
+<atten4>
+<ptxt>Cracks on the rib side of a belt are considered acceptable. Replace the belt if there are any missing ribs.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001A0S002X_01_0006" proc-id="RM0250U___000004M00000">
+<ptxt>CHECK POWER STEERING FLUID LEVEL</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Keep the vehicle level.</ptxt>
+</s2>
+<s2>
+<ptxt>With the engine stopped, check the fluid level in the fluid reservoir.</ptxt>
+<figure>
+<graphic graphicname="C133502E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If necessary, add fluid.</ptxt>
+<spec>
+<title>Fluid</title>
+<specitem>
+<ptxt>ATF DEXRON II or III, or equivalent</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the fluid is hot, check that the fluid level is within the HOT range on the fluid reservoir. If the fluid is cold, check that the fluid level is within the COLD range.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Start the engine and run it at idle.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the steering wheel from lock to lock several times to raise fluid temperature.</ptxt>
+<spec>
+<title>Fluid temperature</title>
+<specitem>
+<ptxt>70 to 80°C (158 to 176°F)</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Check for foaming or emulsification.</ptxt>
+<ptxt>If foaming or emulsification is identified, bleed the power steering system (See page <xref label="Seep01" href="RM000001BOQ002X_01_0001"/>).</ptxt>
+<figure>
+<graphic graphicname="C137876E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>With the engine idling, measure the fluid level in the fluid reservoir.</ptxt>
+<figure>
+<graphic graphicname="C137875E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Stop the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Wait a few minutes and remeasure the fluid level in the fluid reservoir.</ptxt>
+<spec>
+<title>Maximum fluid level rise</title>
+<specitem>
+<ptxt>5 mm (0.20 in.)</ptxt>
+</specitem>
+</spec>
+<ptxt>If a problem is found, bleed the power steering system (See page <xref label="Seep02" href="RM000001BOQ002X_01_0001"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Check the fluid level.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001A0S002X_01_0008" proc-id="RM0250U___000004N00000">
+<ptxt>INSPECT STEERING FLUID PRESSURE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Disconnect the pressure feed tube assembly from the vane pump assembly (See page <xref label="Seep01" href="RM000001A1S003X_01_0002"/> for 2AZ-FE, <xref label="Seep02" href="RM000001A1S002X_01_0001"/> for 2GR-FE).</ptxt>
+</s2>
+<s2>
+<ptxt>Connect SST as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="C133506E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09640-10010</s-number>
+<s-subnumber>09641-01010</s-subnumber>
+<s-subnumber>09641-01060</s-subnumber>
+<s-subnumber>09641-01030</s-subnumber>
+</sstitem>
+</sst>
+<atten3>
+<ptxt>Check that the valve of the SST is in the open position.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Bleed the power steering system (See page <xref label="Seep03" href="RM000001BOQ002X_01_0001"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Start the engine and run it at idle.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the steering wheel from lock to lock several times to raise fluid temperature.</ptxt>
+<spec>
+<title>Fluid temperature</title>
+<specitem>
+<ptxt>70 to 80°C (158 to 176°F)</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>With the engine idling, close the valve of the SST and observe the reading on the SST.</ptxt>
+<figure>
+<graphic graphicname="C106309E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Minimum fluid pressure</title>
+<specitem>
+<ptxt>7,800 to 8,300 kPa (79.5 to 84.6 kgf/cm<sup>2</sup>, 1,131 to 1,204 psi)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not keep the valve closed for more than 10 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Do not allow the fluid temperature to become too high.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+<s2>
+<ptxt>With the engine idling, open the valve fully.</ptxt>
+<figure>
+<graphic graphicname="C106310E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Measure the fluid pressure at engine speeds of 1,000 rpm and 3,000 rpm.</ptxt>
+<spec>
+<title>Fluid pressure difference</title>
+<specitem>
+<ptxt>490 kPa (5 kgf/cm<sup>2</sup>, 71 psi) or less</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Do not turn the steering wheel.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>With the engine idling and the valve fully opened, turn the steering wheel left or right to the full lock position. Observe the reading on the SST.</ptxt>
+<figure>
+<graphic graphicname="C106311E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Minimum fluid pressure</title>
+<specitem>
+<ptxt>7,800 to 8,300 kPa (79.5 to 84.6 kgf/cm<sup>2</sup>, 1,131 to 1,204 psi)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not keep the steering wheel in the full lock position for more than 10 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Do not allow the fluid temperature to become too high.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+<s2>
+<ptxt>Disconnect the SST.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the pressure feed tube assembly to the vane pump assembly (See page <xref label="Seep04" href="RM000001A1P003X_01_0002"/> for 2AZ-FE, <xref label="Seep05" href="RM000001A1P002X_01_0003"/> for 2GR-FE).</ptxt>
+</s2>
+<s2>
+<ptxt>Bleed the power steering system (See page <xref label="Seep06" href="RM000001BOQ002X_01_0001"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001A0S002X_01_0004" proc-id="RM0250U___000004L00000">
+<ptxt>CHECK STEERING EFFORT</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Stop the vehicle on a level, paved surface and turn the wheels straight ahead.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the negative (-) battery cable from the battery (See page <xref label="Seep01" href="RM000000KT1010X"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the steering pad (See page <xref label="Seep02" href="RM000000UW800IX"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the negative (-) battery cable to the battery.</ptxt>
+</s2>
+<s2>
+<ptxt>Using a torque wrench, check if the steering wheel set nut is properly tightened.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>50</t-value1>
+<t-value2>510</t-value2>
+<t-value4>37</t-value4>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Start the engine and run it at idle.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the steering wheel 90 degrees to the right and check steering effort (torque) while turning the wheel. Check the opposite direction in the same manner.</ptxt>
+<figure>
+<graphic graphicname="C132536" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<subtitle>Steering effort (Reference)</subtitle>
+<torqueitem>
+<t-value1>6.0</t-value1>
+<t-value2>61</t-value2>
+<t-value3>53</t-value3>
+<ptxt> (LE Grade, XLE Grade)</ptxt>
+</torqueitem>
+<subtitle>Steering effort (Reference)</subtitle>
+<torqueitem>
+<t-value1>6.8</t-value1>
+<t-value2>69</t-value2>
+<t-value3>60</t-value3>
+<ptxt> (SE Grade)</ptxt>
+</torqueitem>
+</torque>
+<atten4>
+<ptxt>Check tire type, pressure, and the road surface before making your diagnosis.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Disconnect the negative (-) battery cable from the battery.</ptxt>
+</s2>
+<s2>
+<ptxt>Torque the steering wheel set nut.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>50</t-value1>
+<t-value2>510</t-value2>
+<t-value4>37</t-value4>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Install the steering pad (See page <xref label="Seep03" href="RM000000UW600JX"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the negative (-) battery cable to the battery.</ptxt>
+</s2>
+<s2>
+<ptxt>Clear the DTCs (See page <xref label="Seep04" href="RM000000XFE00YX"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Inspect the airbag warning light (See page <xref label="Seep05" href="RM000000XFD00ZX"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

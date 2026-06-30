@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QY700BX" category="U" type-id="3001G" name-id="EI0E8-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000QY700BX_z0" proc-id="RM0250U___00008DB00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK ENGINE SWITCH</ptxt>
+<figure>
+<graphic graphicname="B146454E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the E52 switch connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E52-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Reconnect the E52 switch connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E52-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>VC5 (E52-14) - AGND (E52-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R - G</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is not in cabin</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Press engine switch</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>CODE (E52-10) - AGND (E52-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>W - G</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Demodulated signal of key code data</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is not in cabin</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>TXCT (E52-9) - AGND (E52-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>GR - G</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Key code output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is not in cabin</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: Remove the key battery before performing this inspection.</ptxt>
+</atten4>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, the switch may have a malfunction.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139211E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CODE (E52-10) - AGND (E52-8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: Remove the key battery before performing this inspection.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139212E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TXCT (E52-9) - AGND (E52-8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: Remove the key battery before performing this inspection.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK CERTIFICATION ECU</ptxt>
+<figure>
+<graphic graphicname="B106648E23" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the E58 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E (E58-17) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (E58-1) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (E58-18) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Reconnect the E58 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E58-40) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>VC5 (E58-30) - AGND (E58-40)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>R - G</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Engine switch power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is not in cabin</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Press engine switch*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>CODE (E58-9) - AGND (E58-40)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>W - G</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Engine switch CODE input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is not in cabin</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation (see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>TXCT (E58-8) - AGND (E58-40)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>GR - G</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Engine switch TXCT output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key is not in cabin</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation (see waveform 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: Remove the key battery before performing this inspection.</ptxt>
+</atten4>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139211E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CODE (E58-9) - AGND (E58-40)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: Remove the key battery before performing this inspection.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139212E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TXCT (E58-8) - AGND (E58-40)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV., 20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Press engine switch and hold key close to engine switch*</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: Remove the key battery before performing this inspection.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK ID CODE BOX</ptxt>
+<figure>
+<graphic graphicname="B118534E03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the E50 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND (E50-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (E50-1) - GND (E50-8)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Reconnect the E50 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>EFII (E50-5) - GND (E50-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>ECM input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>EFIO (E50-6) - GND (E50-8)</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>ECM output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139209E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFII (E50-5) - GND (E50-8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV., 100 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139210E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFIO (E50-6) - GND (E50-8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV., 100 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK STEERING CONTROL ECU</ptxt>
+<figure>
+<graphic graphicname="B118684E03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the E51 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SGND (E51-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>GND (E51-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>B (E51-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>IG2 (E51-6) - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>Ignition power supply</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK ECM</ptxt>
+<figure>
+<graphic graphicname="A107881E14" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>E1 (C55-81) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>E01 (C55-22) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>E02 (C55-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B-W - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>E03 (C55-104) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>E04 (C55-23) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>E05 (C55-46) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ME01 (C55-20) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>BATT (A55-20) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Battery (for measuring battery voltage and for ECM memory)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>+B (A55-2) - E1 (C55-81)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>Power source of ECM</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>IMI (A55-11) - E1 (C55-81)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>Immobiliser code ECU input signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>IMO (A55-10) - E1 (C55-81)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>Immobiliser code ECU output signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, the ECM may have a malfunction.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<step3>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139210E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IMI (A55-11) - E1 (C55-81)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV., 100 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<figure>
+<graphic graphicname="B139209E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IMO (A55-10) - E1 (C55-10)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV., 100 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK MAIN BODY ECU (INSTRUMENT PANEL J/B)</ptxt>
+<step2>
+<ptxt>Disconnect the IF and IM junction block connectors.</ptxt>
+</step2>
+<step2>
+<ptxt>Disconnect the E8, E7 and E6 main body ECU connectors.</ptxt>
+<figure>
+<graphic graphicname="B128347E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Measure the resistance and voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>GND1 (IF-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>GND2 (IM-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>GND3 (E8-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>AM1 (E7-6) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>AM2 (E6-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

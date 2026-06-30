@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XI500LX" category="U" type-id="303FJ" name-id="ST014-18" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000XI500LX_z0" proc-id="RM0250U___00009H400000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester to read the Data List allows the values or states of switches, sensors, actuators and other items to be read without removing any parts. This non-intrusive inspection can be very useful as intermittent conditions or signals may be discovered before parts or wiring is disturbed. Reading the DATA LIST information early in troubleshooting is one way to save diagnostic time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+<ptxt>When using the intelligent tester with the engine switch off, turn on and off any of the door courtesy light switches repeatedly at 1.5 or less second intervals until communication between the tester and vehicle starts.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ACC SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (ACC) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (ACC)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (IG) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (IG)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SHIFT P SIG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Shift P position signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Shift position is P</ptxt>
+<ptxt>OFF: Shift position is not P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STR UNLOCK SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Steering lock condition / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Steering is unlocked (Engine switch on (ACC))</ptxt>
+<ptxt>OFF: Steering is locked (Engine switch off)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STOP LAMP SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Stop light switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STSW1</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Start switch 1 / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch is pushed</ptxt>
+<ptxt>OFF: Engine switch is not pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>START SW2</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Start switch 2 / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch is pushed</ptxt>
+<ptxt>OFF: Engine switch is not pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N SW / C SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Neutral start switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Shift position is P or N</ptxt>
+<ptxt>OFF: Shift position is neither P nor N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RATCH CIRCUIT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ratch circuit / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (IG) or engine running</ptxt>
+<ptxt>OFF: Engine switch off or on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG1 RELAY MON1</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG1 outer relay monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (IG)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG1 RELAY MON2</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG1 inner relay monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (IG)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG2 RELAY MON1</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG2 outer relay monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (IG)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG2 RELAY MON2</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG2 inner relay monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (IG)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ST RELAY MON</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>STARTER relay monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine is cranking</ptxt>
+<ptxt>OFF: Engine is not cranking</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine is cranking with engine switch on (IG) and shift lever in P or N</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ST REQUEST SIG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Starter request signal monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: ST relay is ON</ptxt>
+<ptxt>OFF: ST relay is OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch pressed and held with shift lever in P or N</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC RELAY MON</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ACC relay monitor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (ACC)</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC CUT SIG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ACC relay cut signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine is cranking</ptxt>
+<ptxt>OFF: Engine is not cranking</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E/G COND</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine condition / STOP or RUN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>STOP: Engine is stopped</ptxt>
+<ptxt>RUN: Engine is running</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD SIG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed signal / STOP or RUN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>STOP: Vehicle is stopped</ptxt>
+<ptxt>RUN: Vehicle is running</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PWR COND</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Power supply condition / ALL, ACC ON, IG1 IG2, ST ON</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ALL: All relays are OFF</ptxt>
+<ptxt>ACC ON: ACC relay is ON</ptxt>
+<ptxt>IG1: IG1 relay is ON</ptxt>
+<ptxt>IG2: IG2 relay is ON</ptxt>
+<ptxt>ST ON: ST request signal is ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>READY SIG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ready Signal / ON or OFF or Unknown</ptxt>
+</entry>
+<entry valign="middle" align="left"/>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>COM ENTRY&amp;STRT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Communication for certification ECU / OK or STOP</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OK: Communication</ptxt>
+<ptxt>STOP: No communication</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's ACTIVE TEST allows the relay, VSV, actuator and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD / MOBD / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>LIGHTING IND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indicator for lighting </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IND CONDITION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Green / Amber / No Sig</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STR LOCK PWR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for steering lock ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

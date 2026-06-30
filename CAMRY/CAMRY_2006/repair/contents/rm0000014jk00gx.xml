@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM0000014JK00GX" category="J" type-id="300WM" name-id="RS2DT-01" from="200601">
+<dtccode/>
+<dtcname>Diagnosis Circuit</dtcname>
+<subpara id="RM0000014JK00GX_01" type-id="60" category="03" proc-id="RM0250U___000071O00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>DTC output mode is set by connecting terminals TC and CG of the DLC3.</ptxt>
+<ptxt>DTCs are displayed by blinking of the SRS warning light.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When each warning light stays blinking, a ground short in the wiring of terminal TC of the DLC3 or an internal ground short in each ECU is suspected.</ptxt>
+</item>
+<item>
+<ptxt>A DTC output mode signal is transmitted through CAN communication system to each ECU including the center airbag sensor assembly. Thus when all systems do not enter DTC output mode, there may be an ECM malfunction.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000014JK00GX_02" type-id="32" category="03" proc-id="RM0250U___000071P00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C123740E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C123741E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000014JK00GX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000014JK00GX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000014JK00GX_05_0011" proc-id="RM0250U___000071T00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if a CAN communication system DTC is output (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014JK00GX_05_0001" fin="false">A</down>
+<right ref="RM0000014JK00GX_05_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0001" proc-id="RM0250U___000071Q00000">
+<testtitle>CHECK WIRE HARNESS (DLC3 - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="E126838E05" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from ECM.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>for 2GR-FE</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E10-13 (TC) - A55-27 (TC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>for 2AZ-FE</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E10-13 (TC) - A24-27 (TC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014JK00GX_05_0002" fin="false">OK</down>
+<right ref="RM0000014JK00GX_05_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0002" proc-id="RM0250U___000071R00000">
+<testtitle>CHECK WIRE HARNESS (CG OF DLC3 - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126742E26" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E10-4 (CG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014JK00GX_05_0003" fin="false">OK</down>
+<right ref="RM0000014JK00GX_05_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0003" proc-id="RM0250U___000071S00000">
+<testtitle>CHECK WIRE HARNESS (TC OF ECM - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E126835E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<subtitle>for 2GR-FE</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A55-27 (TC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>for 2AZ-FE</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A24-27 (TC) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014JK00GX_05_0010" fin="true">OK</down>
+<right ref="RM0000014JK00GX_05_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0005">
+<testtitle>REPAIR OR REPLACE WIRE HARNESS (TC OF DLC3 - TC OF ECM)</testtitle>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0006">
+<testtitle>REPAIR OR REPLACE WIRE HARNESS (CG OF DLC3 - BODY GROUND)</testtitle>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0007">
+<testtitle>REPAIR OR REPLACE WIRE HARNESS OR EACH ECU</testtitle>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0010">
+<testtitle>REPLACE CENTER AIRBAG SENSOR ASSEMBLY<xref label="Seep01" href="RM000000UWV00HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000014JK00GX_05_0012">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

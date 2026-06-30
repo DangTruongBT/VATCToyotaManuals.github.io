@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000000XFG00MX" category="U" type-id="303FI" name-id="RS05U-24" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM000000XFG00MX_z0" proc-id="RM0250U___000072400000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C145308E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C145307E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Transmitting ECU</ptxt>
+<ptxt>(Transmitter)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Communication method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crash detection signal</ptxt>
+</entry>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>CAN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver seat buckle switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>SRS warning light ON demand signal</ptxt>
+</item>
+<item>
+<ptxt>SRS warning light blink demand signal</ptxt>
+</item>
+<item>
+<ptxt>Passenger seat occupant detection signal</ptxt>
+</item>
+<item>
+<ptxt>Passenger seat buckle switch signal</ptxt>
+</item>
+<item>
+<ptxt>Diagnosis signal (DTC)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed signal</ptxt>
+</item>
+<item>
+<ptxt>Meter diagnoses polling signal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Engine speed signal</ptxt>
+</item>
+<item>
+<ptxt>Accelerator opening angle information</ptxt>
+</item>
+<item>
+<ptxt>Accelerator opening angle signal</ptxt>
+</item>
+<item>
+<ptxt>Shift position signal</ptxt>
+</item>
+<item>
+<ptxt>Test mode signal</ptxt>
+</item>
+<item>
+<ptxt>Stop signal</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,224 @@
+<!-- $Id: global.html,v 1.25 2005/10/28 01:54:24 n-tamamura Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 Parts Location                                                  -->
+<!--    005 Preparation                                                     -->
+<!--    006 Tech Tips                                                       -->
+<!--    007 Note                                                            -->
+<!--    011 EWD                                                             -->
+<!--    012 Tech Description                                                -->
+<!--    008 print(attribute)                                                -->
+<!--    009 PRINT_WINDOW_TITLE                                              -->
+<!--    010 logo(attribute)                                                 -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">  
+<title>Installation/Removal Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javaScript">
+var g_pprList = null;
+var g_tips    = null;
+var DELIM     = " &gt; ";
+var PRINT_WINDOW_TITLE = "Installation and Removal"; // 009
+
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	setLinks(true);  //Control [Parts Location][Tech Tips][Note] Links...
+}
+
+function setLinks(isInitial) {
+	if (parent.g_objXml==null) return;
+	g_pprList = parent.getPreparationArray(parent.g_objXml, parent.g_tocXml);
+	document.all('ppr').style.visibility = (g_pprList==null) ? "hidden" : "";
+	g_tips = parent.getTips(parent.g_objXml);
+	document.all('tps').style.visibility = (g_tips==null) ? "hidden" : "";
+	if (isInitial) {
+		var g_note = parent.g_tocXml.selectNodes("//para[@category='M']");
+		document.all('nte').style.visibility = (g_note.length<1) ? "hidden" : "";
+	}
+	var titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var ewdXml = parent.initXml("../../../ewd/toc_ewd.xml", true, false);
+	if (ewdXml==null) {
+		ewd.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ewdXml, lewd, titleName, "ewd", parent.g_term);
+		if (lewd.innerHTML.length==0) ewd.style.visibility = "hidden";
+	}
+	var ncfXml = parent.initXml("../../../ncf/toc_ncf.xml", true, false);
+	if (ncfXml==null) {
+		tec.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ncfXml, ltec, titleName, "ncf", parent.g_term);
+		if (ltec.innerHTML.length==0) tec.style.visibility = "hidden";
+	}
+}
+
+// Print Preview
+function callPrintPreview(objXml, objXsl) {
+	var dialogTitle = parent.g_sectionName
+									+ DELIM + parent.g_titleName
+									+ DELIM + parent.g_paragraphName;
+	parent.openPrintPreview(objXml, objXsl, null, PRINT_WINDOW_TITLE, dialogTitle, true);
+}
+
+// Preparation Items
+function callPreparationItems(pprXmlList) {
+	var dialogTitle = parent.g_sectionName
+									+ DELIM + parent.g_titleName
+									+ DELIM + parent.g_paragraphName;
+	parent.openPreparationItems(pprXmlList, dialogTitle);
+}
+
+// Tips List
+function callTips(tipsXml) {
+	var dialogTitle = parent.g_sectionName
+									+ DELIM + parent.g_titleName
+									+ DELIM + parent.g_paragraphName;
+	parent.openTips(tipsXml, dialogTitle);
+}
+
+function callNote() {
+	parent.setDialogArgs(parent.g_tocXml);
+	parent.openDialog("note_frame.html", "nte");
+	parent.clearDialogArgs();
+}
+	  
+// Back
+function callBackPage(term, vin, filter, bp) {
+	var idx = parent.findParameterValue("idx", parent.location.search);
+	var ilstId = parent.findParameterValue("illust", parent.location.search);
+	if (idx!=null) {
+		parent.openBackPage(term, vin, filter, idx);
+		return;
+	} else if (ilstId!=null){
+		parent.openBackPage(term, vin, filter, "rmv_toc");
+		return;
+	} else {
+		parent.openTopPage(term, vin, filter);
+	}
+}
+
+//===========================================================================
+// Get neccessary parameters for function 'parent.openPartsLocation()'.
+//===========================================================================
+var DELIM = " &gt; ";
+function callPartsLocation() {
+	var secId = parent.g_secId;
+	var ttlId = parent.g_ttlId;
+	var paraId = parent.g_paraId;
+	if(secId==null || ttlId==null) {
+		if(paraId==null) {
+			alert(parent.PARTS_LOCATION_ERROR);
+			return;
+		}
+		var paraNode = parent.g_tocXml.selectSingleNode("//para[@id='" +paraId +"']");
+		if(paraNode==null) {
+			alert(parent.PARTS_LOCATION_ERROR);
+			return;
+		}
+		var ttlNode  = paraNode.parentNode;
+		var secNode  = ttlNode.parentNode;
+		ttlId = ttlNode.getAttribute("id");
+		parent.g_ttlId = ttlId;
+		secId = secNode.getAttribute("id");
+		parent.g_secId = secId;
+		parent.g_prcXml = (parent.g_prcXml!=null) 
+						? parent.g_prcXml 
+						: parent.initXml("proc_" +secId +".xml",false, false);
+	}
+	var procXml = parent.g_prcXml;
+	if (procXml==null) {
+	  alert(parent.PARTS_LOCATION_ERROR);
+		return;
+	}
+	var sId = parent.getCurChoice();  //Selected '<s-1>/@id'
+
+	//get a partsID from selected '<s-1>/@id'
+	var partsNode = procXml.selectSingleNode("//subpara/s-1[@id='" +sId +"']/parts");
+	if(partsNode==null) {alert(parent.PARTS_LOCATION_ERROR); return;}
+	var partsId = partsNode.getAttribute("id");    //Parts ID which is related with selected 's1'.
+
+	// 1)Search whether applicable parts exist in the 'Parts Location' in the chosen <ttl>.
+	var cmpXml = parent.g_cmpXml;
+	if(cmpXml==null) {
+		alert(parent.PARTS_LOCATION_ERROR);
+		return;
+	}
+	var illstPartsNode = cmpXml.selectSingleNode("//ttl[@id='" +ttlId +"']/para[@category='K']/subpara/illust/parts[@id='" +partsId +"']");
+	if(illstPartsNode!=null) {
+//		var dgTitle = parent.g_sectionName +DELIM +parent.g_titleName;
+		var illust = illstPartsNode.parentNode.getAttribute("id");
+		var plParaId = cmpXml.selectSingleNode("//para[.//illust/@id='" +illust +"']/@id").nodeTypedValue;
+		var plSecName = parent.g_tocXml.selectSingleNode("//section[.//para/@id='" +plParaId +"']/name").nodeTypedValue;
+		var plTtlName = parent.g_tocXml.selectSingleNode("//ttl[.//para/@id='" +plParaId +"']/name").nodeTypedValue;
+		var dgTitle = plSecName +DELIM +plTtlName;
+		parent.openPartsLocation(partsId, illust, dgTitle, plParaId);
+		return;
+	}
+
+  // 2)When applicable parts cannot be found after '1)', it searches whether applicable parts exist from 'Parts Location' in other <ttl> within the same <section>.
+	illstPartsNode = cmpXml.selectSingleNode("//section[@id='" +secId +"']/ttl/para[@category='K']/subpara/illust/parts[@id='" +partsId +"']");
+	if (illstPartsNode!=null) {
+		paraId = illstPartsNode.parentNode.parentNode.parentNode.getAttribute("id");
+//		var dgTitle = parent.g_sectionName + DELIM + parent.getTitleName(paraId, parent.g_tocXml);
+		var illust = illstPartsNode.parentNode.getAttribute("id");
+		var plParaId = cmpXml.selectSingleNode("//para[.//illust/@id='" +illust +"']/@id").nodeTypedValue;
+		var plSecName = parent.g_tocXml.selectSingleNode("//section[.//para/@id='" +plParaId +"']/name").nodeTypedValue;
+		var plTtlName = parent.g_tocXml.selectSingleNode("//ttl[.//para/@id='" +plParaId +"']/name").nodeTypedValue;
+		var dgTitle = plSecName +DELIM +plTtlName;
+		parent.openPartsLocation(partsId, illust, dgTitle, plParaId);
+		return;
+	}
+
+	// 3)When applicable parts cannnot be found after '1)' and '2)'.
+	alert(parent.PARTS_LOCATION_ERROR); 
+	return;
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 010 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="callBackPage(parent.g_term, parent.g_vin, parent.g_filter, parent.g_bp)">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="right">
+			<a id="pts" href="#" class="popup-button" onClick="callPartsLocation();">Parts Location</a><!-- 004 -->
+			<a id="ppr" href="#" class="popup-button" onClick="callPreparationItems(g_pprList)">Preparation</a><!-- 005 -->
+			<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">Tech Tips</a><!-- 006 -->
+			<a id="nte" href="#" class="popup-button" onClick="callNote();">Note</a><!-- 007 -->
+			<a id="ewd" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, lewd);" onMouseOut="parent.dropDownDelayUndisp();">EWD</a><!-- 011 -->
+			<div id="lewd" style="display: none"></div>
+			<a id="tec" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, ltec);" onMouseOut="parent.dropDownDelayUndisp();">Tech Description</a><!-- 012 -->
+			<div id="ltec" style="display: none"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px">
+			<a href="#" onClick="callPrintPreview(parent.g_objXml, parent.g_prtCttXsl);">
+			        <img alt="print" src="../../img/print.png" class="print"><!-- 008 -->
+			</a>
+		</td>
+		<td class="boundary-top">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!-- $Id: ttl_frame.html,v 1.12 2005/06/03 02:48:09 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  001 TITLE                                                             -->
+<!--  body(element)                                                         -->
+<!--  002 alert()                                                           -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection -Title Selection-</title>
+<script language="javascript">
+var TITLE = "Title"; // 001
+function initContents() {
+	var args = window.dialogArguments;
+	if (args==null || args.length<2) return;
+	var ttlList = args[0];
+	var partsName = args[1];
+	var tocXml = args[2];
+	if (ttlList==null || ttlList.length<2) return;
+	var dispPage =  "";
+	tocXml.setProperty("SelectionLanguage", "XPath");
+	dispPage =  "<table border='1' width='100%' cellspacing='0' cellpadding='0' bordercolor='#FFFFFF'>"
+		+ "<tr><th class='pointdisplaytitle' width='85%'>"
+		+ "<b>" + TITLE + "</b>"
+		+ "</th></tr>";
+	// 同一タイトル名検索準備(ソートもします)
+	var ttlNameArraySort = new Array();
+	for (var i=0; i<ttlList.length; i++) {
+		var ttl = ttlList.item(i);
+		var ttlId = ttl.selectSingleNode("@id").nodeTypedValue;
+		if (tocXml.selectSingleNode("//ttl[@id='"+ttlId+"']/name")==null) {
+			alert("There is no information available.\n[Details: ttlId("+ttlId+") not found in toc_rpr.xml]"); // 002
+			return;
+		}
+		ttlNameArraySort.push(tocXml.selectSingleNode("//ttl[@id='"+ttlId+"']/name").nodeTypedValue+"$%$"+ttlId);
+	}
+	//ttlNameArraySort.sort();
+	var ttlNameArray = new Array();
+	var ttlIdArray = new Array();
+	for (var i=0; i<ttlNameArraySort.length; i++) {
+		var tmp = ttlNameArraySort[i].split("$%$");
+		ttlNameArray.push(tmp[0]);
+		ttlIdArray.push(tmp[1]);
+	}
+	// 各タイトル名称などを取得
+	for (var i=0; i<ttlIdArray.length; i++) {
+		var ttlId = ttlIdArray[i];
+		var ttlName = tocXml.selectSingleNode("//ttl[@id='"+ttlId+"']/name").nodeTypedValue;
+		// 同一タイトル名検索
+		var sameNames = 0;
+		for (var j in ttlNameArray) {
+			if (ttlNameArray[j] == ttlName) sameNames++;
+		}
+		var sectionName = null;
+//		if (sameNames > 1) {
+			sectionName = tocXml.selectSingleNode("//section[ttl[@id='"+ttlId+"']]/name").nodeTypedValue;
+//		}
+		dispPage += "<tr><td class='tbl-par'>"
+			+ "<a class='tbl-para' href='#' onClick=returnValue='"+ttlId+"';parent.window.close();>"
+			+  ttlName
+			+ ((sectionName!=null) ? " ("+sectionName+")" : "")
+			+ "</a></td></tr>";
+	}
+	contents.parts.innerHTML=partsName
+	dispPage = dispPage + "</table>";
+	contents.disp.innerHTML = dispPage ;
+}
+
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="ttl_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="ttl_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

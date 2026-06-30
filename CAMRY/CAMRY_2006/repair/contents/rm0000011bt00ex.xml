@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000011BT00EX" category="D" type-id="303F2" name-id="NS086-10" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM0000011BT00EX_z0" proc-id="RM0250U___00004XC00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Radio and navigation assembly outline</ptxt>
+<step2>
+<ptxt>Conventionally, 2 separate devices, a "radio and display" and a "navigation ECU" are used. This model has adopted a new type, combining these devices into a single unit.</ptxt>
+<figure>
+<graphic graphicname="E129826E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>Navigation system outline</ptxt>
+<step2>
+<ptxt>Vehicle position tracking methods</ptxt>
+<ptxt>It is essential that the navigation system correctly tracks the current vehicle position and displays it on the map. There are 2 methods to track the current vehicle position: autonomous (dead reckoning) and GPS* (satellite) navigation. Both navigation methods are used in conjunction with each other.</ptxt>
+<ptxt>*GPS (Global Positioning System)</ptxt>
+<figure>
+<graphic graphicname="E120052E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Position Calculation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The radio and navigation assembly calculates the current vehicle position (direction and current position) using the direction deviation signal from the gyro sensor and the running distance signal from the vehicle speed sensor and creates the driving route.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Map Display Processing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The radio and navigation assembly displays the vehicle track on the map by processing the vehicle position data, vehicle running track, and map data from the map disc.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Map Matching</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The map data from the map disc is compared to the vehicle position and running track data. Then, the vehicle position is matched with the nearest road.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GPS Correction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The vehicle position is matched to the position measured by GPS. Then, the measurement position data from the GPS unit is compared with the vehicle position and running track data. If the position is widely different, the GPS measurement position is used.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Distance Correction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The running distance signal from the vehicle speed sensor includes the error caused by tire wear and slippage between the tires and road surface. Distance correction is performed to account for this. The radio and navigation assembly automatically offsets the running distance signal to make up for the difference between it and the distance data of the map. The offset is automatically updated.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<figure>
+<graphic graphicname="I100028E07" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<atten4>
+<ptxt>The combination of autonomous and GPS navigation makes it possible to display the vehicle position even when the vehicle is in places where the GPS radio wave cannot receive a signal. When only autonomous navigation is used, however, the mapping accuracy may slightly decline.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Autonomous navigation</ptxt>
+<ptxt>This method determines the relative vehicle position based on the running track determined by the gyro and vehicle speed sensors located in the radio and navigation assembly.</ptxt>
+<step3>
+<ptxt>Gyro sensor</ptxt>
+<ptxt>Calculates the direction by detecting angular velocity. It is located in the radio and navigation assembly.</ptxt>
+</step3>
+<step3>
+<ptxt>Vehicle speed sensor</ptxt>
+<ptxt>Used to calculate the vehicle running distance.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>GPS navigation (Satellite navigation)</ptxt>
+<ptxt>This method detects the absolute vehicle position using radio waves from a GPS satellite.</ptxt>
+<ptxt>* GPS satellites were launched by the U.S. Department of Defence for military purposes.</ptxt>
+<figure>
+<graphic graphicname="I100029E03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Number of satellites</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 or less</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement impossible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle position cannot be obtained because the number of satellites is not enough.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2-dimensional measurement is possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle position is obtained based on the current longitude and latitude. (This is less precise than 3-dimensional measurement.)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3-dimensional measurement is possible</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle position is obtained based on the current longitude, latitude and altitude.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Map matching</ptxt>
+<ptxt>The current driving route is calculated by autonomous navigation (according to the gyro sensor and vehicle speed sensor) and GPS navigation. This information is then compared with possible road shapes from the map data in the map disc and the vehicle position is set onto the most appropriate road.</ptxt>
+<figure>
+<graphic graphicname="I100030E07" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Touch switch</ptxt>
+<ptxt>Touch switches are touch-sensitive (interactive) switches operated by touching the screen. When a switch is pressed, the outer glass bends in to contact the inner glass at the pressed position. By doing this, the voltage ratio is measured and the pressed position is detected.</ptxt>
+<figure>
+<graphic graphicname="E106414E03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DVD (Digital Versatile Disc) player outline (for navigation map)</ptxt>
+<step2>
+<ptxt>The radio and navigation assembly (built-in navigation ECU) uses a laser pickup to read the digital signals recorded on a DVD.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Do not disassemble any part of the radio and navigation assembly (built-in navigation ECU).</ptxt>
+</item>
+<item>
+<ptxt>Do not apply oil to the radio and navigation assembly (built-in navigation ECU).</ptxt>
+</item>
+<item>
+<ptxt>Do not insert anything but a DVD into the radio and navigation assembly (built-in navigation ECU).</ptxt>
+</item>
+</list1>
+</atten4>
+<atten2>
+<ptxt>Do not look directly at the laser pickup because the radio and navigation assembly (built-in navigation ECU) uses an invisible laser beam.</ptxt>
+<ptxt>Be sure to only operate the navigation system as instructed.</ptxt>
+</atten2>
+</step2>
+</step1>
+<step1>
+<ptxt>CD (Compact Disc) player outline</ptxt>
+<step2>
+<ptxt>A compact disc player uses a laser pickup to read digital signals recorded on a compact disc (CD). By converting the digital signals to analog, it can play music and other content.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not disassemble any part of the CD player.</ptxt>
+</item>
+<item>
+<ptxt>Do not apply oil to the CD player.</ptxt>
+</item>
+<item>
+<ptxt>Do not insert anything but a CD into the CD player.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten2>
+<ptxt>Do not look directly at the laser pickup because the CD player uses an invisible laser beam. Be sure to only operate the player as instructed.</ptxt>
+</atten2>
+</step2>
+<step2>
+<ptxt>Usable discs</ptxt>
+<step3>
+<ptxt>This player can only play audio CDs, CD-Rs (CD-Recordable), and CD-RWs (CD-ReWritable) that have any of the following marks:</ptxt>
+<figure>
+<graphic graphicname="E119759" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for use of discs</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Copy-protected CDs cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>CD-Rs and CD-RWs may not be played depending on the recording conditions or characteristics of the discs, or due to damage, dirt, or deterioration caused by leaving the discs in the cabin for a long time.</ptxt>
+</item>
+<item>
+<ptxt>Unfinalized CD-Rs and CD-RWs cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>DualDiscs that mate DVD recorded material on one side with CD digital audio material on the other cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>Keep the discs away from dirt. Be careful not to damage the discs or leave your fingerprints on them.</ptxt>
+</item>
+<item>
+<ptxt>Hold discs by the outer edge and center hole with the label side up.</ptxt>
+</item>
+<item>
+<ptxt>Leaving the disc exposed halfway out of the slot for a long time after pressing the disc eject button may cause deformation of the disc, making the disc unusable.</ptxt>
+</item>
+<item>
+<ptxt>If discs have adhesive tape, stickers, CDR labels, or any traces of such labels attached, the discs may not be ejected or player malfunctions may result.</ptxt>
+</item>
+<item>
+<ptxt>Keep the discs away from direct sunlight. (Exposure to direct sunlight may cause deformation of the disc, making the disc unusable.)</ptxt>
+</item>
+<item>
+<ptxt>Do not use odd-shaped CDs because these may cause player malfunctions.</ptxt>
+</item>
+<item>
+<ptxt>Do not use discs whose recording portion is transparent or translucent because they may not be inserted, ejected, or played normally.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When it is cold or it is raining, if the windows mist up, mist and also dew may form in the player. In such a case, the CD may skip or the CD may stop in the middle of play. Ventilate or dehumidify the cabin for a while before using the player.</ptxt>
+</item>
+<item>
+<ptxt>The CD may skip if the player experiences strong vibrations when the vehicle is driven on rough road or similar uneven surface(s).</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Cleaning</ptxt>
+<figure>
+<graphic graphicname="I100151" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>Do not use a lens cleaner because it may cause a malfunction in the pickup portion of the player.</ptxt>
+</atten3>
+<step3>
+<ptxt>If dirt is on the disc surface, wipe it clean with a soft dry cloth such as an eyeglass cleaner for plastic lenses from the inside to the outside in a radial direction.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Pressing on the disc by hand or rubbing the disc with a hard cloth may scratch the disc surface.</ptxt>
+</item>
+<item>
+<ptxt>Use of solvent such as a record spray, antistatic agent, alcohol, benzine, and thinner, or a chemical cloth may cause damage to the disc, making the disc unusable.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>MP3/WMA OUTLINE</ptxt>
+<step2>
+<ptxt>Playable MP3 file standards</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Compatible standard</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MP3 (MPEG1 LAYER3, MPEG2 LSF LAYER 3)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Compatible sampling frequency</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>MPEG1 LAYER3: 32, 44.1, 48 (kHz)</ptxt>
+</item>
+<item>
+<ptxt>MPEG2 LSF LAYER3: 16, 22.05, 24 (kHz)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Compatible bit rate</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>MPEG1 LAYER3: 64, 80, 96, 112, 128, 160, 192, 224, 256, 320 (kbps)</ptxt>
+</item>
+<item>
+<ptxt>MPEG2 LSF LAYER3: 64, 80, 96, 112, 128, 144, 160 (kbps)</ptxt>
+</item>
+<item>
+<ptxt>Compatible with VBR</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Compatible channel mode</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Stereo, joint stereo, dual channel, monaural</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Playable WMA file standards</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Compatible standard</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WMA Ver. 7, 8, and 9</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Compatible sampling frequency</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>32, 44.1, 48 (kHz)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Compatible bit rate</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Ver. 7, 8: CBR48, 64, 80, 96, 128, 160, 192 (kbps)</ptxt>
+</item>
+<item>
+<ptxt>Ver. 9: CBR48, 64, 80, 96, 128, 160, 192, 256, 320 (kbps)</ptxt>
+</item>
+<item>
+<ptxt>Compatible with playback of channel 2 only</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>ID3 tag and WMA tag</ptxt>
+<step3>
+<ptxt>Additional textual information called ID3 tag can be input to MP3 files. Information such as song titles and artist names can be stored.</ptxt>
+<atten4>
+<ptxt>This player is compatible with the ID3 tags of ID3 Ver. 1.0 and 1.1, and ID3 Ver. 2.2 and 2.3. (Number of characters complies with ID3 Ver. 1.0 and 1.1.)</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Additional textual information called WMA tag can be input to WMA files. Information such as song titles and artist names can be stored.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Usable media</ptxt>
+<step3>
+<ptxt>Only CD-ROMs, CD-Rs (CD-Recordable), and CD-RWs (CD-ReWritable) can be used to play MP3/WMA files.</ptxt>
+<atten3>
+
+<list1 type="unordered">
+<item>
+<ptxt>CD-Rs and CD-RWs are more easily affected by a hot and humid environment than discs used for normal audio CDs. For this reason, some CD-Rs and CD-RWs may not be played.</ptxt>
+</item>
+<item>
+<ptxt>If there are fingerprints or scratches on the disc, the disc may not be played or the CD may skip.</ptxt>
+</item>
+<item>
+<ptxt>Some CD-Rs and CD-RWs deteriorate if they are left in the cabin for a long time.</ptxt>
+</item>
+<item>
+<ptxt>Keep CD-Rs and CD-RWs in a storage case that is impenetrable to light.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Usable media format</ptxt>
+<step3>
+<ptxt>Usable media format</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Disc format</ptxt>
+</entry>
+<entry>
+<ptxt>CD-ROM Mode 1, CD-ROM XA Mode 2 Form 1</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>File format</ptxt>
+</entry>
+<entry>
+<ptxt>ISO9660 Level 1 and Level 2 (Joliet, Romeo)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>As for MP3/WMA files written in any format other than those above, the contents of the files may not be played normally or the file names or folder names may not be displayed correctly.</ptxt>
+</item>
+<item>
+<ptxt>This player is compatible with multi-session discs and can play CD-Rs and CD-RWs on which MP3/WMA files are added. However, only the first session can be played.</ptxt>
+</item>
+<item>
+<ptxt>Discs whose first session includes both music data and MP3 or WMA format data cannot be played.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+<step3>
+<ptxt>Standard and restrictions</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Maximum directory levels</ptxt>
+</entry>
+<entry>
+<ptxt>8 levels</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Maximum number of characters for a folder name/file name</ptxt>
+</entry>
+<entry>
+<ptxt>32 characters</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Maximum number of folders</ptxt>
+</entry>
+<entry>
+<ptxt>192 (Including empty folders, route folders, and folders that do not contain MP3/WMA files)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Maximum number of files in a disc</ptxt>
+</entry>
+<entry>
+<ptxt>255 (Including non-MP3/WMA files)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>File names</ptxt>
+<step3>
+<ptxt>Only files with an extension of ".mp3" or ".wma" can be recognized and played as MP3 or WMA files.</ptxt>
+</step3>
+<step3>
+<ptxt>Save MP3 or WMA files with an extension of ".mp3" or ".wma".</ptxt>
+<atten3>
+<ptxt>If saving non-MP3 or non-WMA files with an extension of ".mp3" or ".wma", those files are wrongly recognized as MP3 or WMA files and played. A loud noise may occur and damage to the speaker may result.</ptxt>
+</atten3>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>AVC-LAN Description</ptxt>
+<step2>
+<ptxt>What is AVC-LAN?</ptxt>
+<ptxt>AVC-LAN, an abbreviation for "Audio Visual Communication Local Area Network", is a united standard developed by the manufacturers in affiliation with Toyota Motor Corporation. This standard pertains to audio and visual signals as well as switch and communication signals.</ptxt>
+<figure>
+<graphic graphicname="I100032E09" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Purpose:</ptxt>
+<ptxt>Recently, car audio systems have rapidly developed and the functions have vastly changed. The conventional car audio system is being integrated with multi-media interfaces similar to those in navigation systems. At the same time, customers are demanding higher quality from their audio systems. This is merely an overview of the standardization background. The specific purposes are as follows:</ptxt>
+<step3>
+<ptxt>To solve sound problems, etc. caused by using components of different manufacturers through signal standardization.</ptxt>
+</step3>
+<step3>
+<ptxt>To allow each manufacturer to concentrate on developing products they do best. From this, reasonably priced products can be produced.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a short to +B or short to ground is detected in the AVC-LAN circuit, communication is interrupted and the audio system will stop functioning.</ptxt>
+</item>
+<item>
+<ptxt>If the audio system has a navigation system installed, the multi-display unit acts as the master unit. </ptxt>
+<ptxt>If the navigation system is not installed, the audio head unit acts as the master unit instead. If the radio and navigation assembly is installed, it is the master unit.</ptxt>
+</item>
+<item>
+<ptxt>The radio and navigation assembly contains a resistor that is necessary to enable communication on the different AVC-LAN circuits.</ptxt>
+</item>
+<item>
+<ptxt>The car audio system with an AVC-LAN circuit has a diagnostic function.</ptxt>
+</item>
+<item>
+<ptxt>Each component has a specified number (3-digit) called a physical address. Each function has a number (2-digit) called a logical address.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>Communication system outline</ptxt>
+<step2>
+<ptxt>Components of the navigation system communicate with each other via the AVC-LAN.</ptxt>
+</step2>
+<step2>
+<ptxt>The radio and navigation assembly has enough resistance (60 to 80 Ω) necessary for communication.</ptxt>
+</step2>
+<step2>
+<ptxt>If a short circuit or open circuit occurs in the AVC-LAN circuit, communication is interrupted and the navigation system will stop functioning.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>Diagnostic function outline</ptxt>
+<step2>
+<ptxt>The audio system has a diagnostic function (the result is indicated on the master unit).</ptxt>
+</step2>
+<step2>
+<ptxt>A 3-digit hexadecimal component code (physical address) is allocated to each component on the AVC-LAN. Using this code, the component in the diagnostic function can be displayed.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>"Bluetooth" outline</ptxt>
+<step2>
+<ptxt>"Bluethooth" is a trademark owned by Bluetooth SIG. Inc.</ptxt>
+<figure>
+<graphic graphicname="E100921" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>"Bluetooth" is a new wireless connection technology that uses the 2.4 GHz frequency band. This makes it possible to connect a cellular phone ("Bluetooth" compatible phone <sup>*1</sup>) to the radio and navigation assembly (the "Bluetooth" system is built in), and use the handsfree function of the cellular phone, even if it is in a pocket or bag. As a result, it is not necessary to use a connector attached directly to the cellular phone. </ptxt>
+<ptxt>*1: Some versions of "Bluetooth" compatible cellular phones may not function.</ptxt>
+<figure>
+<graphic graphicname="E121227E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<atten4>
+<ptxt>The communication performance of "Bluetooth" may vary depending on obstructions or radio wave conditions between communication devices, electromagnetic radiation, communication device sensitivity, or antenna capacity.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

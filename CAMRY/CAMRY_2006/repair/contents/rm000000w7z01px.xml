@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7Z01PX" category="C" type-id="302FL" name-id="AT07W-07" from="200601">
+<dtccode>P0711</dtccode>
+<dtcname>Transmission Fluid Temperature Sensor "A" Performance</dtcname>
+<subpara id="RM000000W7Z01PX_01" type-id="60" category="03" proc-id="RM0250U___000033Z00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ATF (Automatic Transmission Fluid) temperature sensor converts the fluid temperature into a resistance value for use by the TCM.</ptxt>
+<figure>
+<graphic graphicname="G031389E15" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<ptxt>The TCM applies a voltage to the temperature sensor through terminal OIL of the TCM.</ptxt>
+<ptxt>The sensor resistance changes with the transmission fluid temperature. As the temperature becomes higher, the sensor resistance decreases.</ptxt>
+<ptxt>One terminal of the sensor is grounded so that the sensor resistance decreases and the voltage goes down as the temperature becomes higher.</ptxt>
+<ptxt>The TCM calculates the fluid temperature based on the voltage signal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.27in"/>
+<colspec colname="COL2" colwidth="2.90in"/>
+<colspec colname="COL3" align="center" colwidth="2.91in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0711</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Both (a) and (b) are detected: (2-trip detection logic)</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>(a) Intake air and engine coolant temps. are more than -10°C (14°F) at engine start.</ptxt>
+</item>
+<item>
+<ptxt>(b) After normal driving for over 16 min. and 40 sec. and 5 mile (8 km) or more, ATF temp. is less than 20°C (68°F)</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transmission wire (ATF temperature sensor)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_02" type-id="64" category="03" proc-id="RM0250U___000034000000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC indicates that there is a problem with output signals from the automatic transmission fluid (ATF) temperature sensor (TFT sensor) and that the sensor itself is defective. The ATF temperature sensor converts the ATF temperature into an electrical resistance value. Based on the resistance, the TCM determines the ATF temperature and detects an open or short in the ATF temperature circuit or a fault of the ATF temperature sensor.</ptxt>
+<ptxt>After running the vehicle for a certain period, the ATF temperature should increase. If the ATF temperature is below 20°C (68°F) after running the vehicle for a certain period, the TCM interprets this as a fault, and turns on the MIL.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_10" type-id="65" category="03" proc-id="RM0250U___000034500000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0711: ATF temperature sensor/Rationality check</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF temperature sensor (TFT sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_11" type-id="66" category="03" proc-id="RM0250U___000034600000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ALL:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature) sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (Engine coolant temperature) sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IAT (Intake air temperature) sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intermediate shaft speed sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL1 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL2 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL3 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL4 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Knock control sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electronic throttle system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>16 min. and 40 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (Engine coolant temperature)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above -15°C (5°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition A:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>18 min. and 20 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Driving distance after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 miles (8 km) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IAT (12 sec. after engine start)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above -10°C (14°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (12 sec. after engine start)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above -10°C (14°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Accumulated driving time *1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>*1: Following conditions are met</ptxt>
+</entry>
+<entry valign="middle"/>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed - Turbine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>50 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>400 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle valve opening angle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3% or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not "N" or "P"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition B:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>30 min.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Driving distance after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9.3 miles (15 km)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IAT (12 sec. after engine start)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-15°C (5°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (12 sec. after engine start)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-15°C (5°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Accumulated driving time *1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>400 sec. or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition C:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>40 min.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Driving distance after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>12.4 miles (20 km)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Accumulated driving time *1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>550 sec. or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition D:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Time after ECT reaches 60°C (140°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (12 sec. after engine start)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>110°C (230°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (12 sec. after engine start)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>35°C (95°F) or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_12" type-id="67" category="03" proc-id="RM0250U___000034700000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Condition A, B and C:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20°C (68°F) (THO = -10°C (14°F) at engine start) (Conditions vary with THO at engine)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition D:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>110°C (230°F) or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_13" type-id="70" category="03" proc-id="RM0250U___000034800000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Atmospheric temperature - approx. 130°C (266°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_07" type-id="32" category="03" proc-id="RM0250U___000034100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133262E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_08" type-id="51" category="05" proc-id="RM0250U___000034200000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>According to the DATA LIST displayed on the intelligent tester, you can read the value of switches, sensors, actuators and other items without removing any parts. Reading the DATA LIST as the first step in troubleshooting is one method to save labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether a part is faulty.</ptxt>
+</atten3>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (Controller Area Network Vehicle Interface Module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, read "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/</ptxt>
+<ptxt>Range (display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AT OIL TEMP1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF Temp. Sensor Value/</ptxt>
+<ptxt>min.: -40°C (-40°F)</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>After Stall Test;</ptxt>
+<ptxt>Approx. 80°C (176°F)</ptxt>
+</item>
+<item>
+<ptxt>Equal to ambient temperature when cold soak</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When DTC P0712 is output and the intelligent tester indicates 150°C (302°F) or more, there is a short circuit.</ptxt>
+<ptxt>When DTC P0713 is output and the intelligent tester indicates -40°C (-40°F), there is an open circuit.</ptxt>
+<ptxt>Measure the resistance between terminal THO1 (OT) and body ground.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Temperature Displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>-40°C (-40°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>150°C (302°F) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short circuit</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If a circuit related to the ATF temperature sensor becomes open, P0713 is immediately set (in 0.5 seconds). When P0713 is set, P0711 cannot be detected.</ptxt>
+<ptxt>It is not necessary to inspect the circuit when P0711 is set.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01PX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W7Z01PX_09_0001" proc-id="RM0250U___000034300000">
+<testtitle>CHECK OTHER DTCS OUTPUT (IN ADDITION TO DTC P0711)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the items: "DIAGNOSIS / OBD/MOBD / ECT / DTC INFO / CURRENT CODES".</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0711" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"P0711" and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any other codes besides "P0711" are output, perform troubleshooting for those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W7Z01PX_09_0002" fin="false">A</down>
+<right ref="RM000000W7Z01PX_09_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0002" proc-id="RM0250U___000034400000">
+<testtitle>CHECK TRANSMISSION FLUID LEVEL</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Check the transmission fluid level (See page <xref label="Seep01" href="RM0000013BU00PX"/>).</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Automatic transmission fluid level is correct.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000W7Z01PX_09_0008" fin="false">OK</down>
+<right ref="RM000000W7Z01PX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0008" proc-id="RM0250U___0000CL000000">
+<testtitle>INSPECT TRANSMISSION WIRE (ATF TEMPERATURE SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM from the transaxle.</ptxt>
+<figure>
+<graphic graphicname="C133212E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>17 (E2) - 18 (THO1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>90 Ω to 156 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>17 (E2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>18 (THO1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the resistance is out of the specified range with the ATF temperature shown in the table below, the driveability of the vehicle may decrease.</ptxt>
+</atten4>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>ATF Temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 °C (50°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.8 to 7.1 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>110°C (230°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.23 to 0.26 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W7Z01PX_09_0006" fin="false">NG</down>
+<right ref="RM000000W7Z01PX_09_0009" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0006" proc-id="RM0250U___0000CBB00000">
+<testtitle>CHECK ATF TEMPERATURE SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the ATF temperature sensor connector from the transmission wire.</ptxt>
+<figure>
+<graphic graphicname="C133224E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E2 - THO1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>90 Ω to 156 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THO1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the resistance is out of the specified range with the ATF temperature shown in the table below, the driveability of the vehicle may decrease.</ptxt>
+</atten4>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>ATF Temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>10 °C (50°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.8 to 7.1 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>110°C (230°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.23 to 0.26 kΩ</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W7Z01PX_09_0003" fin="true">OK</down>
+<right ref="RM000000W7Z01PX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0003">
+<testtitle>REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0004">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0005">
+<testtitle>ADD FLUID</testtitle>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0009">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000W7Z01PX_09_0007">
+<testtitle>REPLACE ATF TEMPERATURE SENSOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PFY01LX" category="C" type-id="302IK" name-id="ES3XY-01" from="200601">
+<dtccode>P2120</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "D" Circuit</dtcname>
+<dtccode>P2122</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "D" Circuit Low Input</dtcname>
+<dtccode>P2123</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "D" Circuit High Input</dtcname>
+<dtccode>P2125</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "E" Circuit</dtcname>
+<dtccode>P2127</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "E" Circuit Low Input</dtcname>
+<dtccode>P2128</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "E" Circuit High Input</dtcname>
+<dtccode>P2138</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "D" / "E" Voltage Correlation</dtcname>
+<subpara id="RM000000PFY01LX_11" type-id="11" category="10" proc-id="RM0250U___00007N100000">
+<name>CAUTION / NOTICE / HINT</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>These DTCs relate to the Accelerator Pedal Position (APP) sensor.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_01" type-id="60" category="03" proc-id="RM0250U___00007MO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>This ETCS (Electronic Throttle Control System) does not use a throttle cable.</ptxt>
+<ptxt>The APP sensor is mounted on the accelerator pedal bracket and has 2 sensor circuits: VPA (main) and VPA2 (sub). This sensor is a non-contact type It uses Hall-effect elements in order to yield accurate signals even in extreme driving conditions, such as at high speeds as well as very low speeds. The voltage, which is applied to terminals VPA and VPA2 of the ECM, varies between 0 V and 5 V in proportion to the operating angle of the accelerator pedal (throttle valve). A signal from VPA indicates the actual accelerator pedal opening angle (throttle valve opening angle) and is used for engine control. A signal from VPA2 conveys the status of the VPA circuit and is used to check the APP sensor itself.</ptxt>
+<ptxt>The ECM monitors the actual accelerator pedal opening angle (throttle valve opening angle) through the signals from VPA and VPA2, and controls the throttle actuator according to these signals.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A112620E03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2120</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VPA fluctuates rapidly beyond upper and lower malfunction thresholds for 0.5 seconds or more (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2122</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VPA 0.4 V or less for 0.5 seconds or more when accelerator pedal fully released (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Open in VCP1 circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Open or ground short in VPA circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2123</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VPA 4.8 V or more for 2.0 seconds or more</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Open in EPA circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2125</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VPA2 fluctuates rapidly beyond upper and lower malfunction thresholds for 0.5 seconds or more (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2127</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VPA2 1.2 V or less for 0.5 seconds or more when accelerator pedal fully released (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Open in VCP2 circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Open or ground short in VPA2 circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2128</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Conditions (a) and (b) continue for 2.0 seconds or more (1 trip detection logic):</ptxt>
+<ptxt>(a) VPA2 4.8 V or more</ptxt>
+<ptxt>(b) VPA between 0.4 V and 3.45 V</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Open in EPA2 circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2138</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition (a) or (b) continues for 2.0 seconds or more (1 trip detection logic):</ptxt>
+<ptxt>(a) Difference between VPA and VPA2 0.02 V or less</ptxt>
+<ptxt>(b) VPA 0.4 V or less and VPA2 1.2 V or less</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short between VPA and VPA2 circuits</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>APP sensor</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When any of these DTCs are set, check the APP sensor voltage by selecting the following menu items on the intelligent tester: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / ACCEL POS #1 and ACCEL POS #2.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="2.27in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.20in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Trouble Areas</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACCEL POS #1</ptxt>
+<ptxt>When AP Released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACCEL POS #2</ptxt>
+<ptxt>When AP Released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACCEL POS #1</ptxt>
+<ptxt>When AP Depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACCEL POS #2</ptxt>
+<ptxt>When AP Depressed</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VCP circuit open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Open or ground short in VPA circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 2.0 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.4 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Open or ground short in VPA2 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.6 to 4.5 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 0.2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EPA circuit open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V	</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Normal condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1 V	</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 2.0 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.6 to 4.5 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.4 to 5.0 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator pedal positions are expressed as voltages.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>AP denotes Accelerator Pedal.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_02" type-id="64" category="03" proc-id="RM0250U___00007MP00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When either output voltage of VPA or VPA2 deviates from the standard range, or the difference between the output voltages of the 2 sensor circuits is less than the threshold, the ECM determines that there is a malfunction in the APP sensor. The ECM then illuminates the MIL and sets a DTC.</ptxt>
+<ptxt>Example:</ptxt>
+<ptxt>When the output voltage of VPA drops below 0.4 V for more than 0.5 seconds when the accelerator pedal is fully depressed, DTC P2122 is set.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 2 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_03" type-id="65" category="03" proc-id="RM0250U___00007MQ00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2120: APP sensor 1 range check (fluctuating)</ptxt>
+<ptxt>P2122: APP sensor 1 range check (low voltage)</ptxt>
+<ptxt>P2123: APP sensor 1 range check (high voltage)</ptxt>
+<ptxt>P2125: APP sensor 2 range check (fluctuating)</ptxt>
+<ptxt>P2127: APP sensor 2 range check (low voltage)</ptxt>
+<ptxt>P2128: APP sensor 2 range check (high voltage)</ptxt>
+<ptxt>P2138: APP sensor range check (correlation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)			</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>APP sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5 seconds: P2120, P2122, P2125 and P2127</ptxt>
+<ptxt>2.0 seconds: P2123, P2128 and P2138</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_04" type-id="66" category="03" proc-id="RM0250U___00007MR00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Throttle actuator power</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_05" type-id="67" category="03" proc-id="RM0250U___00007MS00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P2120:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Either of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>1. VPA voltage when VPA2 voltage is 0.04 V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.4 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2. VPA voltage</ptxt>
+</entry>
+<entry>
+<ptxt>4.8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2122:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VPA voltage when VPA2 voltage is 0.04 V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.4 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2123:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VPA voltage</ptxt>
+</entry>
+<entry>
+<ptxt>4.8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2125:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Either of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>1. VPA2 voltage when VPA voltage is 0.04 V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.2 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2. VPA2 voltage when VPA voltage is 0.4 to 3.45 V</ptxt>
+</entry>
+<entry>
+<ptxt>4.8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2127:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VPA2 voltage when VPA voltage is 0.04 V or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.2 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2128:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VPA2 voltage when VPA voltage is 0.4 to 3.45 V</ptxt>
+</entry>
+<entry>
+<ptxt>4.8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2138:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Either of the following conditions A or B is met:</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Condition A</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Difference between VPA and VPA 2 voltages</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.02 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Condition B</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VPA voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.4 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VPA2 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>1.2 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_06" type-id="70" category="03" proc-id="RM0250U___00007MT00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VPA voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.5 V to 4.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VPA2 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>1.2 V to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Difference between VPA and VPA2 voltages</ptxt>
+</entry>
+<entry>
+<ptxt>More than 0.02 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_07" type-id="62" category="03" proc-id="RM0250U___00007MU00000">
+<name>FAIL-SAFE</name>
+<content5 releasenbr="1">
+<ptxt>When any of DTCs P2120, P2121, P2122, P2123, P2125, P2127, P2128 and P2138 are set, the ECM enters fail-safe mode. If either of the 2 sensor circuit malfunctions, the ECM uses the remaining circuit to calculate the accelerator pedal position to allow the vehicle to continue driving. If both of the circuits malfunction, the ECM regards the accelerator pedal as being released. As a result, the throttle valve is closed and the engine idles.</ptxt>
+<ptxt>Fail-safe mode continues until a pass condition is detected, and the ignition switch is turned off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_08" type-id="32" category="03" proc-id="RM0250U___00007MV00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132297E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_09" type-id="51" category="05" proc-id="RM0250U___00007MW00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFY01LX_10" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PFY01LX_10_0001" proc-id="RM0250U___00007MX00000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (ACCEL POS #1 AND ACCEL POS #2)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="FI07052E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ETCS / ACCEL POS #1 and ACCEL POS #2.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the value displayed on the tester.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Accelerator Pedal Operations</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACCEL POS #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACCEL POS #2</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Released → Depressed → Released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5 to 4.5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.2 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Difference between ACCEL POS #1 and ACCEL POS #2 is greater than 0.02 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Difference between ACCEL POS #1 and ACCEL POS #2 is greater than 0.02 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFY01LX_10_0002" fin="false">NG</down>
+<right ref="RM000000PFY01LX_10_0005" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0002" proc-id="RM0250U___00007MY00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ACCELERATOR PEDAL POSITION SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A17 Accelerator Pedal Position (APP) sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A115665E05" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A17-6 (VPA) - A24-55 (VPA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-5 (EPA) - A24-59 (EPA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-4 (VCPA) - A24-57 (VCPA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-3 (VPA2) - A24-56 (VPA2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-2 (EPA2) - A24-60 (EPA2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-1 (VCP2) - A24-58 (VCP2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A17-6 (VPA) or A24-55 (VPA) - body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-5 (EPA) or A24-59 (EPA) - body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-4 (VCPA) or A24-57 (VCPA) - body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-3 (VPA2) or A24-56 (VPA2) - body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-2 (EPA2) or A24-60 (EPA2) - body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-1 (VCP2) or A24-58 (VCP2) - body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the APP sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFY01LX_10_0003" fin="false">OK</down>
+<right ref="RM000000PFY01LX_10_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0003" proc-id="RM0250U___00007MZ00000">
+<testtitle>CHECK ECM (VCPA AND VCP2 VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A17 APP sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A115666E07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the A17 APP sensor connector.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A17-4 (VCPA) - A17-5 (EPA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A17-1 (VCP2) - A17-2 (EPA2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the APP sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFY01LX_10_0010" fin="false">OK</down>
+<right ref="RM000000PFY01LX_10_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0010">
+<testtitle>REPLACE ACCELERATOR PEDAL ASSEMBLY</testtitle>
+<res>
+<down ref="RM000000PFY01LX_10_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0005" proc-id="RM0250U___00007N000000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (ACCELERATOR PEDAL POSITION SENSOR DTCS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle for 15 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2120, P2122, P2123, P2125, P2127, P2128, and/or P2138</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFY01LX_10_0009" fin="true">A</down>
+<right ref="RM000000PFY01LX_10_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0007">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0008">
+<testtitle>SYSTEM OK</testtitle>
+</testgrp>
+<testgrp id="RM000000PFY01LX_10_0009">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

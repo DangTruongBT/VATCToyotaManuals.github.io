@@ -1,0 +1,1436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHW009X" category="U" type-id="303FJ" name-id="BC02Q-09" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000XHW009X_z0" proc-id="RM0250U___00005RC00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>With the intelligent tester connected to the DLC3 and the ignition switch on (IG), the ABS, TRAC and VSC Data List can be displayed. Follow the prompts on the tester screen to access the Data List.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ABS MTR RELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS motor relay / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Motor relay ON</ptxt>
+<ptxt>OFF: Motor relay OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOL RELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid relay / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Solenoid relay ON</ptxt>
+<ptxt>OFF: Solenoid relay OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FAIL MTR RELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail safe motor relay / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Motor relay ON</ptxt>
+<ptxt>OFF: Motor relay OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IDLE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main idle switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Accelerator pedal released</ptxt>
+<ptxt>OFF: Accelerator pedal depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STOP LAMP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARKING BRAKE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking brake switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Parking brake applied</ptxt>
+<ptxt>OFF: Parking brake released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENG REVOLUTIONS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine revolutions / min.: 0 r/min, max.: 65535 r/min</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GEAR POSITION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Gear position information / P/N, R, 1st-6th, FAIL, NOT R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LEVER POSITION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position information / P/N, R, D/M, 1st-6th/B, FAIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SHIFT INFO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift information / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During gear change</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR wheel speed sensor reading / min.: 0 mph (0 km/h), max.: 202 mph (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Similar speed as indicated on speedometer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL wheel speed sensor reading / min.: 0 mph (0 km/h), max.: 202 mph (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Similar speed as indicated on speedometer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR wheel speed sensor reading / min.: 0 mph (0 km/h), max.: 202 mph (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Similar speed as indicated on speedometer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL wheel speed sensor reading / min.: 0 mph (0 km/h), max.: 202 mph (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Similar speed as indicated on speedometer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DECELERAT SEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Acceleration sensor 1 reading / min.: -1.889 G, max.: 1.875 G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 0+-0.13 G while stationary</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Reading changes when vehicle is bounced</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DECELERAT SEN 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Acceleration sensor 2 reading / min.: -1.889 G, max.: 1.875 G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approximately 0+-0.13 G while stationary</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Reading changes when vehicle is bounced</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFRR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SFRR) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFRH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SFRH) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFLR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SFLR) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFLH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SFLH) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRRR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SRRR) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRRH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SRRH) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRLR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SRLR) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRLH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS solenoid (SRLH) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SM1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master cut solenoid (SM1) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SM2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master cut solenoid (SM2) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operates</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Maximum wheel speed sensor reading / min.: 0 mph (0 km/h), max.: 202 mph (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual vehicle speed</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Speed indicated on speedometer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>YAW RATE SENS 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate sensor 1 / min.: -128 deg/s, max.: 127 deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -128 deg/s</ptxt>
+<ptxt>Max.: 127 deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ZERO YAW RATE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Memorized zero value / min.: -128 deg/s, max.: 127 deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -128 deg/s</ptxt>
+<ptxt>Max.: 127 deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING SEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering angle sensor / min.: -3,276.8 deg, max.: 3,276.7 deg</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Left turn: Increase</ptxt>
+<ptxt>Right turn: Decrease</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MAS CYL PRESS 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master cylinder pressure sensor 1 reading / min.: 0 V, max.: 5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When brake pedal is released: 0.3 to 0.5 V</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Reading increases when brake pedal is depressed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACCELERATOR %</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The difference of a present accelerator / min.: 0%, max.: 128%</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENGINE TORQUE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Real engine torque / min.: -1,024 N*m, max.: 1,023 N*m</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR SPD OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL SPD OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR SPD OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL SPD OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>YAW RATE OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DECELERAT OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Acceleration sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering angle sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M/C OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master cylinder pressure sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EFI COM OPN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFI communication open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of DTC / min.: 0, max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ABS WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS warning light / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Warning light ON</ptxt>
+<ptxt>OFF: Warning light OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BRAKE warning light / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Warning light ON</ptxt>
+<ptxt>OFF: Warning light OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIP INDI LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SLIP indicator light / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Indicator light ON</ptxt>
+<ptxt>OFF: Indicator light OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BUZZER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control buzzer / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Buzzer ON</ptxt>
+<ptxt>OFF: Buzzer OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC warning light (*1) or multi information display (*2) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Indicator ON</ptxt>
+<ptxt>OFF: Indicator OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ZERO M/C SEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Memorized zero value / min.: -12.5 MPa, max.: 12.4 MPa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -12.5 MPa</ptxt>
+<ptxt>Max.: 12.4 MPa</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR WHEEL ACCEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR wheel acceleration / min.: -200.84 m/s<sup>2</sup>, max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -200.84 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL WHEEL ACCEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL wheel acceleration / min.: -200.84 m/s<sup>2</sup>, max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -200.84 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR WHEEL ACCEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR wheel acceleration / min.: -200.84 m/s<sup>2</sup>, max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -200.84 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL WHEEL ACCEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL wheel acceleration / min.: -200.84 m/s<sup>2</sup>, max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -200.84 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 199.27 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ZERO DECELERAT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Memorized zero value / min.: -25.11 m/s<sup>2</sup>, max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -25.11 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ZERO DECELERAT 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Memorized zero value / min.: -25.11 m/s<sup>2</sup>, max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -25.11 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ZERO STEERING</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Memorized zero value / min.: -3,276.8 deg, max.: 3,276.7 deg</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -3,276.8 deg</ptxt>
+<ptxt>Max.: 3,276.7 deg</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LATERAL G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lateral G / min.: -25.11 m/s<sup>2</sup>, max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -25.11 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FORWARD&amp;REA G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Forward and rearward G / min.: -25.11 m/s<sup>2</sup>, max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -25.11 m/s<sup>2</sup>
+</ptxt>
+<ptxt>Max.: 24.91 m/s<sup>2</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>YAW RATE VALUE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate value / min.: -128 deg/s, max.: 127 deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -128 deg/s</ptxt>
+<ptxt>Max.: 127 deg/s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING ANGLE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering angle value / min.: -3,276.8 deg, max.: 3,276.7 deg</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Min.: -3,276.8 deg</ptxt>
+<ptxt>Max.: 3,276.7 deg</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRAC STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TRAC control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRAC ENG STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TRAC engine control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRAC BRK STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TRAC brake control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR VSC STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR wheel VSC control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL VSC STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL wheel VSC control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR VSC STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR wheel VSC control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL VSC STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL wheel VSC control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR ABS STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR wheel ABS control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL ABS STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL wheel ABS control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR ABS STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR wheel ABS control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL ABS STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL wheel ABS control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR EBD STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR wheel EBD control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL EBD STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RL wheel EBD control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BA STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BA control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PBA STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PBA control status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: During the control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>INSPECTION MODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Inspection mode / OTHER or INSPECT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#IG ON2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of ignition switch on (IG) after entering the inspection mode / min.: 0, max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TROUBLE CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Freeze frame DTC / min.:0, max.: 65,535</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>(*1): Models without multi information display</ptxt>
+<ptxt>(*2): Models with multi information display</ptxt>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the Active Test using the intelligent tester allows the relay, actuator, and other items to operate without removing any parts. Performing the Active Test as the first step in troubleshooting is one of the methods to save labor time.</ptxt>
+<ptxt>It is possible to display the Data List during the Active Test.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>On the tester display, select the Active Test.</ptxt>
+<atten4>
+<ptxt>The ignition switch must be turned on (IG) to proceed to the Active Test using the intelligent tester.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition / Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SFRR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SFRR) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFRH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SFRH) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFLR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SFLR) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFLH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SFLH) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRRR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SRRR) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRRH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SRRH) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRLR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SRLR) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SRLH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid (SRLH) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SMF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns master cut solenoid (SM1) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SMR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns master cut solenoid (SM2) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of solenoid (clicking sound) can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOL RELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS solenoid relay ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MOTOR RELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS motor relay ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of relay (clicking sound) and motor can be heard</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ABS WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS warning light ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe combination meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns VSC warning light (*1) or multi information display (*2) ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe combination meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIP INDI LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns SLIP indicator light ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe combination meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE WARN LAMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns BRAKE warning light ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe combination meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BUZZER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns skid control buzzer ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Buzzer can be heard</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>(*1): Models without multi information display</ptxt>
+<ptxt>(*2): Models with multi information display</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

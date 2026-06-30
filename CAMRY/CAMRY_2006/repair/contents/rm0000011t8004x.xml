@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000011T8004X" category="J" type-id="302UC" name-id="LI1G6-02" from="200601">
+<dtccode/>
+<dtcname>Door LOCK Position Circuit</dtcname>
+<subpara id="RM0000011T8004X_01" type-id="60" category="03" proc-id="RM0250U___00004NR00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU receives each door lock position switch signal to control the illuminated entry system.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000011T8004X_02" type-id="32" category="03" proc-id="RM0250U___00004NS00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121496E02" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011T8004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011T8004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011T8004X_04_0001" proc-id="RM0250U___00004NT00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the items below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is unlocked</ptxt>
+<ptxt>OFF: Driver side door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Passenger side door is unlocked</ptxt>
+<ptxt>OFF: Passenger side door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RR LOCK POS SW</ptxt>
+<ptxt>(with Smart Key System)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear right door is unlocked </ptxt>
+<ptxt>OFF: Rear right door is locked </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RL LOCK POS SW</ptxt>
+<ptxt>(with Smart Key System)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear left door is unlocked </ptxt>
+<ptxt>OFF: Rear left door is locked </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal conditions listed above are displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011T8004X_04_0003" fin="true">OK</down>
+<right ref="RM0000011T8004X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011T8004X_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000011T8004X_04_0004">
+<testtitle>GO TO POWER DOOR LOCK CONTROL SYSTEM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

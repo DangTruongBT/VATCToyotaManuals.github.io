@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XMS007X" category="U" type-id="3001G" name-id="TW0DD-03" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000XMS007X_z0" proc-id="RM0250U___00005GR00001">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Inspect the connectors from the back side while the connectors are connected.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="E129452E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>IG (E60-7) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG power source</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 16 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SPD (E60-2) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation (See waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SIL (E60-10) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Diagnostic communication terminal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Ignition switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Intelligent tester is connected to DLC3</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation (See waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>IND (E60-5) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Tire pressure warning light signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 16 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>RF5V (E60-6) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LC - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Tire pressure warning antenna and receiver power source</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CLSW (E60-1) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Tire pressure warning reset switch</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Ignition switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning reset switch on</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>8 to 15V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>RDA (E60-12) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Tire pressure warning antenna and receiver signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Ignition switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>The Tire pressure warning antenna and receiver is not connected</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 16 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>GND2 (E60-11) - GND (E60-9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Tire pressure warning antenna and receiver ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>Waveform 1 (Reference)</ptxt>
+<step2>
+<ptxt>Waveform</ptxt>
+<figure>
+<graphic graphicname="F047507E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" align="left" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SPD - GND</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5V/DIV, 200ms/DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>While driving at approximately 12 mph (20 km/h).</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>Waveform 2 (Reference)</ptxt>
+<step2>
+<ptxt>Waveform</ptxt>
+<figure>
+<graphic graphicname="C107353E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" align="left" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Item </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SIL - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV., 1 ms/DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Communicating using intelligent tester</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

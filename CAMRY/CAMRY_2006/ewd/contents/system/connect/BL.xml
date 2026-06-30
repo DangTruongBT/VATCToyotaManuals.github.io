@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE connectionList SYSTEM "../../../dtd/connect.dtd">
+<connectionList pubno="EM0250U">
+	<connector type="conn" code="C28">
+		<pin no="1">
+			<line id="1" color="L" spec="M/T">
+				<connector type="w2w" code="CA2" sex="female">
+					<pin no="20"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="C28">
+		<pin no="2">
+			<line id="2" color="B" spec="M/T">
+				<connector type="sp" code="3457">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="3457">
+		<pin>
+			<line id="3" color="R ">
+				<connector type="w2w" code="CA2" sex="female">
+					<pin no="10"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="CA2" sex="male">
+		<pin no="10">
+			<line id="4" color="O ">
+				<connector type="w2w" code="EA1" sex="male">
+					<pin no="14"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="EA1" sex="female">
+		<pin no="14">
+			<line id="5" color="R ">
+				<connector type="jbc" code="IH">
+					<pin no="16"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="3457">
+		<pin>
+			<line id="6" color="R" spec="A/T">
+				<connector type="conn" code="C1">
+					<pin no="1" spec="2GR-FE"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="3457">
+		<pin>
+			<line id="6" color="R" spec="A/T">
+				<connector type="conn" code="C1">
+					<pin no="2" spec="2AZ-FE"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="C1">
+		<pin no="2" spec="2GR-FE">
+			<line id="7" color="P" spec="A/T">
+				<connector type="sp" code="3385">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="C1">
+		<pin no="1" spec="2AZ-FE">
+			<line id="7" color="P" spec="A/T">
+				<connector type="sp" code="3385">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="3385">
+		<pin>
+			<line id="8" color="L" spec="A/T">
+				<connector type="w2w" code="CA2" sex="female">
+					<pin no="20"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="CA2" sex="male">
+		<pin no="20">
+			<line id="9" color="GR ">
+				<connector type="w2w" code="AE3" sex="female">
+					<pin no="6"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="AE3" sex="male">
+		<pin no="6">
+			<line id="10" color="R" spec="w/ Mirror Heater">
+				<connector type="conn" code="E48">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="AE3" sex="male">
+		<pin no="6">
+			<line id="11" color="R" spec="w/o Mirror Heater">
+				<connector type="w2w" code="EN1" sex="female">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="E48">
+		<pin no="3">
+			<line id="12" color="R" spec="w/ Mirror Heater">
+				<connector type="w2w" code="EN1" sex="female">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="gp" code="S1">
+		<pin>
+			<line id="13" color="W-B ">
+				<connector type="conn" code="S15">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="S15">
+		<pin no="1">
+			<line id="14" color="W-B ">
+				<connector type="sp" code="3541">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="3541">
+		<pin>
+			<line id="15" color="W-B ">
+				<connector type="conn" code="S3">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="S3">
+		<pin no="4">
+			<line id="16" color="R ">
+				<connector type="conn" code="S16">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="S16">
+		<pin no="1">
+			<line id="17" color="R ">
+				<connector type="w2w" code="SN1" sex="female">
+					<pin no="17"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="SN1" sex="male">
+		<pin no="17">
+			<line id="18" color="R ">
+				<connector type="w2w" code="EN1" sex="male">
+					<pin no="9"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="sp" code="3541">
+		<pin>
+			<line id="19" color="W-B ">
+				<connector type="conn" code="S2">
+					<pin no="3"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="S16">
+		<pin no="2">
+			<line id="20" color="R ">
+				<connector type="conn" code="S2">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

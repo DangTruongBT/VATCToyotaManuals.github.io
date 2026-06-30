@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1000N_S0011" variety="S0011">
+<name>BRAKE</name>
+<ttl id="1000N_S0011_72V94_T0041" variety="T0041">
+<name>STOP LIGHT SWITCH</name>
+<para id="RM0000027O0000X" category="G" type-id="3001K" name-id="BR0XU-01" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM0000027O0000X_01" type-id="01" category="01">
+<s-1 id="RM0000027O0000X_01_0001" proc-id="RM0250U___00008KV00000">
+<ptxt>INSPECT STOP LIGHT SWITCH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1.38in"/>
+<colspec colname="col2" colwidth="1.38in"/>
+<colspec colname="col3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Switch pin free</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Switch pin pushed in</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the measurement result is not normal, replace the stop light switch assembly.</ptxt>
+<figure>
+<graphic graphicname="F047752E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

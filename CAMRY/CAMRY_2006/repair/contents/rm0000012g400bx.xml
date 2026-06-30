@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000012G400BX" category="U" type-id="303FI" name-id="ME02M-09" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM0000012G400BX_z0" proc-id="RM0250U___00007SH00000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E128116E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<table pgwide="1">
+<title>INPUT AND OUTPUT SIGNALS OF THE COMBINATION METER ASSEMBLY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" align="center" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Sender</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiver</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Communication Signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Communication Line</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="7" valign="middle">
+<ptxt>Combination Meter Assembly        </ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>A/C Control Amplifier</ptxt>
+</item>
+<item>
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+</list1>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Vehicle speed signal </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN MS Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>A/C Control Amplifier</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Rheostat duty signal</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tail cancel signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lounge illumination signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle specification signal (Destination/Handle code)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Odometer signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN MS Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Clock assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger seat belt warning light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="12" valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry morerows="12" valign="middle">
+<ptxt>Combination Meter Assembly             </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starter signal</ptxt>
+</entry>
+<entry morerows="12" valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Test mode signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cruise operation indicator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Cruise control warning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Charge light indicator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TM oil temperature range</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine coolant temperature signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine type information</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift position signal (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Reject buzzer signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Gear position signal </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sports mode indicator (*1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine RPM data</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="11" valign="middle">
+<ptxt>Main Body ECU             </ptxt>
+</entry>
+<entry morerows="11" valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminance data</ptxt>
+</entry>
+<entry morerows="11" valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Auto dimmer signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Each door courtesy switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Slide roof signal (*2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Smart key signal (*3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Driver side seat belt switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Parking brake switch signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>High beam indicator light signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Head (*4)/Tail (*5) indicator light signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front fog indicator light signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hood courtesy switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN MS Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="7" valign="middle">
+<ptxt>Certification ECU       </ptxt>
+</entry>
+<entry morerows="7" valign="middle">
+<ptxt>Combination Meter Assembly       </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Meter buzzer request signal</ptxt>
+</entry>
+<entry morerows="7" valign="middle">
+<ptxt>CAN (CAN MS Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Each door open display signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key lose warning signal (*3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Low key battery warning signal (*3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift position warning signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steeling lock abnormal warning (*3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steeling lock unlock warning (*3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Immobiliser Key Identification Completion</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle">
+<ptxt>Skid Control ECU</ptxt>
+</entry>
+<entry morerows="4" valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal</ptxt>
+</entry>
+<entry morerows="4" valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake Warning light Control Flag</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ABS Warning Light signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Slip Indicator light signal (*6)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC Warning light signal (*6)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>Skid Control ECU</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A/C Control Amplifier</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ambient  temperature display signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>Center Airbag Sensor Assembly</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Combination Meter Assembly  </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Airbag warning light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN (CAN No. 1 Bus)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front passenger seat condition signal</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Front passenger seat belt condition signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Pad Switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering pad switch operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Oil Pressure Switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine oil pressure warning light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel Sender Gauge Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel level signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turn Signal flasher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn LH/RH indicator light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire Pressure Warning ECU (*7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Washer Level Switch (*8)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Washer fluid level warning light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake Fluid Level Warning Switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination Meter Assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake fluid level warning light signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Direct Line</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: for Automatic Transaxle</ptxt>
+<ptxt>*2: with Sliding Roof</ptxt>
+<ptxt>*3: with Smart Key System</ptxt>
+<ptxt>*4: for U.S.A.</ptxt>
+<ptxt>*5: for Canada</ptxt>
+<ptxt>*6: with VSC</ptxt>
+<ptxt>*7: with Tire Pressure Warning System</ptxt>
+<ptxt>*8: with Washer Level Warning Light</ptxt>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

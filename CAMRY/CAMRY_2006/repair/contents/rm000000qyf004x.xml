@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QYF004X" category="M" type-id="80037" name-id="EI0FF-01" from="200601">
+<name>REGISTRATION</name>
+<subpara id="RM000000QYF004X_01" type-id="01" category="01">
+<s-1 id="RM000000QYF004X_01_0003" proc-id="RM0250U___00009SM00000">
+<ptxt>DESCRIPTION OF CODE REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>ID codes are the same as recognition codes for the wireless transmitter and the engine immobiliser function. Registering an ID code enables the smart access system with push-button start, the wireless door lock control function and the engine immobiliser function to be operated.</ptxt>
+</item>
+<item>
+<ptxt>Code registration is needed when the certification ECU, ID code box, steering lock ECU or key is replaced with a new one.</ptxt>
+</item>
+</list1>
+</atten4>
+<s2>
+<ptxt>PROCEDURE "1"</ptxt>
+<ptxt>The vehicle with the smart access system with push-button start system does not have a key slot. Therefore, hold the key close to the engine switch to register the key, as shown in the illustration below.</ptxt>
+<figure>
+<graphic graphicname="B139204E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000QYF004X_01_0004" proc-id="RM0250U___00009SN00000">
+<ptxt>PART REPLACEMENT KEY REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>The following table shows ECU replacement and key registration procedures in case the malfunctioning ECU has been identified after troubleshooting the smart access system with push-button start.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The following procedures indicated in the table below require the use of the intelligent tester:</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>New key ID registration</ptxt>
+</item>
+<item>
+<ptxt>Additional key ID registration</ptxt>
+</item>
+<item>
+<ptxt>Key ID erasure</ptxt>
+</item>
+<item>
+<ptxt>ECU code registration</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>If all of the registered keys are not available, replacement of the ID code box is also required.</ptxt>
+</item>
+<item>
+<ptxt>A maximum of 7 keys can be registered.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.19in"/>
+<colspec colname="COL2" colwidth="1.19in"/>
+<colspec colname="COL3" colwidth="1.19in"/>
+<colspec colname="COL4" colwidth="1.19in"/>
+<colspec colname="COL5" align="center" colwidth="1.17in"/>
+<colspec colname="COLSPEC1" colwidth="1.15in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Part to be replaced</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="9" valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" morerows="1" valign="middle">
+<ptxt>Customer has brought all keys</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Reregister all keys (new key ID registration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "B"</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="7" valign="middle">
+<ptxt>Some keys are lost</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>Key ID codes can be registered and erased</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Erase key codes (key ID erasure)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "D"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Perform additional key registration procedure (additional key ID registration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "C"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>3. Replace certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>4. Reregister all keys (new key ID registration)</ptxt>
+<atten4>
+<ptxt>If some keys are not registered during above steps, they will be disabled because they cannot be registered later</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "B"</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="3" valign="middle">
+<ptxt>Key ID codes cannot be either registered or erased</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Replace ID code box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>3. Reregister all keys (new key ID registration)</ptxt>
+<atten4>
+<ptxt>If key codes cannot be erased or additional keys cannot be registered due to a malfunction in certification ECU, replace ID code box and certification ECU. If some keys are not registered during above steps, they will be disabled because they cannot be registered later</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "A"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>4. ECU communication ID registration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "F"</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="6" valign="middle">
+<ptxt>ID code box</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" morerows="2" valign="middle">
+<ptxt>At least 1 key is available</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace ID code box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Register recognition codes in ECUs (ECU code registration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "E"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>3. ECU communication ID registration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "F"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3" morerows="3" valign="middle">
+<ptxt>All keys are lost</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace ID code box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Replace certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>3. Reregister all keys (new key ID registration)</ptxt>
+<atten4>
+<ptxt>If some keys are not registered during above steps, they will be disabled because they cannot be registered later</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "A"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>4. ECU communication ID registration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "F"</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="6" valign="middle">
+<ptxt>Steering lock ECU</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" morerows="1" valign="middle">
+<ptxt>Customer has brought at least 1 key</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace steering lock ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Register recognition codes in ECUs (ECU code registration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "E"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3" morerows="4" valign="middle">
+<ptxt>All keys are lost</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace steering lock ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Replace certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>3. Replace ID code box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>4. Reregister all keys (new key ID registration)</ptxt>
+<atten4>
+<ptxt>If some keys are not registered during above steps, they will be disabled because they cannot be registered later</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "A"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>5. ECU communication ID registration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "F"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>No condition required</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>Replace main body ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" morerows="1" valign="middle">
+<ptxt>No condition required</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace ECM</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. ECU communication ID registration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "F"</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="5" valign="middle">
+<ptxt>Key</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" morerows="1" valign="middle">
+<ptxt>Customer has brought at least 1 key</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Using remaining key, erase lost key code (key ID erasure)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "D"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Register additional keys as necessary (additional key ID registration)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "E"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3" morerows="3" valign="middle">
+<ptxt>All keys are lost</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>1. Replace certification ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>2. Replace ID code box</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>3. Register all keys (new key ID registration)</ptxt>
+<atten4>
+<ptxt>If customer brings lost keys at later date, they can be registered using additional key ID registration function</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "A"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL4" nameend="COL5" valign="middle">
+<ptxt>4. ECU communication ID registration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PROCEDURE "F"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000QYF004X_01_0001" proc-id="RM0250U___00009SL00000">
+<ptxt>KEY REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>PROCEDURE "A"</ptxt>
+<ptxt>New key ID registration (when replacing certification ECU and ID code box, or certification ECU, ID code box and steering lock ECU)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Process</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1. Start of registration</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Connect intelligent tester (with CAN VIM) to DLC3</ptxt>
+</item>
+<item>
+<ptxt>Turn engine switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Select "SMART ACCESS / ID UTILITY / SMART CODE REG" from tester menu</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The engine switch cannot be turned on (IG) more than 10 times. After connecting tester, turn tester on while turning driver's side door courtesy light switch on and off repeatedly at 1.5-second intervals or less to continue key registration procedure</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2. Confirmation of ECU code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The mode is automatically selected by tester, new registration mode or add mode</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry morerows="2">
+<ptxt>3. Verification of unregistered key *1</ptxt>
+</entry>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds. Place unregistered key on front passenger's side seat</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>4. Registration of ID code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>5. End of registration</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Finish new key ID code registration</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>*1: Repeat this process for each key which is to be registered for the vehicle. Finish the procedure for each key within 30 seconds. If the procedure for any of the keys has not been finished within the specified time, perform registration procedures from process 1 again. Make sure that only 1 key is in the cabin during registration procedures. If 2 or more keys are in the cabin simultaneously, electric waves will interfere with each other, preventing normal registration.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>PROCEDURE "B"</ptxt>
+<ptxt>New key ID registration (when replacing certification ECU)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Process</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1. Start of registration</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Connect intelligent tester (with CAN VIM) to DLC3</ptxt>
+</item>
+<item>
+<ptxt>Turn engine switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Select "SMART ACCESS / ID UTILITY / SMART CODE REG" from tester menu</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The engine switch cannot be turned on (IG) more than 10 times. After connecting tester, turn tester on while turning driver's side door courtesy light switch on and off repeatedly at 1.5-second intervals or less to continue key registration procedure</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2. Confirmation of ECU code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The mode is automatically selected by tester, new registration mode or add mode</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry morerows="1">
+<ptxt>3. Confirmation of all registered keys *1</ptxt>
+</entry>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>4. Confirmation of ECU code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="2">
+<ptxt>5. Verification of unregistered key *2</ptxt>
+</entry>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds. Place unregistered key on front passenger side seat</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>5. Registration of ID code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>6. End of registration</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Finish new key ID code registration</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>*1: Repeat this process for each key registered for the vehicle. Finish the procedure for each key within 30 seconds. If the procedure for any of the keys has not been finished within the specified time, perform registration procedures from process 1 again. If performing the key confirmation procedure for a key, the security indicator comes on and remains on until all the keys are confirmed.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>*2: Repeat this process for each key which is to be registered for the vehicle. Finish the procedure for each key within 30 seconds. If the procedure for any of the keys has not been finished within the specified time, perform registration procedures from 1 again. Make sure that only 1 key is in the cabin during registration procedures. If 2 or more keys are in the cabin simultaneously, electric waves will interfere with each other, preventing normal registration.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>PROCEDURE "C"</ptxt>
+<ptxt>Additional key ID registration</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Process</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1. Start of registration</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Connect intelligent tester (with CAN VIM) to DLC3</ptxt>
+</item>
+<item>
+<ptxt>Turn engine switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Select "SMART ACCESS / ID UTILITY / SMART CODE REG" from tester menu</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="2">
+<ptxt>2. Confirmation of registered key *1</ptxt>
+</entry>
+<entry>
+<ptxt>Perform operation according to prompts on intelligent tester screen</ptxt>
+<atten4>
+<ptxt>The mode is automatically selected by tester, new registration mode or add mode</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>3. Confirmation of ECU code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="2">
+<ptxt>4. Verification of unregistered key *2</ptxt>
+</entry>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds. Place unregistered key on front passenger's side seat</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>5. Registration of ID code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>6. End of registration</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Finish key ID code registration</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>*1: Perform this process for one of the keys registered for the vehicle. Finish the procedure within 30 seconds. If the procedure has not been finished within the specified time, perform registration procedures from process 1 again.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>*2: Repeat this process for each key which is to be registered for the vehicle. Finish the procedure for each key within 30 seconds. If the procedure for any of the keys has not been finished within the specified time, perform registration procedures from 1 again. Make sure that only 1 key is in the cabin during registration procedures. If 2 or more keys are in the cabin simultaneously, electric waves will interfere with each other, preventing normal registration.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>PROCEDURE "D"</ptxt>
+<ptxt>Key ID erasure</ptxt>
+<atten4>
+<ptxt>Erase all registered key codes except one.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Process</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1. Start of erasure</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Connect intelligent tester (with CAN VIM) to DLC3</ptxt>
+</item>
+<item>
+<ptxt>Turn engine switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Select "SMART ACCESS / ID UTILITY / SMART CODE ERS" from tester menu</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="2">
+<ptxt>2. Confirmation of registered key *1</ptxt>
+</entry>
+<entry>
+<ptxt>Perform operation according to prompts on intelligent tester screen</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>3. Confirmation of ECU code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>4. Erasure of ID code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>5. End of erasure</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Finish key ID code erasure</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>*1: Perform this process for one of the keys registered for the vehicle. Finish the procedure within 30 seconds. If the procedure has not been finished within the specified time, perform erasure procedures from process 1 again.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>PROCEDURE "E"</ptxt>
+<ptxt>ECU code registration</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Process</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1. Start of registration</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Connect intelligent tester (with CAN VIM) to DLC3</ptxt>
+</item>
+<item>
+<ptxt>Turn engine switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Select "SMART ACCESS / ID UTILITY / ECU COMM ID REG / ID Code Box and Steering Lock" from tester menu</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1">
+<ptxt>2. Confirmation of registered key *1</ptxt>
+</entry>
+<entry>
+<ptxt>Hold unregistered key close to engine switch (For details, refer to PROCEDURE "1")</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Confirm that wireless door lock buzzer sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>3. Registration of ECU code</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Perform operation according to prompts on tester screen</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>4. End of registration</ptxt>
+</entry>
+<entry>
+<list1 type="nonmark">
+<item>
+<ptxt>Finish ECU code registration</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>*1: Perform this process for one of the keys registered for the vehicle. Finish the procedure within 30 seconds. If the procedure has not been finished within the specified time, perform erasure procedures from process 1 again.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>PROCEDURE "F"</ptxt>
+<ptxt>ECU communication ID registration</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The ECU communication ID should be registered when the ID code box and/or the ECM is replaced in order to match these ECM communication ID.</ptxt>
+</item>
+<item>
+<ptxt>The engine cannot be started unless the ECM communication ID matches.</ptxt>
+</item>
+</list1>
+</atten3>
+<ptxt>Register the ECU communication ID.</ptxt>
+<figure>
+<graphic graphicname="B139171E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Using SST, connect terminals TC and CG of the DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Turn the engine switch on (IG) and leave it for 30 minutes.</ptxt>
+<atten4>
+<ptxt>Do not start the engine.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Turn the engine switch off and disconnect terminals TC and CG.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the engine starts.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

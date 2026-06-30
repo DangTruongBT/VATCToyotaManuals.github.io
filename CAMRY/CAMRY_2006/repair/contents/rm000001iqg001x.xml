@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="1000D_S000N" variety="S000N">
+<name>2GR-FE LUBRICATION</name>
+<ttl id="1000D_S000N_72Z7Y_T00BJ" variety="T00BJ">
+<name>LUBRICATION SYSTEM</name>
+<para id="RM000001IQG001X" category="G" type-id="8000T" name-id="LU0DF-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000001IQG001X_01" type-id="01" category="01">
+<s-1 id="RM000001IQG001X_01_0001" proc-id="RM0250U___000067P00000">
+<ptxt>CHECK ENGINE OIL LEVEL</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Warm up the engine, stop it and wait 5 minutes. The oil level should be between the dipstick's low level mark and full level mark.</ptxt>
+<ptxt>If low, check for leakage and add oil up to the full level mark.</ptxt>
+<atten3>
+<ptxt>Do not fill above the full level mark.</ptxt>
+</atten3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001IQG001X_01_0002" proc-id="RM0250U___000067Q00000">
+<ptxt>CHECK ENGINE OIL QUALITY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the oil for deterioration, water contamination, discoloring or thinning.</ptxt>
+<ptxt>If the quality is visibly poor, replace the oil.</ptxt>
+<figure>
+<graphic graphicname="A066623E21" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Oil grade</title>
+<specitem>
+<ptxt>Use ILSAC multigrade engine oil. SAE 5W-30 engine oil may be used. However, SAE 5W-30 is the best choice for good fuel economy and good starting in cold weather.</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001IQG001X_01_0008" proc-id="RM0250U___000067T00000">
+<ptxt>CHECK OIL PRESSURE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the engine under cover LH.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the engine under cover RH.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the oil pressure switch connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Using a 24 mm deep socket wrench, remove the oil pressure switch.</ptxt>
+<figure>
+<graphic graphicname="A127994" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Install the oil pressure gauge with adapter.</ptxt>
+<figure>
+<graphic graphicname="A127995" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the oil pressure.</ptxt>
+<spec>
+<title>Standard oil pressure</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Oil Pressure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Idle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>80 kPa (0.8 kgf*cm<sup>2</sup>, 11.6 psi) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>6,000 rpm</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>380 kPa (3.9 kgf*cm<sup>2</sup>, 55.5 psi) or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the oil pressure is not as specified, check the oil pump (See page <xref label="Seep01" href="RM000001IQK001X"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the oil pressure gauge.</ptxt>
+<figure>
+<graphic graphicname="A050082E14" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Apply adhesive to 2 or 3 threads of the oil pressure switch.</ptxt>
+<spec>
+<title>Adhesive</title>
+<specitem>
+<ptxt>Toyota Genuine Adhesive 1344, Three Bond 1344 or equivalent</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Using a 24 mm deep socket wrench, install the oil pressure switch.</ptxt>
+<figure>
+<graphic graphicname="A127994" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<torque>
+<torqueitem>
+<t-value1>15</t-value1>
+<t-value2>153</t-value2>
+<t-value4>11</t-value4>
+</torqueitem>
+</torque>
+<atten3>
+<ptxt>Do not start the engine within 1 hour after installation.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Connect the oil pressure switch connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Check for engine oil leaks.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the engine under cover RH.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the engine under cover LH.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

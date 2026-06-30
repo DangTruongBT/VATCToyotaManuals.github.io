@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000YDW00QX" category="D" type-id="303F2" name-id="CA004-24" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000YDW00QX_z0" proc-id="RM0250U___00009BT00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>BRIEF DESCRIPTION</ptxt>
+<step2>
+<ptxt>Two different CAN busses are used. The CAN busses are classified into two types based on typical communication speed.</ptxt>
+<ptxt>The HS-CAN bus is a high-speed communication bus that is used for powertrain, chassis, and some body electrical communication. The HS-CAN bus is referred to as the "CAN bus" and it operates at speeds of approximately 500 kbps. Terminating resistors for the HS-CAN bus are located in the ECM and combination meter.</ptxt>
+<ptxt>The MS-CAN bus is a medium-speed communication bus that is used for body electrical communication. The MS-CAN bus is referred to as the "MS bus" and it operates at speeds of approximately 250 kbps. Terminating resistors for the MS-CAN bus are located in the main body ECU and the certification ECU. The resistance of the MS-CAN bus cannot be measured from the DLC3 connector.</ptxt>
+<ptxt>Communication between these two networks is handled via the main body ECU, which acts as a gateway ECU.</ptxt>
+</step2>
+<step2>
+<ptxt>By pairing the CANH and CANL bus wires, the CAN performs communication based on differential voltage.</ptxt>
+</step2>
+<step2>
+<ptxt>Many ECUs (sensors) installed on the vehicle operate by sharing information and communicating with each other.</ptxt>
+</step2>
+<step2>
+<ptxt>The CAN has two resistors of 120 Ω which are necessary to enable communication on the main bus wire.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>DEFINITION OF TERMS</ptxt>
+<step2>
+<ptxt>Main bus wire</ptxt>
+<step3>
+<ptxt>The main bus wire is a wire harness between the two terminus circuits on the bus (communication line).</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Branch wire</ptxt>
+<step3>
+<ptxt>The branch wire is a wire harness which diverges from the main bus wire to an ECU or sensor.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Terminating resistors</ptxt>
+<step3>
+<ptxt>Two resistors of 120 Ω resistance are installed in parallel across the ends of the CAN main bus wires. They are called terminating resistors. These resistors allow the changes of the voltage differential between the CAN bus wires to be accurately judged. To allow proper function of CAN communication, it is necessary to have both terminating resistors installed. Since the two resistors are installed in parallel, a measurement of resistance between the two CAN bus wires should produce a reading of approximately 60 Ω.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ECUS OR SENSORS WHICH COMMUNICATE THROUGH CAN COMMUNICATION SYSTEM</ptxt>
+<step2>
+<ptxt>Skid control ECU with actuator</ptxt>
+</step2>
+<step2>
+<ptxt>Air conditioning amplifier</ptxt>
+</step2>
+<step2>
+<ptxt>Main body ECU </ptxt>
+</step2>
+<step2>
+<ptxt>Combination meter ECU</ptxt>
+</step2>
+<step2>
+<ptxt>Yaw rate sensor</ptxt>
+</step2>
+<step2>
+<ptxt>Steering angle sensor</ptxt>
+</step2>
+<step2>
+<ptxt>Center airbag sensor</ptxt>
+</step2>
+<step2>
+<ptxt>ECM</ptxt>
+</step2>
+<step2>
+<ptxt>Certification ECU (with smart key system)</ptxt>
+</step2>
+<step2>
+<ptxt>TCM</ptxt>
+</step2>
+<step2>
+<ptxt>Accessory gateway</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>DIAGNOSTIC CODE FOR CAN COMMUNICATION SYSTEM</ptxt>
+<step2>
+<ptxt>DTCs for the CAN communication system are as follows: U0101, U0073, U0100, U0123, U0124, U0126, U0129, B1207, B1499, and B2326.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>TROUBLESHOOTING REMARKS</ptxt>
+<step2>
+<ptxt>DTCs for the CAN communication system can be checked using the intelligent tester via the CAN VIM. The DLC3 is connected to the CAN communication system, but no DTCs exist regarding problems in the DLC3 or the DLC3 branch wires. If there is trouble in the DLC3 or the DLC3 branch wires, ECUs on the CAN network cannot output codes to the intelligent tester via the CAN VIM.</ptxt>
+</step2>
+<step2>
+<ptxt>Trouble in the CAN buses (communication lines) can be checked by measuring the resistance between terminals of the DLC3. However, an open circuit in a branch wire other than the DLC3 branch wires cannot be checked from the DLC3.</ptxt>
+<atten3>
+<ptxt>Do not insert the tester probes directly into the DLC3. Be sure to use a service wires.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>HOW TO DISTINGUISH THE CAN J/C CONNECTOR</ptxt>
+<step2>
+<ptxt>In the CAN communication system, the shape of all connectors connected to the CAN J/C No. 1 is the same. The connectors connected to the CAN J/C No. 1 can be connecting side of the junction connector.</ptxt>
+<atten4>
+<ptxt>See "TERMINALS OF ECU" (See page <xref label="Seep01" href="RM000000XVK00QX"/>) for bus wire color or the type of connecting surface.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001B_S001C" variety="S001C">
+<name>WIPER AND WASHER</name>
+<ttl id="1001B_S001C_72WDM_T0063" variety="T0063">
+<name>FRONT WASHER MOTOR</name>
+<para id="RM000002759000X" category="G" type-id="3001K" name-id="WW0O3-01" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000002759000X_01" type-id="01" category="01">
+<s-1 id="RM000002759000X_01_0001" proc-id="RM0250U___000071H00000">
+<ptxt>INSPECT WINDSHIELD WASHER MOTOR AND PUMP ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>This check should be performed with the front washer motor and pump installed to the washer jar.</ptxt>
+</atten4>
+<s2>
+<ptxt>Fill the washer jar with washer fluid.</ptxt>
+<figure>
+<graphic graphicname="E065747E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Connect the positive (+) battery lead to terminal A37-1 of the washer motor and pump, and the negative (-) lead to terminal A37-2.</ptxt>
+</s2>
+<s2>
+<ptxt>Check if washer fluid is pumped from the washer jar.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Washer fluid is pumped from the washer jar.</ptxt>
+</specitem>
+</spec>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000002759000X_01_0002" proc-id="RM0250U___0000CNF00000">
+<ptxt>INSPECT WASHER FLUID LEVEL SENSOR</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>The following check should be performed with the windshield washer motor and pump installed to the washer jar.</ptxt>
+</atten4>
+<s2>
+<ptxt>Fill the washer jar with washer fluid.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the connector from the washer fluid level sensor.</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Fluid Volume</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>More than 700 to 900 ml</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Less than 700 to 900 ml</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

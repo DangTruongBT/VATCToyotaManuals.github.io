@@ -1,0 +1,3668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000002203002X" category="S" type-id="3001E" name-id="ES3QL-02" from="200601">
+<name>DIAGNOSTIC TROUBLE CODE CHART</name>
+<subpara id="RM000002203002X_z0" proc-id="RM0250U___0000B0F00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>The parameters listed in the chart may not conform exactly to those read during the DTC check due to the type of instrument or other factors.</ptxt>
+<ptxt> If a trouble code is displayed during the DTC check in the check mode, check the circuit for the code listed in the table below. For details of each code, refer to the "See page" column in the DTC chart.</ptxt>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>SFI SYSTEM:</title>
+<tgroup cols="6" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="1.18in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.18in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.18in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.18in" colsep="0"/>
+<colspec colnum="5" colname="5" colwidth="1.18in" colsep="0"/>
+<colspec colnum="6" colname="6" colwidth="1.18in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Suspected Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>MIL</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="center">
+<ptxt>Memory</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0010</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "A" Actuator Circuit (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Oil Control Valve (OCV) for intake camshaft circuit</ptxt>
+<ptxt>2. OCV for intake camshaft (bank 1)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDW015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0011</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "A" - Timing Over-Advanced or System Performance (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Valve timing</ptxt>
+<ptxt>2. OCV for intake camshaft</ptxt>
+<ptxt>3. OCV filter</ptxt>
+<ptxt>4. Intake camshaft timing gear assembly</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDU015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0012</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "A" - Timing Over-Retarded (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0011</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDU015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0013</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "B" Actuator Circuit / Open (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Oil Control Valve (OCV) for exhaust camshaft circuit</ptxt>
+<ptxt>2. OCV for exhaust camshaft (bank 1)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH700LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0014</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "B" - Timing Over-Advanced or System Performance (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Valve timing</ptxt>
+<ptxt>2. OCV for exhaust camshaft</ptxt>
+<ptxt>3. OCV filter</ptxt>
+<ptxt>4. Exhaust camshaft</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH800LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0015</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "B"  - Timing Over-Retarded (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0014</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH800LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0016</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Mechanical system (Timing chain has jumped teeth or chain is  stretched)</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDV012X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0017</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position - Camshaft Position Correlation  (Bank 1 Sensor B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0016</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDV012X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0018</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position - Camshaft Position Correlation (Bank 2 Sensor A)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0016</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDV012X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0019</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position - Camshaft Position Correlation  (Bank 2 Sensor B)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0016</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDV012X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0020</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "A" Actuator Circuit (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Oil Control Valve (OCV) for intake camshaft circuit</ptxt>
+<ptxt>2. OCV for intake camshaft (bank 2)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDW015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0021</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "A" - Timing Over-Advanced or System Performance (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0011</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDU015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0022</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "A" - Timing Over-Retarded (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0011</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PDU015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0023</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "B" Actuator Circuit / Open (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Oil Control Valve (OCV) for exhaust camshaft circuit</ptxt>
+<ptxt>2. OCV for exhaust camshaft (bank 2)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH700LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0024</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "B" - Timing Over-Advanced or System Performance (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0014</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH800LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0025</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position "B"  - Timing Over-Retarded (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0014</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH800LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0031</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Heater Control Circuit Low (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in Air-Fuel Ratio (A/F) sensor heater circuit</ptxt>
+<ptxt>2. A/F sensor heater (bank 1 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater relay</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC1018X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0032</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Heater Control Circuit High (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in A/F sensor heater circuit</ptxt>
+<ptxt>2. A/F sensor heater (bank 1 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater relay</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC1018X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0037</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Heater Control Circuit Low (Bank 1 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in Heated Oxygen (HO2) sensor heater circuit</ptxt>
+<ptxt>2. HO2 sensor heater (bank 1 sensor 2)</ptxt>
+<ptxt>3. Engine room junction block (EFI relay)</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFA017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0038</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Heater Control Circuit High (Bank 1 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in HO2 sensor heater circuit</ptxt>
+<ptxt>2. HO2 sensor heater (bank 1 sensor 2)</ptxt>
+<ptxt>3. Engine room junction block (EFI relay)</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFA017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0051</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Heater Control Circuit Low (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in A/F sensor heater circuit</ptxt>
+<ptxt>2. A/F sensor heater (bank 2 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater relay</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC1018X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0052</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Heater Control Circuit High (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in A/F sensor heater circuit</ptxt>
+<ptxt>2. A/F sensor heater (bank 2 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater relay</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC1018X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0057</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Heater Control Circuit Low (Bank 2 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in HO2 sensor heater circuit</ptxt>
+<ptxt>2. HO2 sensor heater (bank 2 sensor 2)</ptxt>
+<ptxt>3. Engine room junction block (EFI relay)</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFA017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0058</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Heater Control Circuit High (Bank 2 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in HO2 sensor heater circuit</ptxt>
+<ptxt>2. HO2 sensor heater (bank 2 sensor 2)</ptxt>
+<ptxt>3. Engine room junction block (EFI relay)</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFA017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0100</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Mass or Volume Air Flow Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Mass Air Flow (MAF) meter circuit</ptxt>
+<ptxt>2. MAF meter</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000U5B01AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0101</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Mass Air Flow Circuit Range / Performance Problem</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>MAF meter</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF400OX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0102</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Mass or Volume Air Flow Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in MAF meter circuit</ptxt>
+<ptxt>2. Short in MAF meter circuit</ptxt>
+<ptxt>3. MAF meter</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000U5B01AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0103</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Mass or Volume Air Flow Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in MAF meter circuit (+B circuit)</ptxt>
+<ptxt>2. MAF meter</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000U5B01AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0110</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Intake Air Temperature (IAT) sensor circuit</ptxt>
+<ptxt>2. IAT sensor (built into Mass Air Flow [MAF] meter)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF301AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0111</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Sensor Gradient Too High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>MAF meter</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001MJM003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0112</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in IAT sensor circuit</ptxt>
+<ptxt>2. IAT sensor (built into MAF meter)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF301AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0113</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intake Air Temperature Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in IAT sensor circuit</ptxt>
+<ptxt>2. IAT sensor (built into MAF meter)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF301AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0115</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine Coolant Temperature Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Engine Coolant Temperature (ECT) sensor circuit</ptxt>
+<ptxt>2. ECT sensor</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF5019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0116</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine Coolant Temperature Circuit Range / Performance Problem</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Thermostat</ptxt>
+<ptxt>2. ECT sensor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFB017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0117</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine Coolant Temperature Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in ECT sensor circuit</ptxt>
+<ptxt>2. ECT sensor</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF5019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0118</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Engine Coolant Temperature Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in ECT sensor circuit</ptxt>
+<ptxt>2. ECT sensor</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF5019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0120</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "A" Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Throttle Position (TP) sensor (built into throttle body)</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0121</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "A" Circuit Range / Performance Problem</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF701EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0122</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "A" Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. TP sensor (built into throttle body)</ptxt>
+<ptxt>2. Short in VTA1 circuit</ptxt>
+<ptxt>3. Open in VC circuit</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0123</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "A" Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. TP sensor (built into throttle body)</ptxt>
+<ptxt>2. Open in VTA1 circuit</ptxt>
+<ptxt>3. Open in E2 circuit</ptxt>
+<ptxt>4. Short between VC and VTA1 circuits</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0125</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Insufficient Coolant Temperature for Closed Loop Fuel Control</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Cooling system</ptxt>
+<ptxt>2. ECT sensor</ptxt>
+<ptxt>3. Thermostat</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000T9P00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0128</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Thermostat</ptxt>
+<ptxt>2. Cooling system</ptxt>
+<ptxt>3. ECT sensor</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000TB300KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0136</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Circuit Malfunction (Bank 1 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in HO2 sensor (bank 1 sensor 2) circuit</ptxt>
+<ptxt>2. HO2 sensor (bank 1 sensor 2)</ptxt>
+<ptxt>3. HO2 sensor heater (bank 1 sensor 2)</ptxt>
+<ptxt>4. A/F sensor (bank 1 sensor 1)</ptxt>
+<ptxt>5. Engine room junction block (EFI relay)</ptxt>
+<ptxt>6. Gas leakage from exhaust system</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBY011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0137</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Circuit Low Voltage (Bank 1 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in HO2 sensor (bank 1 sensor 2) circuit</ptxt>
+<ptxt>2. HO2 sensor (bank 1 sensor 2)</ptxt>
+<ptxt>3. HO2 sensor heater (bank 1 sensor 2)</ptxt>
+<ptxt>4. Engine room junction block (EFI relay)</ptxt>
+<ptxt>5. Gas leakage from exhaust system</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBY011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0138</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Circuit High Voltage (Bank 1 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in HO2 sensor (bank 1 sensor 2) circuit</ptxt>
+<ptxt>2. HO2 sensor (bank 1 sensor 2)</ptxt>
+<ptxt>3. ECM internal circuit malfunction</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBY011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0141</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. HO2 sensor</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFA017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0156</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Circuit Malfunction (Bank 2 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in HO2 sensor (bank 2 sensor 2) circuit</ptxt>
+<ptxt>2. HO2 sensor (bank 2 sensor 2)</ptxt>
+<ptxt>3. HO2 sensor heater (bank 2 sensor 2)</ptxt>
+<ptxt>4. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>5. Engine room junction block (EFI relay)</ptxt>
+<ptxt>6. Gas leakage from exhaust system</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBY011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0157</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Circuit Low Voltage (Bank 2 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in HO2 sensor (bank 2 sensor 2) circuit</ptxt>
+<ptxt>2. HO2 sensor (bank 2 sensor 2)</ptxt>
+<ptxt>3. HO2 sensor heater (bank 2 sensor 2)</ptxt>
+<ptxt>4. Engine room junction block (EFI relay)</ptxt>
+<ptxt>5. Gas leakage from exhaust system</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBY011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0158</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Circuit High Voltage (Bank 2 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in HO2 sensor (bank 2 sensor 2) circuit</ptxt>
+<ptxt>2. HO2 sensor (bank 2 sensor 2)</ptxt>
+<ptxt>3. ECM internal circuit malfunction</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBY011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0161</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen Sensor Heater Circuit Malfunction (Bank 2 Sensor 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. HO2 sensor</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFA017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0171</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>System Too Lean (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Air induction system</ptxt>
+<ptxt>2. Injector blockage</ptxt>
+<ptxt>3. MAF meter</ptxt>
+<ptxt>4. ECT sensor</ptxt>
+<ptxt>5. Fuel pressure</ptxt>
+<ptxt>6. Gas leakage from exhaust system</ptxt>
+<ptxt>7. Open or short in A/F sensor (bank 1 sensor 1) circuit</ptxt>
+<ptxt>8. A/F sensor (bank 1 sensor 1)</ptxt>
+<ptxt>9. A/F sensor heater (bank 1 sensor 1)</ptxt>
+<ptxt>10. A/F sensor heater relay</ptxt>
+<ptxt>11. A/F sensor heater and A/F sensor heater relay circuits</ptxt>
+<ptxt>12. PCV hose connections</ptxt>
+<ptxt>13. PCV valve and hose</ptxt>
+<ptxt>14. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221B001X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0172</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>System Too Rich (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Injector leakage or blockage</ptxt>
+<ptxt>2. MAF meter</ptxt>
+<ptxt>3. ECT sensor</ptxt>
+<ptxt>4. Ignition system</ptxt>
+<ptxt>5. Fuel pressure</ptxt>
+<ptxt>6. Gas leakage from exhaust system</ptxt>
+<ptxt>7. Open or short in A/F sensor (bank 1 sensor 1) circuit</ptxt>
+<ptxt>8. A/F sensor (bank 1 sensor 1)</ptxt>
+<ptxt>9. A/F sensor heater (bank 1 sensor 1)</ptxt>
+<ptxt>10. A/F sensor heater relay</ptxt>
+<ptxt>11. A/F sensor heater and A/F sensor heater relay circuits</ptxt>
+<ptxt>12. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221B001X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0174</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>System Too Lean (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Air induction system</ptxt>
+<ptxt>2. Injector blockage</ptxt>
+<ptxt>3. MAF meter</ptxt>
+<ptxt>4. ECT sensor</ptxt>
+<ptxt>5. Fuel pressure</ptxt>
+<ptxt>6. Gas leakage from exhaust system</ptxt>
+<ptxt>7. Open or short in A/F sensor (bank 2 sensor 1) circuit</ptxt>
+<ptxt>8. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>9. A/F sensor heater (bank 2 sensor 1)</ptxt>
+<ptxt>10. A/F sensor heater relay</ptxt>
+<ptxt>11. A/F sensor heater and A/F sensor heater relay circuits</ptxt>
+<ptxt>12. PCV hose connections</ptxt>
+<ptxt>13. PCV valve and hose</ptxt>
+<ptxt>14. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221B001X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0175</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>System Too Rich (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Injector leakage or blockage</ptxt>
+<ptxt>2. MAF meter</ptxt>
+<ptxt>3. ECT sensor</ptxt>
+<ptxt>4. Ignition system</ptxt>
+<ptxt>5. Fuel pressure</ptxt>
+<ptxt>6. Gas leakage from exhaust system</ptxt>
+<ptxt>7. Open or short in A/F sensor (bank 2 sensor 1) circuit</ptxt>
+<ptxt>8. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>9. A/F sensor heater (bank 2 sensor 1)</ptxt>
+<ptxt>10. A/F sensor heater relay</ptxt>
+<ptxt>11. A/F sensor heater and A/F sensor heater relay circuits</ptxt>
+<ptxt>12. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221B001X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0220</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "B" Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. TP sensor (built into throttle body)</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0222</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "B" Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. TP sensor (built into throttle body)</ptxt>
+<ptxt>2. Short in VTA2 circuit</ptxt>
+<ptxt>3. Open in VC circuit</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0223</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "B" Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. TP sensor (built into throttle body)</ptxt>
+<ptxt>2. Open in VTA2 circuit</ptxt>
+<ptxt>3. Open in E2 circuit</ptxt>
+<ptxt>4. Short between VC and VTA2 circuits</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0300</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Random / Multiple Cylinder Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in engine wire harness</ptxt>
+<ptxt>2. Connector connections</ptxt>
+<ptxt>3. Vacuum hose connection</ptxt>
+<ptxt>4. Ignition system</ptxt>
+<ptxt>5. Injector</ptxt>
+<ptxt>6. Fuel pressure</ptxt>
+<ptxt>7. Mass Air Flow (MAF) meter</ptxt>
+<ptxt>8. Engine Coolant Temperature (ECT) sensor</ptxt>
+<ptxt>9. Compression pressure</ptxt>
+<ptxt>10. Valve clearance</ptxt>
+<ptxt>11. Valve timing</ptxt>
+<ptxt>12. PCV valve and hose</ptxt>
+<ptxt>13. PCV hose connections</ptxt>
+<ptxt>14. Air induction system</ptxt>
+<ptxt>15. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0301</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cylinder 1 Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0300</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0302</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cylinder 2 Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0300</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0303</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cylinder 3 Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0300</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0304</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cylinder 4 Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0300</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0305</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cylinder 5 Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0300</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0306</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cylinder 6 Misfire Detected</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0300</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on or flashes</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH301BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0327</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Knock Sensor 1 Circuit Low Input (Bank 1 or Single Sensor)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in knock sensor 1 circuit</ptxt>
+<ptxt>2. Knock sensor 1</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SVT00ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0328</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Knock Sensor 1 Circuit High Input (Bank 1 or Single Sensor)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in knock sensor 1 circuit</ptxt>
+<ptxt>2. Knock sensor 1</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SVT00ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0332</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Knock Sensor 2 Circuit Low Input (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in knock sensor 2 circuit</ptxt>
+<ptxt>2. Knock sensor 2</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SVT00ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0333</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Knock Sensor 2 Circuit High Input (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in knock sensor 2 circuit</ptxt>
+<ptxt>2. Knock sensor 2</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SVT00ZX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0335</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position Sensor "A" Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in Crankshaft Position Sensor (CKP) circuit</ptxt>
+<ptxt>2. CKP sensor</ptxt>
+<ptxt>3. Sensor plate (CKP sensor plate)</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000TCW01QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0339</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Crankshaft Position Sensor "A" Circuit Intermittent</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0335</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Does not come on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000TCW01QX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0340</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for intake camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for intake camshaft</ptxt>
+<ptxt>3. Camshaft timing gear for intake camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain for intake camshaft</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBZ00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0342</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "A" Circuit Low Input (Bank 1 or Single Sensor)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0340</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBZ00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0343</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "A" Circuit High Input (Bank 1 or Single Sensor)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0340</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBZ00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0345</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "A" Circuit (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0340</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBZ00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0347</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "A" Circuit Low Input (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0340</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBZ00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0348</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "A" Circuit High Input (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0340</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WBZ00YX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0351</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Ignition Coil "A" Primary / Secondary Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Ignition system</ptxt>
+<ptxt>2. Open or short in IGF1 or IGT circuit (1 to 6) between ignition coil and ECM</ptxt>
+<ptxt>3. No. 1 to No. 6 ignition coils</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH4017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0352</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Ignition Coil "B" Primary / Secondary Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0351</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH4017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0353</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Ignition Coil "C" Primary / Secondary Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0351</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH4017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0354</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Ignition Coil "D" Primary / Secondary Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0351</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH4017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0355</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Ignition Coil "E" Primary / Secondary Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0351</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH4017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0356</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Ignition Coil "F" Primary / Secondary Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0351</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XH4017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0365</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "B" Circuit (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for exhaust camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for exhaust camshaft</ptxt>
+<ptxt>3. Exhaust camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000YTB00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0367</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "B" Circuit Low Input (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for exhaust camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for exhaust camshaft</ptxt>
+<ptxt>3. Exhaust camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000YTB00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0368</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "B" Circuit High Input (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for exhaust camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for exhaust camshaft</ptxt>
+<ptxt>3. Exhaust camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000YTB00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0390</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "B" Circuit (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for exhaust camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for exhaust camshaft</ptxt>
+<ptxt>3. Exhaust camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000YTB00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0392</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "B" Circuit Low Input (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for exhaust camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for exhaust camshaft</ptxt>
+<ptxt>3. Exhaust camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000YTB00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0393</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Camshaft Position Sensor "B" Circuit High Input (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in VVT sensor for exhaust camshaft circuit</ptxt>
+<ptxt>2. VVT sensor for exhaust camshaft</ptxt>
+<ptxt>3. Exhaust camshaft</ptxt>
+<ptxt>4. Jumped tooth of timing chain</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000YTB00KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0420</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Catalyst System Efficiency Below Threshold (Bank 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Gas leakage from exhaust system</ptxt>
+<ptxt>2. A/F sensor (bank 1 sensor 1)</ptxt>
+<ptxt>3. HO2 sensor (bank 1 sensor 2)</ptxt>
+<ptxt>4. Exhaust manifold (Three-Way Catalytic Converter [TWC])</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC0011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0430</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Catalyst System Efficiency Below Threshold (Bank 2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Gas leakage from exhaust system</ptxt>
+<ptxt>2. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>3. HO2 sensor (bank 2 sensor 2)</ptxt>
+<ptxt>4. Exhaust manifold (Three-Way Catalytic Converter [TWC])</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC0011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P043E</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission System Reference Orifice Clog Up</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module</ptxt>
+<ptxt>2. Connector / wire</ptxt>
+<ptxt>harness (Pump</ptxt>
+<ptxt>module - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221E003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P043F</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission System Reference Orifice High Flow</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module</ptxt>
+<ptxt>2. Connector / wire</ptxt>
+<ptxt>harness (Pump</ptxt>
+<ptxt>module - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221E003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0441</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Incorrect Purge Flow</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. EVAP VSV</ptxt>
+<ptxt>2. Connector / wire harness (EVAP VSV - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+<ptxt>4. Pump module</ptxt>
+<ptxt>5. Leakage from EVAP system</ptxt>
+<ptxt>6. Leakage from EVAP line (EVAP VSV - Intake manifold)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWF011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0450</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Pressure Sensor / Switch</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module (including pressure sensor)</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWG00EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0451</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Pressure Sensor Range / Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module (including pressure sensor)</ptxt>
+<ptxt>2. Connector / wire harness (between pump module and ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWG00EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0452</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Pressure Sensor / Switch Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module (including pressure sensor)</ptxt>
+<ptxt>2. Connector / wire harness (between pump module and ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWG00EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0453</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Pressure Sensor / Switch High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module (include pressure sensor)</ptxt>
+<ptxt>2. Connector / wire harness (between pump module and ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWG00EX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0455</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Leak Detected (Gross Leak)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Fuel tank cap (loose)</ptxt>
+<ptxt>2. Leakage from EVAP line (Canister - Fuel tank)</ptxt>
+<ptxt>3. Leakage from EVAP line (EVAP VSV - Canister)</ptxt>
+<ptxt>4. Pump module</ptxt>
+<ptxt>5. Leakage from fuel tank</ptxt>
+<ptxt>6. Leakage from canister</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWH00TX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0456</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission Control System Leak Detected (Very Small Leak)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P0455</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000SWH00TX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0500</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Vehicle Speed Sensor "A"</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Vehicle speed sensor</ptxt>
+<ptxt>2. Vehicle speed sensor signal circuit</ptxt>
+<ptxt>3. Combination meter</ptxt>
+<ptxt>4. ECM</ptxt>
+<ptxt>5. Skid control ECU</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8E00VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0504</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Brake Switch "A" / "B" Correlation</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in stop light switch signal circuit</ptxt>
+<ptxt>2. Stop light switch</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Does not come on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XCT00UX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0505</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Idle Control System Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ETCS (Electronic Throttle Control System)</ptxt>
+<ptxt>2. Air induction system</ptxt>
+<ptxt>3. PCV hose connection</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000T8M01OX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P050A</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cold Start Idle Air Control System Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Throttle body assembly</ptxt>
+<ptxt>2. MAF meter</ptxt>
+<ptxt>3. Air induction system</ptxt>
+<ptxt>4. PCV hose connections</ptxt>
+<ptxt>5. VVT system</ptxt>
+<ptxt>6. Air cleaner filter element</ptxt>
+<ptxt>7. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001BFY004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P050B</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Cold Start Ignition Timing Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P050A</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001BFY004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0560</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>System Voltage</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in back-up power source circuit</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000T8P01PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0604</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Internal Control Module Random Access Memory (RAM) Error</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W95011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0606</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ECM / PCM Processor</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on (except</ptxt>
+<ptxt>when there is a</ptxt>
+<ptxt>malfunction in the</ptxt>
+<ptxt>ECM internal circuit)</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W95011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0607</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Control Module Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on (except</ptxt>
+<ptxt>when there is a</ptxt>
+<ptxt>malfunction in the</ptxt>
+<ptxt>cruise control</ptxt>
+<ptxt>switch circuit)</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W95011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0617</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Starter Relay Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Park / Neutral Position (PNP) switch</ptxt>
+<ptxt>2. Starter relay circuit</ptxt>
+<ptxt>3. Cranking holding function circuit</ptxt>
+<ptxt>4. Ignition switch</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000TA001RX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0630</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>VIN not Programmed or Mismatch - ECM / PCM</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PGD00BX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0657</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Actuator Supply Voltage Circuit / Open</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W95011X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0705</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Range Sensor Circuit Malfunction (PRNDL Input)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in park / neutral position switch circuit</ptxt>
+<ptxt>2. Park / neutral position switch</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W84026X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0724</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Brake Switch "B" Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in stop light switch signal circuit</ptxt>
+<ptxt>2. Stop light switch</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XCT00UX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2102</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Actuator Control Motor Circuit Low</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in throttle actuator circuit</ptxt>
+<ptxt>2. Throttle actuator</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFU01KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2103</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Actuator Control Motor Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in throttle actuator circuit</ptxt>
+<ptxt>2. Throttle actuator</ptxt>
+<ptxt>3. Throttle valve</ptxt>
+<ptxt>4. Throttle body assembly</ptxt>
+<ptxt>5. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFU01KX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2111</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Actuator Control System - Stuck Open</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Throttle actuator</ptxt>
+<ptxt>2. Throttle body</ptxt>
+<ptxt>3. Throttle valve</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFV01LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2112</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Actuator Control System - Stuck Closed</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2111</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFV01LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2118</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Actuator Control Motor Current Range / Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in ETCS power source circuit</ptxt>
+<ptxt>2. ETCS fuse</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFW01NX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2119</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle Actuator Control Throttle Body Range / Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ETCS</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFX01LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2120</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "D" Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2121</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "D" Circuit Range / Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFZ01IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2122</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "D" Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. Open in VCP1 circuit</ptxt>
+<ptxt>3. Open or ground short in VPA circuit</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2123</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "D" Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. Open in EPA circuit</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2125</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "E" Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2127</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "E" Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. Open in VCP2 circuit</ptxt>
+<ptxt>3. Open or ground short in VPA2 circuit</ptxt>
+<ptxt>4. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2128</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "E" Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Accelerator Pedal Position (APP) sensor</ptxt>
+<ptxt>2. Open in EPA2 circuit</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2135</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "A" / "B" Voltage Correlation</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short between VTA1 and VTA2 circuits</ptxt>
+<ptxt>2. TP sensor (built into throttle body)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PF6014X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2138</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Throttle / Pedal Position Sensor / Switch "D" / "E" Voltage Correlation</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short between VPA and VPA2 circuits</ptxt>
+<ptxt>2. APP sensor</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000PFY01GX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2195</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Signal Stuck Lean (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in A/F sensor (bank 1 sensor 1) circuit</ptxt>
+<ptxt>2. A/F sensor (bank 1 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater (bank 1 sensor 1)</ptxt>
+<ptxt>4. A/F sensor heater relay</ptxt>
+<ptxt>5. A/F sensor heater and relay circuits</ptxt>
+<ptxt>6. Air induction system</ptxt>
+<ptxt>7. Fuel pressure</ptxt>
+<ptxt>8. Injector</ptxt>
+<ptxt>9. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC401AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2196</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Signal Stuck Rich (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2195</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC401AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2197</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Signal Stuck Lean (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in A/F sensor (bank 2 sensor 1) circuit</ptxt>
+<ptxt>2. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater (bank 2 sensor 1)</ptxt>
+<ptxt>4. A/F sensor heater relay</ptxt>
+<ptxt>5. A/F sensor heater and relay circuits</ptxt>
+<ptxt>6. Air induction system</ptxt>
+<ptxt>7. Fuel pressure</ptxt>
+<ptxt>8. Injector</ptxt>
+<ptxt>9. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC401AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2198</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Signal Stuck Rich (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2197</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC401AX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2238</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Pumping Current Circuit Low (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in A/F sensor (bank 1 sensor 1) circuit</ptxt>
+<ptxt>2. A/F sensor (bank 1 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater (bank 1 sensor 1)</ptxt>
+<ptxt>4. A/F sensor heater relay</ptxt>
+<ptxt>5. A/F sensor heater and relay circuits</ptxt>
+<ptxt>6. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2239</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Pumping Current Circuit High (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2238</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2241</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Pumping Current Circuit Low (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in A/F sensor (bank 2 sensor 1) circuit</ptxt>
+<ptxt>2. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>3. A/F sensor heater (bank 2 sensor 1)</ptxt>
+<ptxt>4. A/F sensor heater relay</ptxt>
+<ptxt>5. A/F sensor heater and relay circuits</ptxt>
+<ptxt>6. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2242</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Pumping Current Circuit High (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2241</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2252</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Reference Ground Circuit Low (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2238</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2253</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Reference Ground Circuit High (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2238</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2255</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Reference Ground Circuit Low (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2241</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2256</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Oxygen (A/F) Sensor Reference Ground Circuit High (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Same as DTC P2241</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000XOK019X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2401</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission System Leak Detection Pump Control Circuit Low</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module</ptxt>
+<ptxt>2. Connector / wire</ptxt>
+<ptxt>harness (Pump</ptxt>
+<ptxt>module - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221E003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2402</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission System Leak Detection Pump Control Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module</ptxt>
+<ptxt>2. Connector / wire</ptxt>
+<ptxt>harness (Pump</ptxt>
+<ptxt>module - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221E003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2419</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission System Switching Valve Control Circuit Low</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module</ptxt>
+<ptxt>2. Connector / wire</ptxt>
+<ptxt>harness (Pump</ptxt>
+<ptxt>module - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM00000221E003X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2420</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Evaporative Emission System Switching Valve Control Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Pump module (0.02 inch</ptxt>
+<ptxt>orifice, vacuum pump, vent</ptxt>
+<ptxt>valve)</ptxt>
+<ptxt>EVAP system monitor</ptxt>
+<ptxt>2. Connector / wire harness</ptxt>
+<ptxt>(Pump module - ECM)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000002CNZ001X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2610</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>ECM / PCM Internal Engine Off Timer Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000T6X00WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2A00</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor Circuit Slow Response (Bank 1 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in A/F sensor (bank 1 sensor 1) circuit</ptxt>
+<ptxt>2. A/F sensor (bank1 sensor 1)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC2015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2A03</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>A/F Sensor Circuit Slow Response (Bank 2 Sensor 1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in A/F sensor (bank 2 sensor 1) circuit</ptxt>
+<ptxt>2. A/F sensor (bank 2 sensor 1)</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000WC2015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>U0101</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Lost Communication with TCM</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in TCM and ECM circuit</ptxt>
+<ptxt>2. TCM</ptxt>
+<ptxt>3. ECM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001O2V006X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: This DTC is related to the A/F sensor, although the caption in the "Detection Item" column refers to the heated oxygen sensor.</ptxt>
+<ptxt>*2: This DTC indicates a malfunction related to the primary circuit.</ptxt>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

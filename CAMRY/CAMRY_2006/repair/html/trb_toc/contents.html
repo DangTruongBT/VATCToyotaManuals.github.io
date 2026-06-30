@@ -1,0 +1,74 @@
+<!-- $Id: contents.html,v 1.12 2004/09/24 10:55:30 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  001 Please choose a system on the left window.                        -->
+<!--  011 Introduction                                                      -->
+<!--  012 Pre-Cuation                                                       -->
+<!--  013 There is no information available.                                -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (parent.g_paraId==null || parent.g_objXml==null || parent.g_paracat==null) {
+		parent.g_paraId = parent.findParameterValue("parag", location.search);
+		if (parent.g_paraId==null) return;
+		parent.g_objXml = parent.initXml(parent.g_paraId.toLowerCase()+".xml");
+		if (parent.g_objXml==null) return;
+		parent.g_paracat = parent.findParameterValue("paracat", location.search);
+		if (parent.g_paracat==null) {
+			parent.g_paracat = parent.g_objXml.selectSingleNode("//para").getAttribute("category");
+		}
+	}
+	if (parent.g_paracat=="S")
+		parent.display(parent.g_objXml, parent.g_diagListXsl, disp, null);
+	else
+		parent.display(parent.g_objXml, parent.g_symListXsl, disp, null);
+	// 切替時のグローバルナビのリンク設定
+	parent.global.setGlobalLinks();
+	if (parent.g_paraId!=null) {
+		var iList = parent.getSiblingList(parent.g_paraId, parent.g_tocXml, "D");
+		var lList = parent.getSiblingList(parent.g_paraId, parent.g_tocXml, "L");
+		parent.createDropDownItem(iList, parent.global.intro, "INTRO", "contents");
+		parent.createDropDownItem(lList, parent.global.caution, "PRECAUTION", "contents");
+	}
+}
+
+function selectDropDown(obj, windowTitle) {
+	if(windowTitle=="INTRO") {
+		parent.selectDropDown(obj, "- Introduction -"); //011
+	} else if(windowTitle=="PRECAUTION") {
+		parent.selectDropDown(obj, "- Pre-Caution -"); //012
+	}
+}
+function selectSuspectArea(refId) {
+	if (refId==null) return;
+	var idArray = refId.split("_");
+	var paraId = idArray[0];
+	var cateNode = parent.g_tocXml.selectSingleNode("//para[@id='"+paraId+"']/@category");
+	if (cateNode==null) {
+		alert("There is no information available."); // 013
+		return;
+	}
+	var cate = cateNode.nodeTypedValue;
+	if (idArray.length>1) {
+		parent.selectTypedLocation(paraId, cate, parent.g_paraId, refId);
+	} else {
+		parent.selectTypedLocation(paraId, cate, parent.g_paraId);
+	}
+}
+</script>
+</head>
+<body onLoad="init()">
+	<div id="disp">
+		Please choose a system on the left window.<!-- 001 -->
+	</div>
+</body>
+</html>

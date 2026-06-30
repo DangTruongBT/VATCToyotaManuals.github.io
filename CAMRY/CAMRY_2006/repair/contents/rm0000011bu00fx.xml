@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000011BU00FX" category="D" type-id="303F4" name-id="NS08D-15" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM0000011BU00FX_z0" proc-id="RM0250U___00004XD00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Illustrations may differ from the actual vehicle depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If the system cannot enter the diagnostic mode, inspect all AVC-LAN communication components and repair or replace problem parts (See page <xref label="Seep01" href="RM0000019NG00XX"/>).</ptxt>
+</item>
+<item>
+<ptxt>After the ignition switch is turned on (IG), check that the map is displayed before starting the diagnostic mode. Otherwise, some items cannot be checked.</ptxt>
+</item>
+</list1>
+</atten4>
+<step1>
+<ptxt>START DIAGNOSTIC MODE</ptxt>
+<step2>
+<ptxt>There are 2 methods to start diagnostic mode. Start the mode by using one of them. </ptxt>
+</step2>
+<step2>
+<ptxt>Method 1</ptxt>
+<figure>
+<graphic graphicname="E129827E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>While pressing and holding the "INFO" switch, operate the light control switch: OFF → Turn ON → Turn OFF → Turn ON → Turn OFF → Turn ON → Turn OFF.</ptxt>
+</step3>
+<step3>
+<ptxt>The diagnostic mode starts and the "System Check Mode" screen will be displayed. Service inspection starts automatically and the result will be displayed.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt> Method 2</ptxt>
+<figure>
+<graphic graphicname="E109432" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>Switch to the "Display Check" screen.</ptxt>
+</step3>
+<step3>
+<ptxt>From the display quality adjustment screen, touch the corners of the screen in the following order: upper left → lower left → upper left → lower left → upper left → lower left.</ptxt>
+</step3>
+<step3>
+<ptxt>The diagnostic mode starts and the "System Check Mode" screen will be displayed. Service inspection starts automatically and the result will be displayed.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>FINISH DIAGNOSTIC MODE</ptxt>
+<step2>
+<ptxt>There are 2 methods to end diagnostic mode. Use one of them.</ptxt>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Press and hold the "DISP" switch for 3 seconds.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DIAGNOSIS MENU</ptxt>
+<step2>
+<ptxt>The "Diagnosis MENU" screen will be displayed by pressing the "Menu" switch on the "System Check Mode" screen.</ptxt>
+<figure>
+<graphic graphicname="E120083E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK DTC</ptxt>
+<step2>
+<ptxt>Read the system check result.</ptxt>
+<figure>
+<graphic graphicname="E111721E02" width="2.775699831in" height="8.799559038in"/>
+</figure>
+<step3>
+<ptxt>If the check result is "EXCH", "CHEK" or "Old", touch the displayed check result to view the results on the "Unit Check Mode" screen and record them.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If all check results are "OK", go to communication DTC check.</ptxt>
+</item>
+<item>
+<ptxt>If a device name is not known, its physical address is displayed.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten4>
+<ptxt>When proceeding to view the results of another device, press the "Service" switch to return to the "System Check Mode" screen. Repeat this step.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Read the communication diagnostic check result.</ptxt>
+<figure>
+<graphic graphicname="I038208E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<step3>
+<ptxt>Return to the "System Check Mode" screen, and press the "LAN Mon" switch to enter the "LAN Monitor" screen.</ptxt>
+</step3>
+<step3>
+<ptxt>If the check result is "CHEK" or "Old", touch the displayed check result to view the results on the individual communication diagnostic screen and record them.</ptxt>
+<figure>
+<graphic graphicname="E120084E01" width="2.775699831in" height="8.799559038in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If all check results are "No Err", the system judges that no DTC exists.</ptxt>
+</item>
+<item>
+<ptxt>The sub-code (relevant device) will be indicated by its physical address.</ptxt>
+</item>
+<item>
+<ptxt>When proceeding to view the results of another device, press the "Service" switch to return to the original "LAN Monitor" screen. Repeat this step.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CLEAR/RECHECK</ptxt>
+<step2>
+<ptxt>Clear DTC</ptxt>
+<figure>
+<graphic graphicname="I038211E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Press the "Code CLR" switch for 3 seconds.</ptxt>
+</step3>
+<step3>
+<ptxt>The check results are cleared.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Recheck</ptxt>
+<figure>
+<graphic graphicname="I038212E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Press the "Recheck" switch.</ptxt>
+</step3>
+<step3>
+<ptxt>Confirm that all diagnostic codes are "OK" when the check results are displayed. If a code other than "OK" is displayed, troubleshoot again.</ptxt>
+<figure>
+<graphic graphicname="I038213E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Press the "LAN Mon" switch to change to the "LAN Monitor" screen.</ptxt>
+<figure>
+<graphic graphicname="I038213E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Confirm that all diagnostic codes are "No Err". If a code other than "No Err" is displayed, troubleshoot again.</ptxt>
+<figure>
+<graphic graphicname="I038214E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

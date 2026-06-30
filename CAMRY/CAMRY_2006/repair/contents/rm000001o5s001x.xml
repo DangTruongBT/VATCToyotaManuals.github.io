@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM000001O5S001X" category="C" type-id="305MI" name-id="RS2E1-01" from="200601">
+<dtccode>B1794</dtccode>
+<dtcname>Open in Occupant Classification ECU Battery Positive Line</dtcname>
+<subpara id="RM000001O5S001X_01" type-id="60" category="03" proc-id="RM0250U___0000AFB00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit consists of the occupant classification ECU and the power source circuit (battery, fuse, and wire harness).</ptxt>
+<ptxt>DTC B1794 is recorded when a malfunction is detected in the occupant classification ECU or the power source circuit.</ptxt>
+<atten4>
+<ptxt>If DTC B1794 is output after switching the ignition switch off-on (IG)-off 50 times in a row when a malfunction occurs in the power circuit for the occupant classification system, the DTC is output again. </ptxt>
+<ptxt>This DTC is output when a malfunction is detected even after being cleared unless the normal system code is input.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.82in"/>
+<colspec colname="COL3" colwidth="2.84in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1794</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The ignition switch is turned from off to on (IG), hold if for 10 seconds or more, and back to off again 50 times in a row when a malfunction occurs in the circuit for the occupant classification system.</ptxt>
+</item>
+<item>
+<ptxt>Occupant classification ECU malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Battery</ptxt>
+</item>
+<item>
+<ptxt>ECU-B Fuse</ptxt>
+</item>
+<item>
+<ptxt>Floor wire No. 2</ptxt>
+</item>
+<item>
+<ptxt>Front seat wire RH (for Power seat)</ptxt>
+</item>
+<item>
+<ptxt>Occupant classification ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001O5S001X_02" type-id="32" category="03" proc-id="RM0250U___0000AFC00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C123750E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001O5S001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001O5S001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001O5S001X_04_0001" proc-id="RM0250U___0000AFD00000">
+<testtitle>CHECK BATTERY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage of the battery.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0002" fin="false">OK</down>
+<right ref="RM000001O5S001X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0002" proc-id="RM0250U___0000AFE00000">
+<testtitle>CHECK FUSE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the ECU-B fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0003" fin="false">OK</down>
+<right ref="RM000001O5S001X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0003" proc-id="RM0250U___0000AFF00000">
+<testtitle>CHECK WIRE HARNESS (SOURCE VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="H043112E21" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the occupant classification ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage and resistance</title>
+<subtitle>for Power seat</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-1 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-7 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>for Manual seat</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-1 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-7 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0004" fin="false">OK</down>
+<right ref="RM000001O5S001X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0004" proc-id="RM0250U___0000AFG00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the connector to the occupant classification ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 10 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, check the DTCs of the occupant classification ECU (See page <xref label="Seep03" href="RM0000010VK00PX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>B1794 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1794 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0005" fin="false">OK</down>
+<right ref="RM000001O5S001X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0005" proc-id="RM0250U___0000AFH00000">
+<testtitle>REPLACE OCCUPANT CLASSIFICATION ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Replace the occupant classification ECU (See page <xref label="Seep01" href="RM0000011JG003X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0006" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0006" proc-id="RM0250U___0000AFI00000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform the "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETED" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0007" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0007" proc-id="RM0250U___0000AFJ00000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform the "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001O5S001X_04_0012" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0008">
+<testtitle>REPLACE BATTERY</testtitle>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0009">
+<testtitle>REPLACE FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0010">
+<testtitle>REPAIR OR REPLACE WIRE HARNESS</testtitle>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0011">
+<testtitle>USE SIMULATION METHOD TO CHECK<xref label="Seep01" href="RM0000010VJ00PX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001O5S001X_04_0012">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

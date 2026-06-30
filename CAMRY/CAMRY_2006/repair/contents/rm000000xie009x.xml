@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIE009X" category="C" type-id="300AA" name-id="BC1N2-01" from="200601">
+<dtccode>C1249/49</dtccode>
+<dtcname>Open in Stop Light Switch Circuit</dtcname>
+<subpara id="RM000000XIE009X_01" type-id="60" category="03" proc-id="RM0250U___00005N400000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU (housed in the actuator assembly) inputs the stop light switch signal and the condition of brake operation.</ptxt>
+<ptxt>The skid control ECU has an open detection circuit, which outputs this DTC when detecting an open in the stop light input line while the stop light switch is OFF.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.00in"/>
+<colspec colname="COL2" colwidth="3.14in"/>
+<colspec colname="COL3" colwidth="2.94in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1249/49</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When IG1 terminal voltage is 9.5 to 17.2 V, an open circuit of the stop light switch continues for 0.3 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>STOP fuse</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch circuit</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (Skid control ECU)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XIE009X_02" type-id="32" category="03" proc-id="RM0250U___00005N500000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136030E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIE009X_03" type-id="51" category="05" proc-id="RM0250U___00005N600000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XIE009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIE009X_04_0001" proc-id="RM0250U___00005N700000">
+<testtitle>INSPECT STOP FUSE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the STOP fuse from the main body ECU.</ptxt>
+<figure>
+<graphic graphicname="C135806E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.32in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STOP (10 A) fuse</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0030" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0030" proc-id="RM0250U___00005NG00000">
+<testtitle>CHECK STOP LIGHT OPERATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Install the STOP fuse.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the stop light comes on when the brake pedal is depressed, and goes off when the brake pedal is released.</ptxt>
+<spec>
+<title>OK</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Illumination Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0031" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0019" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0031" proc-id="RM0250U___00005NH00000">
+<testtitle>INSPECT SKID CONTROL ECU (STP TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="F049362E99" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-27 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch ON (Brake pedal depressed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>8 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-27 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch OFF (Brake pedal released)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0032" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0032" proc-id="RM0250U___00005NI00000">
+<testtitle>INSPECT SKID CONTROL ECU (IG1 TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+<figure>
+<graphic graphicname="F049362E98" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-46 (IG1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0037" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0037" proc-id="RM0250U___00008CJ00000">
+<testtitle>INSPECT SKID CONTROL ECU (GND TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="F049362E97" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-32 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0007" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0038" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0007" proc-id="RM0250U___00005N800000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Depress the brake pedal several times to test the stop light circuit.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1249/49) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1249/49) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep03" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0025" fin="true">A</down>
+<right ref="RM000000XIE009X_04_0014" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0019" proc-id="RM0250U___00005NA00000">
+<testtitle>INSPECT STOP LIGHT SWITCH (POWER SOURCE TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the stop light switch connector.</ptxt>
+<figure>
+<graphic graphicname="I042363E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A19-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0020" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0018" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0020" proc-id="RM0250U___00005NB00000">
+<testtitle>INSPECT STOP LIGHT SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C124796E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch pin free</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch pin pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0024" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0027" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0024" proc-id="RM0250U___00005NF00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU - STOP LIGHT SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="F049379E08" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-27 (STP) - A19-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-27 (STP) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0036" fin="false">OK</down>
+<right ref="RM000000XIE009X_04_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0036" proc-id="RM0250U___00005NM00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the skid control ECU connector and the stop light switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Depress the brake pedal several times to test the stop light circuit.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1249/49) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1249/49) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep03" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIE009X_04_0017" fin="true">A</down>
+<right ref="RM000000XIE009X_04_0014" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0025">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0017">
+<testtitle>INSPECT LIGHTING SYSTEM (STOP LIGHT CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0009">
+<testtitle>REPLACE STOP FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (STP CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0011">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (IG1 CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0038">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0014">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0018">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0027">
+<testtitle>REPLACE STOP LIGHT SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000XIE009X_04_0029">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

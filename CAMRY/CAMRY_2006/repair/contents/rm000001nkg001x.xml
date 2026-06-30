@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NKG001X" category="C" type-id="305OJ" name-id="BC12Z-02" from="200601">
+<dtccode>C0210/33</dtccode>
+<dtcname>Right Rear Wheel Speed Sensor Signal Malfunction</dtcname>
+<dtccode>C0215/34</dtccode>
+<dtcname>Left Rear Wheel Speed Sensor Signal Malfunction</dtcname>
+<dtccode>C1273/73</dtccode>
+<dtcname>Low Output Signal of Rear Speed Sensor RH (Test Mode DTC)</dtcname>
+<dtccode>C1274/74</dtccode>
+<dtcname>Low Output Signal of Rear Speed Sensor LH (Test Mode DTC)</dtcname>
+<dtccode>C1277/77</dtccode>
+<dtcname>Abnormal Change in Output Signal of Rear Speed Sensor RH (Test Mode DTC)</dtcname>
+<dtccode>C1278/78</dtccode>
+<dtcname>Abnormal Change in Output Signal of Rear Speed Sensor LH (Test Mode DTC)</dtcname>
+<dtccode>C1332/38</dtccode>
+<dtcname>Right Rear Speed Sensor Circuit</dtcname>
+<dtccode>C1333/39</dtccode>
+<dtcname>Left Rear Speed Sensor Circuit</dtcname>
+<subpara id="RM000001NKG001X_01" type-id="60" category="03" proc-id="RM0250U___000013700000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTCs C0200/31, C0205/32, C1330/35, and C1331/36 (See page <xref label="Seep01" href="RM000001NKF001X_01"/>).</ptxt>
+<ptxt>DTCs from C1273/73 to C1278/78 can be deleted when the speed sensor sends a vehicle speed signal or the test mode ends. DTCs from C1273/73 to C1278/78 are output only in the test mode.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C0210/33</ptxt>
+<ptxt>C0215/34</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of the following is detected:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed is more than 25 mph (40 km/h) and pulses are not input for 0.03 sec.</ptxt>
+</item>
+<item>
+<ptxt>When the vehicle speed has reached 8 mph (12 km/h), after the initial start or restart, a wheel speed of 0 mph (0 km/h) is detected.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor RH and/or LH</ptxt>
+</item>
+<item>
+<ptxt>Rear speed sensor circuit RH and/or LH</ptxt>
+</item>
+<item>
+<ptxt>Rear speed sensor rotor RH and/or LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1332/38</ptxt>
+<ptxt>C1333/39</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Abnormality in the resistance value of each speed sensor is detected.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor RH and/or LH</ptxt>
+</item>
+<item>
+<ptxt>Rear speed sensor circuit RH and/or LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1273/73</ptxt>
+<ptxt>C1274/74</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detected only during test mode.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1277/77</ptxt>
+<ptxt>C1278/78</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detected only during test mode.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>DTC No. C0210/33 and C1332/38 are for the rear speed sensor RH.</ptxt>
+<ptxt>DTC No. C0215/34 and C1333/39 are for the rear speed sensor LH.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001NKG001X_02" type-id="32" category="03" proc-id="RM0250U___000013800000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C122948E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001NKG001X_03" type-id="51" category="05" proc-id="RM0250U___000013900000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep01" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001NKG001X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001NKG001X_05_0013" proc-id="RM0250U___00003LL00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (REAR SPEED SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select "DATA LIST" and read the value displayed on the intelligent tester (See page <xref label="Seep01" href="RM000000XHW00AX"/>).</ptxt>
+<table pgwide="1">
+<title>DATA LIST: ABS/TRAC/VSC</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<colspec colname="COL3" colwidth="2.62in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item /</ptxt>
+<ptxt>Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>RR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wheel speed sensor (RR) reading / min.: 0 MPH (0 km/h), max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wheel speed sensor (RL) reading / min.: 0 MPH (0 km/h), max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check that there is no difference between the speed value output from the speed sensor displayed on the intelligent tester and the speed value displayed on the speedometer when driving the vehicle.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The speed value output from the speed sensor displayed on the intelligent tester is the same as the actual vehicle speed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0014" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0017" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0014" proc-id="RM0250U___00003LM00000">
+<testtitle>PERFORM TEST MODE INSPECTION (SIGNAL CHECK)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if test mode (signal check) DTCs are detected (See page <xref label="Seep01" href="RM000001NKD001X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Test mode (signal check) DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Test mode (signal check) DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0015" fin="false">A</down>
+<right ref="RM000001NKG001X_05_0017" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0015" proc-id="RM0250U___00003LN00000">
+<testtitle>INSPECT SPEED SENSOR SIGNAL WAVEFORM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Lift up the vehicle.</ptxt>
+<figure>
+<graphic graphicname="C139144E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Perform the inspection using an oscilloscope.</ptxt>
+<test2>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Connect the oscilloscope to the rear speed sensor terminals of the skid control ECU.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that a waveform is output when the tires are rotated.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The same waveform is output from all the 4 wheels and there is no noise or interference in the waveform.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>As vehicle speed (wheel rotation speed) increases, the width of the waveform narrows and the output voltage becomes greater.</ptxt>
+</item>
+<item>
+<ptxt>When noise is identified in the waveform on the oscilloscope, the erratic signals are generated due to rotor scratches, looseness or foreign matter attached to the speed sensor.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+<test2>
+<ptxt>Connect the connector.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0016" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0016" proc-id="RM0250U___00003LO00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of approximately 25 mph (40 km/h) or more for 60 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTCs are recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the sensors, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0210/33, C0215/34, C1332/38 and C1333/39) are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0210/33, C0215/34, C1332/38 and C1333/39) are not output (When troubleshooting in accordance with the PROBLEM SYMPTOMS TABLE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0210/33, C0215/34, C1332/38 and C1333/39) are not output (When troubleshooting in accordance with the DTC CHART)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0017" fin="false">A</down>
+<right ref="RM000001NKG001X_05_0027" fin="true">B</right>
+<right ref="RM000001NKG001X_05_0026" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0017" proc-id="RM0250U___00003LP00000">
+<testtitle>INSPECT SPEED SENSOR INSTALLATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the rear speed sensor installation.</ptxt>
+<figure>
+<graphic graphicname="F010178E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>There is no clearance between the sensor and rear axle carrier.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Check the speed sensor signal after replacement (See page <xref label="Seep01" href="RM000001NKD001X"/>).</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0018" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0018" proc-id="RM0250U___00003LQ00000">
+<testtitle>INSPECT REAR SPEED SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the rear speed sensor connector.</ptxt>
+<figure>
+<graphic graphicname="C113377E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>LH</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-1 (RL+) - g1-2 (RL-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 2.2 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-1 (RL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-2 (RL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>RH</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-1 (RR+) - f1-2 (RR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 2.2 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-1 (RR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-2 (RR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Check the speed sensor signal after replacement (See page <xref label="Seep01" href="RM000001NKD001X"/>).</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0019" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0019" proc-id="RM0250U___00003LR00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU TO SKID CONTROL SENSOR WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the harness and connector.</ptxt>
+<figure>
+<graphic graphicname="C139145E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the skid control ECU connector and the rear speed sensor connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the skid control sensor wire.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>LH</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-7 (RL+) - g1-1 (RL+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-27 (RL-) - g1-2 (RL-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-7 (RL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-27 (RL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>RH</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-29 (RR+) - f1-1 (RR+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-8 (RR-) - f1-2 (RR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-29 (RR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-8 (RR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0020" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0030" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0020" proc-id="RM0250U___00003LS00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL SENSOR WIRE TO REAR SPEED SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check harness and connector (skid control sensor wire).</ptxt>
+<figure>
+<graphic graphicname="C113396E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>LH</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-1 - A-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-1 - A-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-2 - A-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-2 - A-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>g1-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>RH</subtitle>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-1 - A-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-1 - A-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-2 - A-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-2 - A-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>f1-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Connect the connector.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0021" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0031" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0021" proc-id="RM0250U___00003LT00000">
+<testtitle>INSPECT SPEED SENSOR SIGNAL WAVEFORM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Lift up the vehicle.</ptxt>
+<figure>
+<graphic graphicname="C139144E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Perform the inspection using an oscilloscope.</ptxt>
+<test2>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Connect the oscilloscope to the rear speed sensor terminals of the skid control ECU.</ptxt>
+</test2>
+<test2>
+<ptxt>Check that a waveform is output when the tires are rotated.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The same waveforms is output from rear wheels and there is no noise or interference in the waveform.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>As vehicle speed (wheel rotation speed) increases, the width of the waveform narrows and the output voltage becomes greater.</ptxt>
+</item>
+<item>
+<ptxt>When noise is identified in the waveform on the oscilloscope, the erratic signals are generated due to rotor scratches, looseness or foreign matter attached to the speed sensor.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+<test2>
+<ptxt>Connect the connector.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0022" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0032" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0022" proc-id="RM0250U___00003LU00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (REAR SPEED SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select "DATA LIST" and read the value displayed on the intelligent tester (See page <xref label="Seep01" href="RM000000XHW00AX"/>).</ptxt>
+<table pgwide="1">
+<title>DATA LIST: ABS/TRAC/VSC</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<colspec colname="COL3" colwidth="2.62in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item /</ptxt>
+<ptxt>Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>RR WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wheel speed sensor (RR) reading / min.: 0 MPH (0 km/h), max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL WHEEL SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wheel speed sensor (RL) reading / min.: 0 MPH (0 km/h), max.: 202 MPH (326 km/h)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual wheel speed</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check that there is no difference between the speed value output from the speed sensor displayed on the intelligent tester and the speed value displayed on the speedometer when driving the vehicle.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The speed value output from the speed sensor displayed on the intelligent tester is the same as the actual vehicle speed.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>It is suspected that the DTCs were output due to a bad connection of the connector terminal.</ptxt>
+</item>
+<item>
+<ptxt>If troubleshooting has been carried out according to the "PROBLEM SYMPTOMS TABLE", refer back to the table and proceed to the next step (See page <xref label="Seep02" href="RM000001NJJ001X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0023" fin="false">OK</down>
+<right ref="RM000001NKG001X_05_0033" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0023" proc-id="RM0250U___00003LV00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of approximately 25 mph (40 km/h) or more for 60 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTCs are recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the sensors, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0210/33, C0215/34, C1332/38 and C1333/39) are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0210/33, C0215/34, C1332/38 and C1333/39) are not output (When troubleshooting in accordance with the PROBLEM SYMPTOMS TABLE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0210/33, C0215/34, C1332/38 and C1333/39) are not output (When troubleshooting in accordance with the DTC CHART)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0024" fin="false">A</down>
+<right ref="RM000001NKG001X_05_0027" fin="true">B</right>
+<right ref="RM000001NKG001X_05_0026" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0024" proc-id="RM0250U___00003LW00000">
+<testtitle>INSPECT SPEED SENSOR ROTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the rear axle.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the rotor.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No scratches, cracks, oil, or foreign matter on the rotors.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Check the speed sensor signal after cleaning or replacement (See page <xref label="Seep01" href="RM000001NKD001X"/>).</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Install the rear axle.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NKG001X_05_0033" fin="true">OK</down>
+<right ref="RM000001NKG001X_05_0034" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0025">
+<testtitle>REPAIR OR REPLACE SPEED SENSOR AND SENSOR ROTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0026">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0027">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE<xref label="Seep01" href="RM000001NJJ001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0028">
+<testtitle>INSTALL REAR SPEED SENSOR CORRECTLY</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0029">
+<testtitle>REPLACE REAR SPEED SENSOR<xref label="Seep01" href="RM0000011P9001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0030">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (SKID CONTROL ECU TO SKID CONTROL SENSOR WIRE)</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0031">
+<testtitle>REPAIR OR REPLACE SKID CONTROL SENSOR WIRE</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0032">
+<testtitle>CLEAN OR REPLACE SPEED SENSOR AND SENSOR ROTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0033">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001NKG001X_05_0034">
+<testtitle>CLEAN OR REPLACE SPEED SENSOR ROTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

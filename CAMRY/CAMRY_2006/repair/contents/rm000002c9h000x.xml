@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000002C9H000X" category="C" type-id="8020I" name-id="RS2D7-01" from="200601">
+<dtccode>B1615/14</dtccode>
+<dtcname>Front Airbag Sensor LH Malfunction</dtcname>
+<subpara id="RM000002C9H000X_01" type-id="60" category="03" proc-id="RM0250U___0000C0100000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The front airbag sensor LH consists of the diagnostic circuit and the frontal deceleration sensor, etc.</ptxt>
+<ptxt>If the center airbag sensor assembly receives signals from the frontal deceleration sensor, it determines whether the SRS should be activated.</ptxt>
+<ptxt>DTC B1615/14 is recorded when a malfunction is detected in the front airbag sensor LH.</ptxt>
+<table frame="all" pgwide="1">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="1.42in"/>
+<colspec colname="col2" colwidth="2.83in"/>
+<colspec colname="col3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1615/14</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Front airbag sensor LH malfunction</ptxt>
+</item>
+<item>
+<ptxt>Center airbag sensor assembly malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Front airbag sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Center airbag sensor assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002C9H000X_02" type-id="32" category="03" proc-id="RM0250U___0000C0200000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="H002750E35" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002C9H000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000002C9H000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002C9H000X_04_0001" proc-id="RM0250U___0000C0300000">
+<testtitle>CHECK FRONT AIRBAG SENSOR LH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C114793E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Interchange the front airbag sensor RH with LH and connect the connectors to them.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the memory (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC B1615/14 is output.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC B1610/13 is output.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC B1610/13 and B1615/14 are not output.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1610/13 and B1615/14 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000002C9H000X_04_0004" fin="true">C</down>
+<right ref="RM000002C9H000X_04_0002" fin="true">A</right>
+<right ref="RM000002C9H000X_04_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002C9H000X_04_0002">
+<testtitle>REPLACE CENTER AIRBAG SENSOR ASSEMBLY<xref label="Seep01" href="RM000000UWV00HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002C9H000X_04_0003">
+<testtitle>REPLACE FRONT AIRBAG SENSOR LH<xref label="Seep01" href="RM000000UWZ00KX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000002C9H000X_04_0004">
+<testtitle>USE SIMULATION METHOD TO CHECK<xref label="Seep01" href="RM000000XFD00ZX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

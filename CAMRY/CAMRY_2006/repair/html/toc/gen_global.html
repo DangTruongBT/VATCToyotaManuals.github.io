@@ -1,0 +1,127 @@
+<!-- $Id: gen_global.html,v 1.6 2005/10/28 01:54:24 n-tamamura Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 Preparation                                                     -->
+<!--    005 Tech Tips                                                       -->
+<!--    009 EWD                                                             -->
+<!--    010 Tech Description                                                -->
+<!--    006 print(attribute)                                                -->
+<!--    007 PRINT_WINDOW_TITLE                                              -->
+<!--    008 logo(attribute)                                                 -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>General Information Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var g_pprList = null;
+var g_tips    = null;
+var DELIM     = " &gt; ";
+
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	setLinks();
+}
+
+function setLinks() {
+	g_pprList = parent.getPreparationArray(parent.g_objXml, parent.g_tocXml);
+	document.all('ppr').style.visibility = (g_pprList==null) ? "hidden" : "";
+	g_tips = parent.getTips(parent.g_objXml);
+	document.all('tps').style.visibility = (g_tips==null) ? "hidden" : "";
+	var titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var ewdXml = parent.initXml("../../../ewd/toc_ewd.xml", true, false);
+	if (ewdXml==null) {
+		ewd.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ewdXml, lewd, titleName, "ewd", parent.g_term);
+		if (lewd.innerHTML.length==0) ewd.style.visibility = "hidden";
+	}
+	var ncfXml = parent.initXml("../../../ncf/toc_ncf.xml", true, false);
+	if (ncfXml==null) {
+		tec.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ncfXml, ltec, titleName, "ncf", parent.g_term);
+		if (ltec.innerHTML.length==0) tec.style.visibility = "hidden";
+	}
+}
+
+function callBackPage(term, vin, filter, bp) {
+	var idx = parent.findParameterValue("idx", parent.location.search);
+	if (idx!=null) {
+		parent.openBackPage(term, vin, filter, idx);
+		return;
+	} else {
+		parent.openTopPage(term, vin, filter);
+		return;
+	}
+}
+function callPreparationItems(pprXmlList) {
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	parent.openPreparationItems(pprXmlList, dialogTitle);
+}
+function callTips(tipsXml) {
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	parent.openTips(tipsXml, dialogTitle);
+}
+function callPrintPreview(objXml, objXsl) {
+	var args = null;
+	if (parent.g_subparaId!=null) {
+		args = new parent.Hashtable();
+		args.put("subparaId", parent.g_subparaId);
+	}
+	var dialogTitle = parent.g_sectionName
+                  + DELIM + parent.g_titleName
+                  + DELIM + parent.g_paragraphName;
+	var PRINT_WINDOW_TITLE = "General Information"; // 007
+	parent.openPrintPreview(objXml, objXsl, args, PRINT_WINDOW_TITLE, dialogTitle, false)
+}
+</script>
+</head>
+<body onLoad="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 008 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="callBackPage(parent.g_term, parent.g_vin, parent.g_filter, parent.g_bp)">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="right">
+			<a id="ppr" href="#" class="popup-button" onClick="callPreparationItems(g_pprList)">Preparation</a><!-- 004 -->
+			<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">Tech Tips</a><!-- 005 -->
+			<a id="ewd" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, lewd);" onMouseOut="parent.dropDownDelayUndisp();">EWD</a><!-- 009 -->
+			<div id="lewd" style="display: none"></div>
+			<a id="tec" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, ltec);" onMouseOut="parent.dropDownDelayUndisp();">Tech Description</a><!-- 010 -->
+			<div id="ltec" style="display: none"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px">
+			<a href="#" onClick="callPrintPreview(parent.g_objXml, parent.g_cttXsl);">
+				<img alt="print" src="../../img/print.png" class="print"><!-- 006 -->
+			</a>
+		</td>
+		<td class="boundary-top">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

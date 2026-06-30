@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GUX002X" category="C" type-id="3010I" name-id="EI07E-03" from="200601">
+<dtccode>B2796</dtccode>
+<dtcname>No Communication in Immobiliser System</dtcname>
+<dtccode>B2798</dtccode>
+<dtcname>Communication Malfunction No. 2</dtcname>
+<subpara id="RM000001GUX002X_01" type-id="60" category="03" proc-id="RM0250U___00008FL00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>These DTCs are output if a key that does not have a transponder chip is inserted into the ignition key cylinder or if communication between the key and transponder key ECU assembly is impossible.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2796</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The key code cannot be transmitted</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Key</ptxt>
+</item>
+<item>
+<ptxt>Transponder key amplifier</ptxt>
+</item>
+<item>
+<ptxt>Transponder key ECU assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2798</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key code identification cannot be completed within the specified time</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Key</ptxt>
+</item>
+<item>
+<ptxt>Transponder key amplifier</ptxt>
+</item>
+<item>
+<ptxt>Transponder key ECU assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001GUX002X_02" type-id="32" category="03" proc-id="RM0250U___00008FM00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B111588E13" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001GUX002X_03" type-id="51" category="05" proc-id="RM0250U___00008KM00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the transponder key ECU assembly is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the key is replaced, register the key (See page <xref label="Seep02" href="RM00000120Y006X"/>).</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GUX002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GUX002X_04_0001" proc-id="RM0250U___00008FN00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select IMMOBILISER in the DATA LIST and read the value displayed on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>IMMOBILISER:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IMMOBILISER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immobiliser system status/SET or UNSET</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UNSET: Ignition switch ON</ptxt>
+<ptxt>SET: Without key</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt> UNSET (Ignition switch ON) appears on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GUX002X_04_0002" fin="false">NG</down>
+<right ref="RM000001GUX002X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GUX002X_04_0002" proc-id="RM0250U___00008FO00000">
+<testtitle>CHECK KEYS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Insert the vehicle's other key into the ignition key cylinder.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the engine starts with this key.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The engine starts.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GUX002X_04_0004" fin="false">NG</down>
+<right ref="RM000001GUX002X_04_0008" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GUX002X_04_0004" proc-id="RM0250U___00008FP00000">
+<testtitle>CHECK TRANSPONDER KEY AMPLIFIER</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>After replacing the transponder key amplifier (See page <xref label="Seep01" href="RM0000025PF000X"/>) with a normally functioning amplifier, check that the engine starts.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The engine starts.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GUX002X_04_0007" fin="true">OK</down>
+<right ref="RM000001GUX002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GUX002X_04_0005">
+<testtitle>REPLACE TRANSPONDER KEY ECU ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001GUX002X_04_0007">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000001GUX002X_04_0008">
+<testtitle>RE-REGISTER OR REPLACE KEY THAT CANNOT START ENGINE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

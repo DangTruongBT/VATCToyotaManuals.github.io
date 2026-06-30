@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIK009X" category="C" type-id="300F1" name-id="BC02Z-09" from="200601">
+<dtccode>C1210/36</dtccode>
+<dtcname>Zero Point Calibration of Yaw Rate Sensor Undone</dtcname>
+<dtccode>C1336/39</dtccode>
+<dtcname>Zero Point Calibration of Acceleration Sensor Undone</dtcname>
+<subpara id="RM000000XIK009X_01" type-id="60" category="03" proc-id="RM0250U___00005OH00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU receives signals from the yaw rate and acceleration sensor via the CAN communication system.</ptxt>
+<ptxt>The yaw rate sensor has the built in acceleration sensor and detects the vehicle's condition using 2 circuits (GL1, GL2). If there is trouble in the bus lines between the yaw rate and acceleration sensor and the CAN communication system, the DTCs U0123/62 (yaw rate sensor communication trouble) and U0124/95 (acceleration sensor communication trouble) are output.</ptxt>
+<ptxt>The DTCs are also output when the calibration has not been completed.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.97in"/>
+<colspec colname="COL2" colwidth="2.97in"/>
+<colspec colname="COL3" colwidth="3.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1210/36</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Zero point calibration of yaw rate sensor undone.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (Skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Zero point calibration undone</ptxt>
+<ptxt>(Perform zero point calibration and check DTC.</ptxt>
+<ptxt>If DTC is not output again, the sensor is normal)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1336/39</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>The vehicle runs in the normal mode with zero point calibration undone.</ptxt>
+</item>
+<item>
+<ptxt>After the zero point has been obtained, the zero point voltage of the sensor is not between 2.38 and 2.62 V.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (Skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</item>
+<item>
+<ptxt>Zero point calibration undone</ptxt>
+<ptxt>(Perform zero point calibration and check DTC.</ptxt>
+<ptxt>If DTC is not output again, the sensor is normal)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XIK009X_02" type-id="51" category="05" proc-id="RM0250U___00005OI00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+<atten4>
+<ptxt>When U0123/62, U0124/95 or U0126/63 is output along with C1210/36 or C1336/39, inspect and repair trouble areas indicated by U0123/62, U0124/95 or U0126/63 first.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XIK009X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIK009X_03_0002" proc-id="RM0250U___00005OK00000">
+<testtitle>PERFORM ZERO POINT CALIBRATION OF YAW RATE AND ACCELERATION SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform zero point calibration of the yaw rate and acceleration sensor (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIK009X_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000XIK009X_03_0003" proc-id="RM0250U___00005OL00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTCs are recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C1210/36 and/or C1336/39) are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C1210/36 and/or C1336/39) are not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The DTCs are recorded because zero point calibration has not been completed.</ptxt>
+</item>
+<item>
+<ptxt>End the procedure as the same DTCs are not recorded after completion of zero point calibration.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIK009X_03_0001" fin="false">A</down>
+<right ref="RM000000XIK009X_03_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIK009X_03_0001" proc-id="RM0250U___00005OJ00000">
+<testtitle>CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the yaw rate and acceleration sensor has been installed properly (See page <xref label="Seep01" href="RM0000022M0000X"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The sensor should be tightened to the specified torque.</ptxt>
+</specitem>
+<specitem>
+<ptxt>The sensor should not be tilted.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIK009X_03_0006" fin="true">OK</down>
+<right ref="RM000000XIK009X_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIK009X_03_0006">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIK009X_03_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000XIK009X_03_0005">
+<testtitle>INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

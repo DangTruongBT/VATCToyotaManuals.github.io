@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM00000276C000X" category="C" type-id="3033O" name-id="ES4U7-01" from="200601">
+<dtccode>P2014</dtccode>
+<dtcname>Intake Manifold Runner Position Sensor / Switch Circuit (Bank 1)</dtcname>
+<dtccode>P2016</dtccode>
+<dtcname>Intake Manifold Runner Position Sensor / Switch Circuit Low (Bank 1)</dtcname>
+<dtccode>P2017</dtccode>
+<dtcname>Intake Manifold Runner Position Sensor / Switch Circuit High (Bank 1)</dtcname>
+<subpara id="RM00000276C000X_01" type-id="60" category="03" proc-id="RM0250U___00008QM00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>This IMRV position sensor is non-contact type.</ptxt>
+</atten4>
+<ptxt>The IMRV position sensor is mounted on the valve shaft axis (See page <xref label="Seep01" href="RM00000276A000X"/>) and is used to measure the opening angle of the IMRV. Since this sensor is electronically controlled with hall elements, accurate control and reliability can be obtained.</ptxt>
+<ptxt>Voltage of approximately 0.6 V is applied to terminal IACA of the ECM when the IMRV is fully closed. The voltage applied to terminal IACA increases in proportion to the IMRV opening angle, approximately 3.6 V is applied to the terminal when it is fully opened.</ptxt>
+<ptxt>The ECM detects a malfunction in the IMRV position sensor when its voltage output deviates from the standard range. When a malfunction is detected, the ECM fully opens the IMRV using the IMRV motor until the IMRV position sensor returns to normal.</ptxt>
+<ptxt>The related DTCs are P2004 and P2006 (See page <xref label="Seep02" href="RM00000276A000X"/>), and P2009 and P2010 (See page <xref label="Seep03" href="RM00000276B000X"/>).</ptxt>
+<figure>
+<graphic graphicname="A076830E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2014</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition (a) continues for 0.5 seconds:</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+<ptxt>(a) IMRV position sensor output voltage is "0.2 V or less" or "4.8 V or more".</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in IMRV position sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>IMRV position sensor</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2016</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition (a) continues for 0.5 seconds:</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+<ptxt>(a) IMRV position sensor output voltage is 0.2 V or less.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Same as DTC No. P2014</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2017</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition (a) continues for 0.5 seconds:</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+<ptxt>(a) IMRV position sensor output voltage is 4.8 V or more.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Same as DTC No. P2014</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_02" type-id="65" category="03" proc-id="RM0250U___00008QP00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2014: IMRC Valve Position Sensor Range Check (Chattering)</ptxt>
+<ptxt>P2016: IMRC Valve Position Sensor Range Check (Low Voltage)</ptxt>
+<ptxt>P2017: IMRC Valve Position Sensor Range Check (High Voltage)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required sensors/components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>IMRC Valve Position Sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required sensors/components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry>
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>0.5 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry>
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_03" type-id="66" category="03" proc-id="RM0250U___00008QQ00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_04" type-id="67" category="03" proc-id="RM0250U___00008QR00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P2014:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC valve position sensor voltage</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 0.2 V, or more than 4.8 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2016:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC valve position sensor voltage</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 0.2 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2017:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC valve position sensor voltage</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 4.8 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_05" type-id="70" category="03" proc-id="RM0250U___00008QS00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>IMRC valve position sensor voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.2 to 4.8 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_06" type-id="32" category="03" proc-id="RM0250U___00008QT00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132328E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_07" type-id="51" category="05" proc-id="RM0250U___00008QU00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="nonmark">
+<item>
+<ptxt>If different DTCs that are related to a different system are output simultaneously while terminal E2 is used as a ground terminal, terminal E2 may be open.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000276C000X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000276C000X_08_0002" proc-id="RM0250U___00008QW00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - IMRV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C33 IMRV connector.</ptxt>
+<figure>
+<graphic graphicname="A136168E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C33-1 (IACA) - C24-93 (IACA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C33-2 (EIA) - C24-126 (EIA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C33-3 (VCIA) - C24-103 (VCIA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C33-1 (IACA) or C24-93 (IACA) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C33-3 (VCIA) or C24-103 (VCIA) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000276C000X_08_0003" fin="false">OK</down>
+<right ref="RM00000276C000X_08_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0003" proc-id="RM0250U___00008QX00000">
+<testtitle>INSPECT ECM (VC VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C33 IMRV connector.</ptxt>
+<figure>
+<graphic graphicname="A132311E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C33-1 (VCIA) - C33-2 (EIA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000276C000X_08_0004" fin="false">OK</down>
+<right ref="RM00000276C000X_08_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0004">
+<testtitle>REPLACE INTAKE MANIFOLD RUNNER VALVE ASSEMBLY</testtitle>
+<res>
+<down ref="RM00000276C000X_08_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0005" proc-id="RM0250U___00008QY00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Run the engine at more than 3,000 rpm.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<atten4>
+<ptxt>As running the engine to 3,000 rpm, the IMRV usually becomes fully opened. If the ignition switch is turned off under this condition, the IMRV is fully closed and then becomes half-opening angle.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position 20 seconds later.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2014, P2016 and/or P2017 are output again</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No DTC output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000276C000X_08_0006" fin="true">A</down>
+<right ref="RM00000276C000X_08_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0006">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0008">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM00000276C000X_08_0009">
+<testtitle>SYSTEM OK</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

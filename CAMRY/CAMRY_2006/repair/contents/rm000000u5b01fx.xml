@@ -1,0 +1,930 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000U5B01FX" category="C" type-id="302H3" name-id="ES3XA-01" from="200601">
+<dtccode>P0100</dtccode>
+<dtcname>Mass or Volume Air Flow Circuit</dtcname>
+<dtccode>P0102</dtccode>
+<dtcname>Mass or Volume Air Flow Circuit Low Input</dtcname>
+<dtccode>P0103</dtccode>
+<dtcname>Mass or Volume Air Flow Circuit High Input</dtcname>
+<subpara id="RM000000U5B01FX_01" type-id="60" category="03" proc-id="RM0250U___00007B000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The Mass Air Flow (MAF) meter is a sensor that measures the amount of air flowing through the throttle valve.</ptxt>
+<ptxt>The ECM uses this information to determine the fuel injection time and to provide the appropriate air-fuel ratio.</ptxt>
+<ptxt>Inside the MAF meter, there is a heated platinum wire which is exposed to the flow of intake air.</ptxt>
+<ptxt>By applying a specific electrical current to the wire, the ECM heats it to a given temperature. The flow of incoming air cools both the wire and an internal thermistor, affecting their resistance. To maintain a constant current value, the ECM varies the voltage applied to these components in the MAF meter. The voltage level is proportional to the airflow through the sensor, and the ECM uses it to calculate the intake air volume.</ptxt>
+<ptxt>The circuit is constructed so that the platinum hot wire and the temperature sensor create a bridge circuit, and the power transistor is controlled so that the potentials of A and B remain equal to maintain the predetermined temperature.</ptxt>
+<atten4>
+<ptxt>When any of these DTCs are set, the ECM enters fail-safe mode. During fail-safe mode, the ignition timing is calculated by the ECM, according to the engine RPM and throttle valve position. Fail-safe mode continues until a pass condition is detected.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A122492E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0100</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MAF meter voltage less than 0.2 V, or more than 4.9 V for 3 seconds</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in MAF meter circuit</ptxt>
+</item>
+<item>
+<ptxt>MAF meter</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0102</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MAF meter voltage less than 0.2 V for 3 seconds</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in MAF meter circuit</ptxt>
+</item>
+<item>
+<ptxt>MAF meter</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0103</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MAF meter voltage more than 4.9 V for 3 seconds</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in MAF meter circuit</ptxt>
+</item>
+<item>
+<ptxt>MAF meter</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When any of these DTCs are set, check the air-flow rate by selecting the following menu items on the intelligent tester: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / MAF.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Mass Air Flow Rate (g/sec.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunctions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Approximately 0.0</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in Mass Air Flow (MAF) meter power source circuit</ptxt>
+</item>
+<item>
+<ptxt>Open or short in VG circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>271.0 or more</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in E2G circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_02" type-id="64" category="03" proc-id="RM0250U___00007B100000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If there is a defect in the MAF meter or an open or short circuit, the voltage level deviates from the normal operating range. The ECM interprets this deviation as a malfunction in the MAF meter and sets a DTC.</ptxt>
+<ptxt>Example:</ptxt>
+<ptxt>When the sensor output voltage remains less than 0.2 V, or more than 4.9 V, for more than 3 seconds, the ECM sets a DTC.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 3 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_03" type-id="65" category="03" proc-id="RM0250U___00007B200000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0100: MAF meter range check (Fluctuating)</ptxt>
+<ptxt>P0102: MAF meter range check (Low voltage)</ptxt>
+<ptxt>P0103: MAF meter range check (High voltage)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MAF meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate: Engine RPM less than 4,000 rpm</ptxt>
+<ptxt>2 driving cycles: Engine RPM 4,000 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_04" type-id="66" category="03" proc-id="RM0250U___00007B300000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_05" type-id="67" category="03" proc-id="RM0250U___00007B400000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0100:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MAF meter voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.2 V, or more than 4.9 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0102:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MAF meter voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.2 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0103:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MAF meter voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 4.9 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_06" type-id="70" category="03" proc-id="RM0250U___00007B500000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>MAF meter voltage</ptxt>
+</entry>
+<entry>
+<ptxt>Between 0.4 V and 2.2 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_07" type-id="32" category="03" proc-id="RM0250U___00007B600000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132276E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_08" type-id="51" category="05" proc-id="RM0250U___00007B700000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000U5B01FX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000U5B01FX_09_0001" proc-id="RM0250U___00007B800000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (MASS AIR FLOW RATE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / MAF.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the values displayed on the tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Mass Air Flow Rate (g/sec.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>0.0</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>271.0 or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Between 1.0 and 270.0 (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>*1: The value must change when the throttle valve is open or closed with the engine running.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0002" fin="false">A</down>
+<right ref="RM000000U5B01FX_09_0012" fin="false">B</right>
+<right ref="RM000000U5B01FX_09_0005" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0002" proc-id="RM0250U___00007B900000">
+<testtitle>INSPECT MASS AIR FLOW METER (POWER SOURCE VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 Mass Air Flow (MAF) meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127724E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminal of the wire harness side connector and body ground.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-3 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0003" fin="false">OK</down>
+<right ref="RM000000U5B01FX_09_0009" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0003" proc-id="RM0250U___00007BA00000">
+<testtitle>INSPECT MASS AIR FLOW METER (VG VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect output voltage.</ptxt>
+<figure>
+<graphic graphicname="A127786E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Apply battery voltage across terminals +B and E2G.</ptxt>
+</test2>
+<test2>
+<ptxt>Connect the positive (+) tester probe to terminal VG, and the negative (-) tester probe to terminal E2G.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>5 (VG) - 4 (E2G)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0004" fin="false">OK</down>
+<right ref="RM000000U5B01FX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0004" proc-id="RM0250U___00007BB00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127959E09" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-5 (VG) - C24-118 (VG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C2-4 (E2G) - C24-116 (E2G)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-5 (VG) or C24-118 (VG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0008" fin="true">OK</down>
+<right ref="RM000000U5B01FX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0005">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0006">
+<testtitle>REPLACE MASS AIR FLOW METER</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0008">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0009" proc-id="RM0250U___00007BC00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER - ENGINE ROOM J/B)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the EFI No. 3 fuse.</ptxt>
+<figure>
+<graphic graphicname="A138926E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+<test2>
+<ptxt>Remove the EFI No. 3 fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the EFI No. 3 fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the EFI No. 3 fuse.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the 1E engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-3 (+B) - 1E-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-3 (+B) or 1E-6 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0011" fin="true">OK</down>
+<right ref="RM000000U5B01FX_09_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0011">
+<testtitle>CHECK ECM POWER SOURCE CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0012" proc-id="RM0250U___00007BD00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SENSOR GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127724E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-4 (E2G) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0013" fin="false">NG</down>
+<right ref="RM000000U5B01FX_09_0014" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0013" proc-id="RM0250U___00007BE00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127959E10" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-5 (VG) - C24-118 (VG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C2-4 (E2G) - C24-116 (E2G)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2-5 (VG) or C24-118 (VG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000U5B01FX_09_0016" fin="true">OK</down>
+<right ref="RM000000U5B01FX_09_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0014">
+<testtitle>REPLACE MASS AIR FLOW METER</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000U5B01FX_09_0016">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

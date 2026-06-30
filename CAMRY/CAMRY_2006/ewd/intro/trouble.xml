@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?xml-stylesheet type="text/xsl" href="../styles/intro/trouble.xsl" ?>
+<!DOCTYPE ewd SYSTEM "../dtd/intro.dtd">
+<ewd>
+	<intro xml:lang="en">
+		<troubleshooting>
+			<step1>
+				<ptxt>VOLTAGE CHECK</ptxt>
+				<cont>
+					<figure src="image/tr1.png"/>
+					<step2>
+						<ptxt>Establish conditions in which voltage is present at the check point.</ptxt>
+						<example>
+							<deflist>
+								<l-item>
+									<label>[A]</label>
+									<desc>Ignition SW on</desc>
+								</l-item>
+								<l-item>
+									<label>[B]</label>
+									<desc>Ignition SW and SW 1 on</desc>
+								</l-item>
+								<l-item>
+									<label>[C]</label>
+									<desc>Ignition SW, SW 1 and Relay on (SW 2 off)</desc>
+								</l-item>
+							</deflist>
+						</example>
+					</step2>
+					<step2>
+						<ptxt>Using a voltmeter, connect the negative lead to a good ground point or negative battery terminal,
+								and the positive lead to the connector or component terminal.</ptxt>
+						<ptxt>This check can be done with a test light instead of a voltmeter. </ptxt>
+					</step2>
+				</cont>
+			</step1>
+			<step1>
+				<ptxt>CONTINUITY AND RESISTANCE CHECK</ptxt>
+				<cont>
+					<figure src="image/tr2.png"/>
+					<step2>
+						<ptxt>Disconnect the battery terminal or wire so there is no voltage between the check points.</ptxt>
+					</step2>
+					<step2>
+						<ptxt>Contact the two leads of an ohmmeter to each of the check points.</ptxt>
+						<figure src="image/tr2_2.png"/>
+						<norm>
+							<ptxt>If the circuit has diodes, reverse the two leads and check again.</ptxt>
+							<ptxt>When contacting the negative lead to the diode positive side and the positive lead to the negative side,
+									there should be continuity.</ptxt>
+							<ptxt>When contacting the two leads in reverse, there should be no continuity.</ptxt>
+						</norm>
+					</step2>
+					<figure src="image/tr2_3.png"/>
+					<step2>
+						<ptxt>Use a volt/ohmmeter with high impedance (10 kΩ/V minimum) for troubleshooting of the electrical circuit.</ptxt>
+					</step2>
+				</cont>
+			</step1>
+			<step1>
+				<ptxt>FINDING A SHORT CIRCUIT</ptxt>
+					<cont>
+					<figure src="image/tr3.png"/>
+					<step2>
+						<ptxt>Remove the blown fuse and disconnect all loads of the fuse.</ptxt>
+					</step2>
+					<step2>
+						<ptxt>Connect a test light in place of the fuse.</ptxt>
+					</step2>
+					<step2>
+						<ptxt>Establish conditions in which the test light comes on.</ptxt>
+						<example>
+							<deflist>
+								<l-item>
+									<label>[A]</label>
+									<desc>Ignition SW on</desc>
+								</l-item>
+								<l-item>
+									<label>[B]</label>
+									<desc>Ignition SW and SW 1 on</desc>
+								</l-item>
+								<l-item>
+									<label>[C]</label>
+									<desc>Ignition SW, SW 1 and Relay on (Connect the Relay) and SW 2 off (or Disconnect SW 2)</desc>
+								</l-item>
+							</deflist>
+						</example>
+					</step2>
+					<step2>
+						<ptxt>Disconnect and reconnect the connectors while watching the test light.</ptxt>
+						<ptxt>The short lies between the connector where the test light stays lit and the connector where the light goes out. </ptxt>
+					</step2>
+					<step2>
+						<ptxt>Find the exact location of the short by lightly shaking the problem wire along the body.</ptxt>
+					</step2>
+					<caution>
+						<step-n2>
+							<ptxt>Do not open the cover or the case of the ECU unless absolutely necessary.
+								(If the IC terminals are touched, the IC may be destroyed by static electricity.)</ptxt>
+						</step-n2>
+						<step-n2>
+							<ptxt>When replacing the internal mechanism (ECU part) of the digital meter,
+									be careful that no part of your body or clothing comes in contact with the terminals of leads from the IC, etc.
+									of the replacement part (spare part).</ptxt>
+						</step-n2>
+					</caution>
+				</cont>
+			</step1>
+			<step1>
+				<ptxt>DISCONNECTION OF MALE AND FEMALE CONNECTORS</ptxt>
+				<cont>
+					<norm>
+						<ptxt>To pull apart the connectors, pull on the connector itself, not the wire harness.</ptxt>
+					</norm>
+					<hint>
+						<ptxt>Check to see what kind of connector you are disconnecting before pulling apart.</ptxt>
+					</hint>
+					<figure src="image/tr4.png"/>
+				</cont>
+			</step1>
+			<step1>
+				<ptxt>HOW TO REPLACE TERMINAL</ptxt>
+				<ptxt>(with terminal retainer or secondary locking device)</ptxt>
+				<cont>
+					<figure src="image/tr5.png"/>
+					<step2>
+						<ptxt>PREPARE THE SPECIAL TOOL</ptxt>
+						<hint>
+							<ptxt>To remove the terminal from the connector, please construct and use the special tool or like object shown on the left.</ptxt>
+						</hint>
+					</step2>
+					<step2>
+						<ptxt>DISCONNECT CONNECTOR</ptxt>
+					</step2>
+					<figure src="image/tr5_2.png"/>
+					<step2>
+						<ptxt> DISENGAGE THE SECONDARY LOCKING DEVICE OR TERMINAL RETAINER.</ptxt>
+						<step3>
+							<ptxt>Locking device must be disengaged before the terminal locking clip can be released and the terminal removed from the connector.</ptxt>
+						</step3>
+						<step3>
+							<ptxt>Use a special tool or the terminal pick to unlock the secondary locking device or terminal retainer.</ptxt>
+						</step3>
+						<notice>
+							<ptxt>Do not remove the terminal retainer from connector body.</ptxt>
+						</notice>
+						<figure src="image/tr5_3.png"/>
+						<norm>
+							<ptxt>[A] For Non-Waterproof Type Connector</ptxt>
+						</norm>
+						<hint>
+							<ptxt>The needle insertion position varies according to the connector's shape (number of terminals etc.), so check the position before inserting it.</ptxt>
+						</hint>
+						<case no="1">
+							<ptxt>Raise the terminal retainer up to the temporary lock position.</ptxt>
+						</case>
+						<figure src="image/tr5_4.png"/>
+						<case no="2">
+							<ptxt>Open the secondary locking device.</ptxt>
+						</case>
+						<figure src="image/tr5_5.png"/>
+						<figure src="image/tr5_6.png"/>
+						<norm>
+							<ptxt>[B] For Waterproof Type Connector </ptxt>
+						</norm>
+						<hint>
+							<ptxt>Terminal retainer color is different according to connector body.</ptxt>
+						</hint>
+						<example>
+							<table frame="none">
+								<tbody>
+									<row>
+										<entry><ptxt><uline>Terminal Retainer</uline></ptxt></entry>
+										<entry><ptxt> : </ptxt></entry>
+										<entry><ptxt><uline>Connector Body</uline></ptxt></entry>
+									</row>
+									<row>
+										<entry><ptxt>Black or White</ptxt></entry>
+										<entry><ptxt> : </ptxt></entry>
+										<entry><ptxt>Gray</ptxt></entry>
+									</row>
+									<row>
+										<entry><ptxt>Black or White</ptxt></entry>
+										<entry><ptxt> : </ptxt></entry>
+										<entry><ptxt>Dark Gray</ptxt></entry>
+									</row>
+									<row>
+										<entry><ptxt>Gray or White</ptxt></entry>
+										<entry><ptxt> : </ptxt></entry>
+										<entry><ptxt>Black</ptxt></entry>
+									</row>
+								</tbody>
+							</table>
+						</example>
+						<figure src="image/tr5_7.png"/>
+						<case no="1">
+							<ptxt>Type where terminal retainer is pulled up to the temporary lock position (Pull Type).</ptxt>
+							<ptxt>Insert the special tool into the terminal retainer access hole (<figchar src="image/upmark.png" height="17" width="15" align="ABSBOTTOM"/>Mark)
+								and pull the terminal retainer up to the temporary lock position.</ptxt>
+						</case>
+						<hint>
+							<ptxt>The needle insertion position varies according to the connector's shape (Number of terminals etc.), so check the position before inserting it.</ptxt>
+						</hint>
+						<figure src="image/tr5_8.png"/>
+						<case no="2">
+							<ptxt>Type which cannot be pulled as far as Power Lock insert the tool straight into the access hole of terminal retainer as shown.</ptxt>
+						</case>
+						<figure src="image/tr5_9.png"/>
+						<norm>
+							<ptxt>Push the terminal retainer down to the temporary lock position.</ptxt>
+						</norm>
+						<figure src="image/tr5_10.png"/>
+						<step3>
+							<ptxt>Release the locking lug from terminal and pull the terminal out from rear.</ptxt>
+						</step3>
+					</step2>
+					<figure src="image/tr5_11.png"/>
+					<step2>
+						<ptxt>INSTALL TERMINAL TO CONNECTOR</ptxt>
+						<step3>
+							<ptxt>Insert the terminal.</ptxt>
+						</step3>
+						<hint>
+							<step-n4>
+								<ptxt>Make sure the terminal is positioned correctly.</ptxt>
+							</step-n4>
+							<step-n4>
+								<ptxt>Insert the terminal until the locking lug locks firmly.</ptxt>
+							</step-n4>
+							<step-n4>
+								<ptxt>Insert the terminal with terminal retainer in the temporary lock position. </ptxt>
+							</step-n4>
+						</hint>
+						<figure src="image/tr5_12.png"/>
+						<step3>
+							<ptxt>Push the secondary locking device or terminal retainer in to the full lock position.</ptxt>
+						</step3>
+					</step2>
+					<step2>
+						<ptxt>CONNECT CONNECTOR</ptxt>
+					</step2>
+				</cont>
+			</step1>
+		</troubleshooting>
+	</intro>
+</ewd>

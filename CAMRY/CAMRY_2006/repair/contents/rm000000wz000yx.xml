@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000WZ000YX" category="J" type-id="30076" name-id="ES42E-01" from="200601">
+<dtccode/>
+<dtcname>ECM Power Source Circuit</dtcname>
+<subpara id="RM000000WZ000YX_01" type-id="60" category="03" proc-id="RM0250U___00002VW00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the ignition switch is turned on (IG), the battery voltage is applied to terminal IGSW of the ECM. The ECM MREL output signal causes a current to flow to the coil, closing the contacts of the EFI MAIN relay and supplying power to terminal +B of the ECM.</ptxt>
+<ptxt>If the ignition switch is turned off, the ECM holds the EFI MAIN relay ON for a maximum of 2 seconds to allow for the initial setting of the throttle valve.</ptxt>
+<ptxt>When the ignition switch is turned on (IG), voltage from the ECM's MREL terminal applies to the engine room junction block (EFI relay). This causes the contacts of the engine room junction block (EFI relay) to close, which supplies power to terminal +B or +B1 of the ECM.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WZ000YX_02" type-id="32" category="03" proc-id="RM0250U___00002VX00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A134882E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WZ000YX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000WZ000YX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WZ000YX_05_0024" proc-id="RM0250U___0000AY500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A137016E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E1 (C55-81) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0025" fin="false">OK</down>
+<right ref="RM000000WZ000YX_05_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0025" proc-id="RM0250U___0000AY600000">
+<testtitle>CHECK ENGINE ROOM JUNCTION BLOCK (EFI RELAY VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A138922E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0026" fin="false">NG</down>
+<right ref="RM000000WZ000YX_05_0028" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0026" proc-id="RM0250U___0000AY700000">
+<testtitle>INSPECT EFI MAIN FUSE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the EFI MAIN fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A137020E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the EFI MAIN fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the EFI MAIN fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0029" fin="false">OK</down>
+<right ref="RM000000WZ000YX_05_0043" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0027" proc-id="RM0250U___0000AY800000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE ROOM RELAY BLOCK - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the negative battery terminal.</ptxt>
+<figure>
+<graphic graphicname="A140659E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the positive battery terminal.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1G-1 - Positive battery terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1G-1 or Positive battery terminal - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the positive battery terminal.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the negative battery terminal.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0051" fin="true">OK</down>
+<right ref="RM000000WZ000YX_05_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0028" proc-id="RM0250U___0000AY900000">
+<testtitle>INSPECT ENGINE ROOM JUNCTION BLOCK (EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A140654E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 - 1E-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 - 1E-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(Apply battery voltage between terminals 1E-9 and 1E-11)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0029" fin="false">OK</down>
+<right ref="RM000000WZ000YX_05_0042" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0029" proc-id="RM0250U___0000AYA00000">
+<testtitle>INSPECT EFI NO. 2 FUSE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the EFI No. 2 fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A135067E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the EFI No. 2 fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the EFI No. 2 fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0030" fin="false">OK</down>
+<right ref="RM000000WZ000YX_05_0044" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0030" proc-id="RM0250U___0000AYB00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - ENGINE ROOM JUNCTION BLOCK)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A140660E01" width="2.775699831in" height="7.795582503in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 - +B (A55-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 - +B2 (A55-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 or +B (A55-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1E-6 or +B2 (A55-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0031" fin="false">OK</down>
+<right ref="RM000000WZ000YX_05_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0031" proc-id="RM0250U___0000AYC00000">
+<testtitle>INSPECT ECM (IGSW VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A115671E30" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IGSW (A55-28) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0035" fin="false">NG</down>
+<right ref="RM000000WZ000YX_05_0039" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0035" proc-id="RM0250U___0000AYD00000">
+<testtitle>INSPECT IG2 RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IG2 relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B016200E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="1.24in"/>
+<colspec colname="COL2" align="center" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(Apply battery voltage between terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the IG2 relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0036" fin="false">OK</down>
+<right ref="RM000000WZ000YX_05_0048" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0036" proc-id="RM0250U___0000AYE00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (IG2 RELAY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IG2 relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A137039E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IG2 relay terminal 2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the IG2 relay.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.07in"/>
+<colspec colname="COL2" align="center" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OK (Without smart key system)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK (With smart key system)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0037" fin="false">A</down>
+<right ref="RM000000WZ000YX_05_0052" fin="true">B</right>
+<right ref="RM000000WZ000YX_05_0041" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0037" proc-id="RM0250U___0000AYF00000">
+<testtitle>INSPECT IGNITION SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E23 ignition switch connector.</ptxt>
+<figure>
+<graphic graphicname="A056879E35" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All terminals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2 - 4, 5 - 6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1 - 3 - 4, 5 - 6 - 7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>START</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ignition switch connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0038" fin="true">OK</down>
+<right ref="RM000000WZ000YX_05_0049" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0038">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (ECM - BATTERY)</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0039" proc-id="RM0250U___0000AYG00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A115671E31" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MREL (A55-24) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ000YX_05_0040" fin="true">OK</down>
+<right ref="RM000000WZ000YX_05_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0040">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0041">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0042">
+<testtitle>REPLACE ENGINE ROOM JUNCTION BLOCK</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0043">
+<testtitle>REPLACE EFI MAIN FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0044">
+<testtitle>REPLACE EFI NO 2 FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0048">
+<testtitle>REPLACE IG2 RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0049">
+<testtitle>REPLACE IGNITION SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0051">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE<xref label="Seep01" href="RM000002205002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ000YX_05_0052">
+<testtitle>GO TO SMART KEY SYSTEM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

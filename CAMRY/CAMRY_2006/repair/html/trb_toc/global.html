@@ -1,0 +1,182 @@
+<!-- $Id: global.html,v 1.13 2005/08/26 01:25:40 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 DTC Chart                                                       -->
+<!--    005 Symptom Table                                                   -->
+<!--    006 Introduction                                                    -->
+<!--    007 Pre-Caution                                                     -->
+<!--    008 print(attribute)                                                -->
+<!--    009 PRINT_WINDOW_TITLE                                              -->
+<!--    010 logo(attribute)                                                 -->
+<!--    011 Introduction                                                    -->
+<!--    012 Pre-Caution                                                     -->
+<!--    013 Tech Tips                                                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var INTRO   = "Introduction"; // 011
+var CAUTION = "Pre-Caution";  // 012
+var g_tips  = null;
+var DELIM   = " &gt; ";
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	setGlobalLinks();
+}
+
+function callTable(type) {
+	if (type!='S' && type!='T') return;
+	if (parent.g_paracat==type) return;
+	var pList = parent.getSiblingList(parent.g_paraId, parent.g_tocXml, type);
+	if (pList.length==0) return;
+	var sibNode = pList.item(0);
+	parent.g_paraId = sibNode.getAttribute("id");
+	parent.g_objXml = parent.initXml(parent.g_paraId.toLowerCase()+".xml");
+	parent.g_paracat = type;
+	parent.sts.location.href = "status.html?parag=" + parent.g_paraId
+													 + "&cate=" + parent.g_paracat;
+	parent.contents.location.href="contents.html?parag=" + parent.g_paraId
+													 + "&cate=" + parent.g_paracat;
+}
+
+function setGlobalLinks() {
+	g_tips = parent.getTips(parent.g_objXml);
+	document.all('tps').style.visibility = (g_tips==null) ? "hidden" : "";
+
+	if (parent.g_paraId==null) return;
+	document.getElementById("print").style.visibility="visible";
+	if (parent.hasSiblingParagraph(parent.g_tocXml, parent.g_paraId, "D")) {
+		document.getElementById("ilink").style.visibility="visible";
+	} else {
+		document.getElementById("ilink").style.visibility="hidden";
+	}
+	if (parent.hasSiblingParagraph(parent.g_tocXml, parent.g_paraId, "L")) {
+		document.getElementById("plink").style.visibility="visible";
+	} else {
+		document.getElementById("plink").style.visibility="hidden";
+	}
+	if (parent.g_paracat=="S") {
+		document.getElementById("dlink").className="popup-button";
+		with(document.getElementById("dlink").style) {
+			visibility="visible";
+			backgroundColor="#0099aa";
+			color="#ffff99";
+			cursor="default";
+		}
+		if (parent.hasSiblingParagraph(parent.g_tocXml, parent.g_paraId, "T")) {
+			document.getElementById("slink").className="popup-button";
+			with(document.getElementById("slink").style) {
+				visibility = "visible";
+				backgroundColor="#3f8495";
+				color="#ffffff";
+				cursor="hand";
+			}
+		} else {
+			document.getElementById("slink").style.visibility = "hidden";
+		}
+	} else if (parent.g_paracat=="T") {
+		with(document.getElementById("slink").style) {
+			visibility="visible";
+			backgroundColor="#0099aa";
+			color="#ffff99";
+			cursor="default";
+		}
+		if (parent.hasSiblingParagraph(parent.g_tocXml, parent.g_paraId, "S")) {
+			document.getElementById("dlink").className="popup-button";
+			with(document.getElementById("dlink").style) {
+				visibility = "visible";
+				backgroundColor="#3f8495";
+				color="#ffffff";
+				cursor="hand";
+			}
+		} else {
+			document.getElementById("dlink").style.visibility = "hidden";
+		}
+	} else {
+		document.getElementById("slink").style.visibility="hidden";
+		document.getElementById("dlink").style.visibility="hidden";
+	}
+}
+
+function callTips(tipsXml) {
+	var sectionName = parent.getSectionName(parent.g_paraId, parent.g_objXml);
+	var titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var paragraphName = parent.getParagraphNameList(parent.g_paraId, "name", parent.g_objXml)[0];
+	var dialogTitle = sectionName
+					+ DELIM + titleName
+					+ DELIM + paragraphName;
+	parent.openTips(tipsXml, dialogTitle);
+}
+
+var PRINT_WINDOW_TITLE = "Diagnostics"; // 009
+function callPrintPreview() {
+	var dialogTitle =	parent.sts.disp.innerHTML;
+	var args = new parent.Hashtable();
+	args.put("prt", "1");
+	if (parent.g_paracat=="S") {
+		parent.openPrintPreview(parent.g_objXml, parent.g_diagListXsl, args, PRINT_WINDOW_TITLE, dialogTitle, false);
+	} else {
+		parent.openPrintPreview(parent.g_objXml, parent.g_symListXsl, args, PRINT_WINDOW_TITLE, dialogTitle, false);
+	}
+}
+</script>
+</head>
+<body onLoad="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 010 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="javascript:parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button"onClick="javascript:parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="center">
+			<a id="dlink" href="#" class="popup-button" style="visibility: hidden;" onClick="callTable('S')">
+				DTC Chart
+			</a><!-- 004 -->
+			<a id="slink" href="#" class="popup-button" style="visibility: hidden;" onClick="callTable('T')">
+				Symptom Table
+			</a><!-- 005 -->
+		</td>
+		<td align="right">
+			<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">
+				Tech Tips
+			</a><!-- 013 -->
+			<a id="ilink" href="#" class="popup-button" style="visibility: hidden" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, intro, INTRO);" onMouseOut="parent.dropDownDelayUndisp();">
+				Introduction
+			</a><!-- 006 -->
+			<div id="intro" style="display: none;"></div>
+			<a id="plink" href="#" class="popup-button" style="visibility: hidden" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, caution, CAUTION);" onMouseOut="parent.dropDownDelayUndisp();">
+				Pre-Caution
+			</a><!-- 007 -->
+			<div id="caution" style="display: none"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px">
+			<a href="#" onClick="callPrintPreview()">
+				<img id="print" alt="print" src="../../img/print.png" class="print" style="visibility: hidden;"><!-- 008 -->
+			</a>
+		</td>
+		<td class="boundary-top" colspan="2">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

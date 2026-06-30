@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000028QE000X" category="C" type-id="302G2" name-id="AX0YF-01" from="200601">
+<dtccode>P2714</dtccode>
+<dtcname>Pressure Control Solenoid "D" Performance (Shift Solenoid Valve SLT)</dtcname>
+<subpara id="RM0000028QE000X_01" type-id="61" category="03" proc-id="RM0250U___0000AUD00000">
+<name>SYSTEM DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The linear solenoid valve (SLT) controls the transmission line pressure for smooth transmission operation based on signals from the throttle position sensor and the vehicle speed sensor. The ECM adjusts the duty ratio (*) of the SLT solenoid valve to control hydraulic line pressure coming from the primary regulator valve. Appropriate line pressure assures smooth shifting with varying engine outputs.</ptxt>
+<ptxt>(*): Duty Ratio</ptxt>
+<ptxt>The duty ratio is the ratio of the period of continuity in one cycle. For example, if A is the period of continuity in one cycle, and B is the period of non-continuity, then</ptxt>
+<ptxt>Duty Ratio= A/(A+B) x 100(%)</ptxt>
+<figure>
+<graphic graphicname="C108924E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.85in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="3.11in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2714</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM detects a malfunction on SLT (ON side) according to the revolution difference of the turbine, intermediate and the output shaft, and also by the oil pressure. (2-trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Shift solenoid valve SLT remains closed</ptxt>
+</item>
+<item>
+<ptxt>Valve body is blocked</ptxt>
+</item>
+<item>
+<ptxt>Automatic transaxle (clutch, brake or gear, etc.)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000028QE000X_02" type-id="64" category="03" proc-id="RM0250U___0000AUE00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>In any forward position, when the difference between the revolutions of the turbine, Intermediate and output shaft exceeds the specified value (varies with Intermediate, output speed) determined by the ECM, the ECM illuminates the MIL and outputs the DTC. </ptxt>
+<ptxt>When shift solenoid valve SLT remains on, the oil pressure goes down and the clutch engagement force decreases.</ptxt>
+<atten3>
+<ptxt>If you continue driving under these conditions, the clutch will burn out and the vehicle will no longer be drivable.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000028QE000X_03" type-id="65" category="03" proc-id="RM0250U___0000AUS00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2714: Shift solenoid valve SLT/ON malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLT, Speed sensor (NT), Speed sensor (NC), Crankshaft position sensor (NE)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000028QE000X_04" type-id="66" category="03" proc-id="RM0250U___0000AUT00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ON malfunction:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Transmission range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>"D"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-20°C (-4°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intermediate shaft speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL1 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL2 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL3 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve S4 circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SR circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve DSL circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electronic throttle system</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ON malfunction (a):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECM selected gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Temporary MAIN gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st or 2nd or 3rd or 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT - NC x Temporary MAIN gear ratio</ptxt>
+<ptxt>NT: Input (turbine) speed</ptxt>
+<ptxt>NC: Intermediate shaft speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>100 rpm or more at Intermediate shaft speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Temporary U/D gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Low or High</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC - NO x Temporary U/D gear ratio</ptxt>
+<ptxt>NO: Output speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>300 rpm or more at Output speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TT</ptxt>
+<ptxt>TT: Turbine Torque	</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>142 Nm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ON malfunction (b):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECM selected gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Temporary MAIN gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1st or 2nd or 3rd or 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT - NC x Temporary MAIN gear ratio</ptxt>
+<ptxt>NT: Input (turbine) speed</ptxt>
+<ptxt>NC: Intermediate shaft speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>100 rpm or more at Intermediate shaft speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Temporary U/D gear</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Low or High</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC - NO x Temporary U/D gear ratio</ptxt>
+<ptxt>NO: Output speed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>300 rpm or more at Output speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TT</ptxt>
+<ptxt>TT: Turbine Torque	</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>142 Nm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>250 rpm or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000028QE000X_05" type-id="67" category="03" proc-id="RM0250U___0000AUU00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<ptxt>[ON malfunction]</ptxt>
+<ptxt>Detection condition: Total accumulated time of ON malfunctions (a) and (b) is 1 second or more</ptxt>
+<table pgwide="1">
+<title>ON malfunction (a):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NT - NC x 4th gear ratio </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>100 rpm or more at Intermediate shaft speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC - NO x Low gear ratio</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>300 rpm or more at Output speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.85 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Solenoid valve SL1 Performance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not performance malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ON malfunction (b):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NT - NC x 4th gear ratio </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>100 rpm or more at Intermediate shaft speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NC - NO x High gear ratio</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>300 rpm or more at Output speed 1,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.85 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift Solenoid valve SL1 Performance</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not performance malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000028QE000X_06" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000028QE000X_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000028QE000X_07_0001" proc-id="RM0250U___0000AUV00000">
+<testtitle>CHECK OTHER DTCS OUTPUT (IN ADDITION TO DTC P2714)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the OBD II scan tool or intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the OBD II scan tool or the intelligent tester main switch ON.</ptxt>
+</test1>
+<test1>
+<ptxt>When you use intelligent tester:</ptxt>
+<ptxt>Select the item "DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES"</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the OBD II scan tool or the intelligent tester.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only P2714 is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P2714 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any other codes besides "P2714" are output, perform the troubleshooting for those DTCs first.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000028QE000X_07_0002" fin="false">A</down>
+<right ref="RM0000028QE000X_07_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0002" proc-id="RM0250U___0000AUW00000">
+<testtitle>INSPECT SHIFT SOLENOID VALVE SLT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the shift solenoid valve SLT.</ptxt>
+<figure>
+<graphic graphicname="G020767E43" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5.0 to 5.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the positive (+) lead with a 21 W bulb to terminal 2 and the negative (-) lead to terminal 1 of the solenoid valve connector, then check the movement of the valve.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The solenoid makes an operating sound.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000028QE000X_07_0003" fin="false">OK</down>
+<right ref="RM0000028QE000X_07_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0003" proc-id="RM0250U___0000AUX00000">
+<testtitle>INSPECT TRANSMISSION VALVE BODY ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>There are no foreign objects on each valve.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000028QE000X_07_0004" fin="false">OK</down>
+<right ref="RM0000028QE000X_07_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0004" proc-id="RM0250U___0000AUY00000">
+<testtitle>INSPECT TORQUE CONVERTER CLUTCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The torque converter clutch operates normally.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000028QE000X_07_0005" fin="true">OK</down>
+<right ref="RM0000028QE000X_07_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0005">
+<testtitle>REPAIR OR REPLACE AUTOMATIC TRANSAXLE ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0006">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0007">
+<testtitle>REPLACE SHIFT SOLENOID VALVE SLT</testtitle>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0008">
+<testtitle>REPAIR OR REPLACE TRANSMISSION VALVE BODY ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000028QE000X_07_0009">
+<testtitle>REPLACE TORQUE CONVERTER CLUTCH ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NSJ001X" category="C" type-id="301WR" name-id="BC12N-02" from="200601">
+<dtccode>C1300/62</dtccode>
+<dtcname>Skid Control ECU Malfunction</dtcname>
+<subpara id="RM000001NSJ001X_01" type-id="60" category="03" proc-id="RM0250U___000015E00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU is housed in the brake actuator assembly.</ptxt>
+<ptxt>The skid control ECU judges the vehicle driving condition based on the signals from each sensor, and controls the brake actuator assembly.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1300/62</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Internal failure of the skid control ECU control unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001NSJ001X_02" type-id="51" category="05" proc-id="RM0250U___0000CAL00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep01" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001NSJ001X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001NSJ001X_03_0001" proc-id="RM0250U___000015F00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the DTC (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC C1300/62 is output (only C1300/62)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Other DTCs are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NSJ001X_03_0002" fin="false">A</down>
+<right ref="RM000001NSJ001X_03_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NSJ001X_03_0002" proc-id="RM0250U___000015G00000">
+<testtitle>INSPECT SKID CONTROL ECU (IG1 TERMINAL VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C136493E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-28 (IG1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NSJ001X_03_0003" fin="false">OK</down>
+<right ref="RM000001NSJ001X_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NSJ001X_03_0003" proc-id="RM0250U___000015H00000">
+<testtitle>INSPECT SKID CONTROL ECU (GND TERMINAL CONTINUITY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136493E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-4 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NSJ001X_03_0009" fin="true">OK</down>
+<right ref="RM000001NSJ001X_03_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NSJ001X_03_0006">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS<xref label="Seep01" href="RM000001NK5001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001NSJ001X_03_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (IG1 CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001NSJ001X_03_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001NSJ001X_03_0009">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

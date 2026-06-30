@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000WC101DX" category="C" type-id="302GV" name-id="ES3X7-01" from="200601">
+<dtccode>P0031</dtccode>
+<dtcname>Oxygen (A/F) Sensor Heater Control Circuit Low (Bank 1 Sensor 1)</dtcname>
+<dtccode>P0032</dtccode>
+<dtcname>Oxygen (A/F) Sensor Heater Control Circuit High (Bank 1 Sensor 1)</dtcname>
+<subpara id="RM000000WC101DX_10" type-id="11" category="10" proc-id="RM0250U___00007AL00000">
+<name>CAUTION / NOTICE / HINT</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Although the DTC titles say oxygen sensor, these DTCs relate to the Air-Fuel Ratio (A/F) sensor.</ptxt>
+</item>
+<item>
+<ptxt>Sensor 1 refers to the sensor mounted in front of the Three-Way Catalytic Converter (TWC) and located near the engine assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_01" type-id="60" category="03" proc-id="RM0250U___00007A700000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P2195 (See page <xref label="Seep01" href="RM000000WC401FX_01"/>).</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When either of these DTCs is set, the ECM enters fail-safe mode. The ECM turns off the A/F sensor heater in fail-safe mode. Fail-safe mode continues until the ignition switch is turned off.</ptxt>
+</item>
+<item>
+<ptxt>The ECM provides a pulse width modulated control circuit to adjust the current through the heater. The A/F sensor heater circuit uses a relay on the B+ side of the circuit.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="A140695E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0031</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air-Fuel Ratio (A/F) sensor heater current less than 0.8 A</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in A/F sensor heater circuit</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater (sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>Engine room J/B (EFI relay)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0032</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air-Fuel Ratio (A/F) sensor heater current more than 10 A</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short in A/F sensor heater circuit</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater (sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>Engine room J/B (EFI relay)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_02" type-id="64" category="03" proc-id="RM0250U___00007A800000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM uses information from the Air-Fuel Ratio (A/F) sensor to regulate the air-fuel ratio and keep it close to the stoichiometric level. This maximizes the ability of the Three-Way Catalytic Converter (TWC) to purify the exhaust gases.</ptxt>
+<ptxt>The A/F sensor detects oxygen levels in the exhaust gas and transmits the information to the ECM. The inner surface of the sensor element is exposed to the outside air. The outer surface of the sensor element is exposed to the exhaust gas. The sensor element is made of platinum coated zirconia and includes an integrated heating element.</ptxt>
+<ptxt>The zirconia element generates a small voltage when there is a large difference in the oxygen concentrations between the exhaust gas and outside air. The platinum coating amplifies this voltage generation.</ptxt>
+<ptxt>The A/F sensor is more efficient when heated. When the exhaust gas temperature is low, the sensor cannot generate useful voltage signals without supplementary heating. The ECM regulates the supplementary heating using a duty-cycle approach to adjust the average current in the sensor heater element. If the heater current is outside the normal range, the signal transmitted by the A/F sensor becomes inaccurate, as a result, the ECM is unable to regulate air-fuel ratio properly.</ptxt>
+<ptxt>When the current in the A/F sensor heater is outside the normal operating range, the ECM interprets this as a malfunction in the sensor heater and sets a DTC.</ptxt>
+<ptxt>Example:</ptxt>
+<ptxt>The ECM sets DTC P0032 when the current in the A/F sensor heater is more than 10 A. Conversely, when the heater current is less than 0.8 A, DTC P0031 is set.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_03" type-id="65" category="03" proc-id="RM0250U___00007A900000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P0031: A/F sensor heater open/short (Low electrical current)</ptxt>
+<ptxt>P0032: A/F sensor heater open/short (High electrical current)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>A/F sensor heater</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>10 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_04" type-id="66" category="03" proc-id="RM0250U___00007AA00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0031:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry>
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A/F sensor heater duty-cycle ratio</ptxt>
+</entry>
+<entry>
+<ptxt>50 % or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry>
+<ptxt>10 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all">
+<title>P0032:</title>
+<tgroup cols="2" align="left">
+<colspec colname="col1" colwidth="3.54in"/>
+<colspec colname="col2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_05" type-id="67" category="03" proc-id="RM0250U___00007AB00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0031:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A/F sensor heater current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.8 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0032:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A/F sensor heater current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 10 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_06" type-id="70" category="03" proc-id="RM0250U___00007AC00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>A/F sensor heater current</ptxt>
+</entry>
+<entry>
+<ptxt>0.9 to 9.9 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_07" type-id="32" category="03" proc-id="RM0250U___00007AD00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P2195 (See page <xref label="Seep01" href="RM000000WC401FX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_08" type-id="51" category="05" proc-id="RM0250U___00007AE00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000WC101DX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WC101DX_09_0001" proc-id="RM0250U___00007AF00000">
+<testtitle>INSPECT AIR-FUEL RATIO SENSOR (HEATER RESISTANCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C15 A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A052607E27" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the A/F sensor connector.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (HA1A) - 2 (+B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.8 Ω to 3.4 Ω at 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 (HA1A) - 4 (A1A-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the A/F sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WC101DX_09_0004" fin="false">OK</down>
+<right ref="RM000000WC101DX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0004" proc-id="RM0250U___00007AH00000">
+<testtitle>CHECK TERMINAL VOLTAGE (+B OF A/F SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C15 A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A076787E11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminal of the A/F sensor connector and body ground.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C15-2 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the A/F sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WC101DX_09_0005" fin="false">NG</down>
+<right ref="RM000000WC101DX_09_0002" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0005" proc-id="RM0250U___00007AI00000">
+<testtitle>INSPECT ENGINE ROOM J/B (EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the EFI MAIN fuse.</ptxt>
+<figure>
+<graphic graphicname="A138917E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Remove the EFI MAIN fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the EFI MAIN fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the EFI MAIN fuse.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Inspect the EFI relay.</ptxt>
+<test2>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the EFI relay resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1E-7 - 1E-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(Apply battery voltage between terminals 1E-9 and 1E-11)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WC101DX_09_0008" fin="false">OK</down>
+<right ref="RM000000WC101DX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0008" proc-id="RM0250U___00007AJ00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/F SENSOR - EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C15 A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A138924E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the 1E engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C15-2 (+B) - 1E-7 (Engine room J/B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C15-2 (+B) or 1E-7 (Engine room J/B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the A/F sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WC101DX_09_0003" fin="true">OK</down>
+<right ref="RM000000WC101DX_09_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0003">
+<testtitle>CHECK ECM POWER SOURCE CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0006">
+<testtitle>REPLACE ENGINE ROOM J/B</testtitle>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0007">
+<testtitle>REPLACE AIR-FUEL RATIO SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0002" proc-id="RM0250U___00007AG00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/F SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C15 A/F sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A127715E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C15-1 (HA1A) - C24-109 (HA1A)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C15-1 (HA1A) or C24-109 (HA1A) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the A/F sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WC101DX_09_0010" fin="false">OK</down>
+<right ref="RM000000WC101DX_09_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0010" proc-id="RM0250U___00007AK00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle for 1 minute or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>No output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>P0031 or P0032</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000WC101DX_09_0011" fin="true">A</down>
+<right ref="RM000000WC101DX_09_0012" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0011">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0012">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000WC101DX_09_0013">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

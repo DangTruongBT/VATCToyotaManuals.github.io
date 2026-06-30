@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72Y3X_T008Q" variety="T008Q">
+<name>AUTOMATIC LIGHT CONTROL SENSOR</name>
+<para id="RM0000017MH003X" category="G" type-id="8000T" name-id="LI20M-01" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000017MH003X_01" type-id="01" category="01">
+<s-1 id="RM0000017MH003X_01_0003" proc-id="RM0250U___0000AN100000">
+<ptxt>INSPECT AUTOMATIC LIGHT CONTROL SENSOR (for Manual Air Conditioning System)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Disconnect the E11 automatic light control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="B109993E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>E11-3 (CLTB) - E11-6 (CLTE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E11-6 (CLTE) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</s2>
+<s2>
+<ptxt>Reconnect the automatic light control sensor connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect an oscilloscope to the automatic light control sensor connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the waveform.</ptxt>
+<figure>
+<graphic graphicname="B113714E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<colspec colname="COL4" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E11-6 (CLTE) - E11-4 (CLTS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5 V/DIV., 5 ms./DIV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG), light control switch in AUTO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Correct waveform is as shown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the ambient light becomes brighter, width A becomes narrower.</ptxt>
+</atten4>
+<ptxt>If the result is not as specified, replace the automatic light control sensor.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000017MH003X_01_0002" proc-id="RM0250U___0000AN200000">
+<ptxt>INSPECT AUTOMATIC LIGHT CONTROL SENSOR (for Automatic Air Conditioning System)</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Disconnect the E11 automatic light control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="B109993E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>E11-6 (CLTB) - E11-3 (CLTE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E11-3 (CLTE) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, there may be a malfunction on the wire harness side.</ptxt>
+</s2>
+<s2>
+<ptxt>Reconnect the automatic light control sensor connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect an oscilloscope to the automatic light control sensor connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the waveform.</ptxt>
+<figure>
+<graphic graphicname="B113714E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.03in"/>
+<colspec colname="COL4" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E11-3 (CLTE) - E11-5 (CLTS)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5 V/DIV., 5 ms./DIV</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG), light control switch in AUTO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Correct waveform is as shown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the ambient light becomes brighter, width A becomes narrower.</ptxt>
+</atten4>
+<ptxt>If the result is not as specified, replace the automatic light control sensor.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

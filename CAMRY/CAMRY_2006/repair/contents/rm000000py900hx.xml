@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM000000PY900HX" category="D" type-id="303F3" name-id="WS01N-12" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000PY900HX_z0" proc-id="RM0250U___00009FD00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<step2>
+<ptxt>Power door lock control system data and Diagnostic Trouble Codes (DTCs) can be read through the Data Link Connector 3 (DLC3) of the vehicle. When the system seems to be malfunctioning, use the intelligent tester to check for malfunctions and perform repairs.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK DLC3</ptxt>
+<figure>
+<graphic graphicname="H100769E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>The vehicle uses the ISO 15765-4 communication protocol. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch OFF*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors.</ptxt>
+</atten3>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Connect the cable of the intelligent tester to the DLC3, turn the ignition switch on (IG) and attempt to use the tester. If the display indicates that a communication error has occurred, there is a problem either with the vehicle or with the tester.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tester is connected to another vehicle, inspect the DLC3 of the original vehicle.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is still not possible when the tester is connected to another vehicle, the problem may be in the tester itself. Consult the Service Department listed in the tester's instruction manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+<step1>
+<ptxt>INSPECT BATTERY VOLTAGE</ptxt>
+<spec>
+<title>Standard Voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+<ptxt>If the voltage is below 11 V, recharge or replace the battery before proceeding.</ptxt>
+</specitem>
+</spec>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

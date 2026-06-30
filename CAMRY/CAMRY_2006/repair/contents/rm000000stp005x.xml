@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000000STP005X" category="C" type-id="300BD" name-id="AC1WD-01" from="200601">
+<dtccode>B1423/23</dtccode>
+<dtcname>Pressure Sensor Circuit</dtcname>
+<subpara id="RM000000STP005X_01" type-id="60" category="03" proc-id="RM0250U___00004G600000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when refrigerant pressure is extremely low (0.19 MPa (2.0 kgf/cm<sup>2</sup>, 28 psi) or less) or extremely high (3.14 MPa (32.0 kgf/cm<sup>2</sup>, 455 psi) or more). The pressure sensor, which is installed on the pipe of the high pressure side to detect refrigerant pressure, outputs a refrigerant pressure signal to the A/C amplifier. The A/C amplifier converts this signal to pressure according to the sensor characteristics to control the compressor.</ptxt>
+<atten4>
+<ptxt>Be sure to check the refrigerant volume first when this DTC is output because this DTC can also be output if there is no refrigerant in the system.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B1423/23</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Open or short in pressure switch circuit</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Pressure sensor</ptxt>
+</item>
+<item>
+<ptxt>Harness or connector between pressure sensor and A/C amplifier</ptxt>
+</item>
+<item>
+<ptxt>Refrigerant pipe line</ptxt>
+</item>
+<item>
+<ptxt>A/C amplifier</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000STP005X_02" type-id="32" category="03" proc-id="RM0250U___00004G700000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E116878E04" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000STP005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000STP005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000STP005X_04_0001" proc-id="RM0250U___00004G800000">
+<testtitle>CHECK REFRIGERANT PRESSURE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Install the manifold gauge set (See page <xref label="Seep01" href="RM000001147004X_01_0002"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Read the manifold gauge pressure when the following conditions are established.</ptxt>
+<figure>
+<graphic graphicname="E050573" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Prepare the vehicle according to the chart below.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Doors</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fully open</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Temperature Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MAX COLD</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Blower Speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HI</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A/C switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R/F Switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RECIRCULATION</ptxt>
+<ptxt>(30 to 35°C (86 to 95°F))</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Standard pressure</title>
+<subtitle>Low pressure side</subtitle>
+<specitem>
+<ptxt>0.15 to 0.25 MPa (1.5 to 2.5 kgf/cm<sup>2</sup>, 21.3 to 35.6 psi)</ptxt>
+</specitem>
+<subtitle>High pressure side</subtitle>
+<specitem>
+<ptxt>1.37 to 1.57 MPa (14 to 16 kgf/cm<sup>2</sup>, 199 to 228 psi)</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000STP005X_04_0003" fin="false">OK</down>
+<right ref="RM000000STP005X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0003" proc-id="RM0250U___00004G900000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PRESSURE SENSOR - A/C AMPLIFIER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the pressure sensor connector.</ptxt>
+<figure>
+<graphic graphicname="E124477E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A/C amplifier connector.</ptxt>
+<figure>
+<graphic graphicname="E124470E08" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A27-2 (PR) - E38-9 (PRE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A27-3 (+) - E38-10 (S5-3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A27-1 (-) - E38-13 (SG-2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-9 (PRE) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-10 (S5-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-13 (SG-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000STP005X_04_0005" fin="false">OK</down>
+<right ref="RM000000STP005X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0005" proc-id="RM0250U___00004GA00000">
+<testtitle>INSPECT PRESSURE SENSOR</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Install the manifold gauge set (See page <xref label="Seep01" href="RM000001147004X_01_0002"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the three 1.5 V dry cell batterie's positive (+) lead to terminal 3, and the negative (-) lead to terminal 1. Then connect the voltmeter's positive (+) lead to terminal 2, and the negative (-) lead to terminal 1. Measure the voltage.</ptxt>
+<figure>
+<graphic graphicname="E107326E05" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The voltage changes according to refrigerant pressure, as shown in the graph.</ptxt>
+</specitem>
+</spec>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK (When troubleshooting according to the DTC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OK (When troubleshooting according to the PROBLEM SYMPTOMS TABLE)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000STP005X_04_0012" fin="true">A</down>
+<right ref="RM000000STP005X_04_0013" fin="true">B</right>
+<right ref="RM000000STP005X_04_0008" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0007">
+<testtitle>CHARGE REFRIGERANT</testtitle>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0008">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0012">
+<testtitle>REPLACE PRESSURE SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000STP005X_04_0013">
+<testtitle>REPLACE AIR CONDITIONING AMPLIFIER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

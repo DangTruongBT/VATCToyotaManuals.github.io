@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72XPP_T007M" variety="T007M">
+<name>CRUISE CONTROL MAIN SWITCH</name>
+<para id="RM000001Z6E001X" category="G" type-id="3001K" name-id="CC0CB-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001Z6E001X_01" type-id="01" category="01">
+<s-1 id="RM000001Z6E001X_01_0001" proc-id="RM0250U___000020400000">
+<ptxt>INSPECT CRUISE CONTROL MAIN SWITCH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the cruise control main switch</ptxt>
+<figure>
+<graphic graphicname="E107856E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<title>Standard resistance</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-2(R/N), A-1(ECC) - A-3(CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Neutral</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-3(CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+ (ACCEL)/RES (RESUME)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>216 to 264Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-3(CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>- (COAST)/SET</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>567 to 693Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-3(CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CANCEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1,386 to 1,694Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-3(CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main Switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-3(CCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main Switch on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A-1(ECC) - A-2(R/N)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main Switch on and Mode Switch on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, replace the cruise control main switch </ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

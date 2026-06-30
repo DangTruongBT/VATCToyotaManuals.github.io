@@ -1,0 +1,42 @@
+<!-- $Id: local.html,v 1.5 2005/08/26 01:25:39 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Inspection                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Inspection Local Navi</title>
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script src="../../js/servcat.js"></script>
+<script language="javascript">
+function selectSubMenu() {
+	var srcElem = getSrcElement();
+	var str = srcElem.id;
+	var sctId = parent.getParameterValue("servcat", str);
+	var secId = parent.getParameterValue("section", str);
+	var ttlId = parent.getParameterValue("ttl", str);
+	var paraId = parent.getParameterValue("parag", str);
+	if (paraId ==null)  return;
+	undispSubMenu();
+	parent.sts.location.href = "status.html?parag=" + paraId;
+	parent.button.location.href = "button.html?parag=" + paraId + "&illust=none";
+	parent.global.setGlobalLinks();
+}
+
+function init() {
+	if (parent.g_tocXml==null || parent.g_sctXsl==null) return;
+	parent.display(parent.g_tocXml, parent.g_sctXsl, disp, null);
+	createSubMenu(this, selectSubMenu);
+	g_popup.document.createStyleSheet('../../css/popup.css');
+}
+</script>
+</head>
+<body onLoad="init()">
+	<p class="title-name">Inspection</p><!-- 000 -->
+	<div id="disp"></div>
+</body>
+</html>

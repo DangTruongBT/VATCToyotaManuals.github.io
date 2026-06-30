@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000000WIU00QX" category="J" type-id="304W4" name-id="CA0J5-01" from="200601">
+<dtccode/>
+<dtcname>Short to GND in CAN Bus Line</dtcname>
+<subpara id="RM000000WIU00QX_01" type-id="60" category="03" proc-id="RM0250U___0000BX500000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>A short to GND is suspected in the CAN bus wire when the resistance between terminals 4 (CG) and 6 (CANH), or terminals 4 (CG) and 14 (CANL) of the DLC3 is below 200 Ω.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptoms</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The resistance between terminals 6 (CANH) and 4 (CG), or terminals 14 (CANL) and 4 (CG) of the DLC3 is below 200 Ω.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short to GND in CAN bus wire</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (Skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>Steering angle sensor</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>A/C amplifier</ptxt>
+</item>
+<item>
+<ptxt>Combination meter</ptxt>
+</item>
+<item>
+<ptxt>Center airbag sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WIU00QX_02" type-id="32" category="03" proc-id="RM0250U___0000BX600000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C142701E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C133249E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WIU00QX_03" type-id="51" category="05" proc-id="RM0250U___0000CLZ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Turn the ignition switch off before measuring the resistance of the CAN main wire and CAN branch wires.</ptxt>
+</item>
+<item>
+<ptxt>After the ignition switch is turned off, check that the key reminder warning system and light reminder warning system are not operating.</ptxt>
+</item>
+<item>
+<ptxt>Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors. If doors need to be opened in order to check connectors, open the doors and leave them open.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Operating the ignition switch, any other switches or any triggers related ECU and sensor communication on the CAN, which would cause resistance reading variations.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000WIU00QX_06" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WIU00QX_06_0094" proc-id="RM0250U___0000BX700000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (DLC3 BRANCH WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C133233E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the DLC3 branch wire gray connector (E62) from the No. 1 CAN J/C "B" side (without earth terminal).</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before disconnecting the connector, make a note of where it is connected.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect the connector to its original position.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E10-6 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E10-14 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the DLC3 branch wire connector (E62) to the No. 1 CAN J/C "B" side (without earth terminal).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0095" fin="false">OK</down>
+<right ref="RM000000WIU00QX_06_0099" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0095" proc-id="RM0250U___0000BX800000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (NO. 1 CAN J/C SIDE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the CAN main bus wire white connector (E42) from the No. 1 CAN J/C "A" side (with earth terminal).</ptxt>
+<figure>
+<graphic graphicname="C133228E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between terminals 6 (CANH) and 4 (CG), and between terminals 14 (CANL) and 4 (CG) of the DLC3 each time a connector is disconnected.</ptxt>
+<figure>
+<graphic graphicname="C126231E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E10-6 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E10-14 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0096" fin="false">NG</down>
+<right ref="RM000000WIU00QX_06_0103" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0096" proc-id="RM0250U___0000BX900000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect connectors from the No. 1 CAN J/C one at a time.</ptxt>
+<figure>
+<graphic graphicname="C126231E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Disconnect the ECU and sensor connectors other than the DLC3 branch wires and CAN main bus wire between the No. 1 CAN J/C.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Measure the resistance between terminals 6 (CANH) and 4 (CG), and between terminals 14 (CANL) and 4 (CG) of the DLC3 each time a connector is disconnected.</ptxt>
+<figure>
+<graphic graphicname="C136707E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C137761E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COLSPEC0" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 1 CAN J/C connectors ("A" side, with earth terminal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connector Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-H)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-L)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Airbag Sensor Assembly Center (E45)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Black</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="2.83in"/>
+<colspec colname="COLSPEC1" colwidth="1.41in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<colspec colname="COL4" colwidth="1.43in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 1 CAN J/C connectors ("A" side, with earth terminal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Connector Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-H)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wire Color (CAN-L)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Yaw Rate Sensor* (E46)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blue</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Steering Angle Sensor* (E63)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brown</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Combination Meter (E43)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>White</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Main Body ECU (E44)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Black</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*: with VSC</ptxt>
+<atten3>
+<ptxt>Do not reconnect the disconnected connectors until this inspection is complete because there may be a short to GND in 2 or more CAN bus wires.</ptxt>
+</atten3>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>The resistance between terminals 6 (CANH) and 4 (CG), or the resistance between 14 (CANL) and 4 (CG) is still below 200 Ω when all the specified connectors are disconnected from the No. 1 CAN J/C. (There is a short to GND in the CAN main bus wires between the No. 1 CAN J/C and No. 2 CAN J/C.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>The resistance between terminals 6 (CANH) and 4 (CG), or the resistance between 14 (CANL) and 4 (CG) becomes normal (200 Ω or more) when a connector is disconnected from the CAN J/C. (There is a short to GND in one of the areas that relate to the disconnected bus wires.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>NG</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>When there is a short to GND in one or more of the bus wires that connect to an ECU (or sensor):</ptxt>
+<test2>
+<ptxt>Reconnect all of the connectors to the No. 1 CAN J/C, except for the one that was disconnected last (the bus wire that is shorted to GND). Check that the resistance shown on the tester is normal (200 Ω or more) to confirm that there is a short to GND in one branch wire only.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The connectors connected to the No. 1 CAN J/C can be distinguished according to the color of the communication bus wires and the shape of the connectors. </ptxt>
+</item>
+<item>
+<ptxt>Reconnecting the connectors to non-specified positions on the No. 1 CAN J/C does not affect system operation. However, it is preferred to reconnect the connectors to their specified positions to avoid negative effects on the wiring such as tension on the wiring harnesses, and to make future maintenance easier.</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0097" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0097" proc-id="RM0250U___0000BXA00000">
+<testtitle>RECONNECT CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the connector of the bus wire that is shorted to GND to the No. 1 CAN J/C (the connector that caused the bus wire resistance to change to 200 Ω or more when it was disconnected).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0098" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0098" proc-id="RM0250U___0000BXB00000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector that includes terminals CANH and CANL from the ECU (or sensor) to which the bus wire shorted to GND is connected (See page <xref label="Seep01" href="RM000000WI800PX"/>).</ptxt>
+<figure>
+<graphic graphicname="C126231E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E10-6 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E10-14 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the resistance changes to 200 Ω or higher when the connector is disconnected from the ECU (or sensor), there may be a short in the ECU (or sensor).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0102" fin="true">OK</down>
+<right ref="RM000000WIU00QX_06_0101" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0103" proc-id="RM0250U___0000BXX00000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the CAN main bus wire connector (E42) to the No. 1 CAN J/C "A" side (with earth terminal).</ptxt>
+<figure>
+<graphic graphicname="C133245E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the No. 2 CAN J/C connector (A40) (front of the vehicle).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E13" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E10-6 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E10-14 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0104" fin="false">NG</down>
+<right ref="RM000000WIU00QX_06_0109" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0104" proc-id="RM0250U___0000BXY00000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (NO. 1 CAN J/C - NO. 2 CAN J/C)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the No. 2 CAN J/C connector (E41) (rear of the vehicle).</ptxt>
+<figure>
+<graphic graphicname="C133246E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E41-4 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E41-10 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0105" fin="false">OK</down>
+<right ref="RM000000WIU00QX_06_0100" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0105" proc-id="RM0250U___0000BXZ00000">
+<testtitle>RECONNECT CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the No. 2 CAN J/C connector (A40) (front of the vehicle). </ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0106" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0106" proc-id="RM0250U___0000BY000000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (A/C AMPLIFIER BRANCH WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the No. 2 CAN J/C connector (E41) (rear of the vehicle).</ptxt>
+<figure>
+<graphic graphicname="C133246E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E41-1 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E41-7 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0107" fin="false">NG</down>
+<right ref="RM000000WIU00QX_06_0114" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0107" proc-id="RM0250U___0000BY100000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (A/C AMPLIFIER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A/C amplifier connector (E38).</ptxt>
+<figure>
+<graphic graphicname="C133246E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>E41-1 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>E41-7 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0113" fin="true">OK</down>
+<right ref="RM000000WIU00QX_06_0115" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0109" proc-id="RM0250U___0000BY300000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (ECM MAIN BUS WIRE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the No. 2 CAN J/C connector (A40) (front of the vehicle).</ptxt>
+<figure>
+<graphic graphicname="C133245E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A40-1 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A40-7 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0110" fin="false">NG</down>
+<right ref="RM000000WIU00QX_06_0112" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0110" proc-id="RM0250U___0000BY400000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the ECM connector (A24 or A55).</ptxt>
+<figure>
+<graphic graphicname="C133245E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A40-1 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A40-7 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0116" fin="true">OK</down>
+<right ref="RM000000WIU00QX_06_0117" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0112" proc-id="RM0250U___0000BY600000">
+<testtitle>CHECK FOR SHORT TO GND IN CAN BUS WIRE (SKID CONTROL ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector (A25, A26 or A60).</ptxt>
+<figure>
+<graphic graphicname="C133245E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C126231E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A40-2 (CANH) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A40-8 (CANL) - E10-4 (CG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WIU00QX_06_0118" fin="true">NG</down>
+<right ref="RM000000WIU00QX_06_0119" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0099">
+<testtitle>REPAIR OR REPLACE DLC3 BRANCH WIRE OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0101">
+<testtitle>REPAIR OR REPLACE CORRESPONDING ECU OR SENSOR BUS WIRE OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0102">
+<testtitle>REPLACE CORRESPONDING ECU OR SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0100">
+<testtitle>REPAIR OR REPLACE CAN BUS MAIN WIRE OR CONNECTOR (NO. 1 CAN J/C - NO. 2 CAN J/C)</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0113">
+<testtitle>REPLACE A/C AMPLIFIER</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0114">
+<testtitle>REPAIR OR REPLACE ACCESSORY GATEWAY BRANCH WIRE OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0115">
+<testtitle>REPAIR OR REPLACE A/C AMPLIFIER BRANCH WIRE OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0116">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0117">
+<testtitle>REPAIR OR REPLACE CAN BUS MAIN WIRE OR CONNECTOR (ECM - NO. 2 CAN J/C)</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0118">
+<testtitle>REPAIR OR REPLACE SKID CONTROL ECU BRANCH WIRE OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WIU00QX_06_0119">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

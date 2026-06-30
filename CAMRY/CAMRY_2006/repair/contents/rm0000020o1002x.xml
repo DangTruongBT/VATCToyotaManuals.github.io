@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020O1002X" category="J" type-id="303DF" name-id="NS0O5-03" from="200601">
+<dtccode/>
+<dtcname>Reverse Signal Circuit</dtcname>
+<subpara id="RM0000020O1002X_01" type-id="60" category="03" proc-id="RM0250U___00004WQ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The radio and navigation assembly receives a reverse signal from the park/neutral position switch and information about the GPS antenna, and then adjusts vehicle position.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020O1002X_02" type-id="32" category="03" proc-id="RM0250U___00004WR00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E129828E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020O1002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020O1002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020O1002X_04_0001" proc-id="RM0250U___00004WS00000">
+<testtitle>INSPECT RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector F13.</ptxt>
+<figure>
+<graphic graphicname="E113510E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>REV - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG).</ptxt>
+<ptxt>Shift lever is moved to R position.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REV - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG).</ptxt>
+<ptxt>Shift lever is moved to any position except R.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O1002X_04_0002" fin="false">NG</down>
+<right ref="RM0000020O1002X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0002" proc-id="RM0250U___00004WT00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector F13 and park/neutral position switch connector C1 or back-up light switch connector C28.</ptxt>
+<figure>
+<graphic graphicname="E129830E02" width="2.775699831in" height="7.795582503in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>REV - C1-1 (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REV - C1-2 (*2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REV - C28-1 (*3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REV - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<ptxt>*1: 2AZ-FE, A/T</ptxt>
+<ptxt>*2: 2GR-FE, A/T</ptxt>
+<ptxt>*3: M/T</ptxt>
+</content6>
+<res>
+<down ref="RM0000020O1002X_04_0008" fin="false">OK</down>
+<right ref="RM0000020O1002X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0008" proc-id="RM0250U___0000BHC00000">
+<testtitle>CHECK VEHICLE TYPE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Choose type to be inspected.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Type</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Go to step</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>A/T</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>M/T</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000020O1002X_04_0003" fin="false">A</down>
+<right ref="RM0000020O1002X_04_0009" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0003" proc-id="RM0250U___00004WU00000">
+<testtitle>INSPECT PARK/NEUTRAL POSITION SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the park/neutral position switch connector C1.</ptxt>
+<figure>
+<graphic graphicname="E120122E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1-1 - C1-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever is moved to R.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1-1 - C1-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever is moved to any position except R.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O1002X_04_0004" fin="true">OK</down>
+<right ref="RM0000020O1002X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0007">
+<testtitle>REPLACE PARK/NEUTRAL POSITION SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0009" proc-id="RM0250U___0000BHD00000">
+<testtitle>INSPECT BACK-UP LIGHT SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the buck-up light switch connector C28.</ptxt>
+<figure>
+<graphic graphicname="I045225E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C28-1 - C28-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever is moved to R.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C28-1 - C28-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever is moved to any position except R.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020O1002X_04_0006" fin="true">OK</down>
+<right ref="RM0000020O1002X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020O1002X_04_0010">
+<testtitle>REPLACE BACK-UP LIGHT SWITCH</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

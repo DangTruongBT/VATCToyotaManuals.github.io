@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NJX001X" category="C" type-id="3024S" name-id="BC131-02" from="200601">
+<dtccode>C0273/13</dtccode>
+<dtcname>Open or Short Circuit in ABS Motor Relay Circuit</dtcname>
+<subpara id="RM000001NJX001X_01" type-id="60" category="03" proc-id="RM0250U___000013L00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ABS motor relay supplies power to the ABS pump motor. While the ABS is activated, the ECU switches the motor relay on and operates the ABS pump motor.</ptxt>
+<ptxt>If the voltage supplied to the motor relay (+BM) is below the DTCs detection threshold due to low voltage from the battery or alternator, the DTC may be stored.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C0273/13</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>When the motor relay is actuated, voltage is not supplied to the pump motor within 0.1 seconds.</ptxt>
+</item>
+<item>
+<ptxt>For 30 to 125 ms after the motor relay is turned from ON to OFF, the remaining high voltage is out of range. The motor relay is turned from ON to OFF 3 times. If the voltage is still out of range in the 3rd operation, this failure is detected.</ptxt>
+</item>
+<item>
+<ptxt>When the motor relay is changed from ON to OFF, the remaining high voltage is more than 2 V for 1 second.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS No. 1 fuse (Fusible link)</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>Motor relay circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001NJX001X_02" type-id="32" category="03" proc-id="RM0250U___000013M00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C131988E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001NJX001X_03" type-id="51" category="05" proc-id="RM0250U___000013N00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When C1241/41 is output together with C0273/13, inspect and repair the trouble areas indicated by C1241/41 (See page <xref label="Seep01" href="RM000001NJL001X"/>).</ptxt>
+</item>
+<item>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep02" href="RM000000UZ301TX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001NJX001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001NJX001X_04_0001" proc-id="RM0250U___000013O00000">
+<testtitle>INSPECT FUSIBLE LINK (ABS NO. 1 FUSE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the fusible link from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="C136500E04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check if the fusible link is malted.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The fusible link is not melted.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the fusible link to the engine room R/B with the nut.</ptxt>
+</test1>
+<torque>
+<torqueitem>
+<t-value1> 5.4 </t-value1>
+<t-value2>55 </t-value2>
+<t-value3>48 </t-value3>
+</torqueitem>
+</torque>
+</content6>
+<res>
+<down ref="RM000001NJX001X_04_0002" fin="false">OK</down>
+<right ref="RM000001NJX001X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0002" proc-id="RM0250U___000013P00000">
+<testtitle>INSPECT SKID CONTROL ECU (+BM TERMINAL VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C136493E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-2 (+BM) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJX001X_04_0003" fin="false">OK</down>
+<right ref="RM000001NJX001X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0003" proc-id="RM0250U___000013Q00000">
+<testtitle>INSPECT SKID CONTROL ECU (GND TERMINAL CONTINUITY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C136493E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-4 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-1 (GND2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJX001X_04_0004" fin="false">OK</down>
+<right ref="RM000001NJX001X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0004" proc-id="RM0250U___000013R00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (ABS MOTOR RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Select "ACTIVE TEST" on the intelligent tester (See page <xref label="Seep01" href="RM000000XHW00AX"/>).</ptxt>
+<table pgwide="1">
+<title>ACTIVE TEST: ABS/TRAC/VSC</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.84in"/>
+<colspec colname="COL2" colwidth="2.62in"/>
+<colspec colname="COL3" colwidth="2.62in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ABS MTR RELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns ABS motor relay ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Operating sound of motor is heard.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the operating sound of the ABS motor relay when operating it with the intelligent tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The operating sound of the ABS motor relay is heard.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJX001X_04_0005" fin="false">OK</down>
+<right ref="RM000001NJX001X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0005" proc-id="RM0250U___000013S00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>This code is detected when a problem is identified in the brake actuator assembly.</ptxt>
+<ptxt>The ABS motor relay is located in the brake actuator assembly.</ptxt>
+<ptxt>Therefore, ABS motor relay inspection and motor relay unit inspection cannot be performed. Be sure to check if the DTC is output before replacing the brake actuator assembly.</ptxt>
+</atten4>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of 12 mph (20 km/h) or more for 30 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the sensors, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly (skid control ECU). Make sure that no DTCs are output.</ptxt>
+</item>
+<item>
+<ptxt>If any DTCs are output while jiggling a connector or wire harness of the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness.</ptxt>
+</item>
+<item>
+<ptxt>It is suspected that the DTCs were output due to a bad connection of the connector terminal.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJX001X_04_0006" fin="true">A</down>
+<right ref="RM000001NJX001X_04_0010" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0006">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)<xref label="Seep01" href="RM000001NK4001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0007">
+<testtitle>REPLACE FUSIBLE LINK</testtitle>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (+BM CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (GND CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000001NJX001X_04_0010">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

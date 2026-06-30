@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDW015X" category="C" type-id="302J4" name-id="ES41I-01" from="200601">
+<dtccode>P0010</dtccode>
+<dtcname>Camshaft Position "A" Actuator Circuit (Bank 1)</dtcname>
+<dtccode>P0020</dtccode>
+<dtcname>Camshaft Position "A" Actuator Circuit (Bank 2)</dtcname>
+<subpara id="RM000000PDW015X_01" type-id="60" category="03" proc-id="RM0250U___00002F800000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The Variable Valve Timing (VVT) system includes the ECM, Oil Control Valve (OCV) and VVT controller. The ECM sends a target duty-cycle control signal to the OCV. This control signal regulates the oil pressure supplied to the VVT controller. Camshaft timing control is performed according to engine operating conditions such as intake air volume, throttle valve position and engine coolant temperature. The ECM controls the OCV, based on the signals transmitted by several sensors. The VVT controller regulates the intake camshaft angle using oil pressure through the OCV. As a result, the relative positions of the camshaft and crankshaft are optimized, the engine torque and fuel economy improves, and the exhaust emissions decrease under overall driving conditions. The ECM detects the actual intake valve timing using signals from the camshaft and crankshaft position sensors, and performs feedback control. This is how the target intake valve timing is verified by the ECM.</ptxt>
+<figure>
+<graphic graphicname="A103843E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0010</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Open or short in OCV for intake camshaft (bank 1) circuit</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in OCV for intake camshaft (bank 1) circuit</ptxt>
+</item>
+<item>
+<ptxt>OCV for intake camshaft (bank 1)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0020</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Open or short in OCV for intake camshaft (bank 2) circuit</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in OCV for intake camshaft (bank 2) circuit</ptxt>
+</item>
+<item>
+<ptxt>OCV for intake camshaft (bank 2)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_02" type-id="64" category="03" proc-id="RM0250U___00002F900000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>After the ECM sends the "target" duty-cycle signal to the OCV, the ECM monitors the OCV current to establish an "actual" duty-cycle. The ECM detects a malfunction and sets a DTC when the actual duty-cycle ratio varies from the target duty-cycle ratio.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_03" type-id="65" category="03" proc-id="RM0250U___00002FA00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0010: VVT OCV (bank 1) open/short</ptxt>
+<ptxt>P0020: VVT OCV (bank 2) open/short</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors / components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT OCV (Variable Valve Timing oil control valve)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors / components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 second</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediately</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_04" type-id="66" category="03" proc-id="RM0250U___00002FB00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor will run whenever these DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after turning ignition switch off to on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_05" type-id="67" category="03" proc-id="RM0250U___00002FC00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COLSPEC4" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>One of the following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition A, B or C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 13 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Target duty ratio</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 70 %</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty ratio</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100 %</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>13 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Target duty ratio</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 80 %</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty ratio</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100 %</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C. All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Current cut status </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not cut</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output signal duty ratio</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 % or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_06" type-id="70" category="03" proc-id="RM0250U___00002FD00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVT OCV duty ratio</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 3 %, and Less than 100 %</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_07" type-id="32" category="03" proc-id="RM0250U___00002FE00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A133849E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_08" type-id="51" category="05" proc-id="RM0250U___00002FF00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If DTC P0010 is displayed, check the intake camshaft circuit for the right bank VVT system.</ptxt>
+</item>
+<item>
+<ptxt>Bank 1 refers to the bank that includes cylinder No. 1.</ptxt>
+</item>
+<item>
+<ptxt>If DTC P0020 is displayed, check the intake camshaft circuit for the left bank VVT system.</ptxt>
+</item>
+<item>
+<ptxt>Bank 2 refers to the bank that does not include cylinder No. 1.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PDW015X_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PDW015X_09_0001" proc-id="RM0250U___00002FG00000">
+<testtitle>PERFORM ACTIVE TEST BY CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY (OCV)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.  </ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Warm up the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, enter the following menus: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / VVT CTRL B1 or VVT CTRL B2.  </ptxt>
+</test1>
+<test1>
+<ptxt>Check the engine speed while operating the Oil Control Valve (OCV) using the tester.  </ptxt>
+<spec>
+<title>OK</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OCV OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal engine speed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OCV ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine idles roughly or stalls (soon after OCV switched from OFF to ON)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDW015X_09_0002" fin="false">NG</down>
+<right ref="RM000000PDW015X_09_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDW015X_09_0002" proc-id="RM0250U___00002FH00000">
+<testtitle>INSPECT CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C43 or C47 OCV connector.</ptxt>
+<figure>
+<graphic graphicname="A095415E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the OCV.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6.9 to 7.9 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the OCV connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDW015X_09_0003" fin="false">NG</down>
+<right ref="RM000000PDW015X_09_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDW015X_09_0003" proc-id="RM0250U___00002FI00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (OCV - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C43 or C47 OCV connector.</ptxt>
+<figure>
+<graphic graphicname="A106380E13" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OC1+ (C55-58) - C43-1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC1- (C55-57) - C43-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC2+ (C55-52) - C47-1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC2- (C55-51) - C47-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OC1+ (C55-58) or C43-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC1- (C55-57) or C43-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC2+ (C55-52) or C47-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC2- (C55-51) or C47-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the OCV connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDW015X_09_0007" fin="true">OK</down>
+<right ref="RM000000PDW015X_09_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDW015X_09_0007">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PDW015X_09_0005">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS<xref label="Seep01" href="RM000002205002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PDW015X_09_0006">
+<testtitle>REPLACE CAMSHAFT TIMING OIL CONTROL VALVE ASSEMBLY<xref label="Seep01" href="RM000000PWP00KX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PDW015X_09_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

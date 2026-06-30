@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W76028X" category="D" type-id="303F3" name-id="AX04N-13" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000W76028X_z0" proc-id="RM0250U___000063500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<step2>
+<ptxt>When troubleshooting OBD II vehicles, the only difference from the usual troubleshooting procedure is to connect an OBD II scan tool complying with SAE J1987 or a intelligent tester to the vehicle, and read off various data output from the vehicle's ECM.</ptxt>
+</step2>
+<step2>
+<ptxt>OBD II regulations require that the vehicle's on-board computer illuminate the Malfunction Indicator Lamp (MIL) on the instrument panel when the computer detects a malfunction in the computer itself or in the drive system components which affect the vehicle emissions. In addition to illuminating the MIL when a malfunction is detected, the applicable DTCs prescribed by SAE J2012 are recorded in the ECM memory (See page <xref label="Seep01" href="RM000000W71025X"/>). </ptxt>
+<ptxt>If the malfunction does not occur in 3 consecutive trips, the MIL goes off but the DTCs remain in the ECM memory.</ptxt>
+<figure>
+<graphic graphicname="FI00534" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>To check the DTCs, connect the OBD II scan tool or intelligent tester to the DLC3 of the vehicle. The OBD II scan tool or intelligent tester also enables you to erase the DTCs and check freeze frame data and various forms of engine data (For operating instructions, see the instruction book).</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The DTCs include SAE controlled codes and Manufacturer controlled codes. SAE controlled codes must be set as prescribed by the SAE, while Manufacturer controlled codes can be set freely by a manufacturer within the prescribed limits (See page <xref label="Seep02" href="RM000000W71025X"/>).</ptxt>
+</step2>
+<step2>
+<ptxt>The diagnosis system operates in "normal mode" during the normal vehicle use. In normal mode, "2-trip detection logic" is used to ensure accurate detection of malfunction. "Check mode" is also available to technicians as an option. In check mode, "1-trip detection logic" is used for simulating malfunction symptoms and increasing the system's ability to detect malfunctions, including intermittent malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>*2 trip detection logic: When a malfunction is first detected, the malfunction is temporarily stored in the ECM memory (1st trip). IF the ignition switch is turned off and then turned on (IG) again, and same malfunction is detected again, the MIL will illuminate.</ptxt>
+</step2>
+<step2>
+<ptxt>The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air/fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>The intelligent tester displays freeze frame data recorded at five different points: 1) 3 times before the DTC is set, 2) once when the DTC is set, and 3) once after the DTC is set. The data can be used to simulate the vehicle's condition around the time of the malfunction. The data may be helpful in determining the cause of a malfunction. It may also be helpful in determining whether a DTC is being caused by a temporary malfunction.</ptxt>
+<figure>
+<graphic graphicname="A092901E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>INSPECT THE DLC3</ptxt>
+<step2>
+<ptxt>The vehicle's ECM uses ISO 15765-4for communication. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4format.</ptxt>
+<figure>
+<graphic graphicname="A082779E62" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Terminals of DLC 3</title>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL4" colwidth="1.18in"/>
+<colspec colname="COL5" colwidth="1.18in"/>
+<colspec colname="COL6" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Name</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference Terminal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5 - Signal ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During transmission</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BAT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt> CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus lineCG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IG switch OFF*</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten2>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors.</ptxt>
+</atten2>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+<atten4>
+<ptxt>The DLC3 is the interface prepared for reading various data from the vehicle's ECM. After connecting the cable of the intelligent tester to the CAN VIM, turn the ignition switch ON and turn the tester ON. If a communication failure message is displayed on the tester screen (on the tester: UNABLE TO CONNECT TO VEHICLE), a problem exists in either the vehicle or tester. In order to identify the location of the problem, connect the tester to another vehicle.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If the communication is normal when the tool is connected to another vehicle, inspect the DLC3 on the original vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If the communication is still impossible when the tool is connected to another vehicle, the problem is probably in the tool itself, so consult the Service Department listed in the tool's instruction manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK BATTERY VOLTAGE</ptxt>
+<step2>
+<ptxt>Measure the battery voltage.</ptxt>
+<spec>
+<title>Battery voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If voltage is below 11 V, replace the battery before proceeding.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK MIL</ptxt>
+<step2>
+<ptxt>Check that the MIL illuminates when turning the ignition switch on (IG).</ptxt>
+<atten4>
+<ptxt>If the MIL does not light up, troubleshoot the combination meter.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>When the engine is started, the MIL should go off. If the lamp remains on, it means that the diagnosis system has detected a malfunction or abnormality in the system.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

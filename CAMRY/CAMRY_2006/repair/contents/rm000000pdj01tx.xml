@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDJ01TX" category="D" type-id="303F3" name-id="ES06C-53" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000PDJ01TX_z0" proc-id="RM0250U___000079300000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>When troubleshooting OBD II (On-Board Diagnostics) vehicles, the intelligent tester (complying with SAE J1987) must be connected to the DLC3 (Data Link Connector 3) of the vehicle. Various data in the vehicle's ECM (Engine Control Module) can be then read.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>OBD II regulations require that the vehicle's on-board computer illuminates the MIL (Malfunction Indicator Lamp) on the instrument panel when the computer detects a malfunction in:</ptxt>
+<figure>
+<graphic graphicname="FI00534" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>The emission control system components.</ptxt>
+</item>
+<item>
+<ptxt>The powertrain control components (which affect vehicle emissions).</ptxt>
+</item>
+<item>
+<ptxt>The computer itself.</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>In addition, if the applicable DTCs (Diagnostic Trouble Codes) prescribed by SAE J2012 are not recorded on 3 consecutive trips, the MIL turns off automatically but the DTCs remain recorded in the ECM memory.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>To check DTCs, connect the intelligent tester to the DLC3. The tester displays DTCs, freeze frame data, and a variety of the engine data. The DTCs and freeze frame data can be erased with the tester (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<ptxt>In order to enhance OBD function on vehicles and develop the Off-Board diagnosis system, CAN (Controller Area Network) communication is introduced in this system. It minimizes the gap between technician skills and vehicle technology. CAN is a network, which uses a pair of data transmission lines, spanning multiple computers and sensors. It allows high speed communication between the systems and simplifies the wire harness connection. </ptxt>
+<ptxt>Since this system is equipped with the CAN communication, connecting the CAN VIM (Vehicle Interface Module) to the intelligent tester is necessary to display any information from the ECM. (Also the communication between the intelligent tester and the ECM uses CAN communication signals.) When confirming the DTCs and any data of the ECM, connect the CAN VIM between the DLC3 and the intelligent tester.</ptxt>
+</item>
+</list1>
+</step1>
+<step1>
+<ptxt>NORMAL MODE AND CHECK MODE</ptxt>
+<ptxt>The diagnosis system operates in normal mode during normal vehicle use. In normal mode, "2 trip detection logic" is used to ensure accurate detection of malfunctions. "Check mode" is also available as an option for technicians. In check mode, "1 trip detection logic" is used for simulating malfunction symptoms and increasing the system's ability to detect malfunctions, including intermittent problems (intelligent tester only) (See page <xref label="Seep02" href="RM000000PDL01QX"/>).</ptxt>
+</step1>
+<step1>
+<ptxt>2 TRIP DETECTION LOGIC</ptxt>
+<ptxt>When a malfunction is first detected, the malfunction is temporarily stored in the ECM memory (1st trip). If the same malfunction is detected during the next subsequent drive cycle, the MIL is illuminated (2nd trip).</ptxt>
+</step1>
+<step1>
+<ptxt>FREEZE FRAME DATA</ptxt>
+<ptxt>The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction.</ptxt>
+</step1>
+<step1>
+<ptxt>DLC3 (Data Link Connector 3)</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The vehicle's ECM uses the ISO 15765-4 for communication protocol. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<figure>
+<graphic graphicname="H100769E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL4" colwidth="1.18in"/>
+<colspec colname="COL5" colwidth="1.18in"/>
+<colspec colname="COL6" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Names</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Reference terminal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Results</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 - Signal ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During transmission</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Chassis ground </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 Ω or less</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 Ω or less</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BAT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>16</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>CANH</ptxt>
+</entry>
+<entry morerows="2" valign="middle" align="center">
+<ptxt>6</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>CAN "High" line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>14 - CANL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4 - CG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>CANL</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>14</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>CAN "Low" line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4 - CG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF*</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten2>
+<ptxt>*: Before measuring the resistance, leave the vehicle as it is for at least 1 minute and do not operate the ignition switch, any other switches or the doors.</ptxt>
+</atten2>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+<atten4>
+<ptxt>The DLC3 is the interface prepared for reading various data from the vehicle's ECM. After connecting the cable of the intelligent tester to the CAN VIM, turn the ignition switch to the ON position and turn the tester on. If a communication failure message is displayed on the tester screen (on the tester: UNABLE TO CONNECT TO VEHICLE), a problem exists in either the vehicle or tester. In order to identify the location of the problem, connect the tester to another vehicle.</ptxt>
+<ptxt>If communication is normal: Inspect the DLC3 on the original vehicle.</ptxt>
+<ptxt>If communication is still not possible: The problem is probably in the tester itself. Consult the Service Department listed in the instruction manual.</ptxt>
+</atten4>
+</step1>
+<step1>
+<ptxt>BATTERY VOLTAGE</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If the voltage is below 11 V, replace or recharge the battery before proceeding to the next step.</ptxt>
+</step1>
+<step1>
+<ptxt>MIL (Malfunction Indicator Lamp)</ptxt>
+<step2>
+<ptxt>The MIL is illuminated when the ignition switch is first turned ON position (the engine is not running).</ptxt>
+</step2>
+<step2>
+<ptxt>The MIL should turn OFF when the engine is started. If the MIL remains illuminated, the diagnosis system has detected a malfunction or abnormality in the system.</ptxt>
+<atten4>
+<ptxt>If the MIL is not illuminated when the ignition switch is first turned ON position, check the MIL circuit (See page <xref label="Seep03" href="RM000000WZ101EX"/>).</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>ALL READINESS</ptxt>
+<ptxt>For the vehicle, using the intelligent tester allows readiness codes corresponding to all DTCs to be read.</ptxt>
+<ptxt>When diagnosis (normal or malfunctioning) has been complete, readiness codes are set. Select the following menu items on the intelligent tester: ENHANCED OBD II / MONITOR STATUS.</ptxt>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

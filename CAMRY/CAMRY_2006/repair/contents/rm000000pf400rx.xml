@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PF400RX" category="C" type-id="300XT" name-id="ES369-03" from="200601">
+<dtccode>P0101</dtccode>
+<dtcname>Mass Air Flow Circuit Range / Performance Problem</dtcname>
+<subpara id="RM000000PF400RX_01" type-id="60" category="03" proc-id="RM0250U___00007BF00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0100 (See page <xref label="Seep01" href="RM000000U5B01FX_01"/>).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0101</ptxt>
+</entry>
+<entry>
+<ptxt>Conditions (a), (b), (c), (d) and (e) continue for more than 10 seconds (2 trip detection logic):</ptxt>
+<ptxt>(a) Engine running</ptxt>
+<ptxt>(b) Engine coolant temperature 70°C (158°F) or higher</ptxt>
+<ptxt>(c) Throttle Position (TP) sensor voltage 0.24 V or more</ptxt>
+<ptxt>(d) Average engine load value ratio less than 0.85, or more than 1.15 (varies with estimated engine load)</ptxt>
+<ptxt>Average engine load value ratio = Average engine load based on MAF meter output / Average engine load estimated from driving conditions</ptxt>
+<ptxt>(e) Average air-fuel ratio less than -20 %, or more than 20 %</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Mass Air Flow (MAF) meter</ptxt>
+</item>
+<item>
+<ptxt>Air induction system</ptxt>
+</item>
+<item>
+<ptxt>PCV hose connections</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_02" type-id="64" category="03" proc-id="RM0250U___00007BG00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The MAF meter is a sensor that measures the amount of air flowing through the throttle valve. The ECM uses this information to determine the fuel injection time and to provide an appropriate air-fuel ratio. Inside the MAF meter, there is a heated platinum wire which is exposed to the flow of intake air. By applying a specific electrical current to the wire, the ECM heats it to a specific temperature. The flow of incoming air cools both the wire and an internal thermistor, affecting their resistance. To maintain a constant current value, the ECM varies the voltage applied to these components of the MAF meter. The voltage level is proportional to the airflow through the sensor, and the ECM uses it to calculate the intake air volume.						 						 						 </ptxt>
+<ptxt>The ECM monitors the average engine load value ratio to check the MAF meter for malfunctions. The average engine load value ratio is obtained by comparing the average engine load calculated from the MAF meter output to the average engine load estimated from the driving conditions, such as the engine speed and the throttle opening angle. If the average engine load value ratio is below the threshold value, the ECM determines that the intake air volume is low, and if the average engine load value ratio is above the threshold value, the ECM determines that the intake air volume is high.</ptxt>
+<ptxt>If this is detected in 2 consecutive driving cycles, the MIL is illuminated and a DTC is set.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_03" type-id="65" category="03" proc-id="RM0250U___00007BH00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0101: Mass air flow meter rationality</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mass air flow meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft Position (CKP) sensor, Engine Coolant Temperature (ECT) sensor and Throttle Position (TP) sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_04" type-id="66" category="03" proc-id="RM0250U___00007BI00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0120 - P0223, P2135 (TP sensor)</ptxt>
+<ptxt>P0125 (Insufficient ECT for closed loop)</ptxt>
+<ptxt>P0335 (CKP sensor)</ptxt>
+<ptxt>P0340 (CMP sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle position (TP sensor voltage)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.24 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine coolant temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>70°C (158°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IAT sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CKP sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TP sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Canister pressure sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EVAP leak detection pump</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EVAP vent valve</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_05" type-id="67" category="03" proc-id="RM0250U___00007BJ00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Averaged engine load</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.85, or more than 1.23</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_07" type-id="32" category="03" proc-id="RM0250U___00007BK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0100 (See page <xref label="Seep01" href="RM000000U5B01FX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_10" type-id="73" category="03" proc-id="RM0250U___00007BP00000">
+<name>CONFIRMATION DRIVING PATTERN</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Performing this confirmation pattern will activate the mass air flow performance monitor.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A112632E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<list1 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</item>
+<item>
+<ptxt>Turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Start the engine, and warm it up until the engine coolant temperature reaches 70°C (158°F) or higher.</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle at approximately 62 mph (100 km/h) for 20 seconds or more.</ptxt>
+</item>
+<item>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES and check if any DTCs (any pending DTCs) are set.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_09" type-id="51" category="05" proc-id="RM0250U___00007BO00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF400RX_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PF400RX_08_0001" proc-id="RM0250U___00007BL00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0101)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0101</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0101 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<atten4>
+<ptxt>If any DTCs other than P0101 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000PF400RX_08_0004" fin="false">A</down>
+<right ref="RM000000PF400RX_08_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF400RX_08_0004" proc-id="RM0250U___00007BM00000">
+<testtitle>CHECK AIR INDUCTION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the air induction system for vacuum leakage.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No leakage from air induction system.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF400RX_08_0005" fin="false">OK</down>
+<right ref="RM000000PF400RX_08_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF400RX_08_0005" proc-id="RM0250U___00007BN00000">
+<testtitle>CHECK PCV HOSE CONNECTIONS</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>PCV hose is connected correctly and is not damaged.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000PF400RX_08_0003" fin="true">OK</down>
+<right ref="RM000000PF400RX_08_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF400RX_08_0002">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000PF400RX_08_0006">
+<testtitle>REPAIR OR REPLACE AIR INDUCTION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000PF400RX_08_0007">
+<testtitle>REPAIR OR REPLACE PCV HOSE</testtitle>
+</testgrp>
+<testgrp id="RM000000PF400RX_08_0003">
+<testtitle>REPLACE MASS AIR FLOW METER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

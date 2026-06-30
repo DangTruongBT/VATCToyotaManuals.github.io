@@ -1,0 +1,49 @@
+<!-- $Id: ewd_frame.html,v 1.6 2005/01/13 06:28:46 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--  001 alert()                                                           -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script" content="javascript">
+<title>GSIC - Global Service Information Center -Inspection Menu-</title>
+<script src="../../js/util.js"></script>
+<script src="../../js/xml.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var g_parts  = findParameterValue("parts");
+var g_term   = findParameterValue("term");
+var g_vin    = findParameterValue("vin");
+var g_filter = findParameterValue("filter");
+var g_srhXml = initXml("link.xml");
+var g_tocXml = initXml("toc_rpr.xml");
+var g_objXsl = initXsl("../../xsl/isp/contents.xsl");
+function init() {
+	if (g_term==null || g_parts==null) {
+		alert("Invalid Parameters. \n"
+				 +"Parameters: \n"
+				 +"[term="+g_term+" parts="+g_parts+"]"); // 001
+		window.close();
+		return;
+	}
+	if (g_srhXml==null || g_tocXml==null) return;
+	g_srhXml.setProperty("SelectionLanguage", "XPath");
+	g_tocXml.setProperty("SelectionLanguage", "XPath");
+}
+init();
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="ewd_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="ewd_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

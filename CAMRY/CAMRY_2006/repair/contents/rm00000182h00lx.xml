@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM00000182H00LX" category="C" type-id="8011D" name-id="NS08Q-16" from="200601">
+<dtccode>01-21</dtccode>
+<dtcname>ROM Error</dtcname>
+<dtccode>01-22</dtccode>
+<dtcname>RAM Error</dtcname>
+<subpara id="RM00000182H00LX_01" type-id="60" category="03" proc-id="RM0250U___000050P00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry>
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>01-21</ptxt>
+</entry>
+<entry>
+<ptxt>A malfunction exists in ROM.</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Radio and navigation assembly</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-22</ptxt>
+</entry>
+<entry>
+<ptxt>A malfunction exists in RAM.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000182H00LX_02" type-id="51" category="05" proc-id="RM0250U___000050Q00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After the inspection is completed, clear the DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000182H00LX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000182H00LX_03_0001">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<res>
+<down ref="RM00000182H00LX_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182H00LX_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

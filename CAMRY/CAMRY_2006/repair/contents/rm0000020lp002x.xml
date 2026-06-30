@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YMA_T00A6" variety="T00A6">
+<name>WINDOW DEFOGGER SYSTEM</name>
+<para id="RM0000020LP002X" category="J" type-id="304X8" name-id="WS0UJ-01" from="200601">
+<dtccode/>
+<dtcname>Rear Window Defogger System does not Operate</dtcname>
+<subpara id="RM0000020LP002X_01" type-id="60" category="03" proc-id="RM0250U___000058J00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the rear window defogger switch, which is built into the heater control assembly, is operated, the operation signals are transmitted to the A/C amplifier assembly through LIN. When the A/C amplifier assembly receives the signals, it turns on the DEFOG relay to operate the rear window defogger.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020LP002X_02" type-id="32" category="03" proc-id="RM0250U___000058K00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137053E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020LP002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020LP002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020LP002X_04_0028" proc-id="RM0250U___000059100000">
+<testtitle>CHECK FOR DTCs</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select the DTC check on the intelligent tester to check for communication errors.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Not output DTC codes</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output DTC codes (LIN communication)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0002" fin="false">A</down>
+<right ref="RM0000020LP002X_04_0019" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0002" proc-id="RM0250U___000058L00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select the ACTIVE TEST, use the intelligent tester to issue a control command, and then check the window defogger operation.</ptxt>
+<spec>
+<title>Air Conditioner</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Defogger Relay (Rear)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns rear window defogger OFF/ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0003" fin="false">NG</down>
+<right ref="RM0000020LP002X_04_0009" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0003" proc-id="RM0250U___000058M00000">
+<testtitle>REPLACE AIR CONDITIONER CONTROL ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the air conditioner control assembly.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0004" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0004" proc-id="RM0250U___000058N00000">
+<testtitle>CONFIRM REAR WINDOW DEFOGGER OPERATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG), press the defogger switch, and check that the window defogger operates.</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>System operates normally</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0021" fin="true">OK</down>
+<right ref="RM0000020LP002X_04_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0009" proc-id="RM0250U___000058S00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select the ACTIVE TEST, use the intelligent tester to issue a control command, and then check the DEFOG relay operation.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that operation sound of the RR DEF relay is heard.</ptxt>
+<spec>
+<title/>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Relay operating sound is heard</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Relay operating sound is not heard</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0010" fin="false">NG</down>
+<right ref="RM0000020LP002X_04_0013" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0010" proc-id="RM0250U___000058T00000">
+<testtitle>INSPECT RR DEF RELAY</testtitle>
+<content6 releasenbr="1">
+<ptxt>See page <xref label="Seep01" href="RM000000WYH005X"/>.</ptxt>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0011" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0011" proc-id="RM0250U___000058U00000">
+<testtitle>CHECK WIRE HARNESS (RR DEF RELAY - BATTERY POSITIVE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the RR DEF relay.</ptxt>
+<figure>
+<graphic graphicname="B137052E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<subtitle>Engine room R/B, J/B</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0012" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0012" proc-id="RM0250U___000058V00000">
+<testtitle>CHECK WIRE HARNESS (RR DEF RELAY - A/C AMPLIFIER ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the RR DEF relay and A/C amplifier assembly connector.</ptxt>
+<figure>
+<graphic graphicname="B140724E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 - E38-38</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0020" fin="true">OK</down>
+<right ref="RM0000020LP002X_04_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0013" proc-id="RM0250U___000058W00000">
+<testtitle>INSPECT RR DEF RELAY</testtitle>
+<content6 releasenbr="1">
+<ptxt>See page <xref label="Seep01" href="RM000000WYH005X"/>.</ptxt>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0014" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0014" proc-id="RM0250U___000058X00000">
+<testtitle>CHECK WIRE HARNESS (RR DEF RELAY - BATTERY POSITIVE AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the RR DEF relay.</ptxt>
+<figure>
+<graphic graphicname="B137052E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>Engine room R/B, J/B</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>4 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard voltage</title>
+<subtitle>Engine room R/B, J/B</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0015" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0015" proc-id="RM0250U___000058Y00000">
+<testtitle>INSPECT NOISE FILTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the noise filter connector.</ptxt>
+<figure>
+<graphic graphicname="B140726E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N18-1 - N18-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N18-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0016" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0016" proc-id="RM0250U___000058Z00000">
+<testtitle>CHECK WIRE HARNESS (RR DEF RELAY - NOISE FILTER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the RR DEF relay and defogger wire connectors.</ptxt>
+<figure>
+<graphic graphicname="B140738E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - N18-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0029" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0029" proc-id="RM0250U___0000AOR00000">
+<testtitle>CHECK WIRE HARNESS (NOISE FILTER - DEFOGGER WIRE CONNECTOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B140737E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N18-1 - N19-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N18-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0017" fin="false">OK</down>
+<right ref="RM0000020LP002X_04_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0017" proc-id="RM0250U___000059000000">
+<testtitle>CHECK WIRE HARNESS (DEFOGGER WIRE CONNECTOR - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B127529E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P1-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020LP002X_04_0027" fin="true">OK</down>
+<right ref="RM0000020LP002X_04_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0019">
+<testtitle>GO TO MULTIPLEX COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0020">
+<testtitle>REPLACE A/C AMPLIFIER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0021">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0022">
+<testtitle>REPLACE RR DEF RELAY</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0023">
+<testtitle>REPAIR OR REPLACE A/C NO. 2 FUSE,  HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0024">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0025">
+<testtitle>REPAIR OR REPLACE RR DEF FUSE,  HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0026">
+<testtitle>REPLACE NOISE FILTER</testtitle>
+</testgrp>
+<testgrp id="RM0000020LP002X_04_0027">
+<testtitle>REPAIR OR REPLACE REAR WINDOW DEFOGGER WIRE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

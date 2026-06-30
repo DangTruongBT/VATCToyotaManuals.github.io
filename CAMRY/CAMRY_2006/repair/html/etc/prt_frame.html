@@ -1,0 +1,40 @@
+<!-- $Id: prt_frame.html,v 1.9 2004/04/26 05:01:21 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  BASE_TITLE(argument)                                                  -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Print Preview</title>
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/style.js"></script>
+<script language="javascript">
+var BASE_TITLE = " -Print Preview-";
+var args = window.dialogArguments;
+var addTitle = (args!=null && args.length>2) ? args[3] : "";
+document.title = addTitle + BASE_TITLE;
+var selectable = (args!=null && args.length==6) ? args[5] : false;
+var objXml = args[0];
+var objXsl = args[1];
+var xslArgs = args[2];
+var dialogTitle = args[4];
+// dummy function
+function selectId() {}
+function seePage() {}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="prt_global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="prt_contents.html" frameborder="no">
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

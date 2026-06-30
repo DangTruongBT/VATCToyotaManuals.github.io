@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PFB01CX" category="C" type-id="3032S" name-id="ES0DL-17" from="200601">
+<dtccode>P0116</dtccode>
+<dtcname>Engine Coolant Temperature Circuit Range / Performance Problem</dtcname>
+<subpara id="RM000000PFB01CX_01" type-id="60" category="03" proc-id="RM0250U___00007CP00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0115 (See page <xref label="Seep01" href="RM000000PF501DX_01"/>).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0116</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of following conditions is met (2 trip detection logic):</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>When cold engine started and engine warmed up, Engine Coolant Temperature (ECT) sensor value does not change.</ptxt>
+</item>
+<item>
+<ptxt>After engine is warmed up, ECT sensor value does not change when engine stopped and then next cold engine start is performed.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Thermostat</ptxt>
+</item>
+<item>
+<ptxt>ECT sensor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_02" type-id="64" category="03" proc-id="RM0250U___00007CQ00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<topic>
+<title>Engine coolant temperature (ECT) sensor cold start monitor</title>
+<ptxt>When a cold engine start is performed and then the engine is warmed up, if the ECT sensor value does not change, it is determined that a malfunction has occurred. If this is detected in 2 consecutive driving cycles, the MIL is illuminated and a DTC is set.</ptxt>
+</topic>
+<topic>
+<title>ECT sensor soak monitor</title>
+<ptxt>After a warmed up engine is started, if the ECT sensor value does not change when the engine is stopped and then the next cold engine start is performed, it is determined that a malfunction has occurred. If this is detected in 2 consecutive driving cycles, the MIL is illuminated and a DTC is set.</ptxt>
+</topic>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_03" type-id="65" category="03" proc-id="RM0250U___00007CR00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P0116: Engine coolant temperature (ECT) sensor cold start monitor</ptxt>
+<ptxt>P0116: ECT sensor soak monitor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>ECT sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>5 hours or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_04" type-id="66" category="03" proc-id="RM0250U___00007CS00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ECT Sensor cold start monitor:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0100 to P0103: Mass Air Flow (MAF) meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 second or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT at engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 60°C (140°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IAT sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Soak time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 hours or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Accumulated MAF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Except PZEV: 621.76 g or more</ptxt>
+<ptxt>PZEV: 608 g or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel cut</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Difference between ECT at engine start and IAT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 40°C (72°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ECT Sensor soak monitor:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0100 to P0103: MAF meter</ptxt>
+<ptxt>P0110 to P0113: IAT sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Soak time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 hours or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions (a) or (b) is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) ECT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>60°C (140°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Accumulated MAF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Except PZEV: 1,021.88 g or more</ptxt>
+<ptxt>PZEV: 947 g or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_05" type-id="67" category="03" proc-id="RM0250U___00007CT00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ECT Sensor cold start monitor:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor value change</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 5°C (9°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ECT Sensor soak monitor:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Difference between current ECT sensor value and previous ECT sensor value when engine stopped</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 5°C (9°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_06" type-id="70" category="03" proc-id="RM0250U___00007CU00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECT</ptxt>
+</entry>
+<entry>
+<ptxt>ECT sensor value changes in accordance with actual ECT</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_07" type-id="51" category="05" proc-id="RM0250U___00007CV00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If any of DTCs P0115, P0117, P0118 or P0125 are set simultaneously with DTC P0116, the ECT sensor may have an open or a short circuit. Troubleshoot those DTCs first.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFB01CX_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PFB01CX_08_0001" proc-id="RM0250U___00007CW00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0116)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0116</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0116 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000PFB01CX_08_0006" fin="false">A</down>
+<right ref="RM000000PFB01CX_08_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFB01CX_08_0006" proc-id="RM0250U___00007CX00000">
+<testtitle>INSPECT THERMOSTAT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the thermostat (See page <xref label="Seep01" href="RM0000017WE005X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the valve opening temperature of the thermostat.</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>80°C to 84°C (176°F to 183°F)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>In addition to the above check, confirm that the valve is completely closed when the temperature is below the standard.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Reinstall the thermostat (See page <xref label="Seep02" href="RM0000017WB005X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFB01CX_08_0002" fin="true">OK</down>
+<right ref="RM000000PFB01CX_08_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFB01CX_08_0003">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000PFB01CX_08_0005">
+<testtitle>REPLACE THERMOSTAT</testtitle>
+</testgrp>
+<testgrp id="RM000000PFB01CX_08_0002">
+<testtitle>REPLACE ENGINE COOLANT TEMPERATURE SENSOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

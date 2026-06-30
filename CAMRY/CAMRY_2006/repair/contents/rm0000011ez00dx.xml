@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000011EZ00DX" category="J" type-id="3016Z" name-id="NS0WL-01" from="200601">
+<dtccode/>
+<dtcname>Illumination Circuit</dtcname>
+<subpara id="RM0000011EZ00DX_01" type-id="60" category="03" proc-id="RM0250U___00004VY00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Power is supplied to the radio and navigation assembly and steering pad switch illumination when the light control switch is in the TAIL or HEAD position.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000011EZ00DX_02" type-id="32" category="03" proc-id="RM0250U___00004VZ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E129819E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011EZ00DX_03" type-id="51" category="05" proc-id="RM0250U___00004W000000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>The vehicle is equipped with an SRS (Supplemental Restraint System) such as the airbags. Before servicing (including removal or installation of parts), be sure to read the precautionary notice for the Supplemental Restraint System (See page <xref label="Seep01" href="RM000000KT1010X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM0000011EZ00DX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011EZ00DX_05_0001" proc-id="RM0250U___00004W100000">
+<testtitle>CHECK ILLUMINATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the illumination for the radio and navigation assembly, steering pad switch, glove box or others (Hazard switch, transmission control switch, etc.) comes on when the light control switch is turned to the HEAD or TAIL position.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Illumination comes on for all components except steering pad switch.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Illumination comes on for all components except radio and navigation assembly.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No illumination comes on (radio receiver, hazard switch, glove box, etc.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Illumination comes on only for glove box and steering pad switch.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0003" fin="false">A</down>
+<right ref="RM0000011EZ00DX_05_0017" fin="false">B</right>
+<right ref="RM0000011EZ00DX_05_0007" fin="true">C</right>
+<right ref="RM0000011EZ00DX_05_0006" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0003" proc-id="RM0250U___00004W300000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BATTERY - SPIRAL CABLE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the spiral cable connector.</ptxt>
+<figure>
+<graphic graphicname="E120026E07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IL+2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch TAIL or HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0009" fin="false">OK</down>
+<right ref="RM0000011EZ00DX_05_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0009" proc-id="RM0250U___00004W400000">
+<testtitle>CHECK STEERING PAD SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the steering pad switch assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E129805E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the positive (+) lead to terminal ILL+ and the negative (-) lead to terminal EAU of the steering pad switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the illumination for the steering pad switch comes on.</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Illumination for the steering pad switch assembly comes on.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0010" fin="false">OK</down>
+<right ref="RM0000011EZ00DX_05_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0010" proc-id="RM0250U___00004W500000">
+<testtitle>INSPECT SPIRAL CABLE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the steering pad switch and spiral cable connectors.</ptxt>
+<figure>
+<graphic graphicname="I039337E32" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Spiral cable position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>EAU - EAU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the left</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the right</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>ILL+ - ILL+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the left</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2.5 rotations to the right</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>The spiral cable is an important part of the SRS airbag system. Incorrect removal or installation of the spiral cable may prevent the airbag from deploying. Be sure to read the page shown in the brackets.</ptxt>
+</atten3>
+</test1>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Removal (See page <xref label="Seep01" href="RM000000UWD00LX"/>)</ptxt>
+</item>
+<item>
+<ptxt>Installation (See page <xref label="Seep02" href="RM000000UWA00KX"/>)</ptxt>
+</item>
+</list1>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0002" fin="false">OK</down>
+<right ref="RM0000011EZ00DX_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0002" proc-id="RM0250U___00004W200000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SPIRAL CABLE - RADIO AND NAVIGATION ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors from the radio and navigation assembly and spiral cable.</ptxt>
+<figure>
+<graphic graphicname="E120116E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SWG - EAU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SWG - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0004" fin="true">OK</down>
+<right ref="RM0000011EZ00DX_05_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0004">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0017" proc-id="RM0250U___00004W700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BATTERY - RADIO AND NAVIGATION ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector F9.</ptxt>
+<figure>
+<graphic graphicname="E113513E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ILL+ - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch</ptxt>
+<ptxt>TAIL or HEAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0018" fin="false">OK</down>
+<right ref="RM0000011EZ00DX_05_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0018" proc-id="RM0250U___00004W800000">
+<testtitle>CHECK HARNESS AND CONNECTOR (RADIO AND NAVIGATION ASSEMBLY - COMBINATION METER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly and combination meter connectors.</ptxt>
+<figure>
+<graphic graphicname="E129820E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ILL- - ILL-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILL- - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011EZ00DX_05_0019" fin="true">OK</down>
+<right ref="RM0000011EZ00DX_05_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0019">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0007">
+<testtitle>GO TO LIGHTING SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0006">
+<testtitle>GO TO COMBINATION METER SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0020">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0021">
+<testtitle>REPLACE STEERING PAD SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000011EZ00DX_05_0022">
+<testtitle>REPLACE SPIRAL CABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000YL100DX" category="G" type-id="8000T" name-id="ST0KZ-05" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000000YL100DX_01" type-id="01" category="01">
+<s-1 id="RM000000YL100DX_01_0001" proc-id="RM0250U___00009M900000">
+<ptxt>CHECK POWER SOURCE MODE CHANGE FUNCTION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the function of the engine switch.</ptxt>
+<s3>
+<ptxt>Check that power source mode changes in accordance with the conditions of the shift position and brake pedal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="4.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Brake Pedal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift Lever</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power Source Mode Pattern</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P or N Position</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>When the engine switch is pushed once.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>off → engine start</ptxt>
+</item>
+<item>
+<ptxt>on (ACC) → engine start</ptxt>
+</item>
+<item>
+<ptxt>on (IG) → engine start</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Not depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P position</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Each time the engine switch is pushed.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>off → on (ACC) → on (IG) → off</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except P Position</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Each time the engine switch is pushed.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>off → on (ACC) → on (IG) → on (ACC)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P Position</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>When the engine switch is pushed with power source mode on (IG) (engine running).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>on (IG) → off</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Except P Position</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>When the engine switch is pushed with power source mode on (IG) (engine running).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>on (IG) → on (ACC)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>Check if power source mode changes without pressing the engine switch.</ptxt>
+<s3>
+<ptxt>With power source mode on (ACC) and the shift position in P, wait for at least 1 hour. Check that power source mode changes from on (ACC) to off automatically.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000YL100DX_01_0002" proc-id="RM0250U___00009MA00000">
+<ptxt>CHECK INDICATOR CONDITION</ptxt>
+<content1 releasenbr="1">
+<figure>
+<graphic graphicname="A109251E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s2>
+<ptxt>Check the indicator on the engine switch.</ptxt>
+<s3>
+<ptxt>Check that the engine switch indicator turns on and changes color according to the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<colspec colname="COL3" colwidth="2.48in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Power Source Mode/Condition</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Indicator Light Condition</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal depressed, shift lever in P or N</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Green) (When key and vehicle IDs match)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>on (ACC, IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Amber)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Green)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine running</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock not unlocked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Green) for 15 sec.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Green) for 15 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>System malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Amber) for 15 sec.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Amber) for 15 sec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

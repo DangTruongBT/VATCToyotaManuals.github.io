@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000001D6V00RX" category="J" type-id="305BG" name-id="ES3Y4-01" from="200601">
+<dtccode/>
+<dtcname>VC Output Circuit</dtcname>
+<subpara id="RM000001D6V00RX_01" type-id="60" category="03" proc-id="RM0250U___00007QF00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM constantly generates 5 V power from the battery voltages supplied to the +B (BATT) terminal to operate the microprocessor. The ECM also provides this power to the sensors through the VC output circuit.</ptxt>
+<figure>
+<graphic graphicname="A116143E06" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<ptxt>When the VC circuit is short-circuited, the microprocessor in the ECM and sensors that are supplied with power through the VC circuit are inactivated because the power is not supplied from the VC circuit. Under this condition, the system does not start up and the MIL does not illuminate even if the system malfunctions.</ptxt>
+<atten4>
+<ptxt>Under normal conditions, the MIL is illuminated for several seconds when the ignition switch is first turned ON position. The MIL goes off when the engine is started.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001D6V00RX_02" type-id="32" category="03" proc-id="RM0250U___00007QG00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A135050E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001D6V00RX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001D6V00RX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001D6V00RX_04_0001" proc-id="RM0250U___00007QH00000">
+<testtitle>CHECK MIL CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the Malfunction Indicator Lamp (MIL) lights up when turning the ignition switch to the ON position.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>MIL lights up.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001D6V00RX_04_0002" fin="false">NG</down>
+<right ref="RM000001D6V00RX_04_0009" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0002" proc-id="RM0250U___00007QI00000">
+<testtitle>CHECK COMMUNICATION BETWEEN INTELLIGENT TESTER AND ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Check for communication between the tester and ECM.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Communication is possible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Communication is not possible</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001D6V00RX_04_0004" fin="false">B</down>
+<right ref="RM000001D6V00RX_04_0010" fin="true">A</right>
+</res>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0004" proc-id="RM0250U___00007QJ00000">
+<testtitle>CHECK MIL (THROTTLE POSITION SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C5 throttle body connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the MIL.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL illuminates</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL does not illuminate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the throttle body connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001D6V00RX_04_0005" fin="false">B</down>
+<right ref="RM000001D6V00RX_04_0011" fin="true">A</right>
+</res>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0005" proc-id="RM0250U___00007QK00000">
+<testtitle>CHECK MIL (ACCELERATOR PEDAL POSITION SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A17 accelerator pedal position sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the MIL.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL illuminates</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL does not illuminate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the accelerator pedal position sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001D6V00RX_04_0006" fin="false">B</down>
+<right ref="RM000001D6V00RX_04_0012" fin="true">A</right>
+</res>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0006" proc-id="RM0250U___00007QL00000">
+<testtitle>CHECK MIL (CANISTER PUMP MODULE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+<figure>
+<graphic graphicname="A135172" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the MIL.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL illuminates</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL does not illuminate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001D6V00RX_04_0008" fin="false">B</down>
+<right ref="RM000001D6V00RX_04_0013" fin="true">A</right>
+</res>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0008" proc-id="RM0250U___00007QM00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C5 throttle body connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the A17 accelerator pedal position sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the N17 canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the A24 and C24 ECM connectors.</ptxt>
+<figure>
+<graphic graphicname="A107934E14" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-67 (VCTA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-57 (VCPA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-58 (VCP2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-70 (VCPP) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the throttle body connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the accelerator pedal position sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the canister pump module connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001D6V00RX_04_0016" fin="true">OK</down>
+<right ref="RM000001D6V00RX_04_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0009">
+<testtitle>SYSTEM OK</testtitle>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0010">
+<testtitle>GO TO MIL CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0011">
+<testtitle>REPLACE THROTTLE BODY ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0012">
+<testtitle>REPLACE ACCELERATOR PEDAL ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0013">
+<testtitle>REPLACE CHARCOAL CANISTER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001D6V00RX_04_0016">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

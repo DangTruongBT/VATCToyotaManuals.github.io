@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM00000182U00GX" category="C" type-id="80127" name-id="NS0VW-01" from="200601">
+<dtccode>58-42</dtccode>
+<dtcname>Map Disc Read Error</dtcname>
+<dtccode>80-42</dtccode>
+<dtcname>Map Disc Read Error</dtcname>
+<subpara id="RM00000182U00GX_01" type-id="60" category="03" proc-id="RM0250U___000052600000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>58-42</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Player error</ptxt>
+</item>
+<item>
+<ptxt>Scratches or dirt on the disc</ptxt>
+</item>
+<item>
+<ptxt>Access to an invalid address due to software error</ptxt>
+</item>
+</list1>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Map disc</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Radio and navigation assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>80-42</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Player error</ptxt>
+</item>
+<item>
+<ptxt>Scratches or dirt on the disc</ptxt>
+</item>
+<item>
+<ptxt>Access to an invalid address due to software error</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM00000182U00GX_02" type-id="51" category="05" proc-id="RM0250U___000052700000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>After the inspection is completed, clear the DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000182U00GX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000182U00GX_03_0001" proc-id="RM0250U___000052800000">
+<testtitle>CHECK MAP DISC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the map disc is not deformed or cracked.</ptxt>
+<figure>
+<graphic graphicname="I100152" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No deformations or cracks on the map disc.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182U00GX_03_0002" fin="false">OK</down>
+<right ref="RM00000182U00GX_03_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182U00GX_03_0002" proc-id="RM0250U___000052900000">
+<testtitle>DISC CLEANING</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disc cleaning</ptxt>
+<figure>
+<graphic graphicname="I100201E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>If dirt is on the disc surface, wipe it clean with a soft cloth from the inside to the outside in a radial direction.</ptxt>
+<atten3>
+<ptxt>Do not use a conventional record cleaner or anti-static preservative.</ptxt>
+</atten3>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182U00GX_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182U00GX_03_0003" proc-id="RM0250U___000052A00000">
+<testtitle>DTC CLEAR AND RECHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM0000011BU00FX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck for DTCs and check if the same trouble occurs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Same problem does not occur.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182U00GX_03_0004" fin="false">NG</down>
+<right ref="RM00000182U00GX_03_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182U00GX_03_0004" proc-id="RM0250U___000052B00000">
+<testtitle>REPLACE MAP DISC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the map disc.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs and recheck for DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same trouble occurs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Same problem does not occur.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182U00GX_03_0005" fin="true">NG</down>
+<right ref="RM00000182U00GX_03_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182U00GX_03_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM00000182U00GX_03_0006">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

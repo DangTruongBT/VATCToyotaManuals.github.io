@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Z_S0017" variety="S0017">
+<name>SEAT BELT</name>
+<ttl id="1000Z_S0017_72ZX3_T00CP" variety="T00CP">
+<name>SEAT BELT WARNING SYSTEM</name>
+<para id="RM0000014DL00AX" category="J" type-id="301CF" name-id="SB0N0-01" from="200601">
+<dtccode/>
+<dtcname>Front Passenger Side Seat Belt Warning Light Malfunction</dtcname>
+<subpara id="RM0000014DL00AX_01" type-id="60" category="03" proc-id="RM0250U___00007YB00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The occupant detection ECU detects the state of the front seat inner belt assembly RH and road sensor when the front passenger seat is occupied with the ignition switch on (IG). If the front passenger seat belt is not fastened, the front seat belt warning light on the clock display blinks. If the seat belt is fastened, the warning light goes off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000014DL00AX_02" type-id="32" category="03" proc-id="RM0250U___00007YC00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B140735E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000014DL00AX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000014DL00AX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000014DL00AX_04_0001" proc-id="RM0250U___00007YD00000">
+<testtitle>CHECK FOR DTCs</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for DTCs.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>No output DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output DTC (CAN communication)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Output DTC (Occupant detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000014DL00AX_04_0019" fin="false">A</down>
+<right ref="RM0000014DL00AX_04_0028" fin="true">B</right>
+<right ref="RM0000014DL00AX_04_0014" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0019" proc-id="RM0250U___00007YI00000">
+<testtitle>CHECK WIRE HARNESS (BATTERY POSITIVE AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the clock assembly connector.</ptxt>
+<figure>
+<graphic graphicname="B137073E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F3-3 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F3-19 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014DL00AX_04_0005" fin="false">OK</down>
+<right ref="RM0000014DL00AX_04_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0005" proc-id="RM0250U___00007YE00000">
+<testtitle>CHECK CLOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the clock assembly connector.</ptxt>
+<figure>
+<graphic graphicname="B137074E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply battery voltage to the connector according to the table below.</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 3 (IG)</ptxt>
+<ptxt>Battery negative (-) → Terminal 10 (PBEW), 19 (GND1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lights up (Seat belt warning light)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014DL00AX_04_0011" fin="false">OK</down>
+<right ref="RM0000014DL00AX_04_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0011" proc-id="RM0250U___00007YG00000">
+<testtitle>CHECK WIRE HARNESS (CLOCK ASSEMBLY - COMBINATION METER ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the combination meter assembly and clock assembly connectors.</ptxt>
+<figure>
+<graphic graphicname="B137077E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-9 (P/SB) - F3-10 (PBEW)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F1-9 (P/SB) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014DL00AX_04_0018" fin="true">OK</down>
+<right ref="RM0000014DL00AX_04_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0028">
+<testtitle>GO TO CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0014">
+<testtitle>GO TO OCCUPANT CLASSIFICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0015">
+<testtitle>REPAIR OR REPLACE GAUGE NO. 2 FUSE, HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0023">
+<testtitle>REPLACE CLOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0024">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000014DL00AX_04_0018">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

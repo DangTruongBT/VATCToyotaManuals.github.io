@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PF301EX" category="C" type-id="30074" name-id="ES3XB-01" from="200601">
+<dtccode>P0110</dtccode>
+<dtcname>Intake Air Temperature Circuit Malfunction</dtcname>
+<dtccode>P0112</dtccode>
+<dtcname>Intake Air Temperature Circuit Low Input</dtcname>
+<dtccode>P0113</dtccode>
+<dtcname>Intake Air Temperature Circuit High Input</dtcname>
+<subpara id="RM000000PF301EX_01" type-id="60" category="03" proc-id="RM0250U___00007BQ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132329E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<list1 type="nonmark">
+<item>
+<ptxt>The Intake Air Temperature (IAT) sensor, mounted on the Mass Air Flow (MAF) meter, monitors the IAT. The IAT sensor has a built-in thermistor with a resistance that varies according to the temperature of the intake air. When the IAT becomes low, the resistance of the thermistor increases. When the temperature becomes high, the resistance drops. These variations in resistance are transmitted to the ECM as voltage changes (see Fig. 1). </ptxt>
+</item>
+<item>
+<ptxt>The IAT sensor is powered by a 5 V supply from the THA terminal of the ECM, via resistor R.</ptxt>
+</item>
+<item>
+<ptxt>Resistor R and the IAT sensor are connected in series. When the resistance value of the IAT sensor changes, according to changes in the IAT, the voltage at terminal THA also varies. Based on this signal, the ECM increases the fuel injection volume when the engine is cold to improve driveability.</ptxt>
+<atten4>
+<ptxt>When any of DTCs P0110, P0112 and P0113 are set, the ECM enters fail-safe mode. During fail-safe mode, the IAT is estimated to be 20°C (68°F) by the ECM. Fail-safe mode continues until a pass condition is detected.</ptxt>
+</atten4>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<colspec colname="COL4" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0110</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open or short in IAT sensor circuit for 0.5 seconds</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in IAT sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>IAT sensor (built into MAF meter)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0112</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short in IAT sensor circuit for 0.5 seconds</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short in IAT sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>IAT sensor (built into MAF meter)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0113</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open in IAT sensor circuit for 0.5 seconds</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in IAT sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>IAT sensor (built into MAF meter)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When any of these DTCs are set, check the IAT by selecting the following menu items on the intelligent tester: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / INTAKE AIR.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Temperature Displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Malfunctions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>-40°C (-40°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>140°C (284°F) or higher</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Short circuit</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_02" type-id="64" category="03" proc-id="RM0250U___00007BR00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM monitors the sensor voltage and uses this value to calculate the IAT. When the sensor output voltage deviates from the normal operating range, the ECM interprets this as a malfunction in the IAT sensor and sets a DTC.</ptxt>
+<ptxt>Example:</ptxt>
+<ptxt>If the sensor output voltage is more than 4.91 V for 0.5 seconds or more, the ECM determines that there is an open in the IAT sensor circuit, and sets DTC P0113. Conversely, if the output voltage is less than 0.18 V for 0.5 seconds or more, the ECM determines that there is a short in the sensor circuit, and sets DTC P0112.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 0.5 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_03" type-id="65" category="03" proc-id="RM0250U___00007BS00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0110: IAT sensor range check (Fluctuating)</ptxt>
+<ptxt>P0112: IAT sensor range check (Low voltage)</ptxt>
+<ptxt>P0113: IAT sensor range check (High voltage)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IAT sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.5 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_04" type-id="66" category="03" proc-id="RM0250U___00007BT00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_05" type-id="67" category="03" proc-id="RM0250U___00007BU00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0110:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IAT sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.18 V, or more than 4.91 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0112:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IAT sensor voltage [IAT]</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 0.18 V [More than 140°C (284°F)]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0113:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IAT sensor voltage [IAT]</ptxt>
+</entry>
+<entry>
+<ptxt>More than 4.91 V [Less than -40°C (-40°F)]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_06" type-id="70" category="03" proc-id="RM0250U___00007BV00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IAT sensor voltage [IAT]</ptxt>
+</entry>
+<entry>
+<ptxt>0.18 to 4.91 V [-40°C to 140°C (-40°F to 284°F)]</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_07" type-id="32" category="03" proc-id="RM0250U___00007BW00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A072925E23" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_08" type-id="51" category="05" proc-id="RM0250U___00007BX00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF301EX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PF301EX_09_0013" proc-id="RM0250U___00007C300000">
+<testtitle>READ OUTPUT DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0110</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0112</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0113</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF301EX_09_0001" fin="false">A</down>
+<right ref="RM000000PF301EX_09_0008" fin="false">B</right>
+<right ref="RM000000PF301EX_09_0002" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0001" proc-id="RM0250U___00007BY00000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (INTAKE AIR TEMPERATURE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / INTAKE AIR.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the value displayed on the tester.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>Same as actual Intake Air Temperature (IAT).</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Temperature Displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>-40°C (-40°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>140°C (284°F) or higher</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Same as actual IAT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is an open circuit, the intelligent tester indicates -40°C (-40°F).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a short circuit, the intelligent tester indicates 140°C (284°F) or higher.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF301EX_09_0002" fin="false">A</down>
+<right ref="RM000000PF301EX_09_0008" fin="false">B</right>
+<right ref="RM000000PF301EX_09_0004" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0002" proc-id="RM0250U___00007BZ00000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (CHECK FOR OPEN IN WIRE HARNESS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 Mass Air Flow (MAF) meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127961E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect terminals THA and E2 of the MAF meter wire harness side connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / INTAKE AIR.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the value displayed on the tester.</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>140°C (284°F) or higher</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF301EX_09_0005" fin="true">OK</down>
+<right ref="RM000000PF301EX_09_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0003" proc-id="RM0250U___00007C000000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127959E11" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connector.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2-1 (THA) - C24-65 (THA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2-2 (E2) - C24-88 (ETHA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF301EX_09_0007" fin="true">OK</down>
+<right ref="RM000000PF301EX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0004">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0005">
+<testtitle>CONFIRM GOOD CONNECTION TO SENSOR. IF OK, REPLACE MASS AIR FLOW METER</testtitle>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0007">
+<testtitle>CONFIRM GOOD CONNECTION TO ECM. IF OK, REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0008" proc-id="RM0250U___00007C100000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (CHECK FOR SHORT IN WIRE HARNESS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+<figure>
+<graphic graphicname="A084869E25" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / INTAKE AIR.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the value displayed on the tester.</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>-40°C (-40°F)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF301EX_09_0010" fin="true">OK</down>
+<right ref="RM000000PF301EX_09_0009" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0009" proc-id="RM0250U___00007C200000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MASS AIR FLOW METER - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C2 MAF meter connector.</ptxt>
+<figure>
+<graphic graphicname="A127959E12" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2-1 (THA) or C24-65 (THA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the MAF meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF301EX_09_0012" fin="true">OK</down>
+<right ref="RM000000PF301EX_09_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0010">
+<testtitle>REPLACE MASS AIR FLOW METER</testtitle>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0011">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PF301EX_09_0012">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

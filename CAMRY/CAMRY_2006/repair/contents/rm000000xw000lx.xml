@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="1000C_S000M" variety="S000M">
+<name>2GR-FE COOLING</name>
+<ttl id="1000C_S000M_72Z7H_T00B5" variety="T00B5">
+<name>COOLING FAN SYSTEM</name>
+<para id="RM000000XW000LX" category="G" type-id="8000T" name-id="CO01F-08" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000000XW000LX_01" type-id="01" category="01">
+<s-1 id="RM000000XW000LX_01_0001" proc-id="RM0250U___000064300000">
+<ptxt>INSPECT COOLING FAN SYSTEM</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Put the vehicle in the following conditions:</ptxt>
+<s3>
+<ptxt>The ignition switch is off.</ptxt>
+</s3>
+<s3>
+<ptxt>The coolant temperature is less than 95°C (203°F).</ptxt>
+</s3>
+<s3>
+<ptxt>The battery voltage is between 9 and 14 V.</ptxt>
+</s3>
+<s3>
+<ptxt>The A/C switch is OFF.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Connect the 400 A probe of the ammeter to terminals M+ (M) and M+ (S) of the cooling fan motor.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch on (IG) and wait for approximately 10 seconds. Check that the fan stops.</ptxt>
+</s2>
+<s2>
+<ptxt>Start the engine. Check that the fan stops with the engine idling.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Make sure that the radiator engine coolant temperature is less than 95°C (203°F).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Turn the A/C switch OFF.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+<s2>
+<ptxt>Check that the fan operates when the A/C switch is turned ON (MAX COOL and the magnet clutch is operating).</ptxt>
+<spec>
+<title>Standard current : Without trailer hitch</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Cooling fan motor</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 8 A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Cooling fan motor No. 2</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 8 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard current : With trailer hitch</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Cooling fan motor</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 11 A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Cooling fan motor No. 2</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 11 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The coolant temperature is less than 95°C (203°F).</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Check that the fan operates when the engine coolant temperature sensor connector is disconnected.</ptxt>
+<spec>
+<title>Standard current : Without trailer hitch</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Cooling fan motor</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 11 A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Cooling fan motor No. 2</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 11 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard current : With trailer hitch</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Cooling fan motor</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 15 A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Cooling fan motor No. 2</ptxt>
+</entry>
+<entry>
+<ptxt>2 to 15 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+<s2>
+<ptxt>After the engine is warmed up, check that the fan operates as shown in the illustration on the left.</ptxt>
+<figure>
+<graphic graphicname="A139339E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The coolant temperature at which the fan starts operating is approximately 95°C (203°F).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>This system can also be checked using the intelligent tester.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Select the following menu items: Power train / Engine / Data List / Initial Engine Coolant Temp.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

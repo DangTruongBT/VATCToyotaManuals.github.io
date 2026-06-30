@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001O7Y002X" category="D" type-id="303F3" name-id="AC1A3-06" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000001O7Y002X_z0" proc-id="RM0250U___00004FJ00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK DLC3</ptxt>
+<step2>
+<ptxt>The vehicle's ECU uses the ISO 15765-4 for communication. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<figure>
+<graphic graphicname="H100769E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.78in"/>
+<colspec colname="COL3" colwidth="1.78in"/>
+<colspec colname="COL5" colwidth="1.78in"/>
+<colspec colname="COL6" colwidth="1.74in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbol (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14)  - BAT (16)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off<sup>*</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches, or the doors.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Connect the cable of the intelligent tester to the DLC3, turn the ignition switch on (IG) and attempt to use the tester. If the display indicates that a communication error has occurred, there is a problem either with the vehicle or with the tester.</ptxt>
+</atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tester is connected to another vehicle, inspect the DLC3 of the original vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If communication is still not possible when the tester is connected to another vehicle, the problem may be in the tester itself. Consult the Service Department listed in the tester's instruction manual.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

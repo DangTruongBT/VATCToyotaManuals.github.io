@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JBD002X" category="D" type-id="304SG" name-id="BC0S0-03" from="200601">
+<name>TEST MODE PROCEDURE</name>
+<subpara id="RM000001JBD002X_z0" proc-id="RM0250U___00000Z800000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>WARNING LIGHT AND INDICATOR LIGHT INITIAL CHECK</ptxt>
+<step2>
+<ptxt>Release the parking brake.</ptxt>
+<figure>
+<graphic graphicname="C131966E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten3>
+<ptxt>Before releasing the parking brake, move the shift lever to the P position for safety (AT model) or set the chocks to hold the vehicle for safety (MT model).</ptxt>
+</atten3>
+<atten4>
+<ptxt>When the parking brake is applied or the level of the brake fluid is low, the BRAKE warning light comes on.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>When the ignition switch is turned on (IG), check that the ABS warning light comes on for approximately 3 seconds.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the skid control ECU stores any DTCs, the ABS and BRAKE warning lights come on.</ptxt>
+</item>
+<item>
+<ptxt>If the indicator remains on or does not come on, proceed to troubleshooting for the light circuits listed below.</ptxt>
+</item>
+</list1>
+</atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL2" align="center" colwidth="1.57in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS warning light (Remains on)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep01" href="RM000001JD3002X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ABS warning light circuit (Does not come on)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep02" href="RM000001JD4002X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>BRAKE warning light (Remains on)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep03" href="RM000001JD8002X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>BRAKE warning light (Does not come on)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep04" href="RM000001JDC002X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>SENSOR SIGNAL CHECK USING TEST MODE (SIGNAL CHECK) (INTELLIGENT TESTER)</ptxt>
+<atten4>
+<ptxt>If the ignition switch is turned from on (IG) to on (ACC) or off during Test Mode (signal check), DTCs recorded during the signal check function will be erased.</ptxt>
+</atten4>
+<step2>
+<ptxt>Procedure to enter Test Mode.</ptxt>
+<figure>
+<graphic graphicname="C131977E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (for Automatic Transaxle) or apply the parking brake (Manual Transaxle).</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Set the intelligent tester to Test Mode (select "SIGNAL CHECK").</ptxt>
+<figure>
+<graphic graphicname="C106533" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Check that the ABS warning light comes on for several seconds and then blinks in test mode.</ptxt>
+<figure>
+<graphic graphicname="C132874E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<atten4>
+<ptxt>If the ABS warning light does not blink, inspect the ABS warning light circuit.</ptxt>
+</atten4>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.56in"/>
+<colspec colname="COL2" align="center" colwidth="1.57in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS warning light (Does not come on)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>
+<xref label="Seep05" href="RM000001JD4002X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the sensor signal.</ptxt>
+<step3>
+<ptxt>Drive the vehicle straight ahead.</ptxt>
+<ptxt>Accelerate the vehicle to a speed of 28 mph (45 km/h) or more for several seconds and check that the ABS warning light goes off when the brake pedal is depressed.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The sensor check may not be completed if wheel spin occurs, or if the steering wheel is turned during this check.</ptxt>
+</item>
+<item>
+<ptxt>The ABS warning light goes off when the sensor signal check has been completed and the brake pedal is depressed.</ptxt>
+</item>
+<item>
+<ptxt>The ABS warning light comes on immediately after a malfunction has been detected during the speed sensor signal check.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Stop the vehicle.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The speed sensor check may not be completed if the speed sensor check is started while turning the steering wheel or spinning the wheels.</ptxt>
+</item>
+<item>
+<ptxt>If the signal check has not been completed, the ABS warning light will blink while driving and the ABS system will not operate.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+<step2>
+<ptxt>Read the DTC(s) by following the tester screen.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If only the DTCs are displayed, repair the malfunction area and clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>If the DTCs or Test Mode codes (DTC of signal check function) are displayed, repair the malfunction area, clear the DTCs and perform the Test Mode inspection.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>See the list of DTCs (See procedure "A").</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>SENSOR SIGNAL CHECK BY TEST MODE (SIGNAL CHECK) (SST CHECK WIRE)</ptxt>
+<atten4>
+<ptxt>If the ignition switch is turned from on (IG) to on (ACC) or off during Test Mode (signal check), DTCs recorded during the signal check will be erased.</ptxt>
+</atten4>
+<step2>
+<ptxt>Procedure for Test Mode.</ptxt>
+<step3>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the steering wheel is centered and move the shift lever to the P position (Automatic Transaxle) or apply the parking brake (Manual Transaxle).</ptxt>
+</step3>
+<step3>
+<ptxt>Using SST, connect terminals TS and CG of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022987E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the ABS warning light comes on for several seconds and then blinks in Test Mode.</ptxt>
+<figure>
+<graphic graphicname="C132874E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<atten4>
+<ptxt>If the ABS warning light does not blink, inspect the TS and CG terminal circuit, and ABS warning light circuit.</ptxt>
+
+</atten4>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>TS and CG terminal circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep06" href="RM000000XIV00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ABS warning light circuit (Does not come on)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep07" href="RM000001JD4002X"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the sensor signal.</ptxt>
+<step3>
+<ptxt>Drive the vehicle straight ahead.</ptxt>
+<ptxt>Accelerate the vehicle to a speed of 28 mph (45 km/h) or more for several seconds and check that the ABS warning light goes off when the brake pedal is depressed.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The sensor check may not be completed if wheel spin occurs, or if the steering wheel is turned during this check.</ptxt>
+</item>
+<item>
+<ptxt>The ABS warning light goes off when the sensor signal check has been completed and the brake pedal is depressed.</ptxt>
+</item>
+<item>
+<ptxt>The ABS warning light comes on immediately after a malfunction has been detected during the speed sensor signal check.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Stop the vehicle.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The speed sensor check may not be completed if the speed sensor check is started while turning the steering wheel or spinning the wheels.</ptxt>
+</item>
+<item>
+<ptxt>If the signal check has not been completed, the ABS warning light will blink while driving and the ABS system will not operate.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+<step2>
+<ptxt>Using SST, connect terminals TC and CG of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022988E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step2>
+<step2>
+<ptxt>Count the number of blinks of the ABS warning light.</ptxt>
+<figure>
+<graphic graphicname="C132876E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If only the DTCs are displayed, repair the malfunction area and clear the DTCs.</ptxt>
+</item>
+<item>
+<ptxt>If the DTCs or Test Mode codes (DTC of signal check function) are displayed, repair the malfunction area, clear the DTCs and perform the Test Mode inspection.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If more than 1 malfunction is detected at the same time, the lowest numbered code will be displayed first.</ptxt>
+</item>
+<item>
+<ptxt>See the list of DTCs (See procedure "A").</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>After performing the check, disconnect the SST from terminals TS and CG, and TC and CG of the DLC3, and turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG) to cancel the test mode.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the ignition switch is not turned on (IG) after the SST is removed from the DLC3, the previous Test Mode will continue.</ptxt>
+</item>
+<item>
+<ptxt>If the ignition switch is turned on (IG) with terminals TS and CG shorted, the previous Test Mode will continue.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC OF TEST MODE (SIGNAL CHECK) FUNCTION (Procedure "A")</ptxt>
+<table pgwide="1">
+<title>DTC of Test Mode (Signal Check):</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Code No. </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1271/71</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of front speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Front speed sensor RH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1272/72</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of front speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Front speed sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1273/73</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of rear speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor RH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1274/74</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Low output signal of rear speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1275/75</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of front speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Front speed sensor RH</ptxt>
+</item>
+<item>
+<ptxt>Front speed sensor circuit RH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1276/76</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of front speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Front speed sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Front speed sensor circuit LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1277/77</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of rear speed sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor RH</ptxt>
+</item>
+<item>
+<ptxt>Rear speed sensor circuit RH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1278/78</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Abnormal change in output signal of rear speed sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Rear speed sensor LH</ptxt>
+</item>
+<item>
+<ptxt>Rear speed sensor circuit LH</ptxt>
+</item>
+<item>
+<ptxt>Sensor installation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The codes in this table are output only in Test Mode (signal check).</ptxt>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

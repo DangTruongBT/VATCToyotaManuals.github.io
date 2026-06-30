@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000XH301HX" category="C" type-id="300Y3" name-id="ES3XJ-01" from="200601">
+<dtccode>P0300</dtccode>
+<dtcname>Random / Multiple Cylinder Misfire Detected</dtcname>
+<dtccode>P0301</dtccode>
+<dtcname>Cylinder 1 Misfire Detected</dtcname>
+<dtccode>P0302</dtccode>
+<dtcname>Cylinder 2 Misfire Detected</dtcname>
+<dtccode>P0303</dtccode>
+<dtcname>Cylinder 3 Misfire Detected</dtcname>
+<dtccode>P0304</dtccode>
+<dtcname>Cylinder 4 Misfire Detected</dtcname>
+<subpara id="RM000000XH301HX_01" type-id="60" category="03" proc-id="RM0250U___00007FD00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A093767E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>When the engine misfires, high concentrations of hydrocarbons (HC) enter the exhaust gas. Extremely high HC concentration levels can cause increases in exhaust emission levels. High concentrations of HC can also cause increases in the Three-Way Catalytic Converter (TWC) temperature, which may cause damage to the TWC. To prevent these increases in emissions and to limit the possibility of thermal damage, the ECM monitors the misfire rate. When the temperature of the TWC reaches the point of thermal degradation, the ECM blinks the MIL. To monitor misfires, the ECM uses both the Camshaft Position (CMP) sensor and the Crankshaft Position (CKP) sensor. The CMP sensor is used to identify any misfiring cylinders and the CKP sensor is used to measure variations in the crankshaft rotation speed. Misfires are counted as when the crankshaft rotation speed variations exceed predetermined thresholds. </ptxt>
+<ptxt>If the misfire rate exceeds the threshold level, and could cause emission deterioration, the ECM illuminates the MIL and sets a DTC.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0300</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Simultaneous misfiring of several cylinders detected</ptxt>
+<ptxt>(2 trip detection logic)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in engine wire harness</ptxt>
+</item>
+<item>
+<ptxt>Connector connection</ptxt>
+</item>
+<item>
+<ptxt>Vacuum hose connections</ptxt>
+</item>
+<item>
+<ptxt>Ignition system</ptxt>
+</item>
+<item>
+<ptxt>Injector</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Mass Air Flow (MAF) meter</ptxt>
+</item>
+<item>
+<ptxt>Engine Coolant Temperature (ECT) sensor</ptxt>
+</item>
+<item>
+<ptxt>Compression pressure</ptxt>
+</item>
+<item>
+<ptxt>Valve clearance</ptxt>
+</item>
+<item>
+<ptxt>Valve timing</ptxt>
+</item>
+<item>
+<ptxt>PCV valve and hose</ptxt>
+</item>
+<item>
+<ptxt>PCV hose connections</ptxt>
+</item>
+<item>
+<ptxt>Air induction system</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0301</ptxt>
+<ptxt>P0302</ptxt>
+<ptxt>P0303</ptxt>
+<ptxt>P0304</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Misfiring of specific cylinder detected</ptxt>
+<ptxt>(2 trip detection logic)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>When DTCs for misfiring cylinders are randomly set, but DTC P0300 is not set, it indicates that misfires have been detected in different cylinders at different times. DTC P0300 is only set when several misfiring cylinders are detected at the same time.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_02" type-id="64" category="03" proc-id="RM0250U___00007FE00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM illuminates the MIL and sets a DTC when either of the following conditions, which could cause emission deterioration, is detected (2 trip detection logic).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Within the first 1,000 crankshaft revolutions of the engine starting, an excessive misfiring rate (approximately 20 to 50 misfires per 1,000 crankshaft revolutions) occurs once.</ptxt>
+</item>
+<item>
+<ptxt>After the first 1,000 crankshaft revolutions, an excessive misfiring rate (approximately 20 to 50 misfires per 1,000 crankshaft revolutions) occurs 4 times in sequential crankshaft revolutions.</ptxt>
+</item>
+</list1>
+<ptxt>The ECM flashes the MIL and sets a DTC when either of the following conditions, which could cause Three-Way Catalytic Converter (TWC) damage, is detected (2 trip detection logic).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>In every 200 crankshaft revolutions at a high engine rpm, the threshold misfiring percentage is recorded once.</ptxt>
+</item>
+<item>
+<ptxt>In every 200 crankshaft revolutions at a normal engine rpm, the threshold misfiring percentage is recorded 3 times.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_03" type-id="65" category="03" proc-id="RM0250U___00007FF00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0300: Multiple cylinder misfire</ptxt>
+<ptxt>P0301: Cylinder 1 misfire</ptxt>
+<ptxt>P0302: Cylinder 2 misfire</ptxt>
+<ptxt>P0303: Cylinder 3 misfire</ptxt>
+<ptxt>P0304: Cylinder 4 misfire</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor and camshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature and intake air temperature sensors and mass air flow meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1,000 crankshaft revolutions: Emission related misfire</ptxt>
+<ptxt>200 crankshaft revolutions: Catalyst damaged misfire</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles: Emission related misfire</ptxt>
+<ptxt>MIL flashes immediately: Catalyst damaged misfire</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_04" type-id="66" category="03" proc-id="RM0250U___00007FG00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Misfire:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0100 - P0103 (MAF meter)</ptxt>
+<ptxt>P0110 - P0113 (IAT sensor)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0120 - P0223, P2135 (TP sensor)</ptxt>
+<ptxt>P0125 (Insufficient ECT for Closed Loop)</ptxt>
+<ptxt>P0327, P0328 (Knock sensor)</ptxt>
+<ptxt>P0335 (CKP sensor)</ptxt>
+<ptxt>P0340 (CMP sensor)</ptxt>
+<ptxt>P0500 (VSS)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVT system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not operated by scan tool</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>400 to 6,400 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions (a) or (b) is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) ECT at engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than -7°C (19°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) ECT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fuel cut</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Monitor period of emission-related-misfire:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>First 1,000 revolutions after engine start, or Check Mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft 1,000 revolutions</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except above</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft 1,000 revolutions x 4</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Monitor period of catalyst-damaged-misfire (MIL blinks):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All of the following conditions 1, 2 and 3 are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft 200 revolutions</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Driving cycles</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Check mode</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3. Engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 2,600 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except above (MIL blinks immediately)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft 200 revolutions x 3</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_05" type-id="67" category="03" proc-id="RM0250U___00007FH00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>Monitor period of emission-related-misfire:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Misfire rate</ptxt>
+</entry>
+<entry>
+<ptxt>PZEV: 1.33 % or more</ptxt>
+<ptxt>Except PZEV: 1.266 % or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Monitor period of catalyst-damaged-misfire (MIL blinks):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Number of misfire per 200 revolutions</ptxt>
+</entry>
+<entry>
+<ptxt>PZEV: 82 or more (varies with intake air amount and RPM)</ptxt>
+<ptxt>Except PZEV: 118 or more (varies with intake air amount and RPM)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_06" type-id="68" category="03" proc-id="RM0250U___00007FI00000">
+<name>MONITOR RESULT</name>
+<content5 releasenbr="1">
+<ptxt>Refer to CHECKING MONITOR STATUS (See page <xref label="Seep01" href="RM000000PDR010X"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_07" type-id="32" category="03" proc-id="RM0250U___00007FJ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Wiring diagram of the ignition system.</ptxt>
+<figure>
+<graphic graphicname="A136157E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<ptxt>Wiring diagram of the injector circuit.</ptxt>
+<figure>
+<graphic graphicname="A134997E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_08" type-id="73" category="03" proc-id="RM0250U___00007FK00000">
+<name>CONFIRMATION DRIVING PATTERN</name>
+<content5 releasenbr="1">
+<list1 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</item>
+<item>
+<ptxt>Turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Record the DTC(s) and freeze frame data.</ptxt>
+</item>
+<item>
+<ptxt>Using the tester, switch the ECM from normal mode to check mode (See page <xref label="Seep01" href="RM000000PDL01QX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Read the misfire counts of each cylinder (CYL #1 to #4) with the engine in an idling condition. If any misfire count is displayed, skip the following confirmation driving pattern.</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle several times with the conditions, such as engine rpm and engine load, shown in MISFIRE RPM and MISFIRE LOAD in the DATA LIST.</ptxt>
+<atten4>
+<ptxt>In order to store misfire DTCs, it is necessary to drive the vehicle for the period of time shown in the table below, with the MISFIRE RPM and MISFIRE LOAD in the DATA LIST.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.5 minutes or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1,000</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 minutes or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2,000</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.5 minutes or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3,000</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 minute or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</item>
+<item>
+<ptxt>Check whether misfires have occurred by checking for DTCs and freeze frame data. </ptxt>
+<atten4>
+<ptxt>Do not turn the ignition switch off until the stored DTC(s) and freeze frame data have been recorded. When the ECM returns to normal mode (default), the stored DTC(s), freeze frame data and other data will be erased.</ptxt>
+</atten4>
+</item>
+<item>
+<ptxt>Record the DTC(s), freeze frame data and misfire counts.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch off and wait for at least 5 seconds.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_09" type-id="51" category="05" proc-id="RM0250U___00007FL00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If any DTCs other than misfire DTCs are output, troubleshoot those DTCs first.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</item>
+<item>
+<ptxt>If the misfire does not recur when the vehicle is brought to the workshop, reproduce the conditions stored in the freeze frame data.</ptxt>
+</item>
+<item>
+<ptxt>If the misfire still cannot be reproduced even though the conditions stored in the freeze frame data have been duplicated, one of the following factors is considered to be a possible cause of the problem:</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>The fuel level is low.</ptxt>
+</item>
+<item>
+<ptxt>Improper fuel is used.</ptxt>
+</item>
+<item>
+<ptxt>The spark plugs are dirty.</ptxt>
+</item>
+<item>
+<ptxt>The problem is complex due to multiple factors.</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>After finishing repairs, check that no misfires occur in each cylinder (CYL #1, #2, #3 and #4).</ptxt>
+</item>
+<item>
+<ptxt>Be sure to confirm that no misfiring cylinder DTCs are set again by conducting the confirmation driving pattern, after the repairs.</ptxt>
+</item>
+<item>
+<ptxt>For 6 and 8 cylinder engines, the ECM intentionally does not set the specific misfiring cylinder DTCs at a high engine RPM. If misfires only occur during high engine RPM driving, only DTC P0300 is set.</ptxt>
+<ptxt>In the event of DTC P0300 being present, perform the following operations:</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Start the engine and conduct the confirmation driving pattern.</ptxt>
+</item>
+<item>
+<ptxt>Read the misfiring rates of each cylinder or DTC(s) using the tester.</ptxt>
+</item>
+<item>
+<ptxt>Repair the cylinder(s) that has a high misfiring rate or is indicated by the DTC.</ptxt>
+</item>
+<item>
+<ptxt>After finishing repairs, conduct the confirmation driving pattern again, in order to verify that DTC P0300 is not set.</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>When either SHORT FT #1 or LONG FT #1 in the freeze frame data is outside the range of +-20 %, the air-fuel ratio may be rich (-20 % or less) or lean (+20 % or more).</ptxt>
+</item>
+<item>
+<ptxt>When the COOLANT TEMP in the freeze frame data is less than 75°C (167°F), the misfires occurred only while warming up the engine.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XH301HX_11" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XH301HX_11_0001" proc-id="RM0250U___00007FM00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO MISFIRE DTCS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to </ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0300, P0301, P0302, P0303 and/or P0304</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0300, P0301, P0302, P0303 and/or P0304 and other DTCs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<atten4>
+<ptxt>If any DTCs other than P0300, P0301, P0302, P0303 and P0304 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0002" fin="false">A</down>
+<right ref="RM000000XH301HX_11_0008" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0002" proc-id="RM0250U___00007FN00000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (MISFIRE RPM AND MISFIRE LOAD)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / MISFIRE / MISFIRE RPM and MISFIRE LOAD.</ptxt>
+</test1>
+<test1>
+<ptxt>Read and note the MISFIRE RPM and MISFIRE LOAD (engine load) values.</ptxt>
+<atten4>
+<ptxt>The MISFIRE RPM and MISFIRE LOAD indicate the vehicle conditions under which the misfire occurred.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0003" proc-id="RM0250U___00007FO00000">
+<testtitle>CHECK PCV HOSE CONNECTIONS</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>PCV hose is connected correctly and is not damaged.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0004" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0004" proc-id="RM0250U___00007FP00000">
+<testtitle>CHECK MISFIRE COUNT (CYL #1, #2, #3 AND #4)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / MISFIRE / CYL #1, #2, #3 and #4.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Read each value for CYL #1 to #4 displayed on the tester. If no misfire counts occur in any cylinders, perform the following procedures:</ptxt>
+<test2>
+<ptxt>Shift the gear selector lever to the D position.</ptxt>
+</test2>
+<test2>
+<ptxt>Check the CYL #1 to #4.</ptxt>
+</test2>
+<test2>
+<ptxt>If misfire counts are still not displayed, perform steps (h) and (i) and then check the misfire counts again.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Drive the vehicle with the MISFIRE RPM and MISFIRE LOAD noted in the "READ VALUE USING INTELLIGENT TESTER (MISFIRE RPM AND MISFIRE LOAD)" procedures above.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the CYL #1 to #4 or DTCs displayed on the tester.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Misfire Count</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to </ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Most misfires occur in only 1 or 2 cylinders</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>3 cylinders or more have equal misfire counts</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If it is difficult to reproduce misfires for each cylinder, check the DATA LIST item called MISFIRE MARGIN. Try to find vehicle driving conditions that lower the MISFIRE MARGIN value. Values above 30 % are considered normal.</ptxt>
+</item>
+<item>
+<ptxt>If the freeze frame data's record of the ECT is below 75°C (167°F), the misfire may be detected only when the engine is cold.</ptxt>
+</item>
+<item>
+<ptxt>If the freeze frame data's record of the ENGINE RUN TIME is below 120 seconds, the misfire may be detected immediately after the engine is started.</ptxt>
+</item>
+</list1>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0037" fin="false">A</down>
+<right ref="RM000000XH301HX_11_0017" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0037" proc-id="RM0250U___00007FZ00000">
+<testtitle>PERFORM ACTIVE TEST USING INTELLIGENT TESTER (FUEL CUT #1 TO #4)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Allow the engine to idle.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / FUEL CUT#1 (to #4).</ptxt>
+</test1>
+<test1>
+<ptxt>If a cylinder has a high misfire count, cut fuel to that cylinder. Compare the misfire count of the cylinder before fuel cut and after fuel cut.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.96in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Misfire Count in Each Cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Misfire count of cylinder before fuel cut and after fuel cut roughly same</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Misfire count of cylinder before fuel cut lower than after fuel cut</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>This ACTIVE TEST cannot be performed while the vehicle is being driven.</ptxt>
+</atten3>
+<atten4>
+<ptxt>If the misfire count of the cylinder before and after the fuel cut are roughly the same, the cylinder is misfiring.</ptxt>
+<ptxt>If the misfire count of the cylinder before the fuel cut is lower than after the fuel cut, the cylinder misfires sometimes.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0005" fin="false">A</down>
+<right ref="RM000000XH301HX_11_0033" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0005" proc-id="RM0250U___00007FQ00000">
+<testtitle>CHECK SPARK PLUG</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ignition coil and the spark plug of the misfiring cylinder.</ptxt>
+<figure>
+<graphic graphicname="A088861E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the spark plug electrode gap.</ptxt>
+<spec>
+<title>Standard gap</title>
+<specitem>
+<ptxt>1.0 to 1.1 mm (0.039 to 0.043 in.)</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Check the electrode for carbon deposits.</ptxt>
+<table>
+<title>Recommended spark plug:</title>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Manufacturers</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Products</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DENSO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SK20R11</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NGK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IFR6A11</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If the electrode gap is larger than standard, replace the spark plug. Do not adjust the electrode gap.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0006" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0006" proc-id="RM0250U___00007FC00000">
+<testtitle>CHECK FOR SPARKS AND IGNITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform a spark test.</ptxt>
+<figure>
+<graphic graphicname="A124396" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten2>
+<ptxt>All ways disconnect all fuel injector connectors.</ptxt>
+</atten2>
+<atten3>
+<ptxt>Do not crank the engine for more than 2 seconds.</ptxt>
+</atten3>
+<test2>
+<ptxt>Remove the ignition coil from the cylinder head.</ptxt>
+</test2>
+<test2>
+<ptxt>Install the spark plug onto the ignition coil.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the 4 fuel injector connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Attach the spark plug assembly to the cylinder head.</ptxt>
+</test2>
+<test2>
+<ptxt>Crank the engine for less than 2 seconds and check for sparks.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sparks jump across electrode gap.</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the 4 fuel injector connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Install the ignition coil.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0007" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0012" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0007" proc-id="RM0250U___00007FR00000">
+<testtitle>CHECK CYLINDER COMPRESSION PRESSURE OF MISFIRING CYLINDER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the cylinder compression pressure of the misfiring cylinder (See page <xref label="Seep01" href="RM000000YHZ001X_01_0008"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0011" fin="true">NG</down>
+<right ref="RM000000XH301HX_11_0032" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0012" proc-id="RM0250U___00007FS00000">
+<testtitle>CHANGE NORMAL SPARK PLUG AND CHECK FOR SPARKS OF MISFIRING CYLINDER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Change the installed spark plug with a spark plug that functions normally.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform a spark test.</ptxt>
+<atten2>
+<ptxt>Always disconnect all fuel injector connectors.</ptxt>
+</atten2>
+<atten3>
+<ptxt>Do not crank the engine for more than 2 seconds.</ptxt>
+</atten3>
+<test2>
+<ptxt>Install the spark plug onto the ignition coil.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the 4 fuel injector connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Attach the spark plug assembly to the cylinder head.</ptxt>
+</test2>
+<test2>
+<ptxt>Crank the engine for less than 2 seconds and check for sparks.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sparks jump across electrode gap.</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the 4 fuel injector connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Install the ignition coil.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0014" fin="true">OK</down>
+<right ref="RM000000XH301HX_11_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0032" proc-id="RM0250U___00007FW00000">
+<testtitle>INSPECT ECM TERMINAL OF MISFIRING CYLINDER (#10, #20, #30, AND /OR #40 VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A107892E64" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the ECM connector.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-108 (#10) - C24-45 (E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-107 (#20) - C24-45 (E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-106 (#30) - C24-45 (E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C24-105 (#40) - C24-45 (E01)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0033" fin="false">NG</down>
+<right ref="RM000000XH301HX_11_0015" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0033" proc-id="RM0250U___00007FX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (INJECTOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C7 to C10 injector connectors (of the misfiring cylinder).</ptxt>
+<figure>
+<graphic graphicname="A106388E06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance and voltage between the injector and the ECM connector terminals.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C7-1 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C9-1 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C8-1 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>No. 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C10-1 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>No. 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C7-2 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C7-2 - C24-108 (#10)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>No. 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C9-2 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C9-2 - C24-107 (#20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>No. 3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C8-2 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C8-2 - C24-106 (#30)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>No. 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C10-2 - Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C10-2 - C24-105 (#40)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the injector connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0015" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0034" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0015" proc-id="RM0250U___00007FT00000">
+<testtitle>CHECK FUEL INJECTOR OF MISFIRING CYLINDER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the injector injection (whether fuel volume is high or low, and whether injection pattern is poor).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0016" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0016">
+<testtitle>CHECK VALVE CLEARANCE OF MISFIRING CYLINDER</testtitle>
+<res>
+<down ref="RM000000XH301HX_11_0017" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0035" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0017" proc-id="RM0250U___00007FU00000">
+<testtitle>CHECK AIR INDUCTION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the air induction system for vacuum leakage.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No leakage from air induction system.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0036" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0036" proc-id="RM0250U___000079V00000">
+<testtitle>CHECK VALVE TIMING
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the cylinder head cover.</ptxt>
+<figure>
+<graphic graphicname="A098172E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the crankshaft pulley, and align its groove with the timing mark "0" on the timing chain cover.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the timing marks on the camshaft timing sprocket and camshaft timing gear are facing upward as shown in the illustration.</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>If not, turn the crankshaft 1 revolution (360°), then align the marks as above.</ptxt>
+</item>
+</list1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Timing marks on camshaft timing gears are aligned as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the cylinder head cover.</ptxt>
+</test1>
+</content6><res>
+<down ref="RM000000XH301HX_11_0019" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0019" proc-id="RM0250U___00007FV00000">
+<testtitle>CHECK FUEL PRESSURE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the fuel pressure (See page <xref label="Seep01" href="RM000000YCR002X_01_0002"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH301HX_11_0038" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0027" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0038" proc-id="RM0250U___00007F300000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (COOLANT TEMP)
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / COOLANT TEMP.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the COOLANT TEMP twice, when the engine is both cold and warmed up.</ptxt>
+<spec>
+<title>Standard</title>
+<subtitle>With cold engine</subtitle>
+<specitem>
+<ptxt>Same as ambient air temperature.</ptxt>
+</specitem>
+<subtitle>With warm engine</subtitle>
+<specitem>
+<ptxt>Between 75°C and 100°C (167°F and 212°F).</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6><res>
+<down ref="RM000000XH301HX_11_0039" fin="false">OK</down>
+<right ref="RM000000XH301HX_11_0029" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0039" proc-id="RM0250U___00007F400000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (MAF)
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / PRIMARY / MAF and COOLANT TEMP.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle until the COOLANT TEMP reaches 75°C (167°F) or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the MAF with the engine in an idling condition and at an engine speed of 2,500 rpm.</ptxt>
+<spec>
+<title>Standard</title>
+<subtitle>MAF while engine idling</subtitle>
+<specitem>
+<ptxt>Between 1 g/sec. and 3 g/sec. (shift position: N, A/C: OFF).</ptxt>
+</specitem>
+<subtitle>MAF at an engine speed of 2,500 rpm</subtitle>
+<specitem>
+<ptxt>Between 2 g/sec. and 6 g/sec. (shift position: N, A/C: OFF).</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6><res>
+<down ref="RM000000XH301HX_11_0031" fin="true">OK</down>
+<right ref="RM000000XH301HX_11_0030" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0008">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0009">
+<testtitle>REPAIR OR REPLACE PCV HOSE</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0010">
+<testtitle>REPLACE SPARK PLUG</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0011">
+<testtitle>CHECK ENGINE TO DETERMINE CAUSE OF LOW COMPRESSION</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0013">
+<testtitle>REPLACE IGNITION COIL ASSEMBLY THEN CONFIRM THAT THERE IS NO MISFIRE</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0014">
+<testtitle>REPLACE SPARK PLUG</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0034">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0023">
+<testtitle>REPLACE FUEL INJECTOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0035">
+<testtitle>ADJUST VALVE CLEARANCE</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0025">
+<testtitle>REPAIR OR REPLACE AIR INDUCTION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0026">
+<testtitle>ADJUST VALVE TIMING</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0027">
+<testtitle>CHECK AND REPLACE FUEL PUMP, PRESSURE REGULATOR, FUEL PIPE LINE AND FILTER</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0029">
+<testtitle>REPLACE ENGINE COOLANT TEMPERATURE SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0030">
+<testtitle>REPLACE MASS AIR FLOW METER</testtitle>
+</testgrp>
+<testgrp id="RM000000XH301HX_11_0031">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

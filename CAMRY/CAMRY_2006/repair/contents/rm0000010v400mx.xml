@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM0000010V400MX" category="U" type-id="3001G" name-id="RS0B5-22" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000010V400MX_z0" proc-id="RM0250U___0000AA000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>OCCUPANT CLASSIFICATION ECU (for Power seat)</ptxt>
+<figure>
+<graphic graphicname="H043128E06" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specification</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-1 (+B) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-2 (DIA) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnosis (DLC3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-4 (FSR-) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center airbag sensor assembly communication line (-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-5 (BGND) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side buckle switch ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-7 (IG) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (ECU-B Fuse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-8 (FSR+) - T10-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Y</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center airbag sensor assembly communication line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-9 (BSW) - T10-5 (BGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - GR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side buckle switch line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-1 (SGD1) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor LH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-2 (SGD2) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor RH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-3 (SGD3) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor LH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-4 (SGD4) - T10-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor RH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-5 (SVC3) - T11-3 (SGD3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor LH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-6 (SVC4) - T11-4 (SGD4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor RH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-7 (SIG1) - T11-1 (SGD1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor LH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-8 (SIG2) - T11-2 (SGD2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor RH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-9 (SIG3) - T11-3 (SGD3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor LH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-10 (SIG4) - T11-4 (SGD4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor RH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-11 (SVC1) - T11-1 (SGD1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor LH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T11-12 (SVC2) - T11-2 (SGD2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor RH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>OCCUPANT CLASSIFICATION ECU (for Manual seat)</ptxt>
+<figure>
+<graphic graphicname="C110373E12" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.20in"/>
+<colspec colname="COL4" colwidth="1.64in"/>
+<colspec colname="COL5" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specification</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-1 (+B) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-2 (DIA) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis (DLC3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-4 (FSR-) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center airbag sensor assembly communication line (-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-5 (BGND) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side buckle switch ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-7 (IG) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (ECU-B Fuse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-8 (FSR+) - O4-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Center airbag sensor assembly communication line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-9 (BSW) - O4-5 (BGND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - GR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side buckle switch line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-1 (SGD1) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor LH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-2 (SGD2) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor RH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-3 (SGD3) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor LH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-4 (SGD4) - O4-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor RH ground line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-5 (SVC3) - d1-3 (SGD3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor LH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-6 (SVC4) - d1-4 (SGD4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor RH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-7 (SIG1) - d1-1 (SGD1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SB - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor LH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-8 (SIG2) - d1-2 (SGD2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor RH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-9 (SIG3) - d1-3 (SGD3)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor LH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-10 (SIG4) - d1-4 (SGD4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear occupant classification sensor RH signal line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to rear occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-11 (SVC1) - d1-1 (SGD1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor LH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor LH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>d1-12 (SVC2) - d1-2 (SGD2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front occupant classification sensor RH power supply line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), a load is applied to front occupant classification sensor RH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_730O6_T00F9" variety="T00F9">
+<name>THEFT DETERRENT SYSTEM (w/ Smart Key System)</name>
+<para id="RM0000010JG00AX" category="D" type-id="303FN" name-id="TD010-15" from="200601">
+<name>CUSTOMIZE PARAMETERS</name>
+<subpara id="RM0000010JG00AX_z0" proc-id="RM0250U___0000CIV00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>The following items can be customized.</ptxt>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>After confirming whether the items requested by the customer are applicable or not for customization, perform customizing operations.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to record the current settings before customization.</ptxt>
+</item>
+<item>
+<ptxt>When troubleshooting, make sure that the item in question is not set to "OFF" as a result of customization (Example: For the system, "the wireless function does not operate", first check that the wireless function is not set to "OFF", then perform troubleshooting).</ptxt>
+</item>
+</list1>
+</atten3>
+<step1>
+<ptxt>CUSTOMIZE</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: CUSTOMIZE / INDIVIDUAL CHANGE / SECURITY.</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<title>THEFT DETERRENT SYSTEM</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DISPLAY (ITEM)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DEFAULT</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CONTENTS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SETTING</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PASSIVE MODE</ptxt>
+<ptxt>(Passive Arming Mode)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>PASSIVE MODE is a function that switches theft deterrent system from arming preparation state to armed state 30 seconds after key is not in the actuation area and all doors, engine hood and luggage compartment door are closed, even if doors are not locked by wireless or door key lock operation</ptxt>
+</item>
+<item>
+<ptxt>In PASSIVE MODE, if you do not perform following operations within 14 seconds after door is opened during armed state, theft deterrent system will judge that condition as a theft and switch to alarm sounding state</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Unlock any door by key or wireless operation</ptxt>
+</item>
+<item>
+<ptxt>Turn the engine switch on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Open luggage compartment door by key or wireless operation</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WARN BY HORN</ptxt>
+<ptxt>(Warning by horn)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that makes vehicle horn and theft deterrent horn be able to be used as a warning device</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENTRY DELAY</ptxt>
+<ptxt>(Entry delay time)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>14 s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Function that changes entry delay time (time before warning starts) for PASSIVE MODE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 s/14 s/30 s</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

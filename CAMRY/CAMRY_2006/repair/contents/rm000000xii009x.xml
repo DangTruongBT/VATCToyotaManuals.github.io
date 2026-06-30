@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XII009X" category="C" type-id="300EZ" name-id="BC1N9-01" from="200601">
+<dtccode>C1201/51</dtccode>
+<dtcname>Engine Control System Malfunction</dtcname>
+<subpara id="RM000000XII009X_01" type-id="60" category="03" proc-id="RM0250U___00005O900000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If a malfunction in the engine control system is detected, the operations of VSC and TRAC are prohibited by the fail safe function. When the signals from the engine are input normally, the fail safe is cancelled and the DTC is not stored.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1201/51</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine control system malfunction signal continues for 5 seconds.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine control system</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XII009X_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000XII009X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XII009X_03_0002" proc-id="RM0250U___00005OB00000">
+<testtitle>CHECK ENGINE CONTROL SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the engine control system DTC is output (See page <xref label="Seep01" href="RM000000PDK01HX"/> for 2GR-FE, or <xref label="Seep02" href="RM000000PDK01MX"/> for 2AZ-FE).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XII009X_03_0006" fin="true">A</down>
+<right ref="RM000000XII009X_03_0007" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XII009X_03_0006">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000XII009X_03_0007">
+<testtitle>INSPECT ENGINE CONTROL SYSTEM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

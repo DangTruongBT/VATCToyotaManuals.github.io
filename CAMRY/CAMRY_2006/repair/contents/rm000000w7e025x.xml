@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7E025X" category="U" type-id="303FJ" name-id="AT039-70" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000W7E025X_z0" proc-id="RM0250U___000063D00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>According to the DATA LIST displayed by the intelligent tester, you can read the value of the switch, sensor, actuator and so on without parts removal. Reading the DATA LIST as the first step of troubleshooting is one method to shorten labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether a part is faulty or not.</ptxt>
+</atten3>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch to the on position.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the item "DIAGNOSIS / OBD/MOBD / ENGINE AND ECT / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, read the "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.77in"/>
+<colspec colname="COL2" align="center" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>STOP LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake Pedal is depressed: ON</ptxt>
+</item>
+<item>
+<ptxt>Brake Pedal is released: OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PNP SW [NSW]</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P and N: ON</ptxt>
+<ptxt>Except P and N: OFF</ptxt>
+</entry>
+<entry>
+<ptxt>When the shift lever position displayed on the Intelligent tester differs from the actual position, adjustment of the PNP switch or the shift cable may be incorrect.</ptxt>
+<atten4>
+<ptxt>When the failure still occurs even after adjusting these parts, See page <xref label="Seep01" href="RM000000W8401ZX"/>.</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>REVERSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>R: ON</ptxt>
+<ptxt>Except R: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARKING</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P: ON</ptxt>
+<ptxt>Except P: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NEUTRAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>N: ON</ptxt>
+<ptxt>Except N: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DRIVE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP switch Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>D and 4 : ON</ptxt>
+<ptxt>Except D and 4: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4TH/DRIVE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP SW Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>4 : ON</ptxt>
+<ptxt>Except 4: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3RD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP SW Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>3 : ON</ptxt>
+<ptxt>Except 3: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2ND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP SW Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>2 and L : ON</ptxt>
+<ptxt>Except 2 and L: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>PNP SW Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>L : ON</ptxt>
+<ptxt>Except L: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SHIFT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual Gear Position/</ptxt>
+<ptxt>1st, 2nd, 3rd, 4th or 5th (O/D)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift Lever Position is;</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>L: 1st</ptxt>
+</item>
+<item>
+<ptxt>2: 1st or 2nd</ptxt>
+</item>
+<item>
+<ptxt>3: 1st, 2nd or 3rd</ptxt>
+</item>
+<item>
+<ptxt>4: 1st, 2nd, 3rd or 4th</ptxt>
+</item>
+<item>
+<ptxt>D (O/D ON): 1st, 2nd, 3rd, 4th or 5th</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock Up Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Lock Up: ON</ptxt>
+</item>
+<item>
+<ptxt>Except Lock Up: OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP SOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock Up Solenoid Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Lock Up Solenoid ON: ON</ptxt>
+</item>
+<item>
+<ptxt>Lock Up Solenoid OFF: OFF</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SLT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift Solenoid SLT Status/</ptxt>
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Accelerator pedal is depressed: OFF</ptxt>
+</item>
+<item>
+<ptxt>Accelerator pedal is released: ON</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AT OIL TEMP1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF Temp. Sensor Value/</ptxt>
+<ptxt>min.: -40°C (-40°F)</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>After Stall Test;</ptxt>
+<ptxt>Approx. 80°C (176°F)</ptxt>
+</item>
+<item>
+<ptxt>Equal to ambient temperature when cold soak</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>If the value is "-40°C (-40°F)" or "215°C (419°F)", ATF temp. sensor circuit is opened or shorted.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (NC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Counter Gear Speed/</ptxt>
+<ptxt>display: 50 r/min</ptxt>
+</entry>
+<entry valign="middle">
+<atten4>
+<ptxt>3rd when shift lever position is D position (After warming up the engine); </ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Intermediate shaft speed (NC) becomes close to the engine speed.</ptxt>
+</item>
+</list1>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (NT)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Input Turbine Speed/</ptxt>
+<ptxt>display: 50 r/min</ptxt>
+</entry>
+<entry valign="middle">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Lock-up ON (After warming up the engine):</ptxt>
+<ptxt>Input Turbine speed (NT) equal to the engine speed.</ptxt>
+</item>
+<item>
+<ptxt>Lock-up OFF (Idling at N position):</ptxt>
+<ptxt>Input Turbine speed (NT) nearly equal to the engine speed.</ptxt>
+</item>
+</list1>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the ACTIVE TEST using the intelligent tester allows the relay, VSV, actuator and so on to operate without parts removal. Performing the ACTIVE TEST as the first step of troubleshooting is one method to shorten labor time.</ptxt>
+<ptxt>It is possible to display the DATA LIST during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step2>
+<step2>
+<ptxt>Push the "ON" button of the intelligent tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the item "DIAGNOSIS / OBD/MOBD / ENGINE AND ECT / ACTIVE TEST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on tester, perform the "ACTIVE TEST".</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" align="left" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.30in"/>
+<colspec colname="COLSPEC0" colwidth="2.30in"/>
+<colspec colname="COL3" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SHIFT</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid valve and set the each shift position by yourself.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+<item>
+<ptxt>Less than 50 km/h (31 mph)</ptxt>
+</item>
+</list1>
+<ptxt>[Others]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Press "→" button: Shift up</ptxt>
+</item>
+<item>
+<ptxt>Press "←" button: Shift down</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>1st / 2nd / 3rd / 4th / 5th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible to check the operation of the shift solenoid valves.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOCK UP</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Control the shift solenoid DSL to set the automatic transaxle to the lock-up condition.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Speed: 60 km/h (37 mph) or more</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Possible to check the DSL operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL1)</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid SL1</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>Shift lever P or N position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL2)</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid SL2</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>Shift lever P or N position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SL3)</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid SL3</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>Shift lever P or N position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (S4)</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid S4</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>Shift lever P or N position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SR)</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid SR</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>Shift lever P or N position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (DSL)</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid DSL</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>Shift lever P or N position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SOLENOID (SLT)<sup>*</sup>
+</ptxt>
+</entry>
+<entry>
+<ptxt>[Test Details]</ptxt>
+<ptxt>Operate the shift solenoid SLT and raise the line pressure.</ptxt>
+<ptxt>[Vehicle Condition]</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle Stopped.</ptxt>
+</item>
+<item>
+<ptxt>IDL: ON</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>OFF: Line pressure up (When the active test of "SOLENOID (SLT)" is performed, the ECM commands the SLT solenoid to turn off).</ptxt>
+<ptxt>ON: No action (normal operation)</ptxt>
+</atten4>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+<sup>*</sup>: "SOLENOID (SLT)" in the ACTIVE TEST is performed to check the line pressure changes by connecting the SST to the automatic transaxle, which is used in the HYDRAULIC TEST (See page <xref label="Seep02" href="RM000000W7B023X"/>) as well.</ptxt>
+<atten4>
+<ptxt>The pressure values in ACTIVE TEST and HYDRAULIC TEST are different from each other.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

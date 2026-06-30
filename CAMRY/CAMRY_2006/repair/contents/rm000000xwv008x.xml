@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000XWV008X" category="U" type-id="303FJ" name-id="SR00R-11" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000XWV008X_z0" proc-id="RM0250U___00009ZN00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>By accessing the DATA LIST displayed on the intelligent tester, it is possible to perform such functions as reading the values of switches and sensors without removing any parts. Reading the DATA LIST is the first step in troubleshooting and is one method to save labor time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG) and turn the intelligent tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Operate the intelligent tester according to the steps on the display and select DATA LIST.</ptxt>
+<table pgwide="1">
+<title>SMART KEY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SLCK SLEEP COND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock ECU sleep condition / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Steering lock ECU sleep mode can be entered</ptxt>
+<ptxt>NO: Steering lock ECU sleep mode cannot be entered</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLCK START COND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock ECU start signal / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Steering lock ECU sent a start signal</ptxt>
+<ptxt>NO: Steering lock ECU did not send a start signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENG START COND</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine start condition / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Engine is allowed to start</ptxt>
+<ptxt>NG: Engine is not allowed to start</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SENSOR VALUE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor malfunction / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Sensor malfunction</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PWR SUPPLY SHRT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short in ECU / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Short in ECU</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PWR SUPPLY OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open in ECU / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Open in ECU</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MTR DRIVER SHRT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short in driver ECU / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Short in driver ECU</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MTR DRIVER OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open in driver ECU / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Open in driver ECU</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LCK/UNLCK REC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock command reception record / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Steering lock / unlock signal received</ptxt>
+<ptxt>NO: Steering lock / unlock signal no received</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LCK BAR STUCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock bar stuck malfunction / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Lock bar stuck malfunction</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PUSH START ERR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Push button start function malfunction / NG (PAST) or OK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NG (PAST): Malfunction in push button start</ptxt>
+<ptxt>OK: No malfunction</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG2 voltage / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: 10 to 14 V</ptxt>
+<ptxt>OFF: Below 1 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (LIN)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN bus IG status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: LIN bus IG ON status</ptxt>
+<ptxt>OFF: LIN bus IG OFF status</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock condition / Set or Unset</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Set: Steering lock is set</ptxt>
+<ptxt>Unset: Steering lock is not set</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>This status changes depending on the state of some sensors.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering unlock condition / Set or Unset</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Set: Steering unlock is set</ptxt>
+<ptxt>Unset: Steering unlock is not set</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>This status changes depending on the state of some sensors.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the ACTIVE TEST is one of the methods to save labor time. It is possible to display the DATA LIST during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG) and turn the intelligent tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Following the display on the intelligent tester, perform the ACTIVE TEST.</ptxt>
+<table pgwide="1">
+<title>BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SECURITY INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Security Indicator</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

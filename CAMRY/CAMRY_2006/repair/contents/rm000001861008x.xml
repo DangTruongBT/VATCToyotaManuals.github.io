@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72XHN_T006S" variety="T006S">
+<name>STEERING PAD SWITCH</name>
+<para id="RM000001861008X" category="G" type-id="3001K" name-id="ME03A-08" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001861008X_01" type-id="01" category="01">
+<s-1 id="RM000001861008X_01_0001" proc-id="RM0250U___0000B3C00000">
+<ptxt>INSPECT STEERING PAD SWITCH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Disconnect the steering pad switch connector.</ptxt>
+<figure>
+<graphic graphicname="E128142E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DISP - EAU</ptxt>
+</entry>
+<entry align="left">
+<ptxt>DISP switch is not pushed in.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry align="left">
+<ptxt>DISP - EAU</ptxt>
+</entry>
+<entry align="left">
+<ptxt>DISP switch is pushed in.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>This inspection is needed only for 4 spoke model steering pad switch.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the value is not as specified, replace the steering pad switch.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

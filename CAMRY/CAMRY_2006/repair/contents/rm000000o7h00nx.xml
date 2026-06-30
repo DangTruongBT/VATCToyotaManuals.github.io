@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000O7H00NX" category="L" type-id="3001A" name-id="AX0YJ-01" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000000O7H00NX_z0" proc-id="RM0250U___000033B00000">
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the following parts have been replaced, initialize the TCM and perform a road test to allow the TCM to learn (See page <xref label="Seep01" href="RM000000W7F020X"/>).</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Valve body assembly</ptxt>
+</item>
+<item>
+<ptxt>Shift solenoid SL3</ptxt>
+</item>
+<item>
+<ptxt>Shift solenoid SL4</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>If the following parts have been replaced, perform a road test to allow the TCM to learn (See page <xref label="Seep02" href="RM000000W7F020X"/>).</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Shift solenoid SL1</ptxt>
+</item>
+<item>
+<ptxt>Shift solenoid SL2</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>If the TCM or transaxle has been replaced, register the transmission compensation code in the TCM (See page <xref label="Seep03" href="RM000000TJ400BX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Perform the RESET MEMORY (AT initialization) when replacing the automatic transmission assembly, engine assembly or ECM (See page <xref label="Seep04" href="RM000000W7F020X"/>).</ptxt>
+</item>
+</list1>
+<list1 type="ordered">
+<item>
+<ptxt>The automatic transaxle is composed of highly precision-finished parts which need careful inspection before reassembly. Even a small nick could cause fluid leakage or affect transmission performance. The instructions here are organized so that you work on only one component group at a time. This will help avoid confusion caused by similar-looking parts of different sub-assemblies being on your workbench at the same time. The component groups are inspected and repaired from the converter housing side. Complete as much as possible of the inspection, repair and reassembly before proceeding to the next component group. If a defect is found in a certain component group during reassembly, inspect and repair this group immediately. If a component group cannot be assembled because some parts are being ordered, be sure to keep all parts of the group in a separate container while proceeding with disassembly, inspection, repair and reassembly of other component groups. Recommended: ATF WS</ptxt>
+</item>
+<item>
+<ptxt>All disassembled parts should be washed clean and any fluid passages and holes should be blown through with compressed air.</ptxt>
+</item>
+<item>
+<ptxt>Dry all parts with compressed air. Never use a shop rag or a piece of cloth to dry them.</ptxt>
+</item>
+<item>
+<ptxt>When using compressed air, always aim away from yourself to prevent accidentally spraying ATF or kerosene in your face.</ptxt>
+</item>
+<item>
+<ptxt>Only recommended automatic transmission fluid or kerosene should be used for cleaning.</ptxt>
+</item>
+<item>
+<ptxt>After cleaning, the parts should be arranged in the correct order for efficient inspection, repair, and reassembly.</ptxt>
+</item>
+<item>
+<ptxt>When disassembling a valve body, be sure to match each valve together with its corresponding spring.</ptxt>
+</item>
+<item>
+<ptxt>New discs for the brakes and clutches must be soaked in ATF for at least 15 minutes before reassembly.</ptxt>
+</item>
+<item>
+<ptxt>All oil seal rings, clutch discs, clutch plates, rotating parts, and sliding surfaces should be coated with ATF prior to reassembly.</ptxt>
+</item>
+<item>
+<ptxt>All gaskets, seals, and rubber O-rings should be replaced with new ones.</ptxt>
+</item>
+<item>
+<ptxt>Do not apply adhesive cements to gaskets and similar parts.</ptxt>
+</item>
+<item>
+<ptxt>Make sure that the ends of a snap ring are not aligned with one of the cutouts and that the snap ring is installed in the groove correctly.</ptxt>
+</item>
+<item>
+<ptxt>When replacing a worn bushing, the sub-assembly containing the bushing must also be replaced.</ptxt>
+</item>
+<item>
+<ptxt>Check thrust bearings and races for wear or damage. If they are damaged, replace them.</ptxt>
+</item>
+<item>
+<ptxt>When working with FIPG material, you must observe the following:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Using a razor blade and a gasket scraper, remove all the old packing (FIPG) material from the gasket surface.</ptxt>
+</item>
+<item>
+<ptxt>Thoroughly clean all components to remove any loose material.</ptxt>
+</item>
+<item>
+<ptxt>Clean both sealing surfaces with a non-residue solvent.</ptxt>
+</item>
+<item>
+<ptxt>Parts must be reassembled within 10 minutes of application. Otherwise, the packing (FIPG) material must be removed and reapplied.</ptxt>
+</item>
+</list2>
+</list1>
+</atten3>
+<step1>
+<ptxt>EXPRESSIONS OF IGNITION SWITCH</ptxt>
+<ptxt>The type of ignition switch used on this model differs according to the specifications of the vehicle.</ptxt>
+<ptxt>The expressions listed in the table below are used in this section.</ptxt>
+</step1>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Expression</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Switch Type</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition Switch (Position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Switch (Condition)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>On (IG)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (ACC)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>START</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

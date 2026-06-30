@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="1000A_S000J" variety="S000J">
+<name>2GR-FE ENGINE MECHANICAL</name>
+<ttl id="1000A_S000J_72ZGV_T00C5" variety="T00C5">
+<name>ENGINE</name>
+<para id="RM0000021ZG001X" category="G" type-id="8000T" name-id="EM0XN-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000021ZG001X_01" type-id="01" category="01">
+<s-1 id="RM0000021ZG001X_01_0006" proc-id="RM0250U___00009EF00000">
+<ptxt>INSPECT ENGINE COOLANT</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the engine coolant (See page <xref label="Seep01" href="RM000000V1Q011X"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0007" proc-id="RM0250U___00009EG00000">
+<ptxt>INSPECT ENGINE OIL</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Inspect the engine oil (See page <xref label="Seep01" href="RM000001IQG001X"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0008" proc-id="RM0250U___00009EH00000">
+<ptxt>INSPECT BATTERY</ptxt>
+<content1 releasenbr="2">
+<s2>
+<ptxt>Inspect the battery (See page <xref label="Seep01" href="RM000001AR900GX"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0009" proc-id="RM0250U___00009EI00000">
+<ptxt>INSPECT SPARK PLUGS</ptxt>
+<content1 releasenbr="2">
+<s2>
+<ptxt>Inspect the spark plugs (See page <xref label="Seep01" href="RM000001IQS001X_02_0003"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0010" proc-id="RM0250U___00009EJ00000">
+<ptxt>INSPECT AIR CLEANER FILTER ELEMENT SUB-ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the air cleaner filter element sub-assembly.</ptxt>
+</s2>
+<s2>
+<ptxt>Visually check that there is no dirt, blockage, and/or damage to the air cleaner filter element.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If there is any dirt or a blockage in the air cleaner filter element, clean it with compressed air.</ptxt>
+</item>
+<item>
+<ptxt>If any dirt or a blockage remains even after cleaning the air cleaner filter element with compressed air, replace it.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0001" proc-id="RM0250U___00006PH00000">
+<ptxt>INSPECT VALVE LASH ADJUSTER NOISE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Rev up the engine several times. Check that the engine does not emit unusual noises.</ptxt>
+<ptxt>If unusual noises occur, warm up the engine and idle it for over 30 minutes. Then repeat this procedure.</ptxt>
+<atten4>
+<ptxt>If any defects or problems are found during the inspection above, perform lash adjuster inspection (See page <xref label="Seep01" href="RM000000XCV00GX_01_0016"/>).</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0002" proc-id="RM0250U___00006PI00000">
+<ptxt>INSPECT IGNITION TIMING</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>When using the intelligent tester:</ptxt>
+<figure>
+<graphic graphicname="C110200E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Check the ignition timing.</ptxt>
+<s3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</s3>
+<s3>
+<ptxt>Enter DATA LIST mode with the intelligent tester.</ptxt>
+<spec>
+<title>Ignition timing</title>
+<specitem>
+<ptxt>8 to 12° BTDC at idle</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for help when selecting the DATA LIST.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>When not using the intelligent tester:</ptxt>
+<figure>
+<graphic graphicname="A122830E14" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Check the ignition timing.</ptxt>
+<s3>
+<ptxt>Using SST, connect terminals 13 (TC) and 4 (CG) of the DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Confirm the terminal numbers before connecting them. Connection with a wrong terminal can damage the engine.</ptxt>
+</item>
+<item>
+<ptxt>Turn off all electrical systems before connecting the terminals.</ptxt>
+</item>
+<item>
+<ptxt>Perform this inspection after the cooling fan motor is turned off.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>Remove the V-bank cover.</ptxt>
+</s3>
+<s3>
+<ptxt>Pull out the red lead wire harness.</ptxt>
+<figure>
+<graphic graphicname="A129620E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Connect the tester terminal of the timing light to the red lead wire as shown in the illustration.</ptxt>
+<atten3>
+<ptxt>Use a timing light which can detect the first signal.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Check the ignition timing at idle.</ptxt>
+<spec>
+<title>Ignition timing</title>
+<specitem>
+<ptxt>8 to 12° BTDC at idle</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>When checking the ignition timing, the transmission should be in neutral.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Run the engine at 1,000 to 1,300 rpm for 5 seconds, and then check that the engine rpm returns to idle speed.</ptxt>
+</atten4>
+</s3>
+<s3>
+<ptxt>Disconnect terminals 13 (TC) and 4 (CG) of the DLC3.</ptxt>
+</s3>
+<s3>
+<ptxt>Check the ignition timing at idle.</ptxt>
+<spec>
+<title>Ignition timing</title>
+<specitem>
+<ptxt>12 to 22° BTDC at idle</ptxt>
+</specitem>
+</spec>
+</s3>
+<s3>
+<ptxt>Confirm that the ignition timing moves to the advanced angle side when the engine rpm is increased.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the timing light.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0003" proc-id="RM0250U___00006PJ00000">
+<ptxt>INSPECT ENGINE IDLE SPEED</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Warm up the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>When using the intelligent tester:</ptxt>
+<figure>
+<graphic graphicname="C110200E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Check the idle speed.</ptxt>
+<s3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</s3>
+<s3>
+<ptxt>Enter DATA LIST mode with the intelligent tester.</ptxt>
+<spec>
+<title>Idle speed</title>
+<specitem>
+<ptxt>600 to 700 rpm</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When checking the idle speed, the transmission should be in neutral.</ptxt>
+</item>
+<item>
+<ptxt>Check the idle speed with the cooling fan off.</ptxt>
+</item>
+<item>
+<ptxt>Switch off all accessories and air conditioning before connecting the intelligent tester.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>When not using the intelligent tester:</ptxt>
+<figure>
+<graphic graphicname="A122830E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>Check the idle speed.</ptxt>
+<s3>
+<ptxt>Using SST, connect the tachometer test probe to terminal 9 (TAC) of the DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18030</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Check the idle speed.</ptxt>
+<spec>
+<title>Idle speed</title>
+<specitem>
+<ptxt>600 to 700 rpm</ptxt>
+</specitem>
+</spec>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0004" proc-id="RM0250U___00006PK00000">
+<ptxt>INSPECT COMPRESSION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Warm up and stop the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the injector connectors.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the intake air surge tank (See page <xref label="Seep01" href="RM000001IR3001X"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the 6 ignition coils.</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the 6 spark plugs.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the cylinder compression pressure.</ptxt>
+<figure>
+<graphic graphicname="A129621" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Insert a compression gauge into the spark plug hole.</ptxt>
+</s3>
+<s3>
+<ptxt>While cranking the engine, measure the compression pressure.</ptxt>
+<spec>
+<title>Compression pressure</title>
+<specitem>
+<ptxt>1.4 MPa (14 kgf/cm<sup>2</sup>, 199 psi)</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Minimum pressure</title>
+<specitem>
+<ptxt>0.98 MPa (10 kgf/cm<sup>2</sup>, 142 psi)</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Difference between each cylinder</title>
+<specitem>
+<ptxt>0.1 MPa (1.0 kgf/cm<sup>2</sup>, 15 psi)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Always use a fully charged battery to obtain an engine speed of 250 rpm or more.</ptxt>
+</item>
+<item>
+<ptxt>Check the other cylinders' compression pressure in the same way.</ptxt>
+</item>
+<item>
+<ptxt>This measurement must be done as quickly as possible.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+<s3>
+<ptxt>If the cylinder compression is low, pour a small amount of engine oil into the cylinder through the spark plug hole and inspect again.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If adding oil increases the compression, the piston rings and/or cylinder bore may be worn or damaged.</ptxt>
+</item>
+<item>
+<ptxt>If pressure stays low, a valve may be stuck or seated improperly, or there may be leakage in the gasket.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Install the 6 spark plugs.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>18</t-value1>
+<t-value2>184</t-value2>
+<t-value4>13</t-value4>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Install the 6 ignition coils.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>10</t-value1>
+<t-value2>102</t-value2>
+<t-value4>7</t-value4>
+</torqueitem>
+</torque>
+</s2>
+<s2>
+<ptxt>Install the intake air surge tank. (See page <xref label="Seep02" href="RM000001IR0001X"/>).</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM0000021ZG001X_01_0005" proc-id="RM0250U___00006PL00000">
+<ptxt>INSPECT CO/HC</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Start the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Run the engine at 2,500 rpm for approximately 180 seconds.</ptxt>
+</s2>
+<s2>
+<ptxt>Insert the CO/HC meter testing probe at least 40 cm (1.3 ft) into the tailpipe during idling.</ptxt>
+</s2>
+<s2>
+<ptxt>Check CO/HC concentration at idle and/or 2,500 rpm.</ptxt>
+<atten4>
+<ptxt>Check regulations and restrictions in your area when performing 2 mode CO/HC concentration testing (engine check at both idle speed and at 2,500 rpm).</ptxt>
+<ptxt>If the CO/HC concentration does not comply with regulations, perform troubleshooting in the order given below.</ptxt>
+</atten4>
+<s3>
+<ptxt>Check A/F sensor and heated oxygen sensor operation.</ptxt>
+</s3>
+<s3>
+<ptxt>See the table below for possible causes, and then inspect and repair.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="3.19in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Problems</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Causes</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>High</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rough idle</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Faulty ignitions:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Incorrect timing</ptxt>
+</item>
+<item>
+<ptxt>Fouled, shorted or improperly gapped plugs</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Incorrect valve clearance</ptxt>
+</item>
+<item>
+<ptxt>Leaks in intake and exhaust valves</ptxt>
+</item>
+<item>
+<ptxt>Leaks in cylinders</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Low</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>High</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rough idle</ptxt>
+<ptxt>(fluctuating HC reading)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Vacuum leaks:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>PCV hoses</ptxt>
+</item>
+<item>
+<ptxt>Intake manifold</ptxt>
+</item>
+<item>
+<ptxt>Throttle body</ptxt>
+</item>
+<item>
+<ptxt>Brake booster line</ptxt>
+</item>
+</list2>
+<item>
+<ptxt>Lean mixture causing misfire</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>High</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>High</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rough idle</ptxt>
+<ptxt>(black smoke from exhaust)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Restricted air filter</ptxt>
+</item>
+<item>
+<ptxt>Plugged PCV valve</ptxt>
+</item>
+<item>
+<ptxt>Faulty SFI system:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Faulty fuel pressure regulator</ptxt>
+</item>
+<item>
+<ptxt>Defective ECT sensor</ptxt>
+</item>
+<item>
+<ptxt>Defective MAF meter</ptxt>
+</item>
+<item>
+<ptxt>Faulty ECM</ptxt>
+</item>
+<item>
+<ptxt>Faulty injectors</ptxt>
+</item>
+<item>
+<ptxt>Faulty throttle position sensor</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

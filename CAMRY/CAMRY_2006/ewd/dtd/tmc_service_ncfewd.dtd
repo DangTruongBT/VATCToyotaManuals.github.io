@@ -1,0 +1,30 @@
+<!ELEMENT tmc-service-ncfewd (pub)>
+<!ELEMENT pub (term*, servcat+)>
+<!ATTLIST pub
+	no CDATA #REQUIRED
+>
+<!ELEMENT term (#PCDATA)>
+<!ATTLIST term
+	date CDATA #REQUIRED
+>
+<!ELEMENT servcat (name?, section+)>
+<!ELEMENT section (name?, title+)>
+<!ATTLIST section
+	url CDATA #IMPLIED
+>
+<!ELEMENT title (name?, para+)>
+<!ATTLIST title
+	url CDATA #IMPLIED
+>
+<!ELEMENT para (name?, system-name*, parts*)>
+<!ATTLIST para
+	url CDATA #IMPLIED
+	from CDATA #REQUIRED
+	to CDATA #IMPLIED
+>
+<!ELEMENT parts (name?)>
+<!ATTLIST parts
+	id CDATA #REQUIRED
+>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT system-name (#PCDATA)>

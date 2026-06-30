@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM0000014CZ00FX" category="D" type-id="303F4" name-id="AV0AT-13" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM0000014CZ00FX_z0" proc-id="RM0250U___00004QF00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>If the system cannot enter the diagnostic mode, inspect the AVC-LAN and all the components that connect to the AVC-LAN for short circuits and repair or replace the problem part. (See page <xref label="Seep01" href="RM0000019NG00WX"/>)</ptxt>
+</atten4>
+<step1>
+<ptxt>STARTING DIAGNOSTIC MODE</ptxt>
+<step2>
+<ptxt>Turn the ignition switch on (ACC).</ptxt>
+<figure>
+<graphic graphicname="E129786E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Turn off the audio system.</ptxt>
+</step2>
+<step2>
+<ptxt>While pressing the preset switches "1" and "6" at the same time, press the "DISC" switch 3 times.</ptxt>
+<atten4>
+<ptxt> A beep is emitted 3 times and the diagnostic function is activated. The system enters the all element illumination mode and the switch check mode.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>ALL ELEMENT ILLUMINATION MODE AND SWITCH CHECK MODE</ptxt>
+<atten4>
+<ptxt>Illumination status of all switches and operations of the panel switches can be checked.</ptxt>
+</atten4>
+<step2>
+<ptxt>Check that all elements are on.</ptxt>
+<figure>
+<graphic graphicname="E119764E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>When pressing each panel switch, check that a beep is emitted.</ptxt>
+<atten3>
+<ptxt>Pressing the "SEEK TRACK UP" switch transfers the screen to the stereo jack adapter connection check screen. Check the operation of this switch by confirming the transfer of the screen.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>STEREO JACK ADAPTER CONNECTION CHECK MODE</ptxt>
+<step2>
+<ptxt>Press the "SEEK TRACK UP" switch.</ptxt>
+<figure>
+<graphic graphicname="E119765E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check if the stereo jack adapter is recognized.</ptxt>
+<atten4>
+<ptxt>Vehicles that do not have a stereo jack adapter also have this function.</ptxt>
+</atten4>
+<atten3>
+<ptxt>This function is not to check connection information on an external device, but to check recognition information on a stereo jack adapter.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>SERVICE CHECK MODE</ptxt>
+<step2>
+<ptxt>Press the "SEEK TRACK UP" switch.</ptxt>
+<atten4>
+<ptxt>For details of the service check mode, refer to "6. CHECK DTC" and "7. DTC CLEAR/RECHECK".</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>FINISHING DIAGNOSTIC MODE</ptxt>
+<step2>
+<ptxt>Press the "DISC" switch for 2 seconds or more, or turn the ignition switch off.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK DTC</ptxt>
+<atten4>
+<ptxt>Illustrations may differ from the actual vehicle depending on the device settings and options. Therefore, some detailed areas may not be shown exactly the same as on the actual vehicle.</ptxt>
+</atten4>
+<step2>
+<ptxt>Reference:</ptxt>
+<ptxt>In the system check mode, the system check and the diagnostic memory check are performed, and the check results are displayed in ascending order of the component codes (physical address).</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.40in"/>
+<colspec colname="COL2" colwidth="4.68in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terms</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component code</ptxt>
+<ptxt>(Physical address)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Three-digit code (in hexadecimal) given to each device comprising AVC-LAN. Corresponding to its function, individual symbol is provided.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Logical address</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Two-digit code (in hexadecimal) given to each function and device unit in each device comprising AVC-LAN.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Service check result display</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="3.54in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Previous term</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Meaning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Action to be taken</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>good</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Good (normal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No DTCs are detected in both "System Check Mode" and "Diagnostic Memory Mode".</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>nCon</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The system recognized the component when it was registered, but the component gives no response to the "Diagnostic Mode ON Request".</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Check the power source circuit and the communication circuit of the component indicated by the component code (physical address).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECHn</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Exchange</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>One or more DTCs for "Exchange" are detected in either "System Check Mode" or "Diagnostic Memory Mode".</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Go to the detailed information mode to check the trouble area referring to the DTC list.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CHEC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When no DTCs are detected for "Exchange", one or more DTCs for "Check" are detected in either "System Check Mode" or "Diagnostic Memory Mode".</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Go to the detailed information mode to check the trouble area referring to the DTC list.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OLd</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Old version</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Old DTC application is identified and DTC is detected in either "System Check Mode" or "Diagnostic Memory Mode".</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>nrES</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No response</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The device gives no response to any one of "System Check Mode ON Request", "System Check Result Request", and  "Diagnostic Memory Request".</ptxt>
+</entry>
+<entry valign="middle">
+
+<ptxt>Check the power source circuit and the communication circuit of the component indicated by the component code (physical address).</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Device name and physical address</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Physical address No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Name</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>190</ptxt>
+</entry>
+<entry>
+<ptxt>Radio receiver</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>440</ptxt>
+</entry>
+<entry>
+<ptxt>Stereo component amplifier</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>19D</ptxt>
+</entry>
+<entry>
+<ptxt>"Bluetooth" handsfree module</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Service check mode</ptxt>
+<step3>
+<ptxt>Press the "SEEK TRACK" switch to see the check result of each component.</ptxt>
+</step3>
+<step3>
+<ptxt>The component code (physical address) is displayed first, and then the check result follows.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If all check results are "good", the system judges that no DTC exists.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>If the preset switch "1" is pressed in the service check mode, service check is performed again.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>This illustration is only an example and may differ in cases such as for each option part and output DTCs.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="E110920E07" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Detailed information mode 1</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>"Detailed Information Mode 1" is displayed when there is no response to "System Check Result Request" and DTC is detected only in "Diagnostic Memory Request".</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The component device code (physical address) is displayed first, and then the check result follows.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>This illustration is only an example and may differ in cases such as for each option part and output DTCs.</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>Press the preset switch "2" to go to the "Detailed Information Mode 1".</ptxt>
+</step3>
+<step3>
+<ptxt>Press the "SEEK TRACK" switch to display the physical address and DTC of the component.</ptxt>
+</step3>
+<step3>
+<ptxt>Press the preset switch "3" to go to the "Service Check Mode".</ptxt>
+</step3>
+<step3>
+<ptxt>Distinguish between the displays of the responses to "System Check Result Request" and "Diagnostic Memory Request". In order to distinguish the information detected in "System Check Mode" and "Diagnostic Memory Mode" in "ECHn", "CHEC", and "OLd" in "Detailed Information Mode 1", refer to the following:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"SyS" is displayed before the detailed codes detected as a result of "System Check Result Request" are displayed.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>"COdE" is displayed before the detailed codes detected as a result of "Diagnostic Memory Request" are displayed.</ptxt>
+</item>
+</list1>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The response to "System Check Result Request" is the current information given from each ECU as a result of the system check.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The response to "Diagnostic Memory Request" contains the information received from each ECU or stored in each ECU in the past.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The response to "Diagnostic Memory Request" is the output DTCs as a result of the diagnostic memory check or the DTCs received from each ECU.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>"System Check Result Request (SyS)" is displayed first, and then the logical address and DTC appear in order.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>"Diagnostic Memory Request (COdE)" is displayed first, and then the logical address, DTC, sub-code, connection check number, and the number of occurrence appear in order.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="E110919E06" width="7.106578999in" height="9.803535572in"/>
+</figure>
+</step3>
+</step2>
+<step2>
+<ptxt>Detailed information mode 2</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>"Detailed Information Mode 2" is displayed when DTCs are detected in the responses to both "System Check Result Request" and "Diagnostic Memory Request".</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The component device code (physical address) is displayed first, and then the check result follows.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>This illustration is only an example and may differ in cases such as for each option part and output DTCs.</ptxt>
+</item>
+</list1>
+</atten4>
+<step3>
+<ptxt>Press the preset switch "2" to go to the "Detailed Information Mode 2".</ptxt>
+</step3>
+<step3>
+<ptxt>Press the "SEEK TRACK" switch to display the physical address and DTC of the component.</ptxt>
+</step3>
+<step3>
+<ptxt>Press the preset switch "3" to go to the "Service Check Mode".</ptxt>
+</step3>
+<step3>
+<ptxt>Distinguish between the displays of the responses to "System Check Result Request" and "Diagnostic Memory Request". In order to distinguish the information detected in "System Check Mode" and "Diagnostic Memory Mode" in "ECHn", "CHEC", and "OLd" in "Detailed Information Mode 2", refer to the following:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"SyS" is displayed before the detailed codes detected as a result of "System Check Result Request" are displayed.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>"COdE" is displayed before the detailed codes detected as a result of "Diagnostic Memory Request" are displayed.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The response to "System Check Result Request" is the current information given from each ECU as a result of the system check.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The response to "Diagnostic Memory Request" contains the information received from each ECU or stored in each ECU in the past.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The response to "Diagnostic Memory Request" is the output DTCs as a result of the diagnostic memory check or the DTCs received from each ECU.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>"System Check Result Request (SyS)" is displayed first, and then the logical address and DTC appear in order.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>"Diagnostic Memory Request (COdE)" is displayed first, and then the logical address, DTC, sub-code, connection check number, and the number of occurrence appear in order.</ptxt>
+</item>
+</list1>
+</atten4>
+</item>
+</list1>
+<figure>
+<graphic graphicname="E110918E05" width="7.106578999in" height="9.803535572in"/>
+</figure>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CLEAR/RECHECK</ptxt>
+<step2>
+<ptxt>Clearing All DTC Memory (when clearing all the memory of the DTCs previously detected).</ptxt>
+<figure>
+<graphic graphicname="E129786E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>When the preset switch "5" is pressed for 2 seconds or more during "Service Check Mode", the DTCs for all components are cleared. ("CLr" is displayed at this time.)</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A beep sound is emitted once when the DTC memory is completely cleared.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>When the DTC memory for all the components is cleared, only the component codes (physical address) are displayed.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>After the DTC memory is cleared, the "Service Check Mode" is restored.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Clearing Individual DTC Memory (when clearing the memory of the DTC previously detected individually).</ptxt>
+<step3>
+<ptxt>When the preset switch "5" is pressed for 2 seconds or more during "Detailed Information Mode 1" or "Detailed Information Mode 2", the DTCs for the target component are cleared.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A beep sound is emitted once when the DTC memory is completely cleared.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>When the DTC memory is cleared, only the component code (physical address) is displayed for the target component.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>After the DTC memory is cleared, the "Service Check Mode" is restored.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>To check DTCs, press the preset switch "1" and perform the system check again.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Press the preset switch "1" to perform the service check again, and check that no DTCs are displayed for all the component codes (physical address).</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

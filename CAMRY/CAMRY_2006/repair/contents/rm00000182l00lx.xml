@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM00000182L00LX" category="C" type-id="8011N" name-id="NS0VS-01" from="200601">
+<dtccode>01-DD</dtccode>
+<dtcname>Master Reset</dtcname>
+<dtccode>01-E1</dtccode>
+<dtcname>Voice Processing Device ON Error</dtcname>
+<subpara id="RM00000182L00LX_01" type-id="60" category="03" proc-id="RM0250U___000051900000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>01-DD</ptxt>
+<ptxt>*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The device that should be the master has been disconnected after the engine starts.</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Radio and navigation assembly power source circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>AVC-LAN circuit between the radio and navigation assembly and the component which has stored this code</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Radio and navigation assembly</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Component which has stored this code</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-E1</ptxt>
+<ptxt>*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The AMP device records that the AMP output does not function even while the source device is operating.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: This code may be stored if the engine is started and the ignition switch is turned to the START position again. (Key type ignition switch only)</ptxt>
+</item>
+<item>
+<ptxt>*2: Even if no fault is present, this trouble code may be stored depending on the battery condition or engine start voltage.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before starting troubleshooting, be sure to clear DTCs to erase codes stored due to the reasons described in the HINT above. Then, check for DTCs and troubleshoot according to the output DTCs.</ptxt>
+</item>
+<item>
+<ptxt>The radio and navigation assembly is the master unit.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to clear and recheck DTCs after the inspection is completed to confirm that no DTCs are output.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000182L00LX_02" type-id="51" category="05" proc-id="RM0250U___000051A00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>Be sure to read DESCRIPTION before performing the following procedures.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000182L00LX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000182L00LX_03_0001" proc-id="RM0250U___000051B00000">
+<testtitle>CHECK RADIO AND NAVIGATION ASSEMBLY POWER SOURCE CIRCUIT</testtitle>
+<content6 releasenbr="1">
+<ptxt>Refer to the radio and navigation assembly power source circuit (See page <xref label="Seep01" href="RM0000020Q9002X"/>).</ptxt>
+<ptxt>If the power source circuit is operating normally, proceed to the next step.</ptxt>
+</content6>
+<res>
+<down ref="RM00000182L00LX_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0002" proc-id="RM0250U___000051C00000">
+<testtitle>INSPECT RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E120099E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>ATX+ (F9-5) -</ptxt>
+<ptxt>ATX- (F9-15)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>60 to 80 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182L00LX_03_0009" fin="false">OK</down>
+<right ref="RM00000182L00LX_03_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0009" proc-id="RM0250U___000051F00000">
+<testtitle>IDENTIFY THE COMPONENT WHICH HAS STORED THIS CODE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the diagnostic mode.</ptxt>
+<figure>
+<graphic graphicname="E111829E03" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Press the "LAN Mon" switch to change to "LAN Monitor" mode.</ptxt>
+</test1>
+<test1>
+<ptxt>Identify the component which has stored this code.</ptxt>
+<table>
+<title>Component Table:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Component</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DSP-AMP</ptxt>
+</entry>
+<entry>
+<ptxt>Stereo component amplifier</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>"NAVI" is the component which has stored this code in the example shown in the illustration.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182L00LX_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0003" proc-id="RM0250U___000051D00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>For details of the connectors, refer to "TERMINALS OF ECU" (See page <xref label="Seep01" href="RM0000011BQ00CX"/>).</ptxt>
+</atten4>
+<test1>
+<ptxt>Referring to the AVC-LAN wiring diagram below, check the AVC-LAN circuit between the radio and navigation assembly and the component which has stored this code.</ptxt>
+<test2>
+<ptxt>Disconnect all connectors between the radio and navigation assembly and the component which has stored this code.</ptxt>
+</test2>
+<test2>
+<ptxt>Check for an open or short in the AVC-LAN circuit between the radio and navigation assembly and the component which has stored this code.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>There is no open or short circuit.</ptxt>
+</specitem>
+</spec>
+<figure>
+<graphic graphicname="E111831E09" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182L00LX_03_0004" fin="false">OK</down>
+<right ref="RM00000182L00LX_03_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0004" proc-id="RM0250U___000051E00000">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the radio and navigation assembly with a normal one and check if the same problem occurs again.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Same problem does not occur.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182L00LX_03_0005" fin="true">OK</down>
+<right ref="RM00000182L00LX_03_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0005">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0006">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM00000182L00LX_03_0008">
+<testtitle>REPLACE COMPONENT WHICH HAS STORED THIS CODE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10008_S0006" variety="S0006">
+<name>2AZ-FE EMISSION CONTROL</name>
+<ttl id="10008_S0006_731VY_T00G5" variety="T00G5">
+<name>VACUUM SWITCHING VALVE</name>
+<para id="RM0000012OE004X" category="G" type-id="3001K" name-id="EC04D-04" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM0000012OE004X_01" type-id="01" category="01">
+<s-1 id="RM0000012OE004X_01_0001" proc-id="RM0250U___0000B7L00000">
+<ptxt>INSPECT VACUUM SWITCHING VALVE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the resistance of the purge VSV.</ptxt>
+<figure>
+<graphic graphicname="A124791E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>23 to 26 Ω at 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1 - Body ground</ptxt>
+<ptxt>2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the purge VSV.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the operation of the purge VSV.</ptxt>
+<s3>
+<ptxt>Check that air does not flow from port E to port F.</ptxt>
+<figure>
+<graphic graphicname="A124792E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Apply battery voltage across the terminals.</ptxt>
+<figure>
+<graphic graphicname="A124793E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that air flows from port E to port F.</ptxt>
+<ptxt>If the result is not as specified, replace the purge VSV.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

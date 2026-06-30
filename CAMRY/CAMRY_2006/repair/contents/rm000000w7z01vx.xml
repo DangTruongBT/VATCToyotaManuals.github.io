@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7Z01VX" category="C" type-id="302FL" name-id="AX02T-14" from="200601">
+<dtccode>P0711</dtccode>
+<dtcname>Transmission Fluid Temperature Sensor "A" Performance</dtcname>
+<subpara id="RM000000W7Z01VX_01" type-id="60" category="03" proc-id="RM0250U___00005YB00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ATF (Automatic Transmission Fluid) temperature sensor converts the fluid temperature into a resistance value which is input into the ECM.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="0.82in"/>
+<colspec colname="COL2" colwidth="3.15in"/>
+<colspec colname="COL3" colwidth="3.11in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0711</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>(A) Both (a) and (b) are detected: (2-trip detection logic)</ptxt>
+<ptxt>(a) Intake air and engine coolant temperatures are more than -10°C (14°F) at engine start</ptxt>
+<ptxt>(b) After normal driving for over 19 min. and 9 km (6 mile) or more, ATF temp. is less than 20°C (68°F)</ptxt>
+<ptxt>(B) When engine coolant temp. is less that 35°C (95°F) at engine start, the ATF temp. is 110°C (230°F) or more after 17 min. of engine start (2-trip detection logic).</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transmission wire (ATF temperature sensor)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_02" type-id="64" category="03" proc-id="RM0250U___00005YC00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ATF temperature sensor converts the ATF temperature to an electrical resistance value. Based on the resistance, the ECM determines the ATF temperature and detects an open or short in the ATF temperature circuit or a fault in the ATF temperature sensor.</ptxt>
+<ptxt>After running the vehicle for a certain period, the ATF temperature should increase. If the ATF temperature is below 20°C (68°F) after running the vehicle for a certain period, the ECM interprets this as a fault, and turns on the MIL.</ptxt>
+<ptxt>When the ATF temperature is 110°C (230°F) or more after 17 minutes of engine cold start, the ECM also determines this as a fault, turns on the MIL, and stores the DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_03" type-id="65" category="03" proc-id="RM0250U___00005YD00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>P0711: ATF temperature sensor/Rationality check</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ATF temperature sensor (TFT sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>3 sec.: Condition (A)</ptxt>
+<ptxt>10 sec.: Condition (B)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_04" type-id="66" category="03" proc-id="RM0250U___00005YE00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>All:</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.53in"/>
+<colspec colnum="2" colname="c2" colwidth="3.55in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>16 min. and 40 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECT (Engine coolant temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-15°C (5°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ATF sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>IAT sensor circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ETCS</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Not circuit malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition (A):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Time After engine start</ptxt>
+</entry>
+<entry align="center">
+<ptxt>18 min. and 20 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Driving distance after engine start</ptxt>
+</entry>
+<entry align="center">
+<ptxt>9 km (5.6 mile) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>IAT (Intake air temperature)  (12 sec. after starting engine)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-10°C (14°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT (12 sec. after starting engine)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-10°C (14°F) or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition (B):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>ECT (Current temperature)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>60°C (140°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT (12 sec. after engine start)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Less than 35°C (95°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_05" type-id="67" category="03" proc-id="RM0250U___00005YF00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<title>Condition (A):</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ATF temperature sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Less than 20°C (68°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1">
+<title>Condition (B):</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ATF temperature sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>110°C (230°F) or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_06" type-id="70" category="03" proc-id="RM0250U___00005YG00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ATF temperature sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Atmospheric temperature to approx. 130°C (266°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_07" type-id="32" category="03" proc-id="RM0250U___00005YH00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C131059E04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_08" type-id="51" category="05" proc-id="RM0250U___00005YI00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>According to the DATA LIST displayed by the OBD II scan tool or intelligent tester, you can read the value of the switch, sensor, actuator and so on without parts removal. Reading the DATA LIST as the first step of troubleshooting is one method to shorten labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the value listed under "Normal Condition" are reference values. Do not depend solely on these reference values when deciding whether apart is faulty or not.</ptxt>
+</atten3>
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<step2>
+<ptxt>Warm up the engine.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the item "DIAGNOSIS / OBD/MOBD / ECT / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, read the "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/</ptxt>
+<ptxt>Range (display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>AT FLUID TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ATF Temp. Sensor Value/</ptxt>
+<ptxt>min.: -40°C (-40°F)</ptxt>
+<ptxt>max.: 215°C (419°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Approx. 80°C (176°F) (After Stall Test)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>When DTC P0712 is output and OBD II scan tool or intelligent tester output is 150°C (302°F), there is a short circuit.</ptxt>
+<ptxt>When DTC P0713 is output and OBD II scan tool or intelligent tester output is -40°C (-40°F), there is an open circuit.</ptxt>
+<ptxt>Measure the resistance between terminal THO1 (THO) and body ground.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.69in"/>
+<colspec colname="COL2" colwidth="3.39in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Temperature Displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>-40°C (-40°F) </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>150°C (302°F) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short circuit</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten4>
+<ptxt>If a circuit related to the ATF temperature sensor becomes open, P0713 is immediately set (in 0.5 second).</ptxt>
+<ptxt>When P0713 is set, P0711 cannot be detected.</ptxt>
+<ptxt>It is not necessary to inspect the circuit when P0711 is set.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM000000W7Z01VX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W7Z01VX_09_0001" proc-id="RM0250U___00005YJ00000">
+<testtitle>CHECK OTHER DTCS OUTPUT (IN ADDITION TO DTC P0711)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the OBD II scan tool or the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and push the OBD II scan tool or the intelligent tester main switch ON.</ptxt>
+</test1>
+<test1>
+<ptxt>When you use intelligent tester:</ptxt>
+<ptxt>Select the item "DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES".</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the OBD II scan tool or the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.89in"/>
+<colspec colname="COL2" colwidth="3.19in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0711" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"P0711" and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any other codes besides "P0711" are output, perform troubleshooting for those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W7Z01VX_09_0002" fin="false">A</down>
+<right ref="RM000000W7Z01VX_09_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W7Z01VX_09_0002" proc-id="RM0250U___00005YK00000">
+<testtitle>CHECK TRANSMISSION FLUID LEVEL</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Automatic transmission fluid level is correct.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000W7Z01VX_09_0003" fin="true">OK</down>
+<right ref="RM000000W7Z01VX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W7Z01VX_09_0003">
+<testtitle>REPLACE TRANSMISSION WIRE (ATF TEMPERATURE SENSOR)</testtitle>
+</testgrp>
+<testgrp id="RM000000W7Z01VX_09_0004">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000W7Z01VX_09_0005">
+<testtitle>ADD FLUID</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

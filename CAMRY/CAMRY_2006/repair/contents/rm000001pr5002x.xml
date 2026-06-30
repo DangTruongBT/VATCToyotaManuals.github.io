@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_72WHB_T0068" variety="T0068">
+<name>THEFT DETERRENT SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001PR5002X" category="J" type-id="3027N" name-id="TD0C1-01" from="200601">
+<dtccode/>
+<dtcname>Security Indicator Light Circuit</dtcname>
+<subpara id="RM000001PR5002X_01" type-id="60" category="03" proc-id="RM0250U___00005FI00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Even when the theft deterrent system is in the disarmed state, the security indicator blinks due to a signal output from the immobiliser system. The security indicator blinks continuously due to a continuous signal received from the immobiliser system while in the armed state.</ptxt>
+<ptxt>The main body ECU causes the security indicator to light up or blink only during the arming preparation state and alarm sounding states.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001PR5002X_02" type-id="32" category="03" proc-id="RM0250U___00005FJ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B139445E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001PR5002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001PR5002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001PR5002X_04_0001" proc-id="RM0250U___00005FK00000">
+<testtitle>INSPECT CLOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the F3 clock connector.</ptxt>
+<figure>
+<graphic graphicname="B139454E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply battery voltage between the terminals of the indicator, and check the lighting condition of the security indicator.</ptxt>
+<spec>
+<title>Standard </title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Battery positive (+) → Terminal F3-8 (LP)</ptxt>
+<ptxt>Battery negative (-) → Terminal F3-19 (GND1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lights up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the positive (+) lead and the negative (-) lead are incorrectly connected, the security indicator will not light up.</ptxt>
+</item>
+<item>
+<ptxt>Voltage of more than 12 V will damage the security indicator.</ptxt>
+</item>
+<item>
+<ptxt>If the voltage is too low, the security indicator will not light up.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR5002X_04_0002" fin="false">OK</down>
+<right ref="RM000001PR5002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR5002X_04_0002" proc-id="RM0250U___00005FL00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CLOCK ASSEMBLY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E9 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B139459E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the F3 clock connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol (Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>IND (E9-4) - LP (F3-8)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>IND (E9-4) - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR5002X_04_0003" fin="false">OK</down>
+<right ref="RM000001PR5002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR5002X_04_0003" proc-id="RM0250U___00005FM00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CLOCK ASSEMBLY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E128063E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol (Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>GND1 (F3-19) - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR5002X_04_0004" fin="true">OK</down>
+<right ref="RM000001PR5002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR5002X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001PR5002X_04_0005">
+<testtitle>REPLACE CLOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001PR5002X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

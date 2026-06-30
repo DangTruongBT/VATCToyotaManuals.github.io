@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72Y6C_T008U" variety="T008U">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System)</name>
+<para id="RM000001QP5003X" category="D" type-id="303F2" name-id="DL0OB-04" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000001QP5003X_z0" proc-id="RM0250U___00004K000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>WIRELESS DOOR LOCK CONTROL SYSTEM</ptxt>
+<ptxt>The wireless door lock control system functions to lock and unlock all the doors from a distance. The system is controlled by a hand-held transmitter which sends radio waves to the door control receiver. The certification ECU performs an ID code identification process and engages the door lock control.</ptxt>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENTS</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Door control transmitter</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Has LOCK, UNLOCK, LUGGAGE OPEN, and PANIC switches.</ptxt>
+</item>
+<item>
+<ptxt>Transmits weak radio waves (recognition codes and function codes) to the door control receiver.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door control receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receives weak radio waves from the door control transmitter and sends them to the certification ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Front door courtesy light switch</ptxt>
+</item>
+<item>
+<ptxt>Rear door courtesy light switch</ptxt>
+</item>
+<item>
+<ptxt>Luggage compartment door courtesy light switch</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Turns on when a door is opened and turns off when it is closed. Outputs door status codes (open or closed) to the main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door lock position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmits the door lock positions of each door to the main body ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Emits beep (answer back) when doors are locked or unlocked, or luggage compartment door is opened by wireless operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sends wireless door lock control signals in response to the code data from the door control receiver and signals from each ECU.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SYSTEM FUNCTION</ptxt>
+<ptxt>The door control transmitter has the LOCK, UNLOCK, LUGGAGE OPEN, and PANIC switches. Operating these switches activates each function.</ptxt>
+<ptxt>The wireless door lock control system has the following functions:</ptxt>
+<atten4>
+<ptxt>The default settings of the following functions are ON. Part of these functions can be customized (See page <xref label="Seep01" href="RM000001NN0002X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All door lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the LOCK switch locks all doors.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>All door unlock</ptxt>
+<ptxt>(2-step unlock)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the UNLOCK switch twice within 3 seconds unlocks all the doors after the driver's door is unlocked.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Automatic lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If none of the doors is opened within 60 seconds after they are unlocked by the wireless door lock control, all the doors will lock again automatically.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Luggage compartment door open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the LUGGAGE OPEN switch of the transmitter opens the luggage compartment door.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Answer back</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>When the doors are locked by wireless operation, the hazard warning lights flash once and the wireless door lock buzzer sounds once.</ptxt>
+</item>
+<item>
+<ptxt>When the doors are unlocked by wireless operation, the hazard warning lights flash twice and the wireless door lock buzzer sounds twice.</ptxt>
+</item>
+<item>
+<ptxt>When the luggage compartment door is opened by wireless operation, the wireless door lock buzzer sounds.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Panic alarm</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressing the PANIC switch of the transmitter for longer than about 0.8 seconds causes the following alarms to activate:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Sounds the horn and security horn.</ptxt>
+</item>
+<item>
+<ptxt>Flashes the hazard lights, headlights, and taillights.</ptxt>
+</item>
+<item>
+<ptxt>Illuminates the front interior light (when the switch is in the DOOR position).</ptxt>
+</item>
+</list1>
+<ptxt>While the panic alarm is operating, pressing any switch of the transmitter cancels the alarm operation.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door ajar warning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The buzzer sounds when LOCK is pressed when any of the doors are ajar. When all the doors are closed or when UNLOCK is pressed, the buzzer will stop after it sounds for 10 seconds continuously.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Illuminated Entry</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When all the doors are locked, pressing the UNLOCK switch causes the interior light to come on simultaneously with the unlock operation.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

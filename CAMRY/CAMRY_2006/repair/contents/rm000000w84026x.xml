@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000W84026X" category="C" type-id="302G7" name-id="AX0MD-02" from="200601">
+<dtccode>P0705</dtccode>
+<dtcname>Transmission Range Sensor Circuit Malfunction (PRNDL Input)</dtcname>
+<subpara id="RM000000W84026X_01" type-id="60" category="03" proc-id="RM0250U___0000B2U00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The park / neutral position switch detects the shift lever position and sends signals to the ECM.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="2.83in"/>
+<colspec colname="COL3" align="center" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0705</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(A) Any 2 or more signals of the following are ON simultaneously (2-trip detection logic)</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>P input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>N input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>R input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>D input signal is ON.</ptxt>
+</item>
+</list1>
+<ptxt>(B) Any 2 or more signals of the following are ON simultaneously (2-trip detection logic)</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>NSW input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>R input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>D input signal is ON.</ptxt>
+</item>
+</list1>
+<ptxt>(C) Any of following conditions is met for 2.0 sec. or more in the S position (2-trip detection logic).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>NSW input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>P input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>N input signal is ON.</ptxt>
+</item>
+<item>
+<ptxt>R input signal is ON.</ptxt>
+</item>
+</list1>
+<ptxt>(D) All switches are OFF simultaneously for NSW, P, R, N and D.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short in park / neutral position switch circuit</ptxt>
+</item>
+<item>
+<ptxt>Park / neutral position switch</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_02" type-id="64" category="03" proc-id="RM0250U___0000B2V00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>These DTCs indicate a problem with the park / neutral position switch and the wire harness in the park / neutral position switch circuit.</ptxt>
+<ptxt>The park / neutral position switch detects the shift lever position and sends a signal to the ECM.</ptxt>
+<ptxt>For security, the park / neutral position switch detects the shift lever position so that engine can be started only when the shift lever is in the P or N position.</ptxt>
+<ptxt>The park / neutral position switch sends a signal to the ECM according to the shift position (P, R, N or D). The ECM determines that there is a problem with the switch or related parts if it receives more than 1 position signal simultaneously. The ECM will turn on the MIL and store the DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_03" type-id="65" category="03" proc-id="RM0250U___0000B2W00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" align="left" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0705: Park / neutral position switch/Verify switch input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Park / neutral position switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_04" type-id="66" category="03" proc-id="RM0250U___0000B2X00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<title>All:</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" align="left" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever this DTC is not present.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition (C):</title>
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="3.03in"/>
+<colspec colname="COL2" align="left" colwidth="4.05in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>One of the following conditions is met:</ptxt>
+</entry>
+<entry>
+<ptxt>Condition (a), (b), (c) or (d)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>(a) Park Neutral position switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>(b) Park position switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>(c) Neutral position switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>(d) R range position switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_05" type-id="67" category="03" proc-id="RM0250U___0000B2Y00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<step1>
+<ptxt>One of the following conditions is met: Condition (A), (B) and (C)</ptxt>
+</step1>
+<table frame="all" colsep="1" rowsep="1">
+<title>Condition (A):</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" align="left" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Number of the following signal input at the same time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> Park position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> Neutral position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> R range position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> D range position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1">
+<title>Condition (B):</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" align="left" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Number of the following signal input at the same time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Park neutral position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R range switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D range switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>Condition (C):</title>
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="3.03in"/>
+<colspec colname="COLSPEC0" align="left" colwidth="4.05in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>''M'' switch</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table frame="all" colsep="1" rowsep="1">
+<title>Condition (D):</title>
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" align="left" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt> Park position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> Neutral position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Park neutral position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R range switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D range switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_06" type-id="70" category="03" proc-id="RM0250U___0000B2Z00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" align="left" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" align="left" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Park / neutral Position switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The park / neutral position switch sends only one signal to the ECM.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_07" type-id="32" category="03" proc-id="RM0250U___0000B3000000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A140667E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_10" type-id="51" category="05" proc-id="RM0250U___0000B3400000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>According to the DATA LIST displayed by the intelligent tester, you can read the value of the switch, sensor, actuator  and so on without parts removal. Reading the DATA LIST as the first step of troubleshooting is one method to shorten labor time.</ptxt>
+</atten4>
+<atten3>
+<ptxt>In the table below, the values listed under "Normal Condition" are reference values. Do not depend solely on these  reference values when deciding whether a part is faulty or not.</ptxt>
+</atten3>
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the CAN VIM (controller area network vehicle interface module) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn on the tester.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the item "DIAGNOSIS / ENHANCED OBD II / DATA LIST".</ptxt>
+</step2>
+<step2>
+<ptxt>According to the display on the tester, read the "DATA LIST".</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PNP SW [NSW]</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PNP SW Status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>P and N: ON</ptxt>
+<ptxt>Except P or N: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>When the shift lever position displayed on the intelligent tester differs from the actual position, adjustment of the PNP switch or the  shift cable may be incorrect.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REVERSE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PNP SW Status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>R: ON</ptxt>
+<ptxt>Except R: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DRIVE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>PNP SW Status / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shift lever position is;</ptxt>
+<ptxt>D and S: ON</ptxt>
+<ptxt>Except D or S: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>↑</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+<subpara id="RM000000W84026X_12" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W84026X_12_0011" proc-id="RM0250U___0000BAO00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BATTERY - PARK / NEUTRAL POSITION SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the park / neutral position switch connector.</ptxt>
+<figure>
+<graphic graphicname="C117645E10" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL2" colwidth="2.89in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0024" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0024" proc-id="RM0250U___0000CKL00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PARK/NEUTRAL POSITION SWITCH - ST RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C1 park/neutral position switch connector.</ptxt>
+<figure>
+<graphic graphicname="A137047E05" width="2.775699831in" height="6.791605969in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the ST relay from the engine room relay block.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>L (C1-9) - ST relay terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the park/neutral position switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the ST relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0026" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0026" proc-id="RM0250U___0000CZT00000">
+<testtitle>INSPECT ST RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST relay from the engine room relay block.</ptxt>
+<figure>
+<graphic graphicname="B016200E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>Apply battery voltage between terminals 1 and 2</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the ST relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0027" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0028" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0027" proc-id="RM0250U___0000CZU00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ST RELAY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ST relay from the engine room relay block.</ptxt>
+<figure>
+<graphic graphicname="A137046E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ST relay terminal 2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the ST relay.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0013" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0013" proc-id="RM0250U___0000BAQ00000">
+<testtitle>INSPECT PARK / NEUTRAL POSITION SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<figure>
+<graphic graphicname="C110340E45" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>1 - 3 and 4 - 9</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except P</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>R</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>1 - 8and 4 - 9</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D, S, ''+'' and ''-''</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>1 - 7</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except D, S, ''+'' and ''-''</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0014" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0014" proc-id="RM0250U___0000BAR00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the park / neutral position switch connector.</ptxt>
+<figure>
+<graphic graphicname="C136857E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECM connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and measure the voltage according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.15in"/>
+<colspec colname="COL2" colwidth="2.49in"/>
+<colspec colname="COL3" colwidth="2.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>C55-24 (P) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except P</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>N</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>C55-27 (N) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>R</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>C55-25 (R) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V<sup>*</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except R</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D and S</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>C55-26 (D) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except D and S</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S, ''+'' and ''-''</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>A55-25 (S) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Except S, ''+'' and ''-''</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>
+<sup>*</sup>: The voltage will drop slightly due to lighting up of the back up light.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0015" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0015" proc-id="RM0250U___0000BAS00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the transmission control switch connector of the shift lock control unit assembly.</ptxt>
+<figure>
+<graphic graphicname="C110345E20" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL2" colwidth="2.89in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the transmission control switch connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0016" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0016" proc-id="RM0250U___0000BAT00000">
+<testtitle>INSPECT TRANSMISSION CONTROL SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<figure>
+<graphic graphicname="C136860E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>S, ''+'' and ''-''</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except S, ''+'' and ''-''</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0017" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0017" proc-id="RM0250U___0000BAU00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the transmission control switch connector of the shift lock control unit assembly.</ptxt>
+<figure>
+<graphic graphicname="C136857E05" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and measure the voltage according to the value(s) in the table below when the shift lever is moved to each position.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Shift Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C55-24 (P) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>↑</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C55-27 (N) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>↑</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C55-25 (R) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V *</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>↑</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D and S</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C55-26 (D) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except D and S</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>↑</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>S, "+" and "-"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A55-25 (S) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Except S, "+" and "-"</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>↑</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0019" fin="false">OK</down>
+<right ref="RM000000W84026X_12_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0019" proc-id="RM0250U___0000BAV00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (PARK / NEUTRAL POSITION SWITCH - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the ECM connectors.</ptxt>
+<figure>
+<graphic graphicname="C136861E06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B (C1-4) - NSW (C55-62)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B (C1-4) or NSW (C55-62) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W84026X_12_0020" fin="true">OK</down>
+<right ref="RM000000W84026X_12_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0020">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0021">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0022">
+<testtitle>REPLACE PARK/NEUTRAL POSITION SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0023">
+<testtitle>REPLACE TRANSMISSION CONTROL SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0025">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000W84026X_12_0028">
+<testtitle>REPLACE STARTER RELAY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

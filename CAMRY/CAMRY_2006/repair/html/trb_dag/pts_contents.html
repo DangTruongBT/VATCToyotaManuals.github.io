@@ -1,0 +1,28 @@
+<!-- $Id: pts_contents.html,v 1.4 2004/04/26 05:07:26 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics - Parts Location -</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var DELIM = " &gt; ";
+function init() {
+	parent.display(parent.g_objXml, parent.g_objXsl, disp, null);
+	var sectionName = parent.getSectionName(parent.g_paraId, parent.g_objXml);
+	var titleName   = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	ttl.innerHTML = sectionName + DELIM + titleName;
+}
+</script>
+</head>
+<body onLoad="init()">
+	<p id="ttl" class="location"></p>	
+	<div id="disp"></div>
+</body>
+</html>

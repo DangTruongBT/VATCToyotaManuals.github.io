@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020QB002X" category="J" type-id="801RF" name-id="NS0O8-03" from="200601">
+<dtccode/>
+<dtcname>Microphone Circuit between Microphone and Radio and Navigation Assembly</dtcname>
+<subpara id="RM0000020QB002X_01" type-id="60" category="03" proc-id="RM0250U___000054300000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit sends a microphone signal from the microphone to the radio and navigation assembly.</ptxt>
+<ptxt> It also supplies power from the radio and navigation assembly to the microphone.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020QB002X_02" type-id="32" category="03" proc-id="RM0250U___000054400000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E129785E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020QB002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020QB002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020QB002X_04_0001" proc-id="RM0250U___000054500000">
+<testtitle>INSPECT RADIO AND NAVIGATION ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E121195E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MACC - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition SW on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4 to 6 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020QB002X_04_0002" fin="false">OK</down>
+<right ref="RM0000020QB002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020QB002X_04_0002" proc-id="RM0250U___000054600000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector F12.</ptxt>
+<figure>
+<graphic graphicname="E113512E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SGND - TSW-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020QB002X_04_0003" fin="false">OK</down>
+<right ref="RM0000020QB002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020QB002X_04_0003" proc-id="RM0250U___000054700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MICROPHONE - RADIO AND NAVIGATION ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the microphone connector Q5 or Q12 and radio and navigation assembly connector F12.</ptxt>
+<figure>
+<graphic graphicname="E131896E01" width="2.775699831in" height="7.795582503in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC - MACC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MI1+ - MIC+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIC- - MIC-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MACC - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIC+ - Body ground </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIC- - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020QB002X_04_0004" fin="true">OK</down>
+<right ref="RM0000020QB002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020QB002X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020QB002X_04_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000020QB002X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

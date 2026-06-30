@@ -1,0 +1,85 @@
+<!-- $Id: notes_contents.html,v 1.7 2004/04/26 05:01:21 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var DELIM   = " > ";
+var BR_TAGS = "<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>"
+						+ "<br/><br/><br/><br/><br/><br/><br/><br/><br/>"
+						+ "<br/><br/><br/><br/><br/><br/><br/><br/><br/>";
+function init() {
+	document.title = document.title + " " + parent.g_title;
+	parent.display(parent.g_objXml, parent.g_objXsl, disp, null);
+	parent.g_sectionName = parent.getSectionName(parent.g_paraId, parent.g_objXml);
+	parent.g_titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var cate = parent.g_objXml.selectSingleNode("//para").getAttribute("category");
+	var name = (cate=="C" | cate=="J") ? "dtcname" : "name";
+	var paraNameList = parent.getParagraphNameList(parent.g_paraId, name, parent.g_objXml);
+	var dtcCodeList = new Array();
+	if (cate=="C") {
+		dtcCodeList = parent.getParagraphNameList(parent.g_paraId, "dtccode", parent.g_objXml);
+		for (var i=0; i<paraNameList.length; i++) {
+			var tmpStr = (i<dtcCodeList.length) ?  dtcCodeList[i] : "";
+			paraNameList[i] = tmpStr + " " + paraNameList[i];
+		}
+	}
+	for (var i=0; i<paraNameList.length; i++) {
+		if (i!=0) parent.g_paragraphName += " / ";
+		parent.g_paragraphName += paraNameList[i];
+	}
+	ttl.innerHTML = parent.g_sectionName + DELIM + parent.g_titleName + DELIM + parent.g_paragraphName;
+	if (parent.g_sub!=null) {
+		brs.innerHTML = BR_TAGS;
+		location.hash = parent.g_sub;
+	}
+	setMemoLink();
+}
+
+function setMemoLink() {
+	if (parent.g_sub!=null) {
+		objMemo.style.display="none";
+		return;
+	}
+	var subparaIdNode = parent.g_objXml.selectSingleNode("//subpara/@id");
+	var procIdNode = parent.g_objXml.selectSingleNode("//subpara/@proc-id");
+	if (subparaIdNode==null || procIdNode==null) {
+		objMemo.style.display="none";
+		return;
+	}
+	var subparaId = subparaIdNode.nodeTypedValue;
+	var procId = procIdNode.nodeTypedValue;
+	objMemo.innerHTML = 
+			"<a href=\"javascript:parent.openMemo('"+subparaId+"','"+procId+"');\" >"
+			+"<img src='../../img/memo.png' id='"+procId	+"' border='0'/> "
+			+"</a>";
+	parent.loadMemoData (document, parent.REPAIR);
+}
+
+// dummy function for Diagnostics Paragraph
+function changeModeById() {
+	return;
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td style="background-color:#666666">
+			<p id="ttl" class="location"></p>
+		</td>
+		<td id="objMemo" align="right" width="40" style="background-color:#666666"></td>
+	</tr>
+</table>
+	<div id="disp"></div>
+	<div id="brs"></div>
+</body>
+</html>

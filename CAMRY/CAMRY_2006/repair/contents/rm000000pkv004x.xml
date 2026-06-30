@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM000000PKV004X" category="U" type-id="303FJ" name-id="LI042-06" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000PKV004X_z0" proc-id="RM0250U___00004MH00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester DATA LIST allows switch, actuator and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to save time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch or engine switch ACC signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch on (ACC or IG)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch or engine switch IG signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch on (IG)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is open</ptxt>
+<ptxt>OFF: Driver side door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Front passenger side door is open</ptxt>
+<ptxt>OFF: Front passenger side door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RR DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear right door is open</ptxt>
+<ptxt>OFF: Rear right door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RL DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear left door is open</ptxt>
+<ptxt>OFF: Rear left door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is unlocked</ptxt>
+<ptxt>OFF: Driver side door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Front passenger side door is unlocked</ptxt>
+<ptxt>OFF: Front passenger side door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RR LOCK POS SW</ptxt>
+<ptxt>(with Smart Key System)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear right door is unlocked</ptxt>
+<ptxt>OFF: Rear right door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RL. LOCK POS SW</ptxt>
+<ptxt>(with Smart Key System)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear left door is unlocked</ptxt>
+<ptxt>OFF: Rear left door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DIMMER SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Dimmer switch HIGH signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Dimmer switch in HIGH or HIGH FLASH</ptxt>
+<ptxt>OFF: Dimmer switch in LOW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HIGH FLASHER SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Dimmer switch HIGH FLASH signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Dimmer switch in HIGH FLASH</ptxt>
+<ptxt>OFF: Dimmer switch not in HIGH FLASH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F FOG LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fog light switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Fog light switch ON</ptxt>
+<ptxt>OFF: Fog light switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AUTO LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch AUTO signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Light control switch in AUTO</ptxt>
+<ptxt>OFF: Light control switch not in AUTO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HEAD LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch HEAD signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Light control switch in HEAD</ptxt>
+<ptxt>OFF: Light control switch not in HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TAIL LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch TAIL signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Light control switch in TAIL or HEAD</ptxt>
+<ptxt>OFF: Light control switch not in TAIL or HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ILLUMINATE RATE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination rate information / 0 ms. to 99.99 ms.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.8 ms. to 22.0 ms. (Value is output according to ambient illuminance)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PARKING BRAKE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking brake switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Parking brake switch is ON</ptxt>
+<ptxt>OFF: Parking brake switch is OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester ACTIVE TEST allows a relay, VSV, actuator, and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F FOG LIGHT RLY</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Front fog light relay ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HEAD LIGHT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Headlight relay ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HEAD LIGHT (HI)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>High beam headlights ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TAIL LIGHT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Taillight ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DIMMER SIG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Dimmer signal ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ILLUMI OUTPUT</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Interior light and ignition key cylinder light ON / OFF (Interior light switch in DOOR position and all doors are closed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIB009X" category="C" type-id="300A0" name-id="BC1NB-01" from="200601">
+<dtccode>C0273/13</dtccode>
+<dtcname>Open in ABS Motor Relay Circuit</dtcname>
+<dtccode>C0274/14</dtccode>
+<dtcname>Short to B+ in ABS Motor Relay Circuit</dtcname>
+<dtccode>C1361/91</dtccode>
+<dtcname>Short Circuit in ABS Motor Fail Safe Relay Circuit</dtcname>
+<subpara id="RM000000XIB009X_01" type-id="60" category="03" proc-id="RM0250U___00005MJ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If a DTC of the motor line is stored, the VSC NO. 1 (fail safe) relay cuts off the power supply to the VSC NO. 2 relay and performs fail safe.</ptxt>
+<ptxt>While any of the ABS, TRAC, VSC, or BA is operating, the skid control ECU (housed in the actuator assembly) turns the VSC NO. 2 relay on and activates the pump motor in the brake actuator.</ptxt>
+<ptxt>This code may be stored if the motor relay (BM) voltage becomes lower than the DTC detecting condition due to insufficient output from the battery or alternator.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C0273/13</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following (1 or 2) is detected:</ptxt>
+<ptxt>1. All of the following conditions continue for 0.12 seconds or more.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The IG1 terminal voltage is between 9.5 and 17.2 V.</ptxt>
+</item>
+<item>
+<ptxt>During initial check and ABS, BA, TRAC, or VSC are operating.</ptxt>
+</item>
+<item>
+<ptxt>Relay contact is open when the relay is ON.</ptxt>
+</item>
+</list1>
+<ptxt>2. All of the following conditions continue for 0.12 seconds.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The IG1 terminal voltage is 9.5 V or less.</ptxt>
+</item>
+<item>
+<ptxt>Relay contact remains open when the relay is ON.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS NO. 1 fuse</ptxt>
+</item>
+<item>
+<ptxt>VSC NO. 2 relay</ptxt>
+</item>
+<item>
+<ptxt>VSC NO. 2 relay circuit</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C0274/14</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the motor relay is OFF, the VSC NO. 2 relay remains closed for 4 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS NO. 1 fuse</ptxt>
+</item>
+<item>
+<ptxt>VSC NO. 2 relay</ptxt>
+</item>
+<item>
+<ptxt>VSC NO. 2 relay circuit</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C1361/91</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediately after the ignition switch is turned on (IG), the relay contact is closed for 4 seconds when the VSC NO. 1 (fail safe) relay is OFF.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ABS NO. 1 fuse</ptxt>
+</item>
+<item>
+<ptxt>VSC NO. 1 (fail safe) relay</ptxt>
+</item>
+<item>
+<ptxt>VSC NO. 1 (fail safe) relay circuit</ptxt>
+</item>
+<item>
+<ptxt>Brake actuator assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XIB009X_02" type-id="32" category="03" proc-id="RM0250U___00005MK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136022E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIB009X_03" type-id="51" category="05" proc-id="RM0250U___00005ML00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XIB009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIB009X_04_0001" proc-id="RM0250U___00005MM00000">
+<testtitle>INSPECT ABS NO. 1 FUSE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the fusible link from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="C136500E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check if the fusible link is melted.</ptxt>
+<figure>
+<graphic graphicname="E130412E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The fusible link is melted.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the fusible link to the engine room R/B with the nut.</ptxt>
+</test1>
+<torque>
+<torqueitem>
+<t-value1> 5.4 </t-value1>
+<t-value2>55 </t-value2>
+<t-value3>48 </t-value3>
+</torqueitem>
+</torque>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0002" fin="false">OK</down>
+<right ref="RM000000XIB009X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0002" proc-id="RM0250U___00005MN00000">
+<testtitle>INSPECT VSC NO. 2 RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the VSC NO. 2 relay.</ptxt>
+<figure>
+<graphic graphicname="F050240E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Apply B+ between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0003" fin="false">OK</down>
+<right ref="RM000000XIB009X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0003" proc-id="RM0250U___00005MO00000">
+<testtitle>INSPECT VSC NO. 1 (FAIL SAFE) RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the VSC NO. 1 (fail safe) relay.</ptxt>
+<figure>
+<graphic graphicname="F050241E11" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Apply B+ between terminals 1 and 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0004" fin="false">OK</down>
+<right ref="RM000000XIB009X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0004" proc-id="RM0250U___00005MP00000">
+<testtitle>INSPECT ENGINE ROOM RELAY BLOCK (POWER SOURCE TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C135809E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VSC NO. 1 (fail safe) relay terminal 5 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0005" fin="false">OK</down>
+<right ref="RM000000XIB009X_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0005" proc-id="RM0250U___00005MQ00000">
+<testtitle>INSPECT ENGINE ROOM RELAY BLOCK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C135809E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COLSPEC2" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VSC NO. 1 (fail safe) relay terminal 3 - VSC NO. 2 relay terminal 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC NO. 1 (fail safe) relay terminal 3 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0006" fin="false">OK</down>
+<right ref="RM000000XIB009X_04_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0006" proc-id="RM0250U___00005MR00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU - ENGINE ROOM RELAY BLOCK)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C136023E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COLSPEC3" colwidth="0.83in"/>
+<colspec colname="COL2" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A26-2 (BM) - VSC NO. 2 relay terminal 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-2 (BM) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-14 (MRF) - VSC NO. 1 (fail safe) relay terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-14 (MRF) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-15 (MR) - VSC NO. 2 relay terminal 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-15 (MR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-45 (R+) - VSC NO. 1 (fail safe)  relay terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A26-45 (R+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0007" fin="false">OK</down>
+<right ref="RM000000XIB009X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0007" proc-id="RM0250U___00005MS00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at the speed of 4 mph (6 km/h) or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the relays, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0273/13, C0274/14 and/or C1361/91) are not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0273/13, C0274/14 and/or C1361/91) are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a speed signal of 4 mph (6 km/h) or more is input to the skid control ECU, with the ignition switch on (IG) and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits.</ptxt>
+</item>
+<item>
+<ptxt>If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly. Make sure that no DTCs are output.</ptxt>
+</item>
+<item>
+<ptxt>If any DTCs are output while jiggling a connector or wire harness of the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIB009X_04_0008" fin="true">A</down>
+<right ref="RM000000XIB009X_04_0015" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0008">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0009">
+<testtitle>REPLACE FUSIBLE LINK (ABS NO. 1 FUSE)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0010">
+<testtitle>REPLACE VSC NO. 2 RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0011">
+<testtitle>REPLACE VSC NO. 1 (FAIL SAFE) RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0012">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0013">
+<testtitle>REPAIR OR REPLACE ENGINE ROOM RELAY BLOCK</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0014">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XIB009X_04_0015">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

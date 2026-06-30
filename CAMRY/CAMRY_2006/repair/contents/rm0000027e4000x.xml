@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM0000027E4000X" category="C" type-id="801ZK" name-id="RS2D6-01" from="200601">
+<dtccode>B1627/82</dtccode>
+<dtcname>Lost Communication with Front Passenger Side - Side Airbag Sensor Assembly</dtcname>
+<dtccode>B1628/82</dtccode>
+<dtcname>Front Passenger Side - Side Airbag Sensor Assembly Initialization Incomplete</dtcname>
+<dtccode>B1637/82</dtccode>
+<dtcname>Lost Communication with Passenger Side Rear Airbag Sensor</dtcname>
+<dtccode>B1638/82</dtccode>
+<dtcname>Passenger Side Rear Airbag Sensor Initialization Incomplete</dtcname>
+<dtccode>B1647/82</dtccode>
+<dtcname>Lost Communication with Front Passenger Side Satellite Sensor Bus</dtcname>
+<dtccode>B1648/82</dtccode>
+<dtcname>Front Passenger Side Satellite Sensor Bus Initialization Incomplete</dtcname>
+<subpara id="RM0000027E4000X_01" type-id="60" category="03" proc-id="RM0250U___0000A5S00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The circuit for the side collision sensor RH (to determine deployment of the front seat side airbag assembly RH and curtain shield airbag assembly RH) is composed of the center airbag sensor assembly, side airbag sensor RH, and rear airbag sensor RH.</ptxt>
+<ptxt>The side airbag sensor RH and rear airbag sensor RH detect impacts to the vehicle and send signals to the center airbag sensor assembly to determine if the airbag should be deployed.</ptxt>
+<ptxt>DTC B1627/82, B1628/82, B1637/82, B1638/82, B1647/82, or B1648/82 is recorded when a malfunction is detected in the circuit for the side collision sensor RH (to determine deployment of the front seat side airbag assembly RH and curtain shield airbag assembly RH).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1627/82</ptxt>
+<ptxt>B1628/82</ptxt>
+<ptxt>B1637/82</ptxt>
+<ptxt>B1638/82</ptxt>
+<ptxt>B1647/82</ptxt>
+<ptxt>B1648/82</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The center airbag sensor assembly receives a line short circuit signal, an open circuit signal, a short circuit to ground signal or a short circuit to B+ signal in the circuit for the side collision sensor RH (to determine deployment of the front seat side airbag assembly RH and curtain shield airbag assembly RH) for 2 seconds.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Side airbag sensor RH malfunction</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Rear airbag sensor RH malfunction</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Center airbag sensor assembly malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Floor wire No. 2</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Side airbag sensor RH</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Rear airbag sensor RH</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Center airbag sensor assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000027E4000X_02" type-id="32" category="03" proc-id="RM0250U___0000A5T00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="H045218E09" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000027E4000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000027E4000X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000027E4000X_05_0001" proc-id="RM0250U___0000AOZ00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+<figure>
+<graphic graphicname="C123752E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<atten4>
+<ptxt>If a communication error occurs, DTCs for both the LH and RH sides will be stored simultaneously. To identify the malfunctioning area, turn the ignition switch off and then on (IG) again.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the present DTCs (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Present DTC B1628, B1638, B1648, or 82 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Present DTC B1623, B1633 B1643, or 81 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Present DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 are not output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>DTCs indicating communication errors will be changed to DTCs indicating errors in initialization by turning the ignition switch off and then on (IG) again.</ptxt>
+</item>
+<item>
+<ptxt>Codes other than present DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0027" fin="false">A</down>
+<right ref="RM0000027E4000X_05_0019" fin="true">B</right>
+<right ref="RM0000027E4000X_05_0020" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0027" proc-id="RM0250U___0000AYS00000">
+<testtitle>CHECK PAST DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the past DTCs (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Past DTC B1637, B1647, or 82 is output.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Past DTC B1627, B1637, B1647, or 82 is not output.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Past DTC B1627 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Codes other than past DTC B1627, B1637, B1647, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0002" fin="false">A</down>
+<right ref="RM0000027E4000X_05_0028" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0002" proc-id="RM0250U___0000AP000000">
+<testtitle>CHECK CONNECTION OF CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors are properly connected to the center airbag sensor assembly and the side airbag sensor RH.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are properly connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0003" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0003" proc-id="RM0250U___0000AP100000">
+<testtitle>CHECK CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors from the center airbag sensor assembly and side airbag sensor RH.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors (on the center airbag sensor assembly side and side airbag sensor RH side) are not damaged.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are not deformed or damaged.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0004" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0004" proc-id="RM0250U___0000AP200000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (OPEN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using a service wire, connect terminals 8 (BBP+) and 11 (BBP-) of connector B.</ptxt>
+<figure>
+<graphic graphicname="C114846E06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten3>
+<ptxt>Do not forcibly insert a service wire into the terminals of the connector when connecting.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - O7-3 (BBR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0005" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0005" proc-id="RM0250U___0000AP400000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the service wire from connector B.</ptxt>
+<figure>
+<graphic graphicname="C114847E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - O7-3 (BBR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0006" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0006" proc-id="RM0250U___0000AP500000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO B+)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+<figure>
+<graphic graphicname="C114847E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O7-3 (BBR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0007" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0007" proc-id="RM0250U___0000AS600000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C114847E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O7-3 (BBR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0008" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0008" proc-id="RM0250U___0000AS700000">
+<testtitle>CONFIRM PART NUMBER OF SIDE AIRBAG SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the part number of the side airbag sensor RH is equal to the number of the other side.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Those numbers are the same.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the center airbag sensor assembly and the side airbag sensor RH.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0009" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0010" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0009" proc-id="RM0250U___0000AS800000">
+<testtitle>CHECK SIDE AIRBAG SENSOR RH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Interchange the side airbag sensor LH with RH and connect the connectors to them.</ptxt>
+<figure>
+<graphic graphicname="C123752E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the memory (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1628, B1638, B1648, or 82 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1623, B1633, B1643, or 81 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 are not output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Return the side airbag sensor LH and RH to their original positions and connect the connectors to them.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0010" fin="false">A</down>
+<right ref="RM0000027E4000X_05_0023" fin="true">B</right>
+<right ref="RM0000027E4000X_05_0020" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0010" proc-id="RM0250U___0000AS900000">
+<testtitle>CHECK CONNECTION OF CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the connector is properly connected to the rear airbag sensor RH.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connector is properly connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0011" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0011" proc-id="RM0250U___0000ASA00000">
+<testtitle>CHECK CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors from the rear airbag sensor RH.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connector (on the rear airbag sensor RH side) is not damaged.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connector is not deformed or damaged.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0012" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0012" proc-id="RM0250U___0000ASB00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (OPEN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors from the side airbag sensor RH.</ptxt>
+</test1>
+<test1>
+<ptxt>Using a service wire, connect terminals 2 (BCR+) and 1 (BCR-) of connector C.</ptxt>
+<figure>
+<graphic graphicname="C123725E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten3>
+<ptxt>Do not forcibly insert a service wire into the terminals of the connector when connecting.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-2 (BCR-) - O7-1 (BCR+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0013" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0013" proc-id="RM0250U___0000ASC00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the service wire from connector C.</ptxt>
+<figure>
+<graphic graphicname="C114843E12" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-1 (BCR+) - O7-2 (BCR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0014" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0014" proc-id="RM0250U___0000ASE00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO B+)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+<figure>
+<graphic graphicname="C114843E12" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-1 (BCR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O7-2 (BCR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0015" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0015" proc-id="RM0250U___0000ASF00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C114843E12" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-1 (BCR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O7-2 (BCR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0016" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0016" proc-id="RM0250U___0000ASG00000">
+<testtitle>CONFIRM PART NUMBER OF REAR AIRBAG SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the part number of the rear airbag sensor RH is equal to the number of the other side.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Those numbers are the same.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the side airbag sensor RH and the rear airbag sensor RH.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0017" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0018" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0017" proc-id="RM0250U___0000ASH00000">
+<testtitle>CHECK REAR AIRBAG SENSOR RH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Interchange the rear airbag sensor LH with RH and connect the connectors to them.</ptxt>
+<figure>
+<graphic graphicname="C123751E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the memory (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1628, B1638, B1648, or 82 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1623, B1633, B1643, or 81 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 are not output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Return the rear airbag sensor LH and RH to their original positions and connect the connectors to them.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0018" fin="false">A</down>
+<right ref="RM0000027E4000X_05_0025" fin="true">B</right>
+<right ref="RM0000027E4000X_05_0020" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0018" proc-id="RM0250U___0000ASI00000">
+<testtitle>CHECK CENTER AIRBAG SENSOR ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the memory (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1628, B1638, B1648, or 82 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1628, B1638, B1648, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0020" fin="true">OK</down>
+<right ref="RM0000027E4000X_05_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0028" proc-id="RM0250U___0000AYT00000">
+<testtitle>CHECK CONNECTION OF CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors are properly connected to the center airbag sensor assembly and the side airbag sensor RH.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are properly connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0029" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0021" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0029" proc-id="RM0250U___0000AYU00000">
+<testtitle>CHECK CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors from the center airbag sensor assembly and side airbag sensor RH.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors (on the center airbag sensor assembly side and side airbag sensor RH side) are not damaged.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are not deformed or damaged.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0030" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0030" proc-id="RM0250U___0000AYV00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (OPEN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using a service wire, connect terminals 8 (BBP+) and 11 (BBP-) of connector B.</ptxt>
+<figure>
+<graphic graphicname="C114846E06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten3>
+<ptxt>Do not forcibly insert a service wire into the terminals of the connector when connecting.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - O7-3 (BBR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0031" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0031" proc-id="RM0250U___0000AYW00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the service wire from connector B.</ptxt>
+<figure>
+<graphic graphicname="C114847E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - O7-3 (BBR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0032" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0032" proc-id="RM0250U___0000AYX00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO B+)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+<figure>
+<graphic graphicname="C114847E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O7-3 (BBR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0033" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0033" proc-id="RM0250U___0000AYY00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C114847E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>O7-4 (BBR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O7-3 (BBR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 MΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0034" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0034" proc-id="RM0250U___0000AYZ00000">
+<testtitle>CONFIRM PART NUMBER OF SIDE AIRBAG SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the part number of the side airbag sensor RH is equal to the number of the other side.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Those numbers are the same.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connectors to the center airbag sensor assembly and the side airbag sensor RH.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0035" fin="false">OK</down>
+<right ref="RM0000027E4000X_05_0036" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0035" proc-id="RM0250U___0000AZ000000">
+<testtitle>CHECK SIDE AIRBAG SENSOR RH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Interchange the side airbag sensor LH with RH and connect the connectors to them.</ptxt>
+<figure>
+<graphic graphicname="C123752E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the memory (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1628, B1638, B1648, or 82 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1623, B1633, B1643, or 81 is output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 are not output.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1623, B1633, B1643, or 81 and B1628, B1638, B1648, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Return the side airbag sensor LH and RH to their original positions and connect the connectors to them.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0036" fin="false">A</down>
+<right ref="RM0000027E4000X_05_0023" fin="true">B</right>
+<right ref="RM0000027E4000X_05_0020" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0036" proc-id="RM0250U___0000AZ100000">
+<testtitle>CHECK CENTER AIRBAG SENSOR ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the memory (See page <xref label="Seep01" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and wait for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1628, B1638, B1648, or 82 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1628, B1638, B1648, or 82 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000027E4000X_05_0020" fin="true">OK</down>
+<right ref="RM0000027E4000X_05_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0019">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0020">
+<testtitle>USE SIMULATION METHOD TO CHECK<xref label="Seep01" href="RM000000XFD00ZX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0021">
+<testtitle>CONNECT CONNECTORS PROPERLY</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0022">
+<testtitle>REPAIR OR REPLACE FLOOR WIRE NO. 2</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0023">
+<testtitle>REPLACE SIDE AIRBAG SENSOR RH<xref label="Seep01" href="RM000000UWN00GX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0024">
+<testtitle>CONNECT CONNECTOR PROPERLY</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0025">
+<testtitle>REPLACE REAR AIRBAG SENSOR RH<xref label="Seep01" href="RM000000UWR00HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000027E4000X_05_0026">
+<testtitle>REPLACE CENTER AIRBAG SENSOR ASSEMBLY<xref label="Seep01" href="RM000000UWV00HX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,67 @@
+<!-- $Id: local.html,v 1.8 2004/04/26 05:02:25 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Inspection                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Local Navi</title>
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if(parent.g_objXml==null) return;
+	setProcedure(parent.g_objXml, this.document, (parent.g_s1 != null));
+	setSiblings(parent.g_paraId);
+	if(parent.g_s1 != null) location.hash = parent.g_s1;
+}
+
+function setProcedure(objPara, doc, f) {
+	parent.display(objPara, parent.g_lclXsl, disp, null);
+	var topProcId = objPara.selectSingleNode("//s-1/@id")
+	if (topProcId!=null) {
+		//var procIdVal = ( arguments[2] != null && arguments[2] ) ? parent.g_s1 : topProcId.nodeTypedValue;
+		var procIdVal = (f != null && f) ? parent.g_s1 : topProcId.nodeTypedValue;
+		parent.selectId(procIdVal, doc);
+	}
+}
+
+function setSiblings(exceptParaId) {
+	if (exceptParaId==null) return;
+	if (parent.g_ttlId==null) return;  // If g_ttlId is null, it is from INDEX.
+	var sibs = parent.getSiblingList(exceptParaId, parent.g_tocXml, "G");
+	if (sibs==null || sibs.length==0) return;
+	var tagBuf = "";
+	var para=null;
+	for (var i=0; i<sibs.length; i++) {
+		para=sibs.item(i);
+		var paraName=para.selectSingleNode("name");
+		var paraId=para.getAttribute("id");
+		tagBuf=tagBuf+"<a href=\"#\" class=\"paras\" onClick=\"replaceParagraph('"+paraId+"', this.document)\">"+paraName.nodeTypedValue+"</a><br/>";
+	}
+	paras.innerHTML=tagBuf;
+}
+
+function replaceParagraph(paraId, doc) {
+	var test = parent.initXml(paraId.toLowerCase()+".xml");
+	if (test==null) return;
+	parent.g_objXml = test
+	parent.g_paraId = paraId;
+	setProcedure(parent.g_objXml, doc);
+	setSiblings(parent.g_paraId);
+	parent.contents.init();
+	parent.sts.init();
+	parent.global.setLinks(false);
+}
+</script>
+</head>
+<body onLoad="init();parent.resize(document);" onResize="parent.resize(document);">
+	<p class="title-name">Inspection</p><!-- 000 -->
+	<div id="disp"></div>
+	<div id="paras" class="sub-items"></div>
+</body>
+</html>

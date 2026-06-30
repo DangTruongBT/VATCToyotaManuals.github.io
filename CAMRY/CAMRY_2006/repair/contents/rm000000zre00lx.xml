@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000ZRE00LX" category="C" type-id="302I6" name-id="CC0PI-01" from="200601">
+<dtccode>P0571</dtccode>
+<dtcname>Brake Switch "A" Circuit</dtcname>
+<subpara id="RM000000ZRE00LX_01" type-id="60" category="03" proc-id="RM0250U___000080000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the brake pedal is depressed, the stop light switch sends a signal to the ECM. When the ECM receives this signal, it cancels the cruise control. The fail-safe function operates to enable normal driving even if there is a malfunction in the stop light signal circuit. The cancellation condition occurs when voltage is applied to terminal STP. When the brake is applied, voltage is normally applied to terminal STP of the ECM through the STOP SW fuse and the stop light switch, and the ECM turns the cruise control off.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0571</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When voltage of STP terminal and that of ST1- terminal of ECM are less than 1 V for 0.5 sec. or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Stop light switch</ptxt>
+</item>
+<item>
+<ptxt>Stop light switch circuit</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000ZRE00LX_02" type-id="32" category="03" proc-id="RM0250U___000080100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E129952E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="E129951E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000ZRE00LX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000ZRE00LX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000ZRE00LX_04_0001" proc-id="RM0250U___000080200000">
+<testtitle>READ VALUE ON INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG), and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DATA LIST for proper functioning of the stop light switch.</ptxt>
+<table pgwide="1">
+<title>ECM (Cruise control):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STP LIGHT SW M (STP)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch signal (Main CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STP LIGHT SW S2 (STP)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch signal (Sub CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STP LIGHT SW S1 (ST1-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Stop light switch signal (Sub CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Brake pedal depressed</ptxt>
+<ptxt>OFF: Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>When the brake pedal is operated, the display changes as shown above.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ZRE00LX_04_0009" fin="false">NG</down>
+<right ref="RM000000ZRE00LX_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0009" proc-id="RM0250U___000080500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STOP LIGHT SWITCH - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A19 connector from the stop light switch.</ptxt>
+<figure>
+<graphic graphicname="E114084E08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A19-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A19-3 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000ZRE00LX_04_0002" fin="false">OK</down>
+<right ref="RM000000ZRE00LX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0002" proc-id="RM0250U___000080300000">
+<testtitle>INSPECT STOP LIGHT SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the stop light switch. (See page <xref label="Seep01" href="RM000001OC2001X"/>)</ptxt>
+<figure>
+<graphic graphicname="E128781E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch pin not pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch pin not pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch pin pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch pin pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the stop light switch.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ZRE00LX_04_0004" fin="false">OK</down>
+<right ref="RM000000ZRE00LX_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0004" proc-id="RM0250U___000080400000">
+<testtitle>CHECK ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the stop light switch connector.</ptxt>
+<figure>
+<graphic graphicname="E126835E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A55 connector from the ECM. (2GR-FE)</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the A24 connector from the ECM. (2AZ-FE)</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Brake Pedal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-36 (STP) - Body ground<sup>*1</sup>
+</ptxt>
+<ptxt>A24-36 (STP) - Body ground<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-36 (STP) - Body ground<sup>*1</sup>
+</ptxt>
+<ptxt>A24-36 (STP) - Body ground<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-35 (ST1-) - Body ground<sup>*1</sup>
+</ptxt>
+<ptxt>A24-35 (ST1-) - Body ground<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A55-35 (ST1-) - Body ground<sup>*1</sup>
+</ptxt>
+<ptxt>A24-35 (ST1-) - Body ground<sup>*2</sup>
+</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>*1: 2GR-FE</ptxt>
+<ptxt>*2: 2AZ-FE</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ZRE00LX_04_0005" fin="true">OK</down>
+<right ref="RM000000ZRE00LX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0005">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0006">
+<testtitle>REPLACE STOP LIGHT SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000ZRE00LX_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (STOP LIGHT SWITCH - ECM)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

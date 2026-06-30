@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GV0002X" category="C" type-id="3018R" name-id="EI0EI-01" from="200601">
+<dtccode>B2780</dtccode>
+<dtcname>Push Switch / Key Unlock Warning Switch Malfunction</dtcname>
+<subpara id="RM000001GV0002X_01" type-id="60" category="03" proc-id="RM0250U___00008F300000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC will be output if the transponder key ECU assembly does not detect that the unlock warning switch is ON even when the ignition switch is ON. Under normal conditions, the unlock warning switch assembly is ON when the ignition switch is ON.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2780</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"Unlock warning switch ON" is not detected when ignition switch is ON.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Unlock warning switch assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire harness</ptxt>
+</item>
+<item>
+<ptxt>Transponder key ECU assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001GV0002X_02" type-id="32" category="03" proc-id="RM0250U___00008F400000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128326E04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001GV0002X_03" type-id="51" category="05" proc-id="RM0250U___00008IM00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>If the transponder key ECU assembly is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GV0002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GV0002X_04_0001" proc-id="RM0250U___00008F500000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select KEY SW in the DATA LIST and read the value displayed on the tester.</ptxt>
+<table pgwide="1">
+<title>IMMOBILISER:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>KEY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock warning switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF: Key is in ignition key cylinder</ptxt>
+<ptxt>ON: No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>ON (Key is in ignition key cylinder) appears on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV0002X_04_0002" fin="false">NG</down>
+<right ref="RM000001GV0002X_04_0008" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV0002X_04_0002" proc-id="RM0250U___00008F600000">
+<testtitle>INSPECT UNLOCK WARNING SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Remove the unlock warning switch assembly (See page <xref label="Seep01" href="RM0000026TU000X"/>).</ptxt>
+<figure>
+<graphic graphicname="B118535E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch pushed</ptxt>
+<ptxt>(Key set)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch free</ptxt>
+<ptxt>(Key removed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV0002X_04_0003" fin="false">OK</down>
+<right ref="RM000001GV0002X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV0002X_04_0003" proc-id="RM0250U___00008F700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (UNLOCK WARNING SWITCH - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B124194E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E22-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV0002X_04_0004" fin="false">OK</down>
+<right ref="RM000001GV0002X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV0002X_04_0004" proc-id="RM0250U___00008F800000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TRANSPONDER KEY ECU - UNLOCK WARNING SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E15 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B128340E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E15-3 (KSW) - E22-1</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E22-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV0002X_04_0006" fin="true">OK</down>
+<right ref="RM000001GV0002X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV0002X_04_0006">
+<testtitle>REPLACE TRANSPONDER KEY ECU ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001GV0002X_04_0007">
+<testtitle>REPLACE UNLOCK WARNING SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001GV0002X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

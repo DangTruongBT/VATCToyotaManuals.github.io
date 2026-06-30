@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000O8L028X" category="U" type-id="303FP" name-id="AT00L-53" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000000O8L028X_z0" proc-id="RM0250U___000063F00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FAIL-SAFE</ptxt>
+<ptxt>This function minimizes the loss of the ECT functions when any malfunction occurs in a sensor or solenoid.</ptxt>
+<step2>
+<ptxt>ATF (Automatic Transmission Fluid) temperature sensor:</ptxt>
+<ptxt>When the ATF temperature sensor has a malfunction, 5th upshift is prohibited.</ptxt>
+</step2>
+<step2>
+<ptxt>Counter gear speed sensor NC (Speed sensor NC):</ptxt>
+<ptxt>When the counter gear speed sensor has a malfunction, 5th upshift is prohibited.</ptxt>
+</step2>
+<step2>
+<ptxt>Shift solenoid valve DSL:</ptxt>
+<ptxt>When the solenoid valve DSL has a malfunction, the current to the solenoid valve is stopped.</ptxt>
+<ptxt>This stops lock-up control, then fuel economy decreases.</ptxt>
+</step2>
+<step2>
+<ptxt>Shift solenoid valve SL1, SL2, SL3 and S4:</ptxt>
+<ptxt>Fail safe function:</ptxt>
+<ptxt>If either of the shift solenoid valve circuits develops an open or short, the ECM turns the other shift solenoid "ON" and "OFF" in order to shift into the gear positions shown in the table below.</ptxt>
+<ptxt>Manual shifting as shown in the following table must be done (In case of a short circuit, the ECM stops sending the current to the short circuited solenoid).</ptxt>
+<ptxt>Even if starting the engine in the fail-safe mode, the gear position remains in the same position.</ptxt>
+<atten4>
+<ptxt>FL: Flex Lock-up</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="8">
+<colspec colname="COL1" colwidth="0.89in"/>
+<colspec colname="COL2" colwidth="0.89in"/>
+<colspec colname="COL3" colwidth="0.89in"/>
+<colspec colname="COL4" align="center" colwidth="0.89in"/>
+<colspec colname="COL5" align="center" colwidth="0.89in"/>
+<colspec colname="COL6" align="center" colwidth="0.89in"/>
+<colspec colname="COL7" align="center" colwidth="0.89in"/>
+<colspec colname="COL8" align="center" colwidth="0.85in"/>
+<tbody>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>Normal</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>SL1 Malfunction</ptxt>
+<ptxt>(During driving at 1st or 2nd)</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL to ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st to 2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd to 2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th to 2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th to 2nd</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>SL1 Malfunction</ptxt>
+<ptxt>(During driving at 3rd)</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to FL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th to 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>SL1 Malfunction</ptxt>
+<ptxt>(During driving at 4th or 5th)</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th to 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>SL2 Malfunction</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON to OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th to 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>SL3 Malfunction</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF to ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th to 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>S4 Malfunction</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FL</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5th to 4th</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle" align="center">
+<ptxt>SL1, SL2, SL3, and S4 Malfunction</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Solenoid Valve</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SL1</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL2</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SL3</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S4</ptxt>
+</entry>
+<entry namest="COL4" nameend="COL8" valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL2" nameend="COL3">
+<ptxt>Gear Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1st to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2nd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3rd to 4th</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th</ptxt>
+
+</entry>
+<entry valign="middle">
+<ptxt>5th to 4th</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

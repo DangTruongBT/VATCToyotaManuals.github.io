@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000000XFH00SX" category="U" type-id="303FJ" name-id="RS2D0-01" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000XFH00SX_z0" proc-id="RM0250U___000072500000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>By accessing the DATA LIST displayed on the intelligent tester, you can perform such functions as reading the values of switches and sensors without removing any parts. Reading the DATA LIST as the first step in troubleshooting is one method to save labor time.</ptxt>
+</atten4>
+<step1>
+<ptxt>DATA LIST FOR CENTER AIRBAG SENSOR ASSEMBLY</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / SRS AIRBAG / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the values by referring to the table below.</ptxt>
+<table pgwide="1">
+<title>DATA LIST</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>D SEAT POSITION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver Seat Position/</ptxt>
+<ptxt>FORWARD: Seat position is forward</ptxt>
+<ptxt>BKWARD: Seat position is backward</ptxt>
+<ptxt>FAIL: Failure detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FORWARD/BKWARD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PASSENGER CLASS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger Classification/</ptxt>
+<ptxt>NG: Data is not determined</ptxt>
+<ptxt>OFF: Vacant</ptxt>
+<ptxt>CHILD: Child (less than 36 kg (79.37 lb)) is seated</ptxt>
+<ptxt>AF05: Adult (36 to 54 kg (79.37 to 119.05 lb) is seated</ptxt>
+<ptxt>AM50: Adult (more than 54 kg (119.05 lb)) is seated</ptxt>
+<ptxt>FAIL: A failure is detected</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF/CHILD/AF05/AM50</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D BUCKLE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver Buckle SW/</ptxt>
+<ptxt>UNSET: The seat belt is not fastened</ptxt>
+<ptxt>SET: The seat belt is fastened</ptxt>
+<ptxt>NG: Data is not determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>UNSET/SET</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P BUCKLE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger Buckle SW/</ptxt>
+<ptxt>UNSET: The seat belt is not fastened</ptxt>
+<ptxt>SET: The seat belt is fastened</ptxt>
+<ptxt>NG: Data is not determined</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>UNSET/SET</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PAST CODES</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Number of Past DTC/</ptxt>
+<ptxt>Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>TYPE INFO</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DISPLAY TYPE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Display Type Information/</ptxt>
+<ptxt>LR: The display is indicated by LH/RH</ptxt>
+<ptxt>DP: The display is indicated by Driver/Passenger</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DP</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

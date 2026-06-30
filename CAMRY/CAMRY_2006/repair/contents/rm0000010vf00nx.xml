@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM0000010VF00NX" category="C" type-id="303BY" name-id="RS2DZ-01" from="200601">
+<dtccode>B1790</dtccode>
+<dtcname>Center Airbag Sensor Assembly Communication Circuit Malfunction</dtcname>
+<subpara id="RM0000010VF00NX_01" type-id="60" category="03" proc-id="RM0250U___0000ADR00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The center airbag sensor assembly communication circuit consists of the occupant classification ECU and the center airbag sensor assembly.</ptxt>
+<ptxt>DTC B1790 is recorded when a malfunction is detected in the center airbag sensor assembly communication circuit.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1790</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>The occupant classification ECU receives a line short circuit signal, an open circuit signal, a short circuit to ground signal or a short circuit to B+ signal in the center airbag sensor assembly communication circuit for 2 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Center airbag sensor assembly malfunction</ptxt>
+</item>
+<item>
+<ptxt>Occupant classification ECU malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Occupant classification ECU</ptxt>
+</item>
+<item>
+<ptxt>Center airbag sensor assembly</ptxt>
+</item>
+<item>
+<ptxt>Floor wire No. 2</ptxt>
+</item>
+<item>
+<ptxt>Front seat wire RH (for Power seat)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000010VF00NX_02" type-id="32" category="03" proc-id="RM0250U___0000ADS00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="H045471E04" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000010VF00NX_03" type-id="51" category="05" proc-id="RM0250U___0000ADT00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If troubleshooting (wire harness inspection) is difficult to perform, remove the front passenger seat installation bolts to see the under surface of seat cushion.</ptxt>
+</item>
+<item>
+<ptxt>In the above case, hold the seat so that it does not fall down. Holding the seat for a long period of time may cause a problem, such as seat rail deformation. Hold the seat only as necessary.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000010VF00NX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000010VF00NX_04_0001" proc-id="RM0250U___0000ADU00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep03" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1790 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1790 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0002" fin="false">NG</down>
+<right ref="RM0000010VF00NX_04_0013" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0002" proc-id="RM0250U___0000ADV00000">
+<testtitle>CHECK CONNECTION OF CONNECTORS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the connectors are properly connected to the occupant classification ECU and the center airbag sensor assembly.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The connectors are properly connected.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0018" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0018" proc-id="RM0250U___0000ADX00000">
+<testtitle>CHECK VEHICLE CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the passenger seat type.</ptxt>
+<spec>
+<title>Result</title>
+<subtitle>A</subtitle>
+<specitem>
+<ptxt>for Manual seat</ptxt>
+</specitem>
+<subtitle>B</subtitle>
+<specitem>
+<ptxt>for Power seat</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0019" fin="false">A</down>
+<right ref="RM0000010VF00NX_04_0028" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0019" proc-id="RM0250U___0000ADY00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO B+)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the center airbag sensor assembly and occupant classification ECU.</ptxt>
+<figure>
+<graphic graphicname="C123686E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value (s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-8 (FSR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-4 (FSR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0020" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0020" proc-id="RM0250U___0000ADZ00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (OPEN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C123687E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Using a service wire, connect terminals 12 (FSP+) and 13 (FSP-) of connector B.</ptxt>
+<atten3>
+<ptxt>Do not forcibly insert a service wire into the terminals of the connector when connecting.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-8 (FSR+) - O4-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0021" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0021" proc-id="RM0250U___0000AE000000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the service wire from connector B.</ptxt>
+<figure>
+<graphic graphicname="C123686E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-8 (FSR+) - O4-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0022" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0022" proc-id="RM0250U___0000AE100000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C123686E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-8 (FSR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O4-4 (FSR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0023" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0023" proc-id="RM0250U___0000AE200000">
+<testtitle>RECHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the connectors to the occupant classification ECU and the center airbag sensor assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, check the DTCs of the occupant classification ECU (See page <xref label="Seep03" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1790 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1790 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0024" fin="false">NG</down>
+<right ref="RM0000010VF00NX_04_0013" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0024" proc-id="RM0250U___0000AE300000">
+<testtitle>REPLACE OCCUPANT CLASSIFICATION ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Replace the occupant classification ECU (See page <xref label="Seep01" href="RM0000011JG003X"/>).</ptxt>
+<atten4>
+<ptxt>Perform the inspection using parts from a normal vehicle if possible.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0025" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0025" proc-id="RM0250U___0000AE400000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETED" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0026" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0026" proc-id="RM0250U___0000AE500000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0027" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0027" proc-id="RM0250U___0000AE600000">
+<testtitle>RECHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, check the DTCs of the occupant classification ECU (See page <xref label="Seep03" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1790 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1790 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0044" fin="true">OK</down>
+<right ref="RM0000010VF00NX_04_0042" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0028" proc-id="RM0250U___0000AE700000">
+<testtitle>CHECK OCCUPANT CLASSIFICATION SYSTEM CIRCUIT (TO B+)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the center airbag sensor assembly and occupant classification ECU.</ptxt>
+<figure>
+<graphic graphicname="C110462E29" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-8 (FSR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-4 (FSR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0029" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0037" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0029" proc-id="RM0250U___0000AE800000">
+<testtitle>CHECK OCCUPANT CLASSIFICATION SYSTEM CIRCUIT (OPEN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C123726E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Using a service wire, connect terminals 12 (FSP+) and 13 (FSP-) of connector B.</ptxt>
+<atten3>
+<ptxt>Do not forcibly insert a service wire into the terminals of the connector when connecting.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-8 (FSR+) - T10-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0030" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0038" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0030" proc-id="RM0250U___0000AE900000">
+<testtitle>CHECK OCCUPANT CLASSIFICATION SYSTEM CIRCUIT (SHORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the service wire from connector B.</ptxt>
+<figure>
+<graphic graphicname="C110462E29" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-8 (FSR+) - T10-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0031" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0039" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0031" proc-id="RM0250U___0000AEA00000">
+<testtitle>CHECK OCCUPANT CLASSIFICATION SYSTEM CIRCUIT (TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C110462E29" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-8 (FSR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>T10-4 (FSR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0032" fin="false">OK</down>
+<right ref="RM0000010VF00NX_04_0040" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0032" proc-id="RM0250U___0000AEB00000">
+<testtitle>RECHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the connectors to the occupant classification ECU and the center airbag sensor assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, check the DTCs of the occupant classification ECU (See page <xref label="Seep03" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1790 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1790 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0033" fin="false">NG</down>
+<right ref="RM0000010VF00NX_04_0013" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0033" proc-id="RM0250U___0000AEC00000">
+<testtitle>REPLACE OCCUPANT CLASSIFICATION ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Replace the occupant classification ECU (See page <xref label="Seep01" href="RM0000011JG003X"/>).</ptxt>
+<atten4>
+<ptxt>Perform the inspection using parts from a normal vehicle if possible.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0034" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0034" proc-id="RM0250U___0000AED00000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETED" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0035" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0035" proc-id="RM0250U___0000AEE00000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0036" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0036" proc-id="RM0250U___0000AEF00000">
+<testtitle>RECHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep02" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, check the DTCs of the occupant classification ECU (See page <xref label="Seep03" href="RM000000XFE00YX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1790 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1790 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0044" fin="true">OK</down>
+<right ref="RM0000010VF00NX_04_0042" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0037" proc-id="RM0250U___0000AEG00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (TO B+)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C110464E18" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery, and wait for at least 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the front seat wire RH connector from the floor wire No. 2.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery, and wait for at least 2 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OT1-1 (FSR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OT1-4 (FSR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0043" fin="true">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0038" proc-id="RM0250U___0000AEH00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (OPEN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the front seat wire RH connector from the floor wire No. 2.</ptxt>
+<figure>
+<graphic graphicname="C123727E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>The service wire has already been inserted into connector B.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OT1-1 (FSR+) - OT1-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0043" fin="true">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0039" proc-id="RM0250U___0000AEI00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (SHORT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the front seat wire RH connector from the floor wire No. 2.</ptxt>
+<figure>
+<graphic graphicname="C110464E18" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OT1-1 (FSR+) - OT1-4 (FSR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0043" fin="true">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0040" proc-id="RM0250U___0000AEJ00000">
+<testtitle>CHECK FLOOR WIRE NO. 2 (TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the front seat wire RH connector from the floor wire No. 2.</ptxt>
+<figure>
+<graphic graphicname="C110464E18" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OT1-1 (FSR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OT1-4 (FSR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 MΩ or Higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VF00NX_04_0043" fin="true">OK</down>
+<right ref="RM0000010VF00NX_04_0041" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0041">
+<testtitle>REPAIR OR REPLACE FLOOR WIRE NO. 2</testtitle>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0042">
+<testtitle>REPLACE CENTER AIRBAG SENSOR ASSEMBLY<xref label="Seep01" href="RM000000UWV00HX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0043">
+<testtitle>REPAIR OR REPLACE FRONT SEAT WIRE RH</testtitle>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0013">
+<testtitle>USE SIMULATION METHOD TO CHECK<xref label="Seep01" href="RM0000010VJ00PX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0014">
+<testtitle>CONNECT CONNECTORS PROPERLY, THEN GO TO STEP 1</testtitle>
+</testgrp>
+<testgrp id="RM0000010VF00NX_04_0044">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

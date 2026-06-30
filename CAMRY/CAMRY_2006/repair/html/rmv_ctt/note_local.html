@@ -1,0 +1,42 @@
+<!-- $Id: note_local.html,v 1.8 2004/04/26 05:04:26 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Note                                                              -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Note Dialog Local Navi</title>
+<link href="../../css/local.css" rel="stylesheet" type="text/css">
+<script language="javaScript">
+function init() {
+	if(parent.g_procId==null)	return;
+	setProcedure(parent.g_tocXml, parent.g_lclXsl, this.document);
+}
+
+function setProcedure(tocXml, lclXsl, doc) {
+	if (tocXml==null || lclXsl==null) return;
+	parent.display(tocXml, lclXsl, disp, null);
+	selectId(parent.g_procId, doc, true);
+}
+
+function selectId(procId, obj,f) {
+	parent.selectId(procId, obj);
+	if (parent.contents!=null) parent.contents.location.hash = "pageTop";
+	parent.g_procId = procId;
+	parent.g_objXml = parent.initXml(parent.g_procId +".xml");
+	if(parent.sts!=null && !f)  parent.sts.setStatus(procId);
+	if(parent.g_objXml==null) return;
+	if(parent.contents!=null && !f)  parent.contents.setContents(parent.g_objXml);
+}
+</script>
+</head>
+<body onLoad="init();">
+	<p class="title-name">Note</p><!-- 000 -->
+	<div id="disp"></div>
+</body>
+</html>

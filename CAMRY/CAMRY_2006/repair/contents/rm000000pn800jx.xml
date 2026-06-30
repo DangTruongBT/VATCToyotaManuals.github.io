@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000000PN800JX" category="J" type-id="3017M" name-id="NS0W3-01" from="200601">
+<dtccode/>
+<dtcname>Panel Switches do not Function</dtcname>
+<subpara id="RM000000PN800JX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PN800JX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PN800JX_02_0001" proc-id="RM0250U___00004W900000">
+<testtitle>CHECK PANEL SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for foreign matter around the switches that might prevent operation.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No foreign matter is found.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PN800JX_02_0003" fin="false">OK</down>
+<right ref="RM000000PN800JX_02_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PN800JX_02_0002">
+<testtitle>REMOVE ANY FOREIGN MATTER FOUND</testtitle>
+</testgrp>
+<testgrp id="RM000000PN800JX_02_0003" proc-id="RM0250U___00004WA00000">
+<testtitle>CHECK PANEL SWITCH (DISPLAY CHECK MODE)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="I100041" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Enter the "Display Check" mode (Panel Switch Check) (See page <xref label="Seep01" href="RM0000011BV00GX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Operate the abnormal switch and check if the switch name and status are correctly displayed.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The switch name and status are correctly displayed as operated.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PN800JX_02_0005" fin="true">OK</down>
+<right ref="RM000000PN800JX_02_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PN800JX_02_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PN800JX_02_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

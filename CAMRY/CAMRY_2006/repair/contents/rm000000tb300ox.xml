@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000TB300OX" category="C" type-id="302HC" name-id="ES36J-03" from="200601">
+<dtccode>P0128</dtccode>
+<dtcname>Coolant Thermostat (Coolant Temperature Below Thermostat Regulating Temperature)</dtcname>
+<subpara id="RM000000TB300OX_10" type-id="11" category="10" proc-id="RM0250U___00007E400000">
+<name>CAUTION / NOTICE / HINT</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>This DTC relates to the thermostat.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_01" type-id="60" category="03" proc-id="RM0250U___00007DV00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is set when the Engine Coolant Temperature (ECT) does not reach 75°C (167°F) despite sufficient engine warm-up time having elapsed.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="0.85in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="3.11in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0128</ptxt>
+</entry>
+<entry>
+<ptxt>Conditions (a), (b) and (c) are met for 5 seconds (2 trip detection logic):</ptxt>
+<ptxt>(a) Cold start</ptxt>
+<ptxt>(b) Engine warmed up</ptxt>
+<ptxt>(c) ECT less than 75°C (167°F)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Thermostat</ptxt>
+</item>
+<item>
+<ptxt>Cooling system</ptxt>
+</item>
+<item>
+<ptxt>ECT sensor</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_02" type-id="64" category="03" proc-id="RM0250U___00007DW00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A121605E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<ptxt>The ECM estimates the ECT based on the starting temperature, engine loads, and engine speeds. The ECM then compares the estimated temperature with the actual ECT. When the estimated ECT reaches 75°C (167°F), the ECM checks the actual ECT. If the actual ECT is less than 75°C (167°F), the ECM interprets this as a malfunction in the thermostat or the engine cooling system and sets the DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_03" type-id="65" category="03" proc-id="RM0250U___00007DX00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.38in"/>
+<colspec colname="COL2" colwidth="3.71in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0128: Coolant Thermostat</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Thermostat</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Coolant Temperature (ECT) sensor, Intake Air Temperature (IAT) sensor, Vehicle speed sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>450 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_04" type-id="66" category="03" proc-id="RM0250U___00007DY00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.36in"/>
+<colspec colname="COL2" colwidth="3.73in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0010 (VVT OCV )</ptxt>
+<ptxt>P0011 (VVT System 1 - Advance)</ptxt>
+<ptxt>P0012 (VVT System 1 - Retard)</ptxt>
+<ptxt>P0031, P0032 (A/F sensor heater - Sensor 1)</ptxt>
+<ptxt>P0100 - P0103 (MAF meter)</ptxt>
+<ptxt>P0110 - P0113 (IAT sensor)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0125 (Insufficient ECT for Closed Loop)</ptxt>
+<ptxt>P0171, P0172 (Fuel system)</ptxt>
+<ptxt>P0300 - P0304 (Misfire)</ptxt>
+<ptxt>P0335 (CKP sensor)</ptxt>
+<ptxt>P0340 (CMP sensor)</ptxt>
+<ptxt>P0351 - P0354 (Igniter)</ptxt>
+<ptxt>P0500 (VSS)</ptxt>
+<ptxt>P2196 (A/F sensor - rationality)</ptxt>
+<ptxt>P2A00 (A/F sensor - slow response)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECT at engine start - IAT at engine start</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-15 to 7°C (-27 to 12.6°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECT at engine start</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-10 to 56°C (14 to 133°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>IAT at engine start</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-10 to 56°C (14 to 133°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECT at engine start - IAT at engine start</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>More than 7°C (12.6°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECT at engine start</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>56°C (133°F) or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>IAT at engine start</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-10°C (14°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Accumulated time at 80 mph (128 km/h) or more</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20 seconds</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_05" type-id="67" category="03" proc-id="RM0250U___00007DZ00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.35in"/>
+<colspec colname="COL2" colwidth="3.73in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Duration that both following conditions (a) and (b) are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 seconds or more</ptxt>
+</entry>
+</row>
+
+<row>
+<entry valign="middle">
+<ptxt>(a) Estimated ECT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>75°C (167°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) ECT sensor output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 75°C (167°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_08" type-id="51" category="05" proc-id="RM0250U___00007E000000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TB300OX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000TB300OX_09_0001" proc-id="RM0250U___00007E100000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0128)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>P0128</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>P0128 and other DTCs</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0128 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TB300OX_09_0002" fin="false">A</down>
+<right ref="RM000000TB300OX_09_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TB300OX_09_0002" proc-id="RM0250U___00007E200000">
+<testtitle>CHECK COOLING SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for defects in the cooling system that might cause the system to be too cold, such as abnormal radiator fan operation or any modifications.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TB300OX_09_0003" fin="false">OK</down>
+<right ref="RM000000TB300OX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TB300OX_09_0003" proc-id="RM0250U___00007E300000">
+<testtitle>INSPECT THERMOSTAT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the thermostat (See page <xref label="Seep01" href="RM0000017WE005X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the valve opening temperature of the thermostat.</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>80 to 84°C (176 to 183°F)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>In addition to the above check, confirm that the valve is completely closed when the temperature is below the standard.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Reinstall the thermostat (See page <xref label="Seep02" href="RM0000017WB005X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TB300OX_09_0007" fin="true">OK</down>
+<right ref="RM000000TB300OX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TB300OX_09_0004">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000TB300OX_09_0005">
+<testtitle>REPAIR OR REPLACE COOLING SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000TB300OX_09_0006">
+<testtitle>REPLACE THERMOSTAT</testtitle>
+</testgrp>
+<testgrp id="RM000000TB300OX_09_0007">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

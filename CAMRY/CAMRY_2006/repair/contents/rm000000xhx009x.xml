@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHX009X" category="U" type-id="303FP" name-id="BC02P-09" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000000XHX009X_z0" proc-id="RM0250U___00005RE00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FAIL SAFE OPERATION</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If there is a problem with sensor signals or actuator systems, the skid control ECU prohibits power supply to the brake actuator assembly and informs the ECM of VSC system failure.</ptxt>
+<ptxt>The brake actuator assembly turns off each solenoid and the ECM shuts off VSC control (traction control signal) from the skid control ECU accordingly, which turns out to be as if the ABS, TRAC and VSC systems were not installed.</ptxt>
+<ptxt>The ABS control will be prohibited, but EBD control continues as much as possible. If EBD control is impossible, the BRAKE warning light comes on to warn the driver (See page <xref label="Seep01" href="RM000000XHP009X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If system components have any malfunction before starting control, immediately stop the operation. If system components have any malfunction during control, gradually stop the control so as not to trigger a sudden change in vehicle conditions.</ptxt>
+<ptxt>If it is impossible to control the systems, the warning light comes on to inform the driver of termination of the systems (See page <xref label="Seep02" href="RM000000XHP009X"/>).</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>If the hydraulic brake booster encounters a malfunction, brake performance is gradually lost and ABS, BA, TRAC and VSC systems are prohibited.</ptxt>
+</atten4>
+<table pgwide="1">
+<title>ABS, EBD and BA system:</title>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ABS system</ptxt>
+</entry>
+<entry>
+<ptxt>ABS, BA, TRAC and VSC control prohibited</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BA system</ptxt>
+</entry>
+<entry>
+<ptxt>ABS, BA, TRAC and VSC control prohibited</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EBD system</ptxt>
+</entry>
+<entry>
+<ptxt>ABS, EBD, BA, TRAC and VSC control prohibited</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>A malfunction in either the ABS or BA system will result in an identical operation, with ABS, BA, TRAC and VSC system control prohibited.</ptxt>
+</atten4>
+<table pgwide="1">
+<title>TRAC and VSC system:</title>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Malfunction Area</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine control system</ptxt>
+<ptxt>(TRAC and VSC systems)</ptxt>
+</entry>
+<entry>
+<ptxt>Before control: Disables control</ptxt>
+<ptxt>During control: Uses only the brakes to effect control</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake control system</ptxt>
+<ptxt>(VSC system)</ptxt>
+</entry>
+<entry>
+<ptxt>Before control: Disables control</ptxt>
+<ptxt>During control: Uses only the engine to effect control</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Brake control system</ptxt>
+<ptxt>(TRAC system)</ptxt>
+</entry>
+<entry>
+<ptxt>Before control: Disables control</ptxt>
+<ptxt>During control: Disables control (by gradually ending control)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>As for the TRAC and VSC systems, different systems prohibit different controls depending on a malfunctioning part.</ptxt>
+</atten4>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

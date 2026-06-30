@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72Z7A_T00AY" variety="T00AY">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W6Z027X" category="D" type-id="3001B" name-id="AT02X-73" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000W6Z027X_z0" proc-id="RM0250U___00005XF00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The ECM of this system is connected to the CAN and multiplex communication system. Therefore, before starting troubleshooting, make sure to check that there is no trouble in the CAN and multiplex communication systems.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester can be used at steps 3, 4, 6, and 9.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>Vehicle Brought to Workshop</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Customer Problem Analysis</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Connect the OBD II scan tool or intelligent tester to DLC3</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Check and Clear DTCs and Freeze Frame Data</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep01" href="RM000000W77024X"/>).</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Visual Inspection</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Setting the Check Mode Diagnosis</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep02" href="RM000000W78024X"/>).</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Problem Symptom Confirmation</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep03" href="RM000000W79021X"/>).</ptxt>
+</atten4>
+<results>
+<result/>
+<action-ci-right>Symptom does not occur: Go to step 8</action-ci-right>
+<result/>
+<action-ci-right>Symptom occurs: Go to step 9</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Symptom Simulation</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep04" href="RM000000UZ100YX"/>).</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC Check</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep05" href="RM000000W77024X"/>).</ptxt>
+</atten4>
+<results>
+<result/>
+<action-ci-right>DTC is not output: Go to step 10</action-ci-right>
+<result/>
+<action-ci-right>DTC is output: Go to step 17</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Basic Inspection</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep06" href="RM0000016SC00IX"/>, <xref label="Seep07" href="RM000000YWQ003X"/> and <xref label="Seep08" href="RM000000YX1002X"/>).</ptxt>
+</atten4>
+<results>
+<result>NG</result>
+<action-ci-right>Go to step 19</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Mechanical System Test</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep09" href="RM000000W7A026X"/>).</ptxt>
+</atten4>
+<results>
+<result>NG</result>
+<action-ci-right>Go to step 16</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Hydraulic Test</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep10" href="RM000000W7B023X"/>).</ptxt>
+</atten4>
+<results>
+<result>NG</result>
+<action-ci-right>Go to step 16</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Manual Shifting Test</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep11" href="RM000000W7C026X"/>).</ptxt>
+</atten4>
+<results>
+<result>NG</result>
+<action-ci-right>Go to step 15</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Problem Symptoms Table Chapter 1</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep12" href="RM000000W73028X"/>).</ptxt>
+</atten4>
+<results>
+<result>NG</result>
+<action-ci-right>Go to step 18</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Problem Symptoms Table Chapter 2</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep13" href="RM000000W73028X"/>).</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Part Inspection</testtitle>
+<results>
+<result/>
+<action-ci-right>Go to step 19</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC Chart</testtitle>
+<atten4>
+<ptxt>(See page <xref label="Seep14" href="RM000000W71025X"/>).</ptxt>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Circuit Inspection</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Repair or Replace</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>Confirmation Test</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>End</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

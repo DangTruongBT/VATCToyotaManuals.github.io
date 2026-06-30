@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JB2002X" category="S" type-id="3001E" name-id="BC0S9-03" from="200601">
+<name>DIAGNOSTIC TROUBLE CODE CHART</name>
+<subpara id="RM000001JB2002X_z0" proc-id="RM0250U___00000ZG00000">
+<content5 releasenbr="1">
+<atten3>
+<ptxt>Turn the ignition switch off before removing parts.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If no abnormality is found when inspecting parts, inspect the skid control ECU and ground points for poor contact.</ptxt>
+</item>
+<item>
+<ptxt>If a malfunction code is displayed during the DTC check, check the circuit indicated by the DTC. For details of each code, refer to the "See page" for respective "DTC No." in the DTC chart.</ptxt>
+</item>
+<item>
+<ptxt>When 2 or more DTCs are detected, perform circuit inspection one by one until the problem is identified.</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>ANTI-LOCK BRAKE SYSTEM:</title>
+<tgroup cols="4" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="1.77in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.77in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="1.77in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="1.77in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0200/31</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Right Front Wheel Speed Sensor Signal Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Front speed sensor RH circuit</ptxt>
+<ptxt>3. Front speed sensor rotor RH</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0205/32</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Left Front Wheel Speed Sensor Signal Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Front speed sensor LH circuit</ptxt>
+<ptxt>3. Front speed sensor rotor LH</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0210/33</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Right Rear Wheel Speed Sensor Signal Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Rear speed sensor RH circuit</ptxt>
+<ptxt>3. Rear speed sensor rotor RH</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0215/34</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Left Rear Wheel Speed Sensor Signal Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Rear speed sensor LH circuit</ptxt>
+<ptxt>3. Rear speed sensor rotor LH</ptxt>
+<ptxt>4. Sensor installation</ptxt>
+<ptxt>5. Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0226/21</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>SFR Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. SFRR or SFRH circuit</ptxt>
+<ptxt>2. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD1002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0236/22</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>SFL Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. SFLR or SFLH circuit</ptxt>
+<ptxt>2. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD1002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0246/23</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>SRR Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. SRRR or SRRH circuit</ptxt>
+<ptxt>2. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD1002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0256/24</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>SRL Solenoid Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. SRLR or SRLH circuit</ptxt>
+<ptxt>2. Brake actuator assembly</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD1002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0273/13</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Open or Short Circuit in ABS Motor Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Brake actuator assembly (motor relay)</ptxt>
+<ptxt>2. ABS No. 1 fuse (Fusible link)</ptxt>
+<ptxt>3. Wire harness (+BM circuit)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD6002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C0278/11</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Open or Short Circuit in ABS Solenoid Relay Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Brake actuator assembly (solenoid relay)</ptxt>
+<ptxt>2. ABS No. 2 fuse (Fusible link)</ptxt>
+<ptxt>3. Wire harness (+BS circuit)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD7002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1237/37</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Speed Sensor Rotor Faulty</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Brake actuator assembly (skid control ECU)</ptxt>
+<ptxt>2. Speed sensor rotor (Front)</ptxt>
+<ptxt>3. Rear axle hub and bearing assembly</ptxt>
+<ptxt>4. Speed sensor</ptxt>
+<ptxt>5. Speed sensor circuit</ptxt>
+<ptxt>6. Tire and wheel size</ptxt>
+<ptxt>7. Tire deformation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD5002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1241/41</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Low Battery Positive Voltage or Abnormally High Battery Positive Voltage</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Battery</ptxt>
+<ptxt>2. Charging system</ptxt>
+<ptxt>3. Power source circuit</ptxt>
+<ptxt>4. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JD2002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1249/49</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Open in Stop Light Switch Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Stop light switch</ptxt>
+<ptxt>2. Stop light switch circuit</ptxt>
+<ptxt>3. Brake actuator assembly (Skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000023CJ000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1271/71</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Low Output Signal of Front Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Skid control rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1272/72</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Low Output Signal of Front Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Skid control rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1273/73</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Low Output Signal of Rear Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Skid control rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1274/74</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Low Output Signal of Rear Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Skid control rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1275/75</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Abnormal Change in Output Signal of Front Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Front speed sensor circuit RH</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1276/76</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Abnormal Change in Output Signal of Front Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Front speed sensor circuit LH</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1277/77</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Abnormal Change in Output Signal of Rear Speed Sensor RH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1278/78</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Abnormal Change in Output Signal of Rear Speed Sensor LH (Test Mode DTC)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Sensor installation</ptxt>
+<ptxt>3. Sensor rotor</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1300/62</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Skid Control ECU Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JHK002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1330/35</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Right Front Speed Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor RH</ptxt>
+<ptxt>2. Front speed sensor RH circuit</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1331/36</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Left Front Speed Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Front speed sensor LH</ptxt>
+<ptxt>2. Front speed sensor LH circuit</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JBG002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1332/38</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Right Rear Speed Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor RH</ptxt>
+<ptxt>2. Rear speed sensor RH circuit</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>C1333/39</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Left Rear Speed Sensor Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Rear speed sensor LH</ptxt>
+<ptxt>2. Rear speed sensor LH circuit</ptxt>
+<ptxt>3. Sensor installation</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001JDB002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>U0073/94</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Control Module Communication Bus OFF</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Wire harness (CANL, CANH circuit)</ptxt>
+<ptxt>2. Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000024PB000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

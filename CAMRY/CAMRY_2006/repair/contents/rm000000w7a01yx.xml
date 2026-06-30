@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7A01YX" category="D" type-id="303FB" name-id="AT02Z-68" from="200601">
+<name>MECHANICAL SYSTEM TESTS</name>
+<subpara id="RM000000W7A01YX_z0" proc-id="RM0250U___00003A000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PERFORM MECHANICAL SYSTEM TESTS</ptxt>
+<step2>
+<ptxt>Measure the stall speed.</ptxt>
+<ptxt>The object of this test is to check the overall performance of the transaxle and engine by measuring the stall speeds in the D position.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Driving test should be done on a paved road (a nonskid road).</ptxt>
+</item>
+<item>
+<ptxt>Perform the test at the normal operating ATF (Automatic Transmission Fluid) temperature 50 to 80°C (122 to 176°F).</ptxt>
+</item>
+<item>
+<ptxt>Do not continuously run this test for longer than 5 seconds.</ptxt>
+</item>
+<item>
+<ptxt>To ensure safety, perform this test in a wide, clear level area which provides good traction.</ptxt>
+</item>
+<item>
+<ptxt>The stall test should always be carried out in pairs. One technician should observe the conditions of wheels or wheel stoppers from a safe location outside the vehicle while the other is doing the test.</ptxt>
+</item>
+</list1>
+</atten3>
+<step3>
+<ptxt>Chock the 4 wheels.</ptxt>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Fully apply the parking brake.</ptxt>
+</step3>
+<step3>
+<ptxt>Keep your left foot pressed firmly on the brake pedal.</ptxt>
+</step3>
+<step3>
+<ptxt>Start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>Using the intelligent tester, shift into the D position and hold 3rd gear using active test. Press all the way down on the accelerator pedal with your right foot.</ptxt>
+</step3>
+<step3>
+<ptxt>Quickly read the stall speed at this time.</ptxt>
+<spec>
+<title>Stall speed</title>
+<specitem>
+<ptxt>2,520 +- 150 rpm</ptxt>
+</specitem>
+</spec>
+<table pgwide="1">
+<title>Evaluation:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Problem</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible cause</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>(a) Stall engine speed is low in D position</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Engine power output may be insufficient</ptxt>
+</item>
+<item>
+<ptxt>Stator one-way clutch is not operating properly</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>If the value is less than the specified value by 600 rpm or more, the torque converter could be faulty.</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Stall engine speed is high in D position</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Line pressure is too low</ptxt>
+</item>
+<item>
+<ptxt>Clutch No. 1 (C<sub>1</sub>) slipping</ptxt>
+</item>
+<item>
+<ptxt>One-way clutch (F<sub>1</sub>) is not operating properly</ptxt>
+</item>
+<item>
+<ptxt>Improper fluid level</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Measure the time lag.</ptxt>
+<step3>
+<ptxt>When the shift lever is shifted while the engine is idling, there will be a certain time lapse or lag before the shock can be felt. This is used for checking the condition of the clutches and brakes.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Perform the test at the normal operating ATF (Automatic Transmission Fluid) temperature: 50 to 80°C (122 to 176°F).</ptxt>
+</item>
+<item>
+<ptxt>Be sure to allow 1 minute interval between tests.</ptxt>
+</item>
+<item>
+<ptxt>Perform the test three times and measure the time lags. Calculate the average value of the three time lags.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Fully apply the parking brake.</ptxt>
+</step3>
+<step3>
+<ptxt>Start and warm up the engine and check idle speed.</ptxt>
+<spec>
+<title>Idle speed</title>
+<specitem>
+<ptxt>approx. 650 rpm (In N position and A/C OFF)</ptxt>
+</specitem>
+</spec>
+</step3>
+<step3>
+<ptxt>Shift the lever from N to D position. Using a stop watch, measure the time from when the lever is shifted until the shock is felt.</ptxt>
+<spec>
+<title>Time lag</title>
+<specitem>
+<ptxt>N to D less than 1.2 seconds</ptxt>
+</specitem>
+</spec>
+</step3>
+<step3>
+<ptxt>In the same way, measure the time lag for N to R.</ptxt>
+<spec>
+<title>Time lag</title>
+<specitem>
+<ptxt>N to R less than 1.5 seconds</ptxt>
+</specitem>
+</spec>
+<table pgwide="1">
+<title>Evaluation (If N to D or N to R time lag is longer than the specified time):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Problem</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Possible cause</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>N to D time lag is longer</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Line pressure is too low</ptxt>
+</item>
+<item>
+<ptxt>Clutch No.1 (C<sub>1</sub>) is worn</ptxt>
+</item>
+<item>
+<ptxt>One-way clutch (F<sub>1</sub>) is not operating properly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N to R time lag is longer</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Line pressure is too low</ptxt>
+</item>
+<item>
+<ptxt>Brake No. 2 (B<sub>2</sub>) is worn</ptxt>
+</item>
+<item>
+<ptxt>Brake No. 3 (B<sub>3</sub>) is worn</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

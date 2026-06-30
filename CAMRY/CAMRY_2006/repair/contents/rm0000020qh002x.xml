@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020QH002X" category="J" type-id="801RL" name-id="NS0O4-03" from="200601">
+<dtccode/>
+<dtcname>Mute Signal Circuit between Radio and Navigation Assembly and Stereo Component Amplifier</dtcname>
+<subpara id="RM0000020QH002X_01" type-id="60" category="03" proc-id="RM0250U___000054R00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit sends a signal to the stereo component amplifier to mute noise. Because of that, the noise produced by changing the sound source ceases.</ptxt>
+<ptxt>If there is an open in the circuit, noise can be heard from the speakers when changing the sound source.</ptxt>
+<ptxt>If there is a short in the circuit, even though the stereo component amplifier is normal, no sound, or only an extremely small sound, can be produced.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020QH002X_02" type-id="32" category="03" proc-id="RM0250U___000054S00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E110892E20" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020QH002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020QH002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020QH002X_04_0001" proc-id="RM0250U___000054T00000">
+<testtitle>INSPECT STEREO COMPONENT AMPLIFIER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E126155E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MUTE - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC), Audio system is playing → Changing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above 3.5 V → Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020QH002X_04_0002" fin="false">NG</down>
+<right ref="RM0000020QH002X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020QH002X_04_0002" proc-id="RM0250U___000054U00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (RADIO AND NAVIGATION ASSEMBLY - STEREO COMPONENT AMPLIFIER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio and navigation assembly connector F9 and stereo component amplifier connector F19.</ptxt>
+<figure>
+<graphic graphicname="E129822E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MUTE (F9-7) - MUTE (F19-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MUTE - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020QH002X_04_0003" fin="false">OK</down>
+<right ref="RM0000020QH002X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020QH002X_04_0003" proc-id="RM0250U___000054V00000">
+<testtitle>INSPECT STEREO COMPONENT AMPLIFIER (OUTPUT SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the stereo component amplifier connector F19.</ptxt>
+<figure>
+<graphic graphicname="E113513E07" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>MUTE - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn ignition switch on (ACC)</ptxt>
+<ptxt>Audio system is playing</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above 3.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020QH002X_04_0004" fin="true">OK</down>
+<right ref="RM0000020QH002X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020QH002X_04_0004">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000020QH002X_04_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020QH002X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020QH002X_04_0007">
+<testtitle>REPLACE STEREO COMPONENT AMPLIFIER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

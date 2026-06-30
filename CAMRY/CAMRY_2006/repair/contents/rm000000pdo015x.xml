@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDO015X" category="U" type-id="303FP" name-id="ES0D9-33" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000000PDO015X_z0" proc-id="RM0250U___000079700000">
+<content5 releasenbr="1">
+<ptxt>If any of the following DTCs are set, the ECM enters fail-safe mode to allow the vehicle to be driven temporarily.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTCs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Components</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fail-Safe Operations</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fail-Safe Deactivation Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0031 and P0032</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air-Fuel Ratio (A/F) Sensor Heater</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM turns off A/F sensor heater.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0037 and P0038</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated Oxygen (HO2) Sensor Heater</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM turns off HO2 sensor heater.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0100, P0102 and P0103</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mass Air Flow (MAF) Meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM calculates ignition timing according to engine speed and throttle valve position.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pass condition detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0110, P0112 and P0113</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake Air Temperature (IAT) Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM estimates IAT to be 20°C (68°F).</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pass condition detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0115, P0117 and P0118</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Coolant Temperature (ECT) Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM estimates ECT to be 80°C (176°F).</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pass condition detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0120, P0121, P0122, P0123, P0220, P0222, P0223, P0604, P0606, P0607, P0657, P2102, P2103, P2111, P2112, P2118, P2119 and P2135</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electronic Throttle Control System (ETCS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM cuts off throttle actuator current and throttle valve is returned to 6° throttle position by return spring.</ptxt>
+<ptxt>ECM then adjusts engine output by controlling fuel injection (intermittent fuel-cut) and ignition timing in accordance with accelerator pedal opening angle to allow vehicle to continue at minimal speed*.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pass condition detected and then ignition switch turned off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt> P0327 and P0328</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Knock Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM sets ignition timing to maximum retard.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0351 to P0354</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Igniter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM cuts fuel.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pass condition detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P2120, P2121, P2122, P2123, P2125, P2127, P2128 and P2138</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator Pedal Position (APP) Sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>APP sensor has 2 sensor circuits: Main and Sub.</ptxt>
+<ptxt>If either circuit malfunctions, ECM controls engine using the other circuit.</ptxt>
+<ptxt>If both circuits malfunction, ECM regards accelerator pedal as being released. As a result, throttle valve is closed and engine idles.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pass condition detected and then ignition switch turned off</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: The vehicle can be driven slowly when the accelerator pedal is depressed firmly and slowly. If the accelerator pedal is depressed quickly, the vehicle may speed up and slow down erratically.</ptxt>
+</atten4>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000XH401BX" category="C" type-id="302BA" name-id="ES3XN-01" from="200601">
+<dtccode>P0351</dtccode>
+<dtcname>Ignition Coil "A" Primary / Secondary Circuit</dtcname>
+<dtccode>P0352</dtccode>
+<dtcname>Ignition Coil "B" Primary / Secondary Circuit</dtcname>
+<dtccode>P0353</dtccode>
+<dtcname>Ignition Coil "C" Primary / Secondary Circuit</dtcname>
+<dtccode>P0354</dtccode>
+<dtcname>Ignition Coil "D" Primary / Secondary Circuit</dtcname>
+<subpara id="RM000000XH401BX_01" type-id="60" category="03" proc-id="RM0250U___00007H200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>These DTCs indicate malfunctions relating to the primary circuit.</ptxt>
+</item>
+<item>
+<ptxt>If DTC P0351 is set, check the No. 1 ignition coil circuit.</ptxt>
+</item>
+<item>
+<ptxt>If DTC P0352 is set, check the No. 2 ignition coil circuit.</ptxt>
+</item>
+<item>
+<ptxt>If DTC P0353 is set, check the No. 3 ignition coil circuit.</ptxt>
+</item>
+<item>
+<ptxt>If DTC P0354 is set, check the No. 4 ignition coil circuit.</ptxt>
+</item>
+</list1>
+</atten4>
+<ptxt>A Direct Ignition System (DIS) is used on this vehicle.</ptxt>
+<ptxt>The DIS is a 1-cylinder ignition system in which each cylinder is ignited by one ignition coil and one spark plug is connected to the end of each secondary wiring. A powerful voltage, generated in the secondary wiring, is applied directly to each spark plug. The sparks of the spark plugs pass from the center electrode to the ground electrodes.</ptxt>
+<ptxt>The ECM determines the ignition timing and transmits the ignition (IGT) signals to each cylinder. Using the IGT signal, the ECM turns the power transistor inside the igniter on and off. The power transistor, in turn, switches on and off the current to the primary coil. When the current to the primary coil is cut off, a powerful voltage is generated in the secondary coil. This voltage is applied to the spark plugs, causing them to spark inside the cylinders. As the ECM cuts the current to the primary coil off, the igniter sends back an ignition confirmation (IGF) signal to the ECM, for each cylinder ignition.</ptxt>
+<figure>
+<graphic graphicname="A112570E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No. </ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0351</ptxt>
+<ptxt>P0352</ptxt>
+<ptxt>P0353</ptxt>
+<ptxt>P0354</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No IGF signal to ECM while engine running </ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Ignition system</ptxt>
+</item>
+<item>
+<ptxt>Open or short in IGF1 or IGT circuit (1 to 4) between ignition coil and ECM</ptxt>
+</item>
+<item>
+<ptxt>No. 1 to No. 4 ignition coils</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<figure>
+<graphic graphicname="A093278E22" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<item>
+<ptxt>Reference: Inspection using an oscilloscope.</ptxt>
+</item>
+<item>
+<ptxt>While cranking or idling the engine, check the waveform between terminals IGT (1 to 4) and E1, and IGF1 and E1 of the ECM connector.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Items</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>CH1: IGT1, IGT2, IGT3, IGT4 - E1</ptxt>
+<ptxt>CH2: IGF1 - E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Equipment Settings</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2 V/Division</ptxt>
+<ptxt>20 ms./Division</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Cranking or idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_02" type-id="64" category="03" proc-id="RM0250U___00007H300000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A115898E03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<ptxt>If the ECM does not receive any IGF signals despite transmitting the IGT signal, it interprets this as a fault in the igniter and sets a DTC. </ptxt>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 1 second after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_03" type-id="65" category="03" proc-id="RM0250U___00007H400000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.53in"/>
+<colspec colname="COL2" colwidth="3.55in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0351: Igniter (cylinder 1) malfunction</ptxt>
+<ptxt>P0352: Igniter (cylinder 2) malfunction</ptxt>
+<ptxt>P0353: Igniter (cylinder 3) malfunction</ptxt>
+<ptxt>P0354: Igniter (cylinder 4) malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Igniter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.512 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_04" type-id="66" category="03" proc-id="RM0250U___00007H500000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions A or B is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. Engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1,500 rpm or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions C or D is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C. Both of the following conditions (a) and (b) are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>500 rpm or less</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D. All of the following conditions (a), (b) and (c) are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 500 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(c) Number of sparks after CPU reset</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 sparks or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_05" type-id="67" category="03" proc-id="RM0250U___00007H600000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<colspec colname="COLSPEC1" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IGF signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM does not receive any IGF signal despite ECM sending IGT signal to igniter</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_06" type-id="70" category="03" proc-id="RM0250U___00007H700000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IGF signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Igniter transmits IGF signal when it receives IGT signal from ECM</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_07" type-id="32" category="03" proc-id="RM0250U___00007H800000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A136157E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_08" type-id="51" category="05" proc-id="RM0250U___00007H900000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XH401BX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XH401BX_09_0001" proc-id="RM0250U___00007HA00000">
+<testtitle>INSPECT IGNITION COIL ASSEMBLY (POWER SOURCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C11 to C14 ignition coil connectors.</ptxt>
+<figure>
+<graphic graphicname="A054393E71" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C11-4 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C13-4 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C12-4 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C14-4 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C11-1 (+B) - C11-4 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C13-1 (+B) - C13-4 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C12-1 (+B) - C12-4 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C14-1 (+B) - C14-4 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ignition coil connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH401BX_09_0002" fin="false">OK</down>
+<right ref="RM000000XH401BX_09_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH401BX_09_0002" proc-id="RM0250U___00007HB00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (IGNITION COIL ASSEMBLY - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the ignition coil connectors.</ptxt>
+<figure>
+<graphic graphicname="A105983E12" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C11-2 (IGF) - C24-81 (IGF1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C13-2 (IGF) - C24-81 (IGF1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C12-2 (IGF) - C24-81 (IGF1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C14-2 (IGF) - C24-81 (IGF1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C11-3 (IGT1) - C24-85 (IGT1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C13-3 (IGT2) - C24-84 (IGT2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C12-3 (IGT3) - C24-83 (IGT3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C14-3 (IGT4) - C24-82 (IGT4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C11-2 (IGF) or C24-81 (IGF1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C13-2 (IGF) or C24-81 (IGF1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C12-2 (IGF) or C24-81 (IGF1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C14-2 (IGF) or C24-81 (IGF1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C11-3 (IGT1) or C24-85 (IGT1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C13-3 (IGT2) or C24-84 (IGT2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C12-3 (IGT3) or C24-83 (IGT3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C14-3 (IGT4) or C24-82 (IGT4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ignition coil connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH401BX_09_0003" fin="false">OK</down>
+<right ref="RM000000XH401BX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH401BX_09_0003" proc-id="RM0250U___00007HC00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (DTC P0351, P0352, P0353 OR P0354)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Shuffle arrangement of the ignition coils (among No. 1 to No. 4 cylinders).</ptxt>
+<atten3>
+<ptxt>Do not shuffle the connectors.</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Perform a simulation test.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs displayed on the tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>Same DTC output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Different ignition coil DTC output</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XH401BX_09_0007" fin="true">A</down>
+<right ref="RM000000XH401BX_09_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XH401BX_09_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XH401BX_09_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XH401BX_09_0006">
+<testtitle>REPLACE IGNITION COIL ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XH401BX_09_0007">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

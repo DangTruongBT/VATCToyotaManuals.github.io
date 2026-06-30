@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE connectionList SYSTEM "../../../dtd/connect.dtd">
+<connectionList pubno="EM0250U">
+	<connector type="gp" code="E2">
+		<pin>
+			<line id="1" color="W-B ">
+				<connector type="conn" code="E49">
+					<pin no="2"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="E49">
+		<pin no="10">
+			<line id="2" color="W-B ">
+				<connector type="jbc" code="IF">
+					<pin no="10"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="IR">
+		<pin no="1">
+			<line id="3" color="W-B ">
+				<connector type="w2w" code="EQ1" sex="female">
+					<pin no="11"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="EQ1" sex="male">
+		<pin no="11">
+			<line id="4" color="W-B ">
+				<connector type="conn" code="Q6">
+					<pin no="8"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="conn" code="Q6">
+		<pin no="7">
+			<line id="5" color="R ">
+				<connector type="w2w" code="EQ1" sex="male">
+					<pin no="7"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="EQ1" sex="female">
+		<pin no="7">
+			<line id="6" color="R ">
+				<connector type="jbc" code="IL">
+					<pin no="10"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="jbc" code="ID">
+		<pin no="13">
+			<line id="7" color="LG ">
+				<connector type="rb" code="1">
+					<pin/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="gp" code="F1">
+		<pin>
+			<line id="8" color="W-B ">
+				<connector type="w2w" code="FE3" sex="female">
+					<pin no="4"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+	<connector type="w2w" code="FE3" sex="male">
+		<pin no="4">
+			<line id="9" color="W-B ">
+				<connector type="conn" code="E49">
+					<pin no="12"/>
+				</connector>
+			</line>
+		</pin>
+	</connector>
+</connectionList>

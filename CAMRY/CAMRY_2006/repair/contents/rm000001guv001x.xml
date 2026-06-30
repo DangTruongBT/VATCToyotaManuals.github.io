@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GUV001X" category="J" type-id="300WM" name-id="EI07K-02" from="200601">
+<dtccode/>
+<dtcname>Diagnosis Circuit</dtcname>
+<subpara id="RM000001GUV001X_01" type-id="60" category="03" proc-id="RM0250U___00008GJ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit is used to read the DTCs that are output from the transponder key ECU assembly with the intelligent tester.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001GUV001X_02" type-id="32" category="03" proc-id="RM0250U___00008GK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128329E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001GUV001X_03" type-id="51" category="05" proc-id="RM0250U___00008GL00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<ptxt>If the transponder key ECU assembly is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GUV001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GUV001X_04_0001" proc-id="RM0250U___00008GM00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TRANSPONDER KEY ECU - DLC3)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E15 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B128341E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E15-9 (D) - E10-7 (SIL)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E15-9 (D) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GUV001X_04_0002" fin="false">OK</down>
+<right ref="RM000001GUV001X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GUV001X_04_0002" proc-id="RM0250U___00008GN00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (DLC3 - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B124215E08" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E10-4 (CG) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GUV001X_04_0004" fin="true">OK</down>
+<right ref="RM000001GUV001X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GUV001X_04_0003">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001GUV001X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

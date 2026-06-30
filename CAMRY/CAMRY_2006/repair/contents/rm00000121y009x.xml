@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM00000121Y009X" category="J" type-id="30501" name-id="DL18Y-01" from="200601">
+<dtccode/>
+<dtcname>Rear Door Lock Motor LH Circuit</dtcname>
+<subpara id="RM00000121Y009X_01" type-id="60" category="03" proc-id="RM0250U___00009GB00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The rear left door lock motor is built into the rear left door lock assembly.</ptxt>
+<ptxt>The main body ECU controls the rear left door lock motor to lock/unlock the rear left door. This ECU applies current from terminal ACT+ to terminal ACT- to operate the motor to lock the door. It reverses the direction of the current flow to operate the motor to unlock the door.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM00000121Y009X_02" type-id="32" category="03" proc-id="RM0250U___00009GC00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B109771E17" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000121Y009X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM00000121Y009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000121Y009X_04_0001" proc-id="RM0250U___00009GD00000">
+<testtitle>INSPECT REAR DOOR LOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the rear door lock assembly LH.</ptxt>
+<figure>
+<graphic graphicname="E123890E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply battery voltage and check operation of the door lock motor.</ptxt>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000121Y009X_04_0002" fin="false">OK</down>
+<right ref="RM00000121Y009X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000121Y009X_04_0002" proc-id="RM0250U___00009GE00000">
+<testtitle>CHECK WIRE HARNESS (REAR DOOR LOCK - MAIN BODY ECU (INSTRUMENT PANEL J/B))</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the rear door lock assembly LH connector.</ptxt>
+<figure>
+<graphic graphicname="B112611E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECU (instrument panel J/B) connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>K5-4 (L) - IP-11</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>K5-1 (UL) - IP-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IP-11 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IP-6 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000121Y009X_04_0005" fin="true">OK</down>
+<right ref="RM00000121Y009X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000121Y009X_04_0003">
+<testtitle>REPLACE REAR DOOR LOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM00000121Y009X_04_0004">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM00000121Y009X_04_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

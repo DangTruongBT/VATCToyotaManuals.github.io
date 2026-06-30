@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM0000026VP000X" category="C" type-id="8020B" name-id="AX0YU-01" from="200601">
+<dtccode>P0989</dtccode>
+<dtcname>Transmission Fluid Pressure Switch No.3 Circuit Low</dtcname>
+<dtccode>P0990</dtccode>
+<dtcname>Transmission Fluid Pressure Switch No.3 Circuit High</dtcname>
+<subpara id="RM0000026VP000X_01" type-id="60" category="03" proc-id="RM0250U___0000A3700000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>ATF pressure switch No. 3 is installed in the lock-up solenoid ATF output passage and is used to detect a malfunction in the lock-up solenoid.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0989</ptxt>
+</entry>
+<entry>
+<ptxt>Transmission fluid pressure switch No. 3 is OFF when lock-up occurs in response to a lock-up request (2 trip detection logic).</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ATF temperature sensor assembly (ATF pressure switch No. 3)</ptxt>
+</item>
+<item>
+<ptxt>Transmission wire</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0990</ptxt>
+</entry>
+<entry>
+<ptxt>When both of the following are detected (2 trip detection logic):</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Transmission fluid pressure switch No. 3 is ON when lock-up does not occur.</ptxt>
+</item>
+<item>
+<ptxt>Lock-up does not occur when shift solenoid valve (SLU) is requested to turn off in the lock-up range.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026VP000X_08" type-id="64" category="03" proc-id="RM0250U___0000B2900000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The TCM illuminates the MIL and stores the DTC when the TCM detects that the ATF pressure switch is OFF with the lock-up solenoid ON or when the TCM detects that the ATF pressure switch is ON with the lock-up solenoid OFF.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000026VP000X_05" type-id="65" category="03" proc-id="RM0250U___0000ASJ00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2" align="left">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0989: Transmission fluid pressure switch No. 3 OFF malfunction</ptxt>
+<ptxt>P0990: Transmission fluid pressure switch No. 3 ON malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors/Components</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmission fluid pressure switch No. 3</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026VP000X_06" type-id="66" category="03" proc-id="RM0250U___0000ATH00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<title>ALL:</title>
+<tgroup cols="2" align="left">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>The monitor will run whenever these DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Turbine speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intermediate shaft speed sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL1 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL2 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL3 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL4 circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLU circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Torque converter clutch circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electric throttle system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Circuit is not malfunctioning</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TFT (Transmission fluid temperature)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Above -10°C (14°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT (Engine coolant temperature)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>40°C (104°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Transmission range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>"D"</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TCM selected gear</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not 1st</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>15.5 mph (25 km/h) or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0989:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="4.07in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TCM lock-up command</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed - Turbine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle valve opening angle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>7% or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 62 mph (100 km/h)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not ON malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0990:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="4.07in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TCM indicated pressure valve of SLU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 4 kPa</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TCM lock-up command</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SLU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift solenoid valve SL </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not OFF malfunction</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026VP000X_07" type-id="67" category="03" proc-id="RM0250U___0000ATI00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0989:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="4.07in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transmission fluid pressure switch No. 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0990:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.01in"/>
+<colspec colname="COL2" colwidth="4.07in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Following conditions are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(a) and (b)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Engine speed - Turbine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Transmission fluid pressure switch No. 3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000026VP000X_02" type-id="32" category="03" proc-id="RM0250U___0000CB100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133258E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000026VP000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000026VP000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000026VP000X_04_0001" proc-id="RM0250U___0000ASD00000">
+<testtitle>CHECK OTHER DTC OUTPUT (IN ADDITION TO DTC P0989 OR P0990)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following items: "DIAGNOSIS / OBD/MOBD / ECT / DTC INFO / CURRENT CODES".</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs using the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.85in"/>
+<colspec colname="COL2" colwidth="3.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0990" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Only "P0989" is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>"P0989 or P0990" and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If a solenoid is stuck OFF, DTCs for several solenoids including the malfunctioning solenoid will be detected.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VP000X_04_0006" fin="false">A</down>
+<right ref="RM0000026VP000X_04_0004" fin="false">B</right>
+<right ref="RM0000026VP000X_04_0002" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0006" proc-id="RM0250U___0000CDT00000">
+<testtitle>CHECK TRANSMISSION WIRE (SHORT TO GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM.</ptxt>
+<figure>
+<graphic graphicname="C133212E12" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.53in"/>
+<colspec colname="COL2" colwidth="1.60in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>19 (TPS3) - Body ground (Valve body assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VP000X_04_0008" fin="false">NG</down>
+<right ref="RM0000026VP000X_04_0007" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0008" proc-id="RM0250U___0000CNR00000">
+<testtitle>CHECK ATF TEMPERATURE SENSOR ASSEMBLY (ATF PRESSURE SWITCH NO. 3)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connector from the ATF temperature sensor assembly.</ptxt>
+<figure>
+<graphic graphicname="C142709E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>5 (TPS3) - Body ground (Valve body assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VP000X_04_0003" fin="true">OK</down>
+<right ref="RM0000026VP000X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0004" proc-id="RM0250U___0000CBG00000">
+<testtitle>CHECK TRANSMISSION WIRE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the TCM.</ptxt>
+<figure>
+<graphic graphicname="C133269E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the connector from the ATF temperature sensor assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>19 (TPS3) - 1 (TPS3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>19 (TPS3) or 1 (TPS3) - Body ground (Valve body assembly)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000026VP000X_04_0005" fin="true">OK</down>
+<right ref="RM0000026VP000X_04_0003" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0002">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0003">
+<testtitle>REPLACE TRANSMISSION WIRE</testtitle>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0005">
+<testtitle>REPLACE ATF TEMPERATURE SENSOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000026VP000X_04_0007">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

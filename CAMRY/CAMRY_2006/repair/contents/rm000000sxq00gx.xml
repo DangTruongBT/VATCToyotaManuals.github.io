@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000SXQ00GX" category="D" type-id="3032O" name-id="ES0B7-15" from="200601">
+<name>READINESS MONITOR DRIVE PATTERN</name>
+<subpara id="RM000000SXQ00GX_z0" proc-id="RM0250U___000079000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PURPOSE OF READINESS TESTS</ptxt>
+</step1>
+<list1 type="unordered">
+<item>
+<ptxt>The On-Board Diagnostic (OBD II) system is designed to monitor the performance of emission related components, and indicate any detected abnormalities with DTCs (Diagnostic Trouble Codes). Since various components need to be monitored during different driving conditions, the OBD II system is designed to run separate monitoring programs called Readiness Monitors.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester's software must be version 9.0 or newer to view the Readiness Monitor Status. To view the status, select the following menu items: DIAGNOSIS / ENHANCED OBD II / MONITOR INFO / MONITOR STATUS.</ptxt>
+</item>
+<item>
+<ptxt>When the Readiness Monitor status reads COMPL (complete), the necessary conditions have been met for running the performance tests for that Readiness Monitor.</ptxt>
+</item>
+<item>
+<ptxt>A generic OBD II scan tool can also be used to view the Readiness Monitor status.</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>Many state Inspection and Maintenance (I/M) programs require a vehicle's Readiness Monitor status to show COMPL before beginning emission tests.</ptxt>
+</atten4>
+<list1 type="nonmark">
+<item>
+<ptxt>The Readiness Monitor will be reset to INCMPL (incomplete) if:</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The ECM has lost battery power or blown a fuse.</ptxt>
+</item>
+<item>
+<ptxt>DTCs have been cleared.</ptxt>
+</item>
+<item>
+<ptxt>The conditions for running the Readiness Monitor have not been met.</ptxt>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>If the Readiness Monitor status shows INCMPL, follow the appropriate Readiness Monitor Drive Pattern to change the status to COMPL.</ptxt>
+</item>
+</list1>
+<atten2>
+<ptxt>Strictly observe posted speed limits, traffic laws, and road conditions when performing these drive patterns.</ptxt>
+</atten2>
+<atten3>
+<ptxt>These drive patterns represent the fastest method of satisfying all conditions necessary to achieve complete status for each specific Readiness Monitor.</ptxt>
+<ptxt>In the event of a drive pattern being interrupted (possibly due to factors such as traffic conditions), the drive pattern can be resumed. In most cases, the Readiness Monitor will still achieve complete status upon completion of the drive pattern.</ptxt>
+<ptxt>To ensure completion of the Readiness Monitors, avoid sudden changes in vehicle load and speed (driving up and down hills and/or sudden acceleration).</ptxt>
+</atten3>
+<step1>
+<ptxt>CATALYST MONITOR (ACTIVE AIR-FUEL RATIO CONTROL TYPE)</ptxt>
+<figure>
+<graphic graphicname="A115372E50" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<step2>
+<ptxt>Preconditions</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The monitor will not run unless:</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The MIL is OFF.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Drive Pattern</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the tester on.</ptxt>
+</step3>
+<step3>
+<ptxt>Clear the DTCs (if set) (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</step3>
+<step3>
+<ptxt>Start the engine and warm it up.</ptxt>
+</step3>
+<step3>
+<ptxt>Drive the vehicle at between 40 mph and 70 mph (64 km/h and 113 km/h) for at least 10 minutes.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Monitor Status</ptxt>
+<ptxt>Check the Readiness Monitor status displayed on the tester.</ptxt>
+<ptxt>If the status does not switch to COMPL (complete), extend the driving time.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>EVAP SYSTEM MONITOR (KEY OFF TYPE)</ptxt>
+<step2>
+<ptxt>Preconditions</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The monitor will not run unless:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>The fuel tank is less than 90% full.</ptxt>
+</item>
+<item>
+<ptxt>The altitude is less than 8,000 ft. (2,450 m).</ptxt>
+</item>
+<item>
+<ptxt>The vehicle is stationary.</ptxt>
+</item>
+<item>
+<ptxt>The engine coolant temperature is between 4.4°C and 35°C (40°F and 95°F).</ptxt>
+</item>
+<item>
+<ptxt>The intake air temperature is between 4.4°C and 35°C (40°F and 95°F).</ptxt>
+</item>
+<item>
+<ptxt>Vehicle was driven in a city area (or on free-way) for 10 minutes or more.</ptxt>
+</item>
+</list2>
+</list1>
+</step2>
+<step2>
+<ptxt>Monitor Conditions</ptxt>
+<step3>
+<ptxt>Turn the ignition switch off and wait for 6 hours.</ptxt>
+<atten4>
+<ptxt>Do not start the engine until checking Readiness Monitor status. If the engine is started, the step described above must be repeated.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Monitor Status</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the tester on.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the Readiness Monitor status displayed on the tester.</ptxt>
+</step3>
+</step2>
+</step1>
+<list1 type="nonmark">
+<item>
+<ptxt>If the status does not switch to COMPL (complete), restart the engine, make sure that the preconditions have been met, and then perform the Monitor Conditions again.</ptxt>
+</item>
+</list1>
+<step1>
+<ptxt>AIR-FUEL RATIO (A/F) AND HEATED OXYGEN (HO2) SENSOR MONITORS (ACTIVE AIR-FUEL RATIO CONTROL TYPE)</ptxt>
+<figure>
+<graphic graphicname="A115374E09" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<step2>
+<ptxt>Preconditions</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The monitor will not run unless:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>2 minutes or more have elapsed since the engine was started.</ptxt>
+</item>
+<item>
+<ptxt>The Engine Coolant Temperature (ECT) is 75°C (167°F) or more.</ptxt>
+</item>
+<item>
+<ptxt>Cumulative driving time at a vehicle speed of 30 mph (48 km/h) or more exceeds 6 minutes.</ptxt>
+</item>
+<item>
+<ptxt>Air-fuel ratio feedback control is performed.</ptxt>
+</item>
+</list2>
+</list1>
+</step2>
+<step2>
+<ptxt>Drive Pattern for front A/F sensor and HO2 sensor</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the tester on.</ptxt>
+</step3>
+<step3>
+<ptxt>Clear the DTCs (See page <xref label="Seep02" href="RM000000PDK01MX"/>).</ptxt>
+</step3>
+<step3>
+<ptxt>Start the engine, and warm it up until the ECT reaches 75°C (167°F) or higher</ptxt>
+</step3>
+<step3>
+<ptxt>Drive the vehicle at between 38 mph (60 km/h) and 75 mph (120 km/h) for at least 10 minutes.</ptxt>
+</step3>
+<step3>
+<ptxt>Change the transmission to the 2nd gear.</ptxt>
+</step3>
+<step3>
+<ptxt>Accelerate the vehicle to 40 mph (64 km/h) or more by depressing the accelerator pedal for at least 10 seconds.</ptxt>
+</step3>
+<step3>
+<ptxt>Soon after performing step (8) above, release the accelerator pedal for at least 4 seconds without depressing the brake pedal, in order to execute fuel-cut control.</ptxt>
+</step3>
+<step3>
+<ptxt>Allow the vehicle to decelerate until the vehicle speed declines to less than 6 mph (10 km/h).</ptxt>
+</step3>
+<step3>
+<ptxt>Repeat steps from (8) through (10) above at least 3 times in one driving cycle.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Monitor Status</ptxt>
+<step3>
+<ptxt>Check the Readiness Monitor status displayed on the tester.</ptxt>
+</step3>
+<step3>
+<ptxt>If the status does not switch to COMPL (complete), make sure that the preconditions have been met, and then perform steps from (5) through (11) in the Drive Pattern above.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>AIR-FUEL RATIO (A/F) AND HEATED OXYGEN (HO2) SENSOR HEATER MONITORS (FRONT A/F AND REAR HO2 SENSOR TYPE)</ptxt>
+<figure>
+<graphic graphicname="A121604E07" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<step2>
+<ptxt>Preconditions</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The monitor will not run unless:</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>The MIL is OFF.</ptxt>
+</item>
+</list2>
+</list1>
+</step2>
+<step2>
+<ptxt>Drive Pattern</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the tester on.</ptxt>
+</step3>
+<step3>
+<ptxt>Clear the DTCs (if set) (See page <xref label="Seep03" href="RM000000PDK01MX"/>).</ptxt>
+</step3>
+<step3>
+<ptxt>Start the engine.</ptxt>
+</step3>
+<step3>
+<ptxt>Allow the engine to idle for 10 minutes or more.</ptxt>
+</step3>
+<step3>
+<ptxt>Drive the vehicle at 25 mph (40 km/h) or more for at least 2 minutes.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Monitor Status</ptxt>
+<step3>
+<ptxt>Check the Readiness Monitor status displayed on the tester.</ptxt>
+<ptxt>If the status does not switch to COMPL (complete), make sure that the preconditions have been met, and repeat steps from (5) to (7) described in the Drive Pattern above.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

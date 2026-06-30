@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDS017X" category="D" type-id="304JI" name-id="ES06E-33" from="200601">
+<name>FREEZE FRAME DATA</name>
+<subpara id="RM000000PDS017X_z0" proc-id="RM0250U___000079500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction.</ptxt>
+<atten4>
+<ptxt>If it is impossible to duplicate the problem even though a DTC is detected, confirm the freeze frame data.</ptxt>
+</atten4>
+</item>
+</list1>
+<list1 type="nonmark">
+<item>
+<ptxt>The ECM records engine conditions in the form of freeze frame data every 0.5 seconds. Using the intelligent tester, 5 separate sets of freeze frame data can be checked.</ptxt>
+<figure>
+<graphic graphicname="A103809E12" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>3 data set before the DTC was set.</ptxt>
+</item>
+<item>
+<ptxt>1 data set when the DTC was set.</ptxt>
+</item>
+<item>
+<ptxt>1 data set after the DTC was set.</ptxt>
+</item>
+</list2>
+<list2 type="nonmark">
+<item>
+<ptxt>These data sets can be used to simulate the condition of the vehicle around the time of the occurrence of the malfunction. The data may assist in identifying the cause of the malfunction, and in judging whether it was temporary or not.</ptxt>
+</item>
+</list2>
+</list1>
+</step1>
+<step1>
+<ptxt>LIST OF FREEZE FRAME DATA</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LABEL</ptxt>
+<ptxt>(Intelligent Tester Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>INJECTOR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Injection period of No. 1 cylinder</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IGN ADVANCE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition advance</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CALC LOAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Calculated load</ptxt>
+</entry>
+<entry>
+<ptxt>Calculated load by ECM</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VEHICLE LOAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle load</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MAF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mass air flow volume</ptxt>
+</entry>
+<entry>
+<ptxt>If approximately 0.0 g/sec.:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Mass air flow meter power source circuit open or short</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>VG circuit open or short</ptxt>
+</item>
+</list1>
+<ptxt>If 160.0 g/sec. or more:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>E2G circuit open</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENGINE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VEHICLE SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed</ptxt>
+</entry>
+<entry>
+<ptxt>Speed indicated on speedometer</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>COOLANT TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature</ptxt>
+</entry>
+<entry>
+<ptxt>If -40°C (-40°F), sensor circuit open</ptxt>
+<ptxt>If 140°C (284°F) or more, sensor circuit shorted</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>INTAKE AIR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake air temperature </ptxt>
+</entry>
+<entry>
+<ptxt>If -40°C (-40°F), sensor circuit open</ptxt>
+<ptxt>If 140°C (284°F) or more, sensor circuit shorted</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR-FUEL RATIO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ratio compared to stoichiometric level</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PURGE DENSITY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Learning value of purge density</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP PURGE FLOW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ratio of evaporative purge flow to intake air volume</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP PURGE VSV</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP purge VSV duty ratio</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>KNOCK CRRT VAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Correction learning value of knocking</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>KNOCK FB VAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Feedback value of knocking</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACCEL POS #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Absolute Accelerator Pedal Position (APP) No. 1</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACCEL POS #2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Absolute APP No. 2</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>THROTTLE POS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>THROTTLE POS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle sensor positioning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>THROTTLE POS #2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle sensor positioning #2</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>THROTTLE MOT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle motor</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2S B1 S2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor output</ptxt>
+</entry>
+<entry>
+<ptxt>Performing INJ VOL or A/F CONTROL function of ACTIVE TEST enables technician to check output voltage of sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AFS B1 S1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor output</ptxt>
+</entry>
+<entry>
+<ptxt>Performing INJ VOL or A/F CONTROL function of ACTIVE TEST enables technician to check output voltage of sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TOTAL FT #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Total fuel trim </ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SHORT FT #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Short-term fuel trim</ptxt>
+</entry>
+<entry>
+<ptxt>Short-term fuel compensation used to maintain air-fuel ratio at stoichiometric air-fuel ratio</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LONG FT #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Long-term fuel trim</ptxt>
+</entry>
+<entry>
+<ptxt>Overall fuel compensation carried out in long-term to compensate for a continual deviation of short-term fuel trim from central valve</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FUEL SYS #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel system status</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>OL (Open Loop): Has not yet satisfied conditions to go closed loop</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>CL (Closed Loop): Using A/F sensor as feedback for fuel control</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>OL DRIVE: Open loop due to driving conditions (fuel enrichment)</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>OL FAULT: Open loop due to detected system fault</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>CL FAULT: Closed loop but A/F sensor, which used for fuel control malfunctioning</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FUEL SYS #2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel system status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not available</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>O2FT B1 S2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel trim at heated oxygen sensor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AF FT B1 S1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel trim at A/F sensor</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AFS B1 S1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor current</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAT TEMP B1S1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Estimated catalyst temperature (sensor 1)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CAT TEMP B1S2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Estimated catalyst temperature (sensor 2)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>S O2S B1S2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sub heated oxygen sensor impedance (sensor 2)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>INI COOL TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature at engine start</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>INI INTAKE TEMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake air temperature at engine start</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>INJ VOL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Injection volume</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STARTER SIG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starter switch (STSW) signal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power steering signal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PS SIGNAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power steering signal (history)</ptxt>
+</entry>
+<entry>
+<ptxt>Signal status usually ON until ignition switch turned OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CTP SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Closed throttle position switch</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C SIGNAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C signal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PNP SW (NSW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Park/Neutral Position (PNP) switch signal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ELECT LOAD SIG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electrical load signal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STOP LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BATTERY VOLTAGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ATM PRESSURE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Atmosphere pressure</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP (Purge) VSV</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EVAP Purge VSV</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FUEL PUMP/SPD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel pump/speed status</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT CTRL B1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT control status</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VACUUM PUMP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key-off EVAP system leak detection pump status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(see page <xref label="Seep01" href="RM000000YEQ014X"/>)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP VENT VAL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key-off EVAP system vent valve status</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FAN MOTOR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electric fan motor</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TC/TE1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TC and CG (TE1) terminals of DLC3</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENG SPEED #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine rpm during No. 1 cylinder fuel cut</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output only when FUEL CUT #1 is performed using ACTIVE TEST</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENG SPEED #2</ptxt>
+
+</entry>
+<entry valign="middle">
+<ptxt>Engine rpm during No. 2 cylinder fuel cut</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output only when FUEL CUT #2 is performed using ACTIVE TEST</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENG SPEED #3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine rpm during No. 3 cylinder fuel cut</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output only when FUEL CUT #3 is performed using ACTIVE TEST</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENG SPEED #4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine rpm during No. 4 cylinder fuel cut</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output only when FUEL CUT #4 is performed using ACTIVE TEST</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENG SPEED ALL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Average of engine rpm values during fuel cut of No. 1 to No. 4 cylinders</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Output only when ACTIVE TEST is performed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVTL AIM ANGL#1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT aim angle</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT CHNG ANGL#1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT angle</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>VVT OCV DUTY B1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT OCV operation duty</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FC IDL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel cut idle</ptxt>
+</entry>
+<entry>
+<ptxt>ON: when throttle valve fully closed and engine speed over 3,500 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FC TAU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel cut with a very light load</ptxt>
+</entry>
+<entry>
+<ptxt>Fuel cut being performed with a very light load to prevent incomplete engine combustion</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IGNITION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition counter</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CYL #1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cylinder #1 misfire</ptxt>
+</entry>
+<entry>
+<ptxt>Displayed only during idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CYL #2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cylinder #2 misfire</ptxt>
+</entry>
+<entry>
+<ptxt>Displayed only during idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CYL #3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cylinder #3 misfire</ptxt>
+</entry>
+<entry>
+<ptxt>Displayed only during idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CYL #4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cylinder #4 misfire</ptxt>
+</entry>
+<entry>
+<ptxt>Displayed only during idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CYL ALL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All cylinders misfire</ptxt>
+</entry>
+<entry>
+<ptxt>Displayed only during idling</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MISFIRE RPM </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed when misfire occurred</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MISFIRE LOAD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine load when misfire occurred</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MISFIRE MARGIN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Margin to detect engine misfire</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL ON RUN DIST</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Distance after DTC is detected</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ENG RUN TIME</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accumulated engine running time</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIME DTC CLEAR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cumulative time after DTC cleared</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DIST DTC CLEAR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accumulated distance from DTC cleared</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WU CYC DTC CLEAR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warm-up cycle after DTC cleared</ptxt>
+</entry>
+<entry align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

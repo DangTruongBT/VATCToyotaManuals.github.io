@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000S" variety="S000S">
+<name>U250E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000S_72XP2_T007E" variety="T007E">
+<name>SHIFT LOCK SYSTEM</name>
+<para id="RM000000YX000CX" category="G" type-id="8000T" name-id="AX03R-03" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000000YX000CX_01" type-id="01" category="01">
+<s-1 id="RM000000YX000CX_01_0001" proc-id="RM0250U___00001X900000">
+<ptxt>CHECK SHIFT LOCK OPERATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Move the shift lever to the P position.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch to the LOCK position.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the shift lever cannot be moved to any position other than P.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch to the on position, depress the brake pedal and check that the shift lever can be moved to another position. If operation cannot be done as specified, inspect the shift lock control unit.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000YX000CX_01_0002" proc-id="RM0250U___00001XA00000">
+<ptxt>CHECK SHIFT LOCK RELEASE BUTTON OPERATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a screwdriver, remove the shift lock release cover.</ptxt>
+</s2>
+<s2>
+<ptxt>When operating the shift lever with the shift lock release button pressed, check that the lever can be moved to any position other than P.</ptxt>
+<ptxt>If operation cannot be done as specified, check the shift lever assembly installation condition.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000YX000CX_01_0003" proc-id="RM0250U___00001XB00000">
+<ptxt>CHECK KEY INTERLOCK OPERATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s2>
+<s2>
+<ptxt>Depress the brake pedal and move the shift lever to any position other than P.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the ignition key cannot be turned to the LOCK position.</ptxt>
+</s2>
+<s2>
+<ptxt>Move the shift lever to the P position, turn the ignition key to the LOCK position and check that the ignition key can be removed.</ptxt>
+<ptxt>If operation cannot be done as specified, inspect the shift lock control unit.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000YX000CX_01_0004" proc-id="RM0250U___00001XC00000">
+<ptxt>INSPECT SHIFT LOCK CONTROL ECU</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C127833E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Do not disconnect the shift lock control ECU connector.</ptxt>
+</atten4>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" align="left" colwidth="2.36in"/>
+<colspec colname="COL2" align="left" colwidth="2.36in"/>
+<colspec colname="COL3" align="left" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measuring Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Voltage (V)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6 (ACC) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6 (ACC) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ACC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6 (ACC) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4 (STP) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Depress brake pedal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4 (STP) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Release brake pedal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5 (KLS+) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>1. Ignition switch ACC and shift lever P position</ptxt>
+</item>
+<item>
+<ptxt>2. Ignition switch ACC and shift lever except P position</ptxt>
+</item>
+<item>
+<ptxt>3. Ignition switch ACC and shift lever P position (After approx. 1 second)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="nonmark">
+<item>
+<ptxt>7.5 to 11</ptxt>
+</item>
+<item>
+<ptxt>Below 1</ptxt>
+</item>
+<item>
+<ptxt>6 to 9</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>8 (IG) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>8 (IG) - 1 (E)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C127833E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Do not disconnect the shift lock control ECU connector.</ptxt>
+</atten4>
+<ptxt>If the result is not as specified, replace the shift lock control ECU.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" align="left" colwidth="2.11in"/>
+<colspec colname="COL2" align="left" colwidth="3.63in"/>
+<colspec colname="COL3" align="left" colwidth="1.34in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measuring Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Value</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PFX01QX" category="C" type-id="302IJ" name-id="ES06J-16" from="200601">
+<dtccode>P2119</dtccode>
+<dtcname>Throttle Actuator Control Throttle Body Range / Performance</dtcname>
+<subpara id="RM000000PFX01QX_01" type-id="60" category="03" proc-id="RM0250U___00007ME00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The Electronic Throttle Control System (ETCS) is composed of the throttle actuator, Throttle Position (TP) sensor, Accelerator Pedal Position (APP) sensor, and ECM. The ECM operates the throttle actuator to regulate the throttle valve in response to driver inputs. The TP sensor detects the opening angle of the throttle valve, and provides the ECM with feedback so that the throttle valve can be appropriately controlled by the ECM.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2119</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle valve opening angle continues to vary greatly from target opening angle (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ETCS</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_02" type-id="64" category="03" proc-id="RM0250U___00007MF00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM determines the actual opening angle of the throttle valve from the TP sensor signal. The actual opening angle is compared to the target opening angle commanded by the ECM. If the difference between these two values is outside the standard range, the ECM interprets this as a malfunction in the ETCS. The ECM then illuminates the MIL and sets the DTC.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, the DTC is set when the accelerator pedal is quickly released (to close the throttle valve) after the engine speed reaches 5,000 rpm by the accelerator pedal being fully depressed (fully open the throttle valve).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_03" type-id="65" category="03" proc-id="RM0250U___00007MG00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2119: ETCS malfunction</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle actuator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation	</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 1 second</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_04" type-id="66" category="03" proc-id="RM0250U___00007MH00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>System guard*</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>*System guard is ON when the following conditions are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator duty calculation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Executing</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle position sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail determined</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator current-cut operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not executing</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail determined</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_05" type-id="67" category="03" proc-id="RM0250U___00007MI00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions A or B is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. Difference between commanded closed throttle position and current closed throttle position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. Difference between commanded open throttle position and current open throttle position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_06" type-id="62" category="03" proc-id="RM0250U___00007MJ00000">
+<name>FAIL-SAFE</name>
+<content5 releasenbr="1">
+<ptxt>When this DTC, or other DTCs relating to ETCS (Electronic Throttle Control System) malfunctions, are set, the ECM enters fail-safe mode. During fail-safe mode, the ECM cuts the current to the throttle actuator off, and the throttle valve is returned to a 6° throttle angle by the return spring. The ECM then adjusts the engine output by controlling the fuel injection (intermittent fuel-cut) and ignition timing, in accordance with the accelerator pedal opening angle, to allow the vehicle to continue at a minimal speed. If the accelerator pedal is depressed gently, the vehicle can be driven slowly.</ptxt>
+<ptxt>Fail-safe mode continues until a pass condition is detected, and the ignition switch is then turned off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_07" type-id="32" category="03" proc-id="RM0250U___00007MK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P2102 (See page <xref label="Seep01" href="RM000000PFU01PX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_08" type-id="51" category="05" proc-id="RM0250U___00007ML00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFX01QX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PFX01QX_09_0001" proc-id="RM0250U___00007MM00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P2119)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P2119</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P2119 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P2119 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFX01QX_09_0002" fin="false">A</down>
+<right ref="RM000000PFX01QX_09_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFX01QX_09_0002" proc-id="RM0250U___00007MN00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (DTC P2119)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle for 15 seconds.</ptxt>
+<atten2>
+<ptxt>Exercise extreme care and take precautions in steps (f) and (g) below. Failure to do so may result in the vehicle unexpectedly rolling away.</ptxt>
+</atten2>
+</test1>
+<test1>
+<ptxt>Securely apply the parking brake and move the gear selector lever to the D position.</ptxt>
+</test1>
+<test1>
+<ptxt>While depressing the brake pedal securely, fully depress the accelerator pedal for 5 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<atten4>
+<ptxt>The output voltage of the throttle position sensor can be checked during step (g) using the intelligent tester. Variations in the output voltage indicate that the throttle actuator is in operation. To check the output voltage using the intelligent tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ETCS / THROTTLE POS #1.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC output.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFX01QX_09_0005" fin="true">OK</down>
+<right ref="RM000000PFX01QX_09_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFX01QX_09_0003">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000PFX01QX_09_0004">
+<testtitle>REPLACE THROTTLE BODY ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000PFX01QX_09_0005">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

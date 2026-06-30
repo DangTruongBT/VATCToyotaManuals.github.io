@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000026C0000X" category="D" type-id="303F2" name-id="LI20A-01" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM0000026C0000X_z0" proc-id="RM0250U___00008A300000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>MANUAL LIGHT CONTROL SYSTEM</ptxt>
+<ptxt>This system functions if the lights such as the headlights and taillights come on by manual operation of the light control switch.</ptxt>
+<step2>
+<ptxt>The main body ECU controls this system based on the signals listed below.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lights that illuminate</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Light control switch TAIL signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Taillight relay drive signal</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Taillights</ptxt>
+</item>
+<item>
+<ptxt>License plate lights</ptxt>
+</item>
+<item>
+<ptxt>Side marker lights</ptxt>
+</item>
+<item>
+<ptxt>Parking lights</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Light control switch HEAD signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight relay drive signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Low beam headlights</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>AUTOMATIC LIGHT CONTROL SYSTEM</ptxt>
+<ptxt>When the light control switch is in the AUTO position, the automatic light control sensor detects ambient light, converts it into an electrical signal, and outputs it to the main body ECU. The main body ECU automatically turns the headlights and taillights on or off according to the signal.</ptxt>
+<step2>
+<ptxt>The main body ECU controls this system based on the signals listed below.</ptxt>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="2.36in"/>
+<colspec colname="col2" colwidth="2.36in"/>
+<colspec colname="col3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lights that illuminate</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Light control switch AUTO signal</ptxt>
+</item>
+<item>
+<ptxt>Automatic light control sensor signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Headlight relay drive signal</ptxt>
+</item>
+<item>
+<ptxt>Taillight relay drive signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Low beam headlights</ptxt>
+</item>
+<item>
+<ptxt>Taillights</ptxt>
+</item>
+<item>
+<ptxt>License plate lights</ptxt>
+</item>
+<item>
+<ptxt>Side marker lights</ptxt>
+</item>
+<item>
+<ptxt>Parking lights</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>LIGHT AUTO TURN OFF SYSTEM</ptxt>
+<ptxt>When the headlights and taillights are on through the operation of the automatic light control system or through the light control switch, if the ignition switch is turned off and all doors are closed, this system continues to illuminate the headlights and taillights for approximately 30 seconds, and then turns off the headlights and taillights.</ptxt>
+<ptxt>However, if the ignition switch is turned off and all doors are locked, this system turns off the headlights and taillights immediately.</ptxt>
+<step2>
+<ptxt>The main body ECU controls this system based on the signals listed below.</ptxt>
+<table frame="all">
+<tgroup cols="3">
+<colspec colname="col1" colwidth="2.36in"/>
+<colspec colname="col2" colwidth="2.36in"/>
+<colspec colname="col3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Input</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Lights that operate</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Door courtesy switch signal</ptxt>
+</item>
+<item>
+<ptxt>Ignition switch or engine switch signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Headlight relay OFF demand</ptxt>
+</item>
+<item>
+<ptxt>Taillight relay OFF demand</ptxt>
+</item>
+<item>
+<ptxt>DRL relay OFF demand</ptxt>
+</item>
+<item>
+<ptxt>FOG light relay OFF demand</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Low beam headlights</ptxt>
+</item>
+<item>
+<ptxt>Taillights, license plate lights, parking lights, and side marker lights</ptxt>
+</item>
+<item>
+<ptxt>High beam headlights</ptxt>
+</item>
+<item>
+<ptxt>Front fog lights</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>DAYTIME RUNNING LIGHT SYSTEM</ptxt>
+<ptxt>The daytime running light system is designed to automatically illuminate the headlights (dimmed HI beams), during the daytime to make the car more visible to other vehicle.</ptxt>
+<step2>
+<ptxt>The main body ECU controls this system.</ptxt>
+<ptxt>The daytime running light system starts operating when all of the following conditions are met:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Items</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch or engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>On (IG)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Light control switch position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF<sup>*</sup>, TAIL or AUTO position (if headlight-on control is not being performed by the automatic light control)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Parking brake switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Released (OFF)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*: only for Canadian package models.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>ILLUMINATED ENTRY SYSTEM</ptxt>
+<ptxt>When a door is unlocked through a key or transmitter operation, or if a door is opened, the illuminated entry system turns on the interior light and the ignition key cylinder light.</ptxt>
+<step2>
+<ptxt>The main body ECU controls this system. The operation and condition of the illuminated entry system are described below.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Fade in</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following conditions is met, the interior light and ignition key cylinder light fade in.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Any door is opened.</ptxt>
+</item>
+<item>
+<ptxt>Any door is unlocked when the ignition switch is off and all doors are closed.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Ignition switch is turned from on (ACC) to off when all doors are closed.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fade out immediately</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of the following conditions is met, the interior light and ignition key cylinder light fade out immediately.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Ignition switch is turned from off to on (ACC or IG) when all doors are closed.</ptxt>
+</item>
+<item>
+<ptxt>All doors are locked when the ignition switch is off.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Illuminate for approximately 15 seconds, and then fade out</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All doors are closed when the ignition switch is off.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Fade out (Battery saving)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the following conditions are met, the interior light and ignition key cylinder light fade out.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>A key is not in the actuation area (with smart key system).</ptxt>
+</item>
+<item>
+<ptxt>A key is not inserted in the ignition key cylinder (without smart key system).</ptxt>
+</item>
+<item>
+<ptxt>There are no changes in the condition of the doors for 20 minutes.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>POWER DISTRIBUTOR</ptxt>
+<step2>
+<ptxt>The power distributor (engine room J/B assembly) is installed in the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="E121471E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The HEAD relay and DRL relay are installed in the power distributor (engine room J/B assembly).</ptxt>
+</step2>
+<step2>
+<ptxt>When a short circuit occurs between the power distributor (engine room J/B assembly) and high beam headlight bulbs, a fail-safe function operates.</ptxt>
+</step2>
+<step2>
+<ptxt>When the fail-safe function operates, the power distributor stops the operation of the DRL relay.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

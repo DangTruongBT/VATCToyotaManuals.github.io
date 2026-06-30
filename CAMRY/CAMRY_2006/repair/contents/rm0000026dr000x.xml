@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM0000026DR000X" category="U" type-id="3001G" name-id="AC1NI-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000026DR000X_z0" proc-id="RM0250U___00008LT00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>A/C AMPLIFIER</ptxt>
+<figure>
+<graphic graphicname="E124486E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Check from the rear of the connector while it is connected to the A/C amplifier.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<colspec colname="COL5" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-1 (IG+) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-1 (IG+) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-2 (SOL+) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C compressor operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine is running</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+<ptxt>Blower switch: LO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-5 (TAM) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C ambient temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) at 25°C (77°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.35 to 1.75 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-5 (TAM) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C ambient temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG) at 40°C (104°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.9 to 1.2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-8 (LOCK)*1 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C compressor lock sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine is running</ptxt>
+<ptxt>Blower switch: LO</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-9 (PRE) - E38-13 (SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C pressure sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start engine, Operate A/C system, Refrigerant pressure: Abnormal pressure (more than 3,140 kPa (32.0 kgf/cm<sup>2</sup>, 455 psi))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.74 V or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-9 (PRE) - E38-13 (SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C pressure sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start engine, Operate A/C system, Refrigerant pressure: Abnormal pressure (less than 196 kPa (2.0 kgf/cm<sup>2</sup>, 28 psi))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 0.76 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-9 (PRE) - E38-13 (SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C pressure sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start engine, Operate A/C system, Refrigerant pressure: Abnormal pressure (more than 3,140 kPa (32.0 kgf/cm<sup>2</sup>, 455 psi) and less than 196 kPa (2.0 kgf/cm<sup>2</sup>, 28 psi))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.76 to 4.74 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-10 (S5-3) - E38-13 (SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for A/C pressure sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-10 (S5-3) - E38-13 (SG-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for A/C pressure sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>A/C switch: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-11 (CANH) - E38-12 (CANL)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication circuit</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-13 (SG-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground for A/C pressure sensor, A/C ambient temperature sensor, A/C lock sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-14 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground for main power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-20 (MGC)*1 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C compressor magnetic clutch operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: LO</ptxt>
+<ptxt>A/C switch: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-20 (MGC)*1 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C compressor magnetic clutch operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: LO</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-21 (B) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (Back-up)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-23 (BLW) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blower motor speed control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(See waveform 3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-29 (TR)*2 - E38-34 (SG-1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - LG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C room temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Cabin temperature at 25°C (77°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.8 to 2.2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-29 (TR)*2 - E38-34 (SG-1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - LG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C room temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Cabin temperature at 40°C (104°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 1.6 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-32 (TSP)*2 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C solar sensor signal (for Front passenger side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Solar sensor is subjected to electric light.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.8 to 4.3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-32 (TSP)*2 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C solar sensor signal (for Front passenger side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Solar sensor is covered with a cloth.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 0.8 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-33 (TSD)*2 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C solar sensor signal (for Driver side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Solar sensor is subjected to electric light.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.8 to 4.3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-33 (TSD)*2 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C solar sensor signal (for Driver side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Solar sensor is covered with a cloth.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 0.8 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-34 (SG-1)*2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground for A/C room temperature sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-37 (LIN1) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-38 (RDFG) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DEF relay signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>REAR DEF switch: ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-38 (RDFG) - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DEF relay signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>REAR DEF switch: OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-39 (PCD1)*2 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Plasmacluster<sup>TM</sup> operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: OFF </ptxt>
+<ptxt>(plasmacluster<sup>TM</sup> not operating)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E38-39 (PCD1)*2 - E38-14 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Plasmacluster<sup>TM</sup> operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: ON</ptxt>
+<ptxt>(plasmacluster<sup>TM </sup>operating)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-2 (BUS G) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground for BUS IC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-3 (BUS) - e1-2 (BUS G)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BUS IC control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off → on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-4 (B BUS) - e1-2 (BUS G)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for BUS IC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-4 (B BUS) - e1-2 (BUS G)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for BUS IC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-5 (SGA) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground for evaporator temperature sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-6 (TEA) - e1-5 (SGA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C evaporator temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Evaporator temperature at 0°C (32°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.7 to 2.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>e1-6 (TEA) - e1-5 (SGA)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/C evaporator temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Evaporator temperature at 15°C (59°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.7 to 1.3 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>*1: For 2GR-FSE</ptxt>
+<ptxt>*2: For AUTO A/C</ptxt>
+<step2>
+<ptxt>Waveform 1:</ptxt>
+<figure>
+<graphic graphicname="E106664E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E38-2 (SOL+) - E38-14 (GND)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV., 500 μs/DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine is running</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 2:</ptxt>
+<figure>
+<graphic graphicname="E116941E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E38-8 (LOCK) - E38-14 (GND)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>200 mV/DIV., 10 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine is running</ptxt>
+<ptxt>Blower switch: LO</ptxt>
+<ptxt>A/C switch: ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Waveform 3:</ptxt>
+<figure>
+<graphic graphicname="E103396E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E38-23 (BLW) - E38-14 (GND)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 V/DIV., 500 μs/DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>A/C CONTROL ASSEMBLY</ptxt>
+<figure>
+<graphic graphicname="E124487E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Check from the rear of the connector while it is connected to the A/C control assembly.</ptxt>
+</atten4>
+<table frame="all">
+<tgroup cols="5">
+<colspec colname="col1" colwidth="1.77in"/>
+<colspec colname="col2" colwidth="1.06in"/>
+<colspec colname="col3" colwidth="1.42in"/>
+<colspec colname="col4" colwidth="1.77in"/>
+<colspec colname="col5" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No.</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F16-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground for A/C control assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F16-4 (TX+) - F16-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN communication circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F16-5 (IG+) - F16-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F16-5 (IG+) - F16-3 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

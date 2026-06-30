@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM000000NL600NX" category="J" type-id="300HA" name-id="AV1EP-01" from="200601">
+<dtccode/>
+<dtcname>CD cannot be Inserted / Played or CD is Ejected Right After Insertion</dtcname>
+<subpara id="RM000000NL600NX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000NL600NX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000NL600NX_02_0001" proc-id="RM0250U___00004OZ00000">
+<testtitle>CHECK IF A PROPER CD IS INSERTED</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Make sure that the CD is an audio CD or a CD with an MP3 or WMA file, and that it is not deformed, flawed, stained, burred, or otherwise defective.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal CD.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Translucent or uniquely-shaped CDs cannot be played.</ptxt>
+</item>
+<item>
+<ptxt>CDs with adhesive paper labels should not be played.</ptxt>
+</item>
+<item>
+<ptxt>Commercial audio CDs can be played.</ptxt>
+</item>
+<item>
+<ptxt>CD-DA files on CD-ROMs, CD-Rs, and CD-RWs can be played.</ptxt>
+</item>
+<item>
+<ptxt>MP3 and WMA files on CD-ROMs, CD-Rs, and CD-RWs can be played.</ptxt>
+</item>
+<item>
+<ptxt>For details on playable CDs, refer to the Owner's Manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000NL600NX_02_0008" fin="false">OK</down>
+<right ref="RM000000NL600NX_02_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0008" proc-id="RM0250U___00004P200000">
+<testtitle>CHECK THAT CD IS INSERTED PROPERLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check whether or not the CD is inserted upside down.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>CD is properly inserted.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000NL600NX_02_0002" fin="false">OK</down>
+<right ref="RM000000NL600NX_02_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0002" proc-id="RM0250U___00004P000000">
+<testtitle>CHECK CD</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clean the disc by wiping it with a soft cloth from the inside to the outside in a radial direction.</ptxt>
+<figure>
+<graphic graphicname="I100151" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Do not use a conventional record cleaner or anti-static preservative.</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000000NL600NX_02_0003" fin="true">OK</down>
+<right ref="RM000000NL600NX_02_0004" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0003">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0004" proc-id="RM0250U___00004P100000">
+<testtitle>REPLACE CD WITH ANOTHER AND RECHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the CD with a normal one and check that the malfunction disappears.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000NL600NX_02_0003" fin="true">OK</down>
+<right ref="RM000000NL600NX_02_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0006">
+<testtitle>CHANGE DISC</testtitle>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0007">
+<testtitle>INSERT CD PROPERLY</testtitle>
+</testgrp>
+<testgrp id="RM000000NL600NX_02_0009">
+<testtitle>REPLACE RADIO RECEIVER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

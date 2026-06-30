@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000PLV00QX" category="J" type-id="300WL" name-id="CC00L-26" from="200601">
+<dtccode/>
+<dtcname>Cruise Main Indicator Light Circuit</dtcname>
+<subpara id="RM000000PLV00QX_01" type-id="60" category="03" proc-id="RM0250U___000080K00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<list1 type="unordered">
+<item>
+<ptxt>The ECM detects a cruise control switch signal and sends it to the combination meter through CAN. Then the CRUISE main indicator light comes on.</ptxt>
+</item>
+<item>
+<ptxt>The CRUISE main indicator light circuit uses CAN for communication. If there is a malfunction in this circuit, check for DTCs in the CAN communication system before troubleshooting this circuit.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PLV00QX_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PLV00QX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PLV00QX_03_0001" proc-id="RM0250U___000080L00000">
+<testtitle>PERFORM ACTIVE TEST USING INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the CRUISE main indicator light by performing the ACTIVE TEST.</ptxt>
+<table pgwide="1">
+<title>Combination meter:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CRUISE INDIC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Turns CRUISE main indicator light</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Indicator light comes on / goes off.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PLV00QX_03_0002" fin="false">OK</down>
+<right ref="RM000000PLV00QX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLV00QX_03_0002" proc-id="RM0250U___000080M00000">
+<testtitle>READ VALUE ON INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DATA LIST for proper functioning of the CRUISE main indicator light.</ptxt>
+<table pgwide="1">
+<title>ECM (Cruise control):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CCS INDICATOR M</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Cruise indicator signal (Main CPU) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: "CRUISE" on</ptxt>
+<ptxt>OFF: "CRUISE" off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>When the cruise control main switch is operated, the display changes as shown above.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PLV00QX_03_0003" fin="true">OK</down>
+<right ref="RM000000PLV00QX_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PLV00QX_03_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PLV00QX_03_0004">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000PLV00QX_03_0005">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

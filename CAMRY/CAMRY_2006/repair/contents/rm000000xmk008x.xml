@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XMK008X" category="L" type-id="3001A" name-id="TW005-10" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000000XMK008X_z0" proc-id="RM0250U___00005GE00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>EXPRESSIONS OF IGNITION SWITCH</ptxt>
+<step2>
+<ptxt>The type of ignition switch used on this model differs according to the specification of the valves</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry namest="COL1" nameend="COL2" valign="middle">
+<ptxt>Switch Type</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch (position)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Switch (condition)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>Expression</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>On (IG)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>On (ACC)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle"/>
+<entry valign="middle">
+<ptxt>Engine start</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>START</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Start</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>TIRE PRESSURE WARNING SYSTEM PRECAUTION</ptxt>
+<step2>
+<ptxt>When the tire pressure warning light comes on, immediately check the tire pressure of the tire and adjust it to the specified value. (The tire pressure warning light will blink (come on after blinking for 1 minute) if there is an open in the tire pressure warning light circuit.)</ptxt>
+<atten3>
+<ptxt>Check the full-size spare tire as well since this system monitors pressure of all tires including the ground spare tire.</ptxt>
+</atten3>
+<figure>
+<graphic graphicname="E129450E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Cold tire inflation pressure</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tire size</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>P215/60R16 94W</ptxt>
+</entry>
+<entry>
+<ptxt>210 (2.1, 31) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+<entry>
+<ptxt>210 (2.1, 31) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P215/55R17 93V</ptxt>
+</entry>
+<entry>
+<ptxt>220 (2.2, 32) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+<entry>
+<ptxt>220 (2.2, 32) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*1: For driving under 100 mph (160 km/h)</ptxt>
+<ptxt>*2: For driving at 100 mph (160 km/h) or over</ptxt>
+</step2>
+<step2>
+<ptxt>When the tire pressure warning light blinks (comes on after blinking for 1 minute), there is a malfunction in the system. Check for DTCs.</ptxt>
+</step2>
+<step2>
+<ptxt>It is necessary to register the transmitter ID in the tire pressure warning ECU after replacing the tire pressure warning valve and transmitter and/or tire pressure warning ECU (See page <xref label="Seep01" href="RM000000XN1008X"/>).</ptxt>
+</step2>
+<step2>
+<ptxt>When replacing the tire pressure warning ECU;</ptxt>
+<step3>
+<ptxt>Using the DATA LIST, read the transmitter IDs registered in the ECU and make a note of them before removing the tire pressure warning ECU.</ptxt>
+</step3>
+<step3>
+<ptxt>Register the transmitter IDs after installing a new tire pressure warning ECU.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>When replacing the tire pressure warning valve and transmitter;</ptxt>
+<step3>
+<ptxt>Take a note of the 7 digit number (transmitter ID) written on the new tire pressure warning valve and transmitter when replacing it. Register the transmitter IDs in the tire pressure warning ECU after replacing the tire pressure warning valve and transmitter and installing the tires and wheels on the vehicle.</ptxt>
+<figure>
+<graphic graphicname="E128762E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten3>
+<ptxt>The transmitter ID is written on the tire pressure warning valve and transmitter. It will be unable to be read after installing the tire pressure warning valve and transmitter on the tire and wheel. Therefore, take a note of the transmitter ID before installing the tire pressure warning valve and transmitter.</ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>When replacing the tire pressure warning ECU and the tire pressure warning valves and transmitters; It is necessary to perform the initialization (See page <xref label="Seep03" href="RM000000XMZ008X"/>) after the registration (See page <xref label="Seep04" href="RM000000XN1008X"/>). </ptxt>
+</step2>
+<step2>
+<ptxt>Precautions about the tire pressure;</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The tire pressures decrease naturally.</ptxt>
+</item>
+<item>
+<ptxt>In winter, tire pressure may decrease due to low ambient temperatures (tire pressure decreases by approximately 10 kPa (0.2 kgf/cm<sup>2</sup>, 1.45 psi) for every 10°C (50°F) drop in the ambient temperature). Therefore, the tire pressure warning is more likely to operate if the tire pressures are not adjusted appropriately. If the daily temperature variation is large, pressurize the tires high so that the tire pressures are suitable under cold conditions. Incorrect tire pressure warning operation becomes less likely.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>IN CASE OF TIRE AND WHEEL REPLACEMENT</ptxt>
+<step2>
+<ptxt>When tires and wheels are replaced, always ensure that each transmitter ID is correctly registered.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>IN CASE OF REPLACEMENT OF TIRE PRESSURE WARNING ECU, TIRE PRESSURE WARNING VALVE AND TRANSMITTER, OR TIRE(S) WITH DIFFERENT TIRE PRESSURE</ptxt>
+<step2>
+<ptxt>Initialize the tire pressure warning system after any of the following is performed:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Replacing the tire pressure warning ECU or the tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Installing tire(s) which require different tire pressure</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The tire pressure warning system will not operate properly if it is not initialized (See page <xref label="Seep02" href="RM000000XMZ008X"/>).</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>FAIL-SAFE FUNCTION</ptxt>
+<step2>
+<ptxt>When a system malfunction occurs in the tire pressure warning system, the tire pressure warning light blinks (comes on after blinking for 1 minute) and informs the driver of the system failure.</ptxt>
+</step2>
+<step2>
+<ptxt>The result of this diagnosis is stored in the tire pressure warning ECU.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

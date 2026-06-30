@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XUF008X" category="U" type-id="303FJ" name-id="DL02L-09" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000XUF008X_z0" proc-id="RM0250U___00009NG00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester's DATA LIST allows switch, sensor, actuator and other item values to be read without removing any parts. Reading the DATA LIST relay in troubleshooting is one way to save time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG). When the intelligent tester cannot be turned on due to a malfunction or other problem, refer to "precautions when using the intelligent tester" (See page <xref label="Seep01" href="RM000000XU6008X"/>).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.72in"/>
+<colspec colname="COL4" colwidth="1.82in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>D TOUCH SENSOR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door touch sensor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Sensor is touched</ptxt>
+<ptxt>OFF: Sensor is not touched</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P TOUCH SENSOR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side door touch sensor / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Sensor is touched</ptxt>
+<ptxt>OFF: Sensor is not touched</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D TRIGGER SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door lock switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Switch is touched</ptxt>
+<ptxt>OFF: Switch is not touched</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P TRIGGER SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side door lock switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Switch is touched</ptxt>
+<ptxt>OFF: Switch is not touched</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TR/B-DOOR UNLK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door unlock switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Switch is pushed</ptxt>
+<ptxt>OFF: Switch is not pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Engine switch is on (IG)</ptxt>
+<ptxt>OFF: Engine switch is off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Engine switch is on (ACC)</ptxt>
+<ptxt>OFF: Engine switch is off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P/S </ptxt>
+<ptxt>10-MIN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power save counter - 10 minutes / Min: 0; Max: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power save counter after door LOCK/UNLOCK-10 minutes</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P/S</ptxt>
+<ptxt>5-DAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power save counter - 5 days / Min: 0; Max: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power save counter after door LOCK/UNLOCK-5 days</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P/S</ptxt>
+<ptxt>14-DAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power save counter - 14 days / Min: 0; Max: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power save counter after door LOCK/UNLOCK-14 days</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UNMATCH V-ID</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unmatched vehicle-ID / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key ID matches vehicle</ptxt>
+<ptxt>NO: Key ID does not match vehicle</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NO RESPONSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No response / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Response from key</ptxt>
+<ptxt>NO: No response from key</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>UNMATCH FORMAT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unmatched response code and format / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key ID code matches</ptxt>
+<ptxt>NO: Key ID code does not match</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LOW BATTERY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key low battery / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key battery voltage drops</ptxt>
+<ptxt>NO: Key battery voltage is normal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WRONG CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID code difference / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key ID code matches</ptxt>
+<ptxt>NO: Key ID code does not match</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WRONG C CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Challenge code difference (Response) / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key ID code matches</ptxt>
+<ptxt>NO: Key ID code does not match</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WRONG ID CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID code difference / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key ID code matches</ptxt>
+<ptxt>NO: Key ID code does not match</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WRONG ROL CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rolling code difference / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Key rolling code matches</ptxt>
+<ptxt>NO: Key rolling code does not match</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DOOR UNLOCK MOD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door unlock mode / ALL, D_DOOR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mode status is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FUNCTION CANCEL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door lock function cancel / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mode status is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MASTER KEY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Master key / MATCH or NO MATCH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MATCH: Key code is sent</ptxt>
+<ptxt>NO MATCH: Unmatched key code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SUB KEY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sub key / MATCH or NO MATCH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>MATCH: Key code is sent</ptxt>
+<ptxt>NO MATCH: Unmatched key code</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BCC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Correct data sensing</ptxt>
+<ptxt>NG: Incorrect data sensing</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STATUS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Data OK</ptxt>
+<ptxt>NG: Data error</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ENCRYPT CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Data OK</ptxt>
+<ptxt>NG: Data error</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SERIAL NUMBER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Data OK</ptxt>
+<ptxt>NG: Data error</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FRAME</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: Data OK</ptxt>
+<ptxt>NG: Data error</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RESPONSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK: With no response</ptxt>
+<ptxt>NG: Those with a response</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#CODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic trouble code / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IGNITION AREA</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition available area / FRONT or ALL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customization status is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PARK WAIT TIME</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking wait time / 0.5s, 1.5s, 2.5s, 5s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customization status is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRUNK OPEN MODE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door open mode with vehicle locked / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customization status is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KEY LO-BATT WRN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Key low battery warning / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Customization status is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>LUGG COURTESY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door courtesy light switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Luggage compartment door open</ptxt>
+<ptxt>OFF: Luggage compartment door closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door courtesy light switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door open</ptxt>
+<ptxt>OFF: Driver side door closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side door courtesy light switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Front passenger side door open</ptxt>
+<ptxt>OFF: Front passenger side door closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear door courtesy light switch LH signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear door open</ptxt>
+<ptxt>OFF: Rear door closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear door courtesy light switch RH signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear door open</ptxt>
+<ptxt>OFF: Rear door closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TRUNK KEY UNLOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door lock/unlock switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Luggage compartment door lock switch is pushed</ptxt>
+<ptxt>OFF: Luggage compartment door lock switch is not pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Engine switch is on (IG)</ptxt>
+<ptxt>OFF: Engine switch is off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's ACTIVE TEST allows relay, VSV, actuator and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC0" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>OVERHEAD TUNER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IN LUG TUNER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage receiver</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D TRANSMITTER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side electrical key oscillator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P TRANSMITTER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side electrical key oscillator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR TRANSMITTER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator (console)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR TRANSMITTER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator (rear seat)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IN_BDR TRNSMTTR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door inner oscillator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BDOOR TRNSMTTR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door outer oscillator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D SELECT SIG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side select</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P SELECT SIG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front passenger side select</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WIRELESS BUZZER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COLSPEC1" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TRNK/BDOR OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment open switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

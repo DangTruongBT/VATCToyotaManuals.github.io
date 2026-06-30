@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NJT001X" category="C" type-id="301ZN" name-id="BC12S-02" from="200601">
+<dtccode>C1237/37</dtccode>
+<dtcname>Tires of Different Size</dtcname>
+<subpara id="RM000001NJT001X_01" type-id="60" category="03" proc-id="RM0250U___000014J00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU measures the speed of each wheel by receiving signals from the speed sensor.</ptxt>
+<ptxt>These signals are used for recognizing that all 4 wheels are operating properly.</ptxt>
+<ptxt>Therefore, all wheel signals must be equal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1237/37</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Wheel speed difference between the wheels.</ptxt>
+</item>
+<item>
+<ptxt>Wheel sensor signal failure.</ptxt>
+</item>
+<item>
+<ptxt>ABS control continues for 60 sec. or more.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor rotor (Front)</ptxt>
+</item>
+<item>
+<ptxt>Rear axle hub and bearing assembly</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor</ptxt>
+</item>
+<item>
+<ptxt>Speed sensor circuit</ptxt>
+</item>
+<item>
+<ptxt>Tire and wheel size</ptxt>
+</item>
+<item>
+<ptxt>Tire deformation</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001NJT001X_06" type-id="32" category="03" proc-id="RM0250U___0000A4900000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C122979E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<figure>
+<graphic graphicname="C122948E04" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001NJT001X_02" type-id="51" category="05" proc-id="RM0250U___00003M100000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep01" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001NJT001X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001NJT001X_05_0012" proc-id="RM0250U___0000A4A00000">
+<testtitle>CHECK TIRES</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the size and condition of all 4 wheels (See page <xref label="Seep01" href="RM000000X9A005X"/>).</ptxt>
+<atten4>
+<ptxt>The DTC is output when tire deformation or a difference in tire size is detected.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The diameter of all 4 tires and air pressure are the same.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0013" fin="false">OK</down>
+<right ref="RM000001NJT001X_05_0020" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0013" proc-id="RM0250U___00003M200000">
+<testtitle>INSPECT SPEED SENSOR AND SENSOR ROTOR SERRATIONS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Lift up the vehicle.</ptxt>
+<figure>
+<graphic graphicname="C136493E04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the oscilloscope to each speed sensor terminal of the skid control ECU connector.</ptxt>
+<spec>
+<title>Terminals</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Connector</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Circuit</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-5 (FL+) - A60-6 (FL-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front left speed sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-10 (FR+) - A60-9 (FR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front right speed sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-7 (RL+) - A60-27 (RL-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear left speed sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A60-29 (RR+) - A60-8 (RR-)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear right speed sensor</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Check that a waveform is output when the tires are rotated (by the sensor circuit).</ptxt>
+<figure>
+<graphic graphicname="C140980E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>A waveform as shown in the figure is output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Each sensor circuit outputs the same waveform without noise.</ptxt>
+</item>
+<item>
+<ptxt>As vehicle speed (wheel rotation speed) increases, the width of the waveform narrows and the fluctuation in the output voltage becomes greater.</ptxt>
+</item>
+<item>
+<ptxt>When noise is identified in the waveform on the oscilloscope, the erratic signals are generated due to rotor scratches, looseness or foreign matter attached to the speed sensor.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+<test1>
+<ptxt>Make sure that the waveform does not change while jiggling a connector or a wire harness.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The waveform does not change.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>If the waveform changes while jiggling a connector or a wire harness, there may be a malfunction in the connector or the wire harness.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0014" fin="false">OK</down>
+<right ref="RM000001NJT001X_05_0015" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0014" proc-id="RM0250U___00003M300000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of 20 mph (32 km/h) or more for 60 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the sensors, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0026" fin="true">A</down>
+<right ref="RM000001NJT001X_05_0021" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0015" proc-id="RM0250U___00003M400000">
+<testtitle>CHECK SPEED SENSOR ROTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the speed sensor rotor.</ptxt>
+<ptxt>Front Speed Sensor Rotor (Front drive outboard joint shaft assembly): (See page <xref label="Seep01" href="RM000001IW8002X"/>)</ptxt>
+<ptxt>Rear Speed Sensor Rotor (Rear axle hub and bearing assembly): (See page <xref label="Seep02" href="RM000001IXK001X"/>)</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No scratches or foreign matter on the rotors.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Check the speed sensor signal after the cleaning/replacement (See page <xref label="Seep03" href="RM000001NKD001X"/>).</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0016" fin="false">OK</down>
+<right ref="RM000001NJT001X_05_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0016" proc-id="RM0250U___00003M500000">
+<testtitle>CHECK SPEED SENSOR TIP</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove each speed sensor (See page <xref label="Seep01" href="RM0000011P5001X"/> for front, <xref label="Seep02" href="RM0000011P9001X"/> for rear).</ptxt>
+</test1>
+<test1>
+<ptxt>Check the speed sensor tip.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No scratches or foreign matter on the sensor tip.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Check the speed sensor signal after the cleaning/replacement (See page <xref label="Seep03" href="RM000001NKD001X"/>).</ptxt>
+</atten3>
+</test1>
+<test1>
+<ptxt>Install the speed sensor.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0017" fin="false">OK</down>
+<right ref="RM000001NJT001X_05_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0017" proc-id="RM0250U___00003M600000">
+<testtitle>INSPECT SPEED SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect each speed sensor connector.</ptxt>
+<figure>
+<graphic graphicname="C136027E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>FRONT</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A14-1 (FL+) - A14-2 (FL-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.4 to 1.6 kΩ at 20°C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A14-1 (FL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A14-2 (FL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A35-1 (FR+) - A35-2 (FR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.4 to 1.8 kΩ at 20°C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A35-1 (FR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A35-2 (FR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>REAR</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>g1-1 (RL+) - g1-2 (RL-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 2.2 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>g1-1 (RL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>g1-2 (RL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>f1-1 (RR+) - f1-2 (RR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 2.2 kΩ</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>f1-1 (RR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>f1-2 (RR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten3>
+<ptxt>Check the speed sensor signal after replacement (See page <xref label="Seep01" href="RM000001NKD001X"/>).</ptxt>
+</atten3>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0018" fin="false">OK</down>
+<right ref="RM000001NJT001X_05_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0018" proc-id="RM0250U___00003M700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU TO EACH SPEED SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+<figure>
+<graphic graphicname="C139146E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<subtitle>FRONT</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A60-5 (FL+) - A14-1 (FL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-5 (FL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-6 (FL-) - A14-2 (FL-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-6 (FL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-10 (FR+) - A35-1 (FR+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-10 (FR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-9 (FR-) - A35-2 (FR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-9 (FR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>REAR</subtitle>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A60-7 (RL+) - g1-1 (RL+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-7 (RL+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-27 (RL-) - g1-2 (RL-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-27 (RL-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-29 (RR+) - f1-1 (RR+)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-29 (RR+) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-8 (RR-) - f1-2 (RR-)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A60-8 (RR-) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Connect the connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0019" fin="false">OK</down>
+<right ref="RM000001NJT001X_05_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0019" proc-id="RM0250U___00003M800000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of 20 mph (32 km/h) or more for at least 60 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<atten4>
+<ptxt>Reinstall the sensors, connectors, etc. and restore the vehicle to its prior condition before rechecking for DTCs.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1237/37) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1237/37) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001NJT001X_05_0026" fin="true">A</down>
+<right ref="RM000001NJT001X_05_0021" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0020">
+<testtitle>REPLACE TIRES SO THAT ALL 4 TIRES ARE THE SAME SIZE</testtitle>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0021">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0022">
+<testtitle>CLEAN OR REPLACE SPEED SENSOR ROTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0023">
+<testtitle>CLEAN OR REPLACE SPEED SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0024">
+<testtitle>REPLACE EACH SPEED SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0025">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (SKID CONTROL ECU TO EACH SPEED SENSOR)</testtitle>
+</testgrp>
+<testgrp id="RM000001NJT001X_05_0026">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS (SYMPTOM SIMULATION)<xref label="Seep01" href="RM000001NK4001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

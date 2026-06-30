@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_72WHB_T0068" variety="T0068">
+<name>THEFT DETERRENT SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001PR2005X" category="J" type-id="3011F" name-id="TD0C0-01" from="200601">
+<dtccode/>
+<dtcname>Engine Hood Courtesy Switch Circuit</dtcname>
+<subpara id="RM000001PR2005X_01" type-id="60" category="03" proc-id="RM0250U___00005EU00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The engine hood courtesy switch is installed together with the hood lock. This switch turns off when the engine hood is opened and turns on when the engine hood is closed.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001PR2005X_02" type-id="32" category="03" proc-id="RM0250U___00005EV00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B144365E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001PR2005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001PR2005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001PR2005X_04_0001" proc-id="RM0250U___00005EW00000">
+<testtitle>INSPECT ENGINE HOOD COURTESY SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the courtesy switch from the hood lock.</ptxt>
+<figure>
+<graphic graphicname="B144360E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Switch Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Free (ON)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>Pushed (OFF)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR2005X_04_0003" fin="false">OK</down>
+<right ref="RM000001PR2005X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR2005X_04_0003" proc-id="RM0250U___00005EY00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE HOOD COURTESY SWITCH - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A5 switch connector.</ptxt>
+<figure>
+<graphic graphicname="B144361E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>A5-1 - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR2005X_04_0002" fin="false">OK</down>
+<right ref="RM000001PR2005X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR2005X_04_0002" proc-id="RM0250U___00005EX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - ENGINE HOOD COURTESY SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E7 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B144366E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>(Symbol) Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>HCTY (E7-16) - (A5-2)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>HCTY (E7-16) - Body ground</ptxt>
+</entry>
+<entry align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PR2005X_04_0004" fin="true">OK</down>
+<right ref="RM000001PR2005X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PR2005X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001PR2005X_04_0005">
+<testtitle>REPLACE HOOD LOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001PR2005X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

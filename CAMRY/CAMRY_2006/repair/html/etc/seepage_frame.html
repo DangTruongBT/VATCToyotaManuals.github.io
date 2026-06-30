@@ -1,0 +1,54 @@
+<!-- $Id: seepage_frame.html,v 1.7 2005/01/13 06:28:44 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Reference Page-</title>
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/memo.js"></script>
+<script language="javascript">
+var g_tocXml = null;
+var g_objXml = null;
+var g_objXsl = null;
+var g_paraId   = null; // paragraph ID
+var g_sub    = null; // subpara ID
+var g_s1     = null; // s-1 ID
+
+var g_sectionName   = "";
+var g_titleName     = "";
+var g_paragraphName = "";
+function init() {
+	var args = window.dialogArguments[0];
+	g_objXml = args.get("xml");
+	g_objXsl = args.get("xsl");
+	g_sub = args.get("sub");
+	g_s1 = args.get("s1");
+
+	g_tocXml = initXml("toc_rpr.xml");
+	g_paraId = g_objXml.selectSingleNode("//para").getAttribute("id");
+	setSeePageMargin(args.get("margin")+30);
+}
+init();
+
+function selectId() {
+	return false;
+}
+</script>
+</head>
+<frameset rows="30, *" frameborder="no" border="0" framespacing="0">
+	<frame name="global" src="seepage_global.html" scrolling="no" noresize frameborder="no">
+		<frame name="contents" src="seepage_contents.html" frameborder="no">
+	</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

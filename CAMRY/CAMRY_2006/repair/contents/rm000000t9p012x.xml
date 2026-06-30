@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000T9P012X" category="C" type-id="302B0" name-id="ES062-28" from="200601">
+<dtccode>P0125</dtccode>
+<dtcname>Insufficient Coolant Temperature for Closed Loop Fuel Control</dtcname>
+<subpara id="RM000000T9P012X_01" type-id="60" category="03" proc-id="RM0250U___00007DL00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>Refer to DTC P0115 (See page <xref label="Seep01" href="RM000000PF501DX_01"/>).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0125</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine Coolant Temperature (ECT) does not reach closed-loop enabling temperature for 20 minutes (this period varies with engine start ECT)</ptxt>
+<ptxt>(2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>ECT sensor</ptxt>
+</item>
+<item>
+<ptxt>Cooling system</ptxt>
+</item>
+<item>
+<ptxt>Thermostat</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_02" type-id="64" category="03" proc-id="RM0250U___00007DM00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The resistance of the ECT sensor varies in proportion to the actual ECT. The ECT supplies a constant voltage to the sensor and monitors the signal output voltage of the sensor. The signal voltage output varies according to changes in the resistance of the sensor. After the engine is started, the ECT is monitored through this signal. If the ECT sensor indicates that the engine is not yet warm enough for closed-loop fuel control, despite a specified period of time having elapsed since the engine was started, the ECM interprets this as a malfunction in the sensor or cooling system and sets the DTC.</ptxt>
+<ptxt>Example:</ptxt>
+<ptxt>The ECT is 0°C (32°F) at engine start. After about 1 minute running time, the ECT sensor still indicates that the engine is not warm enough to begin closed-loop fuel (air-fuel ratio feedback) control. The ECM interprets this as a malfunction in the sensor or cooling system and sets the DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_03" type-id="65" category="03" proc-id="RM0250U___00007DN00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.11in"/>
+<colspec colname="COL2" colwidth="3.97in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0125: Insufficient engine coolant temperature for closed-loop fuel control</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Thermostat, cooling system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature sensor and mass air flow meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Except PZEV:</ptxt>
+<ptxt>62.94 seconds or more: Engine coolant temperature at engine start -8.34°C (17°F) or more</ptxt>
+<ptxt>135.32 seconds or more: Engine coolant temperature at engine start -8.34 to -19.45°C (17 to -3°F)</ptxt>
+<ptxt>20 minutes or more: Engine coolant temperature at engine start less than -19.45°C (-3°F)</ptxt>
+<ptxt>PZEV:</ptxt>
+<ptxt>52.5 seconds or more: Engine coolant temperature at engine start -8.34°C (17°F) or more</ptxt>
+<ptxt>97.56 seconds or more: Engine coolant temperature at engine start -8.34 to -19.45°C (17 to -3°F)</ptxt>
+<ptxt>20 minutes or more: Engine coolant temperature at engine start less than -19.45°C (-3°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_04" type-id="66" category="03" proc-id="RM0250U___00007DO00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="3.98in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0100 - P0103 (MAF meter)</ptxt>
+<ptxt>P0110 - P0113 (IAT sensor)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Thermostat</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OK</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_05" type-id="67" category="03" proc-id="RM0250U___00007DP00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.10in"/>
+<colspec colname="COL2" colwidth="3.98in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Time until actual engine coolant temperature reaches closed-loop fuel control enabling temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Except PZEV:</ptxt>
+<ptxt>62.94 seconds or more: Engine coolant temperature at engine start -8.34°C (17°F) or more</ptxt>
+<ptxt>135.32 seconds or more: Engine coolant temperature at engine start -8.34 to -19.45°C (17 to -3°F)</ptxt>
+<ptxt>20 minutes or more: Engine coolant temperature at engine start less than -19.45°C (-3°F)</ptxt>
+<ptxt>PZEV:</ptxt>
+<ptxt>52.5 seconds or more: Engine coolant temperature at engine start -8.34°C (17°F) or more</ptxt>
+<ptxt>97.56 seconds or more: Engine coolant temperature at engine start -8.34 to -19.45°C (17 to -3°F)</ptxt>
+<ptxt>20 minutes or more: Engine coolant temperature at engine start less than -19.45°C (-3°F)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_08" type-id="32" category="03" proc-id="RM0250U___00007DU00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0115 (See page <xref label="Seep01" href="RM000000PF501DX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_06" type-id="51" category="05" proc-id="RM0250U___00007DQ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If any of DTCs P0115, P0116, P0117 or P0118 are set simultaneously with DTC P0125, the Engine Coolant Temperature (ECT) sensor may have an open or a short circuit. Troubleshoot those DTCs first.</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000T9P012X_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000T9P012X_07_0001" proc-id="RM0250U___00007DR00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0125)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="center">
+<ptxt>P0125</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry align="center">
+<ptxt>P0125 and other DTCs</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0125 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T9P012X_07_0002" fin="false">A</down>
+<right ref="RM000000T9P012X_07_0004" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T9P012X_07_0002" proc-id="RM0250U___00007DS00000">
+<testtitle>INSPECT THERMOSTAT</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the thermostat (See page <xref label="Seep01" href="RM0000017WE005X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check the valve opening temperature of the thermostat.</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>80 to 84°C (176 to 183°F)</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>In addition to the above check, confirm that the valve is completely closed when the temperature is below the standard.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Reinstall the thermostat (See page <xref label="Seep02" href="RM0000017WB005X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T9P012X_07_0003" fin="false">OK</down>
+<right ref="RM000000T9P012X_07_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T9P012X_07_0003" proc-id="RM0250U___00007DT00000">
+<testtitle>CHECK COOLING SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for defects in the cooling system that might cause the system to be too cold, such as abnormal radiator fan operation or any modifications.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T9P012X_07_0007" fin="true">OK</down>
+<right ref="RM000000T9P012X_07_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T9P012X_07_0004">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000T9P012X_07_0005">
+<testtitle>REPLACE THERMOSTAT</testtitle>
+</testgrp>
+<testgrp id="RM000000T9P012X_07_0006">
+<testtitle>REPAIR OR REPLACE COOLING SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM000000T9P012X_07_0007">
+<testtitle>REPLACE ENGINE COOLANT TEMPERATURE SENSOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

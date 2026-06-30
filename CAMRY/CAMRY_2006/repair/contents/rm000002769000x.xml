@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000002769000X" category="J" type-id="30076" name-id="ES4DB-01" from="200601">
+<dtccode/>
+<dtcname>ECM Power Source Circuit</dtcname>
+<subpara id="RM000002769000X_01" type-id="60" category="03" proc-id="RM0250U___00008RP00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the ignition switch is turned ON position, the battery voltage is applied to IGSW of the ECM. The output signal from the MREL terminal of the ECM causes a current to flow to the coil, closing the contacts of the engine room J/B (EFI relay) and supplying power to either terminal +B or +B2 of the ECM.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000002769000X_02" type-id="32" category="03" proc-id="RM0250U___00008RQ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A132300E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002769000X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000002769000X_06" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002769000X_06_0018" proc-id="RM0250U___0000BBS00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A107892E79" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C24-104 (E1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0019" fin="false">OK</down>
+<right ref="RM000002769000X_06_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0019" proc-id="RM0250U___0000BBT00000">
+<testtitle>INSPECT ENGINE ROOM J/B (EFI RELAY VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A138922E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the 1E engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-12 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0020" fin="false">NG</down>
+<right ref="RM000002769000X_06_0024" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0020" proc-id="RM0250U___0000BBU00000">
+<testtitle>INSPECT FUSE (EFI MAIN FUSE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the EFI MAIN fuse.</ptxt>
+<figure>
+<graphic graphicname="A137446E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Remove the EFI MAIN fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the EFI MAIN fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the EFI MAIN fuse.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0021" fin="true">OK</down>
+<right ref="RM000002769000X_06_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0021">
+<testtitle>CHECK AND REPAIR HARNESS AND CONNECTOR (BATTERY - EFI RELAY)</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0022">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0023">
+<testtitle>REPLACE FUSE (EFI MAIN FUSE)</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0024" proc-id="RM0250U___0000BBX00000">
+<testtitle>INSPECT ENGINE ROOM J/B (EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A138918E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Inspect the EFI relay.</ptxt>
+<test2>
+<ptxt>Measure the EFI relay resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1E-6 - 1E-12</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(Apply battery voltage between terminals 1E-9 and 1E-11)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0025" fin="false">OK</down>
+<right ref="RM000002769000X_06_0031" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0025" proc-id="RM0250U___0000BBY00000">
+<testtitle>INSPECT FUSE (EFI NO. 2 FUSE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the EFI No. 2 fuse.</ptxt>
+<figure>
+<graphic graphicname="A135067E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Remove the EFI No. 2 fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the EFI No. 2 fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the EFI No. 2 fuse.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0026" fin="false">OK</down>
+<right ref="RM000002769000X_06_0032" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0026" proc-id="RM0250U___0000BBZ00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (EFI RELAY - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A115671E24" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A138922E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the 1E engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A24-2 (+B) - 1E-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A24-1 (+B2) - 1E-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A24-2 (+B) or 1E-6 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A24-1 (+B2) or 1E-6 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt> Reconnect the engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0027" fin="false">OK</down>
+<right ref="RM000002769000X_06_0033" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0027" proc-id="RM0250U___0000BC300000">
+<testtitle>INSPECT ECM (IGSW VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 and C24 ECM connectors.</ptxt>
+<figure>
+<graphic graphicname="A107934E16" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the A24 and C24 ECM connectors.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A24-28 (IGSW) - C24-104 (E1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connectors.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0028" fin="false">NG</down>
+<right ref="RM000002769000X_06_0036" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0028" proc-id="RM0250U___0000BC400000">
+<testtitle>INSPECT FUSE (IGN FUSE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IGN fuse from the instrument panel J/B.</ptxt>
+<figure>
+<graphic graphicname="A135169E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0029" fin="false">OK</down>
+<right ref="RM000002769000X_06_0034" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0029" proc-id="RM0250U___0000BC500000">
+<testtitle>INSPECT IGNITION SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E23 ignition switch connector.</ptxt>
+<figure>
+<graphic graphicname="A056879E35" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>All Terminals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>1 - 2 - 4, 5 - 6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>1 - 3 - 4, 5 - 6 - 7</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>START</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ignition switch connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0030" fin="true">OK</down>
+<right ref="RM000002769000X_06_0035" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0030">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0031">
+<testtitle>REPLACE ENGINE ROOM J/B</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0032">
+<testtitle>REPLACE FUSE (EFI NO. 2 FUSE)</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0033">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0034">
+<testtitle>REPLACE FUSE (IGN FUSE)</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0035">
+<testtitle>REPLACE IGNITION SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0036" proc-id="RM0250U___0000BC600000">
+<testtitle>CHECK HARNESS AND CONNECTOR (EFI RELAY - ECM, EFI RELAY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A115671E25" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the engine room J/B from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A138922E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the 1E engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A24-44 (MREL) - 1E-9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>1E-11 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>A24-44 (MREL) or 1E-9 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt> Reconnect the engine room J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room J/B.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002769000X_06_0037" fin="true">OK</down>
+<right ref="RM000002769000X_06_0038" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002769000X_06_0037">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000002769000X_06_0038">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

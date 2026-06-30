@@ -1,0 +1,14 @@
+<!ENTITY % LangCode
+	"(en | fr | de | es | pt | it | sv | da | fi | no | nl | el | cs | hu | pl | ja)"
+>
+
+<!ELEMENT	system-outline		(p|out-title*)*>
+<!ELEMENT	p			(#PCDATA|br)*>
+<!ELEMENT	out-title		(#PCDATA)*>
+<!ELEMENT	br			EMPTY>
+
+
+<!ATTLIST	system-outline
+	pubno		CDATA		#REQUIRED
+	xml:lang	%LangCode;	#REQUIRED
+>

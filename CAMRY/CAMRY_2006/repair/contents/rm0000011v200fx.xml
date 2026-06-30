@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM0000011V200FX" category="D" type-id="303FL" name-id="WS03M-12" from="200601">
+<name>INITIALIZATION</name>
+<subpara id="RM0000011V200FX_z0" proc-id="RM0250U___000057F00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>INITIALIZE POWER WINDOW REGULATOR MOTOR FRONT LH (WITH JAM PROTECTION)</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the power window motor or power window regulator assembly is replaced, initialization is required (initialization is not necessary when the negative battery terminal is disconnected and reconnected).</ptxt>
+</item>
+<item>
+<ptxt>No other electrical systems should be operated during initialization. Initialization will be interrupted if a voltage drop occurs in the power being supplied to the power window motor.</ptxt>
+</item>
+<item>
+<ptxt>Replacing the door glass or door glass run may cause a difference to exist between the current door glass position and the position memorized in the ECU. In this case, the jam protection function may work improperly. Return the system to the pre-initialized condition and reinitialize the system.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The AUTO UP function will not work unless initialization is completed.</ptxt>
+</item>
+<item>
+<ptxt>The indicator on the power window master switch will blink when the ignition switch is ON, until initialization has been completed. The indicator will remain on after initialization is successfully completed.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Connect the negative battery terminal.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG). The indicator on the power window master switch will blink.</ptxt>
+</step2>
+<step2>
+<ptxt>Fully close the door glass by operating the power window master switch. After the door glass stops, hold the power window master switch in the AUTO UP position for 1 second or more.</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the indicator on the power window master switch remains on.</ptxt>
+<atten4>
+<ptxt>If the indicator does not remain on, this means that initialization has not been completed successfully. In this case, lower the door glass at least 50 mm (1.96 in.) and hold the power window master switch in the AUTO UP position for 1 second after the window closes fully.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>TO RETURN THE SYSTEM TO THE PRE-INITIALIZES CONDITION</ptxt>
+<ptxt>Disconnect the power window regulator motor connector during power window operation. This will return the motor to the pre-initialized condition.</ptxt>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

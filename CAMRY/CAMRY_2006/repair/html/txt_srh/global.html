@@ -1,0 +1,76 @@
+<!-- $Id: global.html,v 1.10 2005/01/13 06:28:47 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 Your search:                                                    -->
+<!--    005 Search                                                          -->
+<!--    006 logo(attribute)                                                 -->
+<!--========================================================================-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Text Search Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script src="../../js/util.js"></script>
+<script language="javascript">
+var WAIT_TIME = 1;
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	document.all.srharea.keyarea.value = parent.g_key;
+}
+
+function callBackPage() {
+	parent.contents.dispMessage();
+	setTimeout("backpage()", WAIT_TIME);
+}
+function backpage(){
+	if (navigator.appName.indexOf("Netscape") >= 0) {
+		back();
+	} else {
+		var locStr = top.location.search;
+		if( locStr.indexOf('catcd') == -1 ){
+			var param = getDefaultParameter(parent.g_term, parent.g_vin, parent.g_filter);
+			top.location.href = '../index.html' + param;
+		} else {
+			top.history.go(-1);
+		}
+	}
+}
+</script>
+</head>
+<body onLoad="init();">
+<form id="srharea" onsubmit="parent.callReSearch(keyarea); return false;" action="">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 006 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr valign="bottom">
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="callBackPage()">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="left">
+			<span class="bold-name">&nbsp; Your search:</span><!-- 004 -->&nbsp;
+			<input type="text" size="35" name="keyarea" id="keyarea">&nbsp;
+			<a id="srh" href="#" class="popup-button" onClick="parent.callReSearch(keyarea)">Search</a><!-- 005 -->
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px"><br/></td>
+		<td class="boundary-top" colspan="2">
+			<span id="disp" name="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</form>
+</body>
+</html>

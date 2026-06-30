@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000WBZ00YX" category="C" type-id="300Y6" name-id="ES41Z-01" from="200601">
+<dtccode>P0340</dtccode>
+<dtcname>Camshaft Position Sensor Circuit Malfunction</dtcname>
+<dtccode>P0342</dtccode>
+<dtcname>Camshaft Position Sensor "A" Circuit Low Input (Bank 1 or Single Sensor)</dtcname>
+<dtccode>P0343</dtccode>
+<dtcname>Camshaft Position Sensor "A" Circuit High Input (Bank 1 or Single Sensor)</dtcname>
+<dtccode>P0345</dtccode>
+<dtcname>Camshaft Position Sensor "A" Circuit (Bank 2)</dtcname>
+<dtccode>P0347</dtccode>
+<dtcname>Camshaft Position Sensor "A" Circuit Low Input (Bank 2)</dtcname>
+<dtccode>P0348</dtccode>
+<dtcname>Camshaft Position Sensor "A" Circuit High Input (Bank 2)</dtcname>
+<subpara id="RM000000WBZ00YX_01" type-id="60" category="03" proc-id="RM0250U___00002N500000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The intake camshaft's Variable Valve Timing (VVT) sensor (G signal) consists of a magnet and MRE (Magneto Resistance Element). </ptxt>
+<ptxt>The VVT camshaft drive gear has a sensor plate with 3 teeth on its outer circumference. When the gear rotates, changes occur in the air gaps between the sensor plate and MRE, which affects the magnetic field. As a result, the resistance of the MRE material fluctuates. The VVT sensor converts the gear rotation data to pulse signals, uses the pulse signals to determine the camshaft angle, and sends it to the ECM.</ptxt>
+<ptxt>The crankshaft angle sensor plate has 34 teeth. The pickup coil generates 34 signals for each engine revolution. Based on combination of the G signal and NE signal, the ECM detects the crankshaft angle. Then the ECM uses this data to control fuel injection time and injection timing. Also, based on the NE signal, the ECM detects the engine speed.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0340</ptxt>
+<ptxt>P0345</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Input voltage to ECM remains 0.3 V or less, or 4.7 V or higher for more than 5 seconds, when 2 or more seconds have elapsed after turning engine switch on (IG)</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</item>
+<item>
+<ptxt>No VVT sensor signal to ECM during cranking</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in VVT sensor for intake camshaft circuit</ptxt>
+</item>
+<item>
+<ptxt>VVT sensor for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>Camshaft timing gear for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>Jumped tooth of timing chain for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0342</ptxt>
+<ptxt>P0347</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VVT sensor 0.3 V or less is for 5 seconds </ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in VVT sensor for intake camshaft circuit</ptxt>
+</item>
+<item>
+<ptxt>VVT sensor for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>Camshaft timing gear for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>Jumped tooth of timing chain for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0343</ptxt>
+<ptxt>P0348</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VVT sensor 4.7 V or more is for 5 seconds </ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open or short in VVT sensor for intake camshaft circuit</ptxt>
+</item>
+<item>
+<ptxt>VVT sensor for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>Camshaft timing gear for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>Jumped tooth of timing chain for intake camshaft</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>Reference: Inspection using an oscilloscope</ptxt>
+<figure>
+<graphic graphicname="A107148E09" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The correct waveform is as shown.</ptxt>
+</item>
+<item>
+<ptxt>VV1+ and VV2+ stand for the VVT sensor signal, and NE+ stands for the CKP sensor signal.</ptxt>
+</item>
+</list1>
+</atten4>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Content</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NE+ - NE-</ptxt>
+<ptxt>VV1+ - VV1-</ptxt>
+<ptxt>VV2+ - VV2-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Equipment Settings</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV.</ptxt>
+<ptxt>20 ms./DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Conditions </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cranking or idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_02" type-id="64" category="03" proc-id="RM0250U___00002N600000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If no signal is transmitted by the VVT sensor despite the engine revolving, or the rotations of the camshaft and the crankshaft are not synchronized, the ECM interprets this as a malfunction of the sensor.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_03" type-id="65" category="03" proc-id="RM0250U___00002N700000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.53in"/>
+<colspec colname="COL2" colwidth="3.55in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0340: VVT sensor (Bank 1) open/short</ptxt>
+<ptxt>P0340: VVT position/Crankshaft position misalignment (Bank 1) </ptxt>
+<ptxt>P0342: VVT position sensor (Bank 1) range check (low voltage)</ptxt>
+<ptxt>P0343: VVT position sensor (Bank 1) range check (high voltage)</ptxt>
+<ptxt>P0345: VVT sensor (Bank 2) open/short</ptxt>
+<ptxt>P0345: VVT position/Crankshaft position misalignment (Bank 2) </ptxt>
+<ptxt>P0347: VVT position sensor (Bank 2) range check (low voltage)</ptxt>
+<ptxt>P0348: VVT position sensor (Bank 2) range check (high voltage)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VVT position sensor (Bank 1 and 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles: P0340 (cranking), P0345 (cranking)</ptxt>
+<ptxt>Immediate: Others</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_04" type-id="66" category="03" proc-id="RM0250U___00002N800000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0340 (Engine running):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>600 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0345 (Engine running):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>600 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0340 (Cranking):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Minimum battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 11 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CPU initial</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not initial</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0345 (Cranking):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage while starter is ON at least once</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 11 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0340, P0342, P0343 (Chattering, Low voltage, High voltage):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine switch off to on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0345, P0347, P0348 (Chattering, Low voltage, High voltage):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after engine switch off to on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_05" type-id="67" category="03" proc-id="RM0250U___00002N900000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0340 (Engine running):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Camshaft position and crankshaft position phase</ptxt>
+</entry>
+<entry>
+<ptxt>Misaligned</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Camshaft position signal</ptxt>
+</entry>
+<entry>
+<ptxt>No signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0340 (Cranking):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Camshaft position signal</ptxt>
+</entry>
+<entry>
+<ptxt>No signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0340 (Chattering):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Camshaft position sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.3 V, or more than 4.7 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0342 (Low voltage):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Camshaft position sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.3 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0343 (High voltage):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Camshaft position sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 4.7 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0345 (Engine running, cranking):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<colspec colname="COLSPEC1" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVT sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>No signal</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0345 (Chattering):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<colspec colname="COLSPEC1" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVT sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.3 V, or more than 4.7 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0347 (Low voltage):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<colspec colname="COLSPEC1" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVT sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.3 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0348 (High voltage):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<colspec colname="COLSPEC1" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVT sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 4.7 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_06" type-id="70" category="03" proc-id="RM0250U___00002NA00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVT sensor voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 to 4.7 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_07" type-id="32" category="03" proc-id="RM0250U___00002NB00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0335 (See page <xref label="Seep01" href="RM000000TCW01QX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_08" type-id="51" category="05" proc-id="RM0250U___00002NC00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air/fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000WBZ00YX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WBZ00YX_09_0002" proc-id="RM0250U___00002NE00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SENSOR POWER SOURCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C41 or C45 VVT sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A107149E16" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VC (C41-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VC (C45-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the VVT sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WBZ00YX_09_0003" fin="false">OK</down>
+<right ref="RM000000WBZ00YX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0003" proc-id="RM0250U___00002NF00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (VVT SENSOR FOR INTAKE CAMSHAFT - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C41 or C45 VVT sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A135027E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVR+ (C41-1) - VV1+ (C55-69)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVR- (C41-2) - VV1- (C55-92)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVL+ (C45-1) - VV2+ (C55-67)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVL- (C45-2) - VV2- (C55-90)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.85in"/>
+<colspec colname="COL2" colwidth="1.28in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>VVR+ (C41-1) or VV1+ (C55-69) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVR- (C41-2) or VV1- (C55-92) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVL+ (C45-1) or VV2+ (C55-67) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VVL- (C45-2) or VV2- (C55-90) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the VVT sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WBZ00YX_09_0004" fin="false">OK</down>
+<right ref="RM000000WBZ00YX_09_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0004" proc-id="RM0250U___00002NG00000">
+<testtitle>CHECK VVT SENSOR FOR INTAKE CAMSHAFT (SENSOR INSTALLATION)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the CKP sensor installation condition.</ptxt>
+<figure>
+<graphic graphicname="BR03795E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sensor is installed correctly.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WBZ00YX_09_0005" fin="false">OK</down>
+<right ref="RM000000WBZ00YX_09_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0005" proc-id="RM0250U___00002NH00000">
+<testtitle>CHECK CAMSHAFT TIMING GEAR ASSEMBLY (TEETH OF PLATE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the teeth of the signal plate.</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sensor plate teeth do not have any cracks or deformation.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000WBZ00YX_09_0006" fin="false">OK</down>
+<right ref="RM000000WBZ00YX_09_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0006">
+<testtitle>REPLACE VVT SENSOR</testtitle>
+<res>
+<down ref="RM000000WBZ00YX_09_0012" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0012" proc-id="RM0250U___00006AP00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01HX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="3.54in"/>
+<colspec colname="COL2" align="center" colwidth="3.54in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No output</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P0340, P0342, P0343, P0345, P0347 or P0348</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<atten4>
+<ptxt>If the engine does not start, replace the ECM.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000WBZ00YX_09_0013" fin="true">A</down>
+<right ref="RM000000WBZ00YX_09_0011" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0013">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0009">
+<testtitle>REPAIR OR REPLACE VVT SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0010">
+<testtitle>REPLACE CAMSHAFT TIMING GEAR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000WBZ00YX_09_0011">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

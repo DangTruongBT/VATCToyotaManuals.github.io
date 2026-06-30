@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GV5002X" category="C" type-id="302EP" name-id="EI0EJ-01" from="200601">
+<dtccode>B2784</dtccode>
+<dtcname>Antenna Coil Open / Short</dtcname>
+<subpara id="RM000001GV5002X_01" type-id="60" category="03" proc-id="RM0250U___00008FA00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The transponder key coil is built into the transponder key amplifier and receives a key code signal from the transponder chip in the key. This signal is amplified by the amplifier, then it is output to the transponder key ECU assembly.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2784</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Antenna coil is open/shorted</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Wire harness</ptxt>
+</item>
+<item>
+<ptxt>Transponder key amplifier</ptxt>
+</item>
+<item>
+<ptxt>Transponder key ECU assembly</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001GV5002X_02" type-id="32" category="03" proc-id="RM0250U___00008FB00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B111588E13" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001GV5002X_03" type-id="51" category="05" proc-id="RM0250U___00008IQ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<ptxt>If the transponder key ECU assembly is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GV5002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GV5002X_04_0001" proc-id="RM0250U___00008FC00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select ANTENNA COIL in the DATA LIST and read the value displayed on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>IMMOBILISER:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ANTENNA COIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier coil condition/NORMAL or FAIL</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>NORMAL: Antenna coil is normal</ptxt>
+<ptxt>FAIL: Antenna coil is malfunctioning</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>NORMAL (Antenna coil is normal) appears on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV5002X_04_0002" fin="false">NG</down>
+<right ref="RM000001GV5002X_04_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV5002X_04_0002" proc-id="RM0250U___00008FD00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TRANSPONDER KEY ECU - TRANSPONDER KEY AMPLIFIER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E15 ECU and E25 amplifier connectors.</ptxt>
+<figure>
+<graphic graphicname="B124193E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-4 (TXCT) - E25-5 (TXCT)</ptxt>
+</entry>
+<entry morerows="7" valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-5 (AGND) - E25-7 (AGND)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-14 (VC5) - E25-1 (VC5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-15 (CODE) - E25-4 (CODE)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-4 (TXCT) - Body ground</ptxt>
+</entry>
+<entry morerows="3" valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-5 (AGND) - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-14 (VC5) - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E15-15 (CODE) - Body ground</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV5002X_04_0003" fin="false">OK</down>
+<right ref="RM000001GV5002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV5002X_04_0003" proc-id="RM0250U___00008FE00000">
+<testtitle>INSPECT TRANSPONDER KEY ECU ASSEMBLY (TRANSPONDER KEY AMPLIFIER POWER SOURCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the E15 ECU and E25 amplifier connectors.</ptxt>
+<figure>
+<graphic graphicname="B128338E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>E15-14 (VC5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.6 to 5.4 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV5002X_04_0007" fin="false">OK</down>
+<right ref="RM000001GV5002X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV5002X_04_0007" proc-id="RM0250U___00008FF00000">
+<testtitle>INSPECT TRANSPONDER KEY ECU ASSEMBLY (TRANSPONDER KEY AMPLIFIER GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B128338E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E15-5 (AGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV5002X_04_0006" fin="true">OK</down>
+<right ref="RM000001GV5002X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV5002X_04_0004">
+<testtitle>REPLACE TRANSPONDER KEY ECU ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001GV5002X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001GV5002X_04_0006">
+<testtitle>REPLACE TRANSPONDER KEY AMPLIFIER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

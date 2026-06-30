@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_72WHB_T0068" variety="T0068">
+<name>THEFT DETERRENT SYSTEM (w/o Smart Key System)</name>
+<para id="RM0000026P0000X" category="D" type-id="303F2" name-id="TD0A6-01" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM0000026P0000X_z0" proc-id="RM0250U___00005FV00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>OUTLINE OF THEFT DETERRENT SYSTEM</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The theft deterrent system will operate when somebody attempts to forcibly enter the vehicle, unlock any door or luggage compartment door or open the engine hood or the luggage compartment door without using the key.</ptxt>
+<ptxt>This system causes the lights to light up or blink and the horns to sound in order to deter break-in and theft.</ptxt>
+</item>
+<item>
+<ptxt>The theft deterrent system has 2 modes; one is the active arming mode (see ACTIVE ARMING MODE) and the other is passive arming mode (see PASSIVE ARMING MODE). The passive arming mode can be switched ON/OFF using the specified method.</ptxt>
+</item>
+<item>
+<ptxt>Each mode has 4 states; a disarmed state, an arming preparation state, an armed state and an alarm sounding state.</ptxt>
+</item>
+</list1>
+<step2>
+<ptxt>Disarmed state:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The alarm function is not operating.</ptxt>
+</item>
+<item>
+<ptxt>The theft deterrent system is not operating.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Arming preparation state:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The time until the system goes into the armed state.</ptxt>
+</item>
+<item>
+<ptxt>The theft deterrent system is not operating.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Armed state:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The theft deterrent system is operating.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Alarm sounding state:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Alarm function is operating.</ptxt>
+</item>
+</list1>
+<spec>
+<title>Alarm time</title>
+<specitem>
+<ptxt>Approx. 60 sec.</ptxt>
+</specitem>
+</spec>
+<table pgwide="1">
+<title>Refer to table below for alarm method and time:</title>
+<tgroup cols="3">
+<colspec colname="COL1" align="left" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<tbody>
+<row>
+<entry morerows="5" valign="middle">
+<ptxt>Alarm Method</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Headlight</ptxt>
+</entry>
+<entry>
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Taillight</ptxt>
+</entry>
+<entry>
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Hazard Warning Light</ptxt>
+</entry>
+<entry>
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Interior Light</ptxt>
+</entry>
+<entry>
+<ptxt>Illuminating</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle Horn</ptxt>
+</entry>
+<entry>
+<ptxt>Sounding</ptxt>
+<ptxt>(approx. 0.4 second cycles)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Security Horn</ptxt>
+</entry>
+<entry>
+<ptxt>Sounding</ptxt>
+<ptxt>(approx. 0.4 second cycles)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Alarm Time</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Approx. 60 sec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If any of the doors are unlocked when the key is not in the key cylinder during the armed state, a forced door lock signal will be output (see FORCED DOOR LOCK CONTROL).</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENT</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Security indicator</ptxt>
+</entry>
+<entry>
+<ptxt>Informs driver of theft deterrent system status.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Security horn</ptxt>
+</entry>
+<entry>
+<ptxt>Sounds when attempted brake-in or theft is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Headlights</ptxt>
+</entry>
+<entry>
+<ptxt>Blink when attempted break-in or theft is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Taillights</ptxt>
+</entry>
+<entry>
+<ptxt>Blink when attempted break-in or theft is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Hazard warning lights</ptxt>
+</entry>
+<entry>
+<ptxt>Blinking when attempted break-in or theft is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Interior light</ptxt>
+</entry>
+<entry>
+<ptxt>Lights up when attempted break-in or theft is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Vehicle horns</ptxt>
+</entry>
+<entry>
+<ptxt>Sounds when attempted break-in or theft is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Door courtesy light switch</ptxt>
+</entry>
+<entry>
+<ptxt>Detects door status (open or closed).</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Door lock position switch</ptxt>
+</entry>
+<entry>
+<ptxt>Detects door status (locked or unlocked).</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine hood courtesy switch</ptxt>
+</entry>
+<entry>
+<ptxt>Detects engine hood status (open or closed).</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Luggage compartment door courtesy switch</ptxt>
+</entry>
+<entry>
+<ptxt>Detects luggage compartment door status (open or closed).</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Luggage compartment door lock cylinder</ptxt>
+</entry>
+<entry>
+<ptxt>Detects luggage compartment door status (locked or unlocked).</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>ACTIVE ARMING MODE</ptxt>
+<atten4>
+<ptxt>Active arming mode starts the alarm control immediately after the doors are locked.</ptxt>
+</atten4>
+<step2>
+<ptxt>Active arming mode:</ptxt>
+<ptxt>This system activates as described in the diagram below when one of items for each condition is met.</ptxt>
+<figure>
+<graphic graphicname="B144373E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: Disarmed state 1 is the normal disarmed state.</ptxt>
+</item>
+<item>
+<ptxt>*2: Disarmed state 2 is set from either the disarmed state 1 or the arming preparation state.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (1)</ptxt>
+</entry>
+<entry>
+<ptxt>In the disarmed state 1, when the key is not in the key cylinder, the system state is switched if one of the following conditions is met.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>With all doors, engine hood and luggage compartment door closed, lock all doors by key operation.</ptxt>
+</item>
+<item>
+<ptxt>With all doors, engine hood and luggage compartment door closed, lock all doors by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>With engine hood and luggage compartment door closed, close and lock the open door without using key.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (2)</ptxt>
+</entry>
+<entry>
+<ptxt> After condition (1) is met, allow approx. 30 seconds to elapse.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (3)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Unlock any door.</ptxt>
+</item>
+<item>
+<ptxt>Open any door, engine hood, and luggage compartment door.</ptxt>
+</item>
+<item>
+<ptxt>Insert key into ignition key cylinder.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON or ACC.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect battery.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (4)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Open engine hood.</ptxt>
+</item>
+<item>
+<ptxt>Open luggage compartment door.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect battery.</ptxt>
+</item>
+<item>
+<ptxt>Open any door.</ptxt>
+</item>
+<item>
+<ptxt>Unlock any door when all doors are locked.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON without using key.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (5)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Unlock only driver's door or all doors by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>Unlock only driver's door or all doors by key operation.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON and run the engine for more than 2 seconds.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (6)</ptxt>
+</entry>
+<entry>
+<ptxt>After approx. 60 seconds, alarm stops and system returns to armed state.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (7)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Open the luggage compartment door by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>Unlock the luggage compartment door by key operation.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (8)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Close the engine hood when the luggage compartment door is closed.</ptxt>
+</item>
+<item>
+<ptxt>Close the luggage compartment door when the engine hood is closed.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (9)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Unlock any door.</ptxt>
+</item>
+<item>
+<ptxt>Open any door.</ptxt>
+</item>
+<item>
+<ptxt>Insert key into ignition key cylinder.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON or ACC.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect the battery.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (10)</ptxt>
+</entry>
+<entry>
+<ptxt>In the disarmed state 1, when the key is not in the key cylinder, the system state is switched if one of the following conditions is met.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>With all doors closed, and the engine hood or luggage compartment door is opened, lock all doors by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>With all doors closed, and the engine hood or luggage compartment door is opened, lock all doors by key operation.</ptxt>
+</item>
+<item>
+<ptxt>With the engine hood or luggage compartment door is opened and all doors locked with any door still opened, close the open door.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>PASSIVE ARMING MODE</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Passive arming mode starts the alarm control after the key is out of the actuation area and doors are closed.</ptxt>
+</item>
+<item>
+<ptxt>Passive arming mode can be switched ON/OFF by the specified method.</ptxt>
+</item>
+<item>
+<ptxt>The alarm is initially set (when shipped from factory) to active arming mode (not passive arming mode).</ptxt>
+</item>
+<item>
+<ptxt>During passive arming mode, the theft deterrent system goes into the armed state even if the doors are not locked.</ptxt>
+</item>
+<item>
+<ptxt>Detecting that the doors are unlocked does not set off the alarm during passive arming mode.</ptxt>
+</item>
+<item>
+<ptxt>A forced door lock signal is not output during passive arming mode (see FORCED DOOR LOCK CONTROL).</ptxt>
+</item>
+<item>
+<ptxt>Although the theft deterrent system detects that the doors are opened during passive arming mode, the alarm will not go off immediately because an entry delay time is set.</ptxt>
+</item>
+<item>
+<ptxt>If the condition (1) of active arming mode is met during passive arming mode, the theft deterrent system will switch to active arming mode.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Passive arming mode:</ptxt>
+<ptxt>This system activates as described in the diagram below when one of items for each condition is met.</ptxt>
+<figure>
+<graphic graphicname="B112143E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: Disarmed state 1 is the normal disarmed state.</ptxt>
+</item>
+<item>
+<ptxt>*2: Disarmed state 2 is set from either the disarmed state 1 or the arming preparation state.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (1)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>With ignition switch OFF, open any door and pull the key out of the ignition key cylinder.</ptxt>
+</item>
+<item>
+<ptxt>With ignition switch OFF, pull the key out of the ignition key cylinder and open any door.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (2)</ptxt>
+</entry>
+<entry>
+<ptxt>All doors, engine hood and luggage compartment door are closed.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (3)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Unlock only driver's door or all doors by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>Unlock only driver's door or all doors by key operation.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect battery.</ptxt>
+</item>
+<item>
+<ptxt>Insert key into ignition key cylinder.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON or ACC.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (4)</ptxt>
+</entry>
+<entry>
+<ptxt>After condition (1) is met, allow approx. 30 seconds to elapse.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (5)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Open any door.</ptxt>
+</item>
+<item>
+<ptxt>Open engine hood.</ptxt>
+</item>
+<item>
+<ptxt>Open luggage compartment door.</ptxt>
+</item>
+<item>
+<ptxt>Unlock luggage compartment door.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (6)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Open any door and allow entry delay time<sup>*1</sup> to elapse.</ptxt>
+</item>
+<item>
+<ptxt>Open engine hood.</ptxt>
+</item>
+<item>
+<ptxt>Open luggage compartment door.</ptxt>
+</item>
+<item>
+<ptxt>Reconnect battery.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON without using key.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (7)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Unlock only driver's door or all doors by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>Unlock only driver's door or all doors by key operation.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON and run the engine more than 2 seconds.</ptxt>
+</item>
+<item>
+<ptxt>Turn the ignition switch ON with key operation.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (8)</ptxt>
+</entry>
+<entry>
+<list1 type="ordered">
+<item>
+<ptxt>Open luggage compartment door by wireless operation.</ptxt>
+</item>
+<item>
+<ptxt>Unlock luggage compartment door by key operation.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition (9)</ptxt>
+</entry>
+<entry>
+<ptxt>After approx. 60 sec., alarm stops and system returns to armed state.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*1: When any door is opened while all the doors are closed during passive arming mode, the entry delay time starts. If the switch condition (armed state → disarmed state 1 or 2) is met during the entry delay time, the theft deterrent system will return to disarmed state 1 or 2. However, if the switch condition for disarmed state 1 or 2 is not met, the theft deterrent system will recognize it as a theft and set off the alarm. Entry delay time of 0, 14 or 30 sec. can be selected by the customizing function.</ptxt>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>FORCED DOOR LOCK CONTROL</ptxt>
+<step2>
+<ptxt>The forced door lock control prevents the vehicle from being tampered with. Immediately after a door is unlocked (alarm starts), the door is forced to lock by a forced door lock signal.</ptxt>
+<step3>
+<ptxt>Conditions that force the doors to lock:</ptxt>
+<ptxt>When the key is not in the key cylinder and both of the following conditions are met.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The theft deterrent system is in the alarm sounding state of active arming mode.</ptxt>
+</item>
+<item>
+<ptxt>Any door is unlocked.</ptxt>
+</item>
+</list1>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>ALARM MEMORY FUNCTION</ptxt>
+<step2>
+<ptxt>If the alarm is set off (tampering is detected) while the theft deterrent system is armed, it will be recorded by the alarm memory function. Whenever the theft deterrent system is cancelled, the alarm memory function causes the taillights to light up for 2 seconds in order to inform you that the alarm has been set off.</ptxt>
+<step3>
+<ptxt>Conditions of the alarm memory function that cause the taillights to light up:</ptxt>
+<ptxt>When the theft deterrent system has entered into the alarm sounding state (tampering has been detected) even once, the taillights will light up for 2 seconds if any of the following conditions is met.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Switched to the disarmed state from the armed state during active arming mode.</ptxt>
+</item>
+<item>
+<ptxt>Switched to the disarmed state 1 from the armed state during passive arming mode.</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>Active arming mode: See ACTIVE ARMING MODE.</ptxt>
+<ptxt>Passive arming mode: See PASSIVE ARMING MODE.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>PANIC ALARM CONTROL</ptxt>
+<step2>
+<ptxt>The panic alarm control makes it possible to voluntarily set off the panic alarm by pressing the PANIC switch on the wireless transmitter.</ptxt>
+<step3>
+<ptxt>Conditions that cause the panic alarm control to set off the panic alarm:</ptxt>
+<ptxt>The panic alarm control sets off the panic alarm by pressing the PANIC switch on the wireless transmitter under the following conditions:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The ignition switch is OFF.</ptxt>
+</item>
+<item>
+<ptxt>The theft deterrent system is not in the alarm sounding state. (This condition is common both to active arming mode and to passive arming mode.)</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Conditions that cause the panic alarm control to shut off the alarm:</ptxt>
+<ptxt>The panic alarm control shuts off the panic alarm when any of the following conditions is met during panic alarm operation:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The ignition switch is ON.</ptxt>
+</item>
+<item>
+<ptxt>The panic alarm switch is turned on again.</ptxt>
+</item>
+<item>
+<ptxt>Any of the switches on the wireless transmitter (LOCK/UNLOCK or LUGGAGE OPEN) is pressed.</ptxt>
+</item>
+<item>
+<ptxt>The panic alarm ends (approx. 60 sec. have passed).</ptxt>
+</item>
+<item>
+<ptxt>The theft deterrent system switches to the alarm sounding state. Under this condition, the theft deterrent system is controlling the alarm rather than the panic alarm control. In order to cancel this alarm, refer to the theft deterrent system alarm sounding state cancellation procedure. (This condition is common both to active arming mode to passive arming mode.)</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>Active arming mode: See ACTIVE ARMING MODE.</ptxt>
+<ptxt>Passive arming mode: See PASSIVE ARMING MODE.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>SECURITY INDICATOR OUTPUT</ptxt>
+<step2>
+<ptxt>The main body ECU outputs a signal to light up the security indicator, according to the state of the theft deterrent system. However, some of the actual lighting conditions of the security indicator are different from the output signals of the main body ECU.</ptxt>
+<table pgwide="1">
+<title>Output:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>State of Theft Deterrent System*</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle" align="center">
+<ptxt>Security Indicator</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Signals from Main Body ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual Lighting Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Disarmed state 1, 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF (Immobiliser system unset)</ptxt>
+<ptxt>BLINKING (Immobiliser system set)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Arming preparation state</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Armed state</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BLINKING</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Alarm sounding state</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table>
+<title>Blinking cycle:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Security Indicator</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>0.2 sec.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1.8 sec.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*: The above condition is common both to active arming mode and to passive arming mode.</ptxt>
+</item>
+<item>
+<ptxt>When the immobiliser system is set, the security indicator blinks during both the disarmed state and the armed state, due to the output signals from the immobiliser system.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

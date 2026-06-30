@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000011SS004X" category="J" type-id="30303" name-id="LI20J-01" from="200601">
+<dtccode/>
+<dtcname>Parking Brake Switch Circuit</dtcname>
+<subpara id="RM0000011SS004X_01" type-id="60" category="03" proc-id="RM0250U___00007UY00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU receives a parking brake switch signal to control the daytime running light system.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000011SS004X_02" type-id="32" category="03" proc-id="RM0250U___00007UZ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121499E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011SS004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011SS004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011SS004X_04_0001" proc-id="RM0250U___00007V000000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/</ptxt>
+<ptxt>Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>PARKING BRAKE SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Parking brake SW signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Parking brake switch is ON</ptxt>
+<ptxt>OFF: Parking brake switch is OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal conditions listed above are displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SS004X_04_0002" fin="false">NG</down>
+<right ref="RM0000011SS004X_04_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0002" proc-id="RM0250U___00007V100000">
+<testtitle>INSPECT PARKING BRAKE SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the parking brake switch assembly.</ptxt>
+<figure>
+<graphic graphicname="C109430E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - Switch body</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shaft is pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - Switch body</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Shaft is not pushed in</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SS004X_04_0007" fin="false">OK</down>
+<right ref="RM0000011SS004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0007" proc-id="RM0250U___00008OW00000">
+<testtitle>CHECK VEHICLE CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the vehicle condition.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>with Pedal Type Parking Brake</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>with Lever Type Parking Brake</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SS004X_04_0003" fin="false">A</down>
+<right ref="RM0000011SS004X_04_0008" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0003" proc-id="RM0250U___00007V200000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SWITCH - INSTRUMENT PANEL J/B ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the IC instrument panel J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121500E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A18 switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IC-14 - A18-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IC-14 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SS004X_04_0004" fin="true">OK</down>
+<right ref="RM0000011SS004X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0008" proc-id="RM0250U___00008OX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SWITCH - INSTRUMENT PANEL J/B ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the IM instrument panel J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121501E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E33 switch connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COLSPEC1" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IM-2 - E33-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IM-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SS004X_04_0004" fin="true">OK</down>
+<right ref="RM0000011SS004X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0005">
+<testtitle>REPLACE PARKING BRAKE SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000011SS004X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

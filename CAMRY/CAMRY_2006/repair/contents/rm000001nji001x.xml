@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NJI001X" category="U" type-id="3001G" name-id="BC133-02" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000001NJI001X_z0" proc-id="RM0250U___000012P00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>TERMINALS OF ECU</ptxt>
+<figure>
+<graphic graphicname="C113404E05" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="4.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BM (2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for motor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BS (3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for solenoid</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL+ (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front left wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL- (6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front left wheel speed sensor ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL+ (7)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR- (8)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right wheel speed sensor ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR- (9)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front right wheel speed sensor ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR+ (10)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front right wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D/G (11)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis tester communication line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication line L</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BZ (23)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Buzzer output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL- (27)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left wheel speed sensor ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG1 (28)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECU power supply</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR+ (29)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right wheel speed sensor input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP1 (30)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SP1 (33)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed signal output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (35)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication line H</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TS (39)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sensor check switch input</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>TERMINAL INSPECTION</ptxt>
+<step2>
+<ptxt>Disconnect the connector and measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C137467E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>Voltage cannot be measured with the connector connected to the skid control ECU, as the connector is watertight.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" align="center" colwidth="1.42in"/>
+<colspec colname="COL3" align="center" colwidth="1.42in"/>
+<colspec colname="COL4" align="center" colwidth="1.42in"/>
+<colspec colname="COL5" align="center" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (A60-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actuator pump motor ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BM (A60-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BS (A60-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for solenoid</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (A60-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BZ (A60-23) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Buzzer warning light output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Buzzer does not sound</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 to 10 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG1 (A60-28) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG1 power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP1 (A60-30) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch input</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch ON →OFF (Brake pedal depressed → released)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 to 14 V →  Below 3 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002Z_S001S" variety="S001S">
+<name>SLIDING ROOF</name>
+<ttl id="1002Z_S001S_732XN_T00GB" variety="T00GB">
+<name>SLIDING ROOF SYSTEM</name>
+<para id="RM0000029GI003X" category="C" type-id="8020Z" name-id="RF07F-01" from="200601">
+<dtccode>B2343</dtccode>
+<dtcname>Position Initialization Incomplete</dtcname>
+<subpara id="RM0000029GI003X_01" type-id="60" category="03" proc-id="RM0250U___0000C5L00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when the sliding roof drive gear sub-assembly (sliding roof control ECU) has not been initialized.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2343</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Sliding roof drive gear sub-assembly (sliding roof control ECU) has not been initialized</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Sliding roof drive gear sub-assembly (sliding roof control ECU)</ptxt>
+</item>
+<item>
+<ptxt>Roof console box assembly (sliding roof control switch)</ptxt>
+</item>
+<item>
+<ptxt>Wire harness</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000029GI003X_02" type-id="32" category="03" proc-id="RM0250U___0000C5M00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC B2341 (See page <xref label="Seep01" href="RM0000029GG003X_02"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000029GI003X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000029GI003X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000029GI003X_04_0001" proc-id="RM0250U___0000C5N00000">
+<testtitle>INITIALIZE SLIDING ROOF DRIVE GEAR SUB-ASSEMBLY (SLIDING ROOF CONTROL ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the sliding roof drive gear sub-assembly can be initialized (See page <xref label="Seep01" href="RM000001VJR003X"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Sliding roof drive gear sub-assembly can be initialized.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000029GI003X_04_0002" fin="false">OK</down>
+<right ref="RM0000029GI003X_04_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0002" proc-id="RM0250U___0000C5O00000">
+<testtitle>CHECK SLIDING ROOF FUNCTION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the auto operation with the OPEN, CLOSE, UP and DOWN switches (See page <xref label="Seep01" href="RM000000UZX00IX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Auto operation operates normally with OPEN, CLOSE, UP and DOWN switches.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000029GI003X_04_0006" fin="true">OK</down>
+<right ref="RM0000029GI003X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0003" proc-id="RM0250U___0000C5P00000">
+<testtitle>CHECK WIRE HARNESS (SLIDING ROOF DRIVE GEAR - OVERHEAD JUNCTION BLOCK)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the Q13 <sup>(*1)</sup> or R1 <sup>(*2)</sup> and Q6 connectors.</ptxt>
+<figure>
+<graphic graphicname="B131169E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Q13-2 (E) - Q6-3 (GND)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-7 (OPN) - Q6-2 (OPN)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-8 (DWN) - Q6-4 (DOWN)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-9 (CLS) - Q6-1 (CLS)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q13-10 (UP) - Q6-5 (UP)</ptxt>
+<ptxt>
+<sup>(*1)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-2 (E) - Q6-3 (GND)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-7 (DWN) - Q6-4 (DOWN)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-8 (CLS) - Q6-1 (CLS)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-9 (UP) - Q6-5 (UP)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R1-10 (OPN) - Q6-2 (OPN)</ptxt>
+<ptxt>
+<sup>(*2)</sup>
+</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-1 (CLS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-2 (OPN) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-3 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-4 (DOWN) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-5 (UP) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: TMC made</ptxt>
+</item>
+<item>
+<ptxt>*2: TMMK made</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000029GI003X_04_0004" fin="false">OK</down>
+<right ref="RM0000029GI003X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0004" proc-id="RM0250U___0000C5Q00000">
+<testtitle>INSPECT ROOF CONSOLE BOX ASSEMBLY (SLIDING ROOF CONTROL SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the roof console box assembly.</ptxt>
+<figure>
+<graphic graphicname="B131165E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Q6-1 (CLS) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CLOSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 100 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-2 (OPN) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 100 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-4 (DOWN) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 100 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-5 (UP) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 100 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-1 (CLS) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-2 (OPN) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CLOSE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-4 (DOWN) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>UP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Q6-5 (UP) - Q6-3 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DOWN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000029GI003X_04_0005" fin="true">OK</down>
+<right ref="RM0000029GI003X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0005">
+<testtitle>REPLACE SLIDING ROOF DRIVE GEAR SUB-ASSEMBLY (SLIDING ROOF CONTROL ECU)</testtitle>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0006">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0007">
+<testtitle>REPLACE ROOF CONSOLE BOX ASSEMBLY (SLIDING ROOF CONTROL SWITCH)</testtitle>
+</testgrp>
+<testgrp id="RM0000029GI003X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001GUF003X" category="D" type-id="303F4" name-id="AC0S2-05" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM000001GUF003X_z0" proc-id="RM0250U___00004FK00000">
+<content5 releasenbr="1">
+<atten4>
+<ptxt>*: For AUTO A/C</ptxt>
+</atten4>
+<step1>
+<ptxt>DTC CHECK (SENSOR CHECK)*</ptxt>
+<step2>
+<ptxt>Start the engine and warm it up.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the indicator check (See page <xref label="Seep01" href="RM000000T8Q007X"/>).</ptxt>
+<atten4>
+<ptxt>After the indicator check is completed, the system enters the DTC check mode automatically.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Read the code displayed on the panel. (Trouble codes are output on the temperature display.)</ptxt>
+<figure>
+<graphic graphicname="E124467E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>In the sensor check mode, which is automatically transferred from the indicator check mode, troubleshooting may be partially performed. Be sure to perform the actuator check, and then the sensor check again.</ptxt>
+</item>
+<item>
+<ptxt>If the check is performed in a dark place, DTC 21 or 24 may be displayed even though the system is normal.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Refer to the DTC chart (Diagnostic Trouble Code chart) for details of the codes (See page <xref label="Seep02" href="RM000001O7Z002X"/>).</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>When there are no problems, DTC 00 is output.</ptxt>
+</item>
+<item>
+<ptxt>As an example, the illustration shows that display code 21 is output.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>If the steps are difficult to read because they change automatically, push the "MODE" switch to display the steps one at a time so that they can be read easily. The items are displayed step by step each time the "MODE" switch is pushed.</ptxt>
+<figure>
+<graphic graphicname="E124466E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<list1 type="unordered">
+<item>
+<ptxt>Push the "OFF" switch to finish panel diagnosis.</ptxt>
+</item>
+<item>
+<ptxt>Push the "R/F" switch to enter the actuator check mode.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>CLEARING DTC*</ptxt>
+<step2>
+<ptxt>During the sensor check, press the "FRONT DEF" switch and "REAR DEF" switch at the same time.</ptxt>
+<figure>
+<graphic graphicname="E124466E04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CHECK USING INTELLIGENT TESTER</ptxt>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester ON.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menu items: DIAGNOSIS / OBD/MOBD / DTC INFO / CURRENT CODES.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Check the details of the DTCs.</ptxt>
+</step2>
+<step2>
+<ptxt>Clear the DTCs.</ptxt>
+<atten4>
+<ptxt>After repairing the malfunctions, clear the DTC.</ptxt>
+</atten4>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Enter the following menu items: DIAGNOSIS / OBD/MOBD / DTC INFO / CLEAR CODES.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Press the YES button.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

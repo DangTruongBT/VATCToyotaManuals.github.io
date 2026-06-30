@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JB0002X" category="L" type-id="3001A" name-id="BC0RV-03" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000001JB0002X_z0" proc-id="RM0250U___00000Z300000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>EXPRESSIONS OF IGNITION SWITCH</ptxt>
+<ptxt>The type of ignition switch used on this model differs according to the specifications of the vehicle.</ptxt>
+<ptxt>The expressions listed in the table below are used in this section.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Expression</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle" align="center">
+<ptxt>Switch Type</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch (Position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine Switch (Condition)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>on (IG)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>on (ACC)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine start</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>START</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>start</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>TROUBLESHOOTING PRECAUTION</ptxt>
+<atten4>
+<ptxt>The anti-lock brake system includes the ABS and EBD.</ptxt>
+</atten4>
+<step2>
+<ptxt>When there is a malfunction in the terminal contact points or installation problems with parts, removing and installing the suspected problem parts may return the system to normal, either completely or temporarily.</ptxt>
+</step2>
+<step2>
+<ptxt>In order to determine the malfunctioning area, be sure to check the conditions at the time the malfunction occurred, such as by the DTC output and the freeze frame data output, and record it before disconnecting each connector or removing and installing parts.</ptxt>
+</step2>
+<step2>
+<ptxt>Be sure to remove and install the brake actuator and each individual sensor with the ignition switch off unless otherwise specified in the inspection procedure.</ptxt>
+</step2>
+<step2>
+<ptxt>If the brake actuator or a sensor has been removed and installed, it is necessary to check the system for problems after the parts have been reassembled. Check for DTCs using the intelligent tester, also check that system functions and signals received by the ECU are normal using test mode.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CAN COMMUNICATION SYSTEM PRECAUTION</ptxt>
+<step2>
+<ptxt>The CAN communication system is used for data communication between each of the ECUs and sensors. If there is trouble in the CAN communication line, a DTC of the communication line is output.</ptxt>
+</step2>
+<step2>
+<ptxt>If a DTC of the CAN communication line is output, repair the malfunction in the communication line and troubleshoot the anti-lock brake system.</ptxt>
+</step2>
+<step2>
+<ptxt>In order to enable CAN communication, a specific type of wiring is used for the CAN communication lines. The wiring used for each communication line is a twisted pair of wires that have an equal length. A bypass wire should not be used, because the data being transmitted will be corrupted.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

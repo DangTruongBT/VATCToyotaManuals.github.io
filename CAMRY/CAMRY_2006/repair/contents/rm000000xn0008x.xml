@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XN0008X" category="D" type-id="304SG" name-id="TW0J5-01" from="200601">
+<name>TEST MODE PROCEDURE</name>
+<subpara id="RM000000XN0008X_z0" proc-id="RM0250U___00005GP00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ENTER TEST MODE</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Operation of the tire pressure warning reset switch can be checked in TEST MODE.</ptxt>
+</item>
+<item>
+<ptxt>During TEST MODE, the system is not initialized by pushing the tire pressure warning reset switch. The circuit of the tire pressure warning reset switch can be inspected during this mode.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Make sure that the ignition switch is off.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester to DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the tire pressure warning light comes on for 3 seconds and then goes off.</ptxt>
+</step2>
+<step2>
+<ptxt>Select the TEST MODE on intelligent tester.</ptxt>
+<figure>
+<graphic graphicname="C122887" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Confirm that the tire pressure warning light in the combination meter blinks at 0.125 second intervals.</ptxt>
+<figure>
+<graphic graphicname="F100632E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>PERFORM SIGNAL CHECK</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When entering signal check mode, the tire pressure warning ECU sets all the signal check DTCs first.</ptxt>
+<ptxt>After completing signal check for each inspection item, the DTCs for systems that are determined to be normal by the tire pressure warning ECU will be erased.</ptxt>
+<ptxt>The DTCs for other inspection items may not be erased when only a certain signal is inspected.</ptxt>
+</item>
+<item>
+<ptxt>When signal check returns to normal mode, all the signal check DTCs will be erased.</ptxt>
+</item>
+</list1>
+</atten4>
+<step2>
+<ptxt>Make sure that the ignition switch is off.</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester to DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Select the SIGNAL CHECK on intelligent tester.</ptxt>
+<atten4>
+<ptxt>Every time the test mode DTC erasure conditions are satisfied, the tire pressure warning light comes on for 1 second. Then, the tire pressure warning light blinks at 0.125 seconds intervals.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="C110644" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Drive the vehicle at 12 mph (20 km/h) or more for 10 seconds or more to check the vehicle speed signal (C2191/91).</ptxt>
+</step2>
+<step2>
+<ptxt>Loosen the valve core and rapidly reduce the pressure (at least 40 kPa (0.41 kg/cm<sup>2</sup>, 5.8 psi) within 30 seconds or more) to check the transmitter data (C2181/81 to C2185/85).</ptxt>
+<atten4>
+<ptxt>The transmitter ID can be transmitted by rapidly reducing the tire pressure.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>Check that the tire pressure warning system test mode DTCs are erased.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.61in"/>
+<colspec colname="COL2" colwidth="2.17in"/>
+<colspec colname="COL3" colwidth="3.30in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Test Mode DTC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Signal</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Mode DTC Clear Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2181/81 to C2185/85</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter Data</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receive data from the transmitter which has a registered ID in the tire pressure warning ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2191/91</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle Speed Signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed of 12 mph (20 km/h) or more is detected for 3 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Check the tire pressure warning reset switch.</ptxt>
+<step3>
+<ptxt>Press the tire pressure warning reset switch.</ptxt>
+</step3>
+<step3>
+<ptxt>Check the tire pressure warning indicator light.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Test Signal</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Tire Pressure Warning Reset Switch</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Switch ON: TPWS indicator comes on</ptxt>
+</item>
+<item>
+<ptxt>Switch OFF: TPWS indicator blinks</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+</step2>
+<step2>
+<ptxt>Result</ptxt>
+<atten4>
+<ptxt>After the signal check is completed, check for a signal check DTC to confirm the system status.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIGNAL CHECK DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Repair the faulty part and enter SIGNAL CHECK again</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIGNAL CHECK DTCs are cleared</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>No problem</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>End of SIGNAL CHECK</ptxt>
+</step2>
+</step1>
+<ptxt>After completing the test mode (SIGNAL CHECK), turn the ignition switch off and disconnect the tester.</ptxt>
+<spec>
+<title>DTC of SIGNAL CHECK (TEST DIAGNOSIS) function</title>
+<specitem>
+<ptxt>If a trouble code is displayed during the test mode DTC check, check the circuit listed for that code. For details of each code, refer to the relevant page listed under respective "DTC No." in the chart.</ptxt>
+</specitem>
+</spec>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.29in"/>
+<colspec colname="COL2" colwidth="2.90in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2181/81</ptxt>
+<ptxt>(<xref label="Seep01" href="RM000000ZUQ008X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter ID1 not received</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning antenna and receiver </ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2182/82</ptxt>
+<ptxt>(<xref label="Seep02" href="RM000000ZUQ008X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter ID2 not received</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning antenna and receiver </ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2183/83</ptxt>
+<ptxt>(<xref label="Seep03" href="RM000000ZUQ008X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter ID3 not received</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning antenna and receiver </ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2184/84</ptxt>
+<ptxt>(<xref label="Seep04" href="RM000000ZUQ008X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter ID4 not received</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning antenna and receiver </ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2185/85 (<xref label="Seep05" href="RM000000ZUQ008X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter ID5 not received</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning antenna and receiver </ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2191/91</ptxt>
+<ptxt>(<xref label="Seep06" href="RM000000XNA009X"/>)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal error</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed sensor</ptxt>
+</item>
+<item>
+<ptxt>Combination meter assembly</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

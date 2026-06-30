@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000ZRR00LX" category="C" type-id="304AM" name-id="BC1WP-01" from="200601">
+<dtccode>C1290/66</dtccode>
+<dtcname>Steering Angle Sensor Zero Point Malfunction</dtcname>
+<subpara id="RM000000ZRR00LX_01" type-id="60" category="03" proc-id="RM0250U___0000BVN00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU acquires steering angle sensor zero point every time the ignition switch is turned on (IG) and the vehicle is driven at 22 mph (35 km/h) or more for approximately 5 seconds. The ECU also stores the previous zero point.</ptxt>
+<ptxt>If front wheel alignment or steering wheel position is adjusted without disconnecting the negative battery terminal, or if yaw rate and acceleration sensor zero point is not acquired after the adjustments have been completed, the skid control ECU detects the difference between the previous zero point and newly acquired zero point and outputs this DTC to indicate a poor adjustment.</ptxt>
+<ptxt>Warning of the steering angle sensor zero point malfunction will be cancelled by turning the ignition switch off.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.90in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C1290/66</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>The steering angle sensor zero point calibration position vastly differs from the recorded value</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Yaw rate and acceleration sensor zero point calibration incomplete</ptxt>
+</item>
+<item>
+<ptxt>Poor adjustment of the centered position of the steering wheel</ptxt>
+</item>
+<item>
+<ptxt>Poor adjustment of front wheel alignment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000ZRR00LX_02" type-id="51" category="05" proc-id="RM0250U___0000BVO00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000ZRR00LX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000ZRR00LX_03_0001" proc-id="RM0250U___0000BVP00000">
+<testtitle>PERFORM ZERO POINT CALIBRATION OF YAW RATE AND ACCELERATION SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform zero point calibration of the yaw rate and acceleration sensor (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When the stored zero point of the yaw rate and acceleration sensor is erased, steering angle sensor zero point will also be erased.</ptxt>
+</item>
+<item>
+<ptxt>If the zero point and output value of the yaw rate and acceleration sensor and the output value of the speed sensors are not normal, steering angle sensor zero point cannot be acquired normally even if the vehicle is driven straight ahead at 22 mph (35 km/h) or more.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ZRR00LX_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRR00LX_03_0002" proc-id="RM0250U___0000BVQ00000">
+<testtitle>CHECK STEERING ANGLE SENSOR ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Drive the vehicle straight ahead at 22 mph (35 km/h) or more for at least 5 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the centered position of the steering wheel is correctly set while driving straight ahead.</ptxt>
+<atten4>
+<ptxt>If front wheel alignment and steering position are adjusted as a result of abnormal centered position of the steering wheel, acquire yaw rate and acceleration sensor zero point again after the adjustments are completed.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The centered position of the steering wheel is correctly set.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ZRR00LX_03_0005" fin="false">OK</down>
+<right ref="RM000000ZRR00LX_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRR00LX_03_0005" proc-id="RM0250U___0000BVR00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle and turn the steering wheel to the right and left at the speed of 22 mph (35 km/h) or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1290/66) is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC (C1290/66) is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000ZRR00LX_03_0003" fin="true">A</down>
+<right ref="RM000000ZRR00LX_03_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZRR00LX_03_0003">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000ZRR00LX_03_0004">
+<testtitle>ADJUST FRONT WHEEL ALIGNMENT OR STEERING POSITION</testtitle>
+</testgrp>
+<testgrp id="RM000000ZRR00LX_03_0006">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000000YUO00AX" category="C" type-id="303RJ" name-id="BC1HC-01" from="200601">
+<dtccode>U0073/94</dtccode>
+<dtcname>Control Module Communication Bus OFF</dtcname>
+<dtccode>U0100/65</dtccode>
+<dtcname>Lost Communication with ECM / PCM</dtcname>
+<dtccode>U0123/62</dtccode>
+<dtcname>Lost Communication with Yaw Rate Sensor Module</dtcname>
+<dtccode>U0126/63</dtccode>
+<dtcname>Lost Communication with Steering Angle Sensor Module</dtcname>
+<subpara id="RM000000YUO00AX_01" type-id="60" category="03" proc-id="RM0250U___00003L200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU receives the signals from the ECM, steering angle sensor, and yaw rate and acceleration sensor via the CAN communication system.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.13in"/>
+<colspec colname="COL2" colwidth="3.12in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0073/94</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Bus OFF state continues for 300 msec.</ptxt>
+</item>
+<item>
+<ptxt>The ECU detects that it cannot send a signal.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0100/65</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>At a vehicle speed of 4 mph (6 km/h) or more, the skid control ECU receives data that is out of range from the engine.</ptxt>
+</item>
+<item>
+<ptxt>At a vehicle speed of 4 mph (6 km/h) or more, the skid control ECU receives abnormal data from the engine (5 cycles).</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+<ptxt>(Skid control ECU to ECM)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0123/62</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any r of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>The skid control ECU receives an abnormal signal from the yaw rate sensor (5 cycles).</ptxt>
+</item>
+<item>
+<ptxt>The skid control ECU receives a signal that has a shorter message than normal.</ptxt>
+</item>
+<item>
+<ptxt>The skid control ECU cannot receive a signal from the yaw rate sensor.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+<ptxt>(Skid control ECU to yaw rate and acceleration sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>U0126/63</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>The skid control ECU receives an abnormal signal from the steering angle sensor (5 cycles).</ptxt>
+</item>
+<item>
+<ptxt>The skid control ECU receives a signal that has a shorter message than normal.</ptxt>
+</item>
+<item>
+<ptxt>The skid control ECU cannot receive a signal from the steering angle sensor.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+<ptxt>(Skid control ECU to steering angle sensor) </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000YUO00AX_02" type-id="32" category="03" proc-id="RM0250U___00003L300000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136509E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C132000E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YUO00AX_03" type-id="51" category="05" proc-id="RM0250U___00003U300000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<ptxt>Proceed to CAN communication system troubleshooting (See page <xref label="Seep01" href="RM000000WI600QX"/>).</ptxt>
+<atten4>
+<ptxt>When a DTC indicating a CAN communication system malfunction is output, repair the CAN communication system before repairing each corresponding sensor.</ptxt>
+</atten4>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

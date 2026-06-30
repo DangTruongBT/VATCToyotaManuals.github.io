@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72Y6C_T008U" variety="T008U">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System)</name>
+<para id="RM0000020AH002X" category="J" type-id="3029M" name-id="DL11L-01" from="200601">
+<dtccode/>
+<dtcname>Power Source Circuit</dtcname>
+<subpara id="RM0000020AH002X_01" type-id="60" category="03" proc-id="RM0250U___00004KB00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The certification ECU provides power for the door control receiver operation.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020AH002X_02" type-id="32" category="03" proc-id="RM0250U___00004KC00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B139463E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020AH002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020AH002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020AH002X_04_0002" proc-id="RM0250U___00004KE00000">
+<testtitle>INSPECT CERTIFICATION ECU (+B TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B139430E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+<ptxt>(Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>+B (E58-1) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020AH002X_04_0009" fin="false">OK</down>
+<right ref="RM0000020AH002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0009" proc-id="RM0250U___0000B1T00000">
+<testtitle>INSPECT CERTIFICATION ECU (RC0 TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B139430E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+<ptxt>(Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>RC0 (E58-29) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed and transmitter switch not pressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed and transmitter switch pressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.6 to 5.4 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020AH002X_04_0010" fin="false">NG</down>
+<right ref="RM0000020AH002X_04_0001" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0010" proc-id="RM0250U___0000B1U00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU - BATTERY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 certification ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance according to value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E125974E10" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+<ptxt>(Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>RC0 (E58-29) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020AH002X_04_0006" fin="true">OK</down>
+<right ref="RM0000020AH002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0006">
+<testtitle>REPLACE CERTIFICATION ECU</testtitle>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0001" proc-id="RM0250U___00004KD00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU - DOOR CONTROL RECEIVER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the O18 door control receiver connector.</ptxt>
+<figure>
+<graphic graphicname="B139429E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+<ptxt>(Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RC0 (E58-29) - +5 (O18-2)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020AH002X_04_0008" fin="false">OK</down>
+<right ref="RM0000020AH002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0008" proc-id="RM0250U___0000AYH00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B139462E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbol</ptxt>
+
+<ptxt>(Tester Connection)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>GND (O18-6) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020AH002X_04_0003" fin="true">OK</down>
+<right ref="RM0000020AH002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020AH002X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

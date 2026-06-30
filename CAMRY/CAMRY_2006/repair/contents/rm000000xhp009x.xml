@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHP009X" category="D" type-id="303F3" name-id="BC02M-09" from="200601">
+<name>DIAGNOSIS SYSTEM</name>
+<subpara id="RM000000XHP009X_z0" proc-id="RM0250U___00005R900000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<ptxt>When troubleshooting a vehicle with the diagnosis system, the only difference from the usual troubleshooting procedure is connecting the intelligent tester to the vehicle and reading various data output from the vehicle's skid control ECU.</ptxt>
+<ptxt>The skid control ECU records DTCs when the computer detects a malfunction in the computer itself or in its circuits.</ptxt>
+<ptxt>To check the DTCs, connect the intelligent tester to the DLC3 on the vehicle. The intelligent tester enables you to erase the DTCs, activate the various actuators, and check the Freeze Frame Data and Data List.</ptxt>
+<step2>
+<ptxt>Check the battery voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If the voltage is below 11 V, recharge the battery before proceeding.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022986E35" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>The ECU uses ISO 15765-4 for communication. The terminal arrangement of the DLC3 complies with SAE J1962 and matches the ISO 15765-4 format.</ptxt>
+<ptxt>If the result is not as specified, the DLC3 may have a malfunction. Repair or replace the harness and connector.</ptxt>
+<ptxt>Verify the conditions listed in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SIL (7) - SG (5)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Bus "+" line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During transmission</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CG (4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Chassis ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SG (5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signal ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BAT (16) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Battery positive</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>11 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - CANL (14)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>*Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>*Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL (14) - CG (4)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>*Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>200 Ω or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANH (6) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>HIGH-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>*Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>CANL (14) - BAT (16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOW-level CAN bus line</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>*Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>6 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>*: Before measuring the resistance, leave the vehicle as is for at least 1 minute and do not operate the ignition switch, any other switches or the doors.</ptxt>
+</atten3>
+<atten4>
+<ptxt>Connect the cable of the intelligent tester to the DLC3, turn the ignition switch on (IG) and attempt to use the tester. If the display indicates that a communication error has occurred, there is a problem either with the vehicle or with the tester.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>If communication is normal when the tester is connected to another vehicle, inspect the DLC3 on the original vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If communication is still not possible when the tester is connected to another vehicle, the problem may be in the tester itself. Consult the Service Department listed in the tester's operator's manual.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+<step1>
+<ptxt>DIAGNOSIS</ptxt>
+<step2>
+<ptxt>If the skid control ECU detects a malfunction, the ABS, BRAKE, and VSC (models without multi information display) warning lights, and SLIP indicator light will come on and the multi information display (models with multi information display) shows warning messages in order to warn the driver.</ptxt>
+<figure>
+<graphic graphicname="C140885E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<ptxt>The table below indicates which lights will come on when there is a malfunction in a particular function.</ptxt>
+<table pgwide="1">
+<tgroup cols="6" align="center">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL4" colwidth="1.18in"/>
+<colspec colname="COL5" colwidth="1.18in"/>
+<colspec colname="COL6" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item / Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ABS</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EBD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>BA</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TRAC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSC</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ABS warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BRAKE warning light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VSC warning light (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Multi information display (*2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SLIP indicator light</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>○: Light ON</ptxt>
+<ptxt>-: Light OFF</ptxt>
+<ptxt>(*1): Models without multi information display</ptxt>
+<ptxt>(*2): Models with multi information display</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The DTCs are simultaneously stored in the memory. The DTCs can be read by connecting the SST between terminals TC and CG of the DLC3 and observing the blinking pattern of the ABS and VSC (models without multi information display) warning lights, by reading the multi information display (models with multi information display), or by connecting the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>This system has a Test Mode (signal check) function (See page <xref label="Seep01" href="RM000000XHT00AX"/>).</ptxt>
+<ptxt>The DTC can be read by connecting the intelligent tester and observing the blinking pattern of the ABS and VSC (models without multi information display) warning lights or by reading the multi information display (models with multi information display).</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>WARNING LIGHT AND INDICATOR LIGHT CHECK</ptxt>
+<step2>
+<ptxt>Release the parking brake.</ptxt>
+<figure>
+<graphic graphicname="C140885E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<atten3>
+<ptxt>When releasing the parking brake, move the shift lever to the P position for safety (A/T) or set the chocks to hold the vehicle for safety (M/T).</ptxt>
+</atten3>
+<atten4>
+<ptxt>When the parking brake is applied or the level of the brake fluid is low, the BRAKE warning light comes on.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>When the ignition switch is turned on (IG), check that the ABS, BRAKE and VSC (models without multi information display) warning lights, and SLIP, and master caution indicator lights come on for approximately 3 seconds.</ptxt>
+<atten4>
+<ptxt>If the warning light and indicator light check result is not normal, proceed to troubleshooting for the ABS, BRAKE and VSC warning light circuits and SLIP indicator light circuit.</ptxt>
+</atten4>
+<ptxt>If the indicator remains on, proceed to troubleshooting for the light circuit below.</ptxt>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ABS warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep02" href="RM000000XIH00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>BRAKE warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep03" href="RM000000YHG00BX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>VSC warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep04" href="RM000000XIO00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SLIP indicator light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep05" href="RM000000YHI00AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>SYMPTOM SIMULATION</ptxt>
+<atten4>
+<ptxt>The most difficult case in troubleshooting is when no symptoms occur. In such cases, a thorough customer problem analysis must be carried out. Then the same or similar conditions and environment in which the problem occurred in the customer's vehicle should be reproduced. No matter how experienced or skilled a technician may be, if he proceeds to troubleshoot without confirming the problem symptoms, he will likely overlook something important and make a wrong guess at some points in the repair operation. This leads to a standstill in troubleshooting.</ptxt>
+</atten4>
+<step2>
+<ptxt>Vibration method: When vibration seems to be the major cause.</ptxt>
+<figure>
+<graphic graphicname="D025083E14" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>Perform the simulation method only during the primary check period (for approximately 6 seconds after the ignition switch is on (IG)).</ptxt>
+</atten4>
+<step3>
+<ptxt>Slightly vibrate the part of the sensor considered to be the problem cause with your fingers and check whether the malfunction occurs.</ptxt>
+</step3>
+<step3>
+<ptxt>Slightly shake the connector vertically and horizontally.</ptxt>
+<atten4>
+<ptxt>Shaking the relays too strongly may result in open relays.</ptxt>
+</atten4>
+</step3>
+<step3>
+<ptxt>Slightly shake the wire harness vertically and horizontally. The connector joint and fulcrum of the vibration are the major areas to be checked thoroughly.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

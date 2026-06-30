@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000001P8V004X" category="J" type-id="304YO" name-id="DL19I-01" from="200601">
+<dtccode/>
+<dtcname>Door Oscillator Circuit</dtcname>
+<subpara id="RM000001P8V004X_01" type-id="60" category="03" proc-id="RM0250U___00009NI00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Door oscillators are built into each door. Each of them forms its own action area around its door and detects the presence of the electrical key.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001P8V004X_02" type-id="32" category="03" proc-id="RM0250U___00009NJ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B112459E04" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001P8V004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001P8V004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001P8V004X_04_0001" proc-id="RM0250U___00009NK00000">
+<testtitle>INSPECT ELECTRICAL KEY OSCILLATOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the oscillator connectors.</ptxt>
+<figure>
+<graphic graphicname="B112463E04" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<subtitle>Front LH side</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>X2-1 (+B) - X2-7 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<subtitle>Front RH side</subtitle>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>W2-1 (+B) - W2-7 (GND)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8V004X_04_0002" fin="false">OK</down>
+<right ref="RM000001P8V004X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0002" proc-id="RM0250U___00009NL00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ELECTRICAL KEY OSCILLATOR - CERTIFICATION ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B137964E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-33 (CLG1) - X2-10 (CLG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-34 (CG1B) - X2-5 (CLGB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-35 (CLG2) - W2-10 (CLG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-36 (CG2B) - W2-5 (CLGB)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-33 (CLG1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-34 (CG1B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-35 (CLG2) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-36 (CG2B) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8V004X_04_0004" fin="false">OK</down>
+<right ref="RM000001P8V004X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0004" proc-id="RM0250U___00009NN00000">
+<testtitle>CHECK AND REPLACE ELECTRICAL KEY OSCILLATOR (CHECK OPERATION OF OSCILLATOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the door oscillator.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the entry LOCK/UNLOCK function operates normally.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Entry LOCK/UNLOCK function operates normally.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8V004X_04_0003" fin="false">NG</down>
+<right ref="RM000001P8V004X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0003" proc-id="RM0250U___00009NM00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (CERTIFICATION ECU OUTPUT SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the ECU and the oscillator connectors.</ptxt>
+<figure>
+<graphic graphicname="B137963E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ACTIVE TEST.</ptxt>
+</test1>
+<test1>
+<ptxt>Following the display on the tester, select the "ACTIVE TEST".</ptxt>
+<table>
+<title>SMART KEY (Certification ECU):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition/Test Details</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D TRANSMITTER</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Door Oscillator ON/OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P TRANSMITTER</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Door Oscillator ON/OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Measure the frequency according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.53in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-33 (CLG1) - E58-34 (CG1B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During ACTIVE TEST</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Frequency is generated (higher than 0 Hz)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E58-35 (CLG2) - E58-36 (CG2B)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>During ACTIVE TEST</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Frequency is generated (higher than 0 Hz)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P8V004X_04_0007" fin="true">OK</down>
+<right ref="RM000001P8V004X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0005">
+<testtitle>END (ELECTRICAL KEY OSCILLATOR IS DEFECTIVE)</testtitle>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0007">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001P8V004X_04_0008">
+<testtitle>REPLACE CERTIFICATION ECU</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

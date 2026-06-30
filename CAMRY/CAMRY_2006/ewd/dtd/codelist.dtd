@@ -1,0 +1,55 @@
+<!--
+	EWD Item List DTD
+	
+	Copyright (c) 2000-2004 SHINTEC HOZUMI Co.,LTD.
+	All Rights Reserved. 
+	
+	for (Parts) Code List in figure
+-->
+
+
+
+<!ENTITY % Number	"CDATA">
+<!ENTITY % code		"CDATA">
+	<!-- one or more digits -->
+<!ENTITY % InfoType	"(system | routing | relay)">
+<!ENTITY % PartsType	"(conn | w2w | jb | jbc | rb | jc | gp | sp | fl | relay | name)">
+	<!-- 
+		conn: connector
+		w2w: Wire and Wire
+		jb: Junction Block
+		jbc: Junction Block Connector
+		rb: Relay Block
+		jc: Junction Connector
+		gp: Ground Point
+		sp: Splice Point
+		fl: Fusible Link
+		relay: Relay
+		name: Named Item
+	-->
+
+
+
+<!ELEMENT	CodeList	(Code*)>
+<!ELEMENT	Code		(refs*)>
+<!ELEMENT	refs		EMPTY>
+
+
+
+<!ATTLIST CodeList
+	ver		CDATA		"1.0"
+	type		%InfoType;	#REQUIRED
+	pubno		CDATA		#REQUIRED
+>
+
+<!ATTLIST Code
+	id		CDATA		#REQUIRED
+	subcode		CDATA		#IMPLIED
+	type		%PartsType;	#REQUIRED
+ 	pinNo		%Number;	#IMPLIED
+>
+
+<!ATTLIST refs
+	type		%InfoType;	#REQUIRED
+	code		%code;		#REQUIRED
+>

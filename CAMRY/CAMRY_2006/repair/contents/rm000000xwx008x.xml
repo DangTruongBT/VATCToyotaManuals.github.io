@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000XWX008X" category="J" type-id="305JR" name-id="SR0ID-04" from="200601">
+<dtccode/>
+<dtcname>Steering Lock Motor Drive Power Circuit</dtcname>
+<subpara id="RM000000XWX008X_01" type-id="60" category="03" proc-id="RM0250U___0000A0000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The steering lock ECU is connected to the main body ECU and certification ECU. The steering lock ECU cannot activate the motor unless it receives permission signals from both ECUs. (The main body ECU permits the steering lock ECU to supply power to activate the motor.)</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XWX008X_02" type-id="32" category="03" proc-id="RM0250U___0000A0100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C113485E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XWX008X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000XWX008X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XWX008X_04_0001" proc-id="RM0250U___0000A0200000">
+<testtitle>CHECK VEHICLE CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the problem symptom of the steering lock system.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock cannot be released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering cannot be locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0003" fin="false">A</down>
+<right ref="RM000000XWX008X_04_0006" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0003" proc-id="RM0250U___0000A0400000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG), and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the DATA LIST, and read its value displayed on the intelligent tester.</ptxt>
+<spec>
+<title>SMART KEY</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Range (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>LCK/UNLCK REC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock command reception record / YES or NO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>YES: Steering lock / unlock signal received</ptxt>
+<ptxt>NO: Steering lock / unlock signal not received</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Check if steering unlock command signal has been received.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"YES" is displayed on the tester display.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0002" fin="false">OK</down>
+<right ref="RM000000XWX008X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0002" proc-id="RM0250U___0000A0300000">
+<testtitle>INSPECT STEERING LOCK ACTUATOR ASSEMBLY (STEERING LOCK ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C106483E22" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-3 (IGE) - E51-1 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>Engine switch off</ptxt>
+</item>
+<item>
+<ptxt>Turn the engine switch on (ACC or IG)</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Motor activated: Below 1 V</ptxt>
+</item>
+<item>
+<ptxt>Motor not activated: </ptxt>
+<ptxt>10 to 12 V</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0014" fin="false">NG</down>
+<right ref="RM000000XWX008X_04_0009" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0014" proc-id="RM0250U___0000A0800000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STEERING LOCK ACTUATOR  ASSEMBLY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E51 connector from the steering lock actuator assembly.</ptxt>
+<figure>
+<graphic graphicname="C106484E28" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0004" fin="false">OK</down>
+<right ref="RM000000XWX008X_04_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0004" proc-id="RM0250U___0000A0500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STEERING LOCK ACTUATOR  ASSEMBLY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E7 connector from the main body ECU.</ptxt>
+<figure>
+<graphic graphicname="C113502E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-3 (IGE) - E7-19 (SLR+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-3 (IGE) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0005" fin="true">OK</down>
+<right ref="RM000000XWX008X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0005">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0006" proc-id="RM0250U___0000A0600000">
+<testtitle>INSPECT STEERING LOCK ACTUATOR ASSEMBLY (STEERING LOCK ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C106483E22" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<colspec colname="COL3" colwidth="1.44in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-3 (IGE) - E51-1 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The specified condition should be checked after performing the following:</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Move the shift lever to the P position</ptxt>
+</item>
+<item>
+<ptxt>Turn the engine switch off</ptxt>
+</item>
+<item>
+<ptxt>Open the driver's door</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Motor activated: Below 1 V</ptxt>
+</item>
+<item>
+<ptxt>Motor not activated:</ptxt>
+<ptxt>10 to 12 V</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0007" fin="false">NG</down>
+<right ref="RM000000XWX008X_04_0012" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0007" proc-id="RM0250U___0000A0700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STEERING LOCK ACTUATOR  ASSEMBLY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E51 connector from the steering lock actuator assembly.</ptxt>
+<figure>
+<graphic graphicname="C113502E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E7 connector from the main body ECU.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-3 (IGE) - E7-19 (SLR+)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E51-3 (IGE) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XWX008X_04_0008" fin="true">OK</down>
+<right ref="RM000000XWX008X_04_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0008">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0010">
+<testtitle>CHECK SMART ACCESS SYSTEM WITH PUSH-BUTTON START</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0009">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0011">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0012">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000XWX008X_04_0013">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

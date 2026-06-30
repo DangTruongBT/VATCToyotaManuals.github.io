@@ -1,0 +1,36 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="../../scripts/connector/psearch.js"></script>
+	<script type="text/javascript" src="../../scripts/lib/url.js"></script>
+	<script type="text/javascript" src="../../scripts/lib/hashtable.js"></script>
+	<link rel="stylesheet" href="../../styles/basic.css" />
+</head>
+
+<body bgcolor="#e9eeea" onLoad="call_runOnLoadProc()">
+	<table>
+		<tr>
+			<td>
+				<input type="radio" name="show" id="name_list" onClick="call_onClickNameListProc()" />
+					Sort By Name<br/>
+				<input type="radio" name="show" id="code_list" onClick="call_onClickCodeListProc()" />
+					Sort By No.<br/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text" id="edit" size="20" onKeypress="call_onKeyPressEditProc()" />
+			</td>
+			<td>
+				<input type="button" value="Search" onClick="call_onClickSearchProc()" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="right">
+				<input type="button" value="Show all parts" onClick="call_onClickShowAll()" />
+			</td>
+		</tr>
+	</table>
+	<input id="word_notfound" type="hidden" value="Not Found."/>
+</body>
+</html>

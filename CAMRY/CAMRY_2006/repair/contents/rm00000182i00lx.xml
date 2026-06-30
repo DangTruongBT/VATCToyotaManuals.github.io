@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM00000182I00LX" category="C" type-id="8011F" name-id="NS08R-17" from="200601">
+<dtccode>01-D5</dtccode>
+<dtcname>Absence of Registration Unit</dtcname>
+<dtccode>01-D8</dtccode>
+<dtcname>No Response for Connection Check</dtcname>
+<dtccode>01-D9</dtccode>
+<dtcname>Last Mode Error</dtcname>
+<dtccode>01-DA</dtccode>
+<dtcname>No Response Against ON / OFF Command</dtcname>
+<dtccode>01-DB</dtccode>
+<dtcname>Mode Status Error</dtcname>
+<dtccode>01-DE</dtccode>
+<dtcname>Slave Reset</dtcname>
+<subpara id="RM00000182I00LX_01" type-id="60" category="03" proc-id="RM0250U___000050R00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>01-D5</ptxt>
+<ptxt>*1, *4</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>A component shown by the sub-code is (was) disconnected from the system when turning the ignition switch on (ACC or IG).</ptxt>
+</item>
+<item>
+<ptxt>The communication condition with the device that the code shows cannot be obtained when the engine starts.</ptxt>
+</item>
+</list1>
+</entry>
+<entry morerows="5" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Power source circuit of the component shown by the sub-code</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>AVC-LAN circuit between the radio and navigation assembly and the component shown by the sub-code</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Component shown by the sub-code</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-D8</ptxt>
+<ptxt>*2, *4</ptxt>
+</entry>
+<entry>
+<ptxt>A component shown by the sub-code is (was) disconnected from the system after engine start.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-D9</ptxt>
+<ptxt>*1, *4</ptxt>
+</entry>
+<entry>
+<ptxt>The device that had functioned before the engine stopped is (was) disconnected from the system when turning the ignition switch is on (ACC or IG).</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-DA</ptxt>
+<ptxt>*4</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>No response is identified when changing mode.</ptxt>
+</item>
+<item>
+<ptxt>Detected when sound and image do not change by switch operation.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-DB</ptxt>
+<ptxt>*1, *4</ptxt>
+</entry>
+<entry>
+<ptxt>A dual alarm is detected.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>01-DE</ptxt>
+<ptxt>*3, *4</ptxt>
+</entry>
+<entry>
+<ptxt>A slave device has been disconnected after engine start.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: Even if no fault is present, this trouble code may be stored depending on the battery condition or engine start voltage.</ptxt>
+</item>
+<item>
+<ptxt>*2: If the power connector is disconnected after the engine starts, this code is stored after 180 seconds.</ptxt>
+</item>
+<item>
+<ptxt>*3: This code may be stored if the engine is started and then the ignition switch is turned to the START position again. (Key type ignition switch only)</ptxt>
+</item>
+<item>
+<ptxt>*4: If it is reported that the device does not exist during verification, check the power source circuit and AVC-LAN circuit for the device.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before starting troubleshooting, be sure to clear DTCs to erase codes stored due to the reasons described in the HINT above. Then, check for DTCs and troubleshoot according to the output DTCs.</ptxt>
+</item>
+<item>
+<ptxt>The radio and navigation assembly is the master unit.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to clear and recheck DTCs after the inspection is completed to confirm that no DTCs are output.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000182I00LX_02" type-id="51" category="05" proc-id="RM0250U___000050S00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>Be sure to read DESCRIPTION before performing the following procedures.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000182I00LX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000182I00LX_03_0001" proc-id="RM0250U___000050T00000">
+<testtitle>CHECK "RADIO AND NAVIGATION ASSEMBLY COMMUNICATION ERROR" IN FLOW CHART</testtitle>
+<content6 releasenbr="1">
+<ptxt>Refer to the radio and navigation assembly communication error (See page <xref label="Seep01" href="RM0000020QI002X"/>).</ptxt>
+</content6>
+<res>
+<down ref="RM00000182I00LX_03_0002" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182I00LX_03_0002">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

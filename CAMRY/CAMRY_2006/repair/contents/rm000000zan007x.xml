@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72ZXB_T00CQ" variety="T00CQ">
+<name>CRUISE CONTROL SYSTEM</name>
+<para id="RM000000ZAN007X" category="J" type-id="301WO" name-id="CC0HX-01" from="200601">
+<dtccode/>
+<dtcname>Clutch Switch Circuit</dtcname>
+<subpara id="RM000000ZAN007X_01" type-id="60" category="03" proc-id="RM0250U___000080800000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Clutch switch circuit inspection is necessary for M/T vehicles.</ptxt>
+<ptxt>When the clutch pedal is released, the ECM receives positive (+) battery voltage through the ECU IG fuse. While depressing the clutch pedal, the clutch switch sends a signal to terminal D of the ECM. The ECM cancels cruise control drive when terminal D receives the signal.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000ZAN007X_02" type-id="32" category="03" proc-id="RM0250U___000080900000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E113306E06" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000ZAN007X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000ZAN007X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000ZAN007X_05_0009" proc-id="RM0250U___0000B3L00000">
+<testtitle>INSPECT ECM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C24 connector from the ECM.</ptxt>
+<figure>
+<graphic graphicname="E129949E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>C24-56 (D) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Clutch pedal depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Clutch pedal released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000ZAN007X_05_0010" fin="false">NG</down>
+<right ref="RM000000ZAN007X_05_0012" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZAN007X_05_0010" proc-id="RM0250U___0000B3M00000">
+<testtitle>INSPECT CLUTCH SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="E133093E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the A21 connector from the clutch switch.</ptxt>
+</test1>
+<test1>
+<ptxt>Remove the clutch switch. (See page <xref label="Seep01" href="RM000001OC2001X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch pin free (Clutch pedal depressed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Switch pin pushed in (Clutch pedal released)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000ZAN007X_05_0011" fin="false">OK</down>
+<right ref="RM000000ZAN007X_05_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZAN007X_05_0011" proc-id="RM0250U___0000B3N00000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E129955E01" width="2.775699831in" height="6.791605969in"/>
+</figure>
+</test1>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C24-56 (D) - A21-2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C24-56 (D) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000ZAN007X_05_0015" fin="true">OK</down>
+<right ref="RM000000ZAN007X_05_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000ZAN007X_05_0012">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000ZAN007X_05_0013">
+<testtitle>REPLACE CLUTCH SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000ZAN007X_05_0014">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (ECM - CLUTCH SWITCH)</testtitle>
+</testgrp>
+<testgrp id="RM000000ZAN007X_05_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (BATTERY - CLUTCH SWITCH)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,27 @@
+<!--   EWD DTD
+
+   Copyright (c) 2000-2003 SHINTEC HOZUMI Co.,LTD.
+   All Rights Reserved. 
+
+
+  for EWD
+-->
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- XML DTD for TOYOTA EWD -->
+<!ENTITY % CountryCode
+	"(en | fr | de | es | pt | it | sv | da | fi | no | nl | el | cs | hu | pl | ja)"
+>
+<!ENTITY % Number	"NMTOKEN">
+
+
+<!ELEMENT	AreaList (Area)+>
+<!ATTLIST	AreaList
+	ver	CDATA	"1.0"
+	xml:lang %CountryCode; #REQUIRED
+>
+
+<!ELEMENT	Area	(#PCDATA)>
+<!ATTLIST	Area
+	no		%Number;	#IMPLIED
+	code	ID			#REQUIRED
+>

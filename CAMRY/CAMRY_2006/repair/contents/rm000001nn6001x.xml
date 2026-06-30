@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72WHC_T0069" variety="T0069">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001NN6001X" category="D" type-id="303F4" name-id="DL0TQ-02" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM000001NN6001X_z0" proc-id="RM0250U___00001HY00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DTC CHECK/CLEAR (USING INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>DTC check</ptxt>
+<figure>
+<graphic graphicname="C131977E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Read DTCs on the tester screen.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>DTC clear</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch ON.</ptxt>
+</step3>
+<step3>
+<ptxt>Clear the DTCs following the prompts on the tester screen.</ptxt>
+<atten4>
+<ptxt>The intelligent tester has a SNAPSHOT function which records the monitored data.</ptxt>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>SELF-DIAGNOSTIC MODE (OPERATING IGNITION KEY CYLINDER)</ptxt>
+<step2>
+<ptxt>Switch to self-diagnostic mode.</ptxt>
+<step3>
+<ptxt>Establish the vehicle's initial conditions (See page <xref label="Seep01" href="RM000001NMX001X"/>).</ptxt>
+</step3>
+<step3>
+<ptxt>Insert the key into the ignition key cylinder and remove it.</ptxt>
+</step3>
+<step3>
+<ptxt>Within 5 seconds after the key is removed, insert it into the ignition key cylinder and then turn the ignition switch ON then OFF 1 time (End in OFF).</ptxt>
+</step3>
+<step3>
+<ptxt>Within 30 seconds of turning the ignition switch OFF, perform the following 9 times: Turn the ignition switch ON then OFF (End in OFF).</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Turning the ignition switch ON after the procedure above has been completed will end the self-diagnostic mode.</ptxt>
+</item>
+<item>
+<ptxt>Do not lock or unlock doors while performing the self-diagnostic mode.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten3>
+<ptxt>If the system fails to enter the self-diagnostic mode, the system will return to normal mode.</ptxt>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>Check that the system has switched to self-diagnostic mode by checking the sound of the wireless door lock buzzer.</ptxt>
+<figure>
+<graphic graphicname="B144376E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check the diagnostic outputs when the door control transmitter switch is held down. The diagnostic outputs can be checked by the sound of the wireless door lock buzzer.</ptxt>
+<figure>
+<graphic graphicname="B113635E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>SELF-DIAGNOSTIC MODE (USING INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Switch to self-diagnostic mode.</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch ON and turn the intelligent tester main switch on.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

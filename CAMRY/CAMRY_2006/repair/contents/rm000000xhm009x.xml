@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHM009X" category="U" type-id="3001G" name-id="BC02L-09" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000XHM009X_z0" proc-id="RM0250U___00005L900000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>Terminal of ECU</ptxt>
+<figure>
+<graphic graphicname="F045080E06" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.04in"/>
+<colspec colname="COL2" colwidth="4.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pump motor ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BM (2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor relay input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR+ (3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front wheel speed RH signal power supply output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL- (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front wheel speed LH signal input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR+ (5)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear wheel speed RH signal power supply output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL- (6)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear wheel speed LH signal input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (11)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication line H</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SP1 (12)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Speed signal output for combination meter</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>D/G (13)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnosis tester communication line</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MRF (14)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail safe motor relay output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MR (15)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Motor relay output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FR- (17)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front wheel speed RH signal input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL+ (18)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front wheel speed LH signal power supply output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR- (19)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear wheel speed RH signal input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL+ (20)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear wheel speed LH signal power supply output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TS (24)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test mode (signal check) input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (25)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication line L</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP (27)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BZ (30)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control buzzer output</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BS (31)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid relay power supply</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (32)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU ground</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>WFSE (42)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>WFSE input</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>R+ (45)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply for motor relay</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG1 (46)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG1 power supply</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>Terminal Inspection</ptxt>
+<step2>
+<ptxt>Disconnect the connector and measure the voltage or resistance on the wire harness side.</ptxt>
+<figure>
+<graphic graphicname="F049377E11" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<atten4>
+<ptxt>Voltage cannot be measured with the connector connected to the skid control ECU because the connector is watertight.</ptxt>
+</atten4>
+<spec>
+<title>Standard</title>
+<table pgwide="1">
+<tgroup cols="5" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.4in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>GND2 (A26-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Pump motor ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP (A26-27) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Stop light switch input</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Stop light switch ON → OFF (Brake pedal depressed →  released)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 to 14 V → Below 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BZ (A26-30) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Buzzer output</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch on (IG), when buzzer not sounding</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>6 to 10 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BS (A26-31) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Solenoid relay power supply</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GND1 (A26-32) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Skid control ECU ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG1 (A26-46) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>IG1 power supply</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

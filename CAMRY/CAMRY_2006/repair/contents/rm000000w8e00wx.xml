@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W8E00WX" category="C" type-id="302I1" name-id="AX0Z3-01" from="200601">
+<dtccode>P0500</dtccode>
+<dtcname>Vehicle Speed Sensor "A"</dtcname>
+<subpara id="RM000000W8E00WX_01" type-id="60" category="03" proc-id="RM0250U___00008N800000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The speed sensors detect the wheel speed and sends the appropriate signals to the skid control ECU. The skid control ECU converts these wheel speed signals into a 4-pulse signal and outputs it to the TCM via the combination meter. The TCM determines the vehicle speed based on the frequency of these pulse signals.</ptxt>
+<figure>
+<graphic graphicname="A079413E20" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1" colwidth="1.42in"/>
+<colspec colnum="2" colname="c2" colwidth="2.83in"/>
+<colspec colnum="3" colname="c3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0500</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>When the ECT sensor is normal and the counter gear speed is 300 rpm or more, the vehicle speed signal is not input for 2 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Vehicle speed sensor</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed sensor signal circuit</ptxt>
+</item>
+<item>
+<ptxt>Combination meter</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00WX_02" type-id="64" category="03" proc-id="RM0250U___00008N900000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The TCM assumes that the vehicle is being driven when the transmission counter gear indicates more than 300 rpm and over 30 seconds have passed since the park/neutral position switch was turned off. If there is no signal from the vehicle speed sensor with these conditions satisfied, the TCM concludes that the vehicle speed sensor is malfunctioning. The TCM will turn on the MIL and a DTC will be set.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00WX_03" type-id="65" category="03" proc-id="RM0250U___00008NA00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>P0500: Vehicle Speed Sensor Circuit</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Required sensors/components (Main)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed sensor, Combination meter, ABS ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Required sensors/components (Sub)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Counter gear Speed (CS) sensor, ECT sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>2 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Immediately</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Sequence operation</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00WX_04" type-id="66" category="03" proc-id="RM0250U___00008NB00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Transmission counter gear revolution</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>300 rpm or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Ignition switch</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Starter </ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either a or b is met (See below)</ptxt>
+</entry>
+<entry valign="middle"/>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>a. All of the following conditions are met</ptxt>
+</entry>
+<entry valign="middle"/>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after PNP switch ON to OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 sec. or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>b. All of the following conditions are met</ptxt>
+</entry>
+<entry valign="middle"/>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECT sensor fail</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detected</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Time after PNP switch ON to OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>30 sec. or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00WX_05" type-id="67" category="03" proc-id="RM0250U___00008NC00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="3.0236971in"/>
+<colspec colnum="2" colname="c2" colwidth="4.1232227in"/>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Vehicle speed sensor signal</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>No pulse input</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00WX_07" type-id="32" category="03" proc-id="RM0250U___00008ND00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A122761E04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000W8E00WX_08" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000W8E00WX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W8E00WX_09_0007" proc-id="RM0250U___00008NG00000">
+<testtitle>INSPECT SPEEDOMETER (METER OPERATION)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Drive the vehicle and check if operation of the speedometer in the combination meter is normal.</ptxt>
+<atten4>
+<ptxt>The vehicle speed sensor is operating normally if the speedometer display is normal.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00WX_09_0002" fin="false">OK</down>
+<right ref="RM000000W8E00WX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00WX_09_0002" proc-id="RM0250U___00008NF00000">
+<testtitle>INSPECT TCM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Shift the lever to the neutral position.</ptxt>
+<figure>
+<graphic graphicname="C133210E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Jack up the vehicle.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the TCM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt> Measure the voltage according to the value(s) in the table below as the wheel is turned slowly.</ptxt>
+<figure>
+<graphic graphicname="A062954E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard</title>
+<table frame="all" colsep="1" rowsep="1">
+<tgroup cols="2">
+<colspec colnum="1" colname="c1" colwidth="2.0929012in"/>
+<colspec colnum="2" colname="c2" colwidth="2.0929004in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C56-3 (SPD1) - C56-8 (E1)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Voltage is generated intermittently</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>The output voltage should fluctuate up and down similarly to the diagram when the wheel is turned slowly.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000W8E00WX_09_0004" fin="true">OK</down>
+<right ref="RM000000W8E00WX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W8E00WX_09_0004">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000W8E00WX_09_0005">
+<testtitle>CHECK SPEEDOMETER CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000000W8E00WX_09_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

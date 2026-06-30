@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000011M1005X" category="C" type-id="300V0" name-id="LI20D-01" from="200601">
+<dtccode>B1244</dtccode>
+<dtcname>Light Sensor Circuit Malfunction</dtcname>
+<subpara id="RM0000011M1005X_01" type-id="60" category="03" proc-id="RM0250U___00004MI00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The automatic light control sensor detects ambient light, converts it into an electrical signal, and outputs it to the main body ECU. The main body ECU turns on or off the headlights and taillights according to the signal.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1244</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Malfunction in automatic light control sensor</ptxt>
+</item>
+<item>
+<ptxt>Open or short in automatic light control sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Automatic light control sensor</ptxt>
+</item>
+<item>
+<ptxt>Harness or connector</ptxt>
+</item>
+<item>
+<ptxt>Main body ECU (Instrument panel J/B)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000011M1005X_02" type-id="32" category="03" proc-id="RM0250U___00004MJ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E124321E04" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011M1005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011M1005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011M1005X_04_0001" proc-id="RM0250U___00004MK00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ILLUMINATE RATE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illumination rate information / 0 ms to 99.99 ms</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.8 ms to 22.0 ms (Value is output according to ambient illuminance)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal condition listed above is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0009" fin="false">NG</down>
+<right ref="RM0000011M1005X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0009" proc-id="RM0250U___000078H00000">
+<testtitle>CHECK VEHICLE CONDITION</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.58in"/>
+<colspec colname="COL3" colwidth="3.5in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Manual Air Conditioning System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Automatic Air Conditioning System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0002" fin="false">A</down>
+<right ref="RM0000011M1005X_04_0010" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0002" proc-id="RM0250U___00004ML00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - AUTOMATIC LIGHT CONTROL SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E11 automatic light control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="E121476E03" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E6 main body ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.22in"/>
+<colspec colname="COLSPEC0" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="0.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E6-18 (CLTE) - E11-6 (CLTE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-19 (CLTS) - E11-4 (CLTS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-20 (CLTB) - E11-3 (CLTB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-18 (CLTE) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-19 (CLTS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-20 (CLTB) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0007" fin="false">OK</down>
+<right ref="RM0000011M1005X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0007" proc-id="RM0250U___00004MN00000">
+<testtitle>INSPECT MAIN BODY ECU (INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the main body ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B109993E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL3" colwidth="1.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>E11-3 (CLTB) - E11-6 (CLTE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.22in"/>
+<colspec colname="COLSPEC1" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="0.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E11-6 (CLTE) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0003" fin="false">OK</down>
+<right ref="RM0000011M1005X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0003" proc-id="RM0250U___00004MM00000">
+<testtitle>INSPECT AUTOMATIC LIGHT CONTROL SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the automatic light control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="E121468E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect an oscilloscope to the automatic light control sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the waveform.</ptxt>
+<figure>
+<graphic graphicname="B113714E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.05in"/>
+<colspec colname="COLSPEC1" colwidth="1.05in"/>
+<colspec colname="COLSPEC0" colwidth="1.02in"/>
+<colspec colname="COL3" colwidth="1.01in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E11-6 (CLTE) - E11-4 (CLTS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV., 5 ms./DIV.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), light control switch in AUTO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Correct waveform is as shown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the ambient light becomes brighter, width A becomes narrower.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0005" fin="true">OK</down>
+<right ref="RM0000011M1005X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0010" proc-id="RM0250U___000078I00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - AUTOMATIC LIGHT CONTROL SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E11 automatic light control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="E121476E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E6 main body ECU connector.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.35in"/>
+<colspec colname="COLSPEC0" colwidth="0.77in"/>
+<colspec colname="COL3" colwidth="1.01in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E6-18 (CLTE) - E11-3 (CLTE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-19 (CLTS) - E11-5 (CLTS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-20 (CLTB) - E11-6 (CLTB)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-18 (CLTE) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-19 (CLTS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-20 (CLTB) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0011" fin="false">OK</down>
+<right ref="RM0000011M1005X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0011" proc-id="RM0250U___000078J00000">
+<testtitle>INSPECT MAIN BODY ECU (INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY )</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the main body ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B109993E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL3" colwidth="1.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E11-6 (CLTB) - E11-3 (CLTE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E11-6 (CLTB) - E11-3 (CLTE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.22in"/>
+<colspec colname="COLSPEC1" colwidth="0.95in"/>
+<colspec colname="COL3" colwidth="0.96in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E11-3 (CLTE) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0012" fin="false">OK</down>
+<right ref="RM0000011M1005X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0012" proc-id="RM0250U___000078K00000">
+<testtitle>INSPECT AUTOMATIC LIGHT CONTROL SENSOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the automatic light control sensor connector.</ptxt>
+<figure>
+<graphic graphicname="E121468E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Connect an oscilloscope to the automatic light control sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the waveform.</ptxt>
+<figure>
+<graphic graphicname="B113714E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.05in"/>
+<colspec colname="COLSPEC1" colwidth="1.05in"/>
+<colspec colname="COLSPEC0" colwidth="1.02in"/>
+<colspec colname="COL3" colwidth="1.01in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E11-3 (CLTE) - E11-5 (CLTS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV., 5 ms./DIV.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), light control switch in AUTO</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Correct waveform is as shown</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the ambient light becomes brighter, width A becomes narrower.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M1005X_04_0005" fin="true">OK</down>
+<right ref="RM0000011M1005X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0005">
+<testtitle>REPLACE INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000011M1005X_04_0008">
+<testtitle>REPLACE AUTOMATIC LIGHT CONTROL SENSOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

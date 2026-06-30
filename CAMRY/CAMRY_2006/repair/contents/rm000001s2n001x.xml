@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000V_S0014" variety="S0014">
+<name>POWER STEERING</name>
+<ttl id="1000V_S0014_72VA6_T004E" variety="T004E">
+<name>POWER STEERING LINK</name>
+<para id="RM000001S2N001X" category="G" type-id="3001K" name-id="PS0CV-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001S2N001X_01" type-id="01" category="01">
+<s-1 id="RM000001S2N001X_01_0001" proc-id="RM0250U___00000A500000">
+<ptxt>INSPECT POWER STEERING RACK</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Using a dial indicator, check for runout of the steering rack.</ptxt>
+<figure>
+<graphic graphicname="C132328" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Maximum runout</title>
+<specitem>
+<ptxt>0.3 mm (0.0118 in.)</ptxt>
+</specitem>
+</spec>
+<atten3>
+<ptxt>Make sure that the steering rack is placed horizontally.</ptxt>
+</atten3>
+<ptxt>If runout exceeds the maximum, replace the power steering link assembly.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the rack surface for wear and damage. </ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001S2N001X_01_0002" proc-id="RM0250U___00000A600000">
+<ptxt>INSPECT TIE ROD ASSEMBLY LH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Secure the tie rod assembly LH in a vise.</ptxt>
+<figure>
+<graphic graphicname="C132329" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Install the nut to the stud bolt.</ptxt>
+</s2>
+<s2>
+<ptxt>Flip the ball joint back and forth 5 times or more.</ptxt>
+</s2>
+<s2>
+<ptxt>Using a torque wrench, turn the nut continuously at a rate of 3 to 5 seconds per turn and take the torque reading on the 5th turn.</ptxt>
+<torque>
+<subtitle>Turning torque</subtitle>
+<torqueitem>
+<t-value1>0.98 to 3.92</t-value1>
+<t-value2>10 to 40</t-value2>
+<t-value3>8.7 to 34.7</t-value3>
+</torqueitem>
+</torque>
+<ptxt>If turning torque is not within the specified range, replace the tie rod assembly LH.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001S2N001X_01_0003" proc-id="RM0250U___00000A700000">
+<ptxt>INSPECT TIE ROD ASSEMBLY RH</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>Perform the same procedure as for the LH side.</ptxt>
+</atten4>
+</content1>
+</s-1>
+<s-1 id="RM000001S2N001X_01_0004" proc-id="RM0250U___00003Q000000">
+<ptxt>INSPECT TOTAL PRELOAD</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Temporarily install the 2 steering rack ends to the power steering rack.</ptxt>
+<atten3>
+<ptxt>Do not fully turn the power steering rack without the steering rack ends as it may damage the oil seal in the rack housing.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Using SST, fully turn the power steering rack right and left 10 times to settle it.</ptxt>
+<figure>
+<graphic graphicname="C132341E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09616-00011</s-number>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Using SST, turn the control valve and measure the preload.</ptxt>
+<figure>
+<graphic graphicname="C140705E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09616-00011</s-number>
+</sstitem>
+</sst>
+<torque>
+<subtitle>Standard preload (turning)</subtitle>
+<torqueitem>
+<t-value1>1.5</t-value1>
+<t-value2>15.3</t-value2>
+<t-value3>13.3</t-value3>
+<ptxt> or less</ptxt>
+</torqueitem>
+</torque>
+<ptxt>If the preload exceeds the specified value, proceed to INSTALL RACK GUIDE (See page <xref label="Seep01" href="RM000001S2R001X_01_0027"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Remove the 2 steering rack ends from the power steering rack.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

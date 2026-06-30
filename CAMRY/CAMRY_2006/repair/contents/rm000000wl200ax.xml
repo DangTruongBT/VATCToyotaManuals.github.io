@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM000000WL200AX" category="J" type-id="304ZV" name-id="DL18S-01" from="200601">
+<dtccode/>
+<dtcname>Driver Side Door UNLOCK Detection Switch Circuit</dtcname>
+<subpara id="RM000000WL200AX_02" type-id="60" category="03" proc-id="RM0250U___00009FJ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The driver's door unlock detection switch is built into the driver's door lock assembly. The switch turns on when the driver's door is locked and turns off when the door is unlocked.</ptxt>
+<ptxt>The main body ECU is connected to the driver's door lock assembly via terminal LSWD and driver's door lock/unlock state signals are input to the main body ECU. </ptxt>
+<ptxt>The main body ECU applies voltage to the door unlock detection switch via terminal LSWD. When the door unlock detection switch is on (there is continuity between the switch terminals), a lock state signal is input to the main body ECU. When the switch is off (there is no continuity between the switch terminals), an unlock state signal is input.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WL200AX_03" type-id="32" category="03" proc-id="RM0250U___00009FK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B109777E18" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WL200AX_04" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000WL200AX_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WL200AX_05_0007" proc-id="RM0250U___00009FN00000">
+<testtitle>READ VALUE OF DATA LIST (DOOR UNLOCK DETECTION SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the DATA LIST to ensure proper function of the door unlock detection switch.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item /</ptxt>
+<ptxt>Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door unlock detection switch signal</ptxt>
+<ptxt>/ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is unlocked</ptxt>
+<ptxt>OFF: Driver side door is locked</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The display is as specified in the normal condition column.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WL200AX_05_0006" fin="true">OK</down>
+<right ref="RM000000WL200AX_05_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WL200AX_05_0002" proc-id="RM0250U___00009FL00000">
+<testtitle>INSPECT FRONT DOOR LOCK ASSEMBLY (DOOR UNLOCK DETECTION SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the front door lock assembly LH.</ptxt>
+<figure>
+<graphic graphicname="B065427E20" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door Lock Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7 - 8 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7 - 8 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WL200AX_05_0003" fin="false">OK</down>
+<right ref="RM000000WL200AX_05_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WL200AX_05_0003" proc-id="RM0250U___00009FM00000">
+<testtitle>CHECK WIRE HARNESS (FRONT DOOR LOCK ASSEMBLY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the front door lock assembly LH connector.</ptxt>
+<figure>
+<graphic graphicname="B112606E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the main body ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>I7-8 (LSSR) - E7-9 (LSWD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>I7-8 (LSSR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>I7-7 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WL200AX_05_0008" fin="true">OK</down>
+<right ref="RM000000WL200AX_05_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WL200AX_05_0004">
+<testtitle>REPLACE FRONT DOOR LOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000WL200AX_05_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WL200AX_05_0006">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000WL200AX_05_0008">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,71 @@
+<!-- $Id: ewd_contents.html,v 1.10 2005/03/23 01:14:17 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    001 CONTENT_NOT_EXISTS_ERROR                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Inspection Menu-</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var CONTENT_NOT_EXISTS_ERROR = "There is no information available.";   // 001
+function init() {
+	var titleList = parent.g_srhXml.selectNodes("//ttl[parts/@id='"+parent.g_parts+"']");
+	if (titleList.length == 0) {
+		alert(CONTENT_NOT_EXISTS_ERROR);
+	} else if (titleList.length == 1) {
+		var titleNode = titleList.item(0);
+		var titleId = titleNode.getAttribute("id");
+		displayContents(titleId);
+	} else {
+		var pname = parent.getPartsName(parent.g_parts);
+		parent.setDialogArgs(titleList, pname, parent.g_tocXml);
+		var ret = parent.openDialog("ttl_frame.html", "tls");
+		parent.clearDialogArgs();
+		if (ret!=null) {
+			//var ttlNode = parent.g_srhXml.selectSingleNode("//ttl[@id='"+ret+"']");
+			displayContents(ret);
+		}
+	}
+}
+var DELIM = " &gt; ";
+function displayContents(titleId) {
+	//var paraList = objTitle.selectNodes("para[@category='G']/@id");
+	var paraList = parent.g_tocXml.selectNodes("//ttl[@id='"+titleId+"']/para[@category='G']/@id");
+	var objTemp  = new ActiveXObject("Msxml2.XSLTemplate");
+	objTemp.stylesheet = parent.g_objXsl;
+	var objProc  = objTemp.createProcessor();
+	var secName = "";
+	var ttlName = "";
+	for (var i=0; i<paraList.length; i++) {
+		paraId = paraList.item(i).nodeTypedValue;
+		var objXml = parent.initXml(paraId.toLowerCase()+".xml");
+		if (i==0) {
+			secName = parent.getSectionName(paraId, objXml);
+			ttlName = parent.getTitleName(paraId, objXml);
+		}
+		var paraName = parent.getParagraphNameList(paraId, "name", objXml)[0];
+		objProc.input = objXml;
+		objProc.transform();
+		disp.innerHTML += "<p class='location'>"
+										+ secName + DELIM
+										+ ttlName + DELIM
+										+ paraName
+										+ "</p>";
+		disp.innerHTML += objProc.output;
+		disp.innerHTML += "<br/>";
+	}
+	parent.global.setLinks(titleId);
+	parent.loadMemoData(document, parent.REPAIR);
+}
+</script>
+</head>
+<body onLoad="init();">
+	<div id="disp"></div>
+</body>
+</html>

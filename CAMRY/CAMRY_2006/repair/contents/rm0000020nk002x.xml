@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020NK002X" category="J" type-id="303DT" name-id="NS0NZ-03" from="200601">
+<dtccode/>
+<dtcname>Speaker Circuit</dtcname>
+<subpara id="RM0000020NK002X_01" type-id="60" category="03" proc-id="RM0250U___00004X300000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The sound signal that has been amplified by the stereo component amplifier is sent to the speakers from the stereo component amplifier through this circuit.</ptxt>
+<ptxt>If there is a short in this circuit, the stereo component amplifier detects it and stops output to the speakers.</ptxt>
+<ptxt>Thus sound cannot be heard from the speakers even if there is no malfunction in the stereo component amplifier or speakers.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000020NK002X_02" type-id="32" category="03" proc-id="RM0250U___00004X400000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E126150E08" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<figure>
+<graphic graphicname="E129782E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020NK002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020NK002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020NK002X_04_0001" proc-id="RM0250U___00004X500000">
+<testtitle>CHECK HARNESS AND CONNECTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the connectors shown in the illustration on the left from the stereo component amplifier and speakers.</ptxt>
+<figure>
+<graphic graphicname="E129821E04" width="2.775699831in" height="7.795582503in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance between each of the front No. 2 speakers and the stereo component amplifier to check for an open circuit in the wire harness.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance between each of the rear speakers and the stereo component amplifier to check for an open circuit in the wire harness.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance between each of the front No. 1 speakers and the stereo component amplifier to check for an open circuit in the wire harness.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance between each speaker and body ground to check for a short circuit in the wire harness.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>10 kΩ or higher</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020NK002X_04_0003" fin="false">OK</down>
+<right ref="RM0000020NK002X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0003" proc-id="RM0250U___00004X700000">
+<testtitle>INSPECT FRONT NO. 1 SPEAKER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Resistance check.</ptxt>
+<test2>
+<ptxt>Measure the resistance between the terminals of the speaker.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>1.8 to 2.6 Ω</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020NK002X_04_0004" fin="false">OK</down>
+<right ref="RM0000020NK002X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0004" proc-id="RM0250U___00004X800000">
+<testtitle>INSPECT FRONT NO. 2 SPEAKER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the malfunction disappears when another speaker in good condition is installed.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Connect all the connectors to the front No. 2 speakers.</ptxt>
+</item>
+<item>
+<ptxt>When there is a possibility that either the right or left front speaker is defective, inspect by interchanging the right one with the left one.</ptxt>
+</item>
+<item>
+<ptxt>Perform the above inspection on both LH and RH sides.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020NK002X_04_0016" fin="false">NG</down>
+<right ref="RM0000020NK002X_04_0012" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0016" proc-id="RM0250U___0000AV000000">
+<testtitle>INSPECT REAR SPEAKER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Woofer speaker:</ptxt>
+<figure>
+<graphic graphicname="E129809E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<atten3>
+<ptxt>The speaker should not be removed for checking.</ptxt>
+</atten3>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 - 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1.8 to 2.6 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Tweeter speaker:</ptxt>
+<test2>
+<ptxt>Check that the malfunction disappears when another rear speaker in good condition is installed.</ptxt>
+</test2>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction appears.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Connect all the connectors to the rear speaker.</ptxt>
+</item>
+<item>
+<ptxt>When there is a possibility that either the right or left rear speaker is detective, inspect by interchanging the right one with the left one.</ptxt>
+</item>
+</list1>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000020NK002X_04_0008" fin="true">OK</down>
+<right ref="RM0000020NK002X_04_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0008">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0011">
+<testtitle>REPLACE FRONT NO. 1 SPEAKER</testtitle>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0012">
+<testtitle>REPLACE FRONT NO. 2 SPEAKER</testtitle>
+</testgrp>
+<testgrp id="RM0000020NK002X_04_0017">
+<testtitle>REPLACE REAR SPEAKER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

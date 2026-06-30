@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PF6018X" category="C" type-id="300XW" name-id="ES3XE-01" from="200601">
+<dtccode>P0120</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "A" Circuit Malfunction</dtcname>
+<dtccode>P0122</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "A" Circuit Low Input</dtcname>
+<dtccode>P0123</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "A" Circuit High Input</dtcname>
+<dtccode>P0220</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "B" Circuit</dtcname>
+<dtccode>P0222</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "B" Circuit Low Input</dtcname>
+<dtccode>P0223</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "B" Circuit High Input</dtcname>
+<dtccode>P2135</dtccode>
+<dtcname>Throttle / Pedal Position Sensor / Switch "A" / "B" Voltage Correlation</dtcname>
+<subpara id="RM000000PF6018X_11" type-id="11" category="10" proc-id="RM0250U___00007DB00000">
+<name>CAUTION / NOTICE / HINT</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>These DTCs relate to the Throttle Position (TP) sensor.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_01" type-id="60" category="03" proc-id="RM0250U___00007CY00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The TP sensor is mounted on the throttle body, and detects the opening angle of the throttle valve. This sensor is a non-contact type. It uses Hall-effect elements in order to yield accurate signals even in extreme driving conditions, such as at high speeds as well as very low speeds.</ptxt>
+<ptxt>The TP sensor has two sensor circuits which each transmits a signal, VTA1 and VTA2. VTA1 is used to detect the throttle valve angle and VTA2 is used to detect malfunctions in VTA1. The sensor signal voltages vary between 0 V and 5 V in proportion to the throttle valve opening angle, and are transmitted to the VTA terminals of the ECM.</ptxt>
+<ptxt>As the valve closes, the sensor output voltage decreases and as the valve opens, the sensor output voltage increases. The ECM calculates the throttle valve opening angle according to these signals and controls the throttle actuator in response to driver inputs. These signals are also used in calculations such as air-fuel ratio correction, power increase correction and fuel-cut control.</ptxt>
+<figure>
+<graphic graphicname="A122493E04" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0120</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VTA1 quickly fluctuates beyond lower and upper malfunction thresholds for 2 seconds when accelerator pedal depressed</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Throttle Position (TP) sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0122</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VTA1 0.2 V or less for 2 seconds when accelerator pedal depressed</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>Short in VTA1 circuit</ptxt>
+</item>
+<item>
+<ptxt>Open in VC circuit</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0123</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VTA1 4.535 V or more for 2 seconds when accelerator pedal depressed</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>Open in VTA1 circuit</ptxt>
+</item>
+<item>
+<ptxt>Open in E2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Short between VC and VTA1 circuits</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0220</ptxt>
+</entry>
+<entry>
+<ptxt>Output voltage of VTA2 quickly fluctuates beyond lower and upper malfunction thresholds for 2 seconds when accelerator pedal depressed</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0222</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VTA2 1.75 V or less for 2 seconds when accelerator pedal depressed</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>Short in VTA2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Open in VC circuit</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0223</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Output voltage of VTA2 4.8 V or more, and VTA1 between 0.2 V and 2.02 V for 2 seconds when accelerator pedal depressed</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>Open in VTA2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Open in E2 circuit</ptxt>
+</item>
+<item>
+<ptxt>Short between VC and VTA2 circuits</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2135</ptxt>
+</entry>
+<entry>
+<ptxt>Either condition (a) or (b) is met (1 trip detection logic):</ptxt>
+<ptxt>(a) Difference between output voltages of VTA1 and VTA2 0.02 V or less for 0.5 seconds or more</ptxt>
+<ptxt>(b) Output voltage of VTA1 0.2 V or less, and VTA2 1.75 V or less, for 0.4 seconds or more</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short between VTA1 and VTA2 circuits</ptxt>
+</item>
+<item>
+<ptxt>TP sensor (built into throttle body)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When any of these DTCs are set, check the throttle valve opening angle by selecting the following menu items on the intelligent tester: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ETCS / THROTTLE POS #1 AND THROTTLE POS #2.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>THROTTLE POS #1 denotes the VTA1 signal, and THROTTLE POS #2 denotes the VTA2 signal.</ptxt>
+<table pgwide="1">
+<title>Reference (Normal Condition):</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry>
+<ptxt>Accelerator Pedal Fully Released</ptxt>
+</entry>
+<entry>
+<ptxt>Accelerator Pedal Fully Depressed</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>THROTTLE POS #1</ptxt>
+</entry>
+<entry>
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+<entry>
+<ptxt>3.3 to 4.9 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>THROTTLE POS #2</ptxt>
+</entry>
+<entry>
+<ptxt>2.1 to 3.1 V</ptxt>
+</entry>
+<entry>
+<ptxt>4.6 to 5.0 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_02" type-id="64" category="03" proc-id="RM0250U___00007CZ00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM uses the Throttle Position (TP) sensor to monitor the throttle valve opening angle. There are several checks that the ECM performs to confirm the proper operation of the TP sensor.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>A specific voltage difference is expected between the sensor terminals, VTA1 and VTA2, for each throttle valve opening angle. If the difference between VTA1 and VTA2 is incorrect, the ECM interprets this as a malfunction in the sensor, and sets a DTC.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>VTA1 and VTA2 each have a specific voltage range. If VTA1 or VTA2 is outside the normal operating range, the ECM interprets this as a malfunction in the sensor, and sets a DTC.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>VTA1 and VTA2 should never be close to the same voltage level. If VTA1 is within 0.02 V of VTA2, the ECM determines that there is a short circuit in the sensor, and sets a DTC.</ptxt>
+</item>
+</list1>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set 10 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_03" type-id="65" category="03" proc-id="RM0250U___00007D000000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P0120: Throttle position sensor 1 range check (Fluctuating)</ptxt>
+<ptxt>P0122: Throttle position sensor 1 range check (Low voltage)</ptxt>
+<ptxt>P0123: Throttle position sensor 1 range check (High voltage)</ptxt>
+<ptxt>P0220: Throttle position sensor 2 range check (Fluctuating)</ptxt>
+<ptxt>P0222: Throttle position sensor 2 range check (Low voltage)</ptxt>
+<ptxt>P0223: Throttle position sensor 2 range check (High voltage)</ptxt>
+<ptxt>P2135: Throttle position sensor range check (Correlation)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry>
+<ptxt>Throttle position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration </ptxt>
+</entry>
+<entry>
+<ptxt>2 seconds: P0120, P0122, P0123, P0220, P0222 and P0223 (Accelerator pedal ON)</ptxt>
+<ptxt>10 seconds: P0120, P0122, P0123, P0220, P0222 and P0223 (Accelerator pedal OFF)</ptxt>
+<ptxt>0.5 seconds: P2135 Case 1</ptxt>
+<ptxt>0.4 seconds: P2135 Case 2</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_04" type-id="66" category="03" proc-id="RM0250U___00007D100000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Electronic throttle actuator power</ptxt>
+</entry>
+<entry>
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_05" type-id="67" category="03" proc-id="RM0250U___00007D200000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0120:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA1 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.2 V or less, or 4.535 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0122:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA1 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.2 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0123:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA1 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>4.535 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0220:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA2 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>1.75 V or less, or 4.8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0222:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA2 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>1.75 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0223:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA2 voltage when VTA1 voltage is 0.2 V or more, and 2.02 V or less</ptxt>
+</entry>
+<entry>
+<ptxt>4.8 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2135 Case 1:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Difference between VTA1 and VTA2 voltages</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.02 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2135 Case 2:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA1 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.2 V or less</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VTA2 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>1.75 V or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_06" type-id="70" category="03" proc-id="RM0250U___00007D300000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>VTA1 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>0.69 to 4.05 V</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VTA2 voltage</ptxt>
+</entry>
+<entry>
+<ptxt>2.25 to 4.8 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_07" type-id="62" category="03" proc-id="RM0250U___00007D400000">
+<name>FAIL-SAFE</name>
+<content5 releasenbr="1">
+<ptxt>When any of these DTCs, as well as other DTCs relating to ETCS (Electronic Throttle Control System) malfunctions, are set, the ECM enters fail-safe mode. During fail-safe mode, the ECM cuts the current to the throttle actuator off, and the throttle valve is returned to a 6° throttle angle by the return spring. The ECM then adjusts the engine output by controlling the fuel injection (intermittent fuel-cut) and ignition timing, in accordance with the accelerator pedal opening angle, to allow the vehicle to continue at a minimal speed. If the accelerator pedal is depressed gently, the vehicle can be driven slowly.</ptxt>
+<ptxt>Fail-safe mode continues until a pass condition is detected, and the ignition switch is then turned off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_08" type-id="32" category="03" proc-id="RM0250U___00007D500000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A088199E06" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_09" type-id="51" category="05" proc-id="RM0250U___00007D600000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PF6018X_10" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PF6018X_10_0001" proc-id="RM0250U___00007D700000">
+<testtitle>READ VALUE USING INTELLIGENT TESTER (THROTTLE POS #1 AND THROTTLE POS #2)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ETCS / THROTTLE POS #1 and THROTTLE POS #2.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the values displayed on the tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="6" align="center">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL4" colwidth="1.15in"/>
+<colspec colname="COL5" colwidth="1.21in"/>
+<colspec colname="COL6" colwidth="1.18in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>TP#1 (VTA1)</ptxt>
+<ptxt>When Accelerator Pedal Released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TP#2 (VTA2)</ptxt>
+<ptxt>When Accelerator Pedal Released</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TP#1 (VTA1)</ptxt>
+<ptxt>When Accelerator Pedal Depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TP#2 (VTA2)</ptxt>
+<ptxt>When Accelerator Pedal Depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VC circuit open</ptxt>
+</entry>
+<entry morerows="3" valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E2 circuit open</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V, </ptxt>
+<ptxt>or 4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.4 V to 3.4 V</ptxt>
+<ptxt>(Fail-safe)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V, </ptxt>
+<ptxt>or 4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.4 V to 3.4 V</ptxt>
+<ptxt>(Fail-safe)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VTA1 circuit open or ground short</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>0.7 V to 1.3 V</ptxt>
+<ptxt>(Fail-safe)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V, </ptxt>
+<ptxt>or 4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.7 V to 1.3 V</ptxt>
+<ptxt>(Fail-safe)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0 V to 0.2 V, </ptxt>
+<ptxt>or 4.5 V to 5.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VTA2 circuit open or ground short</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>0.5 V to 1.1 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2.1 V to 3.1 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3.3 V to 4.9 V</ptxt>
+<ptxt>(Not fail-safe)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.6 V to 5.0 V</ptxt>
+<ptxt>(Not fail-safe)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TP sensor circuit normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<atten4>
+<ptxt>TP#1 denotes THROTTLE POS #1, and TP#2 denotes THROTTLE POS #2.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000PF6018X_10_0002" fin="false">A</down>
+<right ref="RM000000PF6018X_10_0005" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0002" proc-id="RM0250U___00007D800000">
+<testtitle>CHECK HARNESS AND CONNECTOR (THROTTLE POSITION SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C5 throttle body connector.</ptxt>
+<figure>
+<graphic graphicname="A107944E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C24 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C5-5 (VC) - C24-67 (VCTA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C5-6 (VTA) - C24-115 (VTA1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C5-4 (VTA2) - C24-114 (VTA2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C5-3 (E2) - C24-91 (ETA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C5-5 (VC) or C24-67 (VCTA) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C5-6 (VTA) or C24-115 (VTA1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>C5-4 (VTA2) or C24-114 (VTA2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the throttle body connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF6018X_10_0003" fin="false">OK</down>
+<right ref="RM000000PF6018X_10_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0003" proc-id="RM0250U___00007D900000">
+<testtitle>INSPECT ECM (VC VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C5 throttle body connector.</ptxt>
+<figure>
+<graphic graphicname="A107895E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals of the throttle body connector.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C5-5 (VC) - C5-3 (E2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the throttle body connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF6018X_10_0011" fin="false">OK</down>
+<right ref="RM000000PF6018X_10_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0011">
+<testtitle>REPLACE THROTTLE BODY ASSEMBLY</testtitle>
+<res>
+<down ref="RM000000PF6018X_10_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0005" proc-id="RM0250U___00007DA00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS (THROTTLE POSITION SENSOR DTCS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle for 15 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0120, P0122, P0123, P0220, P0222, P0223, and/or P2135</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PF6018X_10_0010" fin="true">A</down>
+<right ref="RM000000PF6018X_10_0009" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0008">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0009">
+<testtitle>SYSTEM OK</testtitle>
+</testgrp>
+<testgrp id="RM000000PF6018X_10_0010">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

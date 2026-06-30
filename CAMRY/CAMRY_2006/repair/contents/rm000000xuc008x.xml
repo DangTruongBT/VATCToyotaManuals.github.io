@@ -1,0 +1,1550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XUC008X" category="D" type-id="303F2" name-id="DL02G-09" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000XUC008X_z0" proc-id="RM0250U___00009NC00000">
+<content5 releasenbr="1">
+<atten2>
+<ptxt>If using a pacemaker, be sure to read the manual of the pacemaker before using the electrical key because the radio waves of the electrical key may affect the pacemaker. </ptxt>
+</atten2>
+<step1>
+<ptxt>SMART KEY SYSTEM DESCRIPTION</ptxt>
+<step2>
+<ptxt>In addition to conventional mechanical key and wireless door lock control functions, the smart key system enables door locking/unlocking, steering lock releasing, engine starting, and luggage compartment door opening without operating the electrical key. The only requirement is that the electrical key is in the user's possession.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>This system is controlled by the certification ECU. When the certification ECU detects the presence of an electrical key in one of the detection areas, it identifies and checks the ID code, and outputs operation signals to the related ECU in accordance with their functions.</ptxt>
+</item>
+<item>
+<ptxt>The detection areas are formed by 6 oscillators (2 door oscillators, 2 luggage compartment oscillators, and 2 cabin oscillators).</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>DETECTION AREA</ptxt>
+<figure>
+<graphic graphicname="B137951E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<step2>
+<ptxt> Precautions for the entire system: </ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to carry the electrical key during inspection of the smart key system.</ptxt>
+</item>
+<item>
+<ptxt>As weak radio waves are used to detect the electrical key, the electrical key detection area may decrease, or the electrical key may not be detected correctly in the following situations:</ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>The electrical key battery is depleted.</ptxt>
+</item>
+<item>
+<ptxt>Any facilities that generate strong radio waves, such as a TV tower, power plant, broadcast station, or gas station, are located near the inspection site.</ptxt>
+</item>
+<item>
+<ptxt>A wireless device, such as a cellular phone, is carried with the electrical key. </ptxt>
+</item>
+<item>
+<ptxt>The electrical key is in contact with or covered with metal.</ptxt>
+</item>
+<item>
+<ptxt>Another wireless door lock control function is operated near the vehicle. </ptxt>
+</item>
+<item>
+<ptxt>The electrical key is located near a device that generates high voltage or noise.</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The electrical key may be difficult to operate for a reason relating to the vehicle body shape.</ptxt>
+</item>
+<item>
+<ptxt>The electrical key may not be detected correctly if it is around the vehicle's windows, the door handle, or the center of the bumper even when it is in the detection area outside the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>The electrical key may not be detected correctly if it is on the instrument panel, auxiliary box of the driver's side instrument panel, rear package tray, floor, or in the glove box even when it is in the detection area inside the vehicle.</ptxt>
+</item>
+<item>
+<ptxt>The engine cannot be started even when the electrical key is in the detection area inside the luggage compartment. </ptxt>
+</item>
+<item>
+<ptxt>The electrical key may not operate if the electrical key is not held properly.</ptxt>
+</item>
+<item>
+<ptxt>The smart key system does not operate in the following conditions: </ptxt>
+</item>
+<list2 type="ordered">
+<item>
+<ptxt>The smart key system is canceled.</ptxt>
+</item>
+<item>
+<ptxt>The electrical key battery is completely depleted (the indicator does not blink when pushing any of the buttons on the electrical key).</ptxt>
+</item>
+</list2>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENTS</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Electrical Key</ptxt>
+</entry>
+<entry>
+<ptxt>Consists of mechanical key, transmitter for wireless door lock control, and transceiver for smart key system </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Certification ECU</ptxt>
+</entry>
+<entry>
+<ptxt>Controls smart key system in accordance with signals from each oscillator, various switches, ECUs, and electrical key </ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Judges and certifies ID code from door control receiver </ptxt>
+</item>
+<item>
+<ptxt>Transmits engine immobiliser unset signal to ID code box</ptxt>
+</item>
+<item>
+<ptxt>Transmits steering unlock signals to steering lock ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main Body ECU (Instrument Panel J/B)</ptxt>
+</entry>
+<entry>
+<ptxt>Controls push button start function in accordance with signals from various switches, ECUs, and combination meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Transmits electrical key verification request signal to certification ECU in accordance with engine switch signal, and turns relays ON and OFF </ptxt>
+</item>
+<item>
+<ptxt>Receives request signal from certification ECU and actuates door lock motor to unlock or lock door</ptxt>
+</item>
+<item>
+<ptxt>Transmits each door condition signal to certification ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID Code Box</ptxt>
+</entry>
+<entry>
+<ptxt>Receives steering unlock or engine immobiliser unset signals from certification ECU, certifies them, and transmits unset signals to steering lock ECU or ECM</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Outside Door Handle (driver and passenger doors) (antenna)</ptxt>
+</entry>
+<entry>
+<ptxt>Transmits request signals </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Outside Door Handle (driver and passenger doors) (touch sensor)</ptxt>
+</entry>
+<entry>
+<ptxt>Detects that person touches inside of outside handle </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Outside Door Handle (driver and passenger doors) (lock switch)</ptxt>
+</entry>
+<entry>
+<ptxt>Transmits door lock request signals to certification ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door Electrical Key Oscillator (driver and passenger doors)</ptxt>
+</entry>
+<entry>
+<ptxt>Receives request signal from certification ECU, and forms detection area around front door</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Indoor Electrical Key Oscillator (console and rear seat)</ptxt>
+</entry>
+<entry>
+<ptxt>Receives request signal from certification ECU, and forms detection area in vehicle interior </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Luggage Compartment Electrical Key Oscillator (inner)</ptxt>
+</entry>
+<entry>
+<ptxt>Receives request signal from certification ECU, and forms detection  area in luggage compartment</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Luggage Compartment Electrical Key Oscillator (outer)</ptxt>
+</entry>
+<entry>
+<ptxt>Receives request signal from certification ECU, and forms detection area around luggage compartment door</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Door Control Receiver</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Receives ID code from electrical key in detection area and transmits it to certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Receives ID code from electrical key in luggage compartment and transmits it to certification ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electrical Key Antenna</ptxt>
+</entry>
+<entry>
+<ptxt>Receives ID code from electrical key and transmits it to door control receiver</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Luggage Compartment Opener Switch</ptxt>
+</entry>
+<entry>
+<ptxt>Transmits luggage compartment door open request signal to certification ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stop Light Switch</ptxt>
+</entry>
+<entry>
+<ptxt>Outputs state of brake pedal to main body ECU</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Combination Meter</ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list2>
+</list1>
+</entry>
+<entry>
+<ptxt>When certification ECU detects human errors such as those below, it warns driver by sounding wireless door lock buzzer, displaying information and sounding a buzzer in combination meter in accordance with request signal from ECU</ptxt>
+<ptxt>Example:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Electrical key is taken out of vehicle</ptxt>
+</item>
+<item>
+<ptxt>Driver leaves vehicle while engine is still running</ptxt>
+</item>
+<item>
+<ptxt>Driver leaves vehicle while shift lever is in any position other than P</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>CONSTRUCTION AND OPERATION</ptxt>
+<step2>
+<ptxt>Electrical Key</ptxt>
+<ptxt>The electrical key consists of a mechanical key, a transmitter for the wireless door lock control, and a transceiver for the smart key system.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The transceiver for the smart key system receives signals from the oscillators and sends the ID code to the tuner. </ptxt>
+</item>
+<item>
+<ptxt>The transmitter for the wireless door lock control has a LOCK switch, UNLOCK switch, LUGGAGE COMPARTMENT switch, and PANIC switch.</ptxt>
+</item>
+<item>
+<ptxt>This mechanical key works for the driver door, luggage compartment door, and glove box, but cannot start the engine. </ptxt>
+</item>
+</list1>
+<ptxt>A total of 7 electrical keys can be registered.</ptxt>
+<figure>
+<graphic graphicname="B137961E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Oscillator (front door oscillator, front and rear indoor oscillator, luggage compartment inner oscillator, luggage compartment outer oscillator)</ptxt>
+<ptxt>Each oscillator transmits the request signal received from the certification ECU, and forms an electrical key detection area to detect the presence of an electrical key. The detection area formed by front door oscillator and luggage compartment outer oscillator is approximately 0.7 to 1.0 m (2.3 to 3.3 ft) from the outside handle of front door or the center of the rear bumper. </ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The detection area of front door oscillator is formed by transmitting a request signal every 0.25 seconds while the engine switch is off and each door is locked. In this way, it detects the proximity of an electrical key. During entry lock, the detection area is formed with the lock switch on. </ptxt>
+</item>
+<item>
+<ptxt>The detection area of the luggage compartment outer oscillator is formed when the power luggage door open switch is on. </ptxt>
+</item>
+<item>
+<ptxt>The detection area of the indoor oscillator (front and rear) is formed when the driver door is opened or closed, entry luggage compartment open, electrical key lock-in prevention during start ignition, when a warning is activated, or when the lock switch is on. </ptxt>
+</item>
+<item>
+<ptxt>The detection area of the luggage compartment inner oscillator is formed when the luggage compartment door is closed, entry luggage compartment open, electrical key lock-in prevention, the luggage compartment open switch or lock switch is pressed.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+<step1>
+<ptxt>ENTRY FUNCTION OPERATION</ptxt>
+<step2>
+<ptxt>The smart key system has the following functions:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Function</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Outline</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Mechanical Key</ptxt>
+</entry>
+<entry>
+<ptxt>Operation is same as conventional mechanical key.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Control</ptxt>
+</entry>
+<entry>
+<ptxt>This function remotely locks and unlocks all doors or luggage compartment. Operation is same as wireless door lock control system. However, receiver in certification ECU uses entry door control receiver to control locking and unlocking.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Entry Illumination</ptxt>
+</entry>
+<entry>
+<ptxt>When person carrying electrical key enters detection area, door will enter unlock standby mode and front map light will illuminate.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Entry Unlock</ptxt>
+</entry>
+<entry>
+<ptxt>When electrical key is located in detection area of door oscillator, door will unlock by touching inside of outside door handle.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Entry Unlock Mode Switching (See page <xref label="Seep02" href="RM000000XUG008X"/>)</ptxt>
+</entry>
+<entry>
+<ptxt>Changes doors that can be unlocked with entry unlock function between 2 modes.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Driver door mode</ptxt>
+</item>
+<item>
+<ptxt>All door mode</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Entry Lock</ptxt>
+</entry>
+<entry>
+<ptxt>When electrical key is located in detection area of door oscillator and engine switch is off, door can be locked by pressing lock switch on outside door handle. </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Entry Luggage Compartment Open</ptxt>
+</entry>
+<entry>
+<ptxt>When electrical key is in detection area of luggage compartment outer oscillator, luggage compartment opens by pressing luggage compartment open switch.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Memory Call</ptxt>
+</entry>
+<entry>
+<ptxt>This function operates driving position memory system in accordance with electrical key ID code. </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electrical Key Lock-in Prevention</ptxt>
+</entry>
+<entry>
+<list1 type="unordered">
+<item>
+<ptxt>Prevents confinement of electrical key if door is locked using outside door handle while electrical key is still inside vehicle.</ptxt>
+</item>
+<item>
+<ptxt>If all doors are locked and luggage compartment door is closed while electrical key is still in luggage compartment, warning buzzer sounds. If luggage compartment open switch is operated, luggage compartment door can be opened.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Warning</ptxt>
+</entry>
+<entry>
+<ptxt>When any of situations below occur, smart key system causes certification ECU to sound buzzer in combination meter and wireless door lock buzzer, and display information in order to alert driver.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Exit warning if shift lever position is not P and power source mode is not off.</ptxt>
+</item>
+<item>
+<ptxt>Exit warning if shift lever position is P and power source mode is not off.</ptxt>
+</item>
+<item>
+<ptxt>Warning if occupant leaves with electrical key.</ptxt>
+</item>
+<item>
+<ptxt>Warning if engine switch is operated while electrical key is outside actuation area.</ptxt>
+</item>
+<item>
+<ptxt>Warning if entry lock is operated while electrical key is inside vehicle.</ptxt>
+</item>
+<item>
+<ptxt>Warning if electrical key battery is weak.</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery Saving</ptxt>
+</entry>
+<entry>
+<ptxt>If electrical key is constantly located within actuation area of door oscillator, system maintains periodic communication with electrical key. Therefore, if vehicle remains parked in that state for a long time, electrical key battery and vehicle battery could be drained. </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Key Cancel (See page <xref label="Seep01" href="RM000000XUG008X"/>)</ptxt>
+</entry>
+<entry>
+<ptxt>Following electrical key functions can be cancelled by performing certain operations:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Entry Unlock/Lock</ptxt>
+</item>
+<item>
+<ptxt>Memory Call</ptxt>
+</item>
+<item>
+<ptxt>Entry Luggage Compartment Open</ptxt>
+</item>
+<item>
+<ptxt>Electrical key Lock-in Prevention</ptxt>
+</item>
+<item>
+<ptxt>Warning</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Electrical Key Code Registration</ptxt>
+</entry>
+<entry>
+<ptxt>The total number of electrical keys that can be registered is seven.</ptxt>
+<ptxt>Enables the registration (writing and storing) of transmitter recognition codes in the EEPROM that is contained in the certification ECU.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>WIRELESS DOOR LOCK AND UNLOCK AND LUGGAGE COMPARTMENT OPEN FUNCTION</ptxt>
+<ptxt>Push the LOCK/UNLOCK/PANIC/LUGGAGE COMPARTMENT switch on the electrical key to operate each function. For details, (See page <xref label="Seep03" href="RM000001QP5003X"/>).</ptxt>
+</step1>
+<step1>
+<ptxt>ENTRY UNLOCK FUNCTION</ptxt>
+<step2>
+<ptxt>The detection area is formed by communication between a door oscillator and door control receiver when the door is locked in order to detect access of the person carrying the electrical key.</ptxt>
+</step2>
+<step2>
+<ptxt>When the person carrying the electrical key enters the detection area around the vehicle, the matching of the ID codes for a door oscillator and electrical key will automatically be performed. After the matching is completed, the door will enter unlock standby mode.</ptxt>
+</step2>
+<step2>
+<ptxt>In unlock standby mode, the antenna built into the outside handle starts sensing. If the outside handle is held (the back side of the handle is touched), the door unlock operation will be performed. At this time, the hazard warning light blinks twice and the wireless door lock buzzer sounds twice.</ptxt>
+</step2>
+<step2>
+<ptxt>If any of the doors are not opened after a door unlock operation, all doors will automatically lock after 60 seconds. </ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>ENTRY LOCK FUNCTION</ptxt>
+<step2>
+<ptxt>After leaving the vehicle carrying the electrical key, push the lock switch on the outside handle when all the doors are closed.</ptxt>
+</step2>
+<step2>
+<ptxt>The certification ECU determines whether the electrical key is located inside or outside of the cabin based on the information from a door oscillator and room oscillator. Then matching of the ID codes is performed.</ptxt>
+</step2>
+<step2>
+<ptxt>When the matching result shows that the ID codes of the electrical key and indoor antenna do not match and the ID codes of the electrical key and door oscillator match, the door lock function will operate. At this time, the hazard warning lights blink once and the wireless door lock buzzer sounds once. </ptxt>
+</step2>
+<step2>
+<ptxt>If the electrical key is located inside of the cabin, the door lock function will not operate and the alarm buzzer (beep sound) will sound for 2 seconds.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>ENTRY LUGGAGE COMPARTMENT OPEN FUNCTION</ptxt>
+<ptxt>Stand in front of the luggage compartment with the electrical key and push the power luggage compartment opener switch to start the matching of the ID codes for the electrical key oscillator (outside luggage compartment). If the ID codes match, luggage compartment door open operation will be performed.  </ptxt>
+</step1>
+<step1>
+<ptxt>PREVENTION OF ELECTRICAL KEY CONFINEMENT FUNCTION </ptxt>
+<step2>
+<ptxt>If you attempt to lock the door through keyless operation (move the lock knob to the lock position and then close the door) with the electrical key in the cabin, the system determines that the electrical key is located in the cabin and unlocks the door. </ptxt>
+</step2>
+<step2>
+<ptxt>If the luggage compartment is closed with the electrical key in it, the alarm will sound and the luggage compartment can be opened only when all the doors are locked in order to prevent electrical key confinement in the vehicle.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>ENTRY ILLUMINATION FUNCTION </ptxt>
+<ptxt>When a person carrying the electrical key enters the detection area, the door will enter unlock standby mode and the front map light will illuminate. </ptxt>
+</step1>
+<atten4>
+<ptxt>The entry illumination function operates when the electrical key enters the vehicle exterior detection area from out of the detection area. If the electrical key remains in the detection area for 3 seconds or more, the illumination function does not operate.</ptxt>
+</atten4>
+<step1>
+<ptxt>MEMORY CALL FUNCTION</ptxt>
+<ptxt>When the engine switch is off and the driver side door is closed, opening the door will operate the memory call function (the door will move to a previously recorded driving position). Using the electrical key, memory call, electrical key registration and electrical key cancellation can be performed.</ptxt>
+</step1>
+<step1>
+<ptxt>WARNING FUNCTION</ptxt>
+<step2>
+<ptxt>General</ptxt>
+<ptxt>When any of the situations below occur, the smart key system causes the certification ECU to sound the buzzer in the combination meter and the wireless door lock buzzer, and illuminate the combination meter's multi-information display in order to alert the driver.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.94in"/>
+<colspec colname="COL2" align="center" colwidth="2.14in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Warning Function Operation Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Situation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Exit warning if shift lever position is not P and power source mode is not off.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Exit warning if shift lever position is P and power source mode is not off.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Warning if occupant leaves with electrical key.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Warning if engine switch is operated while electrical key is outside detection area.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>D</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Warning if entry lock is operated while electrical key is inside cabin. </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Warning if electrical key battery is weak.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>F</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Situation A</ptxt>
+<ptxt>There are 2 patterns for situation A.</ptxt>
+<ptxt>Pattern 1: In situation A, the door is opened and the user tries to leave the vehicle. </ptxt>
+<ptxt>Pattern 2: Then the user holds the electrical key and tries to move away from the vehicle. </ptxt>
+<ptxt>In these situations, the following control is performed: </ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Pattern 1</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Sudden vehicle start, vehicle theft, vehicle roll-away</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Shift lever position is not P</ptxt>
+</item>
+<item>
+<ptxt>Engine switch is not off</ptxt>
+</item>
+<item>
+<ptxt>Driver side door is opened</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is 5 km/h (3.1 mph)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Continuous sound</ptxt>
+<ptxt>Warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+<item>
+<ptxt>Driver side door is opened</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is less than 5 km/h (3.1 mph)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Continuous sound</ptxt>
+<ptxt>Warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+<item>
+<ptxt>Driver side door is opened</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is above 5 km/h (3.1 mph)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Pattern 2</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Sudden vehicle start, vehicle theft, vehicle roll-away</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Shift lever position is not P</ptxt>
+</item>
+<item>
+<ptxt>Engine switch is not off</ptxt>
+</item>
+<item>
+<ptxt>Driver side door is opened and closed</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is 0 km/h (0 mph)</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is not in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Continuous sound</ptxt>
+<ptxt>Warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is above 0 km/h (0 mph) </ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Information below is displayed alternately on combination meter:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"Shift to P Range"</ptxt>
+</item>
+<item>
+<ptxt>"Key is not Detected"</ptxt>
+</item>
+</list1>
+<ptxt>"Shift to P Range" warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is above 0 km/h (0 mph) </ptxt>
+</item>
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+</list1>
+<ptxt>"Key is not Detected" warning is stopped when either of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Continuous sound</ptxt>
+<ptxt>Warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is above 0 km/h (0 mph) </ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Situation B</ptxt>
+<ptxt>There are 2 patterns for situation B.</ptxt>
+<ptxt>Pattern 1: In situation B, the door is opened and the user tries to leave the vehicle. </ptxt>
+<ptxt>Then the user holds the electrical key and tries to move away from the vehicle. </ptxt>
+<ptxt>Pattern 2: Then the user tries to use the entry lock and presses the lock switch. </ptxt>
+<ptxt>In these situations, the following control is performed:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Pattern 1</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle theft, engine cannot be restarted </ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+<item>
+<ptxt>Engine switch is not off</ptxt>
+</item>
+<item>
+<ptxt>Driver side door is opened and closed </ptxt>
+</item>
+<item>
+<ptxt>Electrical key is not in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Information below is displayed on combination meter:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"Key is not Detected"</ptxt>
+</item>
+</list1>
+<ptxt>Warning is stopped when either of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds 3 times</ptxt>
+<ptxt>Warning is stopped when either of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Pattern 2</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle theft</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Shift lever position is P</ptxt>
+</item>
+<item>
+<ptxt>Engine switch is not off</ptxt>
+</item>
+<item>
+<ptxt>All doors are closed</ptxt>
+</item>
+<item>
+<ptxt>Lock switch is "ON"</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is not in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds for 2 seconds</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Situation C</ptxt>
+<ptxt>In this situation, the following control is performed:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine cannot be restarted</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is not off</ptxt>
+</item>
+<item>
+<ptxt>Door other than driver side door is opened and closed</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is 0 km/h (0 mph)</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is not in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Information below is displayed on combination meter:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"Key is not Detected"</ptxt>
+</item>
+</list1>
+<ptxt>Warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is above 0 km/h (0 mph)</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds 3 times</ptxt>
+<ptxt>Warning is stopped when one of following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>Vehicle speed is above 0 km/h (0 mph)</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Situation D</ptxt>
+<ptxt>In this situation, the following control is performed:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Confuses the user</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when both following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is not off</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is not in cabin</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Information below is displayed on combination meter for 8 seconds (disappears after 8 seconds):</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"Key is not Detected"</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Situation E</ptxt>
+<ptxt>In this situation, the following control is performed:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle theft</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is off</ptxt>
+</item>
+<item>
+<ptxt>All doors are closed</ptxt>
+</item>
+<item>
+<ptxt>Lock switch is "ON"</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin or luggage compartment</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds for 2 seconds</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Situation F</ptxt>
+<ptxt>In this situation, the following control is performed:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Possible Effects without Warning</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Smart key system does not function</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Warning Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Certification ECU gives warning when all following conditions are satisfied:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Engine switch is turned off after being left on (IG) for over 20 minutes</ptxt>
+</item>
+<item>
+<ptxt>Electrical key battery voltage is low</ptxt>
+</item>
+<item>
+<ptxt>Electrical key is in cabin</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Buzzer</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Warning:</ptxt>
+<ptxt>Sounds once</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Combination Meter</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Multi-information Display</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Information below is displayed on combination meter:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>"Low Key Battery"</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Wireless Door Lock Buzzer</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>BATTERY SAVING</ptxt>
+<step2>
+<ptxt>Vehicle Battery Saving Function </ptxt>
+<ptxt>In the smart key system, signals are emitted outside of the vehicle at a prescribed interval (0.25 seconds) when the doors are locked. Therefore, the vehicle battery could be drained if the vehicle remains parked for a long time. For this reason, the controls listed below are carried out: </ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Both conditions below are met for 5 days:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Electrical key is not in detection area</ptxt>
+</item>
+<item>
+<ptxt>Touch sensor or lock switch operation is not performed</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Signal transmission interval is extended from 0.25 to 0.75 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Both conditions below are met for 14 days:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Electrical key is not in detection area</ptxt>
+</item>
+<item>
+<ptxt>Touch sensor or lock switch operation is not performed</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Automatically deactivates the smart key system </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>Reinstatement Conditions</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>A wireless door lock control signal (lock, unlock) is input and the ID code matches.</ptxt>
+</item>
+<item>
+<ptxt>A user carries the electrical key and pushes a lock switch on an outside door handle.</ptxt>
+</item>
+<item>
+<ptxt>A door is locked or unlocked by the mechanical key.</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Electrical Key Battery and Vehicle Battery Saving Function </ptxt>
+<ptxt>In the smart key system, if the electrical key is constantly located within the vehicle exterior detection area of the doors, the system maintains periodic communication with the electrical key. Therefore, if the vehicle remains parked in that state for a long time, the electrical key battery and the vehicle battery could be drained. For this reason, if this state continues longer than 10 minutes, the smart key system automatically becomes deactivated. </ptxt>
+<ptxt>Reinstatement Conditions</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>A wireless door lock control signal (lock, unlock) is input and the ID code matches.</ptxt>
+</item>
+<item>
+<ptxt>A user carries the electrical key and pushes a lock switch on an outside door handle.</ptxt>
+</item>
+<item>
+<ptxt>A door is locked or unlocked by the mechanical key.</ptxt>
+</item>
+</list1>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

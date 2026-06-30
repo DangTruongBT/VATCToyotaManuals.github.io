@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001PTO001X" category="C" type-id="300DX" name-id="BC12T-02" from="200601">
+<dtccode>C1225/25</dtccode>
+<dtcname>SMC Solenoid Circuit</dtcname>
+<dtccode>C1226/26</dtccode>
+<dtcname>SMC Solenoid Circuit</dtcname>
+<dtccode>C1227/27</dtccode>
+<dtcname>SRC Solenoid Circuit</dtcname>
+<dtccode>C1228/28</dtccode>
+<dtcname>SRC Solenoid Circuit</dtcname>
+<subpara id="RM000001PTO001X_01" type-id="60" category="03" proc-id="RM0250U___000014G00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>These solenoids turn on when signals are received from the skid control ECU and they control the pressure acting on the wheel cylinders to control the braking force.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1225/25</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid valve signal does not match the check result</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>SMC1 circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1226/26</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid valve signal does not match the check result</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>SMC2 circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1227/27</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid valve signal does not match the check result</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>SRC1 circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1228/28</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Solenoid valve signal does not match the check result</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</item>
+<item>
+<ptxt>SRC2 circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001PTO001X_02" type-id="32" category="03" proc-id="RM0250U___000014H00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C131988E04" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001PTO001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001PTO001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001PTO001X_04_0001" proc-id="RM0250U___000014I00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>These codes are detected when a problem is identified in the brake actuator assembly.</ptxt>
+<ptxt>The solenoid circuits are located in the brake actuator assembly.</ptxt>
+<ptxt>Therefore, solenoid circuit inspection and solenoid unit inspection cannot be performed. Be sure to check if the DTC is output before replacing the brake actuator assembly.</ptxt>
+</atten4>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at a speed of 12 mph (20 km/h) or more for 30 seconds or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000001NK5001X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.53in"/>
+<colspec colname="COL2" colwidth="2.55in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly (skid control ECU). Make sure that no DTCs are output.</ptxt>
+</item>
+<item>
+<ptxt>If any DTCs are output while jiggling a connector or wire harness of the brake actuator (skid control ECU), inspect and repair the connector or wire harness.</ptxt>
+</item>
+<item>
+<ptxt>It is suspected that the DTCs were output due to a bad connection of the connector terminal.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001PTO001X_04_0003" fin="true">A</down>
+<right ref="RM000001PTO001X_04_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001PTO001X_04_0002">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001PTO001X_04_0003">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

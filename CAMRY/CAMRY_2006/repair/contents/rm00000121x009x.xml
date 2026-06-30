@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM00000121X009X" category="J" type-id="304ZY" name-id="DL18V-01" from="200601">
+<dtccode/>
+<dtcname>Rear Door UNLOCK Detection Switch RH Circuit</dtcname>
+<subpara id="RM00000121X009X_01" type-id="60" category="03" proc-id="RM0250U___00009FY00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The rear right door unlock detection switch is built into the rear right door lock assembly. The switch turns on when the rear right door is locked and turns off when the door is unlocked.</ptxt>
+<ptxt>The main body ECU is connected to the rear right door lock assembly via terminal LSWR (w/ smart key system), LSWL (w/o smart key system), and rear right door lock/unlock state signals are input to the ECU.</ptxt>
+<ptxt>The main body ECU applies voltage to the door unlock detection switch via terminal LSWR (w/ smart key system), LSWL (w/o smart key system). When the door unlock detection switch is on (there is continuity between the switch terminals), a lock state signal is input to the ECU. When the switch is off (there is no continuity between the switch terminals), an unlock state signal is input.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM00000121X009X_02" type-id="32" category="03" proc-id="RM0250U___00009FZ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B109773E36" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<figure>
+<graphic graphicname="B109775E09" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM00000121X009X_04" type-id="51" category="05" proc-id="RM0250U___0000CI100000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Start the inspection from step 1 when w/ smart key system or w/o smart key system and w/ theft deterrent system, and start from step 2 when w/o smart key system and w/o theft deterrent system.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM00000121X009X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000121X009X_03_0001" proc-id="RM0250U___00009G000000">
+<testtitle>READ VALUE OF DATA LIST (UNLOCK DETECTION SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the DATA LIST to ensure proper function of the door unlock detection switch.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RR LOCK POS SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door lock position switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear right door lock is in UNLOCK position</ptxt>
+<ptxt>OFF: Rear right door lock is in LOCK position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The display is as specified in the normal condition column.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000121X009X_03_0006" fin="true">OK</down>
+<right ref="RM00000121X009X_03_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000121X009X_03_0002" proc-id="RM0250U___00009G100000">
+<testtitle>INSPECT REAR DOOR LOCK ASSEMBLY (UNLOCK DETECTION SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the rear door lock assembly RH.</ptxt>
+<figure>
+<graphic graphicname="E123891E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="4" align="center">
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL1" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.03in"/>
+<colspec colname="COL3" colwidth="1.04in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door Lock Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>6 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 4</ptxt>
+<ptxt>Battery negative (-) → Terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Lock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6 - 9</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 1</ptxt>
+<ptxt>Battery negative (-) → Terminal 4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Unlock</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM00000121X009X_03_0003" fin="false">OK</down>
+<right ref="RM00000121X009X_03_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000121X009X_03_0003" proc-id="RM0250U___00009G200000">
+<testtitle>CHECK WIRE HARNESS (REAR DOOR LOCK - MAIN BODY ECU (INSTRUMENT PANEL J/B))</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the rear door lock assembly RH connector.</ptxt>
+<figure>
+<graphic graphicname="B112608E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the ECU (instrument panel J/B) connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>J5-6 (LSSR) - IL-5 (*1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>J5-6 (LSSR) - E6-5 (LSWR) (*2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>J5-6 (LSSR) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>J5-9 (E) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*1: w/o SMART KEY SYSTEM</ptxt>
+<ptxt>*2: w/ SMART KEY SYSTEM</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM00000121X009X_03_0007" fin="true">OK</down>
+<right ref="RM00000121X009X_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000121X009X_03_0004">
+<testtitle>REPLACE REAR DOOR LOCK ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM00000121X009X_03_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM00000121X009X_03_0006">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM00000121X009X_03_0007">
+<testtitle>REPLACE MAIN BODY ECU (INSTRUMENT PANEL J/B)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

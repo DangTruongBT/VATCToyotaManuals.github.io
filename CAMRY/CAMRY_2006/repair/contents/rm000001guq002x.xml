@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GUQ002X" category="D" type-id="3001B" name-id="EI072-03" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000001GUQ002X_z0" proc-id="RM0250U___00008EX00000">
+<content5 releasenbr="2">
+<atten4>
+<ptxt>Use this procedure to troubleshoot the engine immobiliser system.</ptxt>
+<ptxt>The intelligent tester should be used in steps 3, 4, and 6.</ptxt>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CRANK ENGINE FOR MORE THAN 10 SECONDS</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK FOR DTCS</testtitle>
+<test1>
+<ptxt>Check for DTCs and note any codes that are output.</ptxt>
+</test1>
+<test1>
+<ptxt>Delete the DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck for DTCs. Try to duplicate the DTC (SFI system and engine immobiliser system) by simulating the symptoms indicated by the DTC.</ptxt>
+<test2>
+<ptxt>If the DTC does not reoccur, proceed to A.</ptxt>
+</test2>
+<test2>
+<ptxt>If the DTC (SFI system) reoccurs, proceed to B.</ptxt>
+</test2>
+<test2>
+<ptxt>If the DTC (engine immobiliser system) reoccurs, proceed to C.</ptxt>
+</test2>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO SFI SYSTEM</action-ci-right>
+<result>C</result>
+<action-ci-right>GO TO DTC CHART</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>READ VALUE ON INTELLIGENT TESTER</testtitle>
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>IMMOBILISER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>KEY SW</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Unlock warning switch signal/ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: Key is in ignition key cylinder</ptxt>
+<ptxt>OFF: No key is in ignition key cylinder</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>ON (Key is in ignition key cylinder) appears on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+<results>
+<result>NG</result>
+<action-ci-right>GO TO DTC B2780</action-ci-right>
+<result-ci-down>OK</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<test1>
+<ptxt>If the fault is not listed on the problem symptoms table, proceed to A.</ptxt>
+</test1>
+<test1>
+<ptxt>If the fault is listed on the problem symptoms table, proceed to B.</ptxt>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO STEP 7</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>OVERALL ANALYSIS AND TROUBLESHOOTING</testtitle>
+<test1>
+<ptxt>Inspection with the intelligent tester (DATA LIST).</ptxt>
+</test1>
+<test1>
+<ptxt>Inspection with the intelligent tester (ACTIVE TEST).</ptxt>
+</test1>
+<test1>
+<ptxt>TERMINALS OF ECU (See page <xref label="Seep01" href="RM000001GUS002X"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>ADJUST, REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

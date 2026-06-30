@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="41">
+<name>CRUISE CONTROL SYSTEM</name>
+<section id="1001O_S001A" variety="S001A">
+<name>CRUISE CONTROL</name>
+<ttl id="1001O_S001A_72XPQ_T007N" variety="T007N">
+<name>CLUTCH SWITCH</name>
+<para id="RM000001Z6F001X" category="G" type-id="3001K" name-id="CC0CE-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001Z6F001X_01" type-id="01" category="01">
+<s-1 id="RM000001Z6F001X_01_0001" proc-id="RM0250U___000020G00000">
+<ptxt>INSPECT CLUTCH SWITCH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Remove the clutch switch.</ptxt>
+<figure>
+<graphic graphicname="E113308E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<table>
+<title>Standard resistance</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch pin free (Clutch pedal depressed)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle"/>
+<entry valign="middle">
+<ptxt>Switch pin pushed in (Clutch pedal released)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, replace the clutch switch.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

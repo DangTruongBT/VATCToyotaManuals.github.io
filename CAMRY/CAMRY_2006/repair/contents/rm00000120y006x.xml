@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM00000120Y006X" category="M" type-id="80037" name-id="EI0FG-01" from="200601">
+<name>REGISTRATION</name>
+<subpara id="RM00000120Y006X_01" type-id="01" category="01">
+<s-1 id="RM00000120Y006X_01_0001" proc-id="RM0250U___00009SO00000">
+<ptxt>DESCRIPTION OF CODE REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<atten4>
+<ptxt>The key has 2 codes: The key code (immobiliser code) and the wireless code. Both of these codes need to be registered. Refer to page for the wireless code registration procedures.</ptxt>
+</atten4>
+<s2>
+<ptxt>When adding master keys or sub keys (Additional registration):</ptxt>
+<s3>
+<ptxt>Register key code (immobiliser code) in the transponder key ECU.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Target ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transponder key ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Procedure "A"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>When replacing the transponder key ECU (New registration):</ptxt>
+<s3>
+<ptxt>Register the key code (immobiliser code) in the transponder key ECU.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Target ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transponder key ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Procedure "B"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+<s3>
+<ptxt>Register the ECU communication ID between the ECM and the transponder key ECU.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Target ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transponder key ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Procedure "C"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+<s2>
+<ptxt>When replacing the ECM:</ptxt>
+<s3>
+<ptxt>Register the ECU communication ID between the ECM and the transponder key ECU.</ptxt>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Target ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transponder key ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Procedure "C"</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000120Y006X_01_0002" proc-id="RM0250U___00009SP00000">
+<ptxt>KEY REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Automatic registration (Procedure "B"):</ptxt>
+<ptxt>The new registration of the key codes (immobiliser codes) is made automatically.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When installing a new transponder key ECU, the key codes (immobiliser codes) must be registered.</ptxt>
+</item>
+<item>
+<ptxt>A new transponder key ECU starts in the automatic key code registration mode. In this mode, a maximum of 4 key codes for 3 master keys and 1 sub key can be registered. Since the transponder key ECU can distinguish types of keys, any registration order is acceptable.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<title>Automatic Key Code Registration (New Registration):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Security Indicator Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1. Start (Procedure "D")</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blinking occurs until the first key is inserted.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Insert the key into the ignition key cylinder.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3. Registration begins.</ptxt>
+<atten4>
+<ptxt>The registration will be completed approx. 1 sec. after the key is inserted.</ptxt>
+</atten4>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+<atten4>
+<ptxt>Approx. 1 sec.</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4. Remove the key.</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>ON</ptxt>
+<atten4>
+<ptxt>When the maximum number of the key codes is registered, the security indicator remains off until the last key registered is removed. After it is removed, the security indicator starts blinking.</ptxt>
+</atten4>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5. Register another key ?</ptxt>
+<ptxt>Yes: Go to procedure "D"</ptxt>
+<ptxt>No: Go to procedure "E"</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL1" nameend="COL2" valign="middle">
+<ptxt>6. End (Procedure "E")</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>When no key is inserted in the key cylinder while the system is in automatic key code registration mode, the security indicator remains on.</ptxt>
+</item>
+<item>
+<ptxt>When the immobiliser system is operating normally and the key is pulled out, the security indicator blinks continuously.</ptxt>
+</item>
+<item>
+<ptxt>If the key code registration has failed in the automatic key code registration mode, code 2-1 will be output from the security indicator. Trying to register an already registered key will cause code 2-2 to be output when the key is inserted. If the number of registered key codes exceeds the limit, code 2-3 will be output from the security indicator. The output details are shown below.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="B111593E14" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Finish the automatic key code registration mode. The automatic key code registration mode can be forced to end, when at least 1 key code (immobiliser code) for the master key has been registered.</ptxt>
+<s3>
+<ptxt>Turn the ignition switch on and off 5 times within 10 seconds using the master key that has already been registered.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000120Y006X_01_0003" proc-id="RM0250U___00009SQ00000">
+<ptxt>REGISTRATION OF ADDITIONAL KEY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Additional registration (Procedure "A"):</ptxt>
+<ptxt>Register an additional key by using the intelligent tester.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A maximum of 5 key codes and 3 sub key codes can be registered.</ptxt>
+</item>
+<item>
+<ptxt>Registration mode will end if any step is not completed within the specified time.</ptxt>
+</item>
+<item>
+<ptxt>When the ignition cylinder or the key cylinder set is replaced, remove the transmitter module from the original master key. Then install this transmitter module to a new key and use it as the master key. If necessary, use this master key to register other keys.</ptxt>
+</item>
+</list1>
+</atten4>
+<atten3>
+<ptxt>When only the ignition key cylinder has been replaced, you can lock or unlock doors by wireless operation using the new key with built in transmitter but not by inserting it in the door key cylinder. Therefore, keep the original key for the door lock or unlock operation in order to avoid malfunctions caused by a dead transmitter battery in the new key.</ptxt>
+</atten3>
+<table pgwide="1">
+<title>Additional Registration:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+<ptxt>(Completion of operation)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Security Indicator Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1. Start</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Indicator blinks until the first key is inserted.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Insert the already registered master key in the ignition key cylinder and turn the ignition switch on.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3. Intelligent tester operation</ptxt>
+<ptxt>(1) Select IMMOBILISER</ptxt>
+<ptxt>(2) Select ID UTILITY</ptxt>
+<ptxt>(3) Select IMMOB CODE REG</ptxt>
+<atten4>
+<ptxt>After completing the above operation, proceed to the next step in accordance with the prompts on the tester screen.</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Within 120 sec.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4. Remove the master key.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Within 20 sec. of the instruction on the tester</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5. Insert the key to be registered in the ignition key cylinder.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Within 10 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>6. After 60 sec. the key is registered.</ptxt>
+<atten4>
+<ptxt>The security indicator goes off.</ptxt>
+</atten4>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7. Next</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL1" nameend="COL3" valign="middle">
+<ptxt>8. End</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten3>
+<ptxt>If the key code registration has failed in automatic key code registration mode, code 2-1 will be output from the security indicator. Trying to register an already registered key will cause code 2-2 to be output when the key is inserted. If the number of registered key codes exceeds the limit, code 2-3 will be output from the security indicator. The output details are shown in procedure "B".</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A brief outline of procedures for key code registration is shown above. For detailed information, refer to the screen of the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>When the immobiliser system is operating normally and the key is pulled out, the security indicator will blink.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000120Y006X_01_0004" proc-id="RM0250U___00009SR00000">
+<ptxt>ERASURE OF KEY CODE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Erase the key codes by using the intelligent tester.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>All key codes will be erased except for the master key which is used for erasing the key codes. In order to use a key for which the code has been erased, it is necessary to register the key code again.</ptxt>
+</item>
+<item>
+<ptxt>The registration operation will be cancelled if any step is not completed within the specified time.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<title>Erasing Key Code:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Procedure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Time</ptxt>
+<ptxt>(Operation Completion Time)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Security Indicator Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1. Start</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Indicator blinks until the first key is inserted.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Insert the already registered master key in the ignition key cylinder and turn the ignition switch on.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3. Intelligent tester operation</ptxt>
+<ptxt>(1) Select IMMOBILISER</ptxt>
+<ptxt>(2) Select ID UTILITY</ptxt>
+<ptxt>(3) Select IMMOB CODE ERA</ptxt>
+<atten4>
+<ptxt>After completing the above operation, proceed to the next step in accordance with the prompts on the tester screen.</ptxt>
+</atten4>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Within 120 sec.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4. Remove the master key.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Within 10 sec. of the instruction on the tester</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON for 1 sec. then OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5. Next</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blinking</ptxt>
+</entry>
+</row>
+<row>
+<entry namest="COL1" nameend="COL3" valign="middle">
+<ptxt>6. End</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A brief outline of procedures for key code registration is shown above. For detailed information, refer to the screen of the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>When the immobiliser system is operating normally and the key is pulled out, the security indicator will blink.</ptxt>
+</item>
+</list1>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM00000120Y006X_01_0005" proc-id="RM0250U___00009SS00000">
+<ptxt>ECU COMMUNICATION ID REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The ECU communication ID should be registered when the transponder key ECU and/or the ECM is replaced in order to match it to the ECM communication ID.</ptxt>
+</item>
+<item>
+<ptxt>The SFI system cannot be started unless the ECM communication ID matches.</ptxt>
+</item>
+</list1>
+</atten3>
+<s2>
+<ptxt>ECU communication ID registration (Procedure "C"):</ptxt>
+<ptxt>Register the ECU communication ID, after the transponder key ECU and/or the ECM is replaced.</ptxt>
+<figure>
+<graphic graphicname="B139171E01" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<s3>
+<ptxt>Using SST, connect terminals TC and CG of the DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch to the ON position and leave the vehicle as is for 30 minutes.</ptxt>
+</s3>
+<s3>
+<ptxt>Check that the engine starts.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

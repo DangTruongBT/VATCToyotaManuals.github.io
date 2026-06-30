@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000W95011X" category="C" type-id="302I7" name-id="ES0E0-19" from="200601">
+<dtccode>P0604</dtccode>
+<dtcname>Internal Control Module Random Access Memory (RAM) Error</dtcname>
+<dtccode>P0606</dtccode>
+<dtcname>ECM / PCM Processor</dtcname>
+<dtccode>P0607</dtccode>
+<dtcname>Control Module Performance</dtcname>
+<dtccode>P0657</dtccode>
+<dtcname>Actuator Supply Voltage Circuit / Open</dtcname>
+<subpara id="RM000000W95011X_01" type-id="60" category="03" proc-id="RM0250U___00002QA00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM continuously monitors its internal memory status, internal circuits, and output signals sent to the throttle actuator. This self-check ensures that the ECM is functioning properly. If any malfunction is detected, the ECM will set the appropriate DTC and illuminate the MIL.</ptxt>
+<ptxt>The ECM memory status is diagnosed by internal "mirroring" of the main CPU and the sub CPU to detect Random Access Memory (RAM) errors. The 2 CPUs also perform continuous mutual monitoring. The ECM illuminates the MIL and sets a DTC if: 1) outputs from the 2 CPUs are different and deviate from the standards, 2) the signals sent to the throttle actuator deviate from the standards, 3) a malfunction is found in the throttle actuator supply voltage, and 4) any other ECM malfunction is found.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No. </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0604</ptxt>
+<ptxt>P0606</ptxt>
+<ptxt>P0607</ptxt>
+<ptxt>P0657</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ECM internal error (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ECM</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W95011X_02" type-id="65" category="03" proc-id="RM0250U___00002QB00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.14in"/>
+<colspec colname="COL2" colwidth="3.94in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0604: ECM RAM error</ptxt>
+<ptxt>P0606: ECM range check</ptxt>
+<ptxt>P0607: ECM CPU malfunction</ptxt>
+<ptxt>P0657: ETCS power supply</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 1 second</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W95011X_03" type-id="66" category="03" proc-id="RM0250U___00002QC00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W95011X_04" type-id="67" category="03" proc-id="RM0250U___00002QD00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>ECM RAM errors (P0604):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>RAM mirror check</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ECM CPU range check (P0606):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either of following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Difference between throttle valve position of main CPU and throttle valve position of sub CPU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Difference between accelerator pedal position of main CPU and accelerator pedal position of sub CPU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ECM CPU malfunction (P0607):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either A or B is met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. Following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CPU reset</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 time or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Learned TP - learned APP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.4 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. CPU reset</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 times or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ETCS power supply (P0657):</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ETCS (Electronic Throttle Control System) power supply when ignition switch turned on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>7 V or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000W95011X_05" type-id="51" category="05" proc-id="RM0250U___00002QE00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000W95011X_06" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000W95011X_06_0001" proc-id="RM0250U___00002QF00000">
+<testtitle>CHECK OTHER DTC OUTPUT (IN ADDITION TO DTC P0604/P0606/P0607/P0657)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0604, P0606, P0607, P0657</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No output DTC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000W95011X_06_0003" fin="true">A</down>
+<right ref="RM000000W95011X_06_0002" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000W95011X_06_0002">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000W95011X_06_0003">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

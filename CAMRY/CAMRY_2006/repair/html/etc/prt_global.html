@@ -1,0 +1,57 @@
+<!-- $Id: prt_global.html,v 1.6 2004/04/26 05:01:21 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 Close                                                           -->
+<!--    001 All                                                             -->
+<!--    002 Clear                                                           -->
+<!--    003 Print                                                           -->
+<!--    004 Preview                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Print Preview Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (!parent.selectable) {
+		document.all('selectall').style.visibility="hidden";
+		document.all('selectnone').style.visibility="hidden";
+		document.all('print').style.display="";
+	}	else {
+		document.all('confirm').style.display="";
+	}
+}
+</script>
+</head>
+<body onLoad="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr><td></td></tr>
+	<tr>
+		<td align="center">
+			<table width="98%" cellpadding="2" cellspacing="0" border="0">
+				<tr>
+					<td width="2"><br></td>
+					<td align="left">
+						<a id="print" class="window-control-button" href="#" style="display:none;" onClick="parent.framePrint(parent.contents);">Print</a><!-- 003 -->
+						<a id="confirm" class="window-control-button" href="#" style="display:none;" onClick="javaScript:parent.printConfirm(parent.contents.document, parent.global.document);">Preview</a><!--004-->
+					</td>
+					<td align="center">
+						<a id="selectall" class="window-control-button" href="#" onClick="javaScript:parent.allSelect(parent.contents.document.f1, true);">All</a><!-- 001 -->
+						<a id="selectnone" class="window-control-button" href="#" onClick="javaScript:parent.allSelect(parent.contents.document.f1, false);">Clear</a><!-- 002 -->
+					</td>
+					<td align="right">
+						<a class="window-control-button" href="#" onClick="parent.window.close();">Close</a><!-- 000 -->
+					</td>
+					<td width="2"><br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

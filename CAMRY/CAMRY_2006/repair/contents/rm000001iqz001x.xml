@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10007_S000G" variety="S000G">
+<name>2GR-FE FUEL</name>
+<ttl id="10007_S000G_7305S_T00DP" variety="T00DP">
+<name>FUEL SYSTEM</name>
+<para id="RM000001IQZ001X" category="G" type-id="8000T" name-id="FU0SM-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000001IQZ001X_01" type-id="01" category="01">
+<s-1 id="RM000001IQZ001X_01_0001" proc-id="RM0250U___00008SQ00000">
+<ptxt>CHECK FOR FUEL PUMP OPERATION AND FUEL LEAKS</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check fuel pump operation.</ptxt>
+<s3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</s3>
+<s3>
+<ptxt>Turn the ignition switch on (IG) and push the intelligent tester main switch on.</ptxt>
+<atten3>
+<ptxt>Do not start the engine.</ptxt>
+</atten3>
+</s3>
+<s3>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / FUEL PUMP / SPD.</ptxt>
+</s3>
+<s3>
+<ptxt>Check for pressure in the fuel inlet tube from the fuel line. Check that sound of fuel flowing in the fuel tank can be heard. If no sound can be heard, check the integration relay, fuel pump, ECM and wiring connector.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Check for fuel leaks.</ptxt>
+<s3>
+<ptxt>Check that there are no fuel leaks anywhere on the system after performing maintenance. If there is a fuel leak, repair or replace parts as necessary.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the intelligent tester from the DLC3.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001IQZ001X_01_0002" proc-id="RM0250U___00008SR00000">
+<ptxt>CHECK FUEL PRESSURE</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Discharge the fuel system pressure (See page <xref label="Seep02" href="RM000001IQW001X"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Using a voltmeter, measure the battery voltage.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Disconnect the cable from the negative (-) battery terminal.</ptxt>
+</s2>
+<s2>
+<ptxt>Disconnect the fuel hose from the fuel main tube (See page <xref label="Seep01" href="RM000001IQW001X"/>).</ptxt>
+</s2>
+<s2>
+<ptxt>Install SST (pressure gauge) using SST and a fuel tube connector as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="A129461E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09268-31011</s-number>
+<s-subnumber>09268-41500</s-subnumber>
+<s-subnumber>90467-13001</s-subnumber>
+<s-subnumber>95336-08070</s-subnumber>
+</sstitem>
+<sstitem>
+<s-number>09268-45014</s-number>
+<s-subnumber>09268-41200</s-subnumber>
+<s-subnumber>09268-41220</s-subnumber>
+<s-subnumber>09268-41250</s-subnumber>
+</sstitem>
+</sst>
+</s2>
+<s2>
+<ptxt>Wipe up any gasoline.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the cable to the negative (-) battery terminal.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</s2>
+<s2>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / FUEL PUMP / SPD.</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the fuel pressure.</ptxt>
+<spec>
+<title>Fuel pressure</title>
+<specitem>
+<ptxt>304 to 343 kPa (3.1 to 3.5 kgf*cm<sup>2</sup>, 44.1 to 49.7 psi)</ptxt>
+</specitem>
+</spec>
+<list1 type="unordered">
+<item>
+<ptxt>If the fuel pressure is greater than the standard value, replace the fuel pressure regulator.</ptxt>
+</item>
+<item>
+<ptxt>If the fuel pressure is less than the standard value, check the fuel hoses and connections, fuel pump, fuel filter and fuel pressure regulator.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>Disconnect the intelligent tester from the DLC3.</ptxt>
+</s2>
+<s2>
+<ptxt>Start the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Measure the fuel pressure at idle.</ptxt>
+<spec>
+<title>Fuel pressure</title>
+<specitem>
+<ptxt>304 to 343 kPa (3.1 to 3.5 kgf*cm<sup>2</sup>, 44.1 to 49.7 psi)</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Stop the engine.</ptxt>
+</s2>
+<s2>
+<ptxt>Check that the fuel pressure remains as specified for 5 minutes after the engine stops.</ptxt>
+<spec>
+<title>Fuel pressure</title>
+<specitem>
+<ptxt>147 kPa (1.5 kgf*cm<sup>2</sup>, 21 psi) or more</ptxt>
+</specitem>
+</spec>
+<ptxt>If the fuel pressure is not as specified, check the fuel pump, pressure regulator and/or fuel injectors.</ptxt>
+</s2>
+<s2>
+<ptxt>After checking the fuel pressure, carefully disconnect the negative (-) battery cable, and remove the SST and fuel tube connector to prevent gasoline from splashing.</ptxt>
+</s2>
+<s2>
+<ptxt>Reconnect the fuel tube to the main fuel tube (fuel tube connector).</ptxt>
+</s2>
+<s2>
+<ptxt>Install the No. 1 fuel pipe clamp to the fuel tube connector.</ptxt>
+</s2>
+<s2>
+<ptxt>Check for fuel leaks (step 1).</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

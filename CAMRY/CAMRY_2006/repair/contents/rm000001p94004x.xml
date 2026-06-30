@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000001P94004X" category="J" type-id="304ZP" name-id="DL14E-01" from="200601">
+<dtccode/>
+<dtcname>Luggage Compartment Door Open Switch Circuit</dtcname>
+<subpara id="RM000001P94004X_01" type-id="60" category="03" proc-id="RM0250U___00009O800000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If the certification ECU detects that the luggage compartment open switch is pressed when the driver is carrying the electrical key or when the electrical key is locked in the luggage compartment door, the certification ECU sends a luggage compartment door open motor drive request signal to the main body ECU.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001P94004X_02" type-id="32" category="03" proc-id="RM0250U___00009O900000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B112474E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001P94004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001P94004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001P94004X_04_0002" proc-id="RM0250U___00009OB00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CERTIFICATION ECU - LUGGAGE COMPARTMENT OPEN SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E58 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="B137968E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection (Symbols)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>E58-7 (TSW5) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment open switch not pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment open switch pushed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P94004X_04_0001" fin="false">NG</down>
+<right ref="RM000001P94004X_04_0003" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P94004X_04_0001" proc-id="RM0250U___00009OA00000">
+<testtitle>INSPECT LUGGAGE COMPARTMENT OPEN SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the switch connector.</ptxt>
+<figure>
+<graphic graphicname="B137969E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<colspec colname="COL3" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>S9-1 - S9-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment open switch not pushed (OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Luggage compartment open switch pushed (ON)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001P94004X_04_0006" fin="true">OK</down>
+<right ref="RM000001P94004X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001P94004X_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001P94004X_04_0004">
+<testtitle>REPLACE LUGGAGE COMPARTMENT OPEN SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000001P94004X_04_0006">
+<testtitle>REPLACE CERTIFICATION ECU</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

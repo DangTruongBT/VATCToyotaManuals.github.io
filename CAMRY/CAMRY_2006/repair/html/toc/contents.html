@@ -1,0 +1,46 @@
+<!-- $Id: contents.html,v 1.5 2004/04/26 05:05:51 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Please choose a section on the left window.                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Index Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	var sctId = parent.findParameterValue("servcat", location.search);
+	var secId = null; 
+	if (sctId==null) {
+		paraId = parent.findParameterValue("parag", parent.location.search);
+		parent.g_tocXml.setProperty("SelectionLanguage", "XPath");
+		sctIdNode = parent.g_tocXml.selectSingleNode("//servcat[descendant::para/@id='"+paraId+"']/@id");
+		if (sctIdNode!=null) sctId = sctIdNode.nodeTypedValue;
+		if (sctId==null) return;
+		secIdNode = parent.g_tocXml.selectSingleNode("//section[descendant::para/@id='"+paraId+"']/@id");
+		secId = (secIdNode!=null) ? secIdNode.nodeTypedValue : null;
+	}
+	var paraHash = new parent.Hashtable();
+	paraHash.put("servcat_id", sctId);
+	parent.display(parent.g_tocXml, parent.g_lstXsl, disp, paraHash);
+	empty.style.display="inline";
+	if (secId!=null) location.hash = secId;
+}
+</script>
+</head>
+<body onLoad="init()">
+<div id="disp">
+Please choose a section on the left window.<!-- 000 -->
+</div>
+<div id="empty" style="display:none">
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+</body>
+</html>

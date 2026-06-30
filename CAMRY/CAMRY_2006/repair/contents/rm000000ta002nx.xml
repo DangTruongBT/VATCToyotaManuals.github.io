@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000TA002NX" category="C" type-id="302IA" name-id="AX1KA-01" from="200601">
+<dtccode>P0617</dtccode>
+<dtcname>Starter Relay Circuit High</dtcname>
+<subpara id="RM000000TA002NX_01" type-id="60" category="03" proc-id="RM0250U___00002QG00001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>While the engine is being cranked, the positive battery voltage is applied to terminal STA of the TCM.</ptxt>
+<ptxt>If the TCM detects the Starter Control (STA) signal while the vehicle is being driven, it determines that there is a malfunction in the STA circuit. The TCM then illuminates the MIL and sets the DTC.</ptxt>
+<ptxt>This monitor runs when the vehicle is driven at 12.4 mph (20 km/h) for over 20 seconds.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0617</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When conditions (a), (b) and (c) are met, positive (+B) battery voltage 10.5 V or more applied to TCM for 20 seconds</ptxt>
+<ptxt>(1 trip detection logic):</ptxt>
+<ptxt>(a) Vehicle speed more than 12.4 mph (20 km/h)</ptxt>
+<ptxt>(b) Engine speed more than 1,000 rpm</ptxt>
+<ptxt>(c) STA signal ON</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Park/Neutral Position (PNP) switch</ptxt>
+</item>
+<item>
+<ptxt>Starter relay circuit</ptxt>
+</item>
+<item>
+<ptxt>Cranking holding function circuit (With smart key system)</ptxt>
+</item>
+<item>
+<ptxt>Ignition switch (Without smart key system)</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TA002NX_02" type-id="65" category="03" proc-id="RM0250U___00002QH00001">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0617: Starter signal</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>STARTER relay, PMP switch, Engine switch</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed sensor (VSS), Crankshaft Position (CKP) sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TA002NX_03" type-id="66" category="03" proc-id="RM0250U___00002QI00001">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever these DTCs are not present:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>12.43 mph (20 km/h) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine speed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1,000 rpm or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TA002NX_04" type-id="67" category="03" proc-id="RM0250U___00002QJ00001">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" align="left" colwidth="3.54in"/>
+<colspec colname="col2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Starter signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TA002NX_05" type-id="32" category="03" proc-id="RM0250U___00002QK00001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C122810E04" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<figure>
+<graphic graphicname="C122808E04" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000TA002NX_06" type-id="51" category="05" proc-id="RM0250U___00002QL00001">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The following troubleshooting flowchart is based on the premise that the engine is cranked normally. If the engine does not crank, proceed to the problem symptoms table (See page <xref label="Seep01" href="RM000002205002X"/>).</ptxt>
+</item>
+<item>
+<ptxt>Read freeze frame data using the intelligent tester. The TCM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep02" href="RM000000PDS00ZX"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TA002NX_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000TA002NX_07_0001" proc-id="RM0250U___00002QM00001">
+<testtitle>READ VALUE OF INTELLIGENT TESTER (STARTER SIGNAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ALL / STARTER SIG. </ptxt>
+</test1>
+<test1>
+<ptxt>Check the value displayed on the tester when the ignition switch is turned on (IG) and the engine is started.</ptxt>
+<spec>
+<title>OK</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Switch Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ENGINE START</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STARTER SIG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TA002NX_07_0002" fin="false">NG</down>
+<right ref="RM000000TA002NX_07_0003" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0002" proc-id="RM0250U___00002QN00001">
+<testtitle>INSPECT PARK / NEUTRAL POSITION SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the Park / Neutral Position (PNP) switch.</ptxt>
+<figure>
+<graphic graphicname="A107908E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the C1 switch connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title> Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Gear Selector Lever Position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reconnect the PNP switch connector.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.07in"/>
+<colspec colname="COL2" align="center" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>OK (without smart key system)</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK (with smart key system)</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TA002NX_07_0011" fin="false">A</down>
+<right ref="RM000000TA002NX_07_0005" fin="true">B</right>
+<right ref="RM000000TA002NX_07_0004" fin="true">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0011" proc-id="RM0250U___00006B100001">
+<testtitle>INSPECT IGNITION SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E23 ignition switch connector.</ptxt>
+<figure>
+<graphic graphicname="A135034E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.38in"/>
+<colspec colname="COL2" align="center" colwidth="1.37in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.38in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>LOCK</ptxt>
+</entry>
+<entry>
+<ptxt>3-4, 5-7</ptxt>
+</entry>
+<entry>
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>START</ptxt>
+</entry>
+<entry>
+<ptxt>3-4, 5-7</ptxt>
+</entry>
+<entry>
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ignition switch connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TA002NX_07_0012" fin="false">OK</down>
+<right ref="RM000000TA002NX_07_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0012" proc-id="RM0250U___00006B200001">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DATA LIST / ALL / STARTER SIG. </ptxt>
+</test1>
+<test1>
+<ptxt>Check the value displayed on the tester when the ignition switch is turned on (IG) and the ignition is started.</ptxt>
+<spec>
+<title>OK</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Switch Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ENGINE START</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>STARTER SIG</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TA002NX_07_0013" fin="true">OK</down>
+<right ref="RM000000TA002NX_07_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0013">
+<testtitle>SYSTEM IS OK</testtitle>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0003">
+<testtitle>REPLACE TCM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0004">
+<testtitle>REPLACE PARK / NEUTRAL POSITION SWITCH (THEN CHECK CRANKING HOLDING FUNCTION CIRCUIT)<xref label="Seep01" href="RM0000016E100FX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0005">
+<testtitle>CHECK CRANKING HOLDING FUNCTION CIRCUIT<xref label="Seep01" href="RM000000WZ3011X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0014">
+<testtitle>REPAIR OR REPLACE IGNITION SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000TA002NX_07_0015">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

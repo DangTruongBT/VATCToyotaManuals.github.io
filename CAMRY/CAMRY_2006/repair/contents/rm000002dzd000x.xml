@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000002DZD000X" category="C" type-id="30182" name-id="TW0EY-02" from="200601">
+<dtccode>C2111/11</dtccode>
+<dtcname>Transmitter ID1 Operation Stop</dtcname>
+<dtccode>C2112/12</dtccode>
+<dtcname>Transmitter ID2 Operation Stop</dtcname>
+<dtccode>C2113/13</dtccode>
+<dtcname>Transmitter ID3 Operation Stop</dtcname>
+<dtccode>C2114/14</dtccode>
+<dtcname>Transmitter ID4 Operation Stop</dtcname>
+<dtccode>C2115/15</dtccode>
+<dtcname>Transmitter ID5 Operation Stop</dtcname>
+<subpara id="RM000002DZD000X_01" type-id="60" category="03" proc-id="RM0250U___0000CDA00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The tire pressure warning valve and transmitters that are installed in the tire and wheel assemblies measure the air pressures of the tires. The measured values are transmitted to the tire pressure warning antenna and receiver on the body as radio waves and then sent to the tire pressure warning ECU. The ECU compares the measured air pressure values with the air pressure threshold. When the measured air pressure value is less than this threshold, the warning light in the combination meter comes on. The tire pressure warning ECU stores a DTC when the tire pressure warning valve and transmitter stops transmitting signals. At this time, forcibly transmit the signals by releasing the tire pressure rapidly. The stored DTC is cleared when the signal transmission is resumed.</ptxt>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>C2111/11</ptxt>
+<ptxt>C2112/12</ptxt>
+<ptxt>C2113/13</ptxt>
+<ptxt>C2114/14</ptxt>
+<ptxt>C2115/15</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Tire pressure warning valve and transmitters stop transmitting signals</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>It is necessary to perform the procedure to identify the tire pressure warning valve and transmitter that is malfunctioning because it cannot be identified by the output DTC.</ptxt>
+</item>
+<item>
+<ptxt>DTC C2115/15 are used only when the vehicle is equipped with a full-size spare tire.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000002DZD000X_02" type-id="32" category="03" proc-id="RM0250U___0000CDB00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E130159E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000002DZD000X_03" type-id="51" category="05" proc-id="RM0250U___0000CDC00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>It is necessary to perform initialization (See page <xref label="Seep01" href="RM000000XMZ008X"/>) after registration (See page <xref label="Seep02" href="RM000000XN1008X"/>) of the transmitter IDs into the tire pressure warning ECU after the ECU and/or valve and transmitter has been replaced.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Set the tire pressure to the specified value.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000002DZD000X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002DZD000X_04_0001" proc-id="RM0250U___0000CDD00000">
+<testtitle>PERFORM FORCED TRANSMISSION OF TRANSMITTER ID OF ALL WHEELS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Set the tire pressure to the specified value.</ptxt>
+<table pgwide="1">
+<title>Cold tire Inflation Pressure</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.37in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<colspec colname="COL3" colwidth="2.34in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tire size</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear kPa (kgf / cm<sup>2</sup>, psi)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P215/60R16 94 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>210 (2.1, 31)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>210 (2.1, 31)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P215/55R17 93 V</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>220 (2.2, 32)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>220 (2.2, 32)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the tester ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Select "TIREPRESS" by following the prompts displayed on the intelligent tester.</ptxt>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range (display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 tire inflation pressure / min.:0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf / cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 tire inflation pressure / min.:0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf / cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 tire inflation pressure / min.:0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf / cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 tire inflation pressure / min.:0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf / cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TIREPRESS5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 tire inflation pressure / min.:0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf / cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Rapidly release the pressures from each wheel by approximately 40 kPa (0.4 kgf / cm<sup>2</sup>, 5.8 psi) /30 seconds or more.</ptxt>
+<test2>
+<ptxt>Check that each tire pressure data displayed on the intelligent tester screen has changed.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Each tire pressure data displayed on the intelligent tester screen will change to the value of the tire pressure.</ptxt>
+</specitem>
+</spec>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>It takes about 1 minute or more to display the updated tire pressure data.</ptxt>
+</item>
+<item>
+<ptxt>When the "TIREPRESS" data has not changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270 degrees (including the full-size spare tire). Then rapidly release the tire pressure and recheck it.</ptxt>
+</item>
+</list1>
+</atten3>
+</test2>
+<test2>
+<ptxt>After confirming that all of the tire pressure data displayed on the intelligent tester screen have changed, set the tire pressure to the appropriate specified values.</ptxt>
+<atten4>
+<ptxt>If the tire pressure data displayed on the intelligent tester screen has not changed after rechecking, go to other problem procedure (For malfunction in transmission or reception function (See page <xref label="Seep01" href="RM000000XMT008X"/>)</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000002DZD000X_04_0003" fin="true">OK</down>
+<right ref="RM000002DZD000X_04_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000002DZD000X_04_0002">
+<testtitle>INSPECT OTHER PROBLEM (MALFUNCTION IN TRANSMISSION OR RECEPTION FUNCTION)</testtitle>
+</testgrp>
+<testgrp id="RM000002DZD000X_04_0003">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

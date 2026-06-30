@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000000TS8005X" category="J" type-id="300CJ" name-id="AC1WI-01" from="200601">
+<dtccode/>
+<dtcname>Blower Motor Circuit</dtcname>
+<subpara id="RM000000TS8005X_01" type-id="60" category="03" proc-id="RM0250U___00004H000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E107334E04" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<ptxt>The blower motor is operated by signals from the A/C amplifier. The blower motor speed is controlled using various duty ratios.</ptxt>
+<list1 type="nonmark">
+<title>Duty Ratio:</title>
+<item>
+<ptxt>The duty ratio is the ratio of the blower motor ON time (A) to the total of the blower motor ON and OFF time (A + B).</ptxt>
+</item>
+<item>
+<ptxt>The blower motor controller controls the blower motor speed.</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000TS8005X_02" type-id="32" category="03" proc-id="RM0250U___00004H100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E116881E05" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000TS8005X_03" type-id="51" category="05" proc-id="RM0250U___0000B8C00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>AUTO A/C: Start inspection from step 1.</ptxt>
+</item>
+<item>
+<ptxt>MANUAL A/C: Start inspection from step 2.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TS8005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000TS8005X_04_0006" proc-id="RM0250U___00004H400000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the ACTIVE TEST and then check that the blower motor operates.</ptxt>
+</test1>
+<table pgwide="1">
+<title>ACTIVE TEST / AIR CONDITIONER:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details / Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>BLOWER MOTOR</ptxt>
+<ptxt>(Blower motor)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Blower motor / Min.: Level 01, Max.: Level 31</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.25in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (blower motor does not operate)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG (blower motor operates but does not change speed)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0003" fin="true">A</down>
+<right ref="RM000000TS8005X_04_0001" fin="false">B</right>
+<right ref="RM000000TS8005X_04_0010" fin="false">C</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0001" proc-id="RM0250U___00004H200000">
+<testtitle>INSPECT FUSIBLE LINK (HTR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the fusible link from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="C136500E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check if the fusible link is melted.</ptxt>
+<figure>
+<graphic graphicname="E130412E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The point indicated by "A" is not melted.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Install the fusible link to the engine room R/B with the nut.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0007" fin="false">OK</down>
+<right ref="RM000000TS8005X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0007" proc-id="RM0250U___00004H500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BLOWER MOTOR - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the blower motor connector.</ptxt>
+<figure>
+<graphic graphicname="I041124E15" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E39-1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0008" fin="false">OK</down>
+<right ref="RM000000TS8005X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0008" proc-id="RM0250U___00004H600000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BLOWER MOTOR - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the blower motor connector.</ptxt>
+<figure>
+<graphic graphicname="I041124E16" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E39-3 (+B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0009" fin="false">OK</down>
+<right ref="RM000000TS8005X_04_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0009" proc-id="RM0250U___00004H700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (A/C AMPLIFIER - BLOWER MOTOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A/C amplifier connector.</ptxt>
+<figure>
+<graphic graphicname="E124470E12" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="I041124E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E39-2 (SI) - E38-23 (BLW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E39-2 (SI) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0010" fin="false">OK</down>
+<right ref="RM000000TS8005X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0010" proc-id="RM0250U___00004H800000">
+<testtitle>INSPECT BLOWER MOTOR</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the connector to the blower motor.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage on the A/C amplifier connector side according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E124470E12" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E38-23 (BLW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0002" fin="false">OK</down>
+<right ref="RM000000TS8005X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0002" proc-id="RM0250U___00004H300000">
+<testtitle>INSPECT AIR CONDITIONING AMPLIFIER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the A/C amplifier.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the connector to the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E124471E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) .</ptxt>
+<figure>
+<graphic graphicname="E103396E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the blower switch ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the waveform between terminal E38-23 (BLW) of the A/C amplifier and body ground.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Waveform is as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Waveform varies with the blower level.</ptxt>
+</atten4>
+</test1>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Contents</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Tool setting</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 V/DIV., 500 μs/DIV.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Vehicle condition</ptxt>
+</entry>
+<entry>
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>Blower switch: ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content6>
+<res>
+<down ref="RM000000TS8005X_04_0003" fin="true">OK</down>
+<right ref="RM000000TS8005X_04_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0004">
+<testtitle>REPLACE BLOWER MOTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0005">
+<testtitle>REPLACE FUSIBLE LINK (HTR)</testtitle>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0011">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0012">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0014">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TS8005X_04_0015">
+<testtitle>REPLACE AIR CONDITIONING AMPLIFIER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

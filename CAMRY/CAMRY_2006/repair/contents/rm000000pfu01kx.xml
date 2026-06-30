@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PFU01KX" category="C" type-id="302IE" name-id="ES427-01" from="200601">
+<dtccode>P2102</dtccode>
+<dtcname>Throttle Actuator Control Motor Circuit Low</dtcname>
+<dtccode>P2103</dtccode>
+<dtcname>Throttle Actuator Control Motor Circuit High</dtcname>
+<subpara id="RM000000PFU01KX_01" type-id="61" category="03" proc-id="RM0250U___00002QU00000">
+<name>SYSTEM DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The throttle actuator is operated by the ECM and opens and closes the throttle valve using the gears.</ptxt>
+<ptxt>The opening angle of the throttle valve is detected by the Throttle Position (TP) sensor, which is mounted on the throttle body. The TP sensor provides feedback to the ECM. This feedback allows the ECM to appropriately control the throttle actuator and monitor the throttle opening angle as the ECM responds to driver inputs.</ptxt>
+<atten4>
+<ptxt>This ETCS (Electronic Throttle Control System) does not use a throttle cable.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2102</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Conditions (a) and (b) continue for 2.0 seconds (1 trip detection logic):</ptxt>
+<ptxt>(a) Throttle actuator duty ratio 80 % or more</ptxt>
+<ptxt>(b) Throttle actuator current 0.5 A or less</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in throttle actuator circuit</ptxt>
+</item>
+<item>
+<ptxt>Throttle actuator</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2103</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Either of the following conditions is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Hybrid IC diagnosis signal fails</ptxt>
+</item>
+<item>
+<ptxt>Hybrid IC current limiter port fails</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Short in throttle actuator circuit</ptxt>
+</item>
+<item>
+<ptxt>Throttle actuator</ptxt>
+</item>
+<item>
+<ptxt>Throttle valve</ptxt>
+</item>
+<item>
+<ptxt>Throttle body assembly</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_02" type-id="64" category="03" proc-id="RM0250U___00002QV00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM monitors the electrical current through the electronic actuator, and detects malfunctions and open circuits in the throttle actuator based on this value. If the current is outside the standard range, the ECM determines that there is a malfunction in the throttle actuator. In addition, if the throttle valve does not function properly (for example, stuck on), the ECM determines that there is a malfunction. The ECM then illuminates the MIL and sets a DTC.</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>Example:</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>When the electrical current is more than 10 A, or less than 0.5 A and the throttle actuator duty ratio exceeds 80 %, the ECM interprets this as the current being outside the standard range, and illuminates the MIL and sets a DTC.</ptxt>
+</item>
+<item>
+<ptxt>If the malfunction is not repaired successfully, a DTC is set when the engine is quickly revved up to a high rpm several times after the engine has idled for 5 seconds after engine start.</ptxt>
+</item>
+</list2>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_03" type-id="65" category="03" proc-id="RM0250U___00002QW00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="3.54in"/>
+<colspec colname="COL2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2102: Throttle actuator current (low current)</ptxt>
+<ptxt>P2103: Throttle actuator current (high current)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)			</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle actuator (throttle body)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2102 (Throttle actuator current (low current)): 2 seconds</ptxt>
+<ptxt>P2103 (Throttle actuator current (high current)): 25 times or 0.6 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation	</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_04" type-id="66" category="03" proc-id="RM0250U___00002QX00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2102:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Throttle motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duty-cycle ratio to open throttle actuator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>80 % or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Current motor current - Motor current at 0.016 sec. before</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.2 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2103:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Throttle motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Either of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Throttle actuator power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Throttle actuator power</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Starter</ptxt>
+</entry>
+<entry>
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_05" type-id="67" category="03" proc-id="RM0250U___00002QY00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P2102:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.5 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P2103:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Either of following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A or B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. Hybrid IC diagnosis signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. Hybrid IC current limiter port</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fail</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_06" type-id="62" category="03" proc-id="RM0250U___00002QZ00000">
+<name>FAIL-SAFE</name>
+<content5 releasenbr="1">
+<ptxt>When either of these DTCs, as well as other DTCs relating to ETCS (Electronic Throttle Control System) malfunctions, is set, the ECM enters fail-safe mode. During fail-safe mode, the ECM cuts the current to the throttle actuator off, and the throttle valve is returned to a 6° throttle angle by the return spring. The ECM then adjusts the engine output by controlling the fuel injection (intermittent fuel-cut) and ignition timing, in accordance with the accelerator pedal opening angle, to allow the vehicle to continue running at a minimal speed. If the accelerator pedal is depressed gently, the vehicle can be driven slowly.</ptxt>
+<ptxt>Fail-safe mode continues until a pass condition is detected, and the engine switch is then turned off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_07" type-id="32" category="03" proc-id="RM0250U___00002R000000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A133860E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_08" type-id="51" category="05" proc-id="RM0250U___00002R100000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Read freeze frame data using an intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The throttle actuator current (THROTTLE MOT) and the throttle actuator duty ratio (THROTTLE OPN / THROTTLE CLS) can be read using the intelligent tester. However, the ECM shuts off the throttle actuator current when the ETCS malfunctions.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFU01KX_09" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PFU01KX_09_0001" proc-id="RM0250U___00002R200000">
+<testtitle>INSPECT THROTTLE BODY (RESISTANCE OF THROTTLE CONTROL MOTOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C5 throttle body connector.</ptxt>
+<figure>
+<graphic graphicname="A059778E40" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>M+ (C5-2) - M- (C5-1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.3 to 100 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the throttle body connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFU01KX_09_0002" fin="false">OK</down>
+<right ref="RM000000PFU01KX_09_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0002" proc-id="RM0250U___00002R300000">
+<testtitle>CHECK HARNESS AND CONNECTOR (THROTTLE CONTROL MOTOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C5 throttle body connector.</ptxt>
+<figure>
+<graphic graphicname="A115662E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>M+ (C5-2) - M+ (C55-19)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M- (C5-1) - M- (C55-18)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>M+ (C5-2) or M+ (C55-19) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M- (C5-1) or M- (C55-18) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the throttle body connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFU01KX_09_0003" fin="false">OK</down>
+<right ref="RM000000PFU01KX_09_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0003" proc-id="RM0250U___00002R400000">
+<testtitle>INSPECT THROTTLE BODY (VISUALLY CHECK THROTTLE VALVE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for foreign objects between the throttle valve and the housing.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFU01KX_09_0004" fin="false">OK</down>
+<right ref="RM000000PFU01KX_09_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0004" proc-id="RM0250U___00002R500000">
+<testtitle>INSPECT THROTTLE VALVE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the throttle valve opens and closes smoothly.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFU01KX_09_0009" fin="true">OK</down>
+<right ref="RM000000PFU01KX_09_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0005">
+<testtitle>REPLACE THROTTLE BODY<xref label="Seep01" href="RM0000022NL001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0007">
+<testtitle>REMOVE FOREIGN OBJECT AND CLEAN THROTTLE BODY</testtitle>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0008">
+<testtitle>REPLACE THROTTLE  BODY<xref label="Seep01" href="RM0000022NL001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PFU01KX_09_0009">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10007_S0005" variety="S0005">
+<name>2AZ-FE FUEL</name>
+<ttl id="10007_S0005_7305Q_T00DN" variety="T00DN">
+<name>FUEL PUMP</name>
+<para id="RM0000017RH008X" category="G" type-id="3001K" name-id="FU0D1-07" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM0000017RH008X_01" type-id="01" category="01">
+<s-1 id="RM0000017RH008X_01_0001" proc-id="RM0250U___0000AXN00000">
+<ptxt>INSPECT FUEL PUMP</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the fuel pump resistance. </ptxt>
+<figure>
+<graphic graphicname="A126943" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>0.2 to 3.0 Ω at 20°C (68°F)</ptxt>
+</specitem>
+</spec>
+<ptxt>If the result is not as specified, replace the fuel pump.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Check fuel pump operation.</ptxt>
+<s3>
+<ptxt>Apply battery voltage to terminals 1 and 2. Check that the pump operates.</ptxt>
+<figure>
+<graphic graphicname="A091823E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>These tests must be completed within 10 seconds to prevent the coil from burning out.</ptxt>
+</item>
+<item>
+<ptxt>Keep the fuel pump as far away from the battery as possible.</ptxt>
+</item>
+<item>
+<ptxt>Always switch the voltage on and off on the battery side, not the fuel pump side.</ptxt>
+</item>
+</list1>
+</atten3>
+<ptxt>If the pump does not operate, replace the fuel pump.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,39 @@
+<!-- $Id: contents.html,v 1.6 2004/04/26 05:06:57 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (parent.g_objXml==null) return;
+	if (parent.g_defProc==null) return;
+	setContents(parent.g_defProc, (parent.g_s1 == null));
+}
+
+function setContents(subparaId) {
+	var args = new parent.Hashtable();
+	args.put("subparaId", subparaId);
+	parent.display(parent.g_objXml, parent.g_objXsl, disp, args);
+	parent.loadMemoData(document, parent.REPAIR);
+	location.hash = (arguments[1]==null || arguments[1]) ? "paraTop" : parent.g_s1;
+}
+</script>
+</head>
+<body onLoad="init()">
+<a name="paraTop"></a>
+<div id="disp"></div>
+<div>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+</body>
+</html>

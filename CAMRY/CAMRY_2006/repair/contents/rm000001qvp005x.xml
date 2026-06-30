@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="1000E_S000D" variety="S000D">
+<name>2AZ-FE IGNITION</name>
+<ttl id="1000E_S000D_7303R_T00DF" variety="T00DF">
+<name>IGNITION SYSTEM</name>
+<para id="RM000001QVP005X" category="G" type-id="8000T" name-id="IG04E-02" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000001QVP005X_02" type-id="11" category="10"/>
+<subpara id="RM000001QVP005X_01" type-id="01" category="01">
+<s-1 id="RM000001QVP005X_01_0001" proc-id="RM0250U___00008NX00000">
+<ptxt>CHECK IGNITION COIL ASSEMBLY AND PERFORM SPARK TEST</ptxt>
+<content1 releasenbr="2">
+<atten3>
+<ptxt>In this section, the terms "cold" and "hot" refer to the temperature of the coils. "Cold" means approximately -10 to 50°C (14 to 122°F). "Hot" means approximately 50 to 100°C (122 to 212°F).</ptxt>
+</atten3>
+<s2>
+<ptxt>Check for DTCs.</ptxt>
+<atten3>
+<ptxt>If any DTC is present, perform troubleshooting in accordance with the procedure for that DTC.</ptxt>
+</atten3>
+</s2>
+<s2>
+<ptxt>Check that sparks occur.</ptxt>
+<s3>
+<ptxt>Remove the No. 1 engine cover.</ptxt>
+</s3>
+<s3>
+<ptxt>Disconnect the 4 ignition coil connectors and remove the 4 bolts and ignition coils.</ptxt>
+</s3>
+<s3>
+<ptxt>Using a 16 mm (0.63 in.) spark plug wrench, remove the 4 spark plugs.</ptxt>
+<figure>
+<graphic graphicname="A124849E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Disconnect the 4 fuel injector connectors.</ptxt>
+<figure>
+<graphic graphicname="A097448E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Install the spark plug to each ignition coil, and connect the ignition coil connectors.</ptxt>
+</s3>
+<s3>
+<ptxt>Ground the spark plug.</ptxt>
+<figure>
+<graphic graphicname="A124396" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check if a spark occurs at each spark plug while the engine is being cranked.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Be sure to ground the spark plugs when checking.</ptxt>
+</item>
+<item>
+<ptxt>Replace the ignition coil if it receives an impact.</ptxt>
+</item>
+<item>
+<ptxt>Do not crank the engine for more than 2 seconds.</ptxt>
+</item>
+</list1>
+</atten3>
+</s3>
+</s2>
+<s2>
+<ptxt>Perform the spark test according to the flowchart below.</ptxt>
+<s3>
+<ptxt>Check that the ignition coil connector is securely connected.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>Connect securely</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>Go to next step</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Perform the spark test on each ignition coil.</ptxt>
+<list1 type="ordered">
+<item>
+<ptxt>Replace the ignition coil with a normal one.</ptxt>
+</item>
+<item>
+<ptxt>Perform the spark test again.</ptxt>
+</item>
+</list1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>Replace ignition coil</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>Go to next step</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Check the power supply to the ignition coil.</ptxt>
+<figure>
+<graphic graphicname="A124397" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<list1 type="ordered">
+<item>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</item>
+<item>
+<ptxt>Measure the voltage between the terminals of the wire harness side connector.</ptxt>
+</item>
+</list1>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>1 (+B) - 4 (GND)</ptxt>
+</entry>
+<entry>
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>Check wire harness and connector</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>Go to next step</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Measure the resistance of the camshaft position sensor.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Temperature </ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Cold</ptxt>
+</entry>
+<entry>
+<ptxt>835 to 1,400 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Hot</ptxt>
+</entry>
+<entry>
+<ptxt>1,060 to 1,645 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>Replace camshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>Go to next step</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Measure the resistance of the crankshaft position sensor.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Temperature </ptxt>
+</entry>
+<entry>
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Cold</ptxt>
+</entry>
+<entry>
+<ptxt>985 to 1,600 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Hot</ptxt>
+</entry>
+<entry>
+<ptxt>1,265 to 1,890 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>Replace crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>Go to next step</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Check the IGT signal from the ECM.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>NG</ptxt>
+</entry>
+<entry>
+<ptxt>Check ECM (see page <xref label="Seep01" href="RM000000XH401BX"/>)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+<entry>
+<ptxt>Repair wiring between ignition coil and ECM</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s3>
+<s3>
+<ptxt>Using a 16 mm (0.63 in.) plug wrench, install the spark plug.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>19</t-value1>
+<t-value2>194</t-value2>
+<t-value4>14</t-value4>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Install the 4 ignition coils with the 4 bolts and connect the 4 ignition coil connectors.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>9.0</t-value1>
+<t-value2>92</t-value2>
+<t-value3>80</t-value3>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Connect the 4 fuel injector connectors.</ptxt>
+</s3>
+<s3>
+<ptxt>Install the No. 1 engine cover.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001QVP005X_01_0002" proc-id="RM0250U___00008NY00000">
+<ptxt>CHECK SPARK PLUG</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the electrode.</ptxt>
+<figure>
+<graphic graphicname="I039522E10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Using a megohmmeter, measure the insulation resistance.</ptxt>
+<spec>
+<title>Standard insulation resistance</title>
+<specitem>
+<ptxt>10 MΩ or more</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a megohmmeter is not available, perform the following simple inspection instead.</ptxt>
+</item>
+<item>
+<ptxt>If the result is 10 MΩ or less, clean the plug and measure the resistance again.</ptxt>
+</item>
+</list1>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Alternative inspection method:</ptxt>
+<figure>
+<graphic graphicname="A126881" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Quickly accelerate the engine to 4,000 rpm 5 times.</ptxt>
+</s3>
+<s3>
+<ptxt>Remove the spark plug.</ptxt>
+</s3>
+<s3>
+<ptxt>Visually check the spark plug.</ptxt>
+<ptxt>If the electrode is dry, the spark plug is functioning properly. If the electrode is damp, proceed to the next step.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Check the spark plug for any damage to its threads and insulator.</ptxt>
+<ptxt>If there is damage, replace the spark plug.</ptxt>
+<spec>
+<title>Recommended spark plug</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Manufacturer</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Spark plug type</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DENSO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>SK20R11</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>NGK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>IFR6A11</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</s2>
+<s2>
+<ptxt>Check the spark plug electrode gap.</ptxt>
+<figure>
+<graphic graphicname="A126880E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Maximum electrode gap for used spark plug</title>
+<specitem>
+<ptxt>1.3 mm (0.051 in.)</ptxt>
+</specitem>
+</spec>
+<ptxt>If the gap is greater than the maximum, replace the spark plug.</ptxt>
+<spec>
+<title>Electrode gap for new spark plug</title>
+<specitem>
+<ptxt>1.0 to 1.1 mm (0.039 to 0.043 in.)</ptxt>
+</specitem>
+</spec>
+</s2>
+<s2>
+<ptxt>Clean the spark plugs.</ptxt>
+<figure>
+<graphic graphicname="B062019E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If the electrode has traces of wet carbon, clean the electrode with a spark plug cleaner and then dry it.</ptxt>
+<spec>
+<title>Standard air pressure</title>
+<specitem>
+<ptxt>588 kPa (6 kgf*cm<sup>2</sup>, 85 psi)</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Standard duration</title>
+<specitem>
+<ptxt>20 seconds or less</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Only use the spark plug cleaner when the electrode is free of oil. If the electrode has traces of oil, use gasoline to clean off the oil before using the spark plug cleaner.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

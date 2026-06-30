@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000000XIT009X" category="J" type-id="3019E" name-id="BC1HF-01" from="200601">
+<dtccode/>
+<dtcname>VSC Warning Light does not Come ON</dtcname>
+<subpara id="RM000000XIT009X_01" type-id="60" category="03" proc-id="RM0250U___00003NA00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU communicates with the combination meter assembly via CAN communication. If the ECU stores a DTC, the master caution indicator light will illuminate, and the DTC will be displayed on the multi-information display in the combination meter (models with multi-information display). On models without a multi-information display, the VSC warning light will come on when the skid control ECU stores a DTC.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XIT009X_02" type-id="32" category="03" proc-id="RM0250U___00003NB00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136510E03" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIT009X_03" type-id="51" category="05" proc-id="RM0250U___00003NC00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Check the condition of each related circuit connector before troubleshooting (See page <xref label="Seep01" href="RM000000UZ301TX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000XIT009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIT009X_04_0001" proc-id="RM0250U___00003ND00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if a CAN communication system DTC is output (See page <xref label="Seep01" href="RM000001NK5001X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN communication system DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIT009X_04_0003" fin="false">A</down>
+<right ref="RM000000XIT009X_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIT009X_04_0003" proc-id="RM0250U___00003NF00000">
+<testtitle>INSPECT COMBINATION METER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform "ACTIVE TEST" of the combination meter assembly using the intelligent tester (See page <xref label="Seep01" href="RM0000012G700DX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check that "ON" and "OFF" of the VSC warning (multi-information display) or VSC warning light are indicated on the combination meter assembly when using the intelligent tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The VSC warning (multi-information display) turns on or off in accordance with the intelligent tester.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIT009X_04_0008" fin="true">OK</down>
+<right ref="RM000000XIT009X_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIT009X_04_0006">
+<testtitle>INSPECT CAN COMMUNICATION SYSTEM<xref label="Seep01" href="RM000000WI600QX"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000XIT009X_04_0008">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY<xref label="Seep01" href="RM0000013P6004X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000XIT009X_04_0009">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY<xref label="Seep01" href="RM0000024D7000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

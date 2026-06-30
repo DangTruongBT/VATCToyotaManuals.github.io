@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10008_S000H" variety="S000H">
+<name>2GR-FE EMISSION CONTROL</name>
+<ttl id="10008_S000H_7306P_T00EJ" variety="T00EJ">
+<name>VACUUM SWITCHING VALVE (for EVAP)</name>
+<para id="RM000001OOH001X" category="G" type-id="3001K" name-id="EC0M1-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001OOH001X_01" type-id="01" category="01">
+<s-1 id="RM000001OOH001X_01_0001" proc-id="RM0250U___000094E00000">
+<ptxt>INSPECT EVAP VSV</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the VSV for an open circuit.</ptxt>
+<figure>
+<graphic graphicname="A128939E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Measure the resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>23 to 26Ω at 20°C (68°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>1 - Body ground</ptxt>
+<ptxt>2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the resistance is not as specified, replace the VSV assembly.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Check VSV operation.</ptxt>
+<figure>
+<graphic graphicname="A128937E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<s3>
+<ptxt>Check that air does not flow from the port as shown in the illustration.</ptxt>
+</s3>
+<s3>
+<ptxt>Apply battery positive voltage across the terminals.</ptxt>
+<figure>
+<graphic graphicname="A128938E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that air flows from the ports.</ptxt>
+<ptxt>If the result is not as specified, replace the VSV assembly.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000014SV00AX" category="J" type-id="800YU" name-id="NS1F6-01" from="200601">
+<dtccode/>
+<dtcname>The Other Caller cannot Hear Your Voice, or Your Voice is too Quiet or Distorted</dtcname>
+<subpara id="RM0000014SV00AX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000014SV00AX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000014SV00AX_02_0001" proc-id="RM0250U___000050E00000">
+<testtitle>CHECK CELLULAR PHONE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the other side can hear your voice properly.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Your voice can be heard correctly.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014SV00AX_02_0002" fin="false">OK</down>
+<right ref="RM0000014SV00AX_02_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0002" proc-id="RM0250U___000050F00000">
+<testtitle>CHECK SETTINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the mute switch is set to ON.</ptxt>
+<figure>
+<graphic graphicname="E120109E03" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Mute switch is not set to ON.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014SV00AX_02_0008" fin="false">OK</down>
+<right ref="RM0000014SV00AX_02_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0008" proc-id="RM0250U___000050H00000">
+<testtitle>CHECK SETTINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the "Handsfree Voice Quality Set" mode (See page <xref label="Seep01" href="RM000001YZ5006X"/>).</ptxt>
+<figure>
+<graphic graphicname="E120069E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Check if the Send Voice Level is set to "0".</ptxt>
+<atten4>
+<ptxt>The Send Voice Level can be set to 11 different levels, -5 to +5, with a 3 dB difference.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check if the Send Voice Level is set to the minimum or maximum level.</ptxt>
+<atten4>
+<ptxt>When the Send Voice Level is set to the minimum or maximum level, the sound may be distorted.</ptxt>
+</atten4>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The Send Voice Level is set to "0".</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014SV00AX_02_0003" fin="false">OK</down>
+<right ref="RM0000014SV00AX_02_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0003" proc-id="RM0250U___000050G00000">
+<testtitle>CHECK MICROPHONE (NAVIGATION CHECK MODE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the "MICROPHONE &amp; VOICE RECOGNITION CHECK" mode (See page <xref label="Seep01" href="RM0000011BW00EX"/>).</ptxt>
+<figure>
+<graphic graphicname="E120056E11" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>When voice is input into the microphone, check that the microphone input level meter changes according to the input voice.</ptxt>
+</test1>
+<test1>
+<ptxt>Push the recording switch and perform voice recording.</ptxt>
+<atten4>
+<ptxt>Voice can be recorded up to 5 seconds.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Check that the recorded voice is played normally without noise or distortion.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>All check results are normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000014SV00AX_02_0004" fin="true">OK</down>
+<right ref="RM0000014SV00AX_02_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0004">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0005">
+<testtitle>REPLACE CELLULAR PHONE</testtitle>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0006">
+<testtitle>TURN MUTE SWITCH OFF</testtitle>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0007">
+<testtitle>SET SEND VOICE LEVEL TO "0"</testtitle>
+</testgrp>
+<testgrp id="RM0000014SV00AX_02_0009">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

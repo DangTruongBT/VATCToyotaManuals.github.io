@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000000PMG006X" category="U" type-id="303FJ" name-id="AC01W-05" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000PMG006X_z0" proc-id="RM0250U___00004I200000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester's DATA LIST allows switch, sensor, actuator, and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to save time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / AIR CONDITIONER / DATA LIST.</ptxt>
+</step2>
+<step2>
+<ptxt>Check the value(s) by referring to the table below.</ptxt>
+<table pgwide="1">
+<title>AIR CONDITIONER (for MANUAL A/C)</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AMBI TEMP SENS</ptxt>
+<ptxt>(Ambient temperature sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ambient temperature sensor / Min.: -23.3°C (-9.94°F), Max.: 65.95°C (150.71°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual ambient temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AMBI TEMP</ptxt>
+<ptxt>(Adjusted ambient temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Adjusted ambient temperature / Min.: -30.8°C (-23.44°F), Max.: 50.8°C (123.44°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP FIN TEMP</ptxt>
+<ptxt>(Evaporator fin thermistor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Evaporator fin thermistor / Min.: -29.7°C (-21.46°F), Max.: 59.55°C (139.19°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual evaporator temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>COOLANT TEMP</ptxt>
+<ptxt>(Engine coolant temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine coolant temperature / Min.: 1.3°C (34.34°F), Max.: 90.55°C (194.99°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual engine coolant temperature is displayed while engine is warmed up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REG PRESS SENS</ptxt>
+<ptxt>(Regulator pressure sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Regulator pressure sensor / Min.: -0.5 kgf/cm<sup>2</sup>G, Max.: 37.75 kgf/cm<sup>2</sup>G</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual refrigerant pressure is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REG CTRL CURRNT</ptxt>
+<ptxt>(Regulator control current)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Compressor variable output current / Min.: 0 A, Max.: 0.996 A</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR MIX PULSE-D</ptxt>
+<ptxt>(Air mix servomotor target pulse (D side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air mix servo motor target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX. COLD: 105 (pulse)</ptxt>
+<ptxt>MAX. HOT: 7 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR OUT PULSE-D</ptxt>
+<ptxt>(Air out pulse-D)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air outlet servo motor target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FACE: 8 (pulse)</ptxt>
+<ptxt>B/L: 30 to 38 (pulse)</ptxt>
+<ptxt>FOOT: 50 to 74 (pulse)</ptxt>
+<ptxt>FOOT/DEF: 80 (pulse)</ptxt>
+<ptxt>DEF: 97 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/I DAMP PLS</ptxt>
+<ptxt>(Air inlet damper target pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air inlet damper target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RECIRCULATION: 7 (pulse)</ptxt>
+<ptxt>FRESH: 28 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>#CODES</ptxt>
+<ptxt>(Number of trouble codes)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of trouble codes / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs will be displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>AIR CONDITIONER (for AUTO A/C)</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ROOM TEMP</ptxt>
+<ptxt>(Room temperature sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Room temperature sensor / Min.: -6.5°C (20.3°F), Max.: 57.25°C (135.05°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual cabin temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AMBI TEMP SENS</ptxt>
+<ptxt>(Ambient temperature sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ambient temperature sensor / Min.: -23.3°C (-9.94°F), Max.: 65.95°C (150.71°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual ambient temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AMBI TEMP</ptxt>
+<ptxt>(Adjusted ambient temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Adjusted ambient temperature / Min.: -30.8°C (-23.44°F), Max.: 50.8°C (123.44°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>EVAP FIN TEMP</ptxt>
+<ptxt>(Evaporator fin thermistor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Evaporator fin thermistor / Min.: -29.7°C (-21.46°F), Max.: 59.55°C (139.19°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual evaporator temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SOLAR SENS-D</ptxt>
+<ptxt>(Solar sensor (D side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side solar sensor / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side solar sensor value increases as brightness increases</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SOLAR SENS-P</ptxt>
+<ptxt>(Solar sensor (P side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side solar sensor / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side solar sensor value increases as brightness increases</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>COOLANT TEMP</ptxt>
+<ptxt>(Engine coolant temperature)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine coolant temperature / Min.: 1.3°C (34.34°F), Max.: 90.55°C (194.99°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual engine coolant temperature is displayed while engine is warmed up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SET TEMP-D</ptxt>
+<ptxt>(Set temperature (D - side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side set temperature / Min.: 0°C (32°F), Max.: 30°C (54°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side set temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>SET TEMP-P</ptxt>
+<ptxt>(Set temperature (P - side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side set temperature / Min.: 0°C (32°F), Max.: 30°C (54°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side set temperature is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ESTIMATE TEMP-D</ptxt>
+<ptxt>(Estimate temperature (D side)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side estimate temperature / Min.: -358.4°C (-613.12°F), Max.: 358.4°C (677.12°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Damper is at "MAX. COOL": -358.4°C (-613.12°F)</ptxt>
+<ptxt>Damper is at "MAX. HOT": 358.4°C (677.12°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ESTIMATE TEMP-P</ptxt>
+<ptxt>(Estimate temperature (P side)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side estimate temperature / Min.: -358.4, Max.: 358.4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Damper is at "MAX. COOL": -358.4°C (-613.12°F)</ptxt>
+<ptxt>Damper is at "MAX. HOT": 358.4°C (677.12°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HAND FREE TEL</ptxt>
+<ptxt>(Hand free telephone)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Hands free telephone / OFF or ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BLOWER LEVEL</ptxt>
+<ptxt>(Blower motor speed level)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blower motor speed level / Min.: 0 level, Max.: 31 level</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Increases in the range between 0 and 31 as the blower motor speed increases</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REG PRESS SENS</ptxt>
+<ptxt>(Regulator pressure sensor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Regulator pressure sensor / Min.: -0.5 kgf/cm<sup>2</sup>G, Max.: 37.75 kgf/cm<sup>2</sup>G</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual refrigerant pressure is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>REG CTRL CURRNT</ptxt>
+<ptxt>(Regulator control current)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Compressor variable output current / Min.: 0 A, Max.: 0.996 A</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR MIX PULSE-D</ptxt>
+<ptxt>(Air mix servomotor target pulse (D side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air mix servo motor target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX. COLD: 5 (pulse)</ptxt>
+<ptxt>MAX. HOT: 103 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR MIX PULSE-P</ptxt>
+<ptxt>(Air mix servomotor target pulse (P side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side air mix servo motor target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX. COLD: 105 (pulse)</ptxt>
+<ptxt>MAX. HOT: 7 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR OUT PULSE-D</ptxt>
+<ptxt>(Air out pulse-D)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air outlet servo motor target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FACE: 8 (pulse)</ptxt>
+<ptxt>B/L: 30 to 38 (pulse)</ptxt>
+<ptxt>FOOT: 50 to 74 (pulse)</ptxt>
+<ptxt>FOOT/DEF: 80 (pulse)</ptxt>
+<ptxt>DEF: 97 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/I DAMP PLS</ptxt>
+<ptxt>(Air inlet damper target pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air inlet damper target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>RECIRCULATION: 7 (pulse)</ptxt>
+<ptxt>FRESH: 28 (pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>#CODES</ptxt>
+<ptxt>(Number of trouble codes)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of trouble codes / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Number of DTCs will be displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ENGINE</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / (Range) Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C SIGNAL</ptxt>
+<ptxt>(A/C signal)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/C signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: A/C ON</ptxt>
+<ptxt>OFF: A/C OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/C MAG CLUTCH</ptxt>
+<ptxt>(A/C magnetic clutch relay)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A/C magnetic clutch relay / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON: A/C magnetic clutch ON</ptxt>
+<ptxt>OFF: A/C magnetic clutch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's ACTIVE TEST allows relays, VSVs, actuators and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed in the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the tester on.</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / AIR CONDITIONER / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST by referring to the table below.</ptxt>
+<table pgwide="1">
+<title>AIR CONDITIONER (for MANUAL A/C)</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DEFOGER RLY-R</ptxt>
+<ptxt>(Defogger relay (Rear))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Defogger relay (Rear) / OFF, ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR MIX PULSE-D</ptxt>
+<ptxt>(Air mix servomotor pulse (D side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air mix servo motor pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR OUT PULSE-D</ptxt>
+<ptxt>(Air outlet servomotor pulse (D side)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air outlet servo motor pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/I DAMP PLS</ptxt>
+<ptxt>(Air inlet damper target pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air inlet damper target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>AIR CONDITIONER (for AUTO A/C)</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BLOWER MOTOR</ptxt>
+<ptxt>(Blower motor)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Blower motor / Min.: Level 0, Max.: Level 31</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DEFOGER RLY-R</ptxt>
+<ptxt>(Defogger relay (Rear))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Defogger relay (Rear) / OFF, ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR MIX PULSE-D</ptxt>
+<ptxt>(Air mix servomotor pulse (D side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air mix servo motor pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR MIX PULSE-P</ptxt>
+<ptxt>(Air mix servomotor pulse (P side))</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Passenger side air mix servo motor pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AIR OUT PULSE-D</ptxt>
+<ptxt>(Air outlet servomotor pulse (D side)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Driver side air outlet servo motor pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A/I DAMP PLS</ptxt>
+<ptxt>(Air inlet damper target pulse)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Air inlet damper target pulse / Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>ENGINE</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Test Details / Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A/C MAG CLUTCH</ptxt>
+<ptxt>(Magnetic clutch relay)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Magnetic clutch relay / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

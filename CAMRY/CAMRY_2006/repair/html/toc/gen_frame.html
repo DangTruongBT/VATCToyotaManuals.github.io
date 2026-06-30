@@ -1,0 +1,79 @@
+<!-- $Id: gen_frame.html,v 1.6 2005/10/28 01:54:24 n-tamamura Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>General Information</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/style.js"></script>
+<script src="../../js/memo.js"></script>
+<script src="../../js/dropdown.js"></script>
+<script language="javascript">
+var g_paraId = findParameterValue("parag");
+var g_vin    = findParameterValue("vin");
+var g_term   = findParameterValue("term");
+var g_filter = findParameterValue("filter");
+var g_bp     = findParameterValue("bp");
+
+var g_objXml = null;
+var g_tocXml = null;
+var g_cttXsl = null;
+var g_lclXsl = null;
+var g_fltXsl = null;
+
+var g_carType       = null;
+var g_subparaId     = null;
+var g_sectionName   = null;
+var g_titleName     = null;
+var g_paragraphName = null;
+var g_category      = null;
+
+function init() {
+	g_tocXml = initXml("toc_rpr.xml");
+	g_fltXsl = initXsl("../../xsl/utl/filter.xsl");
+	if (g_filter!=null) {
+		g_tocXml = setFilter(g_tocXml, g_fltXsl, "../../filter/"+g_filter+".xml");
+	}
+	if (g_paraId==null) return;
+	g_objXml = initXml(g_paraId.toLowerCase()+".xml");
+	if (g_objXml==null) return;
+	g_objXml.setProperty("SelectionLanguage", "XPath");
+	g_category = g_objXml.selectSingleNode("//para/@category").nodeTypedValue;
+	if (g_category=="M" || g_category=="N") {
+		g_cttXsl = initXsl("../../xsl/rmv/contents.xsl");
+		g_lclXsl = initXsl("../../xsl/rmv/local.xsl");
+	} else {
+		g_subparaId = g_objXml.selectSingleNode("//subpara[1]/@id").nodeTypedValue;
+		g_cttXsl = initXsl("../../xsl/toc/contents.xsl");
+		g_lclXsl = initXsl("../../xsl/toc/local.xsl");
+	}
+	g_carType = getCarType(g_filter);
+}
+init();
+</script>
+</head>
+<frameset rows="85, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="gen_global.html" scrolling="no" noresize frameborder="no">
+	<frameset cols="250, *" frameborder="yes" border="1" framespacing="1" bordercolor="#cccccc">
+		<frame name="local" src="gen_local.html" frameborder="no" scrolling="no">
+		<frameset rows="35, *" frameborder="no" framespaceing="0">
+			<frame name="sts" src="gen_status.html" frameborder="no" scrolling="auto">
+			<frame name="contents" src="gen_contents.html" frameborder="no" scrolling="auto">
+		</frameset>
+	</frameset>
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

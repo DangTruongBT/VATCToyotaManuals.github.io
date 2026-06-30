@@ -1,0 +1,2479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000002206002X" category="U" type-id="3011K" name-id="ES3QE-02" from="200601">
+<name>TERMINALS OF ECM</name>
+<subpara id="RM000002206002X_z0" proc-id="RM0250U___0000AX600000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>SFI SYSTEM</ptxt>
+<figure>
+<graphic graphicname="A107881E29" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>The standard normal voltage between each pair of the ECM terminals is shown in the table below. The appropriate conditions for checking each pair of the terminals are also indicated.</ptxt>
+<ptxt>The check results should be compared with the standard normal voltage for that pair of terminals, listed in the "STD Voltages" column.</ptxt>
+<ptxt>The illustration above can be used as a reference to identify the ECM terminal locations.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.06in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<colspec colname="COL5" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Colors</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Descriptions</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>STD Voltages</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (A55-2) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B2 (A55-1) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BATT (A55-20) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Battery (for measuring the battery voltage and for the ECM memory)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VPMP (A55-42) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vent valve operation signal (built into pump module)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MPMP (A55-34) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vacuum pump operation signal (built into pump module)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vacuum pump OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 3 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MPMP (A55-34) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vacuum pump operation signal (built into pump module)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vacuum pump ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+BM (A55-3) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of ETCS throttle motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MREL (A55-44) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>EFI relay operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IGSW (A55-28) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FC (A55-7) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FC (A55-7) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C/OPEN relay operation signal (fuel pump control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Engine stopped</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FC (A55-7) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FC (A55-7) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C/OPEN relay operation signal (fuel pump control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Engine idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0 to 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP ( A55-36 ) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>  - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-Brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7.5 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP (A55-36) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>  - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W-Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ST1- (A55-35) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal (opposite to STP terminal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), W-Brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ST1- (A55-35) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal (opposite to STP terminal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), W-Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>7.5 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACCR<sup>*2</sup> (A24-17) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC relay control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VPA (A55-55) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for engine control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VPA (A55-55) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for engine control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.6 to 4.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VPA2 (A55-58) - EPA2 (A55-60)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for sensor malfunction detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 2.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VPA2 (A55-58) - EPA2 (A55-60)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for sensor malfunction detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.4 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EPA (A5-59) - VPA (A55-55)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for engine control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EPA (A5-59) - VPA (A55-55)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for engine control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.6 to 4.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EPA2 (A55-60) - VPA2 (A55-58)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for sensor malfunction detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1.2 to 2.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EPA2 (A55-60) - VPA2 (A55-58)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Accelerator pedal position sensor signal (for sensor malfunction detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.4 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PPMP (C55-77) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pressure sensor signal (built into pump module)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3 to 3.6 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TC (A55-27) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal TC of DLC3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VCPA (A55-57) - EPA (A55-59)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - Y</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of accelerator pedal position sensor (for VPA)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VCP2 (A55-56) - EPA2 (A55-60)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - O</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power source of accelerator pedal position sensor (for VPA2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TACH (A55-15) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed signal (for combination meter)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 11)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CCS (A55-40) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cruise control main switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+<ptxt>CANCEL switch ON</ptxt>
+<ptxt>SET/COAST switch ON</ptxt>
+<ptxt>RES/ACC switch ON</ptxt>
+<ptxt>Main switch ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 16 V</ptxt>
+<ptxt>6.6 to 10.1 V</ptxt>
+<ptxt>4.5 to 7.1 V</ptxt>
+<ptxt>2.3 to 4.0 V</ptxt>
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SPD (A55-24) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed signal from combination meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), driving wheel rotated slowly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 8)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>W (A55-24) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Indicator Lamp (MIL) operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>W (A55-24) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Malfunction Indicator Lamp (MIL) operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (A55-41) - CANL (A55-49)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>54 to 69 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E1 (C55-81) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - -</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#10 (C55-45) - E01 (C55-22)</ptxt>
+<ptxt>#20 (C55-85) - E01 (C55-22)</ptxt>
+<ptxt>#30 (C55-44) - E01 (C55-22)</ptxt>
+<ptxt>#40 (C55-84) - E01 (C55-22)</ptxt>
+<ptxt>#50 (C55-43) - E01 (C55-22)</ptxt>
+<ptxt>#60 (C55-83) - E01 (C55-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+<ptxt>R - W-B</ptxt>
+<ptxt>Y - W-B</ptxt>
+<ptxt>L - W-B</ptxt>
+<ptxt>W-L - W-B</ptxt>
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel injector operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>#10 (C55-45) - E01 (C55-22)</ptxt>
+<ptxt>#20 (C55-85) - E01 (C55-22)</ptxt>
+<ptxt>#30 (C55-44) - E01 (C55-22)</ptxt>
+<ptxt>#40 (C55-84) - E01 (C55-22)</ptxt>
+<ptxt>#50 (C55-43) - E01 (C55-22)</ptxt>
+<ptxt>#60 (C55-83) - E01 (C55-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+<ptxt>R - W-B</ptxt>
+<ptxt>Y - W-B</ptxt>
+<ptxt>L - W-B</ptxt>
+<ptxt>W-L - W-B</ptxt>
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel injector operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 3)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PSW (C55-810) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P/S pressure switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STA (A55-48) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starter relay operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STSW<sup>*2</sup> (A55-14) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Starter relay operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cranking</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC2- (C55-51) - OC2+ (C55-52)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC2+ (C55-52) - OC2- (C55-51)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC1- (C55-57) - OC1+ (C55-58)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OC1+ (C55-58) - OC1- (C55-57)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VV2+ (C55-67) - VV2- (C55-90)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VV1+ (C55-69)  - VV1- (C55-92)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - LG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NE- (C55-111) - NE+ (C55-110)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NE+ (C55-110) - NE- (C55-111)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Crankshaft position sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EV2- (C55-89) - EV2+ (C55-66)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - G-R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EV2+ (C55-66) - EV2- (C55-89)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G-R - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EV1- (C55-91) - EV1+ (C55-68)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - Y</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EV1+ (C55-68) - EV1- (C55-91)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OE1+ (C55-16) - OE1- (C55-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - LG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OE2+ (C55-14) - OE2- (C55-15)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-L - Y</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VV2- (C55-90) - VV2+ (C55-67)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VV1- (C55-92) - VV1+ (C55-69)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Variable Valve Timing (VVT) sensor signal (Intake side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 5)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OE1- (B47-31) - OE1+ (B47-26)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OE2- (C55-15) - OE2+ (C55-14)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal (Exhaust side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT1B (C55-48) - E1 (C55-81) HT2B (C55-47) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT1B (C55-48) - E1 (C55-81) HT2B (C55-47) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACM (C55-42) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L-B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSV for active control mount system operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M- (C55-18) - ME01 (C55-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle drive motor operation signal (negative terminal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling with warm engine</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 10)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M+ (C55-19) - ME01 (C55-20)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle drive motor operation signal (positive terminal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling with warm engine</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pluse generation</ptxt>
+<ptxt>(see waveform 9)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E02 (C55-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B-W - -</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E01 (C55-22) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - -</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IGT1 (C55-40) - E1 (C55-81)</ptxt>
+<ptxt>IGT2 (C55-39) - E1 (C55-81)</ptxt>
+<ptxt>IGT3 (C55-38) - E1 (C55-81)</ptxt>
+<ptxt>IGT4 (C55-37) - E1 (C55-81)</ptxt>
+<ptxt>IGT5 (C55-36) - E1 (C55-81)</ptxt>
+<ptxt>IGT6 (C55-35) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+<ptxt>GR - W-B</ptxt>
+<ptxt>G - W-B</ptxt>
+<ptxt>LG - W-B</ptxt>
+<ptxt>P - W-B</ptxt>
+<ptxt>G-R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition coil with igniter (ignition signal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 6)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>GE01(C55-41) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G-R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Shielded earth (ground) circuit of throttle drive motor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OX1B (C55-88) - EX1B (C55-65)</ptxt>
+<ptxt>OX2B (C55-87) - EX2B (C55-64)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - BR</ptxt>
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With engine speed at 2,500 rpm for 2 minutes after warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VTA2 (C55-99) - ETA (C55-97)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-L - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle position sensor signal (for sensor malfunction detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully released</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2.1 to 3.1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VTA2 (C55-99) - ETA (C55-97)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-L - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle position sensor signal (for sensor malfunction detection)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Accelerator pedal fully depressed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VTA1 (C55-98) - ETA (C55-97)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle position sensor signal (for engine control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Throttle valve fully closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 1.2 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VTA1 (C55-98) - ETA (C55-97)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle position sensor signal (for engine control)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Throttle valve fully open</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.2 to 4.8 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THW (C55-79) - ETHW (C55-78)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine coolant temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling, Engine coolant temperature 80°C (176°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.2 to 1.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>THA (C55-71) - ETHA (C55-74)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - G-R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake air temperature sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling, Intake air temperature 20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 3.4 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IGF1 (C55-106) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition coil with igniter (ignition confirmation signal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>4.5 to 5.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IGF1 (C55-106) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>BR - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition coil with igniter (ignition confirmation signal)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 6)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AICV (A55-4) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSV for Air intake control system operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2G (C55-73) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of sensor for mass air flow meter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VG (C55-72) - E2G (C55-73)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L-B - LG</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Mass Air Flow (MAF) meter signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling, Shift lever position P or N, A/C switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>0.5 to 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACIS (C55-107) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>VSV for ACIS (Acoustic Control Induction System) operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PRG (C55-108) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G-R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV for EVAP system operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>PRG (C55-108) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G-R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Purge VSV for EVAP system operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 7)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HA2A (C55-109) - E05 (C55-46)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B-W - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HA2A (C55-109) - E05 (C55-46)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B-W - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HA1A (C55-86) - E04 (C55-23)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HA1A (C55-86) - E04 (C55-23)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ME01 (C55-20) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E03 (C55-104) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT2B (C55-47) - E1 (C55-81)</ptxt>
+<ptxt>HT1B (C55-48) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT2B (C55-47) - E1 (C55-81)</ptxt>
+<ptxt>HT1B (C55-48) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+<ptxt>LG - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor heater operation signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E05 (C55-46) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E04 (C55-23) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NSW (C55-62) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Park/Neutral position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Shift lever position P or N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 3.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>NSW (C55-62) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Park/Neutral position switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG), Shift lever position other than P or N</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EKN2 (C55-117) - KNK2 (C55-118)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of knock sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With engine speed at 4,000 rpm after warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 4)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KNK2 (C55-118) - EKN2 (C55-117)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Knock sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With engine speed at 4,000 rpm after warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 4)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A1A+ (C55-93) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.3 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A1A+ (C55-93) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.0 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A2A+ (C55-120) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.3 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A2A+ (C55-120) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.0 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EKNK (C55-94) - KNK1 (C55-95)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Earth (ground) circuit of knock sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With engine speed at 4,000 rpm after warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 4)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>KNK1 (C55-95) - EKNK (C55-94)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - G</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Knock sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With engine speed at 4,000 rpm after warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 4)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A1A- (C55-116) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.3 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A1A- (B46-30) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.0 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A2A- (C55-119) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.3 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A2A- (C55-119) - E1 (C55-81)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>3.0 V<sup>*1</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OX2B (C55-87) - EX2B (C55-64)</ptxt>
+<ptxt>OX1B (C55-88) - EX1B (C55-65)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-R</ptxt>
+<ptxt>W - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>With engine speed at 2,500 rpm for 2 minutes after warming up</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Pulse generation</ptxt>
+<ptxt>(see waveform 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>
+<sup>*1</sup>: The ECM terminal voltage is constant regardless of the output voltage from the sensor.</ptxt>
+<ptxt>
+<sup>*2</sup>: With Smart Key system</ptxt>
+<step2>
+<ptxt>WAVEFORM 1</ptxt>
+<figure>
+<graphic graphicname="A093229E19" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Camshaft timing Oil Control Valve (OCV) operation signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between OC1+ and OC1- , OC2+ and OC2- , OE1+ and OE1- , or OE2+ and OE2-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 1 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The wavelength becomes shorter as the engine rpm increases.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 2</ptxt>
+<figure>
+<graphic graphicname="A088863E21" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Heated oxygen sensor signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between OX1B and EX1B, or OX2B and EX2B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.2 V/DIV, 200 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed is maintained at 2,500 rpm for 2 minutes after sensor is warmed up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>In the DATA LIST, item O2S B1S2 shows the ECM input values from the heated oxygen sensor.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 3</ptxt>
+<figure>
+<graphic graphicname="G035622E06" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Fuel injector operation signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between #10 (to 60) and E01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>30 V/DIV, 20 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The wavelength becomes shorter as the engine rpm increases.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 4</ptxt>
+<figure>
+<graphic graphicname="A085286E41" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Knock sensor signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between KNK1 and EKNK, or KNK2 and EKN2</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.01 to 10 V/DIV, 0.01 to 10 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine speed is maintained at 4,000 rpm after engine is warmed up</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The wavelength becomes shorter as the engine rpm increases.</ptxt>
+</item>
+<item>
+<ptxt>The waveforms and amplitudes displayed differ slightly depending on the vehicle.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 5</ptxt>
+<figure>
+<graphic graphicname="G035795E23" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Variable Valve Timing (VVT) sensor signal (1)</ptxt>
+</step3>
+<step3>
+<ptxt>Crankshaft position sensor signal (2)</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(1) Between VV1+ and VV1- , VV2+ and VV2-, EV1+ and EV1-, or EV2+ and EV2-</ptxt>
+<ptxt>(2) Between NE+ and NE-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 20 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The wavelength becomes shorter as the engine rpm increases.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 6</ptxt>
+<figure>
+<graphic graphicname="G035664E08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Igniter IGT signal (from ECM to igniter) (1)</ptxt>
+</step3>
+<step3>
+<ptxt>Igniter IGF signal (from igniter to ECM) (2)</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>(1) Between IGT (1 to 6) and E1</ptxt>
+<ptxt>(2) Between IGF1 and E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV, 20 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The wavelength becomes shorter as the engine rpm increases.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 7</ptxt>
+<figure>
+<graphic graphicname="G042964E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Purge VSV for EVAP system operation signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between PRG and E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 V/DIV, 50 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If the waveform is not similar to that shown in the illustration, check the waveform again after idling for 10 minutes or more.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 8</ptxt>
+<figure>
+<graphic graphicname="A093224E20" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Vehicle speed signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between SPD and E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 V/DIV, 20 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driving at 12 mph (20 km/h)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The wavelength becomes shorter as the vehicle speed increases.</ptxt>
+</item>
+<item>
+<ptxt>Depending on the vehicle, the output waveform voltage may rise to 12 V if influenced by optionally installed systems.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 9</ptxt>
+<figure>
+<graphic graphicname="A093274E21" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Throttle drive motor operation signal (positive terminal)</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between M+ and ME01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 1 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling with warm engine</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The duty ratio varies depending on the throttle actuator operation.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 10</ptxt>
+<figure>
+<graphic graphicname="A093275E21" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Throttle drive motor operation signal (negative terminal)</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between M- and ME01</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 1 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling with warm engine</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The duty ratio varies depending on the throttle actuator operation.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>WAVEFORM 11</ptxt>
+<figure>
+<graphic graphicname="A093225E18" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Engine speed signal</ptxt>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.40in"/>
+<colspec colname="COL2" colwidth="2.73in"/>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ECM Terminal Names</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Between TACH and E1</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Ranges</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 V/DIV, 10 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Conditions</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Idling</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>The wavelength becomes shorter as the engine rpm increases.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

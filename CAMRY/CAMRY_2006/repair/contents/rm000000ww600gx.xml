@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_72ZB3_T00BU" variety="T00BU">
+<name>ENGINE SWITCH (w/ Smart Key System)</name>
+<para id="RM000000WW600GX" category="G" type-id="3001K" name-id="ST01Q-12" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000000WW600GX_01" type-id="01" category="01">
+<s-1 id="RM000000WW600GX_01_0001" proc-id="RM0250U___0000BE100000">
+<ptxt>INSPECT ENGINE SWITCH</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="A109252E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switch Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>7 (SS1) - 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2 (SS2) - 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>7 (SS1) - 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2 (SS2) - 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Not pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the engine switch.</ptxt>
+</s2>
+<s2>
+<ptxt>Apply battery voltage between the terminals of the switch, and check the illumination condition of the switch.</ptxt>
+<figure>
+<graphic graphicname="A109252E10" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.68in"/>
+<colspec colname="COL2" colwidth="1.45in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 11 (SWIL)</ptxt>
+<ptxt>Battery negative (-) → Terminal 4 (COM) or 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 12 (INDS)</ptxt>
+<ptxt>Battery negative (-) → Terminal 4 (COM) or 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 13 (INDW)</ptxt>
+<ptxt>Battery negative (-) → Terminal 4 (COM) or 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the engine switch.</ptxt>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

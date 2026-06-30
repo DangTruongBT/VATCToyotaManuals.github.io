@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7101XX" category="S" type-id="3001E" name-id="AT03A-69" from="200601">
+<name>DIAGNOSTIC TROUBLE CODE CHART</name>
+<subpara id="RM000000W7101XX_z0" proc-id="RM0250U___000033D00000">
+<content5 releasenbr="1">
+<ptxt>If a DTC is displayed during the DTC check, check the parts listed in the table below and proceed to the page given.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>*1: MIL (Malfunction Indicator Lamp) comes on</ptxt>
+</item>
+<item>
+<ptxt>*2: "DTC stored" mark means TCM memorizes the trouble code if the TCM detects that the DTC detection condition is satisfied.</ptxt>
+</item>
+<item>
+<ptxt>A DTC may be output when the clutch, brake and gear components, etc. inside the automatic transaxle are damaged.</ptxt>
+</item>
+</list1>
+</atten4>
+<table frame="all" colsep="1" rowsep="1" pgwide="1">
+<title>AUTOMATIC TRANSAXLE SYSTEM</title>
+<tgroup cols="6" colsep="1" rowsep="1">
+<colspec colnum="1" colname="1" colwidth="0.67in" colsep="0"/>
+<colspec colnum="2" colname="2" colwidth="1.72in" colsep="0"/>
+<colspec colnum="3" colname="3" colwidth="2.04in" colsep="0"/>
+<colspec colnum="4" colname="4" colwidth="0.93in" colsep="0"/>
+<colspec colnum="5" colname="5" colwidth="0.96in" colsep="0"/>
+<colspec colnum="6" colname="6" colwidth="0.76in" colsep="0"/>
+<thead valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>DTC Code</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="center">
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="center">
+<ptxt>MIL *1</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="center">
+<ptxt>Memory *2</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>See page</ptxt>
+</entry>
+</row>
+</thead>
+<tbody valign="top">
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0500</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Vehicle Speed Sensor "A"</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Vehicle speed sensor</ptxt>
+<ptxt>2. Vehicle speed sensor signal circuit</ptxt>
+<ptxt>3. Combination meter</ptxt>
+<ptxt>4. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8E00WX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0560</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>System Voltage</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in back-up power source circuit</ptxt>
+<ptxt>2. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000T8P01VX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0617</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Starter Relay Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Park/neutral position switch</ptxt>
+<ptxt>2. Starter relay circuit</ptxt>
+<ptxt>3. Cranking holding function circuit (w/ smart key system)</ptxt>
+<ptxt>4. Ignition switch (w/o smart key system)</ptxt>
+<ptxt>5. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000TA002NX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0705</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Range Sensor Circuit Malfunction (PRNDL Input)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in park/neutral position switch circuit</ptxt>
+<ptxt>2. Park/neutral position switch</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W84039X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0710</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Temperature Sensor "A" Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in ATF temperature sensor circuit</ptxt>
+<ptxt>2. Transmission wire (ATF temperature sensor)</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8501SX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0711</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Temperature Sensor "A" Performance</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>Transmission wire (ATF temperature sensor)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W7Z01PX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0712</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Temperature Sensor "A" Circuit Low Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in ATF temperature sensor circuit</ptxt>
+<ptxt>2. Transmission wire (ATF temperature sensor)</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8501SX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0713</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Temperature Sensor "A" Circuit High Input</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in ATF temperature sensor circuit</ptxt>
+<ptxt>2. Transmission wire (ATF temperature sensor)</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8501SX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0715</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Input / Turbine Speed Sensor Circuit Malfunction</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Transmission revolution sensor (speed sensor NT)</ptxt>
+<ptxt>2. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000025K0000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0717</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Input Speed Sensor Circuit No Signal</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Transmission revolution sensor (speed sensor NT)</ptxt>
+<ptxt>2. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000025K0000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0724</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Brake Switch "B" Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in stop light switch signal circuit</ptxt>
+<ptxt>2. Stop light switch</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W88018X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0741</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Torque Converter Clutch Solenoid Performance (Shift Solenoid Valve SL)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift solenoid valve SL remains closed</ptxt>
+<ptxt>2. Valve body is blocked</ptxt>
+<ptxt>3. Torque converter clutch</ptxt>
+<ptxt>4. Automatic transaxle (clutch, brake or gear etc.)</ptxt>
+<ptxt>5. Line pressure is too low</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000027R7000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0746</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "A" Performance (Shift Solenoid Valve SL1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift solenoid valve SL1 remains open or closed</ptxt>
+<ptxt>2. Valve body is blocked</ptxt>
+<ptxt>3. Automatic transaxle (clutch, brake or gear etc.)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000015VT00LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0748</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "A" Electrical (Shift Solenoid Valve SL1)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in shift solenoid valve SL1 circuit</ptxt>
+<ptxt>2. Shift solenoid valve SL1</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8F016X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0776</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "B" Performance (Shift Solenoid Valve SL2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift solenoid valve SL2 remains open or closed</ptxt>
+<ptxt>2. Valve body is blocked</ptxt>
+<ptxt>3. Automatic transaxle (clutch, brake or gear etc.)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000015VU00LX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0778</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "B" Electrical (Shift Solenoid Valve SL2)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in shift solenoid valve SL2 circuit</ptxt>
+<ptxt>2. Shift solenoid valve SL2</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8G015X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0791</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intermediate Shaft Speed Sensor "A" Circuit</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Transmission revolution sensor (speed sensor NC)</ptxt>
+<ptxt>2. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VM000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0793</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Intermediate Shaft Speed Sensor "A"</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Transmission revolution sensor (speed sensor NC)</ptxt>
+<ptxt>2. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VM000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0796</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "C" Performance (Shift Solenoid Valve SL3)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift solenoid valve SL3 remains open or closed</ptxt>
+<ptxt>2. Valve body is blocked</ptxt>
+<ptxt>3. Automatic transaxle (clutch, brake or gear etc.)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000015VV00IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0798</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "C" Electrical (Shift Solenoid Valve SL3)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in shift solenoid valve SL3 circuit</ptxt>
+<ptxt>2. Shift solenoid valve SL3</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000015W800IX" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0872</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Pressure Switch No.1 Circuit Low</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ATF temperatuer sensor assembly (ATF pressure switch No. 1)</ptxt>
+<ptxt>2. Transmission wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>-</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VN000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0873</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Pressure Switch No.1 Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ATF temperatuer sensor assembly (ATF pressure switch No 1)</ptxt>
+<ptxt>2. Transmission wire</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>-</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VN000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0877</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Pressure Switch No.2 Circuit Low</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ATF temperatuer sensor assembly (ATF pressure switch No. 2)</ptxt>
+<ptxt>2. Transmission wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>-</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VO000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0878</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Pressure Switch No.2 Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ATF temperatuer sensor assembly (ATF pressure switch No. 2)</ptxt>
+<ptxt>2. Transmission wire</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>-</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VO000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0989</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Pressure Switch No.3 Circuit Low</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ATF temperatuer sensor assembly (ATF pressure switch No. 3)</ptxt>
+<ptxt>2. Transmission wire</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VP000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P0990</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Transmission Fluid Pressure Switch No.3 Circuit High</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. ATF temperatuer sensor assembly (ATF pressure switch No. 3)</ptxt>
+<ptxt>2. Transmission wire</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VP000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2714</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "D" Performance (Shift Solenoid Valve SLT)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift solenoid valve SLT remains open</ptxt>
+<ptxt>2. Shift solenoid valve SL1, SL2, SL3 or SL4 remains open or closed</ptxt>
+<ptxt>4. Valve body is blocked</ptxt>
+<ptxt>5. Automatic transaxle (clutch, brake or gear, etc.)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W83016X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2716</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "D" Electrical (Shift Solenoid Valve SLT)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in shift solenoid valve SLT circuit</ptxt>
+<ptxt>2. Shift solenoid valve SLT</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8A017X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2757</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Torque Converter Clutch Pressure Control Solenoid Performance (Shift Solenoid Valve SLU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift solenoid valve SLU remains open or closed</ptxt>
+<ptxt>2. Valve body is blocked</ptxt>
+<ptxt>3. Torque converter clutch</ptxt>
+<ptxt>4. Automatic transaxle (clutch, brake or gear, etc.)</ptxt>
+<ptxt>5. Line pressure is too low</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W8D013X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2759</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Torque Converter Clutch Pressure Control Solenoid Control Circuit Electrical (Shift Solenoid Valve SLU)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in shift solenoid valve SLU circuit</ptxt>
+<ptxt>2. Shift solenoid valve SLU</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000000W89010X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2769</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Short in Torque Converter Clutch Solenoid Circuit (Shift Solenoid Valve SL)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Short in shift solenoid valve SL circuit</ptxt>
+<ptxt>2. Shift solenoid valve SL</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001IYS002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2808</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "G" Performance or Stuck OFF (Shift Solenoid Valve SL4)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Shift Solenoid valve SL4 remains open or closed</ptxt>
+<ptxt>2. Valve body is blocked</ptxt>
+<ptxt>3. Automatic transaxle (clutch, brake or gear etc.)</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VQ000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2770</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Open in Torque Converter Clutch Solenoid Circuit (Shift Solenoid Valve SL)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open in shift solenoid valve SL circuit</ptxt>
+<ptxt>2. Shift solenoid valve SL</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001IYS002X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>P2810</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Pressure Control Solenoid "G" Electrical (Shift Solenoid Valve SL4)</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>1. Open or short in shift solenoid valve SL4 circuit</ptxt>
+<ptxt>2. Shift solenoid valve SL4</ptxt>
+<ptxt>3. TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM0000026VR000X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+<row rowsep="1">
+<entry colname="1" colsep="1" align="center">
+<ptxt>U0100</ptxt>
+</entry>
+<entry colname="2" colsep="1" align="left">
+<ptxt>Lost Communication with ECM/PCM "A"</ptxt>
+</entry>
+<entry colname="3" colsep="1" align="left">
+<ptxt>TCM</ptxt>
+</entry>
+<entry colname="4" colsep="1" align="left">
+<ptxt>Comes on</ptxt>
+</entry>
+<entry colname="5" colsep="1" align="left">
+<ptxt>DTC stored</ptxt>
+</entry>
+<entry colname="6" colsep="1" align="center">
+<ptxt>
+<xref href="RM000001RRQ004X" label="XX-XX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

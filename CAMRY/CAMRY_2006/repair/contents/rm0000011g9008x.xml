@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM0000011G9008X" category="D" type-id="3001B" name-id="DL04R-08" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM0000011G9008X_z0" proc-id="RM0250U___00009F200000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Use the following procedures to troubleshoot the power door lock control system.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester should be used in step 5.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS CHECK</testtitle>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In troubleshooting, confirm that the problem symptoms have been accurately identified. Preconceptions should be discarded in order to make an accurate judgment. To clearly understand what the problem symptoms are, it is extremely important to ask the customer about the problem and the conditions at the time the malfunction occurred.</ptxt>
+</item>
+<item>
+<ptxt>Gather as much information as possible for reference. Past problems that seem unrelated may also help in some cases. </ptxt>
+</item>
+</list1>
+</atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The following 5 items are important points in the problem analysis:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>What</ptxt>
+</entry>
+<entry>
+<ptxt>Vehicle model, system name</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>When</ptxt>
+</entry>
+<entry>
+<ptxt>Date, time, occurrence frequency</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Where</ptxt>
+</entry>
+<entry>
+<ptxt>Road conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Under what conditions?</ptxt>
+</entry>
+<entry>
+<ptxt>Running conditions, driving conditions, weather conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>How did it happen?</ptxt>
+</entry>
+<entry>
+<ptxt>Problem symptoms</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>INSPECT BATTERY VOLTAGE</testtitle>
+<spec>
+<title>Standard Voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+<ptxt>If the voltage is below 11 V, recharge or replace the battery before proceeding to the next step.</ptxt>
+</specitem>
+</spec>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="top" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="top" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Fault is not listed in problem symptoms table</ptxt>
+</entry>
+<entry align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Fault is listed in problem symptoms table</ptxt>
+</entry>
+<entry align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>After repair, go to step 7</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>OVERALL ANALYSIS AND TROUBLESHOOTING</testtitle>
+<test1>
+<ptxt>Terminals of ECU</ptxt>
+<ptxt>(See page <xref label="Seep03" href="RM000000TNT00BX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>DATA LIST/ACTIVE TEST</ptxt>
+<ptxt>(See page <xref label="Seep04" href="RM000000TNZ00BX"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

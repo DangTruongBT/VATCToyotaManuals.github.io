@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XU700EX" category="D" type-id="3001B" name-id="DL02H-15" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000XU700EX_z0" proc-id="RM0250U___00009MY00000">
+<content5 releasenbr="1">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Use the following procedures to troubleshoot the smart key system.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester can be used in steps 4, 5 and 7.</ptxt>
+</item>
+<item>
+<ptxt>When troubleshooting the smart key system using the intelligent tester with the engine switch off, connect the intelligent tester to the vehicle and repeat turning any of the courtesy light switches on and off until communication between the tester and the vehicle begins (the interval between ON and OFF should be less than 1.5 sec.).</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS CHECK</testtitle>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In troubleshooting, confirm that the problem symptoms have been accurately identified. Preconceptions should be discarded in order to make an accurate judgment. To clearly understand what the problem symptoms are, it is extremely important to ask the customer about the problem and the conditions at the time the malfunction occurred.</ptxt>
+</item>
+<item>
+<ptxt>Gather as much information as possible for reference. Past problems that seem unrelated may also help in some cases.</ptxt>
+</item>
+<item>
+<ptxt>The following 5 items are important points in the problem analysis:</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>What</ptxt>
+</entry>
+<entry>
+<ptxt>Vehicle model, system name</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>When</ptxt>
+</entry>
+<entry>
+<ptxt>Date, time, occurrence frequency</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Where</ptxt>
+</entry>
+<entry>
+<ptxt>Road conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Under what conditions?</ptxt>
+</entry>
+<entry>
+<ptxt>Running conditions, driving conditions, weather conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>How did it happen?</ptxt>
+</entry>
+<entry>
+<ptxt>Problem symptoms</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>INSPECT BATTERY VOLTAGE</testtitle>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+</specitem>
+</spec>
+<ptxt>If the voltage is below 11 V, recharge or replace the battery before proceeding to the next step.</ptxt>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>INSPECT COMMUNICATION FUNCTION OF CAN COMMUNICATION SYSTEM</testtitle>
+<test1>
+<ptxt>Use the intelligent tester to check if the CAN Communication System is functioning normally (See page <xref label="Seep02" href="RM000000WI600QX"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COLSPEC0" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CAN DTC is not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CAN DTC is output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO CAN COMMUNICATION SYSTEM</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK FOR DTC</testtitle>
+<test1>
+<ptxt>Check for DTCs and note any codes that are output (See page <xref label="Seep03" href="RM000000TNX00CX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Delete the DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck for DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC does not reoccur</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>DTC reoccurs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO DIAGNOSTIC TROUBLE CODE CHART</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>OVERALL ANALYSIS AND TROUBLESHOOTING</testtitle>
+<test1>
+<ptxt>On-vehicle inspection (See page <xref label="Seep01" href="RM000000YC6008X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>DATA LIST/ACTIVE TEST (See page <xref label="Seep04" href="RM000000XUF008X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Terminals of ECU (See page <xref label="Seep05" href="RM000000XUA008X"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>REPAIR OR REPLACEMENT</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

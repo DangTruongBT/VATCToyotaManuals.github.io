@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_72ZS3_T00CJ" variety="T00CJ">
+<name>AIRBAG SYSTEM</name>
+<para id="RM000000XFC00VX" category="D" type-id="303F2" name-id="RS05W-19" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000000XFC00VX_z0" proc-id="RM0250U___000072000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>GENERAL</ptxt>
+<step2>
+<ptxt>In conjunction with impact absorbing structure for a front collision, the SRS (Supplemental Restraint System) driver airbag, front passenger airbag, and driver side knee airbag were designed to supplement seat belts in the event of a front collision in order to help reduce shock to the head and chest of the driver and front passenger and knee of the driver. This system is a 3-sensor type airbag system to detect the impact during a front collision using the center airbag sensor assembly and front airbag sensors. It also operates the airbag system and seat belt pretensioner.</ptxt>
+</step2>
+<step2>
+<ptxt>In order to detect the extent of the collision during the initial stages of the collision in further details, the front airbag sensors have been changed from mechanical type to electrical type deceleration sensors. Accordingly, the deployment of the driver airbag and front passenger airbag is controlled in two stages according to the severity of the impact.</ptxt>
+</step2>
+<step2>
+<ptxt>In conjunction with impact absorbing structure for a side collision, the side airbag and curtain shield airbag were designed to help reduce shock to the driver, front passenger, and rear outer passengers in the event of a side collision.</ptxt>
+</step2>
+<step2>
+<ptxt>The curtain shield airbag that helps reduce shock to the front and rear seat occupants with a single curtain shield airbag has been adopted. In conjunction with this system, the side airbag sensors have been installed at the bottom of the center pillars and the rear airbag sensors have been installed at the bottom of the rear pillars.</ptxt>
+</step2>
+<step2>
+<ptxt>In this system, a front side collision is detected by the side airbag sensor in order to simultaneously deploy the side and curtain shield airbags. A rear side collision is detected by the rear airbag sensor and the center airbag sensor assembly in order to deploy the curtain shield airbag.</ptxt>
+</step2>
+<step2>
+<ptxt>The center airbag sensor assembly sends the airbag deployment signal to the ECM through CAN (Controller Area Network) to operate the fuel pump control.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CONSTRUCTION AND OPERATION</ptxt>
+<step2>
+<ptxt>FRONT AIRBAG SENSOR</ptxt>
+<step3>
+<ptxt>The front airbag sensors are installed on the right and left radiator supports respectively.</ptxt>
+</step3>
+<step3>
+<ptxt>The front airbag sensor consists of the deceleration sensor.</ptxt>
+</step3>
+<step3>
+<ptxt>The deceleration sensor is built into the front airbag sensor, and the distortion that is created in the sensor is converted into an electric signal based on the vehicle deceleration rate during a frontal collision. Accordingly, the extent of the initial collision can be detected in detail.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>SIDE AIRBAG SENSOR</ptxt>
+<step3>
+<ptxt>The side airbag sensors are installed on the bottom of the right and left center pillars respectively.</ptxt>
+</step3>
+<step3>
+<ptxt>The side airbag sensor consists of the deceleration sensor and ignition control circuit.</ptxt>
+</step3>
+<step3>
+<ptxt>The deceleration sensor is built into the side airbag sensor, and the distortion that is created in the sensor is converted into an electric signal based on the vehicle deceleration rate during a front side collision. Accordingly, the extent of the initial collision can be detected in detail.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>REAR AIRBAG SENSOR</ptxt>
+<step3>
+<ptxt>The rear airbag sensors are installed on the right and left rear pillars respectively.</ptxt>
+</step3>
+<step3>
+<ptxt>The rear airbag sensor consists of the deceleration sensor and ignition control circuit.</ptxt>
+</step3>
+<step3>
+<ptxt>The deceleration sensor is built into the rear airbag sensor, and the distortion that is created in the sensor is converted into an electric signal based on the vehicle deceleration rate during a rear side collision. Accordingly, the extent of the initial collision can be detected in detail.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>CENTER AIRBAG SENSOR ASSEMBLY</ptxt>
+<step3>
+<ptxt>General</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The center airbag sensor assembly is installed on the center floor under the instrument panel.</ptxt>
+</item>
+<item>
+<ptxt>The center airbag sensor assembly consists of the deceleration sensor, safing sensor, electronic safing sensor, ignition control circuit, and diagnostic circuit.</ptxt>
+</item>
+<item>
+<ptxt>The center airbag sensor assembly receives signals from the deceleration sensor and safing sensor built into the center airbag sensor assembly and front airbag sensor. Then the center airbag sensor assembly determines whether the driver airbag, front passenger airbag, driver side knee airbag, and front seat belt pretensioners should be activated, and diagnoses system malfunctions.</ptxt>
+</item>
+<item>
+<ptxt>The center airbag sensor assembly causes the front seat side airbag assembly and the curtain shield airbag assembly to deploy when receiving signals from the side airbag sensor.</ptxt>
+</item>
+<item>
+<ptxt>The center airbag sensor assembly receives signals from the deceleration sensor and the electronic safing sensor built into the center airbag sensor assembly and the rear airbag sensor, and determines whether the curtain shield airbag should be activated, and diagnoses system malfunctions.</ptxt>
+</item>
+<item>
+<ptxt>The center airbag sensor assembly sends the airbag deployment signal to the ECM through CAN to operate the fuel pump control.</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Deceleration sensor and ignition control circuit</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The deceleration sensor is built into the center airbag sensor assembly.</ptxt>
+</item>
+<item>
+<ptxt>The ignition control circuit performs calculations based on the signal output from the deceleration sensors of the center airbag sensor assembly and front airbag sensor. If the calculated values are greater than the specified values, it activates ignition operation.</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Safing sensor</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The safing sensor is built into the center airbag sensor assembly. During a front collision, the sensor turns on and outputs an ON signal to the center airbag sensor assembly if a deceleration rate sent to the safing sensor is greater than the specified value.</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Electronic safing sensor</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The electronic safing sensor is built into the center airbag sensor assembly. During a side collision, the sensor turns on and outputs an ON signal to the center airbag sensor assembly if a deceleration rate sent to the electronic safing sensor is greater than the specified value.</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Backup power source</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The backup power source consists of a power supply capacitor and a DC-DC converter. When the power system does not function during a collision, the power supply capacitor discharges and supplies electric power to the system. The DC-DC converter operates as a boosting transformer when the battery voltage falls below a predetermined level.</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Diagnostic circuit</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>This circuit constantly diagnoses system malfunctions. When a malfunction is detected, it turns on the SRS warning light on the combination meter assembly to inform the driver.</ptxt>
+</item>
+</list1>
+</step3>
+<step3>
+<ptxt>Memory circuit</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>When a malfunction is detected in the diagnostic circuit, it is coded and stored in the memory circuit.</ptxt>
+</item>
+</list1>
+</step3>
+</step2>
+<step2>
+<ptxt>SRS WARNING LIGHT</ptxt>
+<step3>
+<ptxt>The SRS warning light is located on the combination meter assembly. It comes on to inform the driver of system trouble when a malfunction is detected in self-diagnosis of the center airbag sensor assembly. Under normal operating conditions when the ignition switch is turned on (IG), it comes on for approximately 6 seconds and then goes off.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DEPLOYMENT CONDITION</ptxt>
+<ptxt>When the vehicle collides and the shock is greater than the specified value, the SRS is activated automatically. The center airbag sensor assembly includes the safing sensor and deceleration sensor. The safing sensor is designed to turn on at a smaller deceleration rate than the deceleration sensor.</ptxt>
+<step2>
+<ptxt>The center airbag sensor assembly determines whether ignition is necessary based on signals from the deceleration sensor and the front airbag sensor (*1). If the safing sensor turns on simultaneously, current flows to the squibs to deploy the SRS as shown in the illustration below.</ptxt>
+<figure>
+<graphic graphicname="C109526E05" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<atten4>
+<ptxt>*1: In case of front collision, the ignition signal could be output with the deceleration sensor ON signal even without a signal from the front airbag sensor.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>The center airbag sensor assembly determines whether ignition is necessary based on signals from the side airbag sensor. If the safing sensor turns on simultaneously, current flows to the squib to deploy the SRS as shown in the illustration below.</ptxt>
+<figure>
+<graphic graphicname="C109527E12" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The center airbag sensor assembly determines whether ignition is necessary based on signals from the rear airbag sensor. If the safing sensor turns on simultaneously, current flows to the squib to deploy the SRS as shown in the illustration below (*1).</ptxt>
+<figure>
+<graphic graphicname="C109528E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<atten4>
+<ptxt>*1: If the front seat side airbag assembly deploys, the curtain shield airbag assembly will also deploy, regardless of whether the signal is output from the rear airbag sensor.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

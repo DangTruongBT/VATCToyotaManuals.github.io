@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="T1">
+<name>INTRODUCTION</name>
+<section id="10002_S000B" variety="S000B">
+<name>INTRODUCTION</name>
+<ttl id="10002_S000B_730ER_T00F3" variety="T00F3">
+<name>HOW TO TROUBLESHOOT ECU CONTROLLED SYSTEMS</name>
+<para id="RM000000UZ100YX" category="D" type-id="3001B" name-id="IN00R-31" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000UZ100YX_z0" proc-id="RM0250U___00009YY00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>OPERATION FLOW</ptxt>
+<atten4>
+<ptxt>Perform troubleshooting in accordance with the procedures below. The following is an outline of basic troubleshooting procedures. Confirm the troubleshooting procedures for the circuit you are working on before beginning troubleshooting.</ptxt>
+</atten4>
+</step1>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS</testtitle>
+<test1>
+<ptxt>Ask the customer about the conditions and environment when the problem occurred.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>INSPECT BATTERY VOLTAGE</testtitle>
+<spec>
+<title>Standard voltage</title>
+<specitem>
+<ptxt>11 to 14 V</ptxt>
+<ptxt>If the voltage is below 11 V, recharge or replace the battery before proceeding.</ptxt>
+</specitem>
+</spec>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM CONFIRMATION AND DTC (AND FREEZE FRAME DATA) CHECK</testtitle>
+<test1>
+<ptxt>Visually check the wire harnesses, connectors and fuses for open and short circuits.</ptxt>
+</test1>
+<test1>
+<ptxt>Warm up the engine to the normal operating temperature.</ptxt>
+</test1>
+<test1>
+<ptxt>Confirm the problem symptoms and conditions, and check for DTCs</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="2.07in"/>
+<colspec colname="COL2" align="left" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="top">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="top">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 6</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHART</testtitle>
+<test1>
+<ptxt>Check the results obtained in step 4. Then find the output DTC in the DTC chart. Look at the "Trouble Area" column for a list of potentially malfunctioning circuits and/or parts.</ptxt>
+</test1>
+<results>
+<result>NEXT</result>
+<action-ci-right>Go to step 7</action-ci-right>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS CHART</testtitle>
+<test1>
+<ptxt>Check the results obtained in step 4. Then find the problem symptoms in the problem symptoms table. Look at the "Suspected Area" column for a list of potentially malfunctioning circuits and/or parts.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CIRCUIT INSPECTION OR PARTS INSPECTION</testtitle>
+<test1>
+<ptxt>Identify the malfunctioning circuit or part.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>ADJUST, REPAIR OR REPLACE</testtitle>
+<test1>
+<ptxt>Adjust, repair or replace the malfunctioning circuit or parts.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<test1>
+<ptxt>After the adjustment, repairs or replacement, confirm that the malfunction no longer exists. If the malfunction does not reoccur, perform a confirmation test under the same conditions and in the same environment as when the malfunction occurred the first time.</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+<step1>
+<ptxt>CUSTOMER PROBLEM ANALYSIS</ptxt>
+</step1>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In troubleshooting, confirm that the problem symptoms have been accurately identified. Preconceptions should be discarded in order to make an accurate judgment. To clearly understand what the problem symptoms are, it is extremely important to ask the customer about the problem and the conditions at the time the malfunction occurred.</ptxt>
+</item>
+<item>
+<ptxt>Gather as much information as possible for reference. Past problems that seem unrelated may also help in some cases. </ptxt>
+</item>
+</list1>
+</atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The following 5 items are important points in the problem analysis:</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>What</ptxt>
+</entry>
+<entry>
+<ptxt>Vehicle model, system name</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>When</ptxt>
+</entry>
+<entry>
+<ptxt>Date, time, occurrence frequency</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Where</ptxt>
+</entry>
+<entry>
+<ptxt>Road conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Under what conditions?</ptxt>
+</entry>
+<entry>
+<ptxt>Running conditions, driving conditions, weather conditions</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>How did it happen?</ptxt>
+</entry>
+<entry>
+<ptxt>Problem symptoms</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+<step1>
+<ptxt>SYMPTOM CONFIRMATION AND DIAGNOSTIC TROUBLE CODE</ptxt>
+<atten4>
+<ptxt>The diagnostic system in the CAMRY has various functions.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The first function is the Diagnostic Trouble Code (DTC) check. A DTC is a code stored in the ECU memory whenever a malfunction in the signal circuits to the ECU occurs. In a DTC check, a previous malfunction's DTC can be checked by a technician during troubleshooting.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Another function is the Input Signal Check, which checks if the signals from various switches are sent to the ECU correctly.</ptxt>
+<ptxt>By using these functions, the problem areas can be narrowed down and troubleshooting is more effective. Diagnostic functions are incorporated in the following system in the CAMRY.</ptxt>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" colwidth="1.18in"/>
+<colspec colname="COL2" colwidth="1.18in"/>
+<colspec colname="COL3" colwidth="1.18in"/>
+<colspec colname="COL5" colwidth="1.18in"/>
+<colspec colname="COL6" colwidth="1.18in"/>
+<colspec colname="COL7" colwidth="1.18in"/>
+<thead>
+<row>
+<entry>
+<ptxt>System</ptxt>
+</entry>
+<entry>
+<ptxt>DTC Check</ptxt>
+<ptxt>(Normal Mode)</ptxt>
+</entry>
+<entry>
+<ptxt>DTC Check</ptxt>
+<ptxt>(Check Mode)</ptxt>
+</entry>
+<entry>
+<ptxt>Sensor Check/Test Mode (Input Signal Check)</ptxt>
+</entry>
+<entry>
+<ptxt>Data List</ptxt>
+</entry>
+<entry>
+<ptxt>Active Test</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>2AZ-FE SFI System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2GR-FE SFI System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Smart Key System (Starting)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>U250E Automatic Transaxle System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>U660E Automatic Transaxle System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Tire Pressure Warning System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+</row>
+<row>
+<entry>
+<ptxt>Anti-lock Brake System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Vehicle Stability Control System (for BOSCH made)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Vehicle Stability Control System (for ADVICS made)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Electric Steering Lock</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Air Conditioning System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Airbag System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+</row>
+<row>
+<entry>
+<ptxt>Occupant Classification System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+</row>
+<row>
+<entry>
+<ptxt>Seat Belt Warning System</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Theft Deterrent System (w/ Smart Key System)</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Theft Deterrent System (w/o Smart Key System)</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine Immobilizer System (w/ Smart Key System)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine Immobilizer System (w/o Smart Key System)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Cruise Control System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+</row>
+<row>
+<entry>
+<ptxt>Lighting System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Power Door Lock Control System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Wireless Door Lock Control System (w/ Smart Key System)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Wireless Door Lock Control System (w/o Smart Key System)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Smart Key System (Door Lock)</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Key Reminder Warning System</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Meter/Gauge System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Audio and Visual System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>
+<ptxt>Navigation System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+</row>
+<row>
+<entry>
+<ptxt>Power Window Control System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Window Defogger System</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sliding Roof System</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry/>
+<entry/>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+<entry>
+<ptxt>○</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>In the DTC check, it is very important to determine whether the problem indicated by the DTC either: 1) still occurs, or 2) occurred in the past but has returned to normal. In addition, the DTC should be compared to the problem symptom to see if they are related. For this reason, DTCs should be checked before and after confirmation of symptoms (i.e., whether or not problem symptoms exist) to determine current system conditions, as shown in the flowchart below.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Never skip the DTC check. Failing to check DTCs may, depending on the case, result in unnecessary troubleshooting for systems operating normally or lead to repairs not related to the problem. Follow the procedures listed in the flowchart in the correct order.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The following flowchart shows how to proceed with troubleshooting using the DTC check. Directions from the flowchart will indicate how to proceed either to DTC troubleshooting or to the troubleshooting of each problem symptom.</ptxt>
+</item>
+</list1>
+</atten4>
+</step1>
+<descript-diag>
+<descript-testgroup>
+<testtitle>DTC CHECK</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>MAKE A NOTE OF DTCS DISPLAYED AND THEN CLEAR MEMORY</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM CONFIRMATION</testtitle>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="left" colwidth="2.07in"/>
+<colspec colname="COL2" align="left" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="top">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="top">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No symptoms exist</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Symptoms exist</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 5</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SIMULATION TEST USING SYMPTOM SIMULATION METHODS</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>DTC CHECK</testtitle>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC is not output</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>DTC is output</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>TROUBLESHOOTING OF PROBLEM INDICATED BY DTC</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM CONFIRMATION</testtitle>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Result</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No symptoms exist</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Symptoms exist</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<specitem>
+<ptxt>If a DTC was displayed in the initial DTC check, the problem may have occurred in a wire harness or connector in that circuit in the past. Check the wire harness and connectors.</ptxt>
+</specitem>
+</spec>
+<results>
+<result>B</result>
+<action-ci-right>SYSTEM NORMAL</action-ci-right>
+<result-ci-down>A</result-ci-down>
+<action-ci-fin>TROUBLESHOOTING OF EACH PROBLEM SYMPTOM</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+<ptxt>The problem still occurs in a place other than the diagnostic circuit (the DTC displayed first is either for a past problem or a secondary problem).</ptxt>
+<step1>
+<ptxt>SYMPTOM SIMULATION</ptxt>
+<atten4>
+<ptxt>The most difficult case in troubleshooting is when no problem symptoms occur. In such a case, a thorough problem analysis must be carried out. A simulation of the same or similar conditions and environment in which the problem occurred in the customer's vehicle should be carried out. No matter how much skill or experience a technician has, troubleshooting without confirming the problem symptoms will lead to important repairs being overlooked and mistakes or delays.</ptxt>
+</atten4>
+<spec>
+<title>For example</title>
+<specitem>
+<ptxt>With a problem that only occurs when the engine is cold or as a result of vibration caused by the road during driving, the problem can never be determined if the symptoms are being checked on a stationary vehicle or a vehicle with a warmed-up engine. Vibration, heat or water penetration (moisture) are difficult to reproduce. The symptom simulation tests below are effective substitutes for the conditions and can be applied to a stationary vehicle. Important points in the symptom simulation test: </ptxt>
+<ptxt>In the symptom simulation test, the problem symptoms as well as the problem area or parts must be confirmed. First, narrow down the possible problem circuits according to the symptoms. Then, connect the tester and carry out the symptom simulation test, judging whether the circuit being tested is defective or normal. Also, confirm the problem symptoms at the same time. Refer to the problem symptoms table for each system to narrow down the possible causes.</ptxt>
+</specitem>
+</spec>
+<step2>
+<ptxt>VIBRATION METHOD: When a malfunction seems to occur as a result of vibration.</ptxt>
+<figure>
+<graphic graphicname="B071602E03" width="2.775699831in" height="4.7836529in"/>
+</figure>
+<step3>
+<ptxt>PART AND SENSOR</ptxt>
+<ptxt>Apply slight vibration with a finger to the part of the sensor suspected to be the cause of the problem, and check whether the malfunction occurs.</ptxt>
+<atten3>
+<ptxt>Applying strong vibration to relays may open relays.</ptxt>
+</atten3>
+</step3>
+<step3>
+<ptxt>CONNECTORS</ptxt>
+<ptxt>Slightly shake the connector vertically and horizontally.</ptxt>
+</step3>
+<step3>
+<ptxt>WIRE HARNESS</ptxt>
+<ptxt>Slightly shake the wire harness vertically and horizontally. </ptxt>
+<atten4>
+<ptxt>The connector joint and fulcrum of the vibration are the major areas that should be checked thoroughly.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>HEAT METHOD: When a malfunction seems to occur when the area in question is heated.</ptxt>
+<step3>
+<ptxt>Heat the component that is the possible cause of the malfunction with a hair dryer or similar device. Check if the malfunction occurs.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Do not heat to more than 60°C (140°F). Exceeding this temperature may damage the components.</ptxt>
+</item>
+<item>
+<ptxt>Do not apply heat directly to the parts in the ECU.</ptxt>
+</item>
+</list1>
+</atten3>
+</step3>
+</step2>
+<step2>
+<ptxt>WATER SPRINKLING METHOD: When a malfunction seems to occur on a rainy day or in high-humidity.</ptxt>
+<figure>
+<graphic graphicname="D025085E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Sprinkle water onto the vehicle and check if the malfunction occurs.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Never sprinkle water directly into the engine compartment. Indirectly change the temperature and humidity by spraying water onto the front of the radiator.</ptxt>
+</item>
+<item>
+<ptxt>Never apply water directly onto the electronic components.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>If the vehicle has or had a water leakage problem, the leakage may have damaged the ECU or connections. Look for evidence of corrosion or short circuits. Proceed with caution during water tests.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>HIGH ELECTRICAL LOAD METHOD: When a malfunction seems to occur when an electrical load is excessive.</ptxt>
+<figure>
+<graphic graphicname="B107149" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Turn on the heater blower, headlight, rear window defogger and all other electrical loads. Check if the malfunction reoccurs.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DIAGNOSTIC TROUBLE CODE CHART</ptxt>
+</step1>
+<ptxt>Look for output Diagnostic Trouble Codes (DTCs) (from the DTC checks) in the appropriate section's Diagnostic Trouble Code Chart. Use the chart to determine the trouble area and the proper inspection procedure. A description of each of the chart's columns is shown in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the diagnostic trouble code</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Detection Item</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the system or details of the problem</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the suspected areas of the problem</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>See Page</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the page where the inspection procedures for each circuit is to be found, or gives instruction for checking and repairs.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>PROBLEM SYMPTOMS TABLE</ptxt>
+<ptxt>When a "Normal" code is output during a DTC check but the problem still occurs, use the Problem Symptoms Table. The suspected areas (circuits or parts) for each problem symptoms are in the table. The suspected areas are listed in order of probability. A description of each of the chart's columns is shown in the table below.</ptxt>
+<atten4>
+<ptxt>In some cases, the problem is not detected by the diagnostic system even though a problem symptom occurs. It is possible that the problem occurs outside the detection range of the diagnostic system, or that the problem occurs in a completely different system.</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Problem Symptom</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Circuit Inspection, Inspection Order</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the order in which the circuits need to be checked</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Circuit or Part Name</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the circuit or part which needs to be checked</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>See Page</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the page where the flowchart for each circuit is located</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>CIRCUIT INSPECTION</ptxt>
+<ptxt>A description of the main areas of each circuit inspection is shown in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Item</ptxt>
+</entry>
+<entry>
+<ptxt>Description</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>Circuit Description</ptxt>
+</entry>
+<entry>
+<ptxt>The major role, operation of the circuit and its component parts are explained.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Diagnostic Trouble Code No. and Detection Item</ptxt>
+</entry>
+<entry>
+<ptxt>Indicates the diagnostic trouble codes, diagnostic trouble code settings and suspected areas for a problem</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Wiring Diagram</ptxt>
+</entry>
+<entry>
+<ptxt>This shows a wiring diagram of the circuit.</ptxt>
+<ptxt>Use this diagram together with ELECTRICAL WIRING DIAGRAM to thoroughly understand the circuit.</ptxt>
+<ptxt>Wire colors are indicated by an alphabetical code. B = Black, L = Blue, R = Red, BR = Brown, LG = Light Green, V = Violet, G = Green, O = Orange, W = White, GR = Gray, P = Pink, Y = Yellow, SB = Sky Blue</ptxt>
+<ptxt>The first letter indicates the basic wire color and the second letter indicates the color of the stripe.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Inspection Procedures</ptxt>
+</entry>
+<entry>
+<ptxt>Use the inspection procedures to determine if the circuit is normal or abnormal. If abnormal, use the inspection procedures to determine whether the problem is located in the sensors, actuators, wire harnesses or ECU.</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Indicates the condition of the connector of the ECU during the check</ptxt>
+</entry>
+<entry>
+<ptxt>Connector being checked is connected.</ptxt>
+<ptxt>Connections of tester are indicated by (+) or (-) after the terminal name.</ptxt>
+<ptxt>Connector being checked is disconnected.</ptxt>
+<ptxt>The inspections between a connector and body ground, information about the body ground is not shown in the illustration.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

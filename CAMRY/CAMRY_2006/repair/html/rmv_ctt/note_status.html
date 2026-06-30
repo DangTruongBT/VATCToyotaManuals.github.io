@@ -1,0 +1,32 @@
+<!-- $Id: note_status.html,v 1.3 2004/04/26 05:04:34 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Note Dialog Status Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javaScript">
+var DELIM = " &gt; ";
+function init() {
+if (parent.g_procId==null) return;
+setStatus(parent.g_procId);
+}
+function setStatus(procId) {
+parent.g_sectionName = parent.getSectionName(procId, parent.g_tocXml);
+parent.g_ttlName     = parent.getTitleName(procId, parent.g_tocXml);
+parent.g_paraName    = parent.g_tocXml.selectSingleNode("//para[@id='" +procId +"']/name").nodeTypedValue;
+disp.innerHTML = (parent.dgTitle=parent.g_sectionName +DELIM +parent.g_ttlName +DELIM +parent.g_paraName);
+}
+
+</script>
+</head>
+<body onLoad="init();">
+  <p id="disp" class="location"></p>
+</body>
+</html>

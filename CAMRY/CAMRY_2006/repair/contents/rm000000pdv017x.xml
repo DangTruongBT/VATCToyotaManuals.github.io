@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDV017X" category="C" type-id="302GR" name-id="ES3X6-01" from="200601">
+<dtccode>P0016</dtccode>
+<dtcname>Crankshaft Position - Camshaft Position Correlation (Bank 1 Sensor A)</dtcname>
+<subpara id="RM000000PDV017X_01" type-id="60" category="03" proc-id="RM0250U___000079Z00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>In the VVT (Variable Valve Timing) system, the appropriate intake valve open and close timing is controlled by the ECM. The ECM performs intake valve control by performing the following: 1) controlling the camshaft and camshaft timing oil control valve, and operating the camshaft timing gear; and 2) changing the relative positions of the gaps between the camshaft and crankshaft.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0016</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Deviation between crankshaft and camshaft position sensor signals (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Mechanical system (Timing chain has jumped tooth or chain stretched)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_02" type-id="64" category="03" proc-id="RM0250U___00007A000000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM optimizes the valve timing by using the VVT (Variable Valve Timing) system to control the intake camshaft. The VVT system includes the ECM, the Oil Control Valve (OCV) and the VVT controller.</ptxt>
+<ptxt>The ECM sends a target duty-cycle control signal to the OCV. This control signal regulates the oil pressure supplied to the VVT controller. The VVT controller can advance or retard the intake camshaft. The ECM calibrates the intake valve timing by setting the intake camshaft to the most retarded angle while the engine is idling. The ECM closes the OCV to retard the cam. The ECM stores this value as the VVT learning value. When the difference between the target and actual intake valve timings is 5°CA (Crankshaft Angle) or less, the ECM stores it.</ptxt>
+<ptxt>If the VVT learning value matches the following conditions, the ECM determines the existence of a malfunction in the VVT system, and sets the DTC.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>VVT learning value: Less than 27.8°CA, or more than 48°CA.</ptxt>
+</item>
+<item>
+<ptxt>Above condition continues for 18 seconds or more.</ptxt>
+</item>
+</list1>
+<ptxt>This DTC indicates that the angle between the intake camshaft and the crankshaft is incorrect due to factors such as the timing chain having a jumped tooth.</ptxt>
+<ptxt>This monitor begins to run after the engine has idled for 5 minutes.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_03" type-id="65" category="03" proc-id="RM0250U___00007A100000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry>
+<ptxt>P0016: Camshaft timing misalignment at idling</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components</ptxt>
+</entry>
+<entry>
+<ptxt>VVT actuator</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Required Sensors/Components</ptxt>
+</entry>
+<entry>
+<ptxt>Camshaft position sensor, Crankshaft position sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Duration</ptxt>
+</entry>
+<entry>
+<ptxt>Within 1 minute</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry>
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry>
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_04" type-id="66" category="03" proc-id="RM0250U___00007A200000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COLSPEC0" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0011 (VVT system 1 - advance)</ptxt>
+<ptxt>P0012 (VVT system 1 - retarded)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine RPM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>550 to 1,000 rpm</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_05" type-id="67" category="03" proc-id="RM0250U___00007A300000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" align="left" colwidth="3.54in"/>
+<colspec colname="col2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>One of the following conditions is met</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VVT learning value at maximum retarded valve timing</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 27.8°CA</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VVT learning value at maximum retarded valve timing</ptxt>
+</entry>
+<entry>
+<ptxt>More than 48°CA</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_06" type-id="32" category="03" proc-id="RM0250U___00007A400000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0335 (See page <xref label="Seep01" href="RM000000TCW01VX"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_07" type-id="51" category="05" proc-id="RM0250U___00007A500000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PDV017X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PDV017X_08_0004" proc-id="RM0250U___000079V00000">
+<testtitle>CHECK VALVE TIMING (CHECK FOR LOOSE AND JUMPED TOOTH OF TIMING CHAIN)
+</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the cylinder head cover.</ptxt>
+<figure>
+<graphic graphicname="A098172E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the crankshaft pulley, and align its groove with the timing mark "0" on the timing chain cover.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the timing marks on the camshaft timing sprocket and camshaft timing gear are facing upward as shown in the illustration.</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>If not, turn the crankshaft 1 revolution (360°), then align the marks as above.</ptxt>
+</item>
+</list1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Timing marks on camshaft timing gears are aligned as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the cylinder head cover.</ptxt>
+</test1>
+</content6><res>
+<down ref="RM000000PDV017X_08_0002" fin="false">OK</down>
+<right ref="RM000000PDV017X_08_0003" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDV017X_08_0002">
+<testtitle>REPLACE ECM</testtitle>
+<res>
+<right ref="RM000000PDV017X_08_0005" fin="false">NEXT</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PDV017X_08_0003">
+<testtitle>ADJUST VALVE TIMING</testtitle>
+<res>
+<down ref="RM000000PDV017X_08_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PDV017X_08_0005" proc-id="RM0250U___00007A600000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<atten3>
+<ptxt>After replacing the ECM or adjusting intake valve timing, confirm that the DTC output does not recur.</ptxt>
+</atten3>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Switch the ECM from normal mode to check mode using the tester (See page <xref label="Seep02" href="RM000000PDL01QX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and warm it up.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle for 1 minute or more, and then drive the vehicle for 1 minute or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Confirm that no DTC is set using the tester.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No DTC output</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PDV017X_08_0006" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PDV017X_08_0006">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Z_S0017" variety="S0017">
+<name>SEAT BELT</name>
+<ttl id="1000Z_S0017_72ZX3_T00CP" variety="T00CP">
+<name>SEAT BELT WARNING SYSTEM</name>
+<para id="RM0000014DJ00AX" category="U" type-id="3001G" name-id="SB0MX-01" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM0000014DJ00AX_z0" proc-id="RM0250U___00007Y500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CLOCK ASSEMBLY</ptxt>
+</step1>
+<figure>
+<graphic graphicname="B140734E01" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F3-3 (IG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch OFF → ON (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V → 10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance</title>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal No. (Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F3-10 (PBEW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger seat belt signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The passenger seat is occupied, seat belt is fastened → unfastened</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω → 10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F3-19 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

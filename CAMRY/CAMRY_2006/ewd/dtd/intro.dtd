@@ -1,0 +1,180 @@
+<!--
+   EWD Introduction DTD
+
+   Copyright (c) 2004 SHINTEC HOZUMI Co.,LTD.
+   All Rights Reserved. 
+-->
+
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- XML DTD for TOYOTA EWD  -->
+<!ENTITY % LangCode
+	"(en | fr | de | es | pt | it | sv | da | fi | no | nl | el | cs | hu | pl | ja)"
+>
+
+<!ENTITY % URL		"CDATA">
+<!ENTITY % Value	"NMTOKEN">
+
+<!ENTITY % para		"(ptxt)+">
+<!ENTITY % ptext	"(#PCDATA | figchar | uline)*">
+
+<!ENTITY % note		"(hint | notice | caution)*">
+
+
+<!ENTITY % content	"(%para; | figure | example | norm | case | %note;)?">
+
+<!ENTITY % defs		"(deflist)">
+<!ENTITY % tbl		"(table)">
+<!ENTITY % rowdata	"(row)+">
+
+<!ENTITY % exam		"(%defs; | %tbl;)">
+
+<!ENTITY % note.data	"(%para; | %defs; | step-n2 | step-n4)+">
+
+
+<!ENTITY % intro.mdl	"(%para;,thead,section+)">
+<!ENTITY % trbl.mdl	"(step1)+">
+<!ENTITY % abbr.mdl	"(heading,(%para; | abbreviation)+)">
+<!ENTITY % glos.mdl	"(heading,(item)+)">
+<!ENTITY % index.mdl	"(name,(title1)*)">
+
+<!-- root element -->
+<!ELEMENT	ewd		(intro)>
+<!ELEMENT	intro	(introduction | troubleshooting | abbreviations | glossary | index)>
+<!ELEMENT	introduction	%intro.mdl;>
+<!ELEMENT	troubleshooting	%trbl.mdl;>
+<!ELEMENT	abbreviations	%abbr.mdl;>
+<!ELEMENT	glossary	%glos.mdl;>
+<!ELEMENT	index		%index.mdl;>
+
+<!ATTLIST intro
+	xml:lang %LangCode; #REQUIRED
+>
+
+<!ATTLIST abbreviations
+	pubno	CDATA	#REQUIRED
+>
+
+<!ELEMENT ptxt		%ptext;>
+<!ELEMENT figchar	EMPTY>
+<!ELEMENT uline		(#PCDATA)>
+
+<!ATTLIST figchar
+	src		%URL; 	#REQUIRED
+	width	%Value; #IMPLIED
+	height	%Value; #IMPLIED
+	align	CDATA	#IMPLIED
+>
+
+
+<!-- introduction -->
+<!ELEMENT	section	(name,title+)>
+<!ELEMENT	name	(#PCDATA)>
+<!ELEMENT	title	(name?,contents)>
+<!ELEMENT	contents	%para;>
+<!-- end of introduction -->
+
+<!-- troubleshooting -->
+<!ELEMENT	step1	(%para;,cont)>
+<!ELEMENT	cont	(%content; | step2)*>
+<!ELEMENT	step2	(%content; | step3)*>
+<!ELEMENT	step3	(%content;)*>
+<!ELEMENT	step-n4	%para;>
+
+<!-- note -->
+<!ELEMENT	hint	%note.data;>
+<!ELEMENT	notice	%note.data;>
+<!ELEMENT	caution	%note.data;>
+<!-- end of note -->
+
+<!-- note.data -->
+<!ELEMENT	step-n2	%para;>
+<!-- end of note.data -->
+
+<!-- content -->
+<!ELEMENT	figure	EMPTY>
+<!ELEMENT	example	%exam;>
+<!ELEMENT	norm	%para;>
+<!ELEMENT	case	%para;>
+
+<!ATTLIST figure
+	src		%URL; 	#REQUIRED
+	width	%Value; #IMPLIED
+	height	%Value; #IMPLIED
+>
+
+<!ATTLIST case
+	no	%Value; #REQUIRED
+>
+<!-- end of content -->
+
+
+<!-- defs -->
+<!ELEMENT	deflist	(l-item)+>
+<!ELEMENT	l-item	(label,desc)>
+<!ELEMENT	label	(#PCDATA)>
+<!-- end of defs -->
+
+<!-- tbl -->
+<!ELEMENT	table	(thead?,tbody)>
+<!ELEMENT	thead	%rowdata;>
+<!ELEMENT	tbody	%rowdata;>
+
+<!ATTLIST table
+	frame	CDATA	#IMPLIED
+>
+<!-- end of tbl -->
+
+<!-- rowdata -->
+<!ELEMENT	row	(entry)+>
+<!ELEMENT	entry	%para;>
+<!-- end of rowdata -->
+
+<!-- end of troubleshooting -->
+
+
+
+
+
+<!-- abbreviations -->
+<!ELEMENT	heading	%ptext;>
+<!ELEMENT	abbreviation	(term,meaning)>
+<!ELEMENT	term	%ptext;>
+<!ELEMENT	meaning	(#PCDATA)>
+<!-- end of abbreviations -->
+
+
+
+
+
+<!-- glossary -->
+<!ELEMENT	item	(symbol,(term,desc)+)>
+<!ELEMENT	symbol	EMPTY>
+<!ELEMENT	desc	%ptext;>
+
+<!ATTLIST symbol
+	fig		%URL; 	#REQUIRED
+	width	%Value; #IMPLIED
+	height	%Value; #IMPLIED
+>
+<!-- end of glossary -->
+
+
+
+
+
+<!-- index -->
+<!ELEMENT	title1		(name, (title2)*)>
+<!ELEMENT	title2		(name, (title3)*)>
+<!ELEMENT	title3		(name)>
+
+<!ATTLIST title1
+	code	CDATA	#IMPLIED
+>
+<!ATTLIST title2
+	code	CDATA	#IMPLIED
+>
+<!ATTLIST title3
+	code	CDATA	#IMPLIED
+>
+<!-- end of index -->
+

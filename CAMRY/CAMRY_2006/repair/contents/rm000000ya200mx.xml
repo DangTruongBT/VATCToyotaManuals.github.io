@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000YA200MX" category="J" type-id="800SS" name-id="ST0W8-01" from="200601">
+<dtccode/>
+<dtcname>Engine Switch Indicator Circuit</dtcname>
+<subpara id="RM000000YA200MX_01" type-id="60" category="03" proc-id="RM0250U___00009MJ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Engine start conditions or system malfunctions can be checked by the status of the engine switch indicator light.</ptxt>
+<table pgwide="1">
+<title>Engine switch indicator light condition:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.12in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<colspec colname="COL3" colwidth="2.48in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Power Source Mode/Condition</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle">
+<ptxt>Indicator Light Condition</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>Brake pedal released</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Brake pedal depressed, shift lever in P or N</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Green) (When key and vehicle IDs match)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>on (ACC, IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Amber)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON (Green)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine running</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering lock not unlocked</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Green) for 15 sec.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Green) for 15 sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>System malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Amber) for 15 sec.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Flashes (Amber) for 15 sec.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000YA200MX_02" type-id="32" category="03" proc-id="RM0250U___00009MK00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B112453E04" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YA200MX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000YA200MX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000YA200MX_04_0001" proc-id="RM0250U___00009ML00000">
+<testtitle>INSPECT ENGINE SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the engine switch.</ptxt>
+<figure>
+<graphic graphicname="A109252E10" width="7.106578999in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Apply battery voltage between the terminals of the switch, and check the illumination condition of the switch.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>If the positive (+) lead and the negative (-) lead are incorrectly connected, the engine switch indicator will not illuminate.</ptxt>
+</item>
+<item>
+<ptxt>If the voltage is too low, the indicator will not illuminate.</ptxt>
+</item>
+</list1>
+</atten3>
+<spec>
+<title>OK</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.87in"/>
+<colspec colname="COL2" colwidth="1.26in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Measurement Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 11 (SWIL)</ptxt>
+<ptxt>Battery negative (-) → Terminal 4 (COM) or 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 12 (INDS)</ptxt>
+<ptxt>Battery negative (-) → Terminal 4 (COM) or 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery positive (+) → Terminal 13 (INDW)</ptxt>
+<ptxt>Battery negative (-) → Terminal 4 (COM) or 5 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Illuminates</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA200MX_04_0002" fin="false">OK</down>
+<right ref="RM000000YA200MX_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA200MX_04_0002" proc-id="RM0250U___00009MM00000">
+<testtitle>CHECK WIRE HARNESS (ENGINE SWITCH - MAIN BODY ECU AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E52 switch connector.</ptxt>
+<figure>
+<graphic graphicname="B137980E02" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E7 ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E52-11 (SWIL) - E7-25 (SWIL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-12 (INDS) - E7-15 (INDS)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-13 (INDW) - E7-14 (INDW)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-5 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-4 (COM) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-11 (SWIL) or E7-25 (SWIL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-12 (INDS) or E7-15 (INDS) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-13 (INDW) or E7-14 (INDW) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YA200MX_04_0003" fin="true">OK</down>
+<right ref="RM000000YA200MX_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YA200MX_04_0003">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000YA200MX_04_0004">
+<testtitle>REPLACE ENGINE SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM000000YA200MX_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

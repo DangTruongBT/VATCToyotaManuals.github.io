@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GV4001X" category="J" type-id="3027N" name-id="EI07H-02" from="200601">
+<dtccode/>
+<dtcname>Security Indicator Light Circuit</dtcname>
+<subpara id="RM000001GV4001X_01" type-id="60" category="03" proc-id="RM0250U___00008G000000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>When the transponder key is registered, the transponder key ECU assembly outputs the key registration condition by lighting up, blinking or turning off the security indicator.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001GV4001X_02" type-id="32" category="03" proc-id="RM0250U___00008G100000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B128327E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001GV4001X_03" type-id="51" category="05" proc-id="RM0250U___00008G200000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<ptxt>If the transponder key ECU assembly is replaced, register the key and ECU communication ID (See page <xref label="Seep01" href="RM00000120Y006X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000001GV4001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001GV4001X_04_0001" proc-id="RM0250U___00008G300000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>IMMOBILISER:</title>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tester Details</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SECURITY INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn security indicator ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Security indicator turns on and off.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV4001X_04_0002" fin="false">NG</down>
+<right ref="RM000001GV4001X_04_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0002" proc-id="RM0250U___00008G400000">
+<testtitle>CHECK HARNESS AND CONNECTOR (TRANSPONDER KEY ECU - SECURITY INDICATOR LIGHT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E15 ECU and F3 combination meter connectors.</ptxt>
+<figure>
+<graphic graphicname="B128342E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E15-8 (IND) - F3-8 (LP)</ptxt>
+</entry>
+<entry morerows="1" valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E15-8 (IND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV4001X_04_0003" fin="false">OK</down>
+<right ref="RM000001GV4001X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0003" proc-id="RM0250U___00008G500000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SECURITY INDICATOR LIGHT - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B128343E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F3-19 (GND1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV4001X_04_0004" fin="false">OK</down>
+<right ref="RM000001GV4001X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0004" proc-id="RM0250U___00008G600000">
+<testtitle>INSPECT TRANSPONDER KEY ECU ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the E15 ECU and F3 combination meter connectors.</ptxt>
+<figure>
+<graphic graphicname="B128338E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E15-8 (IND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immobiliser set state</ptxt>
+<ptxt>(No key is in ignition key cylinder)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Repeats 10 to 14 V and below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001GV4001X_04_0008" fin="true">OK</down>
+<right ref="RM000001GV4001X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0005">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0007">
+<testtitle>REPLACE TRANSPONDER KEY ECU ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000001GV4001X_04_0008">
+<testtitle>REPLACE CLOCK ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

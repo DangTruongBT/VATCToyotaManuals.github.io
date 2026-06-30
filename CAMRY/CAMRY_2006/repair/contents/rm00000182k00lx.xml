@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM00000182K00LX" category="C" type-id="8011M" name-id="NS0VR-01" from="200601">
+<dtccode>01-DC</dtccode>
+<dtcname>Transmission Error</dtcname>
+<subpara id="RM00000182K00LX_01" type-id="60" category="03" proc-id="RM0250U___000051200000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" align="center" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>01-DC</ptxt>
+<ptxt>*1</ptxt>
+</entry>
+<entry>
+<ptxt>Transmission to component shown by sub-code failed.</ptxt>
+<ptxt>(Detecting this DTC does not always mean actual failure.)</ptxt>
+</entry>
+<entry>
+<ptxt>If the same sub-code is recorded in other components, check harness for power supply and communication system of all components shown by code</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>*1: This code may be stored if the engine is started, idled for 60 seconds and then the ignition switch is turned to the START position again. (Key type ignition switch only)</ptxt>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Before starting troubleshooting, be sure to clear DTCs to erase codes stored due to the reasons described in the HINT above. Then, check for DTCs and troubleshoot according to the output DTCs.</ptxt>
+</item>
+<item>
+<ptxt>The radio and navigation assembly is the master unit.</ptxt>
+</item>
+<item>
+<ptxt>Be sure to clear and recheck DTCs after the inspection is completed to confirm that no DTCs are output.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000182K00LX_02" type-id="51" category="05" proc-id="RM0250U___000051300000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>Be sure to read DESCRIPTION before performing the following procedures.</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM00000182K00LX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM00000182K00LX_03_0001" proc-id="RM0250U___000051400000">
+<testtitle>CHECK FOR DTC OF OTHER COMPONENTS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the component shown by the sub-code is displayed in the check result of the other components.</ptxt>
+<test2>
+<ptxt>Check if "01-DC" is output for the other components.</ptxt>
+</test2>
+<test2>
+<ptxt>If "01-DC" is output for any other components, check if the same physical address is displayed.</ptxt>
+<atten4>
+<ptxt>For the list of the components shown by sub-codes, refer to the table in step 2.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>"01-DC" is output and the same physical address is displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>"01-DC" is not output or the same physical address is not displayed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182K00LX_03_0007" fin="false">A</down>
+<right ref="RM00000182K00LX_03_0004" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182K00LX_03_0007" proc-id="RM0250U___000051800000">
+<testtitle>IDENTIFY THE COMPONENT WHICH HAS STORED THIS CODE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the diagnostic mode.</ptxt>
+<figure>
+<graphic graphicname="E121199E02" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Press the "LAN Mon" switch to change to "LAN Monitor" mode.</ptxt>
+</test1>
+<test1>
+<ptxt>Identify the component which has stored this code.</ptxt>
+<table>
+<title>Component Table:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Display</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Component</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DSP-AMP (440)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stereo component amplifier</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AVN (140)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radio and navigation assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>"NAVI" is the component which has stored this code in the example shown in the illustration.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182K00LX_03_0002" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182K00LX_03_0002" proc-id="RM0250U___000051500000">
+<testtitle>CHECK COMPONENT WHICH HAS STORED THIS CODE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select the component which has stored this code.</ptxt>
+<table pgwide="1">
+<title>Component Table:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.19in"/>
+<colspec colname="COL2" colwidth="3.89in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Radio and navigation assembly (AVN)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Radio and navigation assembly communication error (See page <xref label="Seep01" href="RM0000020QI002X"/>)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stereo component amplifier (DSP-AMP)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stereo component amplifier communication error (See page <xref label="Seep03" href="RM00000184200UX"/>)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182K00LX_03_0003" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182K00LX_03_0003">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM00000182K00LX_03_0004" proc-id="RM0250U___000051600000">
+<testtitle>CLEAR DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM0000011BU00FX"/>).</ptxt>
+<atten4>
+<ptxt>If "01-DC" is output for only one component, this may not indicate a malfunction.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM00000182K00LX_03_0005" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM00000182K00LX_03_0005" proc-id="RM0250U___000051700000">
+<testtitle>RECHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Recheck for DTCs and check if the same trouble occurs again.</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM00000182K00LX_03_0006" fin="true">OK</down>
+<right ref="RM00000182K00LX_03_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM00000182K00LX_03_0006">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

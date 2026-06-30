@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000W7801XX" category="D" type-id="303F5" name-id="AT038-64" from="200601">
+<name>CHECK MODE PROCEDURE</name>
+<subpara id="RM000000W7801XX_z0" proc-id="RM0250U___000039Y00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DESCRIPTION</ptxt>
+<step2>
+<ptxt>Check mode has a higher sensitivity to malfunctions and can detect malfunctions that normal mode cannot detect. Check mode can also detect all the malfunctions that normal mode can detect. In check mode, DTCs are detected with 1-trip detection logic.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>CHECK MODE PROCEDURE</ptxt>
+<step2>
+<ptxt>Make sure that the items below are satisfied:</ptxt>
+<figure>
+<graphic graphicname="C131977E05" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Battery positive voltage is 11 V or more</ptxt>
+</step3>
+<step3>
+<ptxt>Throttle valve is fully closed</ptxt>
+</step3>
+<step3>
+<ptxt>Transaxle is in the P or N position</ptxt>
+</step3>
+<step3>
+<ptxt>A/C is switched OFF</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch off.</ptxt>
+</step2>
+<step2>
+<ptxt>Connect the intelligent tester together with the Controller Area Network Vehicle Interface Module (CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / ECT / CHECK MODE.</ptxt>
+</step2>
+<step2>
+<ptxt>Change the TCM to check mode. Make sure that the MIL flashes as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="A076900E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<ptxt>All DTCs and freeze frame data recorded will be erased if: 1) the intelligent tester is used to change the TCM from normal mode to check mode or vice-versa; or 2) during check mode, the ignition switch is turned from on (IG) to on (ACC) or off.</ptxt>
+<ptxt> Before entering check mode, make notes of any DTCs and freeze frame data that are present.</ptxt>
+</atten3>
+</step2>
+<step2>
+<ptxt>Start the engine. The MIL should turn off after the engine starts.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform "MONITOR DRIVE PATTERN" for the ECT test (See page <xref label="Seep01" href="RM000000W7K01WX"/>).</ptxt>
+<ptxt>(Or, duplicate the conditions of the malfunction described by the customer).</ptxt>
+</step2>
+<step2>
+<ptxt>After duplicating the malfunction conditions, use the intelligent tester diagnosis selector to check the DTC and freeze frame data.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

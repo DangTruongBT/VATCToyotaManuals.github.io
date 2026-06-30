@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000Z81008X" category="C" type-id="800SX" name-id="TW0JA-01" from="200601">
+<dtccode>C2177/77</dtccode>
+<dtcname>Initialization not Completed</dtcname>
+<subpara id="RM000000Z81008X_01" type-id="60" category="03" proc-id="RM0250U___00005I300001">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>Initialization is necessary after replacing any of the ECU, tires with different tire pressure, or tire pressure warning valve and transmitter, after rotating the tires or when a new vehicle is delivered.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.27in"/>
+<colspec colname="COL2" colwidth="2.90in"/>
+<colspec colname="COL3" colwidth="2.91in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2177/77</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Initialization is not completed after vehicle speed of 5 mph (8 km/h) or more continues for 20 minutes or more (total).</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning valve and transmitter</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning ECU</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning antenna and receiver</ptxt>
+</item>
+<item>
+<ptxt>Tire pressure warning reset switch</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000Z81008X_05" type-id="32" category="03" proc-id="RM0250U___00006IC00001">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E130159E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000Z81008X_04" type-id="51" category="05" proc-id="RM0250U___0000CZV00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="2">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the tire pressure warning ECU, read the IDs stores in the old ECU using the intelligent tester and write them down before removal.</ptxt>
+</item>
+<item>
+<ptxt>It is necessary to perform initialization (See page <xref label="Seep01" href="RM000000XMZ008X"/>) after registration (See page <xref label="Seep02" href="RM000000XN1008X"/>) of the transmitter IDs into the tire pressure warning ECU after the ECU and/or valve and transmitter has been replaced.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000Z81008X_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000Z81008X_07_0043" proc-id="RM0250U___0000D0M00000">
+<testtitle>CHECK FREQUENCY RECEIVING CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the vehicle is not located in areas such as described below:</ptxt>
+<test2>
+<ptxt>Facilities or devices that use similar radio frequencies are located in the vicinity of the vehicle.</ptxt>
+<atten4>
+<ptxt>If the vehicle is located in areas described above, the tire pressure warning light may come on only in a particular area.</ptxt>
+</atten4>
+</test2>
+<test2>
+<ptxt>Devices using similar radio frequencies are used in the vehicle.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Facilities, or devices that use similar radio frequencies are not located in the vicinity of the vehicle.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Radio frequency may be interrupted due to surroundings or devices installed by user.</ptxt>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0044" fin="false">OK</down>
+<right ref="RM000000Z81008X_07_0053" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0044" proc-id="RM0250U___0000D0N00000">
+<testtitle>IDENTIFY TRANSMITTER CORRESPONDING TO DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Set the tire pressure to the appropriate specified values.</ptxt>
+<spec>
+<title>Cold tire inflation pressure</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tire size</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P215/60R16 94V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>210 (2.1, 31)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>210 (2.1, 31)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P215/55R17 93V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>220 (2.2, 32)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>220 (2.2, 32)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Select "TIREPRESS" by following the prompts displayed on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>TIRE PRESSURE:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Code</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Rapidly reduce the tire pressure for each wheel at least 40 kPa (0.41 kg/cm<sup>2, 5.8 psi) within 30 seconds.</sup>
+</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DATA LIST.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>It takes about 1 minutes or more to display the updated tire pressure data.</ptxt>
+</item>
+<item>
+<ptxt>When no "TIREPRESS" data has changed, reset the tire pressure to the appropriate specified value and rotate the tire 90 to 270 degrees. Then rapidly release the tire pressure and recheck it.</ptxt>
+</item>
+<item>
+<ptxt>Record the transmitter ID of which "TIREPRESS" data corresponds to each tire.</ptxt>
+</item>
+</list1>
+</atten3>
+</test1>
+<test1>
+<ptxt>After confirming that one of "TIREPRESS" data for one tire (ID1 to ID4 or ID5) has changed, repeat this procedure one by one. Identify the transmitter that corresponds to DTC.</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>One or more of transmitters abnormal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>All normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>All abnormal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0045" fin="false">C</down>
+<right ref="RM000000Z81008X_07_0046" fin="false">A</right>
+<right ref="RM000000Z81008X_07_0054" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0045" proc-id="RM0250U___0000D0O00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECU - RECEIVER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E60 ECU connector.</ptxt>
+<figure>
+<graphic graphicname="E129461E16" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the N20 receiver connector.<sup>*1</sup>
+</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the N34 receiver Connector.<sup>*2</sup>
+</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E60-12 (RDA) - N20-1 (RDA)<sup>*1</sup>
+</ptxt>
+<ptxt>E60-12 (RDA) - N34-11 (RDA)<sup>*2</sup>
+</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>Below 1Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E60-11 (GND2) - N20-4 (GND)<sup>*1</sup>
+</ptxt>
+<ptxt>E60-11 (GND2) - N34-4 (GND)<sup>*2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E60-6 (RF5V) - N20-5 (+5V)<sup>*1</sup>
+</ptxt>
+<ptxt>E60-6 (RF5V) - N34-5 (+5V)<sup>*2</sup>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>
+<sup>*1</sup>: TMC Made</ptxt>
+</item>
+<item>
+<ptxt>
+<sup>*2</sup>: TMMK Made</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0046" fin="false">OK</down>
+<right ref="RM000000Z81008X_07_0055" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0046" proc-id="RM0250U___0000D0P00000">
+<testtitle>INSPECT TIRE PRESSURE WARNING ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Select REGIT ID CODE by following the prompts displayed on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>TIRE PRESSURE:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.19in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Code</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID1 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID2 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID3 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID4 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TIREPRESS5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ID5 tire inflation pressure/ min.: 0 kPa (0 kgf/cm<sup>2</sup>, 0 psi), max.: 637.5 kPa (6.48 kgf/cm<sup>2</sup>, 92.2 psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Actual tire inflation pressure</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check the ID number on the identified transmitter by removing it from the tire and wheel.</ptxt>
+<figure>
+<graphic graphicname="E128762E04" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Confirm that the ID number on the transmitter and recorded transmitter ID match.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Match</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Do not match</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0047" fin="false">A</down>
+<right ref="RM000000Z81008X_07_0048" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0047" proc-id="RM0250U___0000D0Q00000">
+<testtitle>REPLACE TIRE PRESSURE WARNING VALVE AND TRANSMITTER</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>(See page <xref label="Seep01" href="RM000001F7R002X"/>)</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0048" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0048" proc-id="RM0250U___0000D0R00000">
+<testtitle>REGISTRATION OF TRANSMITTER ID</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform registration (See page <xref label="Seep01" href="RM000000XN1008X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Set the tire pressure to the appropriate specified values.</ptxt>
+<spec>
+<title>Cold tire inflation pressure</title>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tire size</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P215/60R16 94V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>210 (2.1, 31)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>210 (2.1, 31)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P215/55R17 93V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>220 (2.2, 32)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>220 (2.2, 32)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0049" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0049" proc-id="RM0250U___0000D0S00000">
+<testtitle>PERFORM INITIALIZATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform initialization (See page <xref label="Seep01" href="RM000000XMZ008X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0050" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0050" proc-id="RM0250U___0000D0T00000">
+<testtitle>READ VALUE OF DATA LIST</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off, and then turn it on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Select "TIREPRESS" by following the prompts displayed on the intelligent tester.</ptxt>
+<atten4>
+<ptxt>It may take for 1 minute or display the tire pressure data.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All tire pressure readings are equal to specified values.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure values are not displayed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0051" fin="false">B</down>
+<right ref="RM000000Z81008X_07_0056" fin="true">A</right>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0051" proc-id="RM0250U___0000D0Y00000">
+<testtitle>REPLACE TIRE PRESSURE WARNING ANTENNA AND RECEIVER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the tire pressure warning antenna and receiver (See page <xref label="Seep01" href="RM0000024T6000X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0052" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0052" proc-id="RM0250U___0000D0Z00000">
+<testtitle>READ VALUE OF DATA LIST</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the engine switch off, and then turn it on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Select "TIREPRESS" by following the prompts displayed on the intelligent tester.</ptxt>
+<atten4>
+<ptxt>It may take for 1 minute or more to display the tire pressure data.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All tier pressure readings equal to specified valse.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure values are not displayed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000Z81008X_07_0058" fin="true">A</down>
+<right ref="RM000000Z81008X_07_0057" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0053">
+<testtitle>CHECK IF ANY DEVICE IS INSTALLED BY USER</testtitle>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0054">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0055">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0056">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0057">
+<testtitle>REPLACE TIRE PRESSURE WARNING ECU</testtitle>
+</testgrp>
+<testgrp id="RM000000Z81008X_07_0058">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

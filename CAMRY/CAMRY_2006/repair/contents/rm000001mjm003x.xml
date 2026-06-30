@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000001MJM003X" category="C" type-id="801B5" name-id="ES2JU-03" from="200601">
+<dtccode>P0111</dtccode>
+<dtcname>Intake Air Temperature Sensor Gradient Too High</dtcname>
+<subpara id="RM000001MJM003X_01" type-id="60" category="03" proc-id="RM0250U___00002IK00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A067628E20" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<list1 type="nonmark">
+<item>
+<ptxt>The Intake Air Temperature (IAT) sensor, mounted on the Mass Air Flow (MAF) meter, monitors the IAT. The IAT sensor has a built-in thermistor with a resistance that varies according to the temperature of the intake air. When the IAT drops, the resistance of the thermistor increases. When the temperature rises, the resistance drops. These variations in resistance are transmitted to the ECM as voltage changes (See Fig. 1). </ptxt>
+</item>
+<item>
+<ptxt>The IAT sensor is powered by a 5 V supply from the THA terminal of the ECM, via resistor R.</ptxt>
+</item>
+<item>
+<ptxt>Resistor R and the IAT sensor are connected in series. When the resistance value of the IAT sensor changes, according to changes in the IAT, the voltage at terminal THA also varies. Based on this signal, the ECM increases the fuel injection volume when the engine is cold to improve driveability.</ptxt>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<colspec colname="COL4" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0111</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="ordered">
+<item>
+<ptxt>The intake air temperature rise is large, from the previous trip warm-up to the following trip. (2 trip detection logic)</ptxt>
+</item>
+<item>
+<ptxt>When the change in the intake air temperature after engine start is less than the threshold value.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Mass air flow meter assembly</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001MJM003X_02" type-id="64" category="03" proc-id="RM0250U___00002IL00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM performs OBD II monitoring based on the values from the intake air temperature sensor. If there is no change of the sensor value within the normal range, the ECM will not be able to perform OBD II monitoring or will misdiagnose that there is a malfunction in the sensor. The ECM detects the stuck intake air temperature sensor value by performing monitoring after the engine switch is turned off or the engine is started (short soak or long soak).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001MJM003X_03" type-id="65" category="03" proc-id="RM0250U___00002IM00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0111: Intake air temperature sensor rationality (After engine stop)</ptxt>
+<ptxt>P0111: Intake air temperature sensor rationality (After cold engine start)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake Air Temperature (IAT) sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>5 hours</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001MJM003X_04" type-id="66" category="03" proc-id="RM0250U___00002IN00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>After engine stop:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry>
+<ptxt>10 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry>
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT change since engine stopped</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 180°C (356°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT before engine stop</ptxt>
+</entry>
+<entry>
+<ptxt>70°C (158°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Time that MAF is low before engine stop</ptxt>
+</entry>
+<entry>
+<ptxt>70 minutes</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Accumulated MAF amount before engine stop</ptxt>
+</entry>
+<entry>
+<ptxt>3,800 g or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Key-off duration</ptxt>
+</entry>
+<entry>
+<ptxt>30 minutes</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>After cold engine start:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Key-off duration</ptxt>
+</entry>
+<entry>
+<ptxt>5 hours</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Time after engine start</ptxt>
+</entry>
+<entry>
+<ptxt>10 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT sensor circuit</ptxt>
+</entry>
+<entry>
+<ptxt>OK</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>ECT</ptxt>
+</entry>
+<entry>
+<ptxt>70°C (158°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Accumulated MAF amount</ptxt>
+</entry>
+<entry>
+<ptxt>6,300 g or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>One of the following conditions 1 or 2 is met:</ptxt>
+</entry>
+<entry>
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>1. Duration while engine load is low</ptxt>
+</entry>
+<entry>
+<ptxt>129 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>2. Duration while engine load is high</ptxt>
+</entry>
+<entry>
+<ptxt>10 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001MJM003X_05" type-id="67" category="03" proc-id="RM0250U___00002IO00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>After engine stop:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IAT change</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 1°C (2°F) </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>After cold engine start:</title>
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IAT change</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 1°C (2°F) </ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001MJM003X_06" type-id="32" category="03" proc-id="RM0250U___00002IP00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0110 (See page <xref label="Seep01" href="RM000000PF301AX_07"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000001MJM003X_07" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001MJM003X_08" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001MJM003X_08_0001" proc-id="RM0250U___00002IQ00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0111)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter the following menus: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0111 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0111</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0111 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001MJM003X_08_0002" fin="true">A</down>
+<right ref="RM000001MJM003X_08_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000001MJM003X_08_0002">
+<testtitle>GO TO DTC CHART<xref label="Seep01" href="RM000002203002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000001MJM003X_08_0003">
+<testtitle>REPLACE MASS AIR FLOW METER<xref label="Seep01" href="RM0000027UV000X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PFA017X" category="C" type-id="302GX" name-id="ES41O-01" from="200601">
+<dtccode>P0037</dtccode>
+<dtcname>Oxygen Sensor Heater Control Circuit Low (Bank 1 Sensor 2)</dtcname>
+<dtccode>P0038</dtccode>
+<dtcname>Oxygen Sensor Heater Control Circuit High (Bank 1 Sensor 2)</dtcname>
+<dtccode>P0057</dtccode>
+<dtcname>Oxygen Sensor Heater Control Circuit Low (Bank 2 Sensor 2)</dtcname>
+<dtccode>P0058</dtccode>
+<dtcname>Oxygen Sensor Heater Control Circuit High (Bank 2 Sensor 2)</dtcname>
+<dtccode>P0141</dtccode>
+<dtcname>Oxygen Sensor Heater Circuit Malfunction (Bank 1 Sensor 2)</dtcname>
+<dtccode>P0161</dtccode>
+<dtcname>Oxygen Sensor Heater Circuit Malfunction (Bank 2 Sensor 2)</dtcname>
+<subpara id="RM000000PFA017X_01" type-id="60" category="03" proc-id="RM0250U___00002H600000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>A three-way catalytic converter (TWC) is used in order to convert the carbon monoxide (CO), hydrocarbon (HC), and nitrogen oxide (NOx) into less harmful substances. To allow the TWC to function effectively, it is necessary to keep the air-fuel ratio of the engine near the stoichiometric air-fuel ratio. For the purpose of helping the ECM to deliver accurate air-fuel ratio control, a Heated Oxygen (HO2) sensor is used.</ptxt>
+<ptxt>The HO2 sensor is located behind the TWC, and detects the oxygen concentration in the exhaust gas. Since the sensor is integrated with the heater that heats the sensing portion, it is possible to detect the oxygen concentration even when the intake air volume is low (the exhaust gas temperature is low).</ptxt>
+<ptxt>When the air-fuel ratio becomes lean, the oxygen concentration in the exhaust gas becomes rich. The HO2 sensor informs the ECM that the post-TWC air-fuel ratio is lean (low voltage, i.e. less than 0.45 V).</ptxt>
+<ptxt>Conversely, when the air-fuel ratio is richer than the stoichiometric air-fuel level, the oxygen concentration in the exhaust gas becomes lean. The HO2 sensor informs the ECM that the post-TWC air-fuel ratio is rich (high voltage, i.e. more than 0.45 V). The HO2 sensor has the property of changing its output voltage drastically when the air-fuel ratio is close to the stoichiometric level.</ptxt>
+<ptxt>The ECM uses the supplementary information from the HO2 sensor to determine whether the air-fuel ratio after the TWC is rich or lean, and adjusts the fuel injection time accordingly. Thus, if the HO2 sensor is working improperly due to internal malfunctions, the ECM is unable to compensate for deviations in the primary air-fuel ratio control.</ptxt>
+<figure>
+<graphic graphicname="A088111E14" width="7.106578999in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Sensor 2 refers to the sensor mounted behind the Three-Way Catalytic Converter (TWC) and located far from the engine assembly.</ptxt>
+</item>
+<item>
+<ptxt>When any of these DTCs are set, the ECM enters fail-safe mode. The ECM turns off the Heated Oxygen (HO2) Sensor heater in fail-safe mode. Fail-safe mode continues until the engine switch is turned off.</ptxt>
+</item>
+<item>
+<ptxt>The ECM provides a pulse width modulated control circuit to adjust the current through the heater. The HO2 sensor heater circuit uses a relay on the B+ side of the circuit.</ptxt>
+<figure>
+<graphic graphicname="A103832E40" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</item>
+</list1>
+<table pgwide="1">
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0037</ptxt>
+<ptxt>P0057</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Heated Oxygen (HO2) sensor heater current is less than 0.3 A (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Open in HO2 sensor heater circuit</ptxt>
+</item>
+<item>
+<ptxt>HO2 sensor heater</ptxt>
+</item>
+<item>
+<ptxt>Engine room junction block (EFI relay)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0038</ptxt>
+<ptxt>P0058</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Heated Oxygen (HO2) sensor heater current is more than 2 A (1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Short in HO2 sensor heater circuit</ptxt>
+</item>
+<item>
+<ptxt>HO2 sensor heater</ptxt>
+</item>
+<item>
+<ptxt>Engine room junction block (EFI relay)</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0141</ptxt>
+<ptxt>P0161</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Cumulative heater resistance correction value exceeds the acceptable threshold. (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>HO2 sensor heater</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</atten4>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Bank 1 refers to the bank that includes cylinder No. 1.</ptxt>
+</item>
+<item>
+<ptxt>Bank 2 refers to the bank that does not include cylinder No. 1.</ptxt>
+</item>
+<item>
+<ptxt>Sensor 1 refers to the sensor closest to the engine assembly.</ptxt>
+</item>
+<item>
+<ptxt>Sensor 2 refers to the sensor farthest away from the engine assembly.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_02" type-id="64" category="03" proc-id="RM0250U___00002H700000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The sensing position of the Heated Oxygen (HO2) sensor has a zirconia element which is used to detect the oxygen concentration in the exhaust gas. If the zirconia element is at the appropriate temperature, and the difference between the oxygen concentrations surrounding the inside and outside surfaces of the sensor is large, the zirconia element generates voltage signals. In order to increase the oxygen concentration detecting capacity of the zirconia element, the ECM supplements the heat from the exhaust with heat from a heating element inside the sensor. </ptxt>
+<topic>
+<title>Heated oxygen sensor heater range check (P0037,P0038, P0057 and P0058):</title>
+<list1 type="nonmark">
+<item>
+<ptxt>The ECM monitors the current applied to the O2 sensor heater to check the heater for malfunctions. If the current is below the threshold value, the ECM will determine that there is an open circuit in the heater. If the current is above the threshold value, the ECM will determine that there is a short circuit in the heater.</ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>Example:</ptxt>
+</item>
+<list3 type="nonmark">
+<item>
+<ptxt>The ECM sets DTC P0038 or P0058 when the current in the HO2 sensor heater is more than 2 A. Conversely, when the heater current is less than 0.3 A, DTC P0037 or P0057 is set.</ptxt>
+</item>
+</list3>
+</list2>
+</list1>
+</topic>
+<topic>
+<title>Heated oxygen sensor heater performance (P0141 and P0161):</title>
+<list1 type="nonmark">
+<item>
+<ptxt>After the accumulated heater ON time exceeds 100 seconds, the ECM calculates the heater resistance using the battery voltage and the current applied to the heater. If the resistance is above the threshold value, the ECM will determine that there is a malfunction in the HO2S heater and set DTC P0141 and P0161.</ptxt>
+</item>
+</list1>
+</topic>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_03" type-id="65" category="03" proc-id="RM0250U___00002H800000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0037: Heated oxygen sensor heater (bank 1 sensor 2) open/short (Low electrical current)</ptxt>
+<ptxt>P0038: Heated oxygen sensor heater (bank 1 sensor 2) open/short (High electrical current)</ptxt>
+<ptxt>P0057: Heated oxygen sensor heater (bank 2 sensor 2) open/short (Low electrical current)</ptxt>
+<ptxt>P0058: Heated oxygen sensor heater (bank 2 sensor 2) open/short (High electrical current)</ptxt>
+<ptxt>P0141: Heated oxygen sensor heater performance (bank 1 sensor 2)</ptxt>
+<ptxt>P0161: Heated oxygen sensor heater performance (bank 2 sensor 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors / components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Heated oxygen sensor heater (bank 1 sensor 2)</ptxt>
+<ptxt>Heated oxygen sensor heater (bank 2 sensor 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required sensors / components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle speed sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 second: P0037, P0038, P0057 and P0058</ptxt>
+<ptxt>10 seconds: P0141 and P0161</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate: P0037, P0038, P0057 and P0058</ptxt>
+<ptxt>2 driving cycles: P0141 and P0161</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_04" type-id="66" category="03" proc-id="RM0250U___00002H900000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>All:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0037 and P0057:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 to 20 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0038 and P0058 (Case 1):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Running</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Starter</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0038 and P0058 (Case 2):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 to 20 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0141 and P0161:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>One of the following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition A or B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. All of the following conditions are met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Conditions 1, 2, 3, 4 and 5</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1. Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10.5 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>2. Fuel cut</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3. Time after fuel cut ON to OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>30 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>4. Accumulated heater ON time</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>100 seconds or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>5. Learned heater OFF current operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Completed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. Duration that rear heated oxygen sensor impedance is less than 15 kΩ</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 seconds or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_05" type-id="67" category="03" proc-id="RM0250U___00002HA00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<title>P0037 and P0057:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Heater current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.3 A</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0038 and P0058:</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>One of the following conditions is met:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition A or B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A. Learned heater OFF current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>More than 2 A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>B. Heater current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 A or more</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>P0141 and P0161 (Heater performance monitor check):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Accumulated heater resistance</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Varies with sensor element temperature (Example: More than 23 ohm)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_06" type-id="70" category="03" proc-id="RM0250U___00002HB00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Heated Oxygen (HO2) sensor heater current</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.4 to 1 A (when engine idles, HO2 sensor warmed up and battery voltage 11 to 14 V)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_07" type-id="68" category="03" proc-id="RM0250U___00002HC00000">
+<name>MONITOR RESULT</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>Refer to CHECKING MONITOR STATUS (See page <xref label="Seep01" href="RM000000PDR012X"/>).</ptxt>
+</item>
+</list1>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_08" type-id="32" category="03" proc-id="RM0250U___00002HD00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<ptxt>Refer to DTC P0136 (See page <xref label="Seep01" href="RM000000WBY011X_08"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_09" type-id="51" category="05" proc-id="RM0250U___00002HE00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>). </ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFA017X_10" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PFA017X_10_0001" proc-id="RM0250U___00002HF00000">
+<testtitle>INSPECT HEATED OXYGEN SENSOR (HEATER RESISTANCE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C52 heated oxygen sensor connector (Bank 1 Sensor 2) or C51 heated oxygen sensor connector (Bank 2 Sensor 2).</ptxt>
+<figure>
+<graphic graphicname="A137614E06" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Bank 1 sensor 2)</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC0" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HT1B (1) - +B (2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 16 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT1B (1) - E2 (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Bank 2 sensor 2)</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COLSPEC1" colwidth="1.37in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HT2B (1) - +B (2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>20°C (68°F)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 to 16 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT2B (1) - E2 (4)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the HO2 sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0013" fin="false">OK</down>
+<right ref="RM000000PFA017X_10_0022" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0013" proc-id="RM0250U___00005AK00000">
+<testtitle>CHECK TERMINAL VOLTAGE (+B OF HO2 SENSOR)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C52 heated oxygen sensor connector (Bank 1 Sensor 2) or C51 heated oxygen sensor connector (Bank 2 Sensor 2).</ptxt>
+<figure>
+<graphic graphicname="A137619E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the terminals.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (C52-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 11 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (C51-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 11 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the HO2 sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0014" fin="false">NG</down>
+<right ref="RM000000PFA017X_10_0019" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0014" proc-id="RM0250U___00005AL00000">
+<testtitle>INSPECT FUSE (EFI NO. 3)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the EFI No. 3 fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A135018E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the EFI No. 3 fuse resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the EFI No. 3 fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0015" fin="false">OK</down>
+<right ref="RM000000PFA017X_10_0023" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0015" proc-id="RM0250U___00005AM00000">
+<testtitle>INSPECT ENGINE ROOM JUNCTION BLOCK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A140654E02" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Inspect the EFI relay.</ptxt>
+<test2>
+<ptxt>Measure the EFI relay resistance.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="1.65in"/>
+<colspec colname="COL2" align="center" colwidth="2.48in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-12 - 1E-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1E-12 - 1E-6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω (Apply battery voltage between terminals 1E-9 and 1E-10)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0016" fin="false">OK</down>
+<right ref="RM000000PFA017X_10_0024" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0016" proc-id="RM0250U___00005AN00000">
+<testtitle>INSPECT FUSE (EFI MAIN)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the EFI MAIN fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A135017E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the EFI MAIN fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the EFI MAIN fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0017" fin="false">OK</down>
+<right ref="RM000000PFA017X_10_0025" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0017" proc-id="RM0250U___00005AO00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (HO2 SENSOR - EFI RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C52 or C51 HO2 sensor connector.</ptxt>
+<figure>
+<graphic graphicname="A140656E01" width="2.775699831in" height="7.795582503in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the engine room junction block from the engine room R/B.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.89in"/>
+<colspec colname="COL2" align="center" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (C52-2) - 1E-6 (Engine room R/B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (C51-2) - 1E-6 (Engine room R/B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="2.88in"/>
+<colspec colname="COL2" align="center" colwidth="1.25in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (C52-2) or 1E-6 (Engine room R/B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (C51-2) or 1E-6 (Engine room R/B) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the engine room junction block.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the HO2 sensor connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0018" fin="true">OK</down>
+<right ref="RM000000PFA017X_10_0026" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0018">
+<testtitle>CHECK ECM POWER SOURCE CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0019" proc-id="RM0250U___00005AP00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (HO2 SENSOR - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the C52 heated oxygen sensor connector (Bank 1 Sensor 2) or C51 heated oxygen sensor connector (Bank 2 Sensor 2).</ptxt>
+<figure>
+<graphic graphicname="A137615E06" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (C52-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>+B (C51-2) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Turn the engine switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the C55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HT1B (C52-1) - HT1B (C55-48)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OX1B (C52-3) - OX1B (C55-88)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2 (C52-4) - EX1B (C55-65)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT2B (C51-1) - HT2B (C55-47)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OX2B (C51-3) - OX2B (C55-87)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2 (C51-4) - EX2B (C55-64)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Terminal Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>HT1B (C52-1) or HT1B (C55-48) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OX1B (C52-3) - OX1B (C55-88) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2 (C52-4) or EX1B (C55-65) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>HT2B (C51-1) or HT2B (C55-47) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>OX2B (C51-3) or OX2B (C55-87) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E2 (C51-4) or EX2B (C55-64) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the HO2 sensor connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0020" fin="false">OK</down>
+<right ref="RM000000PFA017X_10_0027" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0020" proc-id="RM0250U___00005AQ00000">
+<testtitle>CHECK WHETHER DTC OUTPUT RECURS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the intelligent tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01HX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Allow the engine to idle for 2 minutes.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" align="center" colwidth="3.54in"/>
+<colspec colname="COL2" align="center" colwidth="3.54in"/>
+<thead>
+<row>
+<entry>
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry>
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>No output</ptxt>
+</entry>
+<entry>
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P0037, P0038, P0057 and/or P0058</ptxt>
+</entry>
+<entry>
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFA017X_10_0021" fin="true">A</down>
+<right ref="RM000000PFA017X_10_0028" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0021">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS<xref label="Seep01" href="RM000002205002X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0022">
+<testtitle>REPLACE HEATED OXYGEN SENSOR<xref label="Seep01" href="RM000001OOQ001X"/>
+</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0023">
+<testtitle>REPLACE EFI NO. 3 FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0024">
+<testtitle>REPLACE ENGINE ROOM JUNCTION BLOCK</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0025">
+<testtitle>REPLACE EFI MAIN FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0026">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0027">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PFA017X_10_0028">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

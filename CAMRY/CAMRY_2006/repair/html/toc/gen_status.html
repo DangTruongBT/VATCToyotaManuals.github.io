@@ -1,0 +1,56 @@
+<!-- $Id: gen_status.html,v 1.3 2004/04/26 05:06:22 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>General Information Status Navi</title>
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var DELIM = " &gt; ";
+function init() {
+	if (parent.g_paraId==null) return;
+	if (parent.g_objXml==null) return;
+  var secName  = parent.getSectionName(parent.g_paraId, parent.g_objXml);
+	var ttlName  = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var paraName = parent.getParagraphNameList(parent.g_paraId, "name", parent.g_objXml)[0];
+	disp.innerHTML=secName + DELIM + ttlName + DELIM + paraName;
+	parent.g_sectionName = secName;
+	parent.g_titleName = ttlName;
+	parent.g_paragraphName = paraName;
+	setMemoLink(parent.g_subparaId);
+}
+
+function setMemoLink(subparaId) {
+	if (parent.g_category=="M" || parent.g_category=="N") {
+		generalMemo.style.display="none";
+		return;
+	}
+	var procIdNode = parent.g_objXml.selectSingleNode("//subpara[@id='"+subparaId+"']/@proc-id");
+	if (procIdNode==null) {
+		generalMemo.style.display="none";
+		return;
+	}
+	var procId = procIdNode.nodeTypedValue;
+	generalMemo.innerHTML = 
+			"<a href=\"javascript:parent.openMemo('"+subparaId+"','"+procId+"');\" >"
+			+"<img src='../../img/memo.png' id='"+procId	+"'  border='0'/> "
+			+"</a>";
+	parent.loadMemoData (document, parent.REPAIR);
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td><div id="disp" class="paragraph-name"></div></td>
+		<td id="generalMemo" align="right" width="40"></td>
+	</tr>
+</table>
+</body>
+</html>

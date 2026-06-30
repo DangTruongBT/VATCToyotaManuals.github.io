@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="39">
+<name>RESTRAINTS</name>
+<section id="1000Y_S0016" variety="S0016">
+<name>SUPPLEMENTAL RESTRAINT SYSTEM</name>
+<ttl id="1000Y_S0016_730U6_T00FA" variety="T00FA">
+<name>OCCUPANT CLASSIFICATION SYSTEM</name>
+<para id="RM0000010VO00NX" category="C" type-id="304QR" name-id="RS0BM-27" from="200601">
+<dtccode>B1796</dtccode>
+<dtcname>Sleep Operation Failure of Occupant Classification ECU</dtcname>
+<subpara id="RM0000010VO00NX_01" type-id="60" category="03" proc-id="RM0250U___0000AFR00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>During sleep mode, the occupant classification ECU reads the condition of each sensor while the ignition switch is off.</ptxt>
+<ptxt>In this mode, if occupant classification ECU detects an internal malfunction, DTC B1796 is output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B1796</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Occupant classification ECU malfunction</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Occupant classification ECU</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM0000010VO00NX_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000010VO00NX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000010VO00NX_03_0001" proc-id="RM0250U___0000AFS00000">
+<testtitle>CHECK DTC</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the occupant classification ECU (See page <xref label="Seep01" href="RM0000010VK00PX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs stored in the center airbag sensor assembly (See page <xref label="Seep02" href="RM000000XFE00YX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch off, and wait for at least 10 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Check the DTCs (See page <xref label="Seep03" href="RM0000010VK00PX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>DTC B1796 is not output.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>Codes other than DTC B1796 may be output at this time, but they are not related to this check.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VO00NX_03_0002" fin="false">NG</down>
+<right ref="RM0000010VO00NX_03_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000010VO00NX_03_0002" proc-id="RM0250U___0000AFT00000">
+<testtitle>REPLACE OCCUPANT CLASSIFICATION ECU</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the negative (-) terminal cable from the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Replace the occupant classification ECU (See page <xref label="Seep01" href="RM0000011JG003X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VO00NX_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VO00NX_03_0003" proc-id="RM0250U___0000AFU00000">
+<testtitle>PERFORM ZERO POINT CALIBRATION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the negative (-) terminal cable to the battery.</ptxt>
+</test1>
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, perform "zero point calibration" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"COMPLETED" is displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VO00NX_03_0004" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VO00NX_03_0004" proc-id="RM0250U___0000AFV00000">
+<testtitle>PERFORM SENSITIVITY CHECK</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Using the intelligent tester, perform "sensitivity check" (See page <xref label="Seep01" href="RM0000010VN00QX"/>).</ptxt>
+<spec>
+<title>Standard value</title>
+<specitem>
+<ptxt>27 to 33 kg (59.52 to 72.75 lb)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000010VO00NX_03_0005" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM0000010VO00NX_03_0005">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000010VO00NX_03_0006">
+<testtitle>USE SIMULATION METHOD TO CHECK<xref label="Seep01" href="RM000000XFD00ZX"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

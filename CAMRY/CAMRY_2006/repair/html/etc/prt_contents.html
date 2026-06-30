@@ -1,0 +1,31 @@
+<!-- $Id: prt_contents.html,v 1.8 2005/03/23 01:13:37 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Print Preview</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	document.title = parent.addTitle + parent.BASE_TITLE;
+	ttl.innerHTML=parent.dialogTitle;
+	parent.display(parent.objXml, parent.objXsl, disp, parent.xslArgs);
+//	//(Click here)を除去
+//	var delString = new RegExp("\\(<a.*Click here</a>\\)|\\(Click here\\)", "ig");
+//	disp.innerHTML = disp.innerHTML.replace(delString, "");
+	//Click hereを変換
+	parent.convSeepage(disp);
+}
+</script>
+</head>
+<body onLoad="init()">
+	<p id="ttl" class="location"></p>
+	<div id="disp"></div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000E" variety="S000E">
+<name>2AZ-FE STARTING</name>
+<ttl id="10024_S000E_72Y8V_T0091" variety="T0091">
+<name>IGNITION SWITCH</name>
+<para id="RM0000026VF000X" category="G" type-id="8000T" name-id="ST0SW-01" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM0000026VF000X_01" type-id="01" category="01">
+<s-1 id="RM0000026VF000X_01_0001" proc-id="RM0250U___00006IN00000">
+<ptxt>INSPECT IGNITION OR STARTER SWITCH ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the resistance.</ptxt>
+<figure>
+<graphic graphicname="A119190E04" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between the terminals.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Between all terminals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>2 - 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 - 2 - 4</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 - 6</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>START</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>1 - 3 - 4</ptxt>
+</entry>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>5 - 6 - 7</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, replace the ignition or starter switch.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

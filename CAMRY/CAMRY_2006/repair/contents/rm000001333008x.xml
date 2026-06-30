@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307E_T00ER" variety="T00ER">
+<name>POWER DOOR LOCK CONTROL SYSTEM</name>
+<para id="RM000001333008X" category="D" type-id="303FF" name-id="DL047-07" from="200601">
+<name>OPERATION CHECK</name>
+<subpara id="RM000001333008X_z0" proc-id="RM0250U___00009FF00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK ELECTRICAL DOOR LOCK OPERATION</ptxt>
+<atten3>
+<ptxt>The initial condition that the customizing function using the intelligent tester is not chosen is shown.</ptxt>
+</atten3>
+<step2>
+<ptxt>Check the basic function.</ptxt>
+<step3>
+<ptxt>Check that all doors lock when the door control switch (for manual operation) is turned to LOCK and all doors unlock when turned to UNLOCK.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that all doors lock when the driver side door lock key cylinder is turned to LOCK using the mechanical key.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the electrical key lock-in prevention function (w/ Smart Key System).</ptxt>
+<atten3>
+<ptxt>In order to prevent the electrical key from being actually locked-in, the following inspection should be performed with the driver side door window open.</ptxt>
+</atten3>
+<step3>
+<ptxt>Place the electrical key in the cabin.</ptxt>
+</step3>
+<step3>
+<ptxt>With the driver side door open, check that all doors unlock immediately after the door lock knob for the driver side door is turned to LOCK.</ptxt>
+</step3>
+<step3>
+<ptxt>With the driver side door open, check that all doors unlock immediately after the door control switch (for manual operation) is turned to LOCK.</ptxt>
+</step3>
+<step3>
+<ptxt>With the driver side door open, turn the driver side door lock knob to LOCK, and then close the driver side door. Then check that all doors unlock.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the key lock-in prevention function (w/o Smart Key System).</ptxt>
+<atten3>
+<ptxt>In order to prevent the key from being actually locked-in, the inspection should be performed with the driver side door window open.</ptxt>
+</atten3>
+<step3>
+<ptxt>Have the key inserted into the ignition key cylinder.</ptxt>
+</step3>
+<step3>
+<ptxt>With the driver side door open, check that all doors unlock immediately after the door lock knob for the driver side door is turned to LOCK.</ptxt>
+</step3>
+<step3>
+<ptxt>With the driver side door open, check that all doors unlock immediately after the door control switch (for manual operation) is turned to LOCK.</ptxt>
+</step3>
+<step3>
+<ptxt>With the driver side door open, turn the driver side door lock knob to LOCK, and then close the driver side door. Then check that all doors unlock.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the security function.</ptxt>
+<ptxt>*1: w/ Smart Key System</ptxt>
+<step3>
+<ptxt>Close all doors with the driver side door window open so that the door control switch can be operated from outside the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>Pull out the electrical key (*1) or mechanical key (transmitter), open the driver side door and then close and lock the door using the electrical key (*1) or mechanical key (transmitter). Under this condition, check that all doors do not unlock when the door control switch (for manual operation) is turned to UNLOCK from outside the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>Pull out the electrical key (*1) or the mechanical key, and close and lock the driver side door by mechanical key operation. Under this condition, check that all doors do not unlock when the door control switch (for manual operation) is turned to UNLOCK from outside the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>Pull out the electrical key (*1) or mechanical key (transmitter), close the driver side door, and lock the door by wireless door lock operation. Under this condition, check that all doors do not unlock when the door control switch (for manual operation) is turned to UNLOCK from outside the vehicle.</ptxt>
+<atten4>
+<ptxt>Check that the security function is canceled under the following conditions:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The ignition switch is turned on (IG).</ptxt>
+</item>
+<item>
+<ptxt>The driver side door is unlocked using the mechanical key (transmitter) or the electrical key.</ptxt>
+</item>
+<item>
+<ptxt>The door control switch (for manual operation) is turned to UNLOCK after the door control knob is turned to UNLOCK manually.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the illumination function.</ptxt>
+<step3>
+<ptxt>Set the room light switch to the DOOR position.</ptxt>
+</step3>
+<step3>
+<ptxt>With all doors locked, check that driver's door unlock when the driver side door lock cylinder is turned to UNLOCK using the key. At the same time, the room light comes on.</ptxt>
+</step3>
+<step3>
+<ptxt>Check that the room light goes off in approximately 15 seconds if the doors have not been opened.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the AUTO lock function (w/ Smart Key System).</ptxt>
+<step3>
+<ptxt>Lock all doors.</ptxt>
+</step3>
+<step3>
+<ptxt>Unlock driver's door using the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>Allow 30 seconds to elapse while all doors remain closed and the electrical key switch and the entry unlock switch remain untouched. Then, check that all doors will lock automatically.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Check the automatic locking function interlocked with the shift lever.</ptxt>
+<ptxt>*1: w/o Smart Key System and w/o Theft Deterrent System</ptxt>
+<ptxt>*2: Except *1</ptxt>
+<step3>
+<ptxt>When any door (*1), driver's door or passenger's door (*2) is unlocked with all doors closed and the engine started, check that all doors automatically lock when the shift lever is moved into any position from the P position (A/T).</ptxt>
+</step3>
+<step3>
+<ptxt>When any door is unlocked after all doors automatically lock, check that all doors attempt to automatically lock once again (retry function). The retry function is canceled when any of the following conditions is fulfilled:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>All doors are locked.</ptxt>
+</item>
+<item>
+<ptxt>Any door is opened.</ptxt>
+</item>
+<item>
+<ptxt>The shift lever is moved into the P position.</ptxt>
+</item>
+<item>
+<ptxt>The doors are locked or unlocked by the user.</ptxt>
+</item>
+<item>
+<ptxt>The ignition switch is turned off.</ptxt>
+</item>
+<item>
+<ptxt>The engine is stopped.</ptxt>
+</item>
+</list1>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002N_S0018" variety="S0018">
+<name>THEFT DETERRENT</name>
+<ttl id="1002N_S0018_730O6_T00F9" variety="T00F9">
+<name>THEFT DETERRENT SYSTEM (w/ Smart Key System)</name>
+<para id="RM0000010J300GX" category="D" type-id="3001B" name-id="TD00Z-18" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM0000010J300GX_z0" proc-id="RM0250U___00005EQ00001">
+<content5 releasenbr="4">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Use this procedure to troubleshoot the theft deterrent system.</ptxt>
+</item>
+<item>
+<ptxt>The intelligent tester should be used in step 3.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CUSTOMER PROBLEM ANALYSIS</testtitle>
+<test1>
+<ptxt>Interview the customer to confirm the trouble (See page <xref label="Seep01" href="RM000000UZ100YX"/>).</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>INSPECT COMMUNICATION FUNCTION OF CAN COMMUNICATION SYSTEM</testtitle>
+<test1>
+<ptxt>Use the intelligent tester to check for normal function of the multiplex communication system.</ptxt>
+<test2>
+<ptxt>(ECU unconnected, communication line malfunctioning) If no code is output, proceed to A.</ptxt>
+</test2>
+<test2>
+<ptxt>(ECU unconnected, communication line malfunctioning) If any code is output, proceed to B.</ptxt>
+</test2>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go To CAN COMMUNICATION SECTION </action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>SYMPTOM SIMULATION</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<test1>
+<ptxt>If the fault is not listed in the problem symptoms table, proceed to A.</ptxt>
+</test1>
+<test1>
+<ptxt>If the fault is listed in the problem symptoms table, proceed to B.</ptxt>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>Go to step 7</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PERFORM TROUBLESHOOTING ACCORDING TO MALFUNCTION SYMPTOM</testtitle>
+<test1>
+<ptxt>System description (See page <xref label="Seep02" href="RM0000026P0001X"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Terminals of ECU (See page <xref label="Seep03" href="RM000001PQV002X"/>)</ptxt>
+</test1>
+<results/>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>ADJUST, REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

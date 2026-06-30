@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000PDT013X" category="M" type-id="80037" name-id="ES3X2-01" from="200601">
+<name>REGISTRATION</name>
+<subpara id="RM000000PDT013X_01" type-id="11" category="10" proc-id="RM0250U___000078U00000">
+<content3 releasenbr="1">
+<atten3>
+<ptxt>The Vehicle Identification Number (VIN) must be input into the replacement ECM.</ptxt>
+</atten3>
+<atten4>
+<ptxt>The VIN is a 17-digit alphanumeric number. The intelligent tester is required to register the VIN.</ptxt>
+</atten4>
+</content3>
+</subpara>
+<subpara id="RM000000PDT013X_03" type-id="01" category="01">
+<s-1 id="RM000000PDT013X_03_0004" proc-id="RM0250U___000078Y00000">
+<ptxt>DESCRIPTION</ptxt>
+<content1 releasenbr="1">
+<ptxt>This registration section consists of 3 parts: Input Instructions, Read VIN and Write VIN.</ptxt>
+<s2>
+<ptxt>Input Instructions: Explains the general VIN input instructions when using the intelligent tester.</ptxt>
+</s2>
+<s2>
+<ptxt>Read VIN: Explains the VIN reading process in a flowchart. This process allows the VIN stored in the ECM to be read in order to confirm that the two VINs, provided with the vehicle and stored in the vehicle's ECM, are the same.</ptxt>
+</s2>
+<s2>
+<ptxt>Write VIN: Explains the VIN writing process in a flowchart. This process allows the VIN to be input into the ECM. If the ECM is changed, or the vehicle VIN and ECM VIN do not match, the VIN can be registered or overwritten in the ECM by following this procedure.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000PDT013X_03_0001" proc-id="RM0250U___000078V00000">
+<ptxt>INPUT INSTRUCTIONS</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Intelligent tester</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>The arrow buttons (UP, DOWN, RIGHT and LEFT) and numerical buttons (0 to 9) are used to input the VIN.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>Cursor Operation</ptxt>
+<list1 type="nonmark">
+<item>
+<ptxt>To move the cursor around the tester screen, press the RIGHT and LEFT buttons.</ptxt>
+</item>
+</list1>
+</s2>
+<s2>
+<ptxt>Alphabetical Character Input</ptxt>
+<s3>
+<ptxt>Press the UP and DOWN buttons to select the desired alphabetical character.</ptxt>
+</s3>
+<s3>
+<ptxt>After selection, the cursor should move.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Numeric Character Input</ptxt>
+<s3>
+<ptxt>Press the numerical button corresponding to the number that you want to input.</ptxt>
+</s3>
+<s3>
+<ptxt>After input, the cursor should move.</ptxt>
+<atten4>
+<ptxt>Numerical characters can also be selected by using the UP and DOWN buttons.</ptxt>
+</atten4>
+</s3>
+</s2>
+<s2>
+<ptxt>Correction</ptxt>
+<s3>
+<ptxt>When correcting the input character(s), put the cursor onto the character using the RIGHT and LEFT buttons.</ptxt>
+</s3>
+<s3>
+<ptxt>Select or input the correct character using the UP/DOWN buttons, or the numerical buttons.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Finishing Input Operation</ptxt>
+<s3>
+<ptxt>Make sure that the input VIN matches the vehicle VIN after input.</ptxt>
+</s3>
+<s3>
+<ptxt>Press the ENTER button on the tester.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000PDT013X_03_0002" proc-id="RM0250U___000078W00000">
+<ptxt>READ VIN</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Confirm the vehicle VIN.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the tester on.</ptxt>
+</s2>
+<s2>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II/ VIN.</ptxt>
+<figure>
+<graphic graphicname="A103812E03" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000PDT013X_03_0003" proc-id="RM0250U___000078X00000">
+<ptxt>WRITE VIN</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Confirm the vehicle VIN.</ptxt>
+</s2>
+<s2>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the tester on.</ptxt>
+</s2>
+<s2>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II/ VIN.</ptxt>
+<figure>
+<graphic graphicname="A103813E01" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<figure>
+<graphic graphicname="A136113E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+<figure>
+<graphic graphicname="A103815E03" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

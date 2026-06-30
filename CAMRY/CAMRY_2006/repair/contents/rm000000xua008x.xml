@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XUA008X" category="U" type-id="3001G" name-id="DL0ON-04" from="200601">
+<name>TERMINALS OF ECU</name>
+<subpara id="RM000000XUA008X_z0" proc-id="RM0250U___00009N300000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK CERTIFICATION ECU</ptxt>
+<figure>
+<graphic graphicname="E125964E03" width="7.106578999in" height="1.771723296in"/>
+</figure>
+<step2>
+<ptxt>Disconnect the E58 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.27in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+B (E58-1) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>+B power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (E58-18) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IG (E58-18) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E (E58-17) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W-B - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (E58-19) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ACC (E58-19) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ACC power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW1 (E58-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry lock switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front lock switch LH not pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW1 (E58-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry lock switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front lock switch LH pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW2 (E58-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry lock switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front lock switch RH not pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW2 (E58-4) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry lock switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front lock switch RH pushed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>LIN (E58-10) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANH (E58-27) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANL (E58-28) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>AGND (E58-40) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW5 (E58-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment opener switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Opener switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TSW5 (E58-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment opener switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Opener switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the wire harness side may have a malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>Reconnect the E58 ECU connector.</ptxt>
+</step2>
+<step2>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.27in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CLG1 (E58-33) - CG1B (E58-34)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door electrical key oscillator (front LH) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All doors closed, all doors locked and engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternating between 5 V and below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG1 (E58-33) - CG1B (E58-34)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LG - L</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door electrical key oscillator (front LH) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door unlocked or door open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEN1 (E58-22) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outside door handle touched</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEN1 (E58-22) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outside door handle not touched (Have the electrical key outside the cabin)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEL1 (E58-5) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor activation control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Move the key more than 5 m (16.4 ft) away from the front door LH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEL1 (E58-5) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor activation control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bring it to the outside handle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG2 (E58-35) - CG2B (E58-36)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door electrical key oscillator (front RH) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>All doors closed, all doors locked and engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternating between 5 V and below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG2 (E58-35) - CG2B (E58-36)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - BR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door electrical key oscillator (front RH) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Door unlocked or door open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEN2 (E58-23) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outside door handle touched</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEN2 (E58-23) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor detection signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Outside door handle not touched (Have the electrical key outside the cabin)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEL2 (E58-6) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor activation control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Move the key more than 5 m (16.4 ft) away from the front door RH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SEL2 (E58-6) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>P - W-B </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Touch sensor activation control signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bring it to the outside handle</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG5 (E58-11) - CG5B (E58-12)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator (front) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 30 seconds driver side door opened and closed, engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternating between 5 V and below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG5 (E58-11) - CG5B (E58-12)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator (front) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG6 (E58-13) - CG6B (E58-14)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator (rear) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Within 30 seconds after driver side door opened and closed, engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternating between 5 V and below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG6 (E58-13) - CG6B (E58-14)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Indoor electrical key oscillator (rear) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG7 (E58-15) - CG7B (E58-16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage electrical key oscillator (inner) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door opening switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternating between 5 V and below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG7 (E58-15) - CG7B (E58-16)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage electrical key oscillator (inner) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door opening switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG8 (E58-31) - CG8B (E58-32)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage electrical key oscillator (outer) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door opening switch ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Alternating between 5 V and below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CLG8 (E58-31) - CG8B (E58-32)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - P</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage electrical key oscillator (outer) sensor signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door opening switch OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RC0 (E58-29) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver power source</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed and electrical key switch on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RC0 (E58-29) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver power source</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed and electrical key switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RSSI (E58-39) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver electric wave existence signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed, the electrical key is not in the action area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RSSI (E58-39) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver electric wave existence signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed, the electrical key is in the action area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RDA (E58-38) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver data input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed and electrical key switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+<ptxt>(Pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RDA (E58-38) - E (E58-17)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - W-B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Entry door control receiver data input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed and electrical key switch on</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RDA (E58-38) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tuner input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, all doors closed, the electrical key is not in the action area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+<ptxt>(Pulse generation)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RDA (E58-38) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Y - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tuner input signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The electrical key is in the action area.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ASEL (E58-37) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cabin / luggage receiver select signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, luggage compartment door closed and the electrical key is in the luggage action area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.6 to 6.0 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ASEL (E58-37) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>V - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Cabin / luggage receiver select signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off, luggage compartment door open</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VC5 (E58-30) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electrical key is not in the cabin.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>VC5 (E58-30) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>R - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier power supply</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Have the electrical key outside the cabin and open the driver's door.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4.5 to 5.5 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TXCT (E58-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electrical key is not in the cabin.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>TXCT (E58-8) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>GR - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier output signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Have the electrical key outside the cabin and open the driver's door.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation (see waveform 1)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CODE (E58-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Electrical key is not in the cabin.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CODE (E58-9) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transponder key amplifier communication signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Have the electrical key outside the cabin and open the driver's door. Hold the electrical key close to the engine switch with the brake pedal depressed.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation (see waveform 2)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BZR (E58-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V </ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>BZR (E58-21) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>O - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer ON</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Pulse generation</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the ECU may have a malfunction.</ptxt>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<figure>
+<graphic graphicname="B112486E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Waveform 1 (Reference):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Terminal</ptxt>
+</entry>
+<entry>
+<ptxt>TXCT - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry>
+<ptxt>2 V/DIV, 10 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Have the electrical key outside the cabin and open the driver's door.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Inspect using an oscilloscope.</ptxt>
+<figure>
+<graphic graphicname="B112487E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<table>
+<title>Waveform 2 (Reference):</title>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.65in"/>
+<colspec colname="COL2" colwidth="2.48in"/>
+<tbody>
+<row>
+<entry>
+<ptxt>Terminal</ptxt>
+</entry>
+<entry>
+<ptxt>CODE - Body ground</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Tool Setting</ptxt>
+</entry>
+<entry>
+<ptxt>2 V/DIV, 20 ms./DIV</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Condition</ptxt>
+</entry>
+<entry>
+<ptxt>Have the electrical key outside the cabin and open the driver's door. Hold the electrical key close to the engine switch with the brake pedal depressed.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>MAIN BODY ECU (INSTRUMENT PANEL JUNCTION BLOCK)</ptxt>
+<step2>
+<ptxt>Measure the voltage and resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="B112605E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="5">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.20in"/>
+<colspec colname="COL3" colwidth="1.42in"/>
+<colspec colname="COL4" colwidth="1.42in"/>
+<colspec colname="COL5" colwidth="1.27in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symbols (Terminal No.)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Wiring Color</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Terminal Description</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>CANN (E8-15) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>W - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN Line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CANP (E8-16) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN Line</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP (IL-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STP (IL-7) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>L - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Stop light switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake pedal depressed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>If the result is not as specified, the junction block may have a malfunction.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

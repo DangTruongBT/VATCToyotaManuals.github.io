@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301N_T00D2" variety="T00D2">
+<name>ENGINE IMMOBILISER SYSTEM (w/o Smart Key System)</name>
+<para id="RM000001GV6002X" category="D" type-id="303F2" name-id="EI071-03" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000001GV6002X_z0" proc-id="RM0250U___00008EW00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>ENGINE IMMOBILISER SYSTEM DESCRIPTION</ptxt>
+<ptxt>The engine immobiliser system is designed to prevent the vehicle from being stolen. This system uses the transponder key ECU assembly that stores the key codes of authorized ignition keys. If an attempt is made to start the engine using an unauthorized key, the ECU sends a signal to the ECM to prohibit fuel delivery and ignition, effectively disabling the engine.</ptxt>
+</step1>
+<step1>
+<ptxt>FUNCTION OF MAIN COMPONENT</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="4.60in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Component</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Outline</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Transponder key coil/amplifier</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When key is inserted in ignition key cylinder, key coil receives key code. Then amplifier amplifies ID code and outputs it to transponder key ECU assembly.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Unlock warning switch assembly</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Detects if key is in ignition key cylinder and outputs results to transponder key ECU assembly.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM receives ID verification results from transponder key ECU assembly. ECM also verifies ECUs. Then judgement of whether to immobiliser engine is made.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Security indicator</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Depending on operation of transponder key ECU assembly, interior security indicator light comes on or starts blinking.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>SYSTEM FUNCTION</ptxt>
+<step2>
+<ptxt>When the transponder key ECU assembly detects that the key unlock warning switch is ON, the ECU provides current to the transponder key coil and produces an electric wave. A transponder chip in the key grip receives the electric wave. Upon receiving the electric wave, the transponder chip outputs a key ID code signal. The transponder key coil receives this signal, the signal is amplified by the transponder key amplifier, and the signal is transmitted to the ECU.</ptxt>
+<ptxt>The ECU matches the key's ID code with the vehicle's ID code, which was previously registered in the ECU, and communicates the results to the ECM.</ptxt>
+<ptxt>After the identification results show that the key's ID code matches the vehicle's ID code and the ECU has confirmed their match: 1) the immobiliser system does not immobiliser the engine and the engine starting controls (fuel injection control and ignition control) enter standby mode; and 2) the ECU transmits a security indicator signal that communicates "indicator off" to the clock. Then, the clock turns off the security indicator light.</ptxt>
+</step2>
+<step2>
+<ptxt>The security indicator pattern is as shown below (when changing from the immobiliser set status to the unset status):</ptxt>
+<figure>
+<graphic graphicname="B118503E03" width="7.106578999in" height="2.775699831in"/>
+</figure>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

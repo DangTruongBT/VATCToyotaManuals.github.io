@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000011M3004X" category="J" type-id="3016L" name-id="LI20H-01" from="200601">
+<dtccode/>
+<dtcname>Light Control Switch Circuit</dtcname>
+<subpara id="RM0000011M3004X_01" type-id="60" category="03" proc-id="RM0250U___00004NG00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit detects the condition of the headlight dimmer switch assembly.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000011M3004X_02" type-id="32" category="03" proc-id="RM0250U___00004NH00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121491E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011M3004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011M3004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011M3004X_04_0001" proc-id="RM0250U___00004NI00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the items below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DIMMER SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Dimmer switch HIGH signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Dimmer switch in HIGH or FLASH</ptxt>
+<ptxt>OFF: Dimmer switch in neither HIGH nor FLASH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HIGH FLASHER SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Dimmer switch FLASH signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Dimmer switch in FLASH</ptxt>
+<ptxt>OFF: Dimmer switch not in FLASH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F FOG LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Front fog light switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Fog light switch ON</ptxt>
+<ptxt>OFF: Fog light switch OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AUTO LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch AUTO signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Light control switch in AUTO</ptxt>
+<ptxt>OFF: Light control switch not in AUTO</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HEAD LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch HEAD signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Light control switch in HEAD</ptxt>
+<ptxt>OFF: Light control switch not in HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TAIL LIGHT SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch TAIL signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Light control switch in TAIL or HEAD</ptxt>
+<ptxt>OFF: Light control switch in neither TAIL nor HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal conditions listed above are displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M3004X_04_0002" fin="false">NG</down>
+<right ref="RM0000011M3004X_04_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M3004X_04_0002" proc-id="RM0250U___00004NJ00000">
+<testtitle>INSPECT HEADLIGHT DIMMER SWITCH ASSEMBLY</testtitle>
+<content6 releasenbr="2">
+<test1>
+<ptxt>Inspect the headlight dimmer switch assembly (See page <xref label="Seep01" href="RM0000014E3004X_01_0001"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Headlight dimmer switch assembly is normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M3004X_04_0003" fin="false">OK</down>
+<right ref="RM0000011M3004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M3004X_04_0003" proc-id="RM0250U___00004NK00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (INSTRUMENT PANEL J/B ASSEMBLY - SWITCH ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E21 headlight dimmer switch assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121507E02" width="2.775699831in" height="7.795582503in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E6 and E7 main body ECU connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the IG instrument panel J/B connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E21-3 (LFG) - E21-16 (HL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-4 (BFG) - E6-28 (FFOG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-11 (HU) - IG-5 (HU)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-17 (HF) - E7-13 (HF)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-18 (T) - E7-23 (TAIL)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-19 (A) - E7-21 (A)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-20 (H) - E6-17 (HEAD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-3 (LFG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-4 (BFG) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-11 (HU) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-17 (HF) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-18 (T) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-19 (A) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-20 (H) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E21-12 (EL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011M3004X_04_0008" fin="true">OK</down>
+<right ref="RM0000011M3004X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011M3004X_04_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000011M3004X_04_0005">
+<testtitle>REPLACE HEADLIGHT DIMMER SWITCH ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000011M3004X_04_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000011M3004X_04_0008">
+<testtitle>REPLACE INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

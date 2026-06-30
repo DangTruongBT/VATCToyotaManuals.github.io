@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000XWK008X" category="L" type-id="3001A" name-id="SR00J-10" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000000XWK008X_z0" proc-id="RM0250U___00009Z900000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PRECAUTIONS WHEN WORKING ON ELECTRIC STEERING LOCK</ptxt>
+<step2>
+<ptxt>After replacing the steering lock actuator assembly (steering lock ECU), perform the key ID code registration.</ptxt>
+</step2>
+<step2>
+<ptxt>If the steering lock actuator assembly is replaced, open and close the driver's door. The engine may not start until the driver's door is opened or closed.</ptxt>
+<atten4>
+<ptxt>Opening and closing the driver's door causes the steering lock actuator assembly (steering lock ECU) to memorize the correct steering lock bar position.</ptxt>
+</atten4>
+</step2>
+<step2>
+<ptxt>If checking for DTCs of the smart access system with push-button start function or if checking the DATA LIST with the engine switch off, make sure that the driver's door is open.</ptxt>
+<atten4>
+<ptxt>When the engine switch is off, the main body ECU may be in a sleep mode. If the main body ECU is in this sleep mode, it will not be possible for the intelligent tester to communicate with it. Opening and closing the driver's door will cause the ECU to exit the sleep mode.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

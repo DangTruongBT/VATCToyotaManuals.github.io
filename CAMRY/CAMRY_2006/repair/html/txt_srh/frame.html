@@ -1,0 +1,42 @@
+<!-- $Id: frame.html,v 1.11 2005/01/13 06:28:47 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  body(element)                                                         -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>GSIC - Global Service Information Center -Search Result-</title>
+<link href="../../css/frame.css" rel="stylesheet" type="text/css">
+<script src="../../js/xml.js"></script>
+<script src="../../js/util.js"></script>
+<script src="../../js/hashtable.js"></script>
+<script src="../../js/dom.js"></script>
+<script src="../../js/txtsearch.js"></script>
+<script language="javascript">
+init();
+
+var WAIT_TIME = 1;
+var keytxt;
+function callReSearch(comp){
+	keytxt = comp.value;
+	if( ! checkWordLength(keytxt) ) return;
+	contents.dispMessage();
+	setTimeout("research()", WAIT_TIME);
+}
+function research(){
+	location.href = 'frame2.html' + getReSearchLocation(keytxt);
+}
+</script>
+</head>
+<frameset rows="88, *" frameborder="yes" border="0" framespacing="0" class="footer">
+	<frame name="global" src="global.html" scrolling="no" noresize frameborder="no">
+	<frame name="contents" src="contents.html" frameborder="no" scrolling="auto">
+</frameset>
+<noframes>
+	<body>Please see this page with the browser complying with the frame.</body>
+</noframes>
+</html>

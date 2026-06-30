@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHS00JX" category="D" type-id="303I1" name-id="BC02H-15" from="200601">
+<name>CHECK FOR INTERMITTENT PROBLEMS</name>
+<subpara id="RM000000XHS00JX_z0" proc-id="RM0250U___00005RF00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK FOR INTERMITTENT PROBLEMS</ptxt>
+<atten4>
+<ptxt>A momentary interruption (open circuit) in the connectors and/or wire harness between the sensors and ECUs can be detected using the ECU Data List function of the intelligent tester.</ptxt>
+</atten4>
+<step2>
+<ptxt>Turn the ignition switch off and connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="C131977E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Turn the ignition switch on (IG). Follow the directions on the intelligent tester to display the Data List and select areas where momentary interruption should be monitored.</ptxt>
+<figure>
+<graphic graphicname="C106657E02" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A momentary interruption (open circuit) cannot be detected for 3 seconds after the ignition switch is turned on (IG) (initial check).</ptxt>
+</item>
+<item>
+<ptxt>If the status remains on (ERROR displayed), check the continuity between the ECU and the sensors, or between ECUs.</ptxt>
+</item>
+<item>
+<ptxt>The ERROR display on the intelligent tester remains on for 1 second after the harness signal changes from momentary interruption (open circuit) to normal condition.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item /</ptxt>
+<ptxt>Range (Display)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>FR SPD OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>FR speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>FL SPD OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>FL speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RR SPD OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>RR speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>RL SPD OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>RL speed sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>EFI COM OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>EFI communication open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>YAW RATE OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Yaw rate sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DECELERAT OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Acceleration sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>STEERING OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Steering angle sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>M/C OPN</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Master cylinder pressure sensor open detection / ERROR or NORMAL</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ERROR: Momentary interruption</ptxt>
+<ptxt>NORMAL: Normal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>While observing the screen, gently jiggle the connector or wire harness between the ECU and sensors, or between ECUs.</ptxt>
+<figure>
+<graphic graphicname="F047126" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>ERROR display does not change.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>The connector and/or wire harness will be in momentary interruption (open circuit) if the display changes. Repair or replace the connector and/or wire harness as one of them is faulty.</ptxt>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

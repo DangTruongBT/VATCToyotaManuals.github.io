@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_72Y6C_T008U" variety="T008U">
+<name>WIRELESS DOOR LOCK CONTROL SYSTEM (w/ Smart Key System)</name>
+<para id="RM0000027AI000X" category="U" type-id="303FJ" name-id="DL1CM-04" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM0000027AI000X_z0" proc-id="RM0250U___00007W500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester DATA LIST allows switch, sensor, actuator and other item values to be read without removing any parts. Reading the DATA LIST early in troubleshooting is one way to shorten labor time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / MAIN BODY or SMART / DATA LIST / DIAG&amp;CUSTOMIZE.</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (Main body ECU): </title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" align="left" colwidth="2.12in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="0.71in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WIRELESS OPER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock control function / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operating</ptxt>
+<ptxt>OFF: Not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HAZARD ANS BACK</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Hazard answer-back of wireless / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operating</ptxt>
+<ptxt>OFF: Not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>OPEN DOOR WARN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open door warning / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operating</ptxt>
+<ptxt>OFF: Not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>AUTO LOCK DELAY</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Automatic lock time / 60 s or 30 s</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>60 s: 60 seconds</ptxt>
+<ptxt>30 s: 30 seconds</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>UNLOCK /2OPER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 times operation of wireless unlock / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: All doors unlock when UNLOCK is pressed twice</ptxt>
+<ptxt>OFF: All doors unlock when UNLOCK is pressed once</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>WIRLS BUZZ RESP</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer response / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operating</ptxt>
+<ptxt>OFF: Not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>TRUNK LID OPER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Luggage compartment door open function type / 1 TIME/2 TIMES/0.8 s PR/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>1 TIME: Luggage compartment door opens when LUGGAGE OPEN switch is pressed once</ptxt>
+<ptxt>2 TIMES: Luggage compartment door opens when LUGGAGE OPEN switch is pressed twice</ptxt>
+<ptxt>0.8 s PR: Luggage compartment door opens when LUGGAGE OPEN switch is pressed and held down for 0.8 seconds.</ptxt>
+<ptxt>OFF: Not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>SMART (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="2.12in"/>
+<colspec colname="COL3" colwidth="3.19in"/>
+<colspec colname="COL4" colwidth="0.71in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ALARM FUNCTION</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Panic function / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Operating</ptxt>
+<ptxt>OFF: Not operating</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester ACTIVE TEST allows relay, VSV, actuator and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to shorten the labor time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Enter the following menus: DIAGNOSIS / OBD/MOBD / MAIN BODY or SMART / ACTIVE TEST.</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST according to the display on the tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (Main body ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" align="center" colwidth="1.51in"/>
+<colspec colname="COL2" align="left" colwidth="2.02in"/>
+<colspec colname="COLSPEC0" colwidth="2.02in"/>
+<colspec colname="COL3" align="center" colwidth="1.53in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>HAZARD</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns the turn signal flasher relay</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe headlight and rear combination light for correct operation</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>VEHICLE HORN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Vehicle horn</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>TRUNK/BDOR OPEN</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns luggage compartment door opener motor</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Observe luggage compartment door</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table pgwide="1">
+<title>SMART (Certification ECU):</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.51in"/>
+<colspec colname="COL2" colwidth="2.02in"/>
+<colspec colname="COLSPEC1" colwidth="2.02in"/>
+<colspec colname="COL3" colwidth="1.53in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>WIRELESS BUZZER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wireless door lock buzzer</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,298 @@
+<!-- $Id: index.html,v 1.34 2005/06/03 02:48:10 k-narumi Exp $ -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 VIN:                                                              -->
+<!--  001 Model Year:                                                       -->
+<!--  002 Model Name:                                                       -->
+<!--  003 Model Code:                                                       -->
+<!--  004 Engine:                                                           -->
+<!--  005 Body Type:                                                        -->
+<!--  006 from                                                              -->
+<!--  007 to                                                                -->
+<!--  008 Logo (attribute)                                                  -->
+<!--  009 GSIC - Global Service Information Center                          -->
+<!--  010 Vehicle(attribute)                                                -->
+<!--  011 Customer Delight(attribute)                                       -->
+<!--  012 Quality Service(attribute)                                        -->
+<!--  013 Fix It Right The First Time(attribute)                            -->
+<!--  014 Service Information Directory                                     -->
+<!--  015 Select Car Type                                                   -->
+<!--  016 Production Date:                                                  -->
+<!--  017 Enter Keyword:                                                    -->
+<!--  018 Repair                                                            -->
+<!--  019 Index                                                             -->
+<!--  020 Diagnostics                                                       -->
+<!--  021 Installation / Removal                                            -->
+<!--  022 Inspection                                                        -->
+<!--  023 Electrical Wiring Diagram                                         -->
+<!--  024 Body Repair                                                       -->
+<!--  025 Service Specifications                                            -->
+<!--  026 Accessory Repair                                                  -->
+<!--  027 Maintenance                                                       -->
+<!--  028 General                                                           -->
+<!--  029 Procedure &amp; Schedule                                          -->
+<!--  030 Pre-Delivery                                                      -->
+<!--  031 Accessory Installation                                            -->
+<!--  032 Technical Description                                             -->
+<!--  033 Service Bulletin                                                  -->
+<!--  034 Major Technical Specs.                                            -->
+<!--  035 Owners Manual                                                     -->
+<!--  036 Training &amp; Tools                                              -->
+<!--  037 Technical Training                                                -->
+<!--  038 Diagnostic Scan Tool                                              -->
+<!--  039 Special Service Tool                                              -->
+<!--  040 New Car Feature                                                   -->
+<!--  041 Service Campaign                                                  -->
+<!--  042 Technical Instruction                                             -->
+<!--  043 ACTIVEX_ERROR(js argument)                                        -->
+<!--  044 Search                                                            -->
+<!--  045 Read Me                                                           -->
+<!--  046 Service Data Sheet                                                -->
+<!--========================================================================-->
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>GSIC - Global Service Information Center -Top-</title>
+<link href="../css/top.css" rel="stylesheet" type="text/css">
+<script src="../js/top.js"></script>
+<script src="../js/util.js"></script>
+<script src="../js/xml.js"></script>
+<script src="../js/hashtable.js"></script>
+<script language="javascript">
+var PUB_XML = "pub.xml";
+var EWD_XML = "../../ewd/toc_ewd.xml";
+var NCF_XML = "../../ncf/toc_ncf.xml";
+var g_filter = null;
+var g_term   = null;
+var g_vin    = null;
+var g_filterXml = null;
+var g_pubXml    = null;
+var g_ewdXml    = null;
+var g_ncfXml    = null;
+var g_info      = null;
+// Browser Check
+var ACTIVEX_ERROR = "Please install MSXML3.DLL"; // 043
+function checkClient() {
+	if (!checkIEVersion()) return false;
+	if (!checkActiveX("Msxml2.DOMDocument", ACTIVEX_ERROR)) return false;
+	if (!checkSvgViewer()) return false;
+	return true;
+}
+
+function init() {
+	if (!checkClient()) return;
+	g_pubXml = initXml(PUB_XML);
+	g_ewdXml = initXml(EWD_XML, true, false);
+	g_ncfXml = initXml(NCF_XML, true, false);
+	if (g_pubXml==null) return;
+
+	g_filter = getParameterValue("filter");
+	g_term = getParameterValue("term");
+	g_vin = getParameterValue("vin");
+	// Display VIN No.
+	if (g_vin!=null) {
+		vin.innerHTML = "VIN:<br/>"+g_vin; // 000
+	}
+	// Display Car Type
+	if (g_filter!=null) {
+		g_filterXml = initXml("../filter/"+g_filter.toLowerCase()+".xml", true, true);
+		g_info = getCarInformation(g_pubXml, g_filterXml);
+		filter.innerHTML = "";
+		if (g_info.get("year")!=null)
+			filter.innerHTML += "Model Year:<br/>"+g_info.get("year")+"<br/><br/>";//001
+		if (g_info.get("name")!=null)
+			filter.innerHTML += "Model Name:<br/>"+g_info.get("name")+"<br/><br/>";//002
+		if (g_info.get("code")!=null)
+			filter.innerHTML += "Model Code:<br/>"+g_info.get("code")+"<br/><br/>";//003
+		if (g_info.get("engine")!=null)
+			filter.innerHTML += "Engine:<br/>"+g_info.get("engine")+"<br/><br/>";  //004
+		if (g_info.get("body")!=null)
+			filter.innerHTML += "Body Type:<br/>"+g_info.get("body");              //005
+	} else {
+		g_info = getCarInformation(g_pubXml);
+		if (g_info.get("name")!=null)
+			filter.innerHTML += "Model Name:<br/>"+g_info.get("name")+"<br/><br/>";//002
+	}
+	// Display Production Date
+	var dateList = getProductionDates(g_pubXml, g_ewdXml, g_ncfXml);
+	if (dateList.length==null) return;
+	if (g_term==null) {
+		setDialogArgs(dateList);
+		g_term = openDialog("etc/prd.html",  "pdt");
+		clearDialogArgs();
+	}
+	var terms = "<select onChange='setDate(this)'>";
+	for (var i=dateList.length-1; i>=0; i--) {
+		var from = dateList[i];
+		var to = (i!=dateList.length-1) ? dateList[i+1] : null;
+		terms += "<option" + ((from==g_term) ? " selected" : "") 
+					 + " value='"+from+"'>"
+					 + "from " + getFormatDate(from)                  // 006
+					 + ((to!=null) ? " to " + getFormatDate(to) : "") // 007
+					 + "</option>";
+	}
+	terms += "</select>";
+
+	term.innerHTML = terms;
+	if (SELECT_CAR_URL==null || SELECT_CAR_URL.length==0) {
+		document.all('carType').style.display = "none";
+	}
+	if (SB_URL==null || SB_URL.length==0) {
+		document.all('sb').style.display = "none";
+	}
+}
+
+function textSearch(comp){
+	var key = comp.value;
+	var del = new RegExp(" *|");
+	key = key.replace(del, "");
+	del = new RegExp(" *$");
+	key = key.replace(del, "");
+	key = escape(key);
+
+	if( ! checkWordLength(key) ) return;
+
+	var param = "?";
+	param += "term=" + g_term;
+	if (g_filter != null) param += "&filter=" + g_filter;
+	if (g_vin    != null) param += "&vin=" + g_vin;
+	if (key      != ""  ) param += "&keytxt=" + key;
+	location.href = 'txt_srh/frame.html' + param;
+	return false;
+}
+</script>
+</head>
+<body onLoad="init()">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="120">
+			<img alt="Logo" src="logo.png" class="logo"> <!-- 008 -->
+		</td>
+		<td>
+			<!-- 009 -->
+			<p class="system-name">GSIC - Global Service Information Center</p>
+		</td>
+		<td align="right">
+			<a href="#" onClick="showModalDialog('etc/readme_frame.html', '', 'dialogWidth=950px; dialogHeight=600px; status=yes; resizable=yes; help=no;');" class="window-control-button">Read Me</a><!-- 045 -->
+		</td>
+	</tr>
+</table>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top">
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+				<!-- 010 -->
+					<td class="top-vehicle">
+						<table border="0" height="172" width="100%" cellspacing="0" cellpadding="0">
+							<tr>
+								<td valign="top"><img src="vehicle.png" alt="Vehicle"></td>
+							</tr>
+							<tr>
+								<td valign="bottom">
+									<a href="#" id="carType" onClick="openSelectCarType(g_pubXml)" style="font-size: 10pt; font-weight: bold; padding-left: 5px;">Select Car Type</a><!-- 015 -->
+								</td>
+							</tr>
+						</table>
+					</td>
+					<!-- 011 -->
+					<td class="top-gas"><img src="../img/gas.png" alt="Customer Delight"></td>
+					<!-- 012 -->
+					<td class="top-repair"><img src="../img/repair.png" alt="Quality Service"></td>
+					<!-- 013 -->
+					<td class="top-guardrail"><img src="../img/guardrail.png" alt="Fix It Right The First Time"></td>
+				</tr>
+				<tr>
+					<td colspan="3" class="main-area">
+						<table width="512" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td class="select-vehicle" width="33%">
+									<div id="vin"></div>
+								</td>
+								<td class="select-vehicle" width="33%">
+									<div id="filter"></div>
+								</td>
+								<td class="select-vehicle" width="33%">
+									Production Date: <!--016-->
+									<div id="term"></div>
+									<br/>
+									<form name="srh" onSubmit="javascript:textSearch(inputkey); return false;">
+									Enter Keyword:   <!--017-->
+										<input type="text" id="inputkey"><br/>
+										<input type="submit"value="Search" class="binput"> <!--044-->
+									</form>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td><br/></td>
+				</tr>
+				<tr>
+					<td colspan="3" valign="top">
+						<iframe height="200px" width="100%" frameborder="0" src="whatsnew/whatsnew.html">
+						</iframe>
+					</td>
+					<td><br/></td>
+				</tr>
+			</table>
+		</td>
+		<td width="284px" valign="top">
+			<table border="0" width="100%" cellspacing="0" cellpadding="0">
+				<tr>
+					<!-- 014 -->
+					<td height="123px;" class="top-red">Service Information Directory</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="directory-area">
+						<ul class="list-top">
+							<li>
+								&nbsp;Repair<!-- 018 --><a href="#" class="link-index" onClick="openPage('toc/frame.html', 'toc')">&gt;&gt;&gt;&nbsp;Index<!-- 019 --></a><br/>
+								<a href="#" class="link-enable" onClick="openPage('trb_toc/frame.html')">Diagnostics</a><!-- 020 --><br/>
+								<a href="#" class="link-enable" onClick="openPage('rmv_toc/frame.html')">Installation / Removal</a><!-- 021 --><br/>
+								<a href="#" class="link-enable" onClick="openPage('isp_toc/frame.html')">Inspection</a><!-- 022 --><br/>
+								<a href="javascript:openPage('../../ewd/index.html')" class="link-enable">Electrical Wiring Diagram</a><!-- 023 --><br/>
+								<a href="javascript:openPage('../../brm/index.html')" class="link-enable">Body Repair</a><!--024--><br/>
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Accessory Repair</a><br/> --><!-- 026 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Accessory Installation</a><br/> --><!-- 031 -->
+								<a href="#" class="link-enable" onClick="openPage('srv_spc/frame.html', 'srv_spc')">Service Specifications</a><!-- 025 --><br/>
+								<a href="#" class="link-enable" onClick="window.open('../../sds/sds.html', 'SDS', 'width=800,height=600,menubar=yes,status=yes,resizable=yes');">Service Data Sheet</a><!-- 046 --><br/>
+								<a href="#" class="link-disable" onClick="return false" tabindex="-1">Service Bulletin</a><!-- 033 --><br/>
+								<!-- To make the link to service bulletin page available, replace the above with the bellow. -->
+								<!-- <a id="sb" href="#" class="link-enable" onClick="openSB(g_info)">Service Bulletin</a><br/> --><!-- 033 -->
+							</li>
+							<li class="list-top">
+								&nbsp;Maintenance<!-- 027 --><br/>
+								<a href="#" class="link-enable" onClick="openPage('mnt/frame.html', 'mnt')">General</a><!-- 028 --><br/>
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Procedure &amp; Schedule</a><br/> --><!-- 029 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Pre-Delivery</a><br/> --><!-- 030 -->
+							</li>
+							<li class="list-top">
+								&nbsp;Technical Description<!-- 032 --><br/>
+								<a href="javascript:openPage('../../ncf/index.html')" class="link-enable">New Car Features</a><!-- 040 --><br/>
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Major Technical Specs.</a><br/> --><!-- 034 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Owners Manual</a><br/> --><!-- 035 -->
+							</li>
+							<!-- <li class="list-top"> -->
+								<!-- &nbsp;Training &amp; Tools<br/> --><!-- 036 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Technical Training</a><br/> --><!-- 037 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Diagnostic Scan Tool</a><br/> --><!-- 038 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Special Service Tool</a><br/> --><!-- 039 -->
+							<!-- </li> -->
+							<!-- <li class="list-top"> -->
+								<!-- &nbsp;Service Campaign<br/> --><!-- 041 -->
+								<!-- <a href="#" class="link-disable" onClick="return false" tabindex="-1">Technical Instruction</a><br/><br/> --><!-- 042 -->
+							<!-- </li> -->
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<embed src="etc/dummy.svg" width="1" height="1" name="svgdata" style="display:none"></embed>
+</body>
+</html>

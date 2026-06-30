@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001C_S001D" variety="S001D">
+<name>AUDIO / VISUAL</name>
+<ttl id="1001C_S001D_72YIE_T00A3" variety="T00A3">
+<name>AUDIO AND VISUAL SYSTEM</name>
+<para id="RM0000020S0002X" category="J" type-id="801RE" name-id="AV18B-03" from="200601">
+<dtccode/>
+<dtcname>Vehicle Speed Signal Circuit between Radio Receiver and Combination Meter</dtcname>
+<subpara id="RM0000020S0002X_01" type-id="60" category="03" proc-id="RM0250U___00004UZ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit is necessary for the ASL (Auto Sound Leveliser) built into the radio receiver.</ptxt>
+<ptxt>Speed signals are received from the combination meter and used for the ASL.</ptxt>
+<ptxt>The ASL function automatically adjusts the sound data in order to enable hearing the clear audio sound even when vehicle noise increases (as vehicle noise increases, the volume is turned up etc.).</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A voltage of 12 V or 5 V is output from each ECU and then input to the combination meter. The signal is changed to a pulse signal at the transistor in the combination meter. Each ECU controls the respective system based on the pulse signal.</ptxt>
+</item>
+<item>
+<ptxt>If a short occurs in an ECU, all systems in the diagram below will not operate normally.</ptxt>
+</item>
+</list1>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000020S0002X_02" type-id="32" category="03" proc-id="RM0250U___00004V000000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E129788E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000020S0002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020S0002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020S0002X_04_0001" proc-id="RM0250U___00004V100000">
+<testtitle>CHECK OPERATION OF SPEEDOMETER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Drive the vehicle and check if the function of the speedometer on the combination meter is normal.</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Actual vehicle speed and the speed indicated on the speedometer are the same.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>The vehicle speed sensor is functioning normally when the indication on the speedometer is normal.</ptxt>
+</atten4>
+</content6>
+<res>
+<down ref="RM0000020S0002X_04_0002" fin="false">OK</down>
+<right ref="RM0000020S0002X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0002" proc-id="RM0250U___00004V200000">
+<testtitle>INSPECT RADIO RECEIVER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio receiver connector F8.</ptxt>
+<figure>
+<graphic graphicname="E129800E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage.</ptxt>
+<test2>
+<ptxt>Jack up either one of the drive wheels.</ptxt>
+</test2>
+<test2>
+<ptxt>Move the shift lever to the neutral position.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the voltage between terminal SPD of the wire harness connector and body ground when the drive wheels are turned slowly.</ptxt>
+<figure>
+<graphic graphicname="E110855E03" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Voltage pulses as shown in the illustration.</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020S0002X_04_0003" fin="false">NG</down>
+<right ref="RM0000020S0002X_04_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0003" proc-id="RM0250U___00004V300000">
+<testtitle>CHECK HARNESS AND CONNECTOR (COMBINATION METER - RADIO RECEIVER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the radio receiver connector F8 and combination meter connector F2.</ptxt>
+<figure>
+<graphic graphicname="E129801E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SPD - +S</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020S0002X_04_0004" fin="false">OK</down>
+<right ref="RM0000020S0002X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0004" proc-id="RM0250U___00004V400000">
+<testtitle>CHECK HARNESS AND CONNECTOR (RADIO RECEIVER - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E129800E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SPD - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If the resistance between terminal SPD and body ground is less than 10 kΩ, there may be a short in a wire harness, connector, or an ECU that is connected to the SPD signal wire.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020S0002X_04_0009" fin="true">OK</down>
+<right ref="RM0000020S0002X_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0005">
+<testtitle>CHECK COMBINATION METER</testtitle>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0006">
+<testtitle>REPLACE RADIO RECEIVER</testtitle>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0008">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR OR EACH ECU</testtitle>
+</testgrp>
+<testgrp id="RM0000020S0002X_04_0009">
+<testtitle>REPLACE COMBINATION METER</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

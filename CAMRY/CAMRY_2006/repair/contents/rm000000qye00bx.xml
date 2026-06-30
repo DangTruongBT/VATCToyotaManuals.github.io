@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QYE00BX" category="U" type-id="303FJ" name-id="EI00T-14" from="200601">
+<name>DATA LIST / ACTIVE TEST</name>
+<subpara id="RM000000QYE00BX_z0" proc-id="RM0250U___00008DE00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>READ DATA LIST</ptxt>
+<atten4>
+<ptxt>Using the intelligent tester to read the DATA LIST allows the values or states of switches, sensors, actuators and other items to be read without removing any parts. This non-intrusive inspection can be very useful as intermittent conditions or signals may be discovered before parts or wiring is disturbed. Reading the DATA LIST information early in troubleshooting is one way to save diagnostic time.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Read the DATA LIST.</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<title>SMART:</title>
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (IG) signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (ACC, IG) or start</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ACC SW</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Engine switch on (ACC) signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>ON: Engine switch on (ACC, IG) or start</ptxt>
+<ptxt>OFF: Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>IMMOBILISER</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Immobiliser system status / SET or UNSET</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>SET: Key is not in cabin</ptxt>
+<ptxt>UNSET: Key is in cabin</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>MASTER KEY</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Master key code signal / MATCH or NO MATCH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>MATCH: Master key code is sent</ptxt>
+<ptxt>NO MATCH: Unmatched master key code is sent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SUB KEY</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Sub-key (Master key) code signal / MATCH or NO MATCH</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>MATCH: Sub-key (master key) code is sent</ptxt>
+<ptxt>NO MATCH: Unmatched sub-key (master key) code is sent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>BCC</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transponder chip signal / OK or NG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OK: Correct data sent</ptxt>
+<ptxt>NG: Incorrect data sent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>STATUS</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transponder chip data / OK or NG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OK: Data OK</ptxt>
+<ptxt>NG: Data error</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ENCRYPT CODE</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transponder chip signal / OK or NG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OK: Correct data sent</ptxt>
+<ptxt>NG: Incorrect data sent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>SERIAL NUMBER</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transponder chip signal / OK or NG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OK: Correct data sent</ptxt>
+<ptxt>NG: Incorrect data sent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>FRAME</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Transponder chip signal / OK or NG</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>OK: Correct data sent</ptxt>
+<ptxt>NG: Incorrect data sent</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<step1>
+<ptxt>PERFORM ACTIVE TEST</ptxt>
+<atten4>
+<ptxt>Performing the intelligent tester's ACTIVE TEST allows relay, VSV, actuator and other items to be operated without removing any parts. Performing the ACTIVE TEST early in troubleshooting is one way to save time. The DATA LIST can be displayed during the ACTIVE TEST.</ptxt>
+</atten4>
+<step2>
+<ptxt>Connect the intelligent tester (with CAN VIM) to the DLC3.</ptxt>
+</step2>
+<step2>
+<ptxt>Turn the engine switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Perform the ACTIVE TEST by following the directions on the tester screen.</ptxt>
+</step2>
+</step1>
+<table pgwide="1">
+<title>SMART:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>SECURITY INDIC</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turn security indicator ON/OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000011SQ005X" category="J" type-id="3010V" name-id="LI20E-01" from="200601">
+<dtccode/>
+<dtcname>Ignition Switch Circuit</dtcname>
+<subpara id="RM0000011SQ005X_01" type-id="60" category="03" proc-id="RM0250U___00004MO00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This circuit detects the state of the ignition switch or engine switch, and sends it to the main body ECU.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000011SQ005X_02" type-id="32" category="03" proc-id="RM0250U___00004MP00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121497E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+<figure>
+<graphic graphicname="E121498E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011SQ005X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011SQ005X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011SQ005X_04_0003" proc-id="RM0250U___00004MQ00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the items below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ACC SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch or engine switch ACC signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch on (IG or ACC)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Ignition switch or engine switch IG signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Ignition switch on (IG)</ptxt>
+<ptxt>OFF: Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal conditions listed above are displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0027" fin="false">NG</down>
+<right ref="RM0000011SQ005X_04_0019" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0027" proc-id="RM0250U___00007W100000">
+<testtitle>INSPECT ACC RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ACC relay from the instrument panel J/B assembly.</ptxt>
+<figure>
+<graphic graphicname="B087894E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω (When battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0028" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0031" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0028" proc-id="RM0250U___00007WB00000">
+<testtitle>INSPECT NO. 1 IGNITION RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the No. 1 ignition relay from the instrument panel J/B assembly.</ptxt>
+<figure>
+<graphic graphicname="B087894E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Below 1 Ω (When battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0004" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0033" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0004" proc-id="RM0250U___00004MR00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (INSTRUMENT PANEL J/B ASSEMBLY - BATTERY AND GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the IA instrument panel J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121505E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IA-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Disconnect the IF instrument panel J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121504E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IF-10 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0021" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0021" proc-id="RM0250U___00004MU00000">
+<testtitle>CHECK VEHICLE CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the vehicle condition.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.55in"/>
+<colspec colname="COL2" colwidth="3.53in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>without Smart Key System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>with Smart Key System</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0017" fin="false">A</down>
+<right ref="RM0000011SQ005X_04_0026" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0017" proc-id="RM0250U___00004MS00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (INSTRUMENT PANEL J/B ASSEMBLY - IGNITION SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E23 ignition switch connector.</ptxt>
+<figure>
+<graphic graphicname="E121503E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the II instrument panel J/B assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>II-3 - E23-2 (ACC)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-4 - E23-4 (AM1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-9 - E23-1 (IG1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-3 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-4 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-9 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0029" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0029" proc-id="RM0250U___00007WC00000">
+<testtitle>INSPECT IGNITION SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the ignition switch (See page <xref label="Seep01" href="RM0000026VF001X_01_0001"/>)</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Ignition switch is normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0035" fin="true">OK</down>
+<right ref="RM0000011SQ005X_04_0032" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0026" proc-id="RM0250U___00004MX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (BATTERY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E7 main body ECU connector.</ptxt>
+<figure>
+<graphic graphicname="E121506E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E7-6 (AM1) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0018" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0018" proc-id="RM0250U___00004MT00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (INSTRUMENT PANEL J/B ASSEMBLY - MAIN BODY ECU)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E7 main body ECU connector.</ptxt>
+<figure>
+<graphic graphicname="E121484E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the II instrument panel J/B assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC2" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>II-3 - E7-22 (ACCD)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-9 - E7-3 (IG1D)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-3 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>II-9 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0023" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0023" proc-id="RM0250U___00004MV00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE SWITCH - MAIN BODY ECU AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E52 engine switch connector.</ptxt>
+<figure>
+<graphic graphicname="E121502E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E7 main body ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COLSPEC4" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E52-7 (SS1) - E7-17 (SSW1)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-2 (SS2) - E7-16 (SSW2)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-5 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E52-4 (EOM) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0030" fin="false">OK</down>
+<right ref="RM0000011SQ005X_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0030" proc-id="RM0250U___00007WE00000">
+<testtitle>INSPECT ENGINE SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the engine switch (See page <xref label="Seep01" href="RM000000WW600GX_01_0001"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Engine switch is normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011SQ005X_04_0035" fin="true">OK</down>
+<right ref="RM0000011SQ005X_04_0034" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0010">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0019">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0031">
+<testtitle>REPLACE ACC RELAY</testtitle>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0032">
+<testtitle>REPLACE IGNITION SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0033">
+<testtitle>REPLACE NO. 1 IGNITION RELAY</testtitle>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0034">
+<testtitle>REPLACE ENGINE SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM0000011SQ005X_04_0035">
+<testtitle>REPLACE INSTRUMENT PANEL J/B ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

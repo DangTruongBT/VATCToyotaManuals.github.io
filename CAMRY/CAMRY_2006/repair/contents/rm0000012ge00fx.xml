@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002P_S001H" variety="S001H">
+<name>METER</name>
+<ttl id="1002P_S001H_72ZST_T00CN" variety="T00CN">
+<name>METER / GAUGE SYSTEM</name>
+<para id="RM0000012GE00FX" category="J" type-id="800LQ" name-id="ME0PO-01" from="200601">
+<dtccode/>
+<dtcname>Fuel Receiver Gauge Malfunction</dtcname>
+<subpara id="RM0000012GE00FX_04" type-id="60" category="03" proc-id="RM0250U___00007RP00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<list1 type="nonmark">
+<item>
+<ptxt>The meter CPU uses the fuel sender gauge assembly to determine the level of the fuel in the fuel tank. The resistance of the fuel sender gauge will vary between approximately 15 Ω with the float at the full position, and 410 Ω with the float at the empty position. The meter outputs battery voltage through two 820 Ω resistors that are mounted in parallel inside the meter ECU. The meter CPU measures the voltage between the variable resistor in the fuel sender gauge and the two resistors mounted in parallel in the meter. Voltage measured at this point will vary as the float of the fuel sender gauge is moved. The highest voltage observed should be approximately half of battery voltage.</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>The fuel level warning light will come on when the fuel level is below 10.5 liters.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM0000012GE00FX_01" type-id="32" category="03" proc-id="RM0250U___00007RG00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E128091E01" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000012GE00FX_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000012GE00FX_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000012GE00FX_03_0018" proc-id="RM0250U___00007RN00000">
+<testtitle>CHECK CAN COMMUNICATION SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if CAN communication DTC is output (See page <xref label="Seep01" href="RM000000WIB00RX"/>).</ptxt>
+</test1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CAN communication DTC is not output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>CAN communication DTC is output</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B (See page <xref label="Seep02" href="RM000002B6V000X"/>)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM0000012GE00FX_03_0001" fin="false">A</down>
+<right ref="RM0000012GE00FX_03_0020" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0001" proc-id="RM0250U___00007RH00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter following menus: DIAGNOSIS / OBD/MOBD / METER / ACTIVE TEST.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the values by referring to the table below.</ptxt>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.75in"/>
+<colspec colname="COLSPEC0" colwidth="1.78in"/>
+<colspec colname="COL2" colwidth="1.76in"/>
+<colspec colname="COL3" colwidth="1.79in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Part</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Control Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FUEL GAUGE</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Fuel receiver gauge</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>EMPTY, 1/2, FULL</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Needle indication is normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GE00FX_03_0005" fin="false">OK</down>
+<right ref="RM0000012GE00FX_03_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0002" proc-id="RM0250U___00007RI00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the tester ON.</ptxt>
+</test1>
+<test1>
+<ptxt>Enter following menus: DIAGNOSIS / OBD/MOBD / METER / DATA LIST.</ptxt>
+</test1>
+<test1>
+<ptxt>Check the values by referring to the table below.</ptxt>
+<table pgwide="1">
+<title>METER:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Display</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item/Range</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FUEL GAUGE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel input signal Min.: 0, Max.: 255</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Fuel gauge indicates (F): 35</ptxt>
+<ptxt>Fuel gauge indicates (3/4): 85</ptxt>
+<ptxt>Fuel gauge indicates (1/2): 145</ptxt>
+<ptxt>Fuel gauge indicates (3/4): 186</ptxt>
+<ptxt>Fuel gauge indicates (E): 205</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Fuel value signal displayed on the tester is almost the same as needle indication.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GE00FX_03_0005" fin="false">OK</down>
+<right ref="RM0000012GE00FX_03_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0005" proc-id="RM0250U___00007RK00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (COMBINATION METER - FUEL SENDER GAUGE ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the F2 and N10 connectors.</ptxt>
+<figure>
+<graphic graphicname="E128085E02" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>F2-15 (FR) - N10-2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F2-16 (FE) - N10-3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>N10-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>F2-16 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GE00FX_03_0003" fin="false">OK</down>
+<right ref="RM0000012GE00FX_03_0012" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0003" proc-id="RM0250U___00007RJ00000">
+<testtitle>INSPECT FUEL SENDER GAUGE ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the fuel sender gauge connector.</ptxt>
+<figure>
+<graphic graphicname="E128086E01" width="2.775699831in" height="5.787629434in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Remove the fuel sender gauge assembly.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the float moves smoothly between F and E.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals 2 (S) and 3 (FE) of connector according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.45in"/>
+<colspec colname="COL2" colwidth="2.68in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Float Level</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Resistance (Ω)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>F</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>13.5 to 16.5</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Between E and F</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>13.5 to 414.5 (Gradually changes)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>405.5 to 414.5</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GE00FX_03_0017" fin="false">OK</down>
+<right ref="RM0000012GE00FX_03_0015" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0017" proc-id="RM0250U___00007RM00000">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Replace the combination meter assembly to a new one or a normal one.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The operation of the combination meter assembly returns to normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000012GE00FX_03_0016" fin="true">OK</down>
+<right ref="RM0000012GE00FX_03_0013" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0020">
+<testtitle>GO TO CAN COMMUNICATION SYSTEM</testtitle>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0011">
+<testtitle>REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0015">
+<testtitle>REPLACE FUEL SENDER GAUGE ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0012">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0013">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM0000012GE00FX_03_0016">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

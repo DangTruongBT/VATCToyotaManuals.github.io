@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000002DZY000X" category="C" type-id="801PB" name-id="TW0EZ-03" from="200601">
+<dtccode>C2171/71</dtccode>
+<dtcname>Transmitter ID not Registered</dtcname>
+<subpara id="RM000002DZY000X_01" type-id="60" category="03" proc-id="RM0250U___0000CDE00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The IDs of each tire pressure warning valve and transmitters are registered to the tire pressure warning ECU.</ptxt>
+<ptxt>When the ECU detects that an ID is not the one of registered IDs, or cannot receive an ID signal, a DTC is output.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C2171/71</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Transmitter ID code is not registered. (When an ID code is unregistered for 51 minutes or more)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Tire pressure warning ECU</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000002DZY000X_02" type-id="51" category="05" proc-id="RM0250U___0000CDF00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When replacing the tire pressure warning ECU, read the IDs stored in the ECU using the intelligent tester and note them down before removal.</ptxt>
+</item>
+<item>
+<ptxt>It is necessary to perform initialization (See page <xref label="Seep01" href="RM000000XMZ008X"/>) after registration (See page <xref label="Seep02" href="RM000000XN1008X"/>) the transmitter IDs into the tire pressure warning ECU after the ECU have been replaced.</ptxt>
+</item>
+</list1>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000002DZY000X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000002DZY000X_03_0001" proc-id="RM0250U___0000CDG00000">
+<testtitle>CONFIRM REGISTRATION CONDITION (REGISTERED ID CODES)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3 connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on(IG) and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select REGIT ID CODE by following the prompts displayed on the intelligent tester.</ptxt>
+</test1>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The registered transmitter ID codes are displayed on the intelligent tester screen.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000002DZY000X_03_0002" fin="false">NG</down>
+<right ref="RM000002DZY000X_03_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000002DZY000X_03_0002" proc-id="RM0250U___0000CDH00000">
+<testtitle>PERFORM REGISTRATION (TRANSMITTER ID)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Register the transmitter IDs for all the wheels (See page <xref label="Seep01" href="RM000000XN1008X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Set the tire pressure of all the wheels to the appropriate specified values.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000002DZY000X_03_0003" fin="false">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000002DZY000X_03_0003" proc-id="RM0250U___0000CDI00000">
+<testtitle>READ VALUE ON DATA LIST</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the DATA LIST (See page <xref label="Seep01" href="RM000000XMY007X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Select "TIREPRESS" by following the prompts displayed on the intelligent tester.</ptxt>
+<atten4>
+<ptxt>It may take up to 1 minute or more to display the tire pressure data.</ptxt>
+</atten4>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>All tire pressure readings are equal to specified values.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Tire pressure values not display</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000002DZY000X_03_0006" fin="true">A</down>
+<right ref="RM000002DZY000X_03_0005" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000002DZY000X_03_0004">
+<testtitle>REPLACE TIRE PRESSURE WARNING ECU</testtitle>
+</testgrp>
+<testgrp id="RM000002DZY000X_03_0005">
+<testtitle>REPLACE TIRE PRESSURE WARNING ECU</testtitle>
+</testgrp>
+<testgrp id="RM000002DZY000X_03_0006">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

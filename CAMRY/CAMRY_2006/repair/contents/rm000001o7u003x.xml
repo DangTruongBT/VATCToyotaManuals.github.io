@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="38">
+<name>HEATER &amp; AIR CONDITIONING SYSTEM</name>
+<section id="1002K_S0015" variety="S0015">
+<name>AIR CONDITIONING</name>
+<ttl id="1002K_S0015_72YGE_T009K" variety="T009K">
+<name>AIR CONDITIONING SYSTEM</name>
+<para id="RM000001O7U003X" category="D" type-id="303F2" name-id="AC24W-01" from="200601">
+<name>SYSTEM DESCRIPTION</name>
+<subpara id="RM000001O7U003X_z0" proc-id="RM0250U___0000CQ500000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>GENERAL</ptxt>
+<ptxt>The air conditioning system has the following controls:</ptxt>
+<table pgwide="1">
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<colspec colname="COLSPEC1" align="center" colwidth="1.06in"/>
+<colspec colname="COLSPEC0" align="center" colwidth="1.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Control</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Outline</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Manual A/C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Automatic A/C</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Neural Network Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>This control is capable of effecting complex control by artificially simulating the information processing method of the nervous system of living organisms in order to establish a complex input / output relationship that is similar to a human brain.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Manual Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>The A/C amplifier controls the damper positions (air inlet control damper, air mix control damper and mode control damper) and blower speed in accordance with the positions of the switches (temperature control switch, blower switch, mode select switch and air inlet control switch).</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Outlet Air Temp. Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Based on the temperature set at the temperature control switch, the neural network control calculates the outlet air temperature based on the input signals from various sensors.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>The temperature setting for the driver and front passenger are controlled independently in order to provide a separate vehicle interior temperatures for the right and left side of the cabin. Thus, air conditioning that accommodates the occupants' preferences has been realized.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Blower Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Controls the blower motor in accordance with the airflow volume that has been calculated by the neural network control based on the input signals from various sensors.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Air Outlet Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Automatically switches the air outlets in accordance with the outlet mode that has been calculated by the neural network control based on the input signals from various sensors.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>In accordance with the engine coolant temperature, outside air temperature, amount of sunlight, required blower, outlet temperature, and vehicle speed conditions, this control automatically switches the blower outlet to the FOOT / DEF mode to prevent the windows from becoming fogged when the outside air temperature is low.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Air Inlet Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Automatically controls the air inlet control damper to achieve the calculated required outlet air temperature.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Drives the servo motor (for air inlet) according to the operation of the air inlet control switch and moves the dampers to the FRESH or RECIRC position.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Compressor Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Through the calculation of the target evaporator temperature based on various sensor signals, the A/C amplifier optimally controls the discharge capacity by regulating the opening extent of the A/C compressor solenoid valve.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>The A/C amplifier compares the A/C pulley speed signals, which are transmitted by the lock sensor located on the A/C compressor, with the engine speed signals, which are transmitted by the ECM (crankshaft position sensor). When the A/C amplifier determines that the A/C pulley is locked, it turns off the magnetic clutch. (for 2GR-FE)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MAX A/C Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the temperature control switch is in the MAX A/C position, the A/C amplifier turns the compressor on and activates the servomotor (air inlet) to set the air inlet control damper to the RECIRC position, improving the cooling efficiency.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Rear Window Defogger Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Switches the rear defogger and outside rear view mirror heaters on for 15 minutes when the rear defogger button is pressed. Switches them off if the button is pressed while they are operating.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Outside Temperature Indication Control</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Calculates the outside temperature using signals transmitted by the outside temperature sensor. Calculated values are corrected by the A/C amplifier and then indicated on the multi-information display.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Self-Diagnosis</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A DTC (Diagnostic Trouble Code) is stored in the memory when the A/C amplifier detects a problem with the air conditioning system.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>NEURAL NETWORK CONTROL</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt> In previous automatic air conditioning systems, the A/C amplifier determined the required outlet air temperature and blower air volume in accordance with the calculation formula that has been obtained based on information received from the sensors.</ptxt>
+<ptxt>However, because the senses of a person are rather complex, a given temperature is sensed differently, depending on the environment in which the person is situated. For example, a given amount of solar radiation can feel comfortably warm in a cold climate, or extremely uncomfortable in a hot climate. Therefore, as a technique for effecting a higher level of control, a neural network has been adopted in the automatic air conditioning system. With this technique, the data that has been collected under varying environmental conditions is stored in the A/C amplifier. The A/C amplifier can then effect control to provide enhanced air conditioning comfort.</ptxt>
+</item>
+<item>
+<ptxt>The neural network control consists of neurons in the input layer, intermediate layer, and output layer. The input layer neurons process the input data of the outside temperature, the amount of sunlight, and the room temperature based on the outputs of the switches and sensors, and output them to the intermediate layer neurons. Based on this data, the intermediate layer neurons adjust the strength of the links among the neurons. The sum of these is then calculated by the output layer neurons in the form of the required outlet temperature, solar correction, target airflow volume, and outlet mode control volume. Accordingly, the A/C amplifier controls the servo motors and blower motor in accordance with the control volumes that have been calculated by the neural network control.</ptxt>
+</item>
+</list1>
+<figure>
+<graphic graphicname="E116942E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</step1>
+<step1>
+<ptxt>MODE POSITION AND DAMPER OPERATION</ptxt>
+<step2>
+<ptxt>Mode Position and Damper Operation (for Manual A/C)</ptxt>
+<figure>
+<graphic graphicname="E133954E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<title>Functions of Main Dampers:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Damper Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Air Inlet Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brings in fresh air.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RECIRC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Recirculates internal air.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Air Mix Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX COLD to MAX HOT Temperature Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C - D - E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Varies the mixture ratio of the fresh air and the recirculation air in order to regulate the temperature continuously from HOT to COLD.</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle">
+<ptxt>Air Outlet Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DEF</ptxt>
+<graphic graphicname="E106660" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>F, J, L, P, S</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Defrosts the windshield through the center defroster, side defroster, side register, and rear register.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FOOT / DEF</ptxt>
+<graphic graphicname="E106659" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G, J, L, P, Q</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Defrosts the windshield through the center defroster, side defroster, side register, and rear register, while air is also blown out from the front and rear foot well register ducts.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FOOT</ptxt>
+<graphic graphicname="E106658" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>H, J, L, P, Q</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air blows out of the foot well register duct and side register. In addition, air blows out slightly from the center defroster and side defroster.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BI-LEVEL</ptxt>
+<graphic graphicname="E106657" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>I, K, N, O, R</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air blows out of the front center register, side register and front and rear foot well register ducts.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FACE</ptxt>
+<graphic graphicname="E106656" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>I, K, M, O, S</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air blows out of the front center register and side register.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>Mode Position and Damper Operation (for Automatic A/C)</ptxt>
+<figure>
+<graphic graphicname="C118756E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<title>Functions of Main Dampers:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Damper Position</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Operation</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt>Air Inlet Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>FRESH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brings in fresh air.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RECIRC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Recirculates internal air.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Air Mix Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>MAX COLD to MAX HOT Temperature Setting</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C - D - E</ptxt>
+<ptxt>(C' - D' - E')</ptxt>
+<ptxt>T - U - V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Varies the mixture ratio of the fresh air and the recirculation air in order to regulate the temperature continuously from HOT to COLD.</ptxt>
+</entry>
+</row>
+<row>
+<entry morerows="4" valign="middle">
+<ptxt>Air Outlet Control Damper</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DEF</ptxt>
+<graphic graphicname="E106660" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>F, J, L, P, S, Y</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Defrosts the windshield through the center defroster, side defroster, and side register.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FOOT / DEF</ptxt>
+<graphic graphicname="E106659" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>G, J, L, P, Q, X</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Defrosts the windshield through the center defroster, side defroster, side register, and rear center register, while air is also blown out from the front and rear foot well register ducts.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FOOT</ptxt>
+<graphic graphicname="E106658" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>H, J, L, P, Q, X</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air blows out of the foot well register dust, and side register. In addition, air blows out slightly from the center defroster and side defroster.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BI-LEVEL</ptxt>
+<graphic graphicname="E106657" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>I, K, N, O, R, X</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air blows out of the front and rear center registers, side register and front and rear foot well register ducts.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>FACE</ptxt>
+<graphic graphicname="E106656" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>I, K, M, O, S, W</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Air blows out of the front and rear center registers, and side register.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+</step1>
+<step1>
+<ptxt>AIR OUTLETS AND AIRFLOW VOLUME</ptxt>
+<step2>
+<ptxt>Air Outlets and Airflow Volume</ptxt>
+<figure>
+<graphic graphicname="E133944E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="9" align="center">
+<colspec colname="COL1" colwidth="0.79in"/>
+<colspec colname="COL2" colwidth="0.79in"/>
+<colspec colname="COL3" colwidth="0.79in"/>
+<colspec colname="COL4" colwidth="0.79in"/>
+<colspec colname="COL5" colwidth="0.79in"/>
+<colspec colname="COL6" colwidth="0.79in"/>
+<colspec colname="COL7" colwidth="0.79in"/>
+<colspec colname="COL8" colwidth="0.79in"/>
+<colspec colname="COL9" colwidth="0.76in"/>
+<tbody>
+<row>
+<entry morerows="2" valign="middle">
+<ptxt>INDICATION</ptxt>
+<ptxt>(MODE)</ptxt>
+</entry>
+<entry morerows="2" valign="middle">
+<ptxt>SELECTION</ptxt>
+<ptxt>(Auto / Manual)</ptxt>
+</entry>
+<entry namest="COL3" nameend="COL5" valign="middle">
+<ptxt>FACE</ptxt>
+</entry>
+<entry namest="COL6" nameend="COL7" valign="middle">
+<ptxt>FOOT</ptxt>
+</entry>
+<entry namest="COL8" nameend="COL9" valign="middle">
+<ptxt>DEF</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>CTR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SIDE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>FR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>RR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CTR</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>SIDE</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>C*6</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>E</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>F</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>G</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106656" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>FACE</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / ○</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107019" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107019" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107019" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106657" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>B/L-U*1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / ○</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106657" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>B/L-L*2</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / -</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106658" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>FOOT-F*3</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / ○</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107317" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107317" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106658" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>FOOT-R*4</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / -</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107317" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107317" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106658" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>FOOT-D*5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / -</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106659" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>F/D</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / ○</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107020" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<graphic graphicname="E106660" width="0.3937007874015748in" height="0.3937007874015748in"/>
+<ptxt>DEF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>○ / ○</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107021" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107318" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107019" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle">
+<graphic graphicname="E107019" width="0.3937007874015748in" height="0.3937007874015748in"/>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>The size of the circle ○ indicates the proportion of airflow volume.</ptxt>
+<ptxt>*1: Greater airflow volume at the upper area</ptxt>
+<ptxt>*2: Greater airflow volume at the lower area</ptxt>
+<ptxt>*3: Greater airflow volume at the front</ptxt>
+<ptxt>*4: Greater airflow volume at the rear</ptxt>
+<ptxt>*5: Greater airflow volume at the defroster</ptxt>
+<ptxt>*6: Only for models with automatic air conditioning.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>PLASMACLUSTER ION GENERATOR CONTROL</ptxt>
+<step2>
+<ptxt>General:</ptxt>
+<step3>
+<ptxt>A Plasmacluster ion generator is provided inside the air duct of the side register on the driver seat side to improve the air quality and comfort in the cabin.</ptxt>
+</step3>
+<step3>
+<ptxt>This generator is controlled by the A/C amplifier and operates in conjunction with the blower motor.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The Plasmacluster ion generator uses a high voltage, which is hazardous. Therefore, if the Plasmacluster ion generator requires repairs, be sure to have them done at a TOYOTA dealer.</ptxt>
+</item>
+<item>
+<ptxt>Do not apply any type of spray (such as a cleaning solvent or hair spray) or stick any foreign matter into the Plasmacluster ion outlet, as this could cause improper operation or a malfunction.</ptxt>
+</item>
+<item>
+<ptxt>After use, dust may accumulate around the side register on the driver seat side. If this occurs, press the OFF switch on the heater control panel to stop the blower motor before cleaning the area.</ptxt>
+</item>
+<item>
+<ptxt>It is normal for the Plasmacluster ion generator to emit a slight sound during operation. This sound is created when electrons collide with the electrode while Plasmacluster ions are being generated.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<ptxt>Plasmacluster<sup>TM</sup>, plasmacluster, and plasmacluster ions are a trademark of the SHARP Corporation.</ptxt>
+</atten4>
+</step3>
+</step2>
+<step2>
+<ptxt>Operation:</ptxt>
+<step3>
+<ptxt>The Plasmacluster ion generator produces positive and negative ions from the water molecules (H2O) and oxygen molecules (O2) in the air, and emits them into the air. These ions reduce airborne germs.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>BLOWER MOTOR</ptxt>
+<ptxt>The blower motor has a built-in blower controller, and is controlled with duty control from the A/C amplifier.</ptxt>
+</step1>
+<step1>
+<ptxt>BUS CONNECTOR</ptxt>
+<step2>
+<ptxt>A BUS connector is used in the wire harness connection that connects the servo motor from the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E116948E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>The BUS connector has a built-in communication/driver IC which communicates with each servo motor connector, actuates the servo motor, and has a position detection function. This enables bus communication for the servo motor wire harness, for a more lightweight construction and a reduced number of wires.</ptxt>
+<figure>
+<graphic graphicname="E116949E01" width="7.106578999in" height="5.787629434in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>SERVO MOTOR</ptxt>
+<step2>
+<ptxt>The pulse pattern type servo motor consists of a printed circuit board and servo motor. The printed circuit board has three contact points, and transmits to the A/C amplifier two ON-OFF signals for the difference of the pulse phase. The BUS connector detects the damper position and movement direction with this signal.</ptxt>
+<figure>
+<graphic graphicname="E116950E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>A/C COMPRESSOR</ptxt>
+<step2>
+<ptxt>General</ptxt>
+<step3>
+<ptxt>The A/C compressor is a continuously variable capacity type in which its capacity can be varied in accordance with the cooling load of the air conditioning.</ptxt>
+</step3>
+<step3>
+<ptxt>This compressor consists of the A/C pulley, shaft, lug plate, swash plate, piston, shoe, crank chamber, cylinder, and solenoid valve.</ptxt>
+</step3>
+<step3>
+<ptxt>The A/C pulley with built-in magnetic clutch and the lock sensor that detects whether the magnetic clutch is locked are installed on models with the 2GR-FE.</ptxt>
+</step3>
+<step3>
+<ptxt>The DL (Damper Limiter) type A/C pulley is installed on models with the 2AZ-FE.</ptxt>
+</step3>
+<step3>
+<ptxt>A solenoid valve that adjusts the suction pressure so that the compressor capacity can be controlled as desired is provided.</ptxt>
+</step3>
+<step3>
+<ptxt>The internal valve is provided on models with 2AZ-FE to improve the A/C compressor durability under the high speed and large thermal load conditions. The internal valve is integrated into the solenoid valve.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Solenoid Valve Operation</ptxt>
+<step3>
+<ptxt>The crank chamber is connected to the discharge passage. A solenoid valve is provided between the discharge passage (LO pressure) and the discharge passage (HI pressure).</ptxt>
+</step3>
+<step3>
+<ptxt>The solenoid valve operates under duty cycle control in accordance with the signals from A/C amplifier.</ptxt>
+</step3>
+<step3>
+<ptxt>When the solenoid valve closes (solenoid coil is energized), a difference in pressure is created and the pressure in the crank chamber decreases. Then, the pressure that is applied to the right side of the piston becomes greater than the pressure that is applied to the left side of the piston. This compresses the spring and tilts the swash plate. As a result, the piston stroke increases and the discharge capacity increases.</ptxt>
+</step3>
+<step3>
+<ptxt>When the solenoid valve opens (solenoid coil is not energized), the difference in pressure disappears. Then, the pressure that is applied to the left side of the piston becomes the same as the pressure that is applied to the right side of the piston. Thus, the spring elongates and eliminates the tilt of the swash plate. As a result, there is no piston stroke and the discharge capacity is reduced.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Internal Valve Operation (for 2AZ-FE)</ptxt>
+<step3>
+<ptxt>The internal valve operates when the A/C compressor speed has increased rapidly, the A/C compressor speed is high, or when thermal load has suddenly changed. As a result, the A/C compressor capacity is reduced, increasing the durability of the A/C compressor.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>DL type A/C Pulley (for 2AZ-FE)</ptxt>
+<step3>
+<ptxt>This pulley contains a damper to absorb the torque fluctuations of the engine and a limiter mechanism to protect the drive belt in case the compressor locks. In the event that the compressor locks, the limiter mechanism causes the spoke portion of the pulley to break, thus separating the pulley from the compressor.</ptxt>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>LOCK SENSOR (for 2GR-FE)</ptxt>
+<ptxt>The lock sensor sends A/C pulley speed signals to the A/C amplifier. The A/C amplifier determines whether the magnetic clutch is locked or not by using those signals and engine speed signals.</ptxt>
+</step1>
+<step1>
+<ptxt>ROOM TEMPERATURE SENSOR (for AUTO A/C)</ptxt>
+<ptxt>The room temperature sensor detects the cabin temperature based on changes in the resistance of its built-in thermistor and sends a signal to the A/C amplifier.</ptxt>
+</step1>
+<step1>
+<ptxt>AMBIENT TEMPERATURE SENSOR</ptxt>
+<ptxt>The ambient temperature sensor detects the outside temperature based on changes in the resistance of its built-in thermistor and sends a signal to the A/C amplifier.</ptxt>
+</step1>
+<step1>
+<ptxt>SOLAR SENSOR (for AUTO A/C)</ptxt>
+<step2>
+<ptxt>The solar sensor consists of a photo diode, two amplifier circuits for the solar sensor, and frequency converter circuit for the light control sensor.</ptxt>
+</step2>
+<step2>
+<ptxt>A solar sensor detects (in the form of changes in the current that flows through the built-in photo diode) the changes in the amount of sunlight from the LH and RH sides (2 directions) and outputs these sunlight strength signals to the A/C amplifier.</ptxt>
+<figure>
+<graphic graphicname="E116951E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step2>
+</step1>
+<step1>
+<ptxt>EVAPORATOR TEMPERATURE SENSOR</ptxt>
+<ptxt>The evaporator temperature sensor detects the temperature of the cool air immediately past the evaporator in the form of resistance changes, and outputs it to the A/C amplifier.</ptxt>
+</step1>
+<step1>
+<ptxt>A/C PRESSURE SENSOR</ptxt>
+<ptxt>The A/C pressure sensor detects the refrigerant pressure and outputs it to the A/C amplifier in the form of voltage changes.</ptxt>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

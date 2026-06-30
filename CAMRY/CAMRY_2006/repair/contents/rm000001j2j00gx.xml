@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10025_S000Q" variety="S000Q">
+<name>2GR-FE CHARGING</name>
+<ttl id="10025_S000Q_72ZS5_T00CK" variety="T00CK">
+<name>CHARGING SYSTEM</name>
+<para id="RM000001J2J00GX" category="J" type-id="801ES" name-id="CH0DT-01" from="200601">
+<dtccode/>
+<dtcname>Charge Warning Light Comes ON while Driving</dtcname>
+<subpara id="RM000001J2J00GX_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001J2J00GX_01" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001J2J00GX_01_0009" proc-id="RM0250U___00006JT00001">
+<testtitle>CHECK LOCK FUNCTION OF CLUTCH PULLEY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the lock function with the pulley installed in the vehicle.</ptxt>
+<test2>
+<ptxt>Visually check that the rotor in the generator operates with the engine started.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the lock function with the pulley removed from the vehicle.</ptxt>
+<test2>
+<ptxt>Remove the generator pulley cap. Using SST, hold the generator rotor.</ptxt>
+</test2>
+<test2>
+<ptxt>Turn the clutch pulley clockwise and check that the outer ring locks.</ptxt>
+<figure>
+<graphic graphicname="A128078E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The outer ring locks.</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+<sst>
+<sstitem>
+<s-number>09820-63020</s-number>
+</sstitem>
+</sst>
+</content6>
+<res>
+<down ref="RM000001J2J00GX_01_0004" fin="false">OK</down>
+<right ref="RM000001J2J00GX_01_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001J2J00GX_01_0004" proc-id="RM0250U___00006JS00001">
+<testtitle>CHECK LOCK OF CLUTCH PULLEY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Start the engine and visually check looseness of the clutch pulley.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The clutch pulley is not loose.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001J2J00GX_01_0008" fin="true">OK</down>
+<right ref="RM000001J2J00GX_01_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001J2J00GX_01_0006">
+<testtitle>REPLACE CLUTCH PULLEY</testtitle>
+</testgrp>
+<testgrp id="RM000001J2J00GX_01_0007">
+<testtitle>TIGHTEN CLUTCH PULLEY TO THE SPECIFIED TORQUE</testtitle>
+</testgrp>
+<testgrp id="RM000001J2J00GX_01_0008">
+<testtitle>REPLACE GENERATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

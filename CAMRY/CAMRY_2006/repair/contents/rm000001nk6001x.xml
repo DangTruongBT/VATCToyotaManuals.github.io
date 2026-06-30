@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NK6001X" category="U" type-id="303FI" name-id="BC13Z-02" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM000001NK6001X_z0" proc-id="RM0250U___000012J00000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C131981E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C132007E02" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="4" align="center">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Transmitting ECU (transmitter)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Receiving ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Signals</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Communication method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Shift position signal</ptxt>
+</item>
+<item>
+<ptxt>Throttle position signal</ptxt>
+</item>
+<item>
+<ptxt>Engine revolution signal</ptxt>
+</item>
+<item>
+<ptxt>Intake air temperature signal</ptxt>
+</item>
+<item>
+<ptxt>Engine torque request signal</ptxt>
+</item>
+<item>
+<ptxt>Accelerator pedal position signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Yaw rate and acceleration sensor</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Yaw rate and acceleration request signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering angle sensor</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Steering angle sensor request signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ECM</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wheel speed signal</ptxt>
+</item>
+<item>
+<ptxt>VSC data signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Combination meter</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>Wheel speed signal</ptxt>
+</item>
+<item>
+<ptxt>ABS warning light ON signal</ptxt>
+</item>
+<item>
+<ptxt>BRAKE warning light ON signal</ptxt>
+</item>
+<item>
+<ptxt>VSC warning light ON signal (*1)</ptxt>
+</item>
+<item>
+<ptxt>Multi information display ON signal (*2)</ptxt>
+</item>
+<item>
+<ptxt>SLIP indicator light ON signal</ptxt>
+</item>
+<item>
+<ptxt>Master caution indicator light ON signal</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Main body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Skid control ECU</ptxt>
+</entry>
+<entry valign="middle" align="left">
+<ptxt>Parking brake switch signal</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>CAN communication system</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<ptxt>(*1): without multi-information display (Combination meter)</ptxt>
+<ptxt>(*2): with multi-information display (Combination meter)</ptxt>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

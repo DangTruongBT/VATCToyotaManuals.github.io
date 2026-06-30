@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_72ZB1_T00BS" variety="T00BS">
+<name>STARTER</name>
+<para id="RM000001QLZ002X" category="G" type-id="3001K" name-id="ST0GV-02" from="200601">
+<name>INSPECTION</name>
+<subpara id="RM000001QLZ002X_01" type-id="01" category="01">
+<s-1 id="RM000001QLZ002X_01_0005" proc-id="RM0250U___00003VD00001">
+<ptxt>INSPECT STARTER ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<atten2>
+<ptxt>Make sure to complete each of the following tests within 5 seconds to prevent the coil from burning out.</ptxt>
+</atten2>
+<s2>
+<ptxt>Perform pull-in test:</ptxt>
+<s3>
+<ptxt>Disconnect the lead wire from terminal C.</ptxt>
+<figure>
+<graphic graphicname="A133511E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Connect the battery to the magnetic switch as shown in the illustration. Check that the clutch pinion gear moves outward.</ptxt>
+<figure>
+<graphic graphicname="A133512E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If the clutch pinion gear does not move outward, replace the repair service starter kit.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Perform hold-in test:</ptxt>
+<s3>
+<ptxt>Disconnect the negative (-) terminal lead from terminal C under the conditions for pull-in test. Check that the pinion gear remains out.</ptxt>
+<figure>
+<graphic graphicname="A133513E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If the clutch pinion gear moves inward, replace the repair service starter kit.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect clutch pinion gear return:</ptxt>
+<s3>
+<ptxt>Disconnect the negative (-) lead from the starter body. Check that the clutch pinion gear moves inward.</ptxt>
+<figure>
+<graphic graphicname="A133514E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If the clutch pinion gear does not move inward, replace the repair service starter kit.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Perform no-load performance test:</ptxt>
+<s3>
+<ptxt>Connect the field coil wire to terminal C with the nut. Make sure that the lead is not grounded.</ptxt>
+<torque>
+<torqueitem>
+<t-value1>10</t-value1>
+<t-value2>102</t-value2>
+<t-value4>7</t-value4>
+</torqueitem>
+</torque>
+</s3>
+<s3>
+<ptxt>Clamp the starter in a vise.</ptxt>
+</s3>
+<s3>
+<ptxt>Connect the battery and an ammeter to the starter as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="A133510E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s3>
+<s3>
+<ptxt>Check that the starter rotates smoothly and steadily with the clutch pinion gear extended. Check that the ammeter reads the specified current.</ptxt>
+<spec>
+<title>Specified current</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>at 11.5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>90 A or less</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the result is not as specified, overhaul the starter assembly.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001QLZ002X_01_0001" proc-id="RM0250U___00003UV00001">
+<ptxt>INSPECT REPAIR SERVICE STARTER KIT</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the plunger.</ptxt>
+<s3>
+<ptxt>Push in the plunger and check that it returns quickly to its original position.</ptxt>
+<figure>
+<graphic graphicname="A058586E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If necessary, replace the repair service starter kit.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect the resistance of the pull-in coil.</ptxt>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between terminals 50 and C.</ptxt>
+<figure>
+<graphic graphicname="A079725E08" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 50 - Terminal C</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the resistance is not as specified, replace the repair service starter kit.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Inspect the resistance of the hold-in coil.</ptxt>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between terminal 50 and the switch body.</ptxt>
+<figure>
+<graphic graphicname="A079726E07" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Terminal 50 - Switch body</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 2 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the resistance is not as specified, replace the repair service starter kit.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001QLZ002X_01_0002" proc-id="RM0250U___00003UW00001">
+<ptxt>INSPECT STARTER ARMATURE ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the commutator surface for dirt or burning.</ptxt>
+<ptxt>If the surface is dirty or burnt, smooth the surface with 400-grit sandpaper or leather.</ptxt>
+</s2>
+<s2>
+<ptxt>Inspect the resistance of the commutator.</ptxt>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between the segments of the commutator.</ptxt>
+<figure>
+<graphic graphicname="A058372E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Segment - Segment</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the resistance is not as specified, replace the starter armature assembly.</ptxt>
+</s3>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between the commutator and armature coil core.</ptxt>
+<figure>
+<graphic graphicname="A058373E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Commutator - Armature coil core</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>If the resistance is not as specified, replace the starter armature assembly.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Using vernier calipers, measure the commutator depth.</ptxt>
+<figure>
+<graphic graphicname="A058584E09" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Specified depth</title>
+<specitem>
+<ptxt>3.1 mm (0.122 in.)</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Maximum depth</title>
+<specitem>
+<ptxt>3.8 mm (0.150 in.)</ptxt>
+</specitem>
+</spec>
+<ptxt>If the depth is greater than the maximum, replace the starter armature assembly.</ptxt>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001QLZ002X_01_0003" proc-id="RM0250U___00003UX00001">
+<ptxt>INSPECT STARTER COMMUTATOR END FRAME ASSEMBLY</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the brush length.</ptxt>
+<s3>
+<ptxt>Using vernier calipers, measure the brush length.</ptxt>
+<figure>
+<graphic graphicname="A076677E10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Specified length</title>
+<specitem>
+<ptxt>9.0 mm (0.354 in.)</ptxt>
+</specitem>
+</spec>
+<spec>
+<title>Maximum length</title>
+<specitem>
+<ptxt>4.0 mm (0.157 in.)</ptxt>
+</specitem>
+</spec>
+<ptxt>If the length is less than the minimum, replace the starter commutator end frame assembly.</ptxt>
+</s3>
+</s2>
+<s2>
+<ptxt>Check the resistance.</ptxt>
+<s3>
+<ptxt>Using an ohmmeter, measure the resistance between the positive (+) and negative (-) brushes.</ptxt>
+<figure>
+<graphic graphicname="A079766E10" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Resistance</title>
+<specitem>
+<ptxt>10 kΩ or higher</ptxt>
+</specitem>
+</spec>
+<ptxt>If the resistance is not as specified, repair or replace the starter commutator end frame assembly.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000001QLZ002X_01_0004" proc-id="RM0250U___00003UY00001">
+<ptxt>INSPECT MOTOR TERMINAL STARTER KIT</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Check the starter clutch.</ptxt>
+<s3>
+<ptxt>Rotate the clutch pinion gear counterclockwise and check that it turns freely. Try to rotate the clutch pinion gear clockwise and check that it locks.</ptxt>
+<figure>
+<graphic graphicname="A081655E05" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<ptxt>If necessary, replace the motor terminal starter kit.</ptxt>
+</s3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM000001A7L002X" category="J" type-id="303SY" name-id="LI20U-01" from="200601">
+<dtccode/>
+<dtcname>Headlight (HI-BEAM) Circuit</dtcname>
+<subpara id="RM000001A7L002X_01" type-id="60" category="03" proc-id="RM0250U___00004N400000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU receives dimmer switch HIGH signal and light control switch HEAD signal from the headlight dimmer switch assembly, and turns the high beam headlights on.</ptxt>
+<atten4>
+<ptxt>When a short circuit occurs between the power distributor (engine room J/B assembly) and high beam headlight, the power distributor stops the DRL relay operation (Fail-safe function).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001A7L002X_02" type-id="32" category="03" proc-id="RM0250U___00004N500000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="E121490E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001A7L002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001A7L002X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001A7L002X_04_0001" proc-id="RM0250U___00004N600000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the item below in the ACTIVE TEST and then check that the relay operates.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>HEAD LIGHT (HI)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>High beam headlights ON / OFF</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Relay operates. (High beam headlights illuminate.)</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0021" fin="false">NG</down>
+<right ref="RM000001A7L002X_04_0020" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0021" proc-id="RM0250U___0000BAW00000">
+<testtitle>INSPECT INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="E121528E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ID-3 (HRLY) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch OFF → HEAD</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → Below 1 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>ID-9 (DRL) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Light control switch in HEAD, dimmer switch LOW → HIGH</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V → Below 1 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0002" fin="false">NG</down>
+<right ref="RM000001A7L002X_04_0015" fin="false">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0002" proc-id="RM0250U___00004N700000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE ROOM J/B ASSEMBLY - BATTERY AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the 1G engine room J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="B074501E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1G-1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Disconnect the 1E engine room J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121481E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COLSPEC0" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1E-11 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0004" fin="false">OK</down>
+<right ref="RM000001A7L002X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0004" proc-id="RM0250U___00004N800000">
+<testtitle>INSPECT ENGINE ROOM JUNCTION BLOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the 1G and 1E engine room J/B assembly connectors.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the 1D engine room J/B assembly connector.</ptxt>
+<figure>
+<graphic graphicname="E121531E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+</test1>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>1D-8 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>1D-9 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0022" fin="false">OK</down>
+<right ref="RM000001A7L002X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0022" proc-id="RM0250U___0000BAX00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ENGINE ROOM J/B ASSEMBLY - INSTRUMENT PANEL J/B ASSEMBLY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Reconnect the 1D engine room J/B assembly connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the ID instrument panel J/B connector.</ptxt>
+<figure>
+<graphic graphicname="E121479E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>ID-3 (DRL) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>ID-9 (HRLY) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0023" fin="true">OK</down>
+<right ref="RM000001A7L002X_04_0011" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0015" proc-id="RM0250U___00006IV00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SHORT IN RELAY-DRIVEN CIRCUIT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the H-LP (RH) fuse from the engine room J/B assembly.</ptxt>
+<figure>
+<graphic graphicname="E121471E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the light control switch to the HEAD position and turn the dimmer switch to the HIGH position.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the high beam headlight LH illuminates.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the dimmer switch to the LOW position.</ptxt>
+</test1>
+<test1>
+<ptxt>Install the H-LP (RH) fuse and remove the H-LP (LH) fuse.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the dimmer switch to the HIGH position.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the high beam headlight RH illuminates.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Either high beam headlight LH or RH illuminates.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0008" fin="false">NG</down>
+<right ref="RM000001A7L002X_04_0019" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0008" proc-id="RM0250U___00004N900000">
+<testtitle>INSPECT ENGINE ROOM JUNCTION BLOCK ASSEMBLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the H-LP (RH) fuse and H-LP (LH) fuse from the engine room J/B assembly.</ptxt>
+<figure>
+<graphic graphicname="E121532E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the voltage between the loading slot of each fuse and body ground.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>H-LP (RH) Terminal - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch in HEAD and dimmer switch in HIGH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>H-LP (LH) Terminal - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Light control switch in HEAD and dimmer switch in HIGH</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001A7L002X_04_0018" fin="true">OK</down>
+<right ref="RM000001A7L002X_04_0014" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0011">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0014">
+<testtitle>REPLACE ENGINE ROOM JUNCTION BLOCK ASSEMBLY (POWER DISTRIBUTOR)</testtitle>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0018">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (OPEN CIRCUIT BETWEEN FUSE AND BODY GROUND)</testtitle>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0019">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (SHORT CIRCUIT BETWEEN FUSE AND BULB)</testtitle>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0020">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000001A7L002X_04_0023">
+<testtitle>REPLACE INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

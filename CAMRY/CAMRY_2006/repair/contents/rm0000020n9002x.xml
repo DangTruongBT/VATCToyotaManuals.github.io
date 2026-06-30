@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000020N9002X" category="J" type-id="80027" name-id="NS0NW-03" from="200601">
+<dtccode/>
+<dtcname>Poor Sound Quality in All Modes (Low Volume)</dtcname>
+<subpara id="RM0000020N9002X_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000020N9002X_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000020N9002X_02_0001" proc-id="RM0250U___00004Z200000">
+<testtitle>CHECK AUDIO SETTINGS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Set "BASS", "MID" and "TREB" to the initial values and check that sound is normal.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Malfunction disappears.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020N9002X_02_0002" fin="false">NG</down>
+<right ref="RM0000020N9002X_02_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020N9002X_02_0002" proc-id="RM0250U___00004Z300000">
+<testtitle>COMPARE WITH ANOTHER VEHICLE OF SAME MODEL</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Compare with another vehicle of the same model.</ptxt>
+<test2>
+<ptxt>Compare with another vehicle of the same model which does not have trouble to see if there is any difference in the sound quality.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No difference is found.</ptxt>
+</specitem>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000020N9002X_02_0003" fin="true">NG</down>
+<right ref="RM0000020N9002X_02_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000020N9002X_02_0003">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000020N9002X_02_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM0000020N9002X_02_0005">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

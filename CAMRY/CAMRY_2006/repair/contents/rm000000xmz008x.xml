@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XMZ008X" category="D" type-id="303FL" name-id="TW00A-06" from="200601">
+<name>INITIALIZATION</name>
+<subpara id="RM000000XMZ008X_z0" proc-id="RM0250U___00005GO00001">
+<content5 releasenbr="1">
+<step1>
+<ptxt>INITIALIZATION</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Perform initialization after the transmitter ID registration is completed. </ptxt>
+</item>
+<item>
+<ptxt>Initialization is necessary after replacing any of the ECU, tires with different tire pressure, or tire pressure warning valve and transmitter, or when a new vehicle is delivered.</ptxt>
+</item>
+<item>
+<ptxt>Perform the tire pressure adjustment after the vehicle has sufficiently cooled down. If the vehicle is not sufficiently cooled down, increase the air pressure by 20 to 30 kPa (0.2 to 0.3 kgf/cm<sup>2</sup>, 2.9 to 4.3 psi) above the specified value.</ptxt>
+</item>
+</list1>
+</atten3>
+<step2>
+<ptxt>Set the air pressure of all wheels, including the full-size spare tire, to the specified value.</ptxt>
+<spec>
+<title>Cold tire inflation pressure</title>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tire size</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Front kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Rear kPa (kgf/cm<sup>2</sup>, psi)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>P215/60R16 94W</ptxt>
+</entry>
+<entry>
+<ptxt>210 (2.1, 31) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+<entry>
+<ptxt>210 (2.1, 31) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>P215/55R17 93V</ptxt>
+</entry>
+<entry>
+<ptxt>220 (2.2, 32) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+<entry>
+<ptxt>220 (2.2, 32) <sup>*1</sup> 240 (2.4, 35)<sup>*2</sup>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*1: For driving under 100 mph (160 km/h)</ptxt>
+<ptxt>*2: For driving at 100 mph (160 km/h) or over</ptxt>
+</step2>
+<step2>
+<ptxt>Keep the tire pressure warning reset switch pressed for 3 seconds or more with the ignition switch on (IG).</ptxt>
+<figure>
+<graphic graphicname="E129454E01" width="2.775699831in" height="4.7836529in"/>
+</figure>
+</step2>
+<step2>
+<ptxt>Check that the tire pressure warning light blinks 3 times (1 second ON, 1 second OFF). </ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Initialization will be completed if signals are received from all the wheels. Initialization will be canceled if the ignition switch is turned off during initialization.</ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+<step2>
+<ptxt>Wait for 2 or 3 minutes with the ignition switch on (IG).</ptxt>
+<figure>
+<graphic graphicname="F100115E55" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>The initialization is normally completed within 2 to 3 minutes.</ptxt>
+</item>
+<item>
+<ptxt>If the initialization has not been completed successfully, DTC C2177/77 is set approximately 20 minutes.</ptxt>
+</item>
+<item>
+<ptxt>The initialization can be terminated by making a short circuit between terminals TC and CG of the DLC3 connector.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+<step2>
+<ptxt>Confirm that the initialization has been completed using the intelligent tester.</ptxt>
+<step3>
+<ptxt>Change the mode to test mode using intelligent tester and check that tire pressure warning light blinks at 0.125 seconds intervals.</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Tire pressure warning light will not blink until the system initialization is complete.</ptxt>
+</item>
+<item>
+<ptxt>After the initialization has been completed successfully, the test DTCs (C2181/81 to C2191/91) are indicated.</ptxt>
+</item>
+</list1>
+<atten3>
+<title>The following operations can be used instead of above procedure</title>
+<list1 type="ordered">
+<item>
+<ptxt>Turn the ignition switch from off to on (IG).</ptxt>
+</item>
+<item>
+<ptxt>Monitor the tire pressure values of all the wheels using intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>If the tire pressure values cannot be displayed on the intelligent tester screen, the initialization has failed.</ptxt>
+</item>
+<item>
+<ptxt>It takes 2 to 3 minutes to display the tire pressure data.</ptxt>
+</item>
+</list1>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>In winter, as the tire pressure may decrease depending on the ambient temperature, increase the tire pressure by 20 to 30 kPa (0.2 to 0.3 kgf/cm<sup>2</sup>, 2.9 to 4.3 psi) above the specified value after confirmation that the initialization has been completed.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

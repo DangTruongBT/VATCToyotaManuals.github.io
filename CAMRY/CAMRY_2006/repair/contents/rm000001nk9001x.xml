@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W30_T005W" variety="T005W">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for BOSCH Made)</name>
+<para id="RM000001NK9001X" category="U" type-id="303FP" name-id="BC12W-02" from="200601">
+<name>FAIL-SAFE CHART</name>
+<subpara id="RM000001NK9001X_z0" proc-id="RM0250U___000012T00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>FAIL SAFE OPERATION</ptxt>
+<step2>
+<ptxt>If there is a problem with sensor signals or actuator systems, the skid control ECU prohibits power supply to the brake actuator assembly and informs the ECM of the VSC system failure.</ptxt>
+</step2>
+<step2>
+<ptxt>The brake actuator assembly turns off each solenoid and the ECM shuts off the VSC control (traction control signal) from the skid control ECU accordingly, which turns out to be as if the vehicle stability control system was not installed.</ptxt>
+</step2>
+<step2>
+<ptxt>ABS, VSC, and TRAC control will be prohibited, but EBD control continues as much as possible. If EBD control is impossible, the brake warning light comes on to warn the driver (See page <xref label="Seep01" href="RM000001NK4001X"/>).</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Malfunction</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<ptxt>ABS system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the ABS, BA, TRAC, and VSC control</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>BA system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the ABS, BA, TRAC, and VSC control</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>EBD system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the ABS, EBD, BA, TRAC, and VSC control</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>TRAC system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the TRAC and VSC control</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>VSC system</ptxt>
+</entry>
+<entry>
+<ptxt>Prohibits the TRAC and VSC control</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>A malfunction in either the ABS or BA system results in an identical operation, with ABS, BA, TRAC, and VSC system control prohibited.</ptxt>
+</item>
+<item>
+<ptxt>If control is prohibited due to a malfunction during operation, control will be disabled gradually to prevent the vehicle from becoming unstable suddenly. </ptxt>
+</item>
+</list1>
+</atten4>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

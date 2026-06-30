@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XI8009X" category="C" type-id="3007L" name-id="BC02U-07" from="200601">
+<dtccode>C0226/21</dtccode>
+<dtcname>SFR Solenoid Circuit</dtcname>
+<dtccode>C0236/22</dtccode>
+<dtcname>SFL Solenoid Circuit</dtcname>
+<dtccode>C0246/23</dtccode>
+<dtcname>SRR Solenoid Circuit</dtcname>
+<dtccode>C0256/24</dtccode>
+<dtcname>SRL Solenoid Circuit</dtcname>
+<dtccode>C1225/25</dtccode>
+<dtcname>SM Solenoid Circuit</dtcname>
+<subpara id="RM000000XI8009X_01" type-id="60" category="03" proc-id="RM0250U___00005LH00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>These solenoids turn on when signals are received from the skid control ECU and they control the pressure acting on the wheel cylinders to control the braking force.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.06in"/>
+<colspec colname="COL2" colwidth="3.32in"/>
+<colspec colname="COL3" colwidth="2.71in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C0226/21</ptxt>
+<ptxt>C0236/22</ptxt>
+<ptxt>C0246/23</ptxt>
+<ptxt>C0256/24</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open or short in the solenoid circuit continues for 0.05 seconds or more.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly</ptxt>
+</item>
+<item>
+<ptxt>Solenoid circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1225/25</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When any of the following is detected:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>While outputting switching solenoid (SM1 or SM2) ON,</ptxt>
+<ptxt>overcurrent continues for 0.05 seconds or more.</ptxt>
+</item>
+<item>
+<ptxt>While outputting switching solenoid (SM1 or SM2) OFF, an</ptxt>
+<ptxt>open circuit continues for 0.05 seconds or more.</ptxt>
+</item>
+<item>
+<ptxt>While outputting switching solenoid (SM1 or SM2) ON,</ptxt>
+<ptxt>an open circuit continues for 0.1 second or more.</ptxt>
+</item>
+<item>
+<ptxt>While outputting switching solenoid (SM1 or SM2) OFF,</ptxt>
+<ptxt>current continues to be applied for 0.1 second or more.</ptxt>
+</item>
+<item>
+<ptxt>Short to GND in the switching solenoid (SM1 or SM2)</ptxt>
+<ptxt>continues for 0.1 second or more.</ptxt>
+</item>
+<item>
+<ptxt>Switching solenoids SM1 and SM2 are shorted for 0.1 second or more.</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Brake actuator assembly</ptxt>
+</item>
+<item>
+<ptxt>SM1 or SM2 circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000XI8009X_02" type-id="32" category="03" proc-id="RM0250U___00005LI00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136021E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XI8009X_03" type-id="51" category="05" proc-id="RM0250U___00005LJ00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XI8009X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XI8009X_04_0001" proc-id="RM0250U___00005LK00000">
+<testtitle>RECONFIRM DTC</testtitle>
+<content6 releasenbr="1">
+<atten4>
+<ptxt>These codes are detected when a problem is determined in the brake actuator assembly.</ptxt>
+<ptxt>The solenoid circuits are in the brake actuator assembly.</ptxt>
+<ptxt>Therefore, solenoid circuit inspection and solenoid unit inspection cannot be performed. Be sure to check if any DTC code is output before replacing the brake actuator assembly.</ptxt>
+</atten4>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep01" href="RM000000XHV009X"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Drive the vehicle at the speed of 4 mph (6 km/h) or more.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the same DTC is recorded (See page <xref label="Seep02" href="RM000000XHV009X"/>).</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0226/21, C0236/22, C0246/23, C0256/24 and/or C1225/25) are not output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>DTCs (C0226/21, C0236/22, C0246/23, C0256/24 and/or C1225/25) are output</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If a speed signal of 4 mph (6 km/h) or more is input to the skid control ECU, with the ignition switch on (IG) and the stop light switch off, the ECU performs self diagnosis of the motor and solenoid circuits.</ptxt>
+</item>
+<item>
+<ptxt>If the normal system code is output (the trouble code is not output), slightly jiggle the connectors, wire harness, and fuses of the brake actuator assembly. Make sure that no DTCs are output.</ptxt>
+</item>
+<item>
+<ptxt>If any DTCs are output while jiggling a connector or wire harness of the brake actuator assembly (skid control ECU), inspect and repair the connector or wire harness.</ptxt>
+</item>
+</list1>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XI8009X_04_0002" fin="true">A</down>
+<right ref="RM000000XI8009X_04_0003" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XI8009X_04_0002">
+<testtitle>USE SIMULATION METHOD TO CHECK</testtitle>
+</testgrp>
+<testgrp id="RM000000XI8009X_04_0003">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

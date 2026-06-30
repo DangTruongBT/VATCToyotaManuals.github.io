@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001A_S001B" variety="S001B">
+<name>LIGHTING</name>
+<ttl id="1001A_S001B_72YGG_T009M" variety="T009M">
+<name>LIGHTING SYSTEM</name>
+<para id="RM0000011T3004X" category="J" type-id="3011B" name-id="LI20I-01" from="200601">
+<dtccode/>
+<dtcname>Door Courtesy Switch Circuit</dtcname>
+<subpara id="RM0000011T3004X_01" type-id="60" category="03" proc-id="RM0250U___00004NM00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The main body ECU detects the condition of the door courtesy switches.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM0000011T3004X_02" type-id="32" category="03" proc-id="RM0250U___00004NN00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B110597E05" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM0000011T3004X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM0000011T3004X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM0000011T3004X_04_0001" proc-id="RM0250U___00004NO00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the items below in the DATA LIST, and read the display on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>MAIN BODY (MAIN BODY ECU):</title>
+<tgroup cols="4" align="left">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>D DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Driver side door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Driver side door is open</ptxt>
+<ptxt>OFF: Driver side door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Passenger side door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Passenger side door is open</ptxt>
+<ptxt>OFF: Passenger side door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RR DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear right door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear right door is open</ptxt>
+<ptxt>OFF: Rear right door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>RL DOR CTY SW</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Rear left door courtesy switch signal / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Rear left door is open</ptxt>
+<ptxt>OFF: Rear left door is closed</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Normal conditions listed above are displayed.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011T3004X_04_0002" fin="false">NG</down>
+<right ref="RM0000011T3004X_04_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011T3004X_04_0002" proc-id="RM0250U___00004NP00000">
+<testtitle>INSPECT DOOR COURTESY SWITCH</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Inspect the front door courtesy switch (See page <xref label="Seep01" href="RM0000017MQ003X_01_0001"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Inspect the rear door courtesy switch (See page <xref label="Seep02" href="RM0000017MO003X_01_0001"/>).</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Door courtesy switches are normal.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011T3004X_04_0003" fin="false">OK</down>
+<right ref="RM0000011T3004X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011T3004X_04_0003" proc-id="RM0250U___00004NQ00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - DOOR COURTESY SWITCH)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the harness and connector between the main body ECU and door courtesy switches (passenger side and rear RH).</ptxt>
+<figure>
+<graphic graphicname="E108574E07" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the E6 main body ECU connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the O6 and O10 switch connectors.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COLSPEC0" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E6-5 (*1) - O10-1 (Rear RH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-7 (*2) - O10-1 (Rear RH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E6-21 (PCTY) - O6-1 (Front passenger side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O10-1 (Rear RH) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>O6-1 (Front passenger side) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>*1: without Smart Key System</ptxt>
+<ptxt>*2: with Smart Key System</ptxt>
+</atten4>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the harness and connector between the instrument panel J/B assembly and rear LH door courtesy switch.</ptxt>
+<figure>
+<graphic graphicname="E121486E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the IO instrument panel J/B assembly connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the N13 switch connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COLSPEC1" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>IO-7 (LCTY) - N13-1 (Rear LH)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>IO-7 (LCTY) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the harness and connector between the main body ECU and driver side door courtesy switch.</ptxt>
+<figure>
+<graphic graphicname="E121487E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+<test2>
+<ptxt>Disconnect the E7 main body ECU connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the M6 switch connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COLSPEC2" colwidth="0.83in"/>
+<colspec colname="COL3" colwidth="1.23in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E7-24 (DCTY) - M6-1 (Driver side)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E7-24 (DCTY) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM0000011T3004X_04_0007" fin="true">OK</down>
+<right ref="RM0000011T3004X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM0000011T3004X_04_0004">
+<testtitle>REPLACE DOOR COURTESY SWITCH</testtitle>
+</testgrp>
+<testgrp id="RM0000011T3004X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM0000011T3004X_04_0006">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM0000011T3004X_04_0007">
+<testtitle>REPLACE INSTRUMENT PANEL JUNCTION BLOCK ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

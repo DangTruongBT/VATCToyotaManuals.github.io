@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XIS00AX" category="J" type-id="3013U" name-id="BC1MS-01" from="200601">
+<dtccode/>
+<dtcname>Skid Control Buzzer Circuit</dtcname>
+<subpara id="RM000000XIS00AX_01" type-id="60" category="03" proc-id="RM0250U___00005PI00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control buzzer sounds while the accumulator pressure is abnormally low or when an abnormality causing low fluid pressure occurs, and then the VSC is activated.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000XIS00AX_02" type-id="32" category="03" proc-id="RM0250U___00005PJ00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C136034E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000XIS00AX_03" type-id="51" category="05" proc-id="RM0250U___00005PK00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten3>
+<ptxt>When replacing the brake actuator assembly, perform zero point calibration (See page <xref label="Seep01" href="RM000000XHR009X"/>).</ptxt>
+</atten3>
+</content5>
+</subpara>
+<subpara id="RM000000XIS00AX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000XIS00AX_04_0001" proc-id="RM0250U___00005PL00000">
+<testtitle>PERFORM ACTIVE TEST BY INTELLIGENT TESTER (SKID CONTROL BUZZER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the Active Test mode on the intelligent tester.</ptxt>
+<table pgwide="1">
+<title>ABS / VSC:</title>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.63in"/>
+<colspec colname="COL2" colwidth="2.76in"/>
+<colspec colname="COL3" colwidth="2.69in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item (Display)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Vehicle Condition / Test Details</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>BUZZER</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Turns skid control buzzer ON / OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Buzzer can be heard</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</test1>
+<test1>
+<ptxt>Check that the buzzer sounds/stops when turning the skid control buzzer on/off by using the intelligent tester.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="4.54in"/>
+<colspec colname="COL2" colwidth="2.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Buzzer does not sound or sounds constantly</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Buzzer sounds/stops</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step (See page <xref label="Seep01" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIS00AX_04_0002" fin="false">A</down>
+<right ref="RM000000XIS00AX_04_0006" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0002" proc-id="RM0250U___00005PM00000">
+<testtitle>INSPECT SKID CONTROL BUZZER (POWER SOURCE TERMINAL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="C107604E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the skid control buzzer connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.38in"/>
+<colspec colname="COL2" colwidth="1.38in"/>
+<colspec colname="COL3" colwidth="1.37in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E13-2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIS00AX_04_0003" fin="false">OK</down>
+<right ref="RM000000XIS00AX_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0003" proc-id="RM0250U___00005PN00000">
+<testtitle>INSPECT SKID CONTROL BUZZER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Apply battery negative voltage to terminal 1, and battery positive voltage to terminal 2 of the skid control buzzer, and then check that the buzzer sounds.</ptxt>
+<figure>
+<graphic graphicname="C125130E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The skid control buzzer sounds.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIS00AX_04_0004" fin="false">OK</down>
+<right ref="RM000000XIS00AX_04_0008" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0004" proc-id="RM0250U___00005PO00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU - SKID CONTROL BUZZER)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch off.</ptxt>
+<figure>
+<graphic graphicname="I045407E11" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the skid control ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.86in"/>
+<colspec colname="COLSPEC0" colwidth="1.03in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-30 (BZ) - E13-1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A26-30 (BZ) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If troubleshooting has been carried out according to the Problem Symptoms Table, refer back to the table and proceed to the next step before replacing the part (See page <xref label="Seep01" href="RM000000XHN009X"/>).</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000XIS00AX_04_0005" fin="true">OK</down>
+<right ref="RM000000XIS00AX_04_0009" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0005">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0006">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (POWER SOURCE CIRCUIT)</testtitle>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0008">
+<testtitle>REPLACE SKID CONTROL BUZZER</testtitle>
+</testgrp>
+<testgrp id="RM000000XIS00AX_04_0009">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

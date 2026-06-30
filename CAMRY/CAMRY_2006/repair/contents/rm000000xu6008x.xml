@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1001I_S001E" variety="S001E">
+<name>DOOR LOCK</name>
+<ttl id="1001I_S001E_7307H_T00ET" variety="T00ET">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000000XU6008X" category="L" type-id="3001A" name-id="DL02D-09" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000000XU6008X_z0" proc-id="RM0250U___00009MX00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>PRECAUTIONS WHEN USING INTELLIGENT TESTER</ptxt>
+<step2>
+<ptxt>When troubleshooting the smart key system using the intelligent tester with the engine switch off, connect the intelligent tester to the vehicle and repeat turning any of the courtesy light switches on and off until communication between the tester and the vehicle begins (the interval between ON and OFF should be less than 1.5 seconds).</ptxt>
+</step2>
+<step2>
+<ptxt>After DTCs are all cleared, check if the trouble occurs again 6 seconds after the engine switch is turned on (IG).</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>PRECAUTIONS FOR EACH FUNCTION</ptxt>
+<step2>
+<ptxt>Precautions for the electrical key:</ptxt>
+<ptxt>The electrical key is a precision instrument. Be sure to observe the following:</ptxt>
+<step3>
+<ptxt>Do not drop or strike the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not keep the electrical key in a high temperature area for a long time.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not use an ultrasonic washing machine to clean the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>Keep the electrical key away from magnets or magnetized items during use.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not attach any stickers to the electrical key. </ptxt>
+</step3>
+<step3>
+<ptxt>If an electrical key is lost, delete all registered electrical key ID codes and then reregister the remaining electrical keys.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for the entry unlock function:</ptxt>
+<step3>
+<ptxt>As the sensor is built into the backside of the outside door handle, the user must touch the backside of the handle when performing the unlock function.</ptxt>
+</step3>
+<step3>
+<ptxt>If touched with gloved hands, the response of the door may be delayed.</ptxt>
+</step3>
+<step3>
+<ptxt>During the entry unlock operation, if the door handle is pulled before the door unlocks, the unlock function cannot be completed. Confirm that the door has been unlocked before pulling the door handle to open the door.</ptxt>
+</step3>
+<step3>
+<ptxt>Make sure that the doors are unlocked when touching the touch sensor on the outside door handle while the electrical key is being carried.</ptxt>
+<ptxt>If the doors cannot be unlocked, the certification ECU orders the main body ECU to perform the door unlock operation 4 times at intervals of 0.75 seconds.</ptxt>
+<ptxt>At this time, the door may not be unlocked because the handle is being pulled due to some mechanical reasons.</ptxt>
+<ptxt>Be sure to return the door handle to its original position.</ptxt>
+<ptxt>If the door cannot be opened by pulling the handle, perform the entry unlock operation again.</ptxt>
+</step3>
+<step3>
+<ptxt>If the electrical key is too close to the oscillator on the outside of the vehicle, the door may not be unlocked because the electrical key cannot react to the strong wave output from the transmitter.</ptxt>
+</step3>
+<step3>
+<ptxt>If the electrical key is within the vehicle exterior detection area, the door can be unlocked even when a person other than the person carrying the electrical key holds the door handle.</ptxt>
+<ptxt>However, the doors other than the door that the codes match will not be unlocked.</ptxt>
+<ptxt>(If the electrical key is within the driver side door's detection area outside the vehicle, the doors will be unlocked when the person carrying the electrical key holds the driver side door handle. However, if any door handle other than that of the driver side door is held, the doors will not be unlocked).</ptxt>
+</step3>
+<step3>
+<ptxt>If a door is not opened after the door unlock operation, the doors automatically lock after approximately 30 seconds.</ptxt>
+</step3>
+<step3>
+<ptxt>If a large amount of water is applied to the door handle due to a car wash or heavy rain, the electrical key being within the vehicle exterior detection area may cause the doors to be unlocked.</ptxt>
+<ptxt>However, the doors will be locked again after approximately 30 seconds if a door is not opened.</ptxt>
+</step3>
+<step3>
+<ptxt>If the electrical key of the smart key system is used while it is being carried with the electrical key of another smart key system, the time before the entry unlock operation will become longer than usual. This is not a malfunction.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for the entry lock function:</ptxt>
+<step3>
+<ptxt>When performing the entry lock operation, firmly press the lock switch on the outside door handle.</ptxt>
+<ptxt>If pressed too quickly or lightly, the entry lock may not operate.</ptxt>
+</step3>
+<step3>
+<ptxt>It is possible that signals output from the indoor electrical key antenna may leak through the window. Also, if the electrical key is too close to a door oscillator, the oscillator output signals are too strong and the electrical key cannot respond. As a result, when the electrical key is near the vehicle interior (window, door handle), the entry lock function may not operate. Also, the electrical key reminder warning buzzer may sound and the entry unlock operation may stop functioning. In this situation, move the electrical key away from the vehicle interior (window, door handle), perform the entry lock operation and perform the entry unlock operation. </ptxt>
+</step3>
+<step3>
+<ptxt>Do not touch the lock switch while opening or closing the door.</ptxt>
+<ptxt>If the lock switch is pressed when opening or closing the door while the electrical key is being carried, the door ajar warning buzzer sounds (beeps outside the vehicle for 10 seconds).</ptxt>
+</step3>
+<step3>
+<ptxt>If the electrical key is on the instrument panel, rear package tray, floor, or in the glove box, the electrical key reminder function may not operate and the electrical key may be locked in the vehicle. Always carry the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>If the electrical key is outside the vehicle but is very close to a window or door handle (the ECU determines that the electrical key is inside the vehicle) and the transmitter or mechanical key is used to lock the doors (entry lock is not used), entry unlock will not operate. To unlock the doors, perform a wireless door unlock operation. The entry lock function operates in this way to prevent the user from unintentionally unlocking the doors from outside the vehicle. For example, when a user operates the wireless door lock operation from inside the vehicle, radio waves from a door oscillator may leak into the vehicle interior and the doors may unlock. </ptxt>
+</step3>
+<step3>
+<ptxt>To allow the user enough time to check if the doors are locked after performing a door lock operation (entry lock function or wireless door lock operation), the entry unlock function will not be permitted for 3 seconds after the door lock operation.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for the entry ignition function:</ptxt>
+<step3>
+<ptxt>To start the engine, first depress the brake pedal firmly until the engine switch indicator illuminates green. </ptxt>
+</step3>
+<step3>
+<ptxt>When operating the engine switch, firmly press the switch. If the switch is pressed too quickly, power source control and engine starting may not operate.</ptxt>
+</step3>
+<step3>
+<ptxt>While driving the vehicle, continuously pressing the engine switch for 3 seconds or more will turn off the engine. Do not touch the engine switch while driving, except in an emergency.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not touch the engine switch with oily hands.</ptxt>
+</step3>
+<step3>
+<ptxt>If the vehicle has been in a high temperature location for an extended period of time, be careful when touching the engine switch. It may be very hot and lead to burns. </ptxt>
+</step3>
+<step3>
+<ptxt>Take care to avoid spilling beverages on the engine switch. Keep all liquids away from the engine switch.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not use the engine switch if it seems to be sticking or feels abnormal.</ptxt>
+</step3>
+<step3>
+<ptxt>The vehicle continually records the power source mode (off, on (ACC), on (IG), start). When the battery cable is disconnected and reconnected, the power source mode will return to the mode that was selected before disconnecting the battery cable. Always turn the power off before disconnecting the battery cable. When the vehicle battery is fully depleted, power will be cut. As a result, the power source mode before the power was cut cannot be recognized, so be extremely careful. </ptxt>
+</step3>
+<step3>
+<ptxt>Do not connect any electronic products to the ACC, IG1 or IG2 coil side wiring, as the vehicle power supply may be unable to be turned on, or other problems may occur.</ptxt>
+</step3>
+<step3>
+<ptxt> After the battery cable has been disconnected and reconnected, the engine will not start on the first attempt. The engine will start normally on the second attempt. </ptxt>
+</step3>
+<step3>
+<ptxt> When starting the engine immediately after reconnecting the battery cable, connect the cable and wait at least 10 seconds before attempting to start the engine. The engine may not start when attempting an engine start immediately after disconnecting and reconnecting the battery cable. </ptxt>
+</step3>
+<step3>
+<ptxt> If the electrical key is held over the engine switch to start the engine because the electrical key battery is depleted, the following warnings will sound:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt> Driver's door open → closed: </ptxt>
+</item>
+<list2 type="unordered">
+<item>
+<ptxt>An exit warning if the shift lever is in a position other than P and the power source is in a mode other than off.</ptxt>
+</item>
+</list2>
+<list2 type="unordered">
+<item>
+<ptxt>An exit warning if the shift lever is in the P position and the power source is in a mode other than off.</ptxt>
+</item>
+</list2>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>Doors other than the driver door open → closed: </ptxt>
+</item>
+<list2 type="nonmark">
+<item>
+<ptxt>Warning to inform that the electrical key has been taken out of the vehicle.</ptxt>
+</item>
+</list2>
+</list1>
+<ptxt>These warnings will sound because whether the electrical key is in the cabin or not cannot be determined. They do not indicate system malfunctions. </ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for luggage compartment door entry function:</ptxt>
+<ptxt>Even if the electrical key is within the electrical key oscillator (outside luggage compartment) detection area, the luggage compartment door cannot be opened if the electrical key is in the following areas:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Near the center of the bumper</ptxt>
+</item>
+<item>
+<ptxt>Too close to the ground or in a high place</ptxt>
+</item>
+</list1>
+</step2>
+<step2>
+<ptxt>Precautions for the function to prevent electrical key confinement in the luggage compartment:</ptxt>
+<step3>
+<ptxt>Do not place the electrical key in the luggage compartment.</ptxt>
+<ptxt>If the luggage compartment is closed with the electrical key in it when all the doors are locked, the alarm to indicate electrical key confinement will operate (beeping sound for 2 seconds outside of the vehicle). However, the alarm may not operate for some reason relating to the electrical key location (near the spare tire or the side of the luggage compartment), the electrical key condition (covered with metal or near metal), or ambient radio waves.</ptxt>
+</step3>
+<step3>
+<ptxt>If the luggage compartment is closed with the electrical key in it when any of the doors is unlocked or open, the electrical key confinement prevention function will not operate. In this case, use the luggage compartment opener in the cabin to open the luggage compartment and take out the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>The alarm may erroneously operate in the following conditions. If you can confirm that you are carrying the electrical key or that the electrical key is in the cabin, there is no problem. The entry luggage compartment open function may not operate if the alarm erroneously operates. In this case, use the luggage compartment opener in the cabin or perform a wireless operation to open the luggage compartment.</ptxt>
+<ptxt>- The electrical key is brought into the cabin after the luggage compartment is opened, and then the luggage compartment is closed.</ptxt>
+<ptxt>- The luggage compartment is closed by the person who is carrying the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>If the alarm operates when the luggage compartment is closed with all the doors locked, the electrical key is in the cabin or luggage compartment. Check the cabin and luggage compartment to find the electrical key.</ptxt>
+</step3>
+<step3>
+<ptxt>If the luggage compartment is closed with the electrical key in it when all the doors are locked, the alarm will sound and the luggage compartment can be opened. This may increase the risk of the vehicle being stolen.</ptxt>
+</step3>
+<step3>
+<ptxt>Do not open or close the luggage compartment after all the doors are locked if you want to keep the spare electrical keys in the cabin. As a result, the alarm may sound and the luggage compartment can be opened. This may increase the risk of the vehicle being stolen.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for the battery built into the electrical key and the vehicle battery:</ptxt>
+<step3>
+<ptxt>The electrical key is constantly checking for signals from the vehicle, which requires power from the electrical key's built-in battery. The life of the battery is approximately 1 to 2 years depending on the usage conditions. Be sure to replace the battery when its power is low. When replacing the battery, do not touch the inner circuit board or other inner parts. </ptxt>
+</step3>
+<step3>
+<ptxt>The electrical key is constantly checking for signals from the vehicle using battery power to determine whether the electrical key is being used or not. Even if the user is carrying 2 electrical keys and only 1 electrical key is used, both electrical keys will consume battery power.</ptxt>
+</step3>
+<step3>
+<ptxt>The electrical key receives radio waves at approximately 314 MHz. If the electrical key continuously receives strong, identical frequency waves, this may drain the electrical key's battery. Store the electrical key at least 1 m (3.3 ft) from TVs, personal computers, or other electrical products. </ptxt>
+</step3>
+<step3>
+<ptxt>When a door is being locked, the vehicle battery is used to transmit radio waves. The battery may be dead if the vehicle remains stopped for a long time. If the vehicle is not used for a long time, remove the battery from the vehicle or cancel the smart key system. </ptxt>
+</step3>
+<step3>
+<ptxt>When a door is being locked with the electrical key in the detection area of a door oscillator, the battery is used for regular communication between the electrical key and vehicle. If the vehicle is not used, keep the electrical key away from the vehicle (more than 2 m (6.6 ft)).</ptxt>
+</step3>
+<step3>
+<ptxt>After disconnecting and reconnecting the battery cable, the entry unlock function may not operate. If this occurs, perform a wireless door unlock and lock operation. </ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Precautions for the entry unlock mode switching function:</ptxt>
+<step3>
+<ptxt>Perform the entry unlock mode switching function within a 1 m (3.3 ft) area around the vehicle.</ptxt>
+</step3>
+<step3>
+<ptxt>The entry unlock mode switching function cannot be performed within 5 seconds of the previous mode change. Wait 5 seconds or more before performing a mode change.</ptxt>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

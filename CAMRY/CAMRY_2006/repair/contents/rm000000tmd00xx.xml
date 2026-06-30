@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000TMD00XX" category="C" type-id="300Y7" name-id="ES3XO-01" from="200601">
+<dtccode>P0420</dtccode>
+<dtcname>Catalyst System Efficiency Below Threshold (Bank 1)</dtcname>
+<subpara id="RM000000TMD00XX_02" type-id="64" category="03" proc-id="RM0250U___00007HD00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM uses the sensors mounted in front of and behind the Three-Way Catalytic Converter (TWC) to monitor its efficiency.</ptxt>
+<ptxt>The first sensor, the Air-Fuel Ratio (A/F) sensor, sends pre-catalyst information to the ECM. The second sensor, the Heated Oxygen (HO2) sensor, sends post-catalyst information to the ECM. </ptxt>
+<ptxt>In order to detect any deterioration in the TWC, the ECM calculates the Oxygen Storage Capacity (OSC) of the TWC. This calculation is based on the voltage output of the HO2 sensor while performing active air- fuel ratio control, rather than the conventional detecting method, which uses the locus ratio.</ptxt>
+<ptxt>The OSC value is an indication of the oxygen storage capacity of the TWC. When the vehicle is being driven with a warm engine, active air-fuel ratio control is performed for approximately 15 to 20 seconds. When it is performed, the ECM deliberately sets the air-fuel ratio to lean or rich levels. If the rich-lean cycle of the HO2 sensor is long, the OSC becomes greater. There is a direct correlation between the OSCs of the HO2 sensor and the TWC.</ptxt>
+<ptxt>The ECM uses the OSC value to determine the state of the TWC. If any deterioration has occurred, it illuminates the MIL and sets the DTC.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0420</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>OSC value smaller than standard value under active air-fuel ratio control (2 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Front exhaust pipe (with TWC)</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+</item>
+<item>
+<ptxt>Air-Fuel Ratio (A/F) sensor (sensor 1)</ptxt>
+</item>
+<item>
+<ptxt>Heated Oxygen (HO2) sensor (sensor 2)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_03" type-id="65" category="03" proc-id="RM0250U___00007HE00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.53in"/>
+<colspec colname="COL2" colwidth="3.55in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0420: Catalyst Deterioration</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A/F sensor and HO2 sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Related)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Intake air temperature sensor, mass air flow meter, crankshaft position sensor and engine coolant temperature sensor</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Once per driving cycle</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>About 30 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>2 driving cycles</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_04" type-id="66" category="03" proc-id="RM0250U___00007HF00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0011 (VVT System 1 - Advance)</ptxt>
+<ptxt>P0012 (VVT System 1 - Retard)</ptxt>
+<ptxt>P0031, P0032 (A/F Sensor heater - Sensor 1)</ptxt>
+<ptxt>P0037, P0038 (O2 Sensor heater - Sensor 2)</ptxt>
+<ptxt>P0100 - P0103 (MAF meter)</ptxt>
+<ptxt>P0115 - P0118 (ECT sensor)</ptxt>
+<ptxt>P0120 - P0223, P2135 (TP sensor)</ptxt>
+<ptxt>P0125 (Insufficient ECT for Closed Loop)</ptxt>
+<ptxt>P0136 (O2 Sensor - Sensor 2)</ptxt>
+<ptxt>P0171, P0172 (Fuel system)</ptxt>
+<ptxt>P0300 - P0304 (Misfire)</ptxt>
+<ptxt>P0335 (CKP sensor)</ptxt>
+<ptxt>P0340 (CMP sensor)</ptxt>
+<ptxt>P0351 - P0354 (Igniter)</ptxt>
+<ptxt>P0500 (VSS)</ptxt>
+<ptxt>P2196 (A/F Sensor - rationality)</ptxt>
+<ptxt>P2A00 (A/F Sensor - slow response)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>11 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Intake air temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-10°C (14°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine coolant temperature</ptxt>
+</entry>
+<entry>
+<ptxt>75°C (167°F) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Atmospheric pressure</ptxt>
+</entry>
+<entry>
+<ptxt>76 kPa (570 mmHg) or more</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Idling</ptxt>
+</entry>
+<entry>
+<ptxt>OFF</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine RPM</ptxt>
+</entry>
+<entry>
+<ptxt>Less than 4,000 rpm</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>A/F sensor status</ptxt>
+</entry>
+<entry>
+<ptxt>Activated</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Fuel system status</ptxt>
+</entry>
+<entry>
+<ptxt>Closed loop</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Engine load</ptxt>
+</entry>
+<entry>
+<ptxt>10 to 80 %</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>All of the following conditions (a), (b) and (c) are met</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(a) Mass air flow rate</ptxt>
+</entry>
+<entry>
+<ptxt>2.5 to 50 g/sec.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(b) Estimated front catalyst temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>650 to 840°C (1,202 to 1,544°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>(c) Estimated rear catalyst temperature</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt> 400 to 770°C (752 to 1,418°F)</ptxt>
+</entry>
+</row>
+<row>
+<entry>
+<ptxt>Rear HO2 sensor heater monitor</ptxt>
+</entry>
+<entry>
+<ptxt>Completed</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Shift position</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>4th (Automatic transaxle)</ptxt>
+<ptxt>3rd or higher (Manual transaxle)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_05" type-id="67" category="03" proc-id="RM0250U___00007HG00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Oxygen Storage Capacity (OSC) of catalytic</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 0.07 g</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_06" type-id="68" category="03" proc-id="RM0250U___00007HH00000">
+<name>MONITOR RESULT</name>
+<content5 releasenbr="1">
+<ptxt>Refer to CHECKING MONITOR STATUS (See page <xref label="Seep01" href="RM000000PDR010X"/>).</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_14" type-id="73" category="03" proc-id="RM0250U___00007HO00000">
+<name>CONFIRMATION DRIVING PATTERN</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Performing this confirmation pattern will activate the catalyst monitor. This is very useful for verifying completion of a repair.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A115372E53" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<list1 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+<figure>
+<graphic graphicname="A076855E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+<item>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</item>
+<item>
+<ptxt>Turn the tester on.</ptxt>
+</item>
+<item>
+<ptxt>Clear the DTCs (if set) (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</item>
+<item>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II  / DATA LIST / USER DATA / CAT CMPL.</ptxt>
+</item>
+<item>
+<ptxt>Check that CAT CMPL is INCMPL (incomplete).</ptxt>
+</item>
+<item>
+<ptxt>Start the engine and warm it up. (Proceed to "A")</ptxt>
+</item>
+<item>
+<ptxt>Drive the vehicle at between 40 mph and 70 mph (64 km/h and 113 km/h) for at least 10 minutes. (Proceed to "B")</ptxt>
+</item>
+<item>
+<ptxt>Note the state of the Readiness Tests items. Those items will change to COMPL (complete) as CAT CMPL monitor operates.</ptxt>
+</item>
+<item>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / PENDING CODES and check if any DTCs (any pending DTCs) are set.</ptxt>
+</item>
+</list1>
+<atten4>
+<ptxt>If CAT CMPL does not change to COMPL, and any pending DTCs fail to set, extend the driving time.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_12" type-id="74" category="03" proc-id="RM0250U___00007HN00000">
+<name>CONDITIONING FOR SENSOR TESTING</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Perform the operation with the engine speeds and time durations described below prior to checking the waveforms of the A/F and HO2 sensors. This is in order to activate the sensors sufficiently to obtain the appropriate inspection results.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A118003E06" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<list1 type="ordered">
+<item>
+<ptxt>Connect the intelligent tester to the DLC3. (Proceed to "A")</ptxt>
+</item>
+<item>
+<ptxt>Start the engine and warm it up with all the accessories switched OFF, until the engine coolant temperature stabilizes. (Proceed to "B")</ptxt>
+</item>
+<item>
+<ptxt>Run the engine at an engine speed of between 2,500 rpm and 3,000 rpm for at least 3 minutes. (Proceed to "C")</ptxt>
+</item>
+<item>
+<ptxt>While running the engine at 3,000 rpm and 2,000 rpm alternating at 2 second intervals, check the waveforms of the A/F and HO2 sensors using the tester. (Proceed to "D")</ptxt>
+</item>
+</list1>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If either voltage output of the Air-Fuel Ratio (A/F) or Heated Oxygen (HO2) sensor does not fluctuate, or there is a noise in the waveform of either sensor, the sensor may be malfunctioning.</ptxt>
+</item>
+<item>
+<ptxt>If the voltage outputs of both the sensors remain lean or rich, the air-fuel ratio may be extremely lean or rich. In such cases, perform the following A/F CONTROL using the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>If the Three-Way Catalytic Converter (TWC) has deteriorated, the HO2 sensor (located behind the TWC) voltage output fluctuates up and down frequently, even under normal driving conditions (active air-fuel ratio control is not performed).</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="A121610E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_09" type-id="51" category="05" proc-id="RM0250U___00007HI00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air-fuel ratio was lean or rich, and other data from the time the malfunction occurred.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000TMD00XX_11" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000TMD00XX_11_0001" proc-id="RM0250U___00007HJ00000">
+<testtitle>CHECK ANY OTHER DTCS OUTPUT (IN ADDITION TO DTC P0420)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the DTCs.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Display (DTC Output)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>P0420</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>P0420 and other DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>If any DTCs other than P0420 are output, troubleshoot those DTCs first.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000TMD00XX_11_0011" fin="false">A</down>
+<right ref="RM000000TMD00XX_11_0015" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0011" proc-id="RM0250U___00007HM00000">
+<testtitle>PERFORM ACTIVE TEST USING INTELLIGENT TESTER (A/F CONTROL)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine and turn the tester on.</ptxt>
+</test1>
+<test1>
+<ptxt>Warm up the engine at an engine speed of 2,500 rpm for approximately 90 seconds.</ptxt>
+</test1>
+<test1>
+<ptxt>On the tester, select the following menu items: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / A/F CONTROL.</ptxt>
+</test1>
+<test1>
+<ptxt>Perform the A/F CONTROL operation with the engine in an idling condition (press the RIGHT or LEFT button to change the fuel injection volume).</ptxt>
+</test1>
+<test1>
+<ptxt>Monitor the voltage outputs of the A/F and HO2 sensors (AFS B1 S1 and O2S B1 S2) displayed on the tester.</ptxt>
+<spec>
+<title>Result</title>
+<specitem>
+<ptxt>A/F sensor reacts in accordance with increases and decreases in fuel injection volume:</ptxt>
+</specitem>
+<subtitle>+25 % = Rich output</subtitle>
+<specitem>
+<ptxt>Less than 3.0 V</ptxt>
+</specitem>
+<subtitle>-12.5 % = Lean output</subtitle>
+<specitem>
+<ptxt>More than 3.35 V</ptxt>
+</specitem>
+</spec>
+</test1>
+<atten3>
+<ptxt>The A/F sensor has an output delay of a few seconds and the HO2 sensor has a maximum output delay of approximately 20 seconds.</ptxt>
+</atten3>
+<table pgwide="1">
+<tgroup cols="6">
+<colspec colname="COL1" align="center" colwidth="0.55in"/>
+<colspec colname="COLSPEC0" colwidth="1.13in"/>
+<colspec colname="COL2" align="center" colwidth="1.47in"/>
+<colspec colname="COLSPEC1" colwidth="1.14in"/>
+<colspec colname="COL3" align="center" colwidth="1.48in"/>
+<colspec colname="COL4" align="center" colwidth="1.31in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Case</ptxt>
+</entry>
+<entry namest="COLSPEC0" nameend="COL2" valign="middle" align="center">
+<ptxt>A/F Sensor (Sensor 1)</ptxt>
+<ptxt>Output Voltage</ptxt>
+</entry>
+<entry namest="COLSPEC1" nameend="COL3" valign="middle" align="center">
+<ptxt>HO2 Sensor (Sensor 2)</ptxt>
+<ptxt>Output Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Main Suspected Trouble Areas</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt> 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Catalyst</ptxt>
+</item>
+<item>
+<ptxt>Exhaust gas leakage</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 3.35 V</ptxt>
+<ptxt>Less than 3.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A112626" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 0.5 V</ptxt>
+<ptxt>Less than 0.4 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A104057" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt> 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>A/F sensor</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor heater</ptxt>
+</item>
+<item>
+<ptxt>A/F sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 0.5 V</ptxt>
+<ptxt>Less than 0.4 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A104057" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt> 3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<list1 type="unordered">
+<item>
+<ptxt>HO2 sensor</ptxt>
+</item>
+<item>
+<ptxt>HO2 sensor heater</ptxt>
+</item>
+<item>
+<ptxt>HO2 sensor circuit</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>More than 3.35 V</ptxt>
+<ptxt>Less than 3.0 V</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A112626" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+<row>
+<entry morerows="1" valign="middle">
+<ptxt> 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Injection Volume</ptxt>
+<ptxt>+25 %</ptxt>
+<ptxt>-12.5 %</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103184" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry morerows="1" valign="middle" align="left">
+<ptxt>Extremely rich or lean actual air-fuel ratio</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>Injector</ptxt>
+</item>
+<item>
+<ptxt>Fuel pressure</ptxt>
+</item>
+<item>
+<ptxt>Gas leakage from exhaust system</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Output Voltage</ptxt>
+<ptxt>Almost </ptxt>
+<ptxt>no reaction</ptxt>
+</entry>
+<entry valign="middle">
+<graphic graphicname="A103185" width="1.3779527559055118in" height="0.3937007874015748in"/>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<list1 type="nonmark">
+<item>
+<ptxt>Following the A/F CONTROL procedure enables technicians to check and graph the voltage outputs of both the A/F and HO2 sensors.</ptxt>
+</item>
+<item>
+<ptxt>To display the graph, select the following menu items on the tester: DIAGNOSIS / ENHANCED OBD II / ACTIVE TEST / A/F CONTROL / USER DATA / AFS B1 S1 and O2S B1 S2; then press the YES button and then the ENTER button followed by the F4 button.</ptxt>
+</item>
+</list1>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case 1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case 2</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case 3</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Case 4</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>D</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</content6>
+<res>
+<down ref="RM000000TMD00XX_11_0002" fin="false">A</down>
+<right ref="RM000000TMD00XX_11_0012" fin="true">B</right>
+<right ref="RM000000TMD00XX_11_0005" fin="false">C</right>
+<right ref="RM000000TMD00XX_11_0016" fin="true">D</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0002" proc-id="RM0250U___00007HK00000">
+<testtitle>CHECK FOR EXHAUST GAS LEAK</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No gas leakage.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000TMD00XX_11_0014" fin="true">OK</down>
+<right ref="RM000000TMD00XX_11_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0005" proc-id="RM0250U___00007HL00000">
+<testtitle>CHECK FOR EXHAUST GAS LEAK</testtitle>
+<content6 releasenbr="1">
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>No gas leakage.</ptxt>
+</specitem>
+</spec>
+</content6>
+<res>
+<down ref="RM000000TMD00XX_11_0013" fin="true">OK</down>
+<right ref="RM000000TMD00XX_11_0017" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0015">
+<testtitle>GO TO DTC CHART</testtitle>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0012">
+<testtitle>REPLACE AIR-FUEL RATIO SENSOR</testtitle>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0016">
+<testtitle>CHECK CAUSE OF EXTREMELY RICH OR LEAN ACTUAL AIR-FUEL RATIO, REPLACE FAULTY AREA AND GO TO NEXT STEP</testtitle>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0006">
+<testtitle>REPAIR OR REPLACE EXHAUST GAS LEAKAGE POINT</testtitle>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0014">
+<testtitle>REPLACE THREE-WAY CATALYTIC CONVERTER (BOTH FRONT AND REAR CATALYSTS (FRONT EXHAUST PIPE))</testtitle>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0017">
+<testtitle>REPAIR OR REPLACE EXHAUST GAS LEAKAGE POINT</testtitle>
+</testgrp>
+<testgrp id="RM000000TMD00XX_11_0013">
+<testtitle>REPLACE HEATED OXYGEN SENSOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

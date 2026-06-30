@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000YR1008X" category="C" type-id="800UD" name-id="SR0IC-01" from="200601">
+<dtccode>B2788</dtccode>
+<dtcname>IG2 Signal Malfunction</dtcname>
+<subpara id="RM000000YR1008X_01" type-id="60" category="03" proc-id="RM0250U___0000A0900000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The steering lock ECU receives power from the IG2 relay. When the digital signal from the certification ECU and the voltage from the IG2 relay are received by the steering lock ECU, the steering will be unlocked. The steering lock ECU will not lock the steering when power from the IG2 relay is present (this prevents the steering from being locked while the vehicle is moving).</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2788 </ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Different information is obtained from IG2 signals received directly from the IG2 circuit, and from IG2 signals sent via LIN communication for a period of 1 second.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>IG2 relay</ptxt>
+</item>
+<item>
+<ptxt>Wire harness</ptxt>
+</item>
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>Steering lock actuator assembly (Steering lock ECU)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000YR1008X_02" type-id="32" category="03" proc-id="RM0250U___0000A0A00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C113505E02" width="7.106578999in" height="6.791605969in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000YR1008X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000YR1008X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000YR1008X_04_0001" proc-id="RM0250U___0000A0B00000">
+<testtitle>INSPECT IG2 RELAY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IG2 relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B060778E17" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="1.76in"/>
+<colspec colname="COL2" colwidth="2.37in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+<ptxt>(When battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YR1008X_04_0007" fin="false">OK</down>
+<right ref="RM000000YR1008X_04_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YR1008X_04_0007" proc-id="RM0250U___0000A0D00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STEERING LOCK ACTUATOR ASSEMBLY - BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the E51 connector from the steering lock actuator assembly.</ptxt>
+<figure>
+<graphic graphicname="C106484E29" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E51-1 (GND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E51-2 (SGND) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YR1008X_04_0002" fin="false">OK</down>
+<right ref="RM000000YR1008X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YR1008X_04_0002" proc-id="RM0250U___0000A0C00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (STEERING LOCK ACTUATOR ASSEMBLY - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="C106484E30" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>E51-6 (IG2) - E51-1 (GND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>E51-6 (IG2) - E51-2 (SGND)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch on (IG)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3" align="center">
+<colspec colname="COL1" colwidth="1.36in"/>
+<colspec colname="COL2" colwidth="1.36in"/>
+<colspec colname="COL3" colwidth="1.41in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester connection</ptxt>
+<ptxt>(Symbols)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>*E51-6 (IG2) - E51-7 (B)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Engine switch off</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<ptxt>*: This measurement is performed with the engine switch off to check for a short between IG2 and battery voltage.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000YR1008X_04_0003" fin="true">NG</down>
+<right ref="RM000000YR1008X_04_0006" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000YR1008X_04_0003">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (STEERING LOCK ACTUATOR ASSEMBLY - BATTERY)</testtitle>
+</testgrp>
+<testgrp id="RM000000YR1008X_04_0004">
+<testtitle>REPLACE IG2 RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000000YR1008X_04_0005">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000YR1008X_04_0006">
+<testtitle>REPLACE STEERING LOCK ACTUATOR ASSEMBLY (STEERING LOCK ECU)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

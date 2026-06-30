@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S000F" variety="S000F">
+<name>2GR-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S000F_72XLU_T0075" variety="T0075">
+<name>SFI SYSTEM</name>
+<para id="RM000000PFW01NX" category="C" type-id="302II" name-id="ES428-01" from="200601">
+<dtccode>P2118</dtccode>
+<dtcname>Throttle Actuator Control Motor Current Range / Performance</dtcname>
+<subpara id="RM000000PFW01NX_01" type-id="60" category="03" proc-id="RM0250U___00002RH00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ETCS (Electronic Throttle Control System) has a dedicated power supply circuit. When the monitored voltage (+BM) is low (less than 4 V), the ECM determines that there is a malfunction in the ETCS and cuts off the current to the throttle actuator.</ptxt>
+<ptxt>When the voltage becomes unstable, the ETCS itself becomes unstable. For this reason, when the voltage is low, the current to the throttle actuator is cut. If repairs are made and the system returns to normal, turn the ignition switch off. The ECM then allows the current to flow to the throttle actuator so that it can be restarted.</ptxt>
+<atten4>
+<ptxt>The ETCS does not use a throttle cable.</ptxt>
+</atten4>
+<figure>
+<graphic graphicname="A085832E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P2118</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open in ETCS power source (+BM) circuit</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in ETCS power source circuit</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ETCS fuse</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>ECM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_02" type-id="64" category="03" proc-id="RM0250U___00002RI00000">
+<name>MONITOR DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The ECM monitors the battery supply voltage applied to the throttle actuator.</ptxt>
+<ptxt>When the power supply voltage (+BM) drops below 4 V for 0.8 seconds or more, the ECM interprets this as an open in the power supply circuit (+BM). The ECM illuminates the MIL and sets the DTC.</ptxt>
+<ptxt>If the malfunction is not repaired successfully, the DTC is set 5 seconds after the engine is next started.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_03" type-id="65" category="03" proc-id="RM0250U___00002RJ00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P2118: Throttle actuator power supply</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Throttle actuator, throttle valve, ETCS fuse</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>0.8 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation	</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_04" type-id="66" category="03" proc-id="RM0250U___00002RK00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Battery voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>8 V or more</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator power</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_05" type-id="67" category="03" proc-id="RM0250U___00002RL00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator power supply voltage (+BM)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 4 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_06" type-id="70" category="03" proc-id="RM0250U___00002RM00000">
+<name>COMPONENT OPERATING RANGE</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2" align="left">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Throttle actuator power supply voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_07" type-id="62" category="03" proc-id="RM0250U___00002RN00000">
+<name>FAIL-SAFE</name>
+<content5 releasenbr="1">
+<ptxt>When this DTC, as well as other DTCs relating to ETCS (Electronic Throttle Control System) malfunctions, is set, the ECM enters fail-safe mode. During fail-safe mode, the ECM cuts the current to the throttle actuator off, and the throttle valve is returned to a 6° throttle angle by the return spring. The ECM then adjusts the engine output by controlling the fuel injection (intermittent fuel-cut) and ignition timing, in accordance with the accelerator pedal opening angle, to allow the vehicle to continue running at a minimal speed. If the accelerator pedal is depressed firmly and gently, the vehicle can be driven slowly.</ptxt>
+<ptxt>Fail-safe mode continues until a pass condition is detected, and the ignition switch is then turned off.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_08" type-id="32" category="03" proc-id="RM0250U___00002RO00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A122748E02" width="7.106578999in" height="3.779676365in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_09" type-id="51" category="05" proc-id="RM0250U___00002RP00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can be helpful in determining whether the vehicle was running or stopped, whether the engine was warmed up or not, whether the air-fuel ratio was lean or rich, as well as other data recorded at the time of a malfunction (See page <xref label="Seep01" href="RM000000PDS00ZX"/>).</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000PFW01NX_10" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PFW01NX_10_0001" proc-id="RM0250U___00002RQ00000">
+<testtitle>CHECK FUSE (ETCS FUSE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the ETCS fuse from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="A135037E01" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance of the ETCS fuse.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<specitem>
+<ptxt>Below 1 Ω</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reinstall the ETCS fuse.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFW01NX_10_0002" fin="false">OK</down>
+<right ref="RM000000PFW01NX_10_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFW01NX_10_0002" proc-id="RM0250U___00002RR00000">
+<testtitle>INSPECT ECM (+BM VOLTAGE)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<figure>
+<graphic graphicname="A115671E46" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>+BM (A55-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>9 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFW01NX_10_0003" fin="false">NG</down>
+<right ref="RM000000PFW01NX_10_0005" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFW01NX_10_0003" proc-id="RM0250U___00002RS00000">
+<testtitle>CHECK HARNESS AND CONNECTOR (ECM - ETCS FUSE, ETCS FUSE - BATTERY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the harness and connector between the ETCS fuse and ECM.</ptxt>
+<figure>
+<graphic graphicname="A140650E01" width="2.775699831in" height="6.791605969in"/>
+</figure>
+<test2>
+<ptxt>Remove the ETCS fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the A55 ECM connector.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine room R/B ETCS fuse terminal 2 - +BM (A55-3)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Engine room R/B ETCS fuse terminal 2 or +BM (A55-3) - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the ETCS fuse.</ptxt>
+</test2>
+<test2>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test2>
+</test1>
+<test1>
+<ptxt>Check the harness and connector between the ETCS fuse and positive battery cable.</ptxt>
+<test2>
+<ptxt>Remove the ETCS fuse from the engine room R/B.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the negative battery terminal.</ptxt>
+</test2>
+<test2>
+<ptxt>Disconnect the positive battery terminal.</ptxt>
+</test2>
+<test2>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance (Check for open)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Positive battery terminal - Engine room R/B ETCS fuse terminal 1</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Positive battery terminal or Engine room R/B ETCS fuse terminal 1 - Body ground</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test2>
+<test2>
+<ptxt>Reinstall the ETCS fuse.</ptxt>
+</test2>
+<test2>
+<ptxt>Reconnect the positive battery terminal.</ptxt>
+</test2>
+<test2>
+<ptxt>Reconnect the negative battery terminal.</ptxt>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PFW01NX_10_0007" fin="true">OK</down>
+<right ref="RM000000PFW01NX_10_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PFW01NX_10_0004">
+<testtitle>REPLACE ETCS FUSE</testtitle>
+</testgrp>
+<testgrp id="RM000000PFW01NX_10_0005">
+<testtitle>CHECK FOR INTERMITTENT PROBLEMS</testtitle>
+</testgrp>
+<testgrp id="RM000000PFW01NX_10_0006">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000PFW01NX_10_0007">
+<testtitle>REPLACE ECM<xref label="Seep01" href="RM0000022NT001X"/>
+</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

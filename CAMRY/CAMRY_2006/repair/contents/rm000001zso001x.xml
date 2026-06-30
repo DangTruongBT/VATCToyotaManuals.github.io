@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="45">
+<name>COMMUNICATION SYSTEM</name>
+<section id="10033_S001U" variety="S001U">
+<name>CAN COMMUNICATION</name>
+<ttl id="10033_S001U_7306X_T00EQ" variety="T00EQ">
+<name>CAN COMMUNICATION SYSTEM</name>
+<para id="RM000001ZSO001X" category="J" type-id="800CQ" name-id="CA0EY-01" from="200601">
+<dtccode/>
+<dtcname>Open in One Side of CAN Branch Line</dtcname>
+<subpara id="RM000001ZSO001X_01" type-id="60" category="03" proc-id="RM0250U___00009DV00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>If 2 or more ECUs and/or sensors do not appear on the intelligent tester "Communication Bus Check" screen, one side of the CAN branch wire may be open. (One side of the CAN-H [branch wire] / CAN-L [branch wire] of the ECU and/or sensor is open.)</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>2 or more ECUs and/or sensors do not appear on the intelligent tester "Communication Bus Check" screen.</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>One side of the CAN branch wire is open</ptxt>
+</item>
+<item>
+<ptxt>Steering angle sensor</ptxt>
+</item>
+<item>
+<ptxt>Skid control ECU</ptxt>
+</item>
+<item>
+<ptxt>ECM</ptxt>
+</item>
+<item>
+<ptxt>Yaw rate sensor</ptxt>
+</item>
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>A/C amplifier</ptxt>
+</item>
+<item>
+<ptxt>Center airbag sensor</ptxt>
+</item>
+<item>
+<ptxt>Combination meter</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001ZSO001X_02" type-id="32" category="03" proc-id="RM0250U___00009DW00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="C133248E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+<figure>
+<graphic graphicname="C133249E01" width="7.106578999in" height="8.799559038in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001ZSO001X_03" type-id="51" category="05" proc-id="RM0250U___00009DX00000">
+<name>INSPECTION PROCEDURE</name>
+<content5 releasenbr="1">
+<atten4>
+<ptxt>Perform the following inspection for the ECUs (sensors) which are not displayed on the intelligent tester. If the malfunction cannot be identified, then perform the following inspections for the ECUs (sensors) connected to CAN communication.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000001ZSO001X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001ZSO001X_05_0006" proc-id="RM0250U___00009DY00000">
+<testtitle>CHECK FOR OPEN IN ONE SIDE OF CAN BRANCH WIRE</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Confirm the systems (ECUs and sensors), which use CAN communication, equipped on the vehicle. (See page <xref label="Seep01" href="RM000000WIB00RX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>Using the intelligent tester, select and perform "Communication Bus Check". (See page <xref label="Seep02" href="RM000000WIB00RX"/>) [*1]</ptxt>
+</test1>
+<test1>
+<ptxt>Disconnect the connectors from the ECUs or sensors that are not displayed on the screen. [*2]</ptxt>
+</test1>
+<test1>
+<ptxt>Check that only the ECUs and sensors from which the connectors were disconnected in the previous step are not displayed on the "Communication Bus Check" screen. [*3]</ptxt>
+<atten4>
+<ptxt>If any ECUs or sensors, other than those from which the connectors were disconnected in the previous step, are not displayed on the "Communication Bus Check" screen, reconnect the disconnected connectors and repeat the procedures [*1], [*2], and [*3].</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Perform the communication stop mode check for the ECUs and sensors which correspond to the disconnected connectors. (See page <xref label="Seep03" href="RM000000WI800PX"/>)</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001ZSO001X_05_0007" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001ZSO001X_05_0007">
+<testtitle>GO TO CORRESPONDING COMMUNICATION STOP MODE</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

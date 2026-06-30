@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72W31_T005X" variety="T005X">
+<name>ANTI-LOCK BRAKE SYSTEM</name>
+<para id="RM000001JHK002X" category="C" type-id="301WR" name-id="BC0SH-03" from="200601">
+<dtccode>C1300/62</dtccode>
+<dtcname>Skid Control ECU Malfunction</dtcname>
+<subpara id="RM000001JHK002X_01" type-id="60" category="03" proc-id="RM0250U___000011B00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The skid control ECU outputs this DTC, if malfunctions are found in the circuit inside the computer by self diagnosis.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry align="center">
+<ptxt>DTC Detecting Condition</ptxt>
+</entry>
+<entry align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>C1300/62</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Internal failure of the skid control ECU control unit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Brake actuator assembly (skid control ECU)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001JHK002X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001JHK002X_05" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001JHK002X_05_0010" proc-id="RM0250U___000021I00000">
+<testtitle>REPLACE BRAKE ACTUATOR ASSEMBLY</testtitle>
+<content6 releasenbr="3">
+<test1>
+<ptxt>Replace the brake actuator assembly (skid control ECU) (See page <xref label="Seep01" href="RM0000013P6004X"/>).</ptxt>
+<atten4>
+<ptxt>This DTC is output when the skid control ECU detects a malfunction in the internal circuit.</ptxt>
+</atten4>
+</test1>
+<test1>
+<ptxt>Clear the DTC (See page <xref label="Seep02" href="RM000001JB8002X"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000001JHK002X_05_0011" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000001JHK002X_05_0011">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

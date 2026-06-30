@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000000PO900FX" category="J" type-id="304TQ" name-id="NS0WH-01" from="200601">
+<dtccode/>
+<dtcname>Cannot Call in a Certain Place</dtcname>
+<subpara id="RM000000PO900FX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PO900FX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PO900FX_02_0001" proc-id="RM0250U___00004YI00000">
+<testtitle>CHECK SURROUNDING CONDITIONS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the cellular phone can make calls in a certain place.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>It can make calls.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PO900FX_02_0003" fin="false">OK</down>
+<right ref="RM000000PO900FX_02_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PO900FX_02_0002">
+<testtitle>END (CELLULAR PHONES CAN ONLY FUNCTION IN CELLULAR SERVICE AREAS)</testtitle>
+</testgrp>
+<testgrp id="RM000000PO900FX_02_0003" proc-id="RM0250U___00004YJ00000">
+<testtitle>CHECK RECEPTION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Enter the "Information" screen by pressing the "INFO" switch.</ptxt>
+<figure>
+<graphic graphicname="E120096E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Select "Telephone".</ptxt>
+</test1>
+<test1>
+<ptxt>Check the "Bluetooth" connection indicator ("BT" indicator).</ptxt>
+<figure>
+<graphic graphicname="E120108E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Yellow color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Bring the cellular phone to a location where the "BT" mark turns blue.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Blue color</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Replace radio and navigation assembly.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>No connection mark is displayed</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Select a registered cellular phone or register a "Bluetooth" compatible phone.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PO900FX_02_0007" fin="true">NEXT</down>
+</res>
+</testgrp>
+<testgrp id="RM000000PO900FX_02_0007">
+<testtitle>END</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

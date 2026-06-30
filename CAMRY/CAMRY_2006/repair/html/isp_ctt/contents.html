@@ -1,0 +1,33 @@
+<!-- $Id: contents.html,v 1.6 2004/04/26 05:02:25 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Inspection Contents Navi</title>
+<link href="../../css/contents.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+function init() {
+	if (parent.g_objXml==null) return;
+	parent.display(parent.g_objXml, parent.g_cttXsl, disp, null);
+//	if (parent.g_s1==null) location.hash="#paraTop";
+	parent.loadMemoData(document, parent.REPAIR);
+	location.hash = (parent.g_s1==null) ? "paraTop" : parent.g_s1 ;
+}
+</script>
+</head>
+<body onLoad="init()">
+<a name="paraTop"></a>
+<div id="disp"></div>
+<div>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+</body>
+</html>

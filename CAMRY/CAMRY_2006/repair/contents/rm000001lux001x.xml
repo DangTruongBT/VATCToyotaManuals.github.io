@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10024_S000P" variety="S000P">
+<name>2GR-FE STARTING</name>
+<ttl id="10024_S000P_7307G_T00ES" variety="T00ES">
+<name>SMART KEY SYSTEM</name>
+<para id="RM000001LUX001X" category="C" type-id="304MW" name-id="ST0W1-03" from="200601">
+<dtccode>B2273</dtccode>
+<dtcname>Ignition 2 Monitor Malfunction</dtcname>
+<subpara id="RM000001LUX001X_01" type-id="60" category="03" proc-id="RM0250U___0000B0S00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>This DTC is output when there is a problem in the IG2D output circuit, which is from the inside of the main body ECU to the IG2 relay.</ptxt>
+<atten4>
+<ptxt>When the main body ECU is replaced with a new one and the negative (-) battery terminal is connected, the power source mode becomes the IG-ON mode. When the battery is removed and reinstalled, the power source mode that was selected when the battery was removed is restored.</ptxt>
+<ptxt>After the main body ECU is replaced, perform the registration procedures for the engine immobiliser system (See page <xref label="Seep01" href="RM000000QYF004X"/>).</ptxt>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>B2273</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>IG2 relay actuation circuit inside main body ECU or other related circuit is malfunctioning</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Main body ECU</ptxt>
+</item>
+<item>
+<ptxt>IG2 relay</ptxt>
+</item>
+<item>
+<ptxt>Wire harness or connector</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001LUX001X_02" type-id="32" category="03" proc-id="RM0250U___0000B0T00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B137973E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000001LUX001X_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001LUX001X_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001LUX001X_04_0001" proc-id="RM0250U___0000B0U00000">
+<testtitle>READ VALUE OF INTELLIGENT TESTER</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the engine switch on (IG) and turn the intelligent tester main switch on.</ptxt>
+</test1>
+<test1>
+<ptxt>Read the Data List according to the displays on the tester.</ptxt>
+<atten4>
+<ptxt>When using the intelligent tester with the engine switch off, turn on and off any of the door courtesy light switches repeatedly at 1.5 second intervals or less until communication between the tester and vehicle starts.</ptxt>
+</atten4>
+<table pgwide="1">
+<title>MAIN BODY:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Item</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Measurement Item / Display (Range)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Normal Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Diagnostic Note</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>IG2 RELAY MON1</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Status of IG2 relay monitor (outer) / ON or OFF</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>ON: Engine switch on (IG) (IG2 relay is ON)</ptxt>
+<ptxt>OFF: Engine switch off (IG2 relay is OFF)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>-</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>"ON" (Engine switch on (IG)) appears on the screen.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUX001X_04_0008" fin="false">OK</down>
+<right ref="RM000001LUX001X_04_0002" fin="false">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0008" proc-id="RM0250U___0000B1M00000">
+<testtitle>CHECK ENGINE SWITCH CONDITION</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the power source mode change.</ptxt>
+<test2>
+<ptxt>When the key is inside the vehicle and the shift lever is in the P position, check that pressing the engine switch causes the power source mode to change as follows:</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>off → on (ACC) → on (IG) → off</ptxt>
+</specitem>
+</spec>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>If power mode does not change to ON (IG and ACC) (See page <xref label="Seep01" href="RM0000020S9004X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If power mode does not change to ON (IG) (See page <xref label="Seep02" href="RM0000020SA004X"/>).</ptxt>
+</item>
+<item>
+<ptxt>If power mode does not change to ON (ACC) (See page <xref label="Seep03" href="RM0000020SB004X"/>).</ptxt>
+</item>
+</list1>
+</atten4>
+</test2>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUX001X_04_0002" fin="false">OK</down>
+<right ref="RM000001LUX001X_04_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0002" proc-id="RM0250U___0000B0V00000">
+<testtitle>INSPECT RELAY (IG2 RELAY)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IG2 relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B060778E89" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="1.24in"/>
+<colspec colname="COL2" colwidth="2.89in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>3 - 5</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω (when battery voltage is applied to terminals 1 and 2)</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUX001X_04_0003" fin="false">OK</down>
+<right ref="RM000001LUX001X_04_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0003" proc-id="RM0250U___0000B0W00000">
+<testtitle>CHECK WIRE HARNESS (ENGINE ROOM R/B - MAIN BODY ECU AND BODY GROUND)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Remove the IG2 relay from the engine room R/B.</ptxt>
+<figure>
+<graphic graphicname="B138002E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the E6 ECU connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard resistance</title>
+<table>
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.22in"/>
+<colspec colname="COLSPEC0" colwidth="0.95in"/>
+<colspec colname="COL2" colwidth="0.96in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Terminal No. (Symbol)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Room R/B IG2 relay terminal 1 - E6-11 (IG2D)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine Room R/B IG2 relay terminal 2 - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Below 1 Ω</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>E6-11 (IG2D) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Always</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LUX001X_04_0004" fin="true">OK</down>
+<right ref="RM000001LUX001X_04_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0004">
+<testtitle>REPLACE MAIN BODY ECU</testtitle>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0005">
+<testtitle>GO TO OTHER PROBLEM</testtitle>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0006">
+<testtitle>REPLACE RELAY</testtitle>
+</testgrp>
+<testgrp id="RM000001LUX001X_04_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

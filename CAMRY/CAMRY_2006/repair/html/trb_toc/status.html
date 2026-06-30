@@ -1,0 +1,57 @@
+<!-- $Id: status.html,v 1.6 2004/04/26 05:10:45 k-nagasaka Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Details                                                           -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Status Navi</title>
+<link href="../../css/status.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var DELIM = " &gt; ";
+function init() {
+	if (parent.g_paraId==null || parent.g_objXml==null || parent.g_paracat==null) {
+		parent.g_paraId = parent.findParameterValue("parag", location.search);
+		if (parent.g_paraId==null) return;
+		parent.g_paracat = parent.findParameterValue("paracat", location.search);
+		parent.g_objXml = parent.initXml(parent.g_paraId.toLowerCase()+".xml");
+	}
+	sectionName = parent.getSectionName(parent.g_paraId, parent.g_objXml);
+	titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var paraNameList = parent.getParagraphNameList(parent.g_paraId, "name", parent.g_objXml);
+	var paraName = (paraNameList!=null) ? paraNameList[0] : "";
+	disp.innerHTML = sectionName + DELIM + titleName + DELIM + paraName;
+	disp.className = "group-name";
+	blink.style.display = (parent.g_paracat!="S") ? "none" : "";
+}
+
+function callDetails() {
+	var objXsl = parent.initXsl("../../xsl/trb/detailslist.xsl");
+	parent.setDialogArgs(parent.g_objXml, objXsl, disp.innerHTML);
+	ret = parent.openDialog("details_frame.html", "det");
+	parent.clearDialogArgs();
+	if (ret==null) return;
+	parent.selectTypedLocation(ret, 'C', parent.g_paraId);
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="95%"><div id="disp"></div></td>
+		<td>
+			<div id="blink" style="display: none; " class="group-name">
+				<a href="#" class="button-link" onClick="callDetails()">
+					Details<!-- 000 -->
+				</a>
+			</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

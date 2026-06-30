@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XHV009X" category="D" type-id="303F4" name-id="BC02N-08" from="200601">
+<name>DTC CHECK / CLEAR</name>
+<subpara id="RM000000XHV009X_z0" proc-id="RM0250U___00005RA00000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>DTC CHECK/CLEAR (INTELLIGENT TESTER)</ptxt>
+<step2>
+<ptxt>Check the DTC.</ptxt>
+<figure>
+<graphic graphicname="C131977E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Read the DTCs following the prompts on the tester screen.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Clear the DTC.</ptxt>
+<step3>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Operate the intelligent tester to clear the codes.</ptxt>
+<atten4>
+<ptxt>Refer to the intelligent tester operator's manual for further details.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC CHECK/CLEAR (SST CHECK WIRE)</ptxt>
+<step2>
+<ptxt>Check the DTC.</ptxt>
+<figure>
+<graphic graphicname="G022986E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>Using SST, connect terminals TC and CG of the DLC3.</ptxt>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Observe the blinking pattern of the ABS and VSC (models without multi information display) warning lights or read the multi information display (models with multi information display) in order to identify the DTC.</ptxt>
+<atten4>
+<ptxt>If no code appears, inspect the TC and CG terminal circuit, and ABS and VSC warning light circuits.</ptxt>
+</atten4>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.48in"/>
+<colspec colname="COL2" colwidth="1.65in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>See procedure</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="left">
+<ptxt>TC and CG terminal circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep01" href="RM000000XIU009X"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>ABS warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep02" href="RM000000XIH00AX"/> or <xref label="Seep03" href="RM000000XIQ00AX"/>
+</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="left">
+<ptxt>VSC warning light circuit</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>
+<xref label="Seep04" href="RM000000XIO00AX"/> or <xref label="Seep05" href="RM000000XIT00AX"/>
+</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step3>
+<step3>
+<ptxt>As an example, the illustration below shows the blinking patterns of the normal system code and trouble codes 11 and 21 for ABS and VSC (models without multi information display) warning lights or display of the normal system code and trouble code 43 for the VSC on the multi information display (models with multi information display).</ptxt>
+<figure>
+<graphic graphicname="C135804E02" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>The codes are explained in the code table (See page <xref label="Seep06" href="RM000000XHU00AX"/>).</ptxt>
+</step3>
+<step3>
+<ptxt>After completing the check, disconnect terminals TC and CG of the DLC3, and turn off the display.</ptxt>
+<ptxt>If 2 or more DTCs are detected at the same time, the DTCs will be displayed in ascending order.</ptxt>
+</step3>
+</step2>
+<step2>
+<ptxt>Clear the DTC.</ptxt>
+<step3>
+<ptxt>Using SST, connect terminals TC and CG of the DLC3.</ptxt>
+<figure>
+<graphic graphicname="G022986E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<sst>
+<sstitem>
+<s-number>09843-18040</s-number>
+</sstitem>
+</sst>
+</step3>
+<step3>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step3>
+<step3>
+<ptxt>Clear the DTCs stored in the ECU by depressing the brake pedal 8 times or more within 5 seconds.</ptxt>
+<figure>
+<graphic graphicname="BR03890" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>Check that the warning light or multi information display indicates the normal system code.</ptxt>
+</step3>
+<step3>
+<ptxt>Remove the SST from the terminals of the DLC3.</ptxt>
+<atten4>
+<ptxt>Clearing the DTCs cannot be performed by disconnecting the battery terminal or the ECU-IG NO. 2 fuse.</ptxt>
+</atten4>
+</step3>
+</step2>
+</step1>
+<step1>
+<ptxt>END OF DTC CHECK/CLEAR</ptxt>
+<step2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</step2>
+<step2>
+<ptxt>Check that the ABS warning light goes off within approximately 3 seconds.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

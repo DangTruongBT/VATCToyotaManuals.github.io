@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="35">
+<name>SUSPENSION &amp; AXLE</name>
+<section id="1000J_S000X" variety="S000X">
+<name>TIRE AND WHEEL</name>
+<ttl id="1000J_S000X_738JZ_T00GU" variety="T00GU">
+<name>TIRE PRESSURE WARNING SYSTEM</name>
+<para id="RM000000XN1008X" category="M" type-id="80037" name-id="TW0DC-01" from="200601">
+<name>REGISTRATION</name>
+<subpara id="RM000000XN1008X_01" type-id="01" category="01">
+<s-1 id="RM000000XN1008X_01_0001" proc-id="RM0250U___00005GJ00001">
+<ptxt>READ TRANSMITTER ID</ptxt>
+<content1 releasenbr="1">
+<ptxt>Prepare the all transmitter ID data before starting registration.</ptxt>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Read the registered transmitter IDs that are stored in the ECU using the intelligent tester and note them down.</ptxt>
+</item>
+<item>
+<ptxt>If reading stored transmitter IDs is impossible due to malfunctions of components such as the tire pressure warning antenna and receiver, remove the tires from the wheels and check the IDs located on the tire pressure warning valves and transmitters (See page <xref label="Seep01" href="RM000000XMK008X"/>).</ptxt>
+</item>
+<item>
+<ptxt>When replacing the tire pressure warning ECU, read the IDs stored in the old ECU using the intelligent tester.</ptxt>
+</item>
+<item>
+<ptxt>When replacing the tire pressure warning valves and transmitters, note down the IDs written on the tire pressure warning valves and transmitters.</ptxt>
+</item>
+</list1>
+</atten4>
+</content1>
+</s-1>
+<s-1 id="RM000000XN1008X_01_0003" proc-id="RM0250U___00005GL00001">
+<ptxt>REGISTER TRANSMITTER ID</ptxt>
+<content1 releasenbr="1">
+<atten3>
+<ptxt>It is necessary to register the transmitter ID in the tire pressure warning ECU when replacing the tire pressure warning valve and transmitter and/or tire pressure warning ECU.</ptxt>
+</atten3>
+<s2>
+<ptxt>Connect the intelligent tester to DLC3 (Procedure "A").</ptxt>
+<figure>
+<graphic graphicname="C131977E09" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch on (IG) (Procedure "B").</ptxt>
+</s2>
+<s2>
+<ptxt>Select the REGIST TIRE following the intelligent tester screen (UTILITY - REGIST TIRE) (Procedure "C").</ptxt>
+</s2>
+<s2>
+<ptxt>Input the IDs (ID1 to ID4 or ID5) using the intelligent tester and transmit them to the tire pressure warning ECU (Procedure "D").</ptxt>
+<figure>
+<graphic graphicname="F100622" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</s2>
+<s2>
+<ptxt>Set the ID transmission condition to "ID Registration is complete" (Procedure "E").</ptxt>
+<figure>
+<graphic graphicname="C107265" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>The previously registered IDs will be deleted from the memory when the registration is completed.</ptxt>
+</item>
+<item>
+<ptxt>If the procedures "C" to "D" are not completed within 5 min. , the mode will return to the normal operation mode.</ptxt>
+</item>
+<item>
+<ptxt>When the system is in initialization mode after the tire pressure warning reset switch has been operated, the registration is disabled until the initialization process is canceled or completed.</ptxt>
+</item>
+</list1>
+</atten4>
+<figure>
+<graphic graphicname="F101083E01" width="7.106578999in" height="7.795582503in"/>
+</figure>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000XN1008X_01_0004" proc-id="RM0250U___00005GM00001">
+<ptxt>CONFIRMATION OF TRANSMITTER ID REGISTRATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>Connect the intelligent tester to DLC3 (ignition switch is off).</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s2>
+<s2>
+<ptxt>Select "TIREPRESS" by following the prompts displayed on the intelligent tester.</ptxt>
+</s2>
+<s2>
+<ptxt>Confirm that the data of tire pressure of all tires (including the full-size spare tire) are displayed on the intelligent tester screen.</ptxt>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>It may take up to 1 minute or more to update the tire pressure data.</ptxt>
+</item>
+<item>
+<ptxt>If the IDs have not been registered, some of DTC C2171/71 is set in the tire pressure warning ECU after 51 minutes or more.</ptxt>
+</item>
+</list1>
+</atten3>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

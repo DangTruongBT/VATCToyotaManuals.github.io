@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM0000014SK00HX" category="D" type-id="304JT" name-id="NS089-15" from="200601">
+<name>SYSTEM NORMAL CONDITION CHECK</name>
+<subpara id="RM0000014SK00HX_z0" proc-id="RM0250U___00004Y000000">
+<content5 releasenbr="1">
+<step1>
+<ptxt>CHECK NORMAL CONDITION</ptxt>
+<step2>
+<ptxt>If the symptom is applicable to any of the following, it is intended behavior, and not a malfunction.</ptxt>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Symptom</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Answer</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>A longer route than expected is chosen.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Depending on the road conditions, the radio and navigation assembly may determine that a longer route is quicker.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Even when distance priority is high, the shortest route is not shown.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Some paths may not be advised due to safety concerns.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When the vehicle is put into motion immediately after the engine starts, the navigation system deviates from the actual position.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>If the vehicle starts before the navigation system activates, the system may not react.</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>When running on certain types of roads, especially new roads, the vehicle position deviates from the actual position.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When the vehicle is driving on new roads not available on the map disc, the system attempts to match it to another nearby road, causing the position mark to deviate.</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step2>
+<step2>
+<ptxt>The following symptoms are not a malfunction, but are caused by errors inherent in the GPS, gyro sensor, speed sensor, and radio and navigation assembly.</ptxt>
+<figure>
+<graphic graphicname="I100066" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<step3>
+<ptxt>The current position mark may be displayed on a nearby parallel road.</ptxt>
+</step3>
+<step3>
+<ptxt>Immediately after a fork in the road, the current vehicle position mark may be displayed on the wrong road.</ptxt>
+<figure>
+<graphic graphicname="I100067" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle turns right or left at an intersection, the current vehicle position mark may be displayed on a nearby parallel road.</ptxt>
+<figure>
+<graphic graphicname="I100068" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle is carried, such as on a ferry, and the vehicle itself is not running, the current vehicle position mark may be displayed in the position where the vehicle was until a measurement can be performed by GPS.</ptxt>
+<figure>
+<graphic graphicname="I100069" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle runs on a steep hill, the current vehicle position mark may deviate from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100070" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle makes a continuous turn of 360, 720, 1,080, etc. degrees, the current vehicle position mark may deviate from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100071" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle moves erratically, such as constant lane changes, the current vehicle position mark may deviate from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100072" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the ignition switch is turned on (ACC or IG) on a turntable before parking, the current vehicle position mark may not point in the correct direction. The same will occur when the vehicle comes out of parking.</ptxt>
+<figure>
+<graphic graphicname="I038146" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When the vehicle runs on a snowy road or a mountain path with the chains installed or using a spare tire, the current vehicle position mark may deviate from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100074" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</step3>
+<step3>
+<ptxt>When a tire is changed, the current vehicle position mark may deviate from the correct position.</ptxt>
+<figure>
+<graphic graphicname="I100075" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Diameter of the tire may change, causing a speed sensor error.</ptxt>
+</item>
+<item>
+<ptxt>Performing the "tire change" in calibration mode will allow the system to correct the current vehicle position faster.</ptxt>
+</item>
+</list1>
+</atten4>
+</step3>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

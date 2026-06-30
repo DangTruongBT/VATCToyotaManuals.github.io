@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YM9_T00A5" variety="T00A5">
+<name>POWER WINDOW CONTROL SYSTEM</name>
+<para id="RM000001LZX005X" category="C" type-id="800LE" name-id="WS0SI-01" from="200601">
+<dtccode>B2311</dtccode>
+<dtcname>Driver Door Motor Malfunction</dtcname>
+<subpara id="RM000001LZX005X_01" type-id="60" category="03" proc-id="RM0250U___0000BYG00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The portion of the power window control system that is located in the driver door consists of a power window master switch, regulator, and a motor with an integrated ECU. The driver door power window regulator motor is controlled by the ECU when the power window master switch is operated (models with jam protection). </ptxt>
+<ptxt>DTC B2311 is set when the ECU for the driver door power window regulator motor assembly malfunctions.</ptxt>
+<atten3>
+<ptxt>The power window control system uses a serial communication protocol (LIN) to communicate with the main body ECU. Inspect the communication function by following HOW TO PROCEED WITH TROUBLESHOOTING. Troubleshoot the power window control system after confirming that the communication system is functioning properly.</ptxt>
+</atten3>
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Initialization is required only when the power window regulator motor is replaced. However, replacing the motor may cause the motor gear to be engaged in a different position. This can cause a difference to exist between the current door glass position and the position memorized in the ECU. In this case, the jam protection function may work improperly. Return the system to the pre-initialized condition and reinitialize the system.</ptxt>
+</item>
+<item>
+<ptxt>To return the system to the pre-initialized condition:</ptxt>
+<ptxt>Disconnect the power window regulator motor connector during power window operation. This will return the motor to the pre-initialized condition.</ptxt>
+</item>
+</list1>
+</atten4>
+<table pgwide="1">
+<tgroup cols="3" align="left">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>B2311</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>When either condition below is met:</ptxt>
+<list1 type="unordered">
+<item>
+<ptxt>The power window regulator motor (on driver side) malfunctions</ptxt>
+</item>
+<item>
+<ptxt>When the ECU in the power widow regulator motor (on driver side) determines that the fully closed window position has deviated approximately 20 mm (0.79 in.) or more from the normal position</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Battery disconnection when the ignition switch is on (IG)</ptxt>
+</item>
+<item>
+<ptxt>Power window regulator motor (on driver side)</ptxt>
+</item>
+<item>
+<ptxt>Incorrect installation of power window components</ptxt>
+</item>
+<item>
+<ptxt>Overheated power window regulator motor (on driver side)</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000001LZX005X_02" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000001LZX005X_03" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000001LZX005X_03_0002" proc-id="RM0250U___0000BYJ00000">
+<testtitle>INITIALIZE POWER WINDOW CONTROL SYSTEM</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Initialize the power window regulator motor assembly (on the driver side) (see page <xref label="Seep01" href="RM0000011V200FX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the power window operates normally by opening and closing the window.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Driver side power window operates normally.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LZX005X_03_0003" fin="false">OK</down>
+<right ref="RM000001LZX005X_03_0005" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LZX005X_03_0003" proc-id="RM0250U___0000BYK00000">
+<testtitle>CHECK WHETHER PARTS HAVE BEEN INSTALLED CORRECTLY</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check that the power window components (on the driver side) are installed correctly.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>Power window components (on driver side) are installed correctly.</ptxt>
+</specitem>
+</spec>
+<atten4>
+<ptxt>When the power window components are installed correctly, the problem has been caused by battery disconnection while the ignition switch is on (IG), improper installation of the power window components or the motor being overheated.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000001LZX005X_03_0004" fin="true">OK</down>
+<right ref="RM000001LZX005X_03_0006" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000001LZX005X_03_0004">
+<testtitle>END</testtitle>
+</testgrp>
+<testgrp id="RM000001LZX005X_03_0005">
+<testtitle>REPLACE POWER WINDOW REGULATOR MOTOR ASSEMBLY (for Driver Side)</testtitle>
+</testgrp>
+<testgrp id="RM000001LZX005X_03_0006">
+<testtitle>INSTALL PARTS CORRECTLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

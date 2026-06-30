@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="37">
+<name>STEERING</name>
+<section id="1000U_S0013" variety="S0013">
+<name>STEERING COLUMN</name>
+<ttl id="1000U_S0013_730F7_T00F5" variety="T00F5">
+<name>ELECTRIC STEERING LOCK</name>
+<para id="RM000000XWU008X" category="U" type-id="303FI" name-id="SR00L-13" from="200601">
+<name>SYSTEM DIAGRAM</name>
+<subpara id="RM000000XWU008X_z0" proc-id="RM0250U___00009ZM00000">
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="B126245E03" width="7.106578999in" height="5.787629434in"/>
+</figure>
+<table pgwide="1">
+<title>Input and output signals of each ECU:</title>
+<tgroup cols="4">
+<colspec colname="COL1" colwidth="1.77in"/>
+<colspec colname="COL2" colwidth="1.77in"/>
+<colspec colname="COL3" colwidth="1.77in"/>
+<colspec colname="COL4" colwidth="1.77in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Transmitting ECU (transmitter)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Receiving ECU</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Signals</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Communication Method</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Main Body ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply status (to steering lock motor)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Sleep available status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Lock / Unlock sensor status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Steering lock status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Motor control status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Diagnostic response status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Lock / Unlock sensor malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Power supply malfunction</ptxt>
+<ptxt>(to steering lock motor)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Motor driver malfunction</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Lock bar (stuck) status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Push start status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Lock / Unlock relay drive status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Steering Lock ECU</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Certification ECU</ptxt>
+</item>
+<item>
+<ptxt>Main Body ECU</ptxt>
+</item>
+<item>
+<ptxt>ID Code Box</ptxt>
+</item>
+</list1>
+</entry>
+<entry valign="middle">
+<ptxt>Engine start control status</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>LIN</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

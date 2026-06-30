@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="33">
+<name>TRANSMISSION</name>
+<section id="1002B_S000T" variety="S000T">
+<name>U660E AUTOMATIC TRANSAXLE</name>
+<ttl id="1002B_S000T_72XWB_T0089" variety="T0089">
+<name>AUTOMATIC TRANSAXLE SYSTEM</name>
+<para id="RM000000T8P01VX" category="C" type-id="302I5" name-id="AX0YL-01" from="200601">
+<dtccode>P0560</dtccode>
+<dtcname>System Voltage</dtcname>
+<subpara id="RM000000T8P01VX_01" type-id="60" category="03" proc-id="RM0250U___00008NH00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The battery supplies electricity to the TCM even when the ignition switch is off. This power allows the TCM to store data such as DTC history, freeze frame data and fuel trim values. If the battery voltage falls below a minimum level, these memories are cleared and the TCM determines that there is a malfunction in the power supply circuit. When the engine is next started, the TCM will illuminate the MIL and set the DTC.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="1.42in"/>
+<colspec colname="COL2" colwidth="2.83in"/>
+<colspec colname="COL3" colwidth="2.83in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>DTC No.</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>DTC Detection Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Trouble Area</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>P0560</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Open in TCM back-up power source circuit</ptxt>
+<ptxt>(1 trip detection logic)</ptxt>
+</entry>
+<entry valign="middle">
+<list1 type="unordered">
+<item>
+<ptxt>Open in back-up power source circuit</ptxt>
+</item>
+<item>
+<ptxt>TCM</ptxt>
+</item>
+</list1>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<atten4>
+<ptxt>If DTC P0560 is set, the TCM does not store other DTCs.</ptxt>
+</atten4>
+</content5>
+</subpara>
+<subpara id="RM000000T8P01VX_02" type-id="65" category="03" proc-id="RM0250U___00008NI00000">
+<name>MONITOR STRATEGY</name>
+<content5 releasenbr="1">
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Related DTCs</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>P0560: TCM system voltage</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Main)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>TCM</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Required Sensors/Components (Sub)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>-</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Frequency of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Continuous</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Duration</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>3 seconds</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>MIL Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Immediate (MIL illuminated after next engine start)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Sequence of Operation</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8P01VX_03" type-id="66" category="03" proc-id="RM0250U___00008NJ00000">
+<name>TYPICAL ENABLING CONDITIONS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" align="left" colwidth="3.54in"/>
+<colspec colname="col2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Monitor runs whenever following DTCs are not present:</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>None</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Stand-by RAM</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Initialized</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8P01VX_04" type-id="67" category="03" proc-id="RM0250U___00008NK00000">
+<name>TYPICAL MALFUNCTION THRESHOLDS</name>
+<content5 releasenbr="1">
+<table frame="all">
+<tgroup cols="2">
+<colspec colname="col1" align="left" colwidth="3.54in"/>
+<colspec colname="col2" align="left" colwidth="3.54in"/>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>TCM power source</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Less than 3.5 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</content5>
+</subpara>
+<subpara id="RM000000T8P01VX_05" type-id="32" category="03" proc-id="RM0250U___00008NL00000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A122745E03" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000T8P01VX_06" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000T8P01VX_07" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000T8P01VX_07_0002" proc-id="RM0250U___00008NN00000">
+<testtitle>INSPECT TERMINAL VOLTAGE (BATT VOLTAGE OF TCM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the TCM connector.</ptxt>
+<figure>
+<graphic graphicname="C133210E02" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the voltage according to the value(s) in the table below.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>BATT (C56-1) - E1 (C56-8)</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>10 to 14 V</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000T8P01VX_07_0004" fin="true">OK</down>
+<right ref="RM000000T8P01VX_07_0007" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000T8P01VX_07_0004">
+<testtitle>REPLACE TCM</testtitle>
+</testgrp>
+<testgrp id="RM000000T8P01VX_07_0007">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR (EFI NO. 1 FUSE - TCM)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

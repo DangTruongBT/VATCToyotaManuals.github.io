@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="40">
+<name>SECURITIES</name>
+<section id="1002O_S0019" variety="S0019">
+<name>ENGINE IMMOBILISER</name>
+<ttl id="1002O_S0019_7301M_T00D1" variety="T00D1">
+<name>ENGINE IMMOBILISER SYSTEM (w/ Smart Key System)</name>
+<para id="RM000000QY400BX" category="D" type-id="3001B" name-id="EI00N-10" from="200601">
+<name>HOW TO PROCEED WITH TROUBLESHOOTING</name>
+<subpara id="RM000000QY400BX_z0" proc-id="RM0250U___00008DA00000">
+<content5 releasenbr="2">
+<atten4>
+<list1 type="unordered">
+<item>
+<ptxt>Use the following procedures to troubleshoot the engine immobiliser system.</ptxt>
+</item>
+</list1>
+<list1 type="unordered">
+<item>
+<ptxt>The intelligent tester should be used in steps 3 and 5.</ptxt>
+</item>
+</list1>
+</atten4>
+<descript-diag>
+<descript-testgroup>
+<testtitle>VEHICLE BROUGHT TO WORKSHOP</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CRANK ENGINE FOR MORE THAN 10 SECONDS</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CHECK FOR DTCS</testtitle>
+<test1>
+<ptxt>Check for DTCs and note any codes that are output (see page <xref label="Seep01" href="RM000000QYC00BX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Delete the DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Recheck for DTCs. Based on the DTCs output above, try to duplicate the SFI system DTC or engine immobiliser system DTC by simulating the symptoms indicated by the DTC.</ptxt>
+<spec>
+<title>Result</title>
+<table pgwide="1">
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="3.54in"/>
+<colspec colname="COL2" colwidth="3.54in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>DTC output does not reoccur</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>SFI system DTC output reoccurs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Engine immobiliser system DTC output reoccurs</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>C</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO SFI SYSTEM</action-ci-right>
+<result>C</result>
+<action-ci-right>GO TO DTC CHART</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>PROBLEM SYMPTOMS TABLE</testtitle>
+<test1>
+<ptxt>If the fault is not listed on the problem symptoms table, proceed to A.</ptxt>
+</test1>
+<test1>
+<ptxt>If the fault is listed on the problem symptoms table, proceed to B.</ptxt>
+</test1>
+<results>
+<result>B</result>
+<action-ci-right>GO TO STEP 6</action-ci-right>
+<result-ci-down>A</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>OVERALL ANALYSIS AND TROUBLESHOOTING</testtitle>
+<test1>
+<ptxt>DATA LIST/ACTIVE TEST (See page <xref label="Seep02" href="RM000000QYE00BX"/>)</ptxt>
+</test1>
+<test1>
+<ptxt>TERMINALS OF ECU (See page <xref label="Seep03" href="RM000000QY700BX"/>)</ptxt>
+</test1>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>ADJUST, REPAIR OR REPLACE</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+</results>
+</descript-testgroup>
+<descript-testgroup>
+<testtitle>CONFIRMATION TEST</testtitle>
+<results>
+<result-ci-down>NEXT</result-ci-down>
+<action-ci-fin>END</action-ci-fin>
+</results>
+</descript-testgroup>
+</descript-diag>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

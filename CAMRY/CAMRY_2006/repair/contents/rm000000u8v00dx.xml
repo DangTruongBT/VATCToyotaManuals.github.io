@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="43">
+<name>BODY</name>
+<section id="1002U_S001N" variety="S001N">
+<name>WINDSHIELD / WINDOWGLASS</name>
+<ttl id="1002U_S001N_72YMA_T00A6" variety="T00A6">
+<name>WINDOW DEFOGGER SYSTEM</name>
+<para id="RM000000U8V00DX" category="G" type-id="8000T" name-id="WS0RA-01" from="200601">
+<name>ON-VEHICLE INSPECTION</name>
+<subpara id="RM000000U8V00DX_01" type-id="01" category="01">
+<s-1 id="RM000000U8V00DX_01_0001" proc-id="RM0250U___000059200000">
+<ptxt>CHECK REAR WINDOW DEFOGGER SYSTEM OPERATION</ptxt>
+<content1 releasenbr="1">
+<s2>
+<ptxt>When the ignition switch is turned on (IG) and the defogger switch is pressed, check that the rear window defogger operates.</ptxt>
+<atten4>
+<ptxt>After 15 minutes, check that the defogger automatically turns off.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+<s-1 id="RM000000U8V00DX_01_0002" proc-id="RM0250U___000059300000">
+<ptxt>INSPECT BACK WINDOW (DEFOGGER WIRE)</ptxt>
+<content1 releasenbr="1">
+<figure>
+<graphic graphicname="B106755E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>When cleaning the glass, wipe the glass along the wire using a soft and dry cloth. Take care not to damage the wires.</ptxt>
+</item>
+<item>
+<ptxt>Do not use detergents or glass cleaners that have abrasive ingredients.</ptxt>
+</item>
+<item>
+<ptxt>When measuring voltage, wrap a piece of tin foil around the tip of the negative tester probe and press the foil against the wire with your finger, as shown in the illustration.</ptxt>
+<figure>
+<graphic graphicname="B106756E01" width="2.775699831in" height="1.771723296in"/>
+</figure>
+</item>
+</list1>
+</atten3>
+<s2>
+<ptxt>Turn the ignition switch on (IG).</ptxt>
+</s2>
+<s2>
+<ptxt>Turn the defogger switch on.</ptxt>
+</s2>
+<s2>
+<ptxt>Check the voltage at the center of each defogger wire, as shown in the illustration.</ptxt>
+<spec>
+<title>Standard voltage</title>
+<table>
+<tgroup cols="2" align="center">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle">
+<ptxt>Voltage</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Criteria</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle">
+<ptxt>Approx. 5 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wire is not broken</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle">
+<ptxt>Approx. 10 or 0 V</ptxt>
+</entry>
+<entry valign="middle">
+<ptxt>Wire is broken</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<figure>
+<graphic graphicname="B106757E06" width="2.775699831in" height="2.775699831in"/>
+</figure>
+<atten4>
+<ptxt>If there is approximately 10 V, the wire may be faulty between the center of the wire and the wire end on the battery side. If there is no voltage, the wire may be faulty between the center of the wire and the wire end on the ground side.</ptxt>
+</atten4>
+</s2>
+<s2>
+<ptxt>Place the voltmeter's positive (+) lead against the defogger wire on the battery side.</ptxt>
+</s2>
+<s2>
+<ptxt>Place the voltmeter's negative (-) lead with the foil strip against the wire on the ground side.</ptxt>
+</s2>
+<s2>
+<ptxt>Slide the positive (+) lead from the battery side to the ground side.</ptxt>
+</s2>
+<s2>
+<ptxt>The point where the voltage drops from approximately 10 V to 0 V is the place where the defogger wire is broken.</ptxt>
+<atten4>
+<ptxt>If the defogger wire is not broken, the voltmeter should indicate 0 V at the positive (+) end of the defogger wire but gradually increase to approximately 12 V as the meter probe moves to the other end.</ptxt>
+</atten4>
+</s2>
+</content1>
+</s-1>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

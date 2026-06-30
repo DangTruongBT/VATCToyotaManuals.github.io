@@ -1,0 +1,81 @@
+<!--
+	Connection List DTD
+
+	Copyright (c) 2000-2005 SHINTEC HOZUMI Co.,LTD.
+	All Rights Reserved. 
+
+
+	use for parts link info
+	oversea's EWD
+
+	ver 1.10	2004/02/19
+	ver 1.20	2004/10/08
+		add attribute subcode
+
+	ver 1.21	2005/04/13
+		add a attribute of pubno to root element
+-->
+
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- XML DTD for TOYOTA EWD connector -->
+
+
+
+<!ENTITY % Number	"CDATA">
+<!ENTITY % PinCode	"CDATA">
+<!ENTITY % WireColor	"CDATA">
+<!ENTITY % Spec		"CDATA">
+<!ENTITY % Sex		"(male | female)">
+<!ENTITY % PartsType	"(conn | w2w | jb | jbc | rb  | relay | jc | gp | sp | fl | NON)">
+	<!--
+		conn: connector
+		w2w: Wire and Wire
+		jb: Junction Block
+		jbc: Junction Block Connector
+		rb:	Relay Block
+		relay: Relay
+		jc: Junction Connector
+		gp: Ground Point
+		sp: Splice Point
+		fl: Fusible Link
+	-->
+
+
+
+<!ELEMENT	connectionList	(connector)+>
+<!ELEMENT	connector	(pin)+>
+<!ELEMENT	pin		(junction?, (line?|EMPTY))>
+<!ELEMENT	line		(connector)>
+<!ELEMENT	junction	(point)+>
+<!ELEMENT	point		(pin)+>
+
+
+
+<!ATTLIST connectionList
+	ver		CDATA	"1.0"
+	pubno	CDATA	#REQUIRED
+>
+
+<!ATTLIST connector
+	type		%PartsType;	#REQUIRED
+	code		%PinCode;	#IMPLIED
+	subcode		%PinCode;	#IMPLIED
+	sex		%Sex;		#IMPLIED
+	spec		%Spec;		#IMPLIED
+>
+
+<!ATTLIST pin
+	no		%Number;	#IMPLIED
+	spec		%Spec;		#IMPLIED
+>
+
+<!ATTLIST line
+	id		%Number;	#REQUIRED
+	color		%WireColor;	#REQUIRED
+	groupID		%Number;	#IMPLIED
+	spec		%Spec;		#IMPLIED
+>
+
+<!ATTLIST point
+	 code		%PinCode;	#IMPLIED
+>

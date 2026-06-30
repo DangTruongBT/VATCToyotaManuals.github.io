@@ -1,0 +1,96 @@
+<!-- $Id: global.html,v 1.9 2005/08/26 01:25:40 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 print(attribute)                                                -->
+<!--    005 logo(attribute)                                                 -->
+<!--    006 Tech Tips                                                       -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Installation/Removal Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var g_objXml = null;
+var g_tips  = null;
+var DELIM   = " &gt; ";
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	setGlobalLinks();
+}
+
+function callPrintPreview() {
+	var dialogTitle = parent.g_sectionName
+                  + " &gt; " + parent.g_titleName;
+	parent.setDialogArgs(parent.g_illustId, dialogTitle);
+	parent.openDialog("print_frame.html", "prt");
+	parent.clearDialogArgs();
+}
+
+function setGlobalLinks() {
+	if (parent.g_paraId == null) {
+		document.all('tps').style.visibility = "hidden";
+		return;
+	}
+	g_objXml = parent.initXml(parent.g_paraId.toLowerCase()+".xml");
+	g_tips = parent.getTips(g_objXml);
+	document.all('tps').style.visibility = (g_tips==null) ? "hidden" : "";
+}
+
+function callTips(tipsXml) {
+	var paragraphName = parent.getParagraphNameList(parent.g_paraId, "name", g_objXml)[0];
+	var dialogTitle = parent.g_sectionName
+					+ DELIM + parent.g_titleName
+					+ DELIM + paragraphName;
+	parent.openTips(tipsXml, dialogTitle);
+}
+
+function callBackPage() {
+	if (parent.g_idx==null) {
+		parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter);
+		return;
+	} else {
+		parent.openBackPage(parent.g_term, parent.g_vin, parent.g_filter, parent.g_idx);
+		return;
+	}
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 005 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="callBackPage()">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="right">
+			<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">Tech Tips</a><!-- 006 -->
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px">
+		        <a href="#" onClick="callPrintPreview();">
+			        <img alt="print" src="../../img/print.png" class="print" id="print" style="visibility:hidden;"><!-- 004 -->
+			</a>
+		</td>
+		<td class="boundary-top">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

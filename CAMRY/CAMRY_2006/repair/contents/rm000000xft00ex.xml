@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="36">
+<name>BRAKE</name>
+<section id="1002J_S0010" variety="S0010">
+<name>BRAKE CONTROL</name>
+<ttl id="1002J_S0010_72Z6O_T00AN" variety="T00AN">
+<name>VEHICLE STABILITY CONTROL SYSTEM (for ADVICS Made)</name>
+<para id="RM000000XFT00EX" category="L" type-id="3001A" name-id="BC03Y-12" from="200601">
+<name>PRECAUTION</name>
+<subpara id="RM000000XFT00EX_z0" proc-id="RM0250U___00005L400000">
+<content5 releasenbr="2">
+<step1>
+<ptxt>EXPRESSIONS OF IGNITION SWITCH</ptxt>
+<ptxt>The type of ignition switch used on this model differs according to the specifications of the vehicle.</ptxt>
+<ptxt>The expressions listed in the table below are used in this section.</ptxt>
+<table pgwide="1">
+<tgroup cols="3">
+<colspec colname="COL1" colwidth="2.36in"/>
+<colspec colname="COL2" colwidth="2.36in"/>
+<colspec colname="COL3" colwidth="2.36in"/>
+<thead>
+<row>
+<entry morerows="1" valign="middle" align="center">
+<ptxt>Expression</ptxt>
+</entry>
+<entry namest="COL2" nameend="COL3" valign="middle" align="center">
+<ptxt>Switch Type</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition Switch (Position)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Engine Switch (Condition)</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch off</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>LOCK</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>off</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (IG)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>on (IG)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Ignition switch on (ACC)</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>ACC</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>on (ACC)</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine start</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>START</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>start</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</step1>
+<step1>
+<ptxt>TROUBLESHOOTING PRECAUTIONS</ptxt>
+<step2>
+<ptxt>When there is a malfunction with terminal contact points or part installation problems, removal and installation of the suspected problem parts may return the system to the normal condition either completely or temporarily.</ptxt>
+</step2>
+<step2>
+<ptxt>In order to determine the malfunctioning area, be sure to check the conditions at the time the malfunction occurred, such as DTC output and the Freeze Frame Data, and record it before disconnecting each connector or removing and installing parts.</ptxt>
+</step2>
+<step2>
+<ptxt>Since the system may be influenced by malfunctions in systems other than the brake control system, be sure to check for DTCs in other systems.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>HANDLING PRECAUTIONS</ptxt>
+<step2>
+<ptxt>Do not remove or install VSC parts such as the steering angle sensor or yaw rate sensor (acceleration sensor included) except when required, as they cannot be adjusted correctly after removal or installation.</ptxt>
+</step2>
+<step2>
+<ptxt>Be sure to perform preparation before work and confirmation after work is completed by following the direction in the repair manual when working on the VSC system.</ptxt>
+</step2>
+<step2>
+<ptxt>Be sure to remove and install the ECU, actuator, each sensor, etc. with the ignition switch off unless it is not specified in the inspection procedure.</ptxt>
+</step2>
+<step2>
+<ptxt>If the ECU, brake actuator, or a sensor has been removed and installed, it is necessary to check the system for problems after the parts have been reassembled. Check for DTCs using the intelligent tester, also check that system functions and signals received by the ECU are normal using Test Mode.</ptxt>
+</step2>
+</step1>
+<step1>
+<ptxt>DTC PRECAUTION</ptxt>
+<step2>
+<ptxt>Warnings for some DTCs cannot be cleared only by repairing the malfunctioning parts. If the warning is displayed after repair work, the DTC should be cleared after turning the ignition switch off.</ptxt>
+<atten3>
+<ptxt>If a DTC for a malfunctioning part reappears after it was cleared, then it has been stored again.</ptxt>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>CHASSIS DYNAMOMETER PRECAUTION</ptxt>
+<step2>
+<ptxt>Enter Test Mode to disable TRAC and VSC control when using a chassis dynamometer.</ptxt>
+<atten4>
+<ptxt>The vehicle may move unexpectedly out of the dynamometer because of TRAC and VSC operations.</ptxt>
+</atten4>
+<atten3>
+<list1 type="unordered">
+<item>
+<ptxt>Make sure that the VSC warning light is blinking (for vehicles without the multi information display) or "CHECK VSC SYSTEM" is displayed on the multi information display (for vehicles with the multi information display) (Test Mode is achieved).</ptxt>
+</item>
+<item>
+<ptxt>Secure the vehicle with the lock chain for safety.</ptxt>
+</item>
+</list1>
+</atten3>
+</step2>
+</step1>
+<step1>
+<ptxt>CAN COMMUNICATION SYSTEM PRECAUTIONS</ptxt>
+<step2>
+<ptxt>The CAN communication system is used for the data communication between the skid control ECU, the steering angle sensor, the yaw rate sensor (acceleration sensor included) and other ECUs. If there is trouble in the CAN communication line, corresponding DTCs in the communication line are output.</ptxt>
+</step2>
+<step2>
+<ptxt>If the DTC in the CAN communication line is output, repair the malfunction in the communication line and troubleshoot the VSC system while data communication is normal.</ptxt>
+</step2>
+<step2>
+<ptxt>In order to enable CAN communication, a specific type of wiring is used for the CAN communication lines. The wiring used for each communication line is a twisted pair of wires that have an equal length. A bypass wire should not be used, because the data being transmitted will be corrupted.</ptxt>
+</step2>
+</step1>
+</content5>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

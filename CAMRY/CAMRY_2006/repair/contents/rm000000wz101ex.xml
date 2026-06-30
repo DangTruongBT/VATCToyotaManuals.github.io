@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="30">
+<name>ENGINE</name>
+<section id="10006_S0004" variety="S0004">
+<name>2AZ-FE ENGINE CONTROL SYSTEM</name>
+<ttl id="10006_S0004_72ZSS_T00CM" variety="T00CM">
+<name>SFI SYSTEM</name>
+<para id="RM000000WZ101EX" category="J" type-id="3018M" name-id="ES3Y5-01" from="200601">
+<dtccode/>
+<dtcname>MIL Circuit</dtcname>
+<subpara id="RM000000WZ101EX_01" type-id="60" category="03" proc-id="RM0250U___00007QZ00000">
+<name>DESCRIPTION</name>
+<content5 releasenbr="1">
+<ptxt>The MIL (Malfunction Indicator Lamp) is used to indicate vehicle malfunction detected by the ECM. When the ignition switch is turned ON position, power is supplied to the MIL circuit, and the ECM provides the circuit ground which illuminates the MIL.</ptxt>
+<ptxt>The MIL operation can be checked visually: When the ignition switch is first turned ON position, the MIL should be illuminated and should then turn off. If the MIL remains illuminated or is not illuminated, conduct the following troubleshooting procedure using the intelligent tester.</ptxt>
+</content5>
+</subpara>
+<subpara id="RM000000WZ101EX_02" type-id="32" category="03" proc-id="RM0250U___00007R000000">
+<name>WIRING DIAGRAM</name>
+<content5 releasenbr="1">
+<figure>
+<graphic graphicname="A138929E01" width="7.106578999in" height="4.7836529in"/>
+</figure>
+</content5>
+</subpara>
+<subpara id="RM000000WZ101EX_03" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000WZ101EX_04" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000WZ101EX_04_0011" proc-id="RM0250U___00007R500000">
+<testtitle>CHECK THAT MIL IS ILLUMINATED</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Perform troubleshooting in accordance with the table below.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Condition</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL remains ON</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>MIL does not illuminate</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0001" fin="false">A</down>
+<right ref="RM000000WZ101EX_04_0006" fin="false">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0001" proc-id="RM0250U___00007R100000">
+<testtitle>CHECK WHETHER MIL TURNS OFF</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Connect the intelligent tester to the DLC3.</ptxt>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position and turn the tester on. </ptxt>
+</test1>
+<test1>
+<ptxt>Select the following menu items: DIAGNOSIS / ENHANCED OBD II / DTC INFO / CURRENT CODES.</ptxt>
+</test1>
+<test1>
+<ptxt>Check if any DTCs have been stored. Note down any DTCs.</ptxt>
+</test1>
+<test1>
+<ptxt>Clear the DTCs (See page <xref label="Seep01" href="RM000000PDK01MX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Check if the MIL goes off.</ptxt>
+<spec>
+<title>Standard</title>
+<specitem>
+<ptxt>MIL goes off.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0002" fin="false">NG</down>
+<right ref="RM000000WZ101EX_04_0003" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0002" proc-id="RM0250U___00007R200000">
+<testtitle>CHECK HARNESS AND CONNECTOR (CHECK FOR SHORT IN WIRE HARNESS)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A115671E23" width="2.775699831in" height="2.775699831in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Check that the MIL is not illuminated.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>MIL is not illuminated.</ptxt>
+</specitem>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0012" fin="false">NG</down>
+<right ref="RM000000WZ101EX_04_0004" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0012" proc-id="RM0250U___00007R600000">
+<testtitle>CHECK HARNESS AND CONNECTOR (COMBINATION METER - ECM)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Disconnect the A24 ECM connector.</ptxt>
+<figure>
+<graphic graphicname="A132305E01" width="2.775699831in" height="3.779676365in"/>
+</figure>
+</test1>
+<test1>
+<ptxt>Disconnect the F2 combination meter connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Measure the resistance between the terminals of the wire harness side connectors.</ptxt>
+<spec>
+<title>Standard resistance (Check for short)</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.89in"/>
+<colspec colname="COL2" colwidth="1.24in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Tester Connection</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Specified Condition</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>A24-24 (W) or F2-4 (CHK) - Body ground</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>10 kΩ or higher</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+</test1>
+<test1>
+<ptxt>Reconnect the ECM connector.</ptxt>
+</test1>
+<test1>
+<ptxt>Reconnect the combination meter connector.</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0014" fin="true">NG</down>
+<right ref="RM000000WZ101EX_04_0009" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0006" proc-id="RM0250U___00007R300000">
+<testtitle>CHECK THAT MIL IS ILLUMINATED</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check if the MIL is illuminated when the ignition switch is turned ON position.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>MIL is illuminated.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0013" fin="false">NG</down>
+<right ref="RM000000WZ101EX_04_0008" fin="true">OK</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0013" proc-id="RM0250U___00007R700000">
+<testtitle>CHECK THAT ENGINE STARTS</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Turn the ignition switch to the ON position.</ptxt>
+</test1>
+<test1>
+<ptxt>Start the engine.</ptxt>
+<spec>
+<title>Result</title>
+<table>
+<tgroup cols="2">
+<colspec colname="COL1" colwidth="2.07in"/>
+<colspec colname="COL2" colwidth="2.06in"/>
+<thead>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Result</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>Proceed to</ptxt>
+</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine starts</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>A</ptxt>
+</entry>
+</row>
+<row>
+<entry valign="middle" align="center">
+<ptxt>Engine does not start*</ptxt>
+</entry>
+<entry valign="middle" align="center">
+<ptxt>B</ptxt>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</spec>
+<atten4>
+<ptxt>*: The intelligent tester cannot communicate with the ECM.</ptxt>
+</atten4>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0007" fin="false">A</down>
+<right ref="RM000000WZ101EX_04_0015" fin="true">B</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0007" proc-id="RM0250U___00007R400000">
+<testtitle>INSPECT COMBINATION METER ASSEMBLY (MIL CIRCUIT)</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check the MIL circuit (See page <xref label="Seep01" href="RM0000012GB00IX"/>).</ptxt>
+</test1>
+</content6>
+<res>
+<down ref="RM000000WZ101EX_04_0005" fin="true">OK</down>
+<right ref="RM000000WZ101EX_04_0010" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0003">
+<testtitle>REPAIR CIRCUITS INDICATED BY OUTPUT DTCS</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0004">
+<testtitle>REPLACE ECM</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0009">
+<testtitle>REPAIR OR REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0014">
+<testtitle>REPAIR OR REPLACE HARNESS OR CONNECTOR</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0008">
+<testtitle>SYSTEM OK</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0015">
+<testtitle>GO TO VC OUTPUT CIRCUIT</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0010">
+<testtitle>REPAIR OR REPLACE COMBINATION METER ASSEMBLY</testtitle>
+</testgrp>
+<testgrp id="RM000000WZ101EX_04_0005">
+<testtitle>CHECK AND REPLACE HARNESS AND CONNECTOR (COMBINATION METER - ECM)</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>

@@ -1,0 +1,189 @@
+<!-- $Id: global.html,v 1.12 2005/01/13 06:28:47 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--    title(element)                                                      -->
+<!--    000 GSIC - Global Service Information Center                        -->
+<!--    001 Top                                                             -->
+<!--    002 Back                                                            -->
+<!--    003 New                                                             -->
+<!--    004 Parts Location                                                  -->
+<!--    005 Preparation                                                     -->
+<!--    006 System Spec                                                     -->
+<!--    007 Diagnostic Help                                                 -->
+<!--    008 Tech Tips                                                       -->
+<!--    009 EWD                                                             -->
+<!--    010 Tech Description                                                -->
+<!--    011 print(attribute)                                                -->
+<!--   Javascript                                                           -->
+<!--    012 Service Specification                                           -->
+<!--    013 Diagnostic Help                                                 -->
+<!--    014 Diagnostics                                                     -->
+<!--    015 There are no illustrations available.                           -->
+<!--    016 logo(attribute)                                                 -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Diagnostics Global Navi</title>
+<link href="../../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+var SPEC = "- Service Specification -";  // 012
+var HELP = "- Diagnostic Help -";        // 013
+var g_pprList = null;
+var g_tips    = null;
+function init() {
+	disp.innerHTML = parent.g_carType;
+	disp.title = parent.g_carType;
+	setLinks();
+}
+
+function callBackPage(term, vin, filter, bp) {
+	var idx = parent.findParameterValue("idx", parent.location.search);
+	if (bp==null && idx==null) {
+		parent.openTopPage(term, vin, filter);
+		return;
+	} else if (idx!=null) {
+		parent.openBackPage(term, vin, filter, idx);
+		return;
+	} else {
+		parent.openBackPage(term, vin, filter, "trb_toc");
+		return;
+	}
+}
+
+var PRINT_WINDOW_TITLE = "Diagnostics"; // 014
+function callPrintPreview(objXml, objXsl) {
+	var dialogTitle = parent.sts.disp.innerHTML;
+	var args = new parent.Hashtable();
+	if (parent.g_defProc==null) {
+		args.put("subparaId", "_");
+	} else {
+		args.put("subparaId", parent.g_defProc);
+	}
+	args.put("prt", "0");
+	parent.openPrintPreview(objXml, objXsl, args, PRINT_WINDOW_TITLE, dialogTitle, false);
+}
+
+function setLinks() {
+	if (parent.g_objXml==null) return;
+	g_pprList = parent.getPreparationArray(parent.g_objXml, parent.g_tocXml);
+	document.all('ppr').style.visibility = (g_pprList==null) ? "hidden" : "";
+	g_tips = parent.getTips(parent.g_objXml);
+	document.all('tps').style.visibility = (g_tips==null) ? "hidden" : "";
+
+	var specs = parent.getSiblingList(parent.g_paraId, parent.g_tocXml, "U");
+	if (specs==null || specs.length==0) {
+		spc.style.visibility="hidden";
+	} else {
+		parent.createDropDownItem(specs, spec, "SPEC", "global");
+	}
+	var helps = parent.g_objXml.selectNodes("//subpara[@category='03']");
+	if (helps==null || helps.length==0) {
+		hlp.style.visibility = "hidden";
+	} else {
+		parent.createDropDownItem(helps, help, "HELP", "global");
+	}
+	var titleName = parent.getTitleName(parent.g_paraId, parent.g_objXml);
+	var ncfXml = parent.initXml("../../../ncf/toc_ncf.xml", true, false);
+	if (ncfXml==null) {
+		tec.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ncfXml, ltec, titleName, "ncf", parent.g_term);
+		if (ltec.innerHTML.length==0) tec.style.visibility = "hidden";
+	}
+	var ewdXml = parent.initXml("../../../ewd/toc_ewd.xml", true, false);
+	if (ewdXml==null) {
+		ewd.style.visibility="hidden";
+	} else {
+		parent.createDropDownOther(ewdXml, lewd, titleName, "ewd", parent.g_term);
+		if (lewd.innerHTML.length==0) ewd.style.visibility = "hidden";
+	}
+}
+function selectDropDown(obj, windowTitle) {
+	if(windowTitle=="SPEC") {
+		parent.selectDropDown(obj, SPEC);
+	} else if(windowTitle=="HELP") {
+		parent.selectDropDown(obj, HELP);
+	}
+}
+
+// Parts Location
+var PARTS_LOCATION_ERROR = "There are no illustrations available."; //015
+function callPartsLocation(illust) {
+	var dialogTitle = "";
+	if (illust==null) {
+		alert(PARTS_LOCATION_ERROR);
+		return;
+	}
+	parent.setDialogArgs(illust);
+	parent.openDialog("pts_frame.html", "pts");
+	parent.clearDialogArgs();
+}
+// Preparation Items
+function callPreparationItems(pprXmlList) {
+	var dialogTitle = parent.sts.disp.innerHTML;
+	parent.openPreparationItems(pprXmlList, dialogTitle);
+}
+// Tips List
+function callTips(tipsXml) {
+	var dialogTitle = parent.sts.disp.innerHTML;
+	parent.openTips(tipsXml, dialogTitle);
+}
+</script>
+</head>
+<body onLoad="init();">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="170px"><img alt="logo" src="../logo.png" class="logo"></td><!-- 016 -->
+		<td><p class="system-name">GSIC - Global Service Information Center</p></td><!-- 000 -->
+	</tr>
+	<tr>
+		<td width="170px" align="left">
+			<a href="#" class="window-control-button" onClick="parent.openTopPage(parent.g_term, parent.g_vin, parent.g_filter)">Top</a><!-- 001 -->
+			<a href="#" class="window-control-button" onClick="callBackPage(parent.g_term, parent.g_vin, parent.g_filter, parent.g_bp)">Back</a><!-- 002 -->
+			<a href="#" class="window-control-button" onClick="parent.openNewWindow('../index.html', '', parent.g_term, parent.g_vin, parent.g_filter)">New</a><!-- 003 -->
+		</td>
+		<td align="right">
+			<a id="pts" href="#" class="popup-button" onClick="callPartsLocation(parent.g_ilustId)">
+				Parts Location
+			</a><!-- 004 -->
+			<a id="ppr" href="#" class="popup-button" onClick="callPreparationItems(g_pprList);">
+				Preparation
+			</a><!-- 005 -->
+			<a id="spc" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, spec, SPEC);" onMouseOut="parent.dropDownDelayUndisp();">
+				System Spec
+			</a><!-- 006 -->
+			<div id="spec" style="display: none"></div>
+			<a id="hlp" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, help, HELP);" onMouseOut="parent.dropDownDelayUndisp();">
+				Diagnostic Help
+			</a><!-- 007 -->
+			<div id="help" style="display: none"></div>
+			<a id="tps" href="#" class="popup-button" onClick="callTips(g_tips)">
+				Tech Tips
+			</a><!-- 008 -->
+			<a id="ewd" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, lewd);" onMouseOut="parent.dropDownDelayUndisp();">
+				EWD
+			</a><!-- 009 -->
+			<div id="lewd" style="display: none"></div>
+			<a id="tec" href="#" class="popup-button" onClick="parent.clearDropDownDelay(); parent.createDropDown(this, ltec);" onMouseOut="parent.dropDownDelayUndisp();">
+				Tech Description
+			</a><!-- 010 -->
+			<div id="ltec" style="display: none"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="boundary-top" width="170px">
+			<a href="#" onClick="callPrintPreview(parent.g_objXml, parent.g_objXsl);">
+				<img alt="print" src="../../img/print.png" class="print"><!-- 011 -->
+			</a>
+		</td>
+		<td class="boundary-top">
+			<span id="disp" class="select-name"></span>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

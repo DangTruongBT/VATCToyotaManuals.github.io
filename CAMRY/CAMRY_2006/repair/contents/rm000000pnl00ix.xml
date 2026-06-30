@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tmc-service-inc>
+<pub id="RM0251U">
+<servcat id="42">
+<name>BODY ELECTRICAL</name>
+<section id="1002Q_S001I" variety="S001I">
+<name>NAVIGATION</name>
+<ttl id="1002Q_S001I_72YIF_T00A4" variety="T00A4">
+<name>NAVIGATION SYSTEM</name>
+<para id="RM000000PNL00IX" category="J" type-id="303UI" name-id="NS0W4-01" from="200601">
+<dtccode/>
+<dtcname>Touch Panel Switch does not Function</dtcname>
+<subpara id="RM000000PNL00IX_01" type-id="51" category="05">
+<name>INSPECTION PROCEDURE</name>
+</subpara>
+<subpara id="RM000000PNL00IX_02" type-id="01" category="01">
+<name>PROCEDURE</name>
+<testgrp id="RM000000PNL00IX_02_0001" proc-id="RM0250U___00004XL00000">
+<testtitle>CHECK TOUCH PANEL</testtitle>
+<content6 releasenbr="1">
+<test1>
+<ptxt>Check for foreign matter on the display.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>The display is clean.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PNL00IX_02_0003" fin="false">OK</down>
+<right ref="RM000000PNL00IX_02_0002" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PNL00IX_02_0002">
+<testtitle>CLEAN DISPLAY AND RECHECK TOUCH PANEL</testtitle>
+</testgrp>
+<testgrp id="RM000000PNL00IX_02_0003" proc-id="RM0250U___00004XM00000">
+<testtitle>CHECK TOUCH SWITCH (DISPLAY CHECK MODE)</testtitle>
+<content6 releasenbr="1">
+<figure>
+<graphic graphicname="I100039E04" width="2.775699831in" height="1.771723296in"/>
+</figure>
+<test1>
+<ptxt>Enter the "Display Check" mode (Touch Switch Check) (See page <xref label="Seep01" href="RM0000011BV00GX"/>).</ptxt>
+</test1>
+<test1>
+<ptxt>Touch the display in the area where the switch malfunction occurs.</ptxt>
+<spec>
+<title>OK</title>
+<specitem>
+<ptxt>A "+" mark appears at the touched position.</ptxt>
+</specitem>
+</spec>
+</test1>
+</content6>
+<res>
+<down ref="RM000000PNL00IX_02_0005" fin="true">OK</down>
+<right ref="RM000000PNL00IX_02_0004" fin="true">NG</right>
+</res>
+</testgrp>
+<testgrp id="RM000000PNL00IX_02_0004">
+<testtitle>PROCEED TO NEXT CIRCUIT INSPECTION SHOWN IN PROBLEM SYMPTOMS TABLE</testtitle>
+</testgrp>
+<testgrp id="RM000000PNL00IX_02_0005">
+<testtitle>REPLACE RADIO AND NAVIGATION ASSEMBLY</testtitle>
+</testgrp>
+</subpara>
+</para>
+</ttl>
+</section>
+</servcat>
+</pub>
+</tmc-service-inc>
