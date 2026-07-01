@@ -12,8 +12,8 @@
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <title>Inspection Contents Navi</title>
-<link href="../../css/contents.css" rel="stylesheet" type="text/css">
-<script src="../../js/svg.js"></script>
+<link href="/css/contents.css" rel="stylesheet" type="text/css">
+<script src="/js/svg.js"></script>
 <script language="javascript">
 function init() {
 	initSvg(window.self);
@@ -29,7 +29,7 @@ function init() {
 		parent.g_illustId = illustIds[0];
 	}
 	if (parent.g_illustId==null) return;
-	disp.innerHTML = "<embed src='../../svgz/"
+	disp.innerHTML = "<embed src='/svgz/"
 								+ parent.g_illustId.toLowerCase() + ".svgz' "
 								+ " width='" + (g_iOrgSvgWidth)
 								+ "' height='" + (g_iOrgSvgWidth*HEIGHT_WIDTH_RATE)
