@@ -74,37 +74,14 @@ var g_ewdXml    = null;
 var g_ncfXml    = null;
 var g_info      = null;
 // Browser Check
-	// Thay thế hàm cũ bằng hàm này
-function initXml(xmlPath) {
-    // Nếu trình duyệt hiện đại, dùng DOMParser
-    if (window.DOMParser) {
-        var xmlDoc = document.implementation.createDocument("", "", null);
-        xmlDoc.async = false;
-        // Dùng fetch để lấy dữ liệu qua HTTP thay vì gọi ActiveX
-        fetch(xmlPath)
-            .then(response => response.text())
-            .then(str => {
-                const parser = new DOMParser();
-                xmlDoc = parser.parseFromString(str, "text/xml");
-            })
-            .catch(err => console.error("Lỗi load XML:", err));
-        return xmlDoc;
-    } 
-    // Nếu vẫn là Internet Explorer cũ (dự phòng)
-    else {
-        var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
-        xmlDoc.async = false;
-        xmlDoc.load(xmlPath);
-        return xmlDoc;
-    }
+
+var ACTIVEX_ERROR = "Please install MSXML3.DLL"; // 043
+function checkClient() {
+	if (!checkIEVersion()) return false;
+	if (!checkActiveX("Msxml2.DOMDocument", ACTIVEX_ERROR)) return false;
+	if (!checkSvgViewer()) return false;
+	return true;
 }
-//var ACTIVEX_ERROR = "Please install MSXML3.DLL"; // 043
-//function checkClient() {
-//	if (!checkIEVersion()) return false;
-//	if (!checkActiveX("Msxml2.DOMDocument", ACTIVEX_ERROR)) return false;
-//	if (!checkSvgViewer()) return false;
-//	return true;
-//}
 
 function init() {
 	if (!checkClient()) return;
